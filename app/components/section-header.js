@@ -1,6 +1,7 @@
 "use client";
 
 import SecondaryButton from "./secondary-button.js";
+import PrimaryButton from "./primary-button.js";
 import Label from "./label.js";
 
 const SectionHeader = ({

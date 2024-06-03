@@ -33,7 +33,12 @@ const What = () => {
       <div className="flex flex-row justify-center mt-14 flex-wrap">
         {cards.map((card, key) => {
           return (
-            <WhatCard title={card.title} text={card.text} img={card.img} />
+            <WhatCard
+              key={key}
+              title={card.title}
+              text={card.text}
+              img={card.img}
+            />
           );
         })}
       </div>

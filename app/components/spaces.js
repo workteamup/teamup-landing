@@ -18,7 +18,7 @@ const SpaceCard = ({ img, tags, title, description, url }) => {
           <div className="inline-flex space-x-1">
             {tags &&
               tags.map((tag, key) => {
-                return <Tag>{tag}</Tag>;
+                return <Tag key={key}>{tag}</Tag>;
               })}
           </div>
           <h3 className="text-xl font-semibold">{title}</h3>
@@ -50,9 +50,10 @@ const Spaces = () => {
         width="800"
       />
       <div className="flex flex-wrap justify-center items-stretch mt-14">
-        {Object.values(spaces).map((space) => {
+        {Object.values(spaces).map((space, key) => {
           return (
             <SpaceCard
+              key={key}
               img={space.img}
               tags={space.tags}
               title={space.title}

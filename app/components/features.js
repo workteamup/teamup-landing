@@ -23,7 +23,9 @@ const Features = () => {
       />
       <div className="flex flex-wrap justify-center mt-14 md:max-w-[960px] m-auto">
         {features.map((feature, key) => {
-          return <FeatureTag icon={feature.icon} title={feature.title} />;
+          return (
+            <FeatureTag key={key} icon={feature.icon} title={feature.title} />
+          );
         })}
       </div>
     </div>

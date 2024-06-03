@@ -53,7 +53,7 @@ const Footer = () => {
       <ul className="flex flex-col space-y-4 sm:flex-row justify-center m-auto sm:space-x-8 sm:space-y-0 mb-8">
         {links.map((link, key) => {
           return (
-            <FooterLink>
+            <FooterLink key={key}>
               <a href={link.href}>{link.title}</a>
             </FooterLink>
           );
@@ -61,7 +61,7 @@ const Footer = () => {
       </ul>
       <div className="flex flex-row justify-center m-auto space-x-3 mb-8">
         {Object.values(socials).map((social, key) => {
-          return <SocialsIcon icon={social.icon} />;
+          return <SocialsIcon key={key} icon={social.icon} />;
         })}
       </div>
       <p className="text-center pb-4">
