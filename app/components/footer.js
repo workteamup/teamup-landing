@@ -49,7 +49,7 @@ const SocialsIcon = ({ icon }) => {
 
 const Footer = () => {
   return (
-    <div id="footer">
+    <div id="footer px-4">
       <ul className="flex flex-col space-y-4 sm:flex-row justify-center m-auto sm:space-x-8 sm:space-y-0 mb-8">
         {links.map((link, key) => {
           return (
@@ -59,11 +59,11 @@ const Footer = () => {
           );
         })}
       </ul>
-      <div className="flex flex-row justify-center m-auto space-x-3 mb-8">
+      {/* <div className="flex flex-row justify-center m-auto space-x-3 mb-8">
         {Object.values(socials).map((social, key) => {
           return <SocialsIcon key={key} icon={social.icon} />;
         })}
-      </div>
+      </div> */}
       <p className="text-center pb-4">
         {"\u00A9"} 2023 TEAM UP TECH ESPAÑA S.L. Todos los derechos reservados
       </p>
