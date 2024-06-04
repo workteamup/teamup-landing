@@ -5,7 +5,9 @@ const BenefitCard = ({ icon, title, text }) => {
     <div className="flex flex-col space-y-6 pt-12 pb-6 m-3 w-full sm:w-[400px] items-center px-6 hover:shadow-lg rounded-xl hover:border hover:border-slate-200">
       <div className="h-16 w-16 bg-indigo-100 rounded-2xl">{icon}</div>
       <div className="flex flex-col space-y-2">
-        <h2 className="text-2xl font-semibold text-center">{title}</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-center">
+          {title}
+        </h2>
         <p className="text-base text-slate-400 text-center">{text}</p>
       </div>
     </div>

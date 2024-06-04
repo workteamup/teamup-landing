@@ -36,7 +36,7 @@ const Hero = () => {
         <h1 className="text-4xl md:text-7xl mt-2 text-center mb-4 font-semibold">
           Tu equipo remoto, más unido que nunca
         </h1>
-        <p className="text-2xl text-slate-400 text-center">
+        <p className="text-xl sm:text-2xl text-slate-400 text-center">
           Team Up! te da las herramientas para que saques el máximo partido al
           trabajo remoto manteniendo a tu gente implicada.
         </p>
