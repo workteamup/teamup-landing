@@ -43,8 +43,10 @@ const Navbar = () => {
     <div>
       <div className="z-50 hidden lg:block fixed w-full p-4 bg-slate-50/70 backdrop-blur-sm">
         <div className="flex justify-between items-center relative">
-          <div className="text-indigo-800 h-6">
-            <TeamUpLogo />
+          <div className="text-indigo-800 h-5">
+            <a href="#hero">
+              <TeamUpLogo />
+            </a>
           </div>
           <div className="absolute left-1/2 -translate-x-2/4">
             <ul className="flex flex-row justify-center space-x-1 height-10 p-1 bg-blue-950 text-white rounded-lg">
@@ -94,7 +96,9 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center p-4 bg-slate-50 backdrop-blur-sm">
           <div className="text-indigo-800 h-4">
-            <TeamUpLogo />
+            <a href="#hero" onClick={() => setIsMenuOpen(false)}>
+              <TeamUpLogo />
+            </a>
           </div>
           <div className="h-6 w-6 text-blue-950" onClick={handleIsMenuOpen}>
             {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}

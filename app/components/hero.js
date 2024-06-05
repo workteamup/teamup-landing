@@ -27,7 +27,7 @@ const ResponsiveVideoComponent = ({ videoUrl }) => {
 
 const Hero = () => {
   return (
-    <div className="mb-24 md:mb-[200px] px-4">
+    <div id="hero" className="mb-24 md:mb-[200px] px-4">
       <div className="m-auto flex flex-col justify-center items-center max-w-[800px] mb-[80px]">
         <div className="inline-flex justify-center mt-[100px] md:mt-[200px]">
           <Label>
