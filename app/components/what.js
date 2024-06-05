@@ -7,17 +7,17 @@ const cards = [
   {
     title: "Trabaja",
     text: "Texto descriptivo de beneficio de Team Up!",
-    // img: "",
+    img: "/images/gif-trabaja.gif",
   },
   {
     title: "Conecta",
     text: "Texto descriptivo de beneficio de Team Up!",
-    // img: "",
+    img: "/images/gif-conecta.gif",
   },
   {
     title: "Disfruta",
     text: "Texto descriptivo de beneficio de Team Up!",
-    // img: "",
+    img: "/images/gif-disfruta.gif",
   },
 ];
 

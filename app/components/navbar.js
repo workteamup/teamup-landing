@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="z-50 hidden lg:block fixed w-full p-4 bg-white/70 backdrop-blur-sm">
+      <div className="z-50 hidden lg:block fixed w-full p-4 bg-slate-50/70 backdrop-blur-sm">
         <div className="flex justify-between items-center relative">
           <div className="text-blue-950">Team Up!</div>
           <div className="absolute left-1/2 -translate-x-2/4">

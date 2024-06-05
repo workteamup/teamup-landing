@@ -42,10 +42,24 @@ const Hero = () => {
           trabajo remoto manteniendo a tu gente implicada.
         </p>
         <div className="flex md:flex-row md:space-x-4 md:space-y-0 flex-col space-y-2 mt-10">
-          <Button type="button" variant="primary" size="lg">
+          <Button
+            type="button"
+            variant="primary"
+            size="lg"
+            onClick={() =>
+              window.open("https://app.teamup.works/signup", "_blank")
+            }
+          >
             Empezar ya gratis
           </Button>
-          <Button type="button" variant="secondary" size="lg">
+          <Button
+            type="button"
+            variant="secondary"
+            size="lg"
+            onClick={() =>
+              window.open("https://teamup-ignacio.youcanbook.me/", "_blank")
+            }
+          >
             Programar demo
           </Button>
         </div>
