@@ -41,7 +41,7 @@ const Hero = () => {
           Team Up! te da las herramientas para que saques el máximo partido al
           trabajo remoto manteniendo a tu gente implicada.
         </p>
-        <div className="flex md:flex-row md:space-x-4 md:space-y-0 flex-col space-y-2 mt-10">
+        <div className="flex flex-col space-y-2 w-full sm:flex-row sm:space-x-4 sm:space-y-0 justify-center mt-10">
           <Button
             type="button"
             variant="primary"
