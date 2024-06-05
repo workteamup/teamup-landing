@@ -24,7 +24,9 @@ const FooterCTA = ({
       <div className="flex flex-col space-y-2 w-full sm:flex-row sm:space-x-2 sm:space-y-0 justify-center px-4">
         <Button
           type="button"
-          onClick={() => window.open("https://teamup.works/signup", "_blank")}
+          onClick={() =>
+            window.open("https://app.teamup.works/signup", "_blank")
+          }
           variant="primary"
           size="lg"
         >

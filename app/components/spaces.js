@@ -31,7 +31,7 @@ const SpaceCard = ({ img, tags, title, description, url }) => {
         </div>
         <div>
           <Button
-            iconRight="" //{<UnknownIcon width="16" height="16" path={iconPath} />}
+            iconRight={<UnknownIcon width="16" height="16" path={iconPath} />}
             type="button"
             size="sm"
             onClick={() =>
