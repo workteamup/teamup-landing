@@ -15,7 +15,7 @@ const FeatureTag = ({ icon, title }) => {
 
 const Features = () => {
   return (
-    <div id="features" className="mb-[200px]">
+    <div id="features" className="mb-24 md:mb-[200px]">
       <SectionHeader
         tag="Funcionalidades"
         heading="Experimenta la solución para colaboración todo-en-1"

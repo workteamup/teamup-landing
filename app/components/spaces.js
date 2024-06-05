@@ -48,7 +48,7 @@ const SpaceCard = ({ img, tags, title, description, url }) => {
 
 const Spaces = () => {
   return (
-    <div id="spaces" className="mb-[200px]">
+    <div id="spaces" className="mb-24 md:mb-[200px]">
       <SectionHeader
         tag="Espacios"
         heading="Espacios para cada tipo de reunión, actividad o evento"

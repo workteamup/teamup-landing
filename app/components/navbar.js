@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Button from "./button";
+import { HamburgerIcon, CloseIcon } from "./icons/navbar-icons";
+import TeamUpLogo from "./teamup-logo";
 
 const navLinks = [
   {
@@ -41,7 +43,9 @@ const Navbar = () => {
     <div>
       <div className="z-50 hidden lg:block fixed w-full p-4 bg-slate-50/70 backdrop-blur-sm">
         <div className="flex justify-between items-center relative">
-          <div className="text-blue-950">Team Up!</div>
+          <div className="text-indigo-800 h-6">
+            <TeamUpLogo />
+          </div>
           <div className="absolute left-1/2 -translate-x-2/4">
             <ul className="flex flex-row justify-center space-x-1 height-10 p-1 bg-blue-950 text-white rounded-lg">
               {navLinks.map((link, key) => {
@@ -85,12 +89,16 @@ const Navbar = () => {
 
       <div
         className={`z-50 flex flex-col ${
-          isMenuOpen ? "h-screen" : ""
-        } justify-between w-full lg:hidden bg-white fixed`}
+          isMenuOpen ? "h-dvh" : ""
+        } justify-between w-full lg:hidden bg-slate-50 fixed`}
       >
-        <div className="flex justify-between items-center p-4 bg-white backdrop-blur-sm">
-          <div>Team Up!</div>
-          <div className="h-6 w-6 bg-black" onClick={handleIsMenuOpen}></div>
+        <div className="flex justify-between items-center p-4 bg-slate-50 backdrop-blur-sm">
+          <div className="text-indigo-800 h-4">
+            <TeamUpLogo />
+          </div>
+          <div className="h-6 w-6 text-blue-950" onClick={handleIsMenuOpen}>
+            {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
+          </div>
         </div>
         <ul
           className={`${
@@ -102,7 +110,7 @@ const Navbar = () => {
               <li id={`#${link.id}`} key={key}>
                 <a
                   href={link.href}
-                  className="text-xl px-4 h-9 flex justify-center items-center font-medium hover:bg-white hover:text-blue-950 rounded-md text-center my-4"
+                  className="text-2xl px-4 h-9 flex justify-center items-center font-medium hover:bg-slate-50 hover:text-blue-950 rounded-md text-center my-4"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.title}

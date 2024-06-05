@@ -23,7 +23,7 @@ const cards = [
 
 const What = () => {
   return (
-    <div id="what" className="mb-[200px]">
+    <div id="what" className="mb-24 md:mb-[200px]">
       <SectionHeader
         tag="Qué es Team Up!"
         heading="Experimenta una nueva manera de trabajar, interactuar y socializar"
