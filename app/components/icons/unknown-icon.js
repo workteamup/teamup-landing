@@ -11,7 +11,7 @@ const UnknownIcon = ({
       width={width}
       height={height}
       fill={color}
-      className="align-middle text-center w-full h-full"
+      className="align-middle text-center"
       preserveAspectRatio="xMidYMid meet"
     >
       {/* Replace 'path' with the actual SVG path data */}
