@@ -1,7 +1,7 @@
 "use client";
-import PrimaryButton from "./primary-button";
-import SecondaryButton from "./secondary-button";
+
 import { useState } from "react";
+import Button from "./button";
 
 const navLinks = [
   {
@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="z-50 hidden lg:block fixed w-full p-4 bg-white/50 backdrop-blur-sm">
+      <div className="z-50 hidden lg:block fixed w-full p-4 bg-white/70 backdrop-blur-sm">
         <div className="flex justify-between items-center relative">
           <div className="text-blue-950">Team Up!</div>
           <div className="absolute left-1/2 -translate-x-2/4">
@@ -59,22 +59,26 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex space-x-2">
-            <SecondaryButton
+            <Button
               type="button"
               onClick={() =>
                 window.open("https://app.teamup.works/login", "_blank")
               }
+              variant="tertiary"
+              size="md"
             >
               Iniciar sesión
-            </SecondaryButton>
-            <PrimaryButton
+            </Button>
+            <Button
               type="button"
               onClick={() =>
                 window.open("https://app.teamup.works/signup", "_blank")
               }
+              variant="primary"
+              size="md"
             >
               Registrarse
-            </PrimaryButton>
+            </Button>
           </div>
         </div>
       </div>
@@ -111,22 +115,26 @@ const Navbar = () => {
         <div
           className={`${isMenuOpen ? "flex" : "hidden"} flex-col space-y-2 m-4`}
         >
-          <SecondaryButton
+          <Button
             type="button"
             onClick={() =>
               window.open("https://app.teamup.works/login", "_blank")
             }
+            variant="tertiary"
+            size="md"
           >
             Iniciar sesión
-          </SecondaryButton>
-          <PrimaryButton
+          </Button>
+          <Button
             type="button"
             onClick={() =>
               window.open("https://app.teamup.works/signup", "_blank")
             }
+            variant="primary"
+            size="md"
           >
             Registrarse
-          </PrimaryButton>
+          </Button>
         </div>
       </div>
     </div>

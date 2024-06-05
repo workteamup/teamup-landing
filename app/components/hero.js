@@ -2,6 +2,7 @@
 
 import SectionHeader from "./section-header";
 import Label from "./label";
+import Button from "./button";
 
 const video =
   "https://www.youtube.com/embed/Iy5Z4RMn8ZQ?&autoplay=1&loop=1&mute=1&controls=0&modestbranding=1&showinfo=0&disablekb=1&fs=0&rel=0&playlist=Iy5Z4RMn8ZQ";
@@ -36,10 +37,18 @@ const Hero = () => {
         <h1 className="text-4xl md:text-7xl mt-2 text-center mb-4 font-semibold">
           Tu equipo remoto, más unido que nunca
         </h1>
-        <p className="text-xl sm:text-2xl text-slate-400 text-center">
+        <p className="text-xl sm:text-2xl text-slate-400 text-center font-light">
           Team Up! te da las herramientas para que saques el máximo partido al
           trabajo remoto manteniendo a tu gente implicada.
         </p>
+        <div className="flex md:flex-row md:space-x-4 md:space-y-0 flex-col space-y-2 mt-10">
+          <Button type="button" variant="primary" size="lg">
+            Empezar ya gratis
+          </Button>
+          <Button type="button" variant="secondary" size="lg">
+            Programar demo
+          </Button>
+        </div>
       </div>
       <div className="max-w-[960px] mx-auto overflow-hidden rounded-xl">
         <ResponsiveVideoComponent videoUrl={video} />

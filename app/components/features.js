@@ -1,13 +1,14 @@
 "use client";
 import { features } from "../consts";
-import PrimaryButton from "./primary-button";
 import SectionHeader from "./section-header";
 import Tag from "./tag";
+import UnknownIcon from "./icons/unknown-icon";
 
 const FeatureTag = ({ icon, title }) => {
   return (
-    <div className="flex items-center h-12 bg-blue-50 border border-blue-200 px-4 rounded-lg m-2">
-      <div className="text-base font-medium text-indigo-700">{title}</div>
+    <div className="flex items-center h-12 bg-blue-50 border border-blue-200 px-4 rounded-lg m-2 space-x-3 text-indigo-700">
+      {icon && icon}
+      <div className="text-base font-medium">{title}</div>
     </div>
   );
 };
@@ -24,7 +25,11 @@ const Features = () => {
       <div className="flex flex-wrap justify-center mt-14 md:max-w-[960px] m-auto">
         {features.map((feature, key) => {
           return (
-            <FeatureTag key={key} icon={feature.icon} title={feature.title} />
+            <FeatureTag
+              key={key}
+              icon={<UnknownIcon width="20" height="20" path={feature.icon} />}
+              title={feature.title}
+            />
           );
         })}
       </div>

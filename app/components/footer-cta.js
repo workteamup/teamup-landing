@@ -1,7 +1,6 @@
 "use client";
 
-import SecondaryButton from "./secondary-button.js";
-import PrimaryButton from "./primary-button.js";
+import Button from "./button.js";
 import Label from "./label.js";
 import Image from "next/image";
 import CTAImage from "../../public/images/cta-img.png";
@@ -23,20 +22,24 @@ const FooterCTA = ({
         Crea ya una cultura que saque lo mejor de tu equipo
       </h1>
       <div className="flex flex-col space-y-2 w-full sm:flex-row sm:space-x-2 sm:space-y-0 justify-center px-4">
-        <PrimaryButton
+        <Button
           type="button"
           onClick={() => window.open("https://teamup.works/signup", "_blank")}
+          variant="primary"
+          size="lg"
         >
           Empezar ya gratis
-        </PrimaryButton>
-        <SecondaryButton
+        </Button>
+        <Button
           type="button"
           onClick={() =>
             window.open("https://teamup-ignacio.youcanbook.me/", "_blank")
           }
+          variant="secondary"
+          size="lg"
         >
           Programar una demo
-        </SecondaryButton>
+        </Button>
       </div>
     </div>
   );

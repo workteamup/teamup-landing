@@ -11,7 +11,7 @@ import FooterCTA from "./footer-cta";
 
 const Landing = () => {
   return (
-    <div className="text-blue-950">
+    <div className="text-blue-950 bg-slate-50">
       <Hero />
       <Benefits />
       <What />
