@@ -47,10 +47,10 @@ export const spaces = {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nibh, feugiat a dapibus vel, tincidunt ut nibh. Donec massa tellus, vulputate eu semper et, consequat sit amet mi. Nam congue imperdiet elementum. Fusce finibus nec nibh id facilisis.",
     url: "https://app.teamup.works/demo",
   },
-  granja: {
+  corral: {
     img: "/images/farm.png",
     tags: ["conecta", "disfruta"],
-    title: "La granja",
+    title: "El corral",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nibh, feugiat a dapibus vel, tincidunt ut nibh. Donec massa tellus, vulputate eu semper et, consequat sit amet mi. Nam congue imperdiet elementum. Fusce finibus nec nibh id facilisis.",
     url: "https://app.teamup.works/demo",

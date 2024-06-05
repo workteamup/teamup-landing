@@ -22,12 +22,12 @@ const SectionHeader = ({
         </div>
       )}
       {heading && (
-        <h1 className="text-2xl md:text-4xl text-center font-semibold">
+        <h1 className="text-3xl md:text-5xl text-center font-semibold">
           {heading}
         </h1>
       )}
       {subheading && (
-        <p className="text-xl text-slate-400 text-center">{subheading}</p>
+        <p className="text-lg md:text-xl text-slate-400 text-center">{subheading}</p>
       )}
       {(primaryButton || secondaryButton) && (
         <div>
