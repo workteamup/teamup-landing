@@ -13,13 +13,12 @@ const iconPath =
 const SpaceCard = ({ img, tags, title, description, url }) => {
   console.log(img);
   return (
-    <div className="w-full sm:w-[400px] m-3 rounded-lg hover:shadow-2xl overflow-hidden">
+    <div className="w-full sm:w-[400px] m-3 rounded-lg hover:shadow-2xl overflow-hidden h-full">
       <div className="h-[200px] bg-cover rounded-t-lg relative overflow-hidden">
         <Image src={img} alt="wtf is this" fill />
       </div>
-      <div className="rounded-b-lg border-x border-b border-solid border-slate-200 p-6">
-        <div className="flex flex-col space-y-2 mb-6">
-          {/* <img>{img}</img> */}
+      <div className="rounded-b-lg border-x border-b border-solid border-slate-200 p-6 flex-col space-between">
+        <div className="flex flex-col space-y-2 mb-6 grow">
           <div className="inline-flex space-x-1">
             {tags &&
               tags.map((tag, key) => {
@@ -27,7 +26,7 @@ const SpaceCard = ({ img, tags, title, description, url }) => {
               })}
           </div>
           <h3 className="text-xl font-semibold">{title}</h3>
-          <p className="text-sm mb-6 text-slate-400">{description}</p>
+          <p className="text-sm mb-6 text-slate-400 grow">{description}</p>
         </div>
         <div>
           <Button
