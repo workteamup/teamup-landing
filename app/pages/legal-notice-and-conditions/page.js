@@ -1,7 +1,6 @@
 "use client";
 
 import LegalPageTemplate from "@/app/components/legal-page-template";
-import { List } from "@mui/material";
 
 const Heading2 = ({ children }) => {
   return (
