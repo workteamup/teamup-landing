@@ -33,7 +33,7 @@ const Button = ({
           : variant === "tertiary"
           ? "text-blue-950 hover:text-indigo-800 hover:bg-indigo-50"
           : "bg-indigo-600 text-white hover:bg-indigo-400"
-      } font-medium flex justify-center items-center`}
+      }  font-medium flex justify-center items-center`}
     >
       {iconLeft && (
         <div
