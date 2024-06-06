@@ -17,14 +17,14 @@ const Button = ({
       // className="h-11 bg-indigo-600 text-white rounded-md px-4 font-medium hover:bg-indigo-500"
       className={`${
         size === "xs"
-          ? "h-7 px-3 text-xs space-x-2"
+          ? "h-7 px-3 text-xs space-x-2 rounded-[3px]"
           : size === "sm"
-          ? "h-8 px-4 text-sm space-x-3"
+          ? "h-9 px-4 text-sm space-x-3 rounded"
           : size === "md"
-          ? "h-11 px-5 text-base space-x-3"
+          ? "h-11 px-5 text-base space-x-3 rounded-md"
           : size === "lg"
-          ? "h-14 px-6 text-base space-x-4"
-          : "h-8 px-4 text-sm space-x-2"
+          ? "h-14 px-6 text-base space-x-4 rounded-lg"
+          : "h-9 px-4 text-sm space-x-2 rounded"
       } ${
         variant === "primary"
           ? "bg-indigo-600 text-white hover:bg-indigo-500"
@@ -33,7 +33,7 @@ const Button = ({
           : variant === "tertiary"
           ? "text-blue-950 hover:text-indigo-800 hover:bg-indigo-50"
           : "bg-indigo-600 text-white hover:bg-indigo-400"
-      } rounded-md font-medium flex justify-center items-center`}
+      } font-medium flex justify-center items-center`}
     >
       {iconLeft && (
         <div

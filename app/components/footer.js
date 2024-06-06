@@ -7,16 +7,16 @@ import Tag from "./tag";
 
 const links = [
   {
-    title: "Términos y condiciones",
-    href: "",
+    title: "Aviso legal y condiciones de uso",
+    href: "/pages/legal-notice-and-conditions",
   },
   {
     title: "Política de privacidad",
-    href: "",
+    href: "/pages/privacy-policy",
   },
   {
-    title: "Aviso legal",
-    href: "",
+    title: "Política de cookies",
+    href: "/pages/cookie-policy",
   },
 ];
 

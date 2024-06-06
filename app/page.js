@@ -4,7 +4,7 @@ import Navbar from "./components/navbar";
 
 export default function Home() {
   return (
-    <div className="bg-white font-work_sans">
+    <div className="bg-white">
       <Navbar />
       <Landing />
     </div>

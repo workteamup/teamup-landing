@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={syne.className}>{children}</body>
+      <body className={`${syne.className} antialiased`}>{children}</body>
     </html>
   );
 }

@@ -7,7 +7,7 @@ import UnknownIcon from "./icons/unknown-icon";
 const FeatureTag = ({ icon, title }) => {
   return (
     <div className="flex items-center h-12 bg-blue-50 border border-blue-200 px-4 rounded-lg m-2 space-x-3 text-indigo-700">
-      {icon && icon}
+      {icon && <div className="w-5 h-5">{icon}</div>}
       <div className="text-base font-medium">{title}</div>
     </div>
   );
