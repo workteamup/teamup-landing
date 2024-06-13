@@ -57,7 +57,7 @@ const Spaces = () => {
       <div className="flex flex-wrap justify-center items-stretch mt-14 max-w-[1440px] -m-2">
         {Object.values(spaces).map((space, key) => {
           return (
-            <div className="sm:basis-1/2 md:basis-1/3 p-2">
+            <div className="sm:basis-1/2 md:basis-1/3 p-2" key={key}>
               <SpaceCard
                 key={key}
                 img={space.img}
