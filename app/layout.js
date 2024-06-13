@@ -1,4 +1,4 @@
-import { Inter, Work_Sans, DM_Sans, Syne } from "next/font/google";
+import { Sora, Syne } from "next/font/google";
 import "./globals.css";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -8,6 +8,7 @@ import "./globals.css";
 // const dm_sans = DM_Sans({ subsets: ["latin"] });
 
 const syne = Syne({ subsets: ["latin"] });
+const sora = Sora({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Team Up | La mejor manera de conectar en remoto",
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${syne.className} antialiased`}>{children}</body>
+      <body className={`${sora.className} antialiased`}>{children}</body>
     </html>
   );
 }

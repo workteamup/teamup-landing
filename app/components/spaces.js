@@ -13,11 +13,11 @@ const iconPath =
 const SpaceCard = ({ img, tags, title, description, url }) => {
   console.log(img);
   return (
-    <div className="w-full sm:w-[400px] m-3 rounded-lg hover:shadow-2xl overflow-hidden h-full">
+    <div className="w-full m-3 rounded-lg hover:shadow-2xl overflow-hidden h-full border border-slate-200">
       <div className="h-[200px] bg-cover rounded-t-lg relative overflow-hidden">
         <Image src={img} alt="wtf is this" fill />
       </div>
-      <div className="rounded-b-lg border-x border-b border-solid border-slate-200 p-6 flex-col space-between">
+      <div className="rounded-b-lg  p-6 flex-col space-between">
         <div className="flex flex-col space-y-2 mb-6 grow">
           <div className="inline-flex space-x-1">
             {tags &&
@@ -54,17 +54,19 @@ const Spaces = () => {
         subheading="No echarás de menos ningún espacio dentro de Team Up! Todos los posibles escenarios que puedas necesitar para tu actividad están (o estarán) aquí."
         width="800"
       />
-      <div className="flex flex-wrap justify-center items-stretch mt-14">
+      <div className="flex flex-wrap justify-center items-stretch mt-14 max-w-[1440px] -m-2">
         {Object.values(spaces).map((space, key) => {
           return (
-            <SpaceCard
-              key={key}
-              img={space.img}
-              tags={space.tags}
-              title={space.title}
-              description={space.description}
-              url={space.url}
-            />
+            <div className="sm:basis-1/2 md:basis-1/3 p-2">
+              <SpaceCard
+                key={key}
+                img={space.img}
+                tags={space.tags}
+                title={space.title}
+                description={space.description}
+                url={space.url}
+              />
+            </div>
           );
         })}
       </div>
