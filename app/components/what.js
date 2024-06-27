@@ -35,13 +35,11 @@ const What = () => {
         <div className="flex flex-row flex-wrap justify-center -m-2">
           {cards.map((card, key) => {
             return (
-              <div className="p-2 basis-full sm:basis-1/2 xl:basis-1/3">
-                <WhatCard
-                  key={key}
-                  title={card.title}
-                  text={card.text}
-                  img={card.img}
-                />
+              <div
+                key={key}
+                className="p-2 basis-full sm:basis-1/2 xl:basis-1/3"
+              >
+                <WhatCard title={card.title} text={card.text} img={card.img} />
               </div>
             );
           })}
