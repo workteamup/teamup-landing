@@ -29,7 +29,7 @@ const Benefits = () => {
         tag="Beneficios"
         heading="Reduce las barreras del trabajo remoto y fomenta un ambiente de cercanía y colaboración dinámica con Team Up!"
         width="1200"
-        className="mb-14 xl:max-w-[1200px]"
+        className="mb-14 max-w-[1200px]"
       />
       <div className="xl:max-w-[1440px] w-full m-auto p-4">
         <div className="flex flex-wrap justify-center -m-2 min-h-full">
