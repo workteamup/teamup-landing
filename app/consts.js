@@ -4,7 +4,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Fogata",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nibh, feugiat a dapibus vel, tincidunt ut nibh. Donec massa tellus, vulputate eu semper et, consequat sit amet mi. Nam congue imperdiet elementum. Fusce finibus nec nibh id facilisis.",
+      "Organiza dinámicas de grupo perfectas en un lugar en el que no tendrás que preocuparte por la conversación ya que podrás sacar temas aleatorios de diversa índole gracias al entorno de Team Up!",
     url: "https://app.teamup.works/demo",
   },
   auditorio: {
@@ -12,7 +12,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Auditorio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nibh, feugiat a dapibus vel, tincidunt ut nibh. Donec massa tellus, vulputate eu semper et, consequat sit amet mi. Nam congue imperdiet elementum. Fusce finibus nec nibh id facilisis.",
+      "El lugar perfecto para hacer presentaciones, reuniones a nivel de empresa, eventos. Disfruta de un auditorio inmersivo donde encima podrás realizar votaciones rápidamente.",
     url: "https://app.teamup.works/demo",
   },
   votaciones: {
@@ -20,7 +20,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Planning",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nibh, feugiat a dapibus vel, tincidunt ut nibh. Donec massa tellus, vulputate eu semper et, consequat sit amet mi. Nam congue imperdiet elementum. Fusce finibus nec nibh id facilisis.",
+      "Si necesitas tomar decisiones de trabajo rápidamente, éste es el lugar para tí. Mejora la toma de decisiones con un espacio perfecto e interactivo donde no influenciar el voto.",
     url: "https://app.teamup.works/demo",
   },
   debate: {
@@ -28,7 +28,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Sala de debate",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nibh, feugiat a dapibus vel, tincidunt ut nibh. Donec massa tellus, vulputate eu semper et, consequat sit amet mi. Nam congue imperdiet elementum. Fusce finibus nec nibh id facilisis.",
+      "¿Quieres organizar una discusión entre múltiples personas de una manera óptima? Nuestra sala de debate es perfecta para ello. Podrás controlar los turnos de palabra y asegurarte que los participantes están en igualdad.",
     url: "https://app.teamup.works/demo",
   },
   lava: {
@@ -36,7 +36,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "El suelo es lava",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nibh, feugiat a dapibus vel, tincidunt ut nibh. Donec massa tellus, vulputate eu semper et, consequat sit amet mi. Nam congue imperdiet elementum. Fusce finibus nec nibh id facilisis.",
+      'Si quieres desconectar y "relajarte", no hay sitio mejor que este espacio. Trata de conseguir llegar al final del circuito mientras evitas los obstáculos y te partes de risa viendo como tus compañeros caen.',
     url: "https://app.teamup.works/demo",
   },
   conecta4: {
@@ -44,7 +44,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Cuatro en raya",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nibh, feugiat a dapibus vel, tincidunt ut nibh. Donec massa tellus, vulputate eu semper et, consequat sit amet mi. Nam congue imperdiet elementum. Fusce finibus nec nibh id facilisis.",
+      "Disfruta de una actividad en grupo en este espacio con 4 mallas de Conecta 4 donde no sólo hay que elegir dónde meter la ficha, sino que tendrás que ser capaz de meterla para que cuente. ¿Quién será el mejor de tu equipo?",
     url: "https://app.teamup.works/demo",
   },
   corral: {
@@ -52,7 +52,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "El corral",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nibh, feugiat a dapibus vel, tincidunt ut nibh. Donec massa tellus, vulputate eu semper et, consequat sit amet mi. Nam congue imperdiet elementum. Fusce finibus nec nibh id facilisis.",
+      "El juego definitivo para disfrutar con tu empresa. Dividiros en tres equipos de tres y tratad de conseguir el mayor número de huevos. ¡Ojo! No sólo puedes ir a puntuar, sino que ¡puedes también fastidiar a tus rivales!",
     url: "https://app.teamup.works/demo",
   },
 };

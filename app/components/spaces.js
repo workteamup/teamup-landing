@@ -13,7 +13,7 @@ const iconPath =
 const SpaceCard = ({ img, tags, title, description, url }) => {
   console.log(img);
   return (
-    <div className="w-full rounded-lg hover:shadow-2xl overflow-hidden border border-slate-200 hover:cursor-pointer flex flex-col min-h-full">
+    <div className="w-full rounded-lg hover:shadow-2xl overflow-hidden border border-slate-200 hover:cursor-pointer flex flex-col min-h-full group">
       <div
         className="h-[200px] bg-cover rounded-t-lg relative overflow-hidden bg-center"
         style={{ backgroundImage: `url(${img})` }}
@@ -29,7 +29,9 @@ const SpaceCard = ({ img, tags, title, description, url }) => {
             })}
         </div>
         <div className="flex flex-col space-y-1 flex-grow">
-          <h3 className="text-xl font-semibold">{title}</h3>
+          <h3 className="text-xl font-semibold group-hover:text-blue-600">
+            {title}
+          </h3>
           <p className="text-sm text-slate-400 grow">{description}</p>
         </div>
         <Button

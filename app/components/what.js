@@ -6,17 +6,17 @@ import WhatCard from "./what-card";
 const cards = [
   {
     title: "Trabaja",
-    text: "Texto descriptivo de beneficio de Team Up!",
+    text: "Ten reuniones de trabajo más efectivas apoyándote en el entorno de Team Up!",
     img: "/images/gif-trabaja.gif",
   },
   {
     title: "Conecta",
-    text: "Texto descriptivo de beneficio de Team Up!",
+    text: "Conoce más a fondo y estrecha vínculos con espacios óptimos para conversar",
     img: "/images/gif-conecta.gif",
   },
   {
     title: "Disfruta",
-    text: "Texto descriptivo de beneficio de Team Up!",
+    text: "Desconecta, relájate y pasa buen rato con nuestros juegos y actividades",
     img: "/images/gif-disfruta.gif",
   },
 ];

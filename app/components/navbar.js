@@ -63,13 +63,13 @@ const Navbar = () => {
                 );
               })}
             </ul> */}
-            <ul className="flex flex-row justify-center space-x-1 height-10 p-1 rounded-lg">
+            <ul className="flex flex-row justify-center space-x-2 height-10 p-1 rounded-lg">
               {navLinks.map((link, key) => {
                 return (
                   <li id={`#${link.id}`} key={key}>
                     <a
                       href={link.href}
-                      className="text-base px-4 h-9 flex justify-center items-center font-medium hover:bg-blue-50  hover:text-blue-500 hover:shadow-lg rounded-md text-center"
+                      className="text-base px-6 h-10 flex justify-center items-center font-medium hover:bg-blue-50  hover:text-blue-600 hover:shadow-sm rounded-md text-center"
                     >
                       {link.title}
                     </a>
