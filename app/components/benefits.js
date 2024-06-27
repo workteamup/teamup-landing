@@ -35,7 +35,10 @@ const Benefits = () => {
         <div className="flex flex-wrap justify-center -m- min-h-full">
           {benefitsArray.map((benefit, key) => {
             return (
-              <div className="md:basis-1/2 lg:basis-1/3 p-2 min-h-full">
+              <div
+                key={key}
+                className="md:basis-1/2 lg:basis-1/3 p-2 min-h-full"
+              >
                 <BenefitCard
                   key={`benefit-${key}`}
                   icon={
