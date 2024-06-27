@@ -69,7 +69,7 @@ const Navbar = () => {
                   <li id={`#${link.id}`} key={key}>
                     <a
                       href={link.href}
-                      className="text-base px-6 h-10 flex justify-center items-center font-medium hover:bg-blue-50  hover:text-blue-600 hover:shadow-sm rounded-md text-center"
+                      className="text-sm px-3 h-10 flex justify-center items-center font-medium hover:bg-blue-50  hover:text-blue-600 hover:shadow-sm rounded-md text-center"
                     >
                       {link.title}
                     </a>

@@ -29,7 +29,7 @@ const SpaceCard = ({ img, tags, title, description, url }) => {
             })}
         </div>
         <div className="flex flex-col space-y-1 flex-grow">
-          <h3 className="text-xl font-semibold group-hover:text-blue-600">
+          <h3 className="text-xl font-semibold group-hover:text-blue-00">
             {title}
           </h3>
           <p className="text-sm text-slate-400 grow">{description}</p>
@@ -61,7 +61,7 @@ const Spaces = () => {
         <div className="flex flex-wrap justify-center items-stretch -m-2">
           {Object.values(spaces).map((space, key) => {
             return (
-              <div className="sm:basis-1/2 md:basis-1/3 p-2" key={key}>
+              <div className="sm:basis-1/2 lg:basis-1/3 p-2" key={key}>
                 <SpaceCard
                   key={key}
                   img={space.img}

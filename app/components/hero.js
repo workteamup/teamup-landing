@@ -39,8 +39,9 @@ const Hero = () => {
           Tu equipo remoto, más unido que nunca
         </h1>
         <p className="text-xl sm:text-2xl text-slate-400 text-center font-light">
-          Team Up! te da las herramientas para que saques el máximo partido al
-          trabajo remoto manteniendo a tu gente implicada.
+          Eleva tu equipo remoto al siguiente nivel. Team Up! te da las
+          herramientas para crear una cultura de éxito a distancia. Potencia la
+          productividad y el compromiso de tu equipo desde hoy mismo.
         </p>
         <div className="flex flex-col space-y-2 w-full sm:flex-row sm:space-x-4 sm:space-y-0 justify-center mt-10">
           <Button
@@ -51,7 +52,7 @@ const Hero = () => {
               window.open("https://app.teamup.works/signup", "_blank")
             }
           >
-            Empezar ya gratis
+            ¡Pruébalo gratis ahora!
           </Button>
           <Button
             type="button"
@@ -61,7 +62,7 @@ const Hero = () => {
               window.open("https://teamup-ignacio.youcanbook.me/", "_blank")
             }
           >
-            Programar demo
+            Programa una demo
           </Button>
         </div>
       </div>

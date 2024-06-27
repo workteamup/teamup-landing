@@ -4,7 +4,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Fogata",
     description:
-      "Organiza dinámicas de grupo perfectas en un lugar en el que no tendrás que preocuparte por la conversación ya que podrás sacar temas aleatorios de diversa índole gracias al entorno de Team Up!",
+      "¿Listo para encender la chispa de tu equipo? En Fogata, las conversaciones fluyen tan naturalmente como las llamas. Olvídate del silencio incómodo - nuestros temas aleatorios mantendrán el fuego de la charla vivo y crepitante. Es el lugar perfecto para derretir el hielo y forjar lazos más fuertes que el acero. ¡Ven a calentar el ambiente y crear recuerdos que brillarán por siempre!",
     url: "https://app.teamup.works/demo",
   },
   auditorio: {
@@ -12,7 +12,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Auditorio",
     description:
-      "El lugar perfecto para hacer presentaciones, reuniones a nivel de empresa, eventos. Disfruta de un auditorio inmersivo donde encima podrás realizar votaciones rápidamente.",
+      "¿Quieres que tus ideas brillen en el escenario? Nuestro Auditorio es tu pasaporte al estrellato corporativo. Sumérgete en un espacio donde cada presentación se convierte en un espectáculo y cada reunión en un evento de gala. Con nuestro sistema de votación ultrarrápido, la participación del público está garantizada. ¡Hora de robar el show y dejar a tu audiencia con la boca abierta!",
     url: "https://app.teamup.works/demo",
   },
   votaciones: {
@@ -20,7 +20,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Planning",
     description:
-      "Si necesitas tomar decisiones de trabajo rápidamente, éste es el lugar para tí. Mejora la toma de decisiones con un espacio perfecto e interactivo donde no influenciar el voto.",
+      "¿Decisiones rápidas sin perder el norte? ¡Bienvenido a Planning, el gimnasio mental de los equipos de alto rendimiento! Aquí, las ideas compiten en igualdad de condiciones y las mejores estrategias ganan por KO técnico. Nuestro sistema de votación es más rápido que un parpadeo, perfecto para cuando el tiempo aprieta y las decisiones queman. ¡Prepárate para convertir tu próxima reunión en una tormenta de ideas imparable!",
     url: "https://app.teamup.works/demo",
   },
   debate: {
@@ -28,7 +28,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Sala de debate",
     description:
-      "¿Quieres organizar una discusión entre múltiples personas de una manera óptima? Nuestra sala de debate es perfecta para ello. Podrás controlar los turnos de palabra y asegurarte que los participantes están en igualdad.",
+      "¿Listo para el combate de ideas del siglo? En nuestra Sala de Debate, las palabras son tu arma y los argumentos tu escudo. Aquí, cada voz tiene su momento de gloria y las interrupciones quedan KO'd. Ideal para transformar conflictos en oportunidades y desacuerdos en innovación. ¡Sube al ring y demuestra que tus ideas tienen el gancho perfecto!",
     url: "https://app.teamup.works/demo",
   },
   lava: {
@@ -36,7 +36,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "El suelo es lava",
     description:
-      'Si quieres desconectar y "relajarte", no hay sitio mejor que este espacio. Trata de conseguir llegar al final del circuito mientras evitas los obstáculos y te partes de risa viendo como tus compañeros caen.',
+      '¿Necesitas un respiro ardiente en tu día? ¡Bienvenido a "El suelo es lava", donde el trabajo se derrite y la diversión entra en erupción! Desafía a tus colegas en un circuito de obstáculos que hará hervir tu adrenalina. Perfecto para fundir el estrés y forjar lazos de equipo más resistentes que el magma. ¡Prepárate para saltar, reír y recordar por qué tu equipo es más caliente que el volcán!',
     url: "https://app.teamup.works/demo",
   },
   conecta4: {
@@ -44,7 +44,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Cuatro en raya",
     description:
-      "Disfruta de una actividad en grupo en este espacio con 4 mallas de Conecta 4 donde no sólo hay que elegir dónde meter la ficha, sino que tendrás que ser capaz de meterla para que cuente. ¿Quién será el mejor de tu equipo?",
+      "¿Crees que tienes puntería de campeón y mente de estratega? 'Cuatro en raya' te reta a demostrar que eres la combinación perfecta de precisión y astucia. Con cuatro tableros para elegir, cada movimiento cuenta doble. ¿Serás tú quien grite '¡Bingo!' antes que nadie? Ideal para encender la chispa de la competencia amistosa y descubrir quién tiene la mente más afilada del equipo. ¡Que empiece el duelo de ingenio!",
     url: "https://app.teamup.works/demo",
   },
   corral: {
@@ -52,7 +52,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "El corral",
     description:
-      "El juego definitivo para disfrutar con tu empresa. Dividiros en tres equipos de tres y tratad de conseguir el mayor número de huevos. ¡Ojo! No sólo puedes ir a puntuar, sino que ¡puedes también fastidiar a tus rivales!",
+      "¡Bienvenidos a 'El corral', donde la diversión se pone salvaje! Divide y vencerás en este juego de tres equipos que te hará correr como pollo sin cabeza. Recolecta huevos, sabotea a tus rivales y demuestra que tu equipo es el más astuto del gallinero. Perfecto para liberar el espíritu competitivo y fomentar estrategias dignas de un zorro. ¡Prepárate para cacarear de risa y coronarte como el rey del corral!",
     url: "https://app.teamup.works/demo",
   },
 };

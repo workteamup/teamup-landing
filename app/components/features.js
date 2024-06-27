@@ -18,9 +18,9 @@ const Features = () => {
     <div id="features" className="mb-24 md:mb-[200px]">
       <SectionHeader
         tag="Funcionalidades"
-        heading="Experimenta la solución para colaboración todo-en-1"
+        heading="Descubre la solución integral para una colaboración más eficiente y divertida"
         subheading="Todas las funcionalidades que necesitas para que tus reuniones de trabajo sean más eficientes, tus experiencias sociales más divertidas y tus eventos más entretenidos."
-        width="800"
+        width="1200"
       />
       <div className="flex flex-wrap justify-center mt-14 md:max-w-[960px] m-auto">
         {features.map((feature, key) => {

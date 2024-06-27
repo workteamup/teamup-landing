@@ -6,17 +6,17 @@ import WhatCard from "./what-card";
 const cards = [
   {
     title: "Trabaja",
-    text: "Ten reuniones de trabajo más efectivas apoyándote en el entorno de Team Up!",
+    text: "Potencia tus reuniones con un entorno interactivo que maximiza la productividad y el engagement.",
     img: "/images/gif-trabaja.gif",
   },
   {
     title: "Conecta",
-    text: "Conoce más a fondo y estrecha vínculos con espacios óptimos para conversar",
+    text: "Forja vínculos más fuertes con espacios diseñados para conversaciones auténticas y colaboración natural.",
     img: "/images/gif-conecta.gif",
   },
   {
     title: "Disfruta",
-    text: "Desconecta, relájate y pasa buen rato con nuestros juegos y actividades",
+    text: "Recarga energías y fortalece lazos de equipo con juegos y actividades que fomentan la diversión y el compañerismo.",
     img: "/images/gif-disfruta.gif",
   },
 ];
@@ -26,9 +26,9 @@ const What = () => {
     <div id="what" className="mb-24 md:mb-[200px]">
       <SectionHeader
         tag="Qué es Team Up!"
-        heading="Experimenta una nueva manera de trabajar, interactuar y socializar"
-        subheading="Team Up! añade una nueva dimensión a tu manera de relacionarte en un entorno remoto, dando lugar a los momentos espontáneos que echamos de menos de la oficina."
-        width="800"
+        heading="Descubre una nueva forma de trabajar, interactuar y socializar en un entorno remoto"
+        subheading="Team Up! revoluciona tu experiencia laboral remota, recreando los momentos espontáneos y las conexiones que echas de menos de la oficina."
+        width="960"
         className="mb-14"
       />
       <div className="max-w-[1440px] m-auto p-4">
