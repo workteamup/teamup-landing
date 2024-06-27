@@ -65,7 +65,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <div className="max-w-[960px] mx-auto overflow-hidden rounded-xl ">
+      <div className="xl:max-w-[1200px] lg:max-w-[960px] mx-auto overflow-hidden rounded-xl ">
         <ResponsiveVideoComponent videoUrl={video} />
       </div>
     </div>

@@ -24,7 +24,7 @@ const benefitsArray = [
 
 const Benefits = () => {
   return (
-    <div className="mb-24 md:mb-[200px]" id="benefits">
+    <div className="mb-24 md:mb-[200px] cursor-pointer" id="benefits">
       <SectionHeader
         tag="Beneficios"
         heading="Acorta la distancia del trabajo en remoto, estimulando un clima de cercanía, dinamismo y sinergia a través de Team Up!"

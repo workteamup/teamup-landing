@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="z-50 hidden lg:block fixed w-full p-4 bg-slate-50/70 backdrop-blur-sm">
+      <div className="z-50 hidden lg:block fixed w-full p-4 bg-slate-50/70 backdrop-blur-lg">
         <div className="flex justify-between items-center relative">
           <div className="text-indigo-800 h-5">
             <a href="#hero">
@@ -49,13 +49,27 @@ const Navbar = () => {
             </a>
           </div>
           <div className="absolute left-1/2 -translate-x-2/4">
-            <ul className="flex flex-row justify-center space-x-1 height-10 p-1 bg-blue-950 text-white rounded-lg">
+            {/* <ul className="flex flex-row justify-center space-x-1 height-10 p-1 bg-blue-950 text-white rounded-lg">
               {navLinks.map((link, key) => {
                 return (
                   <li id={`#${link.id}`} key={key}>
                     <a
                       href={link.href}
                       className="text-sm px-4 h-9 flex justify-center items-center font-medium hover:bg-white hover:text-blue-950 rounded-md text-center"
+                    >
+                      {link.title}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul> */}
+            <ul className="flex flex-row justify-center space-x-1 height-10 p-1 text-bg-950 rounded-lg">
+              {navLinks.map((link, key) => {
+                return (
+                  <li id={`#${link.id}`} key={key}>
+                    <a
+                      href={link.href}
+                      className="text-sm px-4 h-9 flex justify-center items-center font-medium hover:bg-blue-50  hover:text-blue-500 hover:shadow-lg rounded-md text-center"
                     >
                       {link.title}
                     </a>

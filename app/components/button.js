@@ -27,11 +27,11 @@ const Button = ({
           : "h-9 px-4 text-sm space-x-2 rounded"
       } ${
         variant === "primary"
-          ? "bg-indigo-600 text-white hover:bg-indigo-500"
+          ? "bg-indigo-600 text-white hover:bg-indigo-500 bg-gradient-to-tr from-indigo-500 to-blue-300 hover:from-indigo-600 hover:to-blue-400 shadow-md hover:shadow-lg"
           : variant === "secondary"
-          ? "bg-white text-blue-950 border border-indigo-500 hover:border-indigo-600 hover:bg-indigo-50"
+          ? "bg-white text-blue-950 border border-indigo-500 hover:border-indigo-600 hover:bg-indigo-50 bg-white text-blue-950 border border-blue-200 hover:border-blue-400 hover:text-blue-500 hover:shadow-md"
           : variant === "tertiary"
-          ? "text-blue-950 hover:text-indigo-800 hover:bg-indigo-50"
+          ? "text-blue-950 hover:text-indigo-800 hover:bg-indigo-50 text-blue-950 hover:text-blue-700 hover:bg-blue-50 hover:from-indigo-50 hover:to-blue-50"
           : "bg-indigo-600 text-white hover:bg-indigo-400"
       }  font-medium flex justify-center items-center`}
     >

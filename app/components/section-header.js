@@ -11,10 +11,11 @@ const SectionHeader = ({
   primaryButton,
   secondaryButton,
   width,
+  className,
 }) => {
   return (
     <div
-      className={`m-auto flex flex-col justify-center items-center space-y-4 max-w-[${width}px] pt-[96px] px-4`}
+      className={`m-auto flex flex-col justify-center items-center space-y-4 max-w-[${width}px] pt-[96px] px-4 ${className}`}
     >
       {tag && (
         <div className="inline-flex items-center">
@@ -27,7 +28,9 @@ const SectionHeader = ({
         </h1>
       )}
       {subheading && (
-        <p className="text-lg md:text-xl text-slate-400 text-center">{subheading}</p>
+        <p className="text-lg md:text-xl text-slate-400 text-center">
+          {subheading}
+        </p>
       )}
       {(primaryButton || secondaryButton) && (
         <div>

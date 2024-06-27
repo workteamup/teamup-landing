@@ -13,33 +13,34 @@ const iconPath =
 const SpaceCard = ({ img, tags, title, description, url }) => {
   console.log(img);
   return (
-    <div className="w-full rounded-lg hover:shadow-2xl overflow-hidden h-full border border-slate-200">
-      <div className="h-[200px] bg-cover rounded-t-lg relative overflow-hidden">
-        <Image src={img} alt="wtf is this" fill />
+    <div className="w-full rounded-lg hover:shadow-2xl overflow-hidden border border-slate-200 hover:cursor-pointer flex flex-col min-h-full">
+      <div
+        className="h-[200px] bg-cover rounded-t-lg relative overflow-hidden bg-center"
+        style={{ backgroundImage: `url(${img})` }}
+        // className="relative h-[164px] "
+      >
+        {/* <Image src={img} alt="wtf is this" fill /> */}
       </div>
-      <div className="rounded-b-lg  p-6 flex-col space-between">
-        <div className="flex flex-col space-y-2 mb-6 grow">
-          <div className="inline-flex space-x-1">
-            {tags &&
-              tags.map((tag, key) => {
-                return <Tag key={key}>{tag}</Tag>;
-              })}
-          </div>
+      <div className="flex flex-col space-y-4 flex-grow p-6">
+        <div className="inline-flex space-x-1">
+          {tags &&
+            tags.map((tag, key) => {
+              return <Tag key={key}>{tag}</Tag>;
+            })}
+        </div>
+        <div className="flex flex-col space-y-1 flex-grow">
           <h3 className="text-xl font-semibold">{title}</h3>
-          <p className="text-sm mb-6 text-slate-400 grow">{description}</p>
+          <p className="text-sm text-slate-400 grow">{description}</p>
         </div>
-        <div>
-          <Button
-            iconRight={<UnknownIcon width="20" height="20" path={iconPath} />}
-            type="button"
-            size="sm"
-            onClick={() =>
-              window.open("https://app.teamup.works/demo", "_blank")
-            }
-          >
-            Ver en demo
-          </Button>
-        </div>
+        <Button
+          variant="primary"
+          iconRight={<UnknownIcon width="20" height="20" path={iconPath} />}
+          type="button"
+          size="sm"
+          onClick={() => window.open("https://app.teamup.works/demo", "_blank")}
+        >
+          Ver en demo
+        </Button>
       </div>
     </div>
   );
@@ -54,7 +55,7 @@ const Spaces = () => {
         subheading="No echarás de menos ningún espacio dentro de Team Up! Todos los posibles escenarios que puedas necesitar para tu actividad están (o estarán) aquí."
         width="800"
       />
-      <div className="max-w-[1440px] mx-auto mt-14">
+      <div className="max-w-[1440px] mx-auto mt-14 p-4">
         <div className="flex flex-wrap justify-center items-stretch -m-2">
           {Object.values(spaces).map((space, key) => {
             return (

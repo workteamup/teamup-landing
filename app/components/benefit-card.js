@@ -3,7 +3,7 @@
 const BenefitCard = ({ icon, title, text }) => {
   return (
     <div className="flex flex-col space-y-6 py-12 m-3 w-full sm:w-[400px] items-center px-6 hover:shadow-2xl rounded-xl hover:border hover:border-slate-200">
-      <div className="h-20 w-20 bg-indigo-100 rounded-2xl text-indigo-700 flex justify-center items-center">
+      <div className="h-20 w-20 bg-blue-50 border border-blue-100 rounded-2xl text-blue-500 flex justify-center items-center">
         <div className="h-8 w-8">{icon}</div>
       </div>
       <div className="flex flex-col space-y-2">
