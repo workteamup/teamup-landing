@@ -21,14 +21,14 @@ const SpaceCard = ({ img, tags, title, description, url }) => {
       >
         {/* <Image src={img} alt="wtf is this" fill /> */}
       </div>
-      <div className="flex flex-col space-y-4 flex-grow p-6">
+      <div className="flex flex-col space-y-6 flex-grow p-6">
         <div className="inline-flex space-x-1">
           {tags &&
             tags.map((tag, key) => {
               return <Tag key={key}>{tag}</Tag>;
             })}
         </div>
-        <div className="flex flex-col space-y-1 flex-grow">
+        <div className="flex flex-col space-y-2 flex-grow">
           <h3 className="text-xl font-semibold group-hover:text-blue-00">
             {title}
           </h3>
