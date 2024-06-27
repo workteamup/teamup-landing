@@ -4,7 +4,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Fogata",
     description:
-      "¿Listo para encender la chispa de tu equipo? En Fogata, las conversaciones fluyen tan naturalmente como las llamas. Olvídate del silencio incómodo - nuestros temas aleatorios mantendrán el fuego de la charla vivo y crepitante. Es el lugar perfecto para derretir el hielo y forjar lazos más fuertes que el acero. ¡Ven a calentar el ambiente y crear recuerdos que brillarán por siempre!",
+      "Enciende conversaciones inolvidables en este espacio informal. La fogata ofrece temas aleatorios que mantienen el diálogo fluido y entretenido. Ideal para romper el hielo y fortalecer lazos de equipo, aquí las charlas fluyen tan naturalmente como en torno a una hoguera. ¡Prepárate para crear conexiones que brillarán por mucho tiempo!",
     url: "https://app.teamup.works/demo",
   },
   auditorio: {
@@ -12,7 +12,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Auditorio",
     description:
-      "¿Quieres que tus ideas brillen en el escenario? Nuestro Auditorio es tu pasaporte al estrellato corporativo. Sumérgete en un espacio donde cada presentación se convierte en un espectáculo y cada reunión en un evento de gala. Con nuestro sistema de votación ultrarrápido, la participación del público está garantizada. ¡Hora de robar el show y dejar a tu audiencia con la boca abierta!",
+      "Haz que tus ideas brillen en nuestro auditorio virtual. Diseñado para presentaciones impactantes, cuenta con un sistema de votación en tiempo real que garantiza la participación activa. Perfecto para webinars, formaciones y eventos donde quieres cautivar a tu audiencia. ¡Convierte cada presentación en un evento memorable!",
     url: "https://app.teamup.works/demo",
   },
   votaciones: {
@@ -20,7 +20,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Planning",
     description:
-      "¿Decisiones rápidas sin perder el norte? ¡Bienvenido a Planning, el gimnasio mental de los equipos de alto rendimiento! Aquí, las ideas compiten en igualdad de condiciones y las mejores estrategias ganan por KO técnico. Nuestro sistema de votación es más rápido que un parpadeo, perfecto para cuando el tiempo aprieta y las decisiones queman. ¡Prepárate para convertir tu próxima reunión en una tormenta de ideas imparable!",
+      "Toma decisiones rápidas y efectivas en este espacio optimizado. Nuestra sala de planning combina herramientas de votación instantánea con un entorno propicio para el brainstorming. Ideal para sesiones estratégicas donde el tiempo es oro, aquí las grandes ideas toman forma a la velocidad del pensamiento. ¡Lleva la eficiencia de tu equipo al siguiente nivel!",
     url: "https://app.teamup.works/demo",
   },
   debate: {
@@ -28,7 +28,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Sala de debate",
     description:
-      "¿Listo para el combate de ideas del siglo? En nuestra Sala de Debate, las palabras son tu arma y los argumentos tu escudo. Aquí, cada voz tiene su momento de gloria y las interrupciones quedan KO'd. Ideal para transformar conflictos en oportunidades y desacuerdos en innovación. ¡Sube al ring y demuestra que tus ideas tienen el gancho perfecto!",
+      "Organiza discusiones productivas y ordenadas en este espacio diseñado para el intercambio de ideas. Con un sistema que gestiona los turnos de palabra, la sala de debate garantiza que todas las voces sean escuchadas. Ideal para resolver conflictos, tomar decisiones en grupo o fomentar la innovación colaborativa. ¡Transforma los desacuerdos en oportunidades de crecimiento!",
     url: "https://app.teamup.works/demo",
   },
   lava: {
@@ -36,7 +36,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "El suelo es lava",
     description:
-      '¿Necesitas un respiro ardiente en tu día? ¡Bienvenido a "El suelo es lava", donde el trabajo se derrite y la diversión entra en erupción! Desafía a tus colegas en un circuito de obstáculos que hará hervir tu adrenalina. Perfecto para fundir el estrés y forjar lazos de equipo más resistentes que el magma. ¡Prepárate para saltar, reír y recordar por qué tu equipo es más caliente que el volcán!',
+      "Desconecta y diviértete en este circuito de obstáculos virtuales. 'El suelo es lava' ofrece un escape divertido de la rutina laboral, fomentando el trabajo en equipo de forma lúdica. Perfecto para breaks energizantes o para cerrar la jornada con risas. ¡Desafía a tus colegas y fortalece lazos mientras esquivas la 'lava' digital!",
     url: "https://app.teamup.works/demo",
   },
   conecta4: {
@@ -44,7 +44,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "Cuatro en raya",
     description:
-      "¿Crees que tienes puntería de campeón y mente de estratega? 'Cuatro en raya' te reta a demostrar que eres la combinación perfecta de precisión y astucia. Con cuatro tableros para elegir, cada movimiento cuenta doble. ¿Serás tú quien grite '¡Bingo!' antes que nadie? Ideal para encender la chispa de la competencia amistosa y descubrir quién tiene la mente más afilada del equipo. ¡Que empiece el duelo de ingenio!",
+      "Pon a prueba tu estrategia y puntería en esta versión única del clásico juego. Con cuatro tableros simultáneos, Cuatro en raya eleva la diversión y el desafío. Ideal para fomentar el pensamiento estratégico y la sana competencia entre equipos. ¡Demuestra tu astucia y precisión en este juego que combina habilidad mental y destreza!",
     url: "https://app.teamup.works/demo",
   },
   corral: {
@@ -52,7 +52,7 @@ export const spaces = {
     tags: ["conecta", "disfruta"],
     title: "El corral",
     description:
-      "¡Bienvenidos a 'El corral', donde la diversión se pone salvaje! Divide y vencerás en este juego de tres equipos que te hará correr como pollo sin cabeza. Recolecta huevos, sabotea a tus rivales y demuestra que tu equipo es el más astuto del gallinero. Perfecto para liberar el espíritu competitivo y fomentar estrategias dignas de un zorro. ¡Prepárate para cacarear de risa y coronarte como el rey del corral!",
+      "Sumérgete en la emoción de este juego de estrategia y colaboración. Divide tu equipo en tres grupos y compite por recolectar 'huevos' mientras evitas a los rivales. El corral fomenta la planificación en equipo, la comunicación rápida y el pensamiento táctico. ¡Perfecto para energizar reuniones y fortalecer el espíritu de equipo de forma divertida!",
     url: "https://app.teamup.works/demo",
   },
 };
