@@ -21,6 +21,7 @@ const Features = () => {
         heading="Descubre la solución integral para una colaboración más eficiente y divertida"
         subheading="Todas las funcionalidades que necesitas para que tus reuniones de trabajo sean más eficientes, tus experiencias sociales más divertidas y tus eventos más entretenidos."
         width="1200"
+        className="max-w-[1200px]"
       />
       <div className="flex flex-wrap justify-center mt-14 md:max-w-[960px] m-auto">
         {features.map((feature, key) => {
