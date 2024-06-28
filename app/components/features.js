@@ -6,9 +6,9 @@ import UnknownIcon from "./icons/unknown-icon";
 
 const FeatureTag = ({ icon, title }) => {
   return (
-    <div className="flex items-center h-12 bg-blue-50 border border-blue-100 hover:border-blue-200 px-4 rounded-full m-2 space-x-3 text-blue-800 group cursor-pointer hover:text-blue-500">
-      {icon && <div className="w-5 h-5 ">{icon}</div>}
-      <div className="text-base font-medium">{title}</div>
+    <div className="flex items-center h-10 md:h-12 bg-blue-50 border border-blue-100 hover:border-blue-200 px-3 md:px-4 rounded-full m-1 md:m-2 space-x-2 md:space-x-3 text-blue-800 group cursor-pointer hover:text-blue-500">
+      {icon && <div className="w-4 h-4 md:w-5 md:h-5 ">{icon}</div>}
+      <div className="text-sm md:text-base font-medium">{title}</div>
     </div>
   );
 };
