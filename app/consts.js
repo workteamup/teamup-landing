@@ -1,7 +1,7 @@
 export const spaces = {
   fogata: {
     img: "/images/campfire.png",
-    tags: ["conecta", "disfruta"],
+    tags: ["conecta"],
     title: "Fogata",
     description:
       "Enciende conversaciones inolvidables en este espacio informal. La fogata ofrece temas aleatorios que mantienen el diálogo fluido y entretenido. Ideal para romper el hielo y fortalecer lazos de equipo, aquí las charlas fluyen tan naturalmente como en torno a una hoguera. ¡Prepárate para crear conexiones que brillarán por mucho tiempo!",
@@ -9,7 +9,7 @@ export const spaces = {
   },
   auditorio: {
     img: "/images/auditorium.png",
-    tags: ["conecta", "disfruta"],
+    tags: ["trabaja", "disfruta"],
     title: "Auditorio",
     description:
       "Haz que tus ideas brillen en nuestro auditorio virtual. Diseñado para presentaciones impactantes, cuenta con un sistema de votación en tiempo real que garantiza la participación activa. Perfecto para webinars, formaciones y eventos donde quieres cautivar a tu audiencia. ¡Convierte cada presentación en un evento memorable!",
@@ -17,7 +17,7 @@ export const spaces = {
   },
   votaciones: {
     img: "/images/planning.png",
-    tags: ["conecta", "disfruta"],
+    tags: ["trabaja"],
     title: "Planning",
     description:
       "Toma decisiones rápidas y efectivas en este espacio optimizado. Nuestra sala de planning combina herramientas de votación instantánea con un entorno propicio para el brainstorming. Ideal para sesiones estratégicas donde el tiempo es oro, aquí las grandes ideas toman forma a la velocidad del pensamiento. ¡Lleva la eficiencia de tu equipo al siguiente nivel!",
@@ -25,7 +25,7 @@ export const spaces = {
   },
   debate: {
     img: "/images/debate.png",
-    tags: ["conecta", "disfruta"],
+    tags: ["trabaja", "conecta", "disfruta"],
     title: "Sala de debate",
     description:
       "Organiza discusiones productivas y ordenadas en este espacio diseñado para el intercambio de ideas. Con un sistema que gestiona los turnos de palabra, la sala de debate garantiza que todas las voces sean escuchadas. Ideal para resolver conflictos, tomar decisiones en grupo o fomentar la innovación colaborativa. ¡Transforma los desacuerdos en oportunidades de crecimiento!",
@@ -33,7 +33,7 @@ export const spaces = {
   },
   lava: {
     img: "/images/lava.png",
-    tags: ["conecta", "disfruta"],
+    tags: ["disfruta"],
     title: "El suelo es lava",
     description:
       "Desconecta y diviértete en este circuito de obstáculos virtuales. 'El suelo es lava' ofrece un escape divertido de la rutina laboral, fomentando el trabajo en equipo de forma lúdica. Perfecto para breaks energizantes o para cerrar la jornada con risas. ¡Desafía a tus colegas y fortalece lazos mientras esquivas la 'lava' digital!",
@@ -49,7 +49,7 @@ export const spaces = {
   },
   corral: {
     img: "/images/farm.png",
-    tags: ["conecta", "disfruta"],
+    tags: ["disfruta"],
     title: "El corral",
     description:
       "Sumérgete en la emoción de este juego de estrategia y colaboración. Divide tu equipo en tres grupos y compite por recolectar 'huevos' mientras evitas a los rivales. El corral fomenta la planificación en equipo, la comunicación rápida y el pensamiento táctico. ¡Perfecto para energizar reuniones y fortalecer el espíritu de equipo de forma divertida!",
