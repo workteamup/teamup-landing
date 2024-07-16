@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "aws-build": "next build && sh aws-build.sh"
   },
   "dependencies": {
     "react": "^18",
