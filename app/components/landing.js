@@ -1,7 +1,6 @@
 "use client";
 
 import Benefits from "./benefits";
-import Navbar from "./navbar";
 import Hero from "./hero";
 import Spaces from "./spaces";
 import Features from "./features";

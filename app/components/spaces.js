@@ -1,10 +1,8 @@
 "use client";
 import { spaces } from "../consts";
 import UnknownIcon from "./icons/unknown-icon";
-import PrimaryButton from "./primary-button";
 import SectionHeader from "./section-header";
 import Tag from "./tag";
-import Image from "next/image";
 import Button from "./button";
 
 const iconPath =

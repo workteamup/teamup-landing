@@ -14,7 +14,7 @@ const primaryButton = {
 
 const ResponsiveVideoComponent = ({ videoUrl }) => {
   return (
-    <div className="mx-auto relative pb-[56.25%] w-full h-0">
+    <div className="mx-auto relative pb-[56.25%] w-full h-0 pointer-events-none">
       <iframe
         className="w-full h-full absolute top-0 left-0 border-0"
         src={videoUrl}

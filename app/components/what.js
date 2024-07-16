@@ -7,17 +7,17 @@ const cards = [
   {
     title: "Trabaja",
     text: "Potencia tus reuniones con un entorno interactivo que maximiza la productividad y el engagement.",
-    img: "/images/gif-trabaja.gif",
+    src: "/images/trabaja.mp4",
   },
   {
     title: "Conecta",
     text: "Forja vínculos más fuertes con espacios diseñados para conversaciones auténticas y colaboración natural.",
-    img: "/images/gif-conecta.gif",
+    src: "/images/conecta.mp4",
   },
   {
     title: "Disfruta",
     text: "Recarga energías y fortalece lazos de equipo con juegos y actividades que fomentan la diversión y el compañerismo.",
-    img: "/images/gif-disfruta.gif",
+    src: "/images/disfruta.mp4",
   },
 ];
 
@@ -39,7 +39,7 @@ const What = () => {
                 key={key}
                 className="p-2 basis-full sm:basis-1/2 xl:basis-1/3"
               >
-                <WhatCard title={card.title} text={card.text} img={card.img} />
+                <WhatCard title={card.title} text={card.text} src={card.src} />
               </div>
             );
           })}

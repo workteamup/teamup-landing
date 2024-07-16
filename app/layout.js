@@ -1,6 +1,6 @@
 import { Sora, Syne } from "next/font/google";
 import "./globals.css";
-
+import Script from "next/script";
 // const inter = Inter({ subsets: ["latin"] });
 
 //const work_sans = Work_Sans({ subsets: ["latin"] });
@@ -20,6 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <Script
+          src="https://cdn-cookieyes.com/client_data/61286c6a03a5761eb4e3563f/script.js"
+          strategy="beforeInteractive"
+        ></Script>
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${sora.className} antialiased`}>{children}</body>

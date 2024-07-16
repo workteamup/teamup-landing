@@ -1,6 +1,5 @@
 "use client";
 
-import Button from "./button";
 import Footer from "./footer";
 import UnknownIcon from "./icons/unknown-icon";
 import Link from "./link";

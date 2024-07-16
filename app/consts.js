@@ -1,6 +1,6 @@
 export const spaces = {
   fogata: {
-    img: "/images/campfire.png",
+    img: "/images/campfire.jpg",
     tags: ["conecta"],
     title: "Fogata",
     description:
@@ -8,7 +8,7 @@ export const spaces = {
     url: "https://app.teamup.works/demo",
   },
   auditorio: {
-    img: "/images/auditorium.png",
+    img: "/images/auditorium.jpg",
     tags: ["trabaja", "disfruta"],
     title: "Auditorio",
     description:
@@ -16,7 +16,7 @@ export const spaces = {
     url: "https://app.teamup.works/demo",
   },
   votaciones: {
-    img: "/images/planning.png",
+    img: "/images/planning.jpg",
     tags: ["trabaja"],
     title: "Planning",
     description:
@@ -24,7 +24,7 @@ export const spaces = {
     url: "https://app.teamup.works/demo",
   },
   debate: {
-    img: "/images/debate.png",
+    img: "/images/debate.jpg",
     tags: ["trabaja", "conecta", "disfruta"],
     title: "Sala de debate",
     description:
@@ -32,7 +32,7 @@ export const spaces = {
     url: "https://app.teamup.works/demo",
   },
   lava: {
-    img: "/images/lava.png",
+    img: "/images/lava.jpg",
     tags: ["disfruta"],
     title: "El suelo es lava",
     description:
@@ -40,7 +40,7 @@ export const spaces = {
     url: "https://app.teamup.works/demo",
   },
   conecta4: {
-    img: "/images/four.png",
+    img: "/images/four.jpg",
     tags: ["conecta", "disfruta"],
     title: "Cuatro en raya",
     description:
@@ -48,7 +48,7 @@ export const spaces = {
     url: "https://app.teamup.works/demo",
   },
   corral: {
-    img: "/images/farm.png",
+    img: "/images/farm.jpg",
     tags: ["disfruta"],
     title: "El corral",
     description:
