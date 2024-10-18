@@ -3,7 +3,6 @@
 import Button from "./button.js";
 import Label from "./label.js";
 import Image from "next/image";
-import CTAImage from "../../public/images/cta-img.png";
 
 const FooterCTA = ({
   tag,
@@ -17,7 +16,12 @@ const FooterCTA = ({
     <div
       className={`m-auto flex flex-col justify-center items-center space-y-8 max-w-[${width}px] pt-[96px] mb-[200px]`}
     >
-      <Image src={CTAImage} alt="wtf is this" />
+      <Image
+        src="/images/cta-img.png"
+        alt="CTA Image"
+        width={500}
+        height={300}
+      />
       <h1 className="text-2xl md:text-4xl text-center font-semibold px-4">
         Crea ya una cultura que saque lo mejor de tu equipo
       </h1>

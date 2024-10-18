@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from 'next-intl';
 import SectionHeader from "./section-header";
 import Label from "./label";
 import Button from "./button";
@@ -27,21 +28,19 @@ const ResponsiveVideoComponent = ({ videoUrl }) => {
 };
 
 const Hero = () => {
+  const t = useTranslations('Hero');
+
   return (
     <div id="hero" className="mb-24 md:mb-[200px] px-4">
       <div className="m-auto flex flex-col justify-center items-center max-w-[800px] mb-[80px]">
         <div className="inline-flex justify-center mt-[100px] md:mt-[200px]">
-          <Label>
-            La solución #1 para crear y mantener cultura de empresa en remoto
-          </Label>
+          <Label>{t('label')}</Label>
         </div>
         <h1 className="text-4xl md:text-7xl mt-2 text-center mb-4 font-semibold">
-          Tu equipo remoto, más unido que nunca
+          {t('title')}
         </h1>
         <p className="text-xl sm:text-2xl text-slate-400 text-center font-light">
-          Eleva tu equipo remoto al siguiente nivel. Team Up! te da las
-          herramientas para crear una cultura de éxito a distancia. Potencia la
-          productividad y el compromiso de tu equipo desde hoy mismo.
+          {t('description')}
         </p>
         <div className="flex flex-col space-y-2 w-full sm:flex-row sm:space-x-4 sm:space-y-0 justify-center mt-10">
           <Button
@@ -52,7 +51,7 @@ const Hero = () => {
               window.open("https://app.teamup.works/signup", "_blank")
             }
           >
-            ¡Pruébalo gratis ahora!
+            {t('primaryButton')}
           </Button>
           <Button
             type="button"
@@ -62,7 +61,7 @@ const Hero = () => {
               window.open("https://teamup-ignacio.youcanbook.me/", "_blank")
             }
           >
-            Programa una demo
+            {t('secondaryButton')}
           </Button>
         </div>
       </div>
