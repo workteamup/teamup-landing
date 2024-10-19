@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 import { features } from "../consts";
 import PrimaryButton from "./primary-button";
 import SectionHeader from "./section-header";
@@ -48,13 +50,15 @@ const SocialsIcon = ({ icon }) => {
 };
 
 const Footer = () => {
+  const t = useTranslations('Footer');
+
   return (
     <div id="footer px-4">
       <ul className="flex flex-col space-y-4 sm:flex-row justify-center m-auto sm:space-x-8 sm:space-y-0 mb-8">
         {links.map((link, key) => {
           return (
             <FooterLink key={key}>
-              <a href={link.href}>{link.title}</a>
+              <Link href={link.href} locale={false}>{t(link.title)}</Link>
             </FooterLink>
           );
         })}
@@ -65,7 +69,7 @@ const Footer = () => {
         })}
       </div> */}
       <p className="text-center pb-4">
-        {"\u00A9"} 2023 TEAM UP TECH ESPAÑA S.L. Todos los derechos reservados
+        {t('copyright', { year: new Date().getFullYear() })}
       </p>
     </div>
   );

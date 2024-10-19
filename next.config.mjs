@@ -1,11 +1,11 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 
+/** @type {import('next').NextConfig} */
 const withNextIntl = createNextIntlPlugin('./i18n.js');
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = withNextIntl({
   output: "npx serve@latest out",
   images: { unoptimized: true },
-};
+});
 
-export default withNextIntl(nextConfig);
+export default nextConfig;

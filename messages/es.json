@@ -5,6 +5,330 @@
     "description": "Eleva tu equipo remoto al siguiente nivel. Team Up! te da las herramientas para crear una cultura de éxito a distancia. Potencia la productividad y el compromiso de tu equipo desde hoy mismo.",
     "primaryButton": "¡Pruébalo gratis ahora!",
     "secondaryButton": "Programa una demo"
+  },
+  "Benefits": {
+    "tag": "Beneficios",
+    "heading": "Reduce las barreras del trabajo remoto y fomenta un ambiente de cercanía y colaboración dinámica con Team Up!",
+    "benefit1": {
+      "title": "Construye una cultura de empresa potente",
+      "text": "Atrae y retén al mejor talento con una cultura innovadora diseñada para el futuro del trabajo remoto."
+    },
+    "benefit2": {
+      "title": "Impulsa la satisfacción y fidelidad de tu equipo",
+      "text": "Mantén a tu equipo conectado y motivado con actividades remotas que fomentan el engagement y la diversión."
+    },
+    "benefit3": {
+      "title": "Potencia la productividad y eficiencia",
+      "text": "Transforma la unión y el compromiso de tu equipo en resultados tangibles, aprovechando al máximo las herramientas de Team Up!"
+    }
+  },
+  "What": {
+    "sectionHeader": {
+      "tag": "Qué es Team Up!",
+      "heading": "Descubre una nueva forma de trabajar, interactuar y socializar en un entorno remoto",
+      "subheading": "Team Up! revoluciona tu experiencia laboral remota, recreando los momentos espontáneos y las conexiones que echas de menos de la oficina."
+    },
+    "trabaja": {
+      "title": "Trabaja",
+      "text": "Potencia tus reuniones con un entorno interactivo que maximiza la productividad y el engagement."
+    },
+    "conecta": {
+      "title": "Conecta",
+      "text": "Forja vínculos más fuertes con espacios diseñados para conversaciones auténticas y colaboración natural."
+    },
+    "disfruta": {
+      "title": "Disfruta",
+      "text": "Recarga energías y fortalece lazos de equipo con juegos y actividades que fomentan la diversión y el compañerismo."
+    }
+  },
+  "Spaces": {
+    "sectionHeader": {
+      "tag": "Espacios",
+      "heading": "Espacios para cada tipo de reunión, actividad o evento",
+      "subheading": "¡No echarás de menos ningún espacio en Team Up! Todos los escenarios posibles que puedas necesitar para tu actividad están (o estarán) aquí."
+    },
+    "viewDemo": "Ver en demo",
+    "tags": {
+      "conecta": "Conecta",
+      "trabaja": "Trabaja",
+      "disfruta": "Disfruta"
+    },
+    "fogata": {
+      "title": "Fogata",
+      "description": "Enciende conversaciones inolvidables en este espacio informal. La fogata ofrece temas aleatorios que mantienen el diálogo fluido y entretenido. Ideal para romper el hielo y fortalecer lazos de equipo, aquí las charlas fluyen tan naturalmente como en torno a una hoguera. ¡Prepárate para crear conexiones que brillarán por mucho tiempo!"
+    },
+    "auditorio": {
+      "title": "Auditorio",
+      "description": "Haz que tus ideas brillen en nuestro auditorio virtual. Diseñado para presentaciones impactantes, cuenta con un sistema de votación en tiempo real que garantiza la participación activa. Perfecto para webinars, formaciones y eventos donde quieres cautivar a tu audiencia. ¡Convierte cada presentación en un evento memorable!"
+    },
+    "votaciones": {
+      "title": "Planning",
+      "description": "Toma decisiones rápidas y efectivas en este espacio optimizado. Nuestra sala de planning combina herramientas de votación instantánea con un entorno propicio para el brainstorming. Ideal para sesiones estratégicas donde el tiempo es oro, aquí las grandes ideas toman forma a la velocidad del pensamiento. ¡Lleva la eficiencia de tu equipo al siguiente nivel!"
+    },
+    "debate": {
+      "title": "Sala de debate",
+      "description": "Organiza discusiones productivas y ordenadas en este espacio diseñado para el intercambio de ideas. Con un sistema que gestiona los turnos de palabra, la sala de debate garantiza que todas las voces sean escuchadas. Ideal para resolver conflictos, tomar decisiones en grupo o fomentar la innovación colaborativa. ¡Transforma los desacuerdos en oportunidades de crecimiento!"
+    },
+    "lava": {
+      "title": "El suelo es lava",
+      "description": "Desconecta y diviértete en este circuito de obstáculos virtuales. 'El suelo es lava' ofrece un escape divertido de la rutina laboral, fomentando el trabajo en equipo de forma lúdica. Perfecto para breaks energizantes o para cerrar la jornada con risas. ¡Desafía a tus colegas y fortalece lazos mientras esquivas la 'lava' digital!"
+    },
+    "conecta4": {
+      "title": "Cuatro en raya",
+      "description": "Pon a prueba tu estrategia y puntería en esta versión única del clásico juego. Con cuatro tableros simultáneos, Cuatro en raya eleva la diversión y el desafío. Ideal para fomentar el pensamiento estratégico y la sana competencia entre equipos. ¡Demuestra tu astucia y precisión en este juego que combina habilidad mental y destreza!"
+    },
+    "corral": {
+      "title": "El corral",
+      "description": "Sumérgete en la emoción de este juego de estrategia y colaboración. Divide tu equipo en tres grupos y compite por recolectar 'huevos' mientras evitas a los rivales. El corral fomenta la planificación en equipo, la comunicación rápida y el pensamiento táctico. ¡Perfecto para energizar reuniones y fortalecer el espíritu de equipo de forma divertida!"
+    }
+  },
+  "Features": {
+    "tag": "Funcionalidades",
+    "heading": "Descubre la solución integral para una colaboración más eficiente y divertida",
+    "subheading": "Todas las funcionalidades que necesitas para que tus reuniones de trabajo sean más eficientes, tus experiencias sociales más divertidas y tus eventos más entretenidos.",
+    "3dSpace": "Espacio 3D",
+    "voiceChat": "Chat de voz",
+    "textChat": "Chat de texto",
+    "screenSharing": "Compartir pantalla",
+    "reactions": "Reacciones",
+    "calendar": "Calendario",
+    "speakingTurns": "Turnos de palabra",
+    "userManagement": "Gestión de usuarios",
+    "timers": "Temporizadores",
+    "meetingPoints": "Puntos de reunión",
+    "activities": "Actividades",
+    "voting": "Votaciones",
+    "plugAndPlay": "Plug and Play",
+    "inBrowser": "En el navegador",
+    "customAvatar": "Avatar personalizado",
+    "googleIntegration": "Integración con Google"
+  },
+  "Footer": {
+    "Aviso legal y condiciones de uso": "Aviso legal y condiciones de uso",
+    "Política de privacidad": "Política de privacidad",
+    "Política de cookies": "Política de cookies",
+    "copyright": "© {year} TEAM UP TECH ESPAÑA S.L. Todos los derechos reservados"
+  },
+  "FooterCTA": {
+    "imageAlt": "Imagen CTA",
+    "heading": "Crea una cultura que saque lo mejor de tu equipo ahora",
+    "primaryButton": "Empieza gratis",
+    "secondaryButton": "Programa una demo"
+  },
+  "CookiePolicy": {
+    "title": "Política de cookies",
+    "intro": {
+      "p1": "El acceso a este Sitio Web puede implicar la utilización de cookies. Las cookies son pequeñas cantidades de información que se almacenan en el navegador utilizado por cada Usuario —en los distintos dispositivos que pueda utilizar para navegar— para que el servidor recuerde cierta información que posteriormente y únicamente el servidor que la implementó leerá. Las cookies facilitan la navegación, la hacen más amigable, y no dañan el dispositivo de navegación.",
+      "p2": "Las cookies son procedimientos automáticos de recogida de información relativa a las preferencias determinadas por el Usuario durante su visita al Sitio Web con el fin de reconocerlo como Usuario, y personalizar su experiencia y el uso del Sitio Web, y pueden también, por ejemplo, ayudar a identificar y resolver errores.",
+      "p3": "La información recabada a través de las cookies puede incluir la fecha y hora de visitas al Sitio Web, las páginas visionadas, el tiempo que ha estado en el Sitio Web y los sitios visitados justo antes y después del mismo. Sin embargo, ninguna cookie permite que esta misma pueda contactarse con el número de teléfono del Usuario o con cualquier otro medio de contacto personal. Ninguna cookie puede extraer información del disco duro del Usuario o robar información personal. La única manera de que la información privada del Usuario forme parte del archivo Cookie es que el usuario dé personalmente esa información al servidor.",
+      "p4": "Las cookies que permiten identificar a una persona se consideran datos personales. Por tanto, a las mismas les será de aplicación la Política de Privacidad anteriormente descrita. En este sentido, para la utilización de las mismas será necesario el consentimiento del Usuario. Este consentimiento será comunicado, en base a una elección auténtica, ofrecido mediante una decisión afirmativa y positiva, antes del tratamiento inicial, removible y documentado."
+    },
+    "ownCookies": {
+      "title": "Cookies propias",
+      "description": "Son aquellas cookies que son enviadas al ordenador o dispositivo del Usuario y gestionadas exclusivamente por Team Up! para el mejor funcionamiento del Sitio Web. La información que se recaba se emplea para mejorar la calidad del Sitio Web y su Contenido y su experiencia como Usuario. Estas cookies permiten reconocer al Usuario como visitante recurrente del Sitio Web y adaptar el contenido para ofrecerle contenidos que se ajusten a sus preferencias."
+    },
+    "thirdPartyCookies": {
+      "title": "Cookies de terceros",
+      "p1": "Son cookies utilizadas y gestionadas por entidades externas que proporcionan a Team Up! servicios solicitados por este mismo para mejorar el Sitio Web y la experiencia del usuario al navegar en el Sitio Web. Los principales objetivos para los que se utilizan cookies de terceros son la obtención de estadísticas de accesos y analizar la información de la navegación, es decir, cómo interactúa el Usuario con el Sitio Web.",
+      "p2": "La información que se obtiene se refiere, por ejemplo, al número de páginas visitadas, el idioma, el lugar a la que la dirección IP desde el que accede el Usuario, el número de Usuarios que acceden, la frecuencia y reincidencia de las visitas, el tiempo de visita, el navegador que usan, el operador o tipo de dispositivo desde el que se realiza la visita. Esta información se utiliza para mejorar el Sitio Web, y detectar nuevas necesidades para ofrecer a los Usuarios un Contenido y/o servicio de óptima calidad. En todo caso, la información se recopila de forma anónima y se elaboran informes de tendencias del Sitio Web sin identificar a usuarios individuales.",
+      "p3": "Puede obtener más información sobre las cookies, la información sobre la privacidad, o consultar la descripción del tipo de cookies que se utiliza, sus principales características, periodo de expiración, etc. en el siguiente(s) enlace(s):",
+      "list": {
+        "item1": "Google Analytics: https://developers.google.com/analytics",
+        "item2": "Microsoft Clarity: https://clarity.microsoft.com/"
+      },
+      "p4": "La(s) entidad(es) encargada(s) del suministro de cookies podrá(n) ceder esta información a terceros, siempre y cuando lo exija la ley o sea un tercero el que procese esta información para dichas entidades."
+    },
+    "disableCookies": {
+      "title": "Deshabilitar, rechazar y eliminar cookies",
+      "description": "El Usuario puede deshabilitar, rechazar y eliminar las cookies —total o parcialmente— instaladas en su dispositivo mediante la configuración de su navegador (entre los que se encuentran, por ejemplo, Chrome, Firefox, Safari, Explorer). En este sentido, los procedimientos para rechazar y eliminar las cookies pueden diferir de un navegador de Internet a otro. En consecuencia, el Usuario debe acudir a las instrucciones facilitadas por el propio navegador de Internet que esté utilizando. En el supuesto de que rechace el uso de cookies —total o parcialmente— podrá seguir usando el Sitio Web, si bien podrá tener limitada la utilización de algunas de las prestaciones del mismo."
+    }
+  },
+  
+    "LegalNotice": {
+      "title": "Aviso legal y condiciones generales de uso",
+      "generalInfo": {
+        "title": "I. Información general",
+        "paragraph1": "En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad de la Información y el Comercio Electrónico (LSSI-CE) de 11 de julio, se facilitan a continuación los siguientes datos de información general de este sitio web:",
+        "paragraph2": "La titularidad de este sitio web, https://teamup.works, (en adelante, Sitio Web) la ostenta: TEAM UP TECH ESPAÑA S.L., provista de NIF: B56746340 e inscrita en: Registro Mercantil de Bizkaia con los siguientes datos registrales: Tomo 6244, folio 68, inscripción 1 con hoja BI-82082, cuyo representante es: Ignacio Ramos Howell, y cuyos datos de contacto son:",
+        "address": "Dirección: Alameda de Mazarredo 25, 1º, 48009 Bizkaia",
+        "phone": "Teléfono de contacto: 624827931",
+        "email": "Email de contacto: contacto@teamup.works"
+      },
+      "termsAndConditions": {
+        "title": "II. Términos y condiciones generales de uso",
+        "objectTitle": "El objeto de las condiciones: el sitio web",
+        "objectParagraph1": "El objeto de las presentes Condiciones Generales de Uso (en adelante, Condiciones) es regular el acceso y la utilización del Sitio Web. A los efectos de las presentes Condiciones se entenderá como Sitio Web: la apariencia externa de los interfaces de pantalla, tanto de forma estática como de forma dinámica, es decir, el árbol de navegación; y todos los elementos integrados tanto en los interfaces de pantalla como en el árbol de navegación (en adelante, Contenidos) y todos aquellos servicios o recursos en línea que en su caso ofrezca a los Usuarios (en adelante, Servicios).",
+        "objectParagraph2": "Team Up! se reserva la facultad de modificar, en cualquier momento, y sin aviso previo, la presentación y configuración del Sitio Web y de los Contenidos y Servicios que en él pudieran estar incorporados. El Usuario reconoce y acepta que en cualquier momento Team Up! pueda interrumpir, desactivar y/o cancelar cualquiera de estos elementos que se integran en el Sitio Web o el acceso a los mismos.",
+        "objectParagraph3": "El acceso al Sitio Web por el Usuario tiene carácter libre y, por regla general, es gratuito sin que el Usuario tenga que proporcionar una contraprestación para poder disfrutar de ello, salvo en lo relativo al coste de conexión a través de la red de telecomunicaciones suministrada por el proveedor de acceso que hubiere contratado el Usuario.",
+        "objectParagraph4": "La utilización de alguno de los Contenidos o Servicios del Sitio Web podrá hacerse mediante la suscripción o registro previo del Usuario.",
+        "userTitle": "El usuario",
+        "userParagraph1": "El acceso, la navegación y uso del Sitio Web, así como por los espacios habilitados para interactuar entre los Usuarios, y el Usuario y Team Up!, como los comentarios y/o espacios de blogging, confiere la condición de Usuario, por lo que se aceptan, desde que se inicia la navegación por el Sitio Web, todas las Condiciones aquí establecidas, así como sus ulteriores modificaciones, sin perjuicio de la aplicación de la correspondiente normativa legal de obligado cumplimiento según el caso. Dada la relevancia de lo anterior, se recomienda al Usuario leerlas cada vez que visite el Sitio Web.",
+        "userParagraph2": "El Sitio Web de Team Up! proporciona gran diversidad de información, servicios y datos. El Usuario asume su responsabilidad para realizar un uso correcto del Sitio Web. Esta responsabilidad se extenderá a:",
+        "userListItem1": "Un uso de la información, Contenidos y/o Servicios y datos ofrecidos por Team Up! sin que sea contrario a lo dispuesto por las presentes Condiciones, la Ley, la moral o el orden público, o que de cualquier otro modo puedan suponer lesión de los derechos de terceros o del mismo funcionamiento del Sitio Web.",
+        "userListItem2": "La veracidad y licitud de las informaciones aportadas por el Usuario en los formularios extendidos por Team Up! para el acceso a ciertos Contenidos o Servicios ofrecidos por el Sitio Web. En todo caso, el Usuario notificará de forma inmediata a Team Up! acerca de cualquier hecho que permita el uso indebido de la información registrada en dichos formularios, tales como, pero no solo, el robo, extravío, o el acceso no autorizado a identificadores y/o contraseñas, con el fin de proceder a su inmediata cancelación.",
+        "userParagraph3": "Team Up! se reserva el derecho de retirar todos aquellos comentarios y aportaciones que vulneren la ley, el respeto a la dignidad de la persona, que sean discriminatorios, xenófobos, racistas, pornográficos, spamming, que atenten contra la juventud o la infancia, el orden o la seguridad pública o que, a su juicio, no resultaran adecuados para su publicación.",
+        "userParagraph4": "En cualquier caso, Team Up! no será responsable de las opiniones vertidas por los Usuarios a través de comentarios u otras herramientas de blogging o de participación que pueda haber.",
+        "userParagraph5": "El mero acceso a este Sitio Web no supone entablar ningún tipo de relación de carácter comercial entre Team Up! y el Usuario.",
+        "userParagraph6": "Siempre en el respeto de la legislación vigente, este Sitio Web de Team Up! se dirige a todas las personas, sin importar su edad, que puedan acceder y/o navegar por las páginas del Sitio Web."
+      },
+      "accessAndNavigation": {
+        "title": "III. Acceso y navegación en el sitio web: exclusión de garantías y responsabilidad",
+        "paragraph1": "Team Up! no garantiza la continuidad, disponibilidad y utilidad del Sitio Web, ni de los Contenidos o Servicios. Team Up! hará todo lo posible por el buen funcionamiento del Sitio Web, sin embargo, no se responsabiliza ni garantiza que el acceso a este Sitio Web no vaya a ser ininterrumpido o que esté libre de error.",
+        "paragraph2": "Tampoco se responsabiliza o garantiza que el contenido o software al que pueda accederse a través de este Sitio Web, esté libre de error o cause un daño al sistema informático (software y hardware) del Usuario. En ningún caso Team Up! será responsable por las pérdidas, daños o perjuicios de cualquier tipo que surjan por el acceso, navegación y el uso del Sitio Web, incluyéndose, pero no limitándose, a los ocasionados a los sistemas informáticos o los provocados por la introducción de virus.",
+        "paragraph3": "Team Up! tampoco se hace responsable de los daños que pudiesen ocasionarse a los usuarios por un uso inadecuado de este Sitio Web. En particular, no se hace responsable en modo alguno de las caídas, interrupciones, falta o defecto de las telecomunicaciones que pudieran ocurrir."
+      },
+      "linkPolicy": {
+        "title": "IV. Política de enlaces",
+        "paragraph1": "Se informa que el Sitio Web de Team Up! pone o puede poner a disposición de los Usuarios medios de enlace (como, entre otros, links, banners, botones), directorios y motores de búsqueda que permiten a los Usuarios acceder a sitios web pertenecientes y/o gestionados por terceros.",
+        "paragraph2": "La instalación de estos enlaces, directorios y motores de búsqueda en el Sitio Web tiene por objeto facilitar a los Usuarios la búsqueda de y acceso a la información disponible en Internet, sin que pueda considerarse una sugerencia, recomendación o invitación para la visita de los mismos.",
+        "paragraph3": "Team Up! no ofrece ni comercializa por sí ni por medio de terceros los productos y/o servicios disponibles en dichos sitios enlazados.",
+        "paragraph4": "Asimismo, tampoco garantizará la disponibilidad técnica, exactitud, veracidad, validez o legalidad de sitios ajenos a su propiedad a los que se pueda acceder por medio de los enlaces.",
+        "paragraph5": "Team Up! en ningún caso revisará o controlará el contenido de otros sitios web, así como tampoco aprueba, examina ni hace propios los productos y servicios, contenidos, archivos y cualquier otro material existente en los referidos sitios enlazados.",
+        "paragraph6": "Team Up! no asume ninguna responsabilidad por los daños y perjuicios que pudieran producirse por el acceso, uso, calidad o licitud de los contenidos, comunicaciones, opiniones, productos y servicios de los sitios web no gestionados por Team Up! y que sean enlazados en este Sitio Web.",
+        "paragraph7": "El Usuario o tercero que realice un hipervínculo desde una página web de otro, distinto, sitio web al Sitio Web de Team Up! deberá saber que:",
+        "listItem1": "No se permite la reproducción —total o parcialmente— de ninguno de los Contenidos y/o Servicios del Sitio Web sin autorización expresa de Team Up!.",
+        "listItem2": "No se permite tampoco ninguna manifestación falsa, inexacta o incorrecta sobre el Sitio Web de Team Up!, ni sobre los Contenidos y/o Servicios del mismo.",
+        "listItem3": "A excepción del hipervínculo, el sitio web en el que se establezca dicho hiperenlace no contendrá ningún elemento, de este Sitio Web, protegido como propiedad intelectual por el ordenamiento jurídico español, salvo autorización expresa de Team Up!.",
+        "listItem4": "El establecimiento del hipervínculo no implicará la existencia de relaciones entre Team Up! y el titular del sitio web desde el cual se realice, ni el conocimiento y aceptación de Team Up! de los contenidos, servicios y/o actividades ofrecidas en dicho sitio web, y viceversa."
+      },
+      "intellectualProperty": {
+        "title": "V. Propiedad intelectual e industrial",
+        "paragraph1": "Team Up! por sí o como parte cesionaria, es titular de todos los derechos de propiedad intelectual e industrial del Sitio Web, así como de los elementos contenidos en el mismo (a título enunciativo y no exhaustivo, imágenes, sonido, audio, vídeo, software o textos, marcas o logotipos, combinaciones de colores, estructura y diseño, selección de materiales usados, programas de ordenador necesarios para su funcionamiento, acceso y uso, etc.). Serán, por consiguiente, obras protegidas como propiedad intelectual por el ordenamiento jurídico español, siéndoles aplicables tanto la normativa española y comunitaria en este campo, como los tratados internacionales relativos a la materia y suscritos por España.",
+        "paragraph2": "Todos los derechos reservados. En virtud de lo dispuesto en la Ley de Propiedad Intelectual, quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de Team Up!.",
+        "paragraph3": "El Usuario se compromete a respetar los derechos de propiedad intelectual e industrial de Team Up!. Podrá visualizar los elementos del Sitio Web o incluso imprimirlos, copiarlos y almacenarlos en el disco duro de su ordenador o en cualquier otro soporte físico siempre y cuando sea, exclusivamente, para su uso personal. El Usuario, sin embargo, no podrá suprimir, alterar, o manipular cualquier dispositivo de protección o sistema de seguridad que estuviera instalado en el Sitio Web.",
+        "paragraph4": "En caso de que el Usuario o tercero considere que cualquiera de los Contenidos del Sitio Web suponga una violación de los derechos de protección de la propiedad intelectual, deberá comunicarlo inmediatamente a Team Up! a través de los datos de contacto del apartado de INFORMACIÓN GENERAL de este Aviso Legal y Condiciones Generales de Uso.",
+        "paragraph5": "La base legal para el tratamiento de los datos personales es el consentimiento. Team Up! se compromete a recabar el consentimiento expreso y verificable del Usuario para el tratamiento de sus datos personales para uno o varios fines específicos.",
+        "paragraph6": "El Usuario tendrá derecho a retirar su consentimiento en cualquier momento. Será tan fácil retirar el consentimiento como darlo. Como regla general, la retirada del consentimiento no condicionará el uso del Sitio Web.",
+        "paragraph7": "En las ocasiones en las que el Usuario deba o pueda facilitar sus datos a través de formularios para realizar consultas, solicitar información o por motivos relacionados con el contenido del Sitio Web, se le informará en caso de que la cumplimentación de alguno de ellos sea obligatoria debido a que los mismos sean imprescindibles para el correcto desarrollo de la operación realizada."
+      },
+      "legalActions": {
+        "title": "VI. Acciones legales, legislación aplicable y jurisdicción",
+        "paragraph1": "Team Up! se reserva la facultad de presentar las acciones civiles o penales que considere necesarias por la utilización indebida del Sitio Web y Contenidos, o por el incumplimiento de las presentes Condiciones.",
+        "paragraph2": "La relación entre el Usuario y Team Up! se regirá por la normativa vigente y de aplicación en el territorio español. De surgir cualquier controversia en relación con la interpretación y/o a la aplicación de estas Condiciones las partes someterán sus conflictos a la jurisdicción ordinaria sometiéndose a los jueces y tribunales que correspondan conforme a derecho."
+      }
+    },
+    "PrivacyPolicy": {
+  "title": "Política de privacidad",
+  "section1": {
+    "title": "I. Política de privacidad y protección de datos",
+    "intro": "Respetando lo establecido en la legislación vigente, Team Up! (en adelante, también Sitio Web) se compromete a adoptar las medidas técnicas y organizativas necesarias, según el nivel de seguridad adecuado al riesgo de los datos recogidos.",
+    "laws": {
+      "title": "Leyes que incorpora esta política de privacidad",
+      "intro": "Esta política de privacidad está adaptada a la normativa española y europea vigente en materia de protección de datos personales en internet. En concreto, la misma respeta las siguientes normas:",
+      "list": {
+        "item1": "El Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos (RGPD).",
+        "item2": "La Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPD-GDD).",
+        "item3": "El Real Decreto 1720/2007, de 21 de diciembre, por el que se aprueba el Reglamento de desarrollo de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal (RDLOPD).",
+        "item4": "La Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE)."
+      }
+    },
+    "identity": {
+      "title": "Identidad del responsable del tratamiento de los datos personales",
+      "content": "El responsable del tratamiento de los datos personales recogidos en Team Up! es: TEAM UP TECH ESPAÑA S.L., provista de NIF/CIF: B56746340 e inscrito en: Registro Mercantil de Bizkaia con los siguientes datos registrales: Tomo 6244, folio 68, inscripción 1 con hoja BI-82082, cuyo representante es: Ignacio Ramos Howell (en adelante, Responsable del tratamiento). Sus datos de contacto son los siguientes:",
+      "list": {
+        "item1": "Dirección: Alameda de Mazarredo 25, 1º, 48009 Bizkaia",
+        "item2": "Teléfono de contacto: 624827931",
+        "item3": "Email de contacto: datos@teamup.works"
+      }
+    },
+    "dataRegister": {
+      "title": "Registro de datos de carácter personal",
+      "content": "En cumplimiento de lo establecido en el RGPD y la LOPD-GDD, le informamos que los datos personales recabados por Team Up!, mediante los formularios extendidos en sus páginas quedarán incorporados y serán tratados en nuestro fichero con el fin de poder facilitar, agilizar y cumplir los compromisos establecidos entre Team Up! y el Usuario o el mantenimiento de la relación que se establezca en los formularios que este rellene, o para atender una solicitud o consulta del mismo. Asimismo, de conformidad con lo previsto en el RGPD y la LOPD-GDD, salvo que sea de aplicación la excepción prevista en el artículo 30.5 del RGPD, se mantiene un registro de actividades de tratamiento que especifica, según sus finalidades, las actividades de tratamiento llevadas a cabo y las demás circunstancias establecidas en el RGPD."
+    },
+    "principles": {
+      "title": "Principios aplicables al tratamiento de los datos personales",
+      "intro": "El tratamiento de los datos personales del Usuario se someterá a los siguientes principios recogidos en el artículo 5 del RGPD y en el artículo 4 y siguientes de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales:",
+      "list": {
+        "item1": "Principio de licitud, lealtad y transparencia: se requerirá en todo momento el consentimiento del Usuario previa información completamente transparente de los fines para los cuales se recogen los datos personales.",
+        "item2": "Principio de limitación de la finalidad: los datos personales serán recogidos con fines determinados, explícitos y legítimos.",
+        "item3": "Principio de minimización de datos: los datos personales recogidos serán únicamente los estrictamente necesarios en relación con los fines para los que son tratados.",
+        "item4": "Principio de exactitud: los datos personales deben ser exactos y estar siempre actualizados.",
+        "item5": "Principio de limitación del plazo de conservación: los datos personales solo serán mantenidos de forma que se permita la identificación del Usuario durante el tiempo necesario para los fines de su tratamiento.",
+        "item6": "Principio de integridad y confidencialidad: los datos personales serán tratados de manera que se garantice su seguridad y confidencialidad.",
+        "item7": "Principio de responsabilidad proactiva: el Responsable del tratamiento será responsable de asegurar que los principios anteriores se cumplen."
+      }
+    },
+    "dataCategories": {
+      "title": "Categorías de datos personales",
+      "content": "Las categorías de datos que se tratan en Team Up! son únicamente datos identificativos. En ningún caso, se tratan categorías especiales de datos personales en el sentido del artículo 9 del RGPD."
+    },
+    "legalBasis": {
+      "title": "Base legal para el tratamiento de los datos personales",
+      "paragraph1": "La base legal para el tratamiento de los datos personales es el consentimiento. Team Up! se compromete a recabar el consentimiento expreso y verificable del Usuario para el tratamiento de sus datos personales para uno o varios fines específicos.",
+      "paragraph2": "El Usuario tendrá derecho a retirar su consentimiento en cualquier momento. Será tan fácil retirar el consentimiento como darlo. Como regla general, la retirada del consentimiento no condicionará el uso del Sitio Web. En las ocasiones en las que el Usuario deba o pueda facilitar sus datos a través de formularios para realizar consultas, solicitar información o por motivos relacionados con el contenido del Sitio Web, se le informará en caso de que la cumplimentación de alguno de ellos sea obligatoria debido a que los mismos sean imprescindibles para el correcto desarrollo de la operación realizada."
+    },
+    "purposes": {
+      "title": "Fines del tratamiento a que se destinan los datos personales",
+      "paragraph1": "Los datos personales son recabados y gestionados por Team Up! con la finalidad de poder facilitar, agilizar y cumplir los compromisos establecidos entre el Sitio Web y el Usuario o el mantenimiento de la relación que se establezca en los formularios que este último rellene o para atender una solicitud o consulta.",
+      "paragraph2": "Igualmente, los datos podrán ser utilizados con una finalidad comercial de personalización, operativa y estadística, y actividades propias del objeto social de Team Up!, así como para la extracción, almacenamiento de datos y estudios de marketing para adecuar el Contenido ofertado al Usuario, así como mejorar la calidad, funcionamiento y navegación por el Sitio Web.",
+      "paragraph3": "En el momento en que se obtengan los datos personales, se informará al Usuario acerca del fin o fines específicos del tratamiento a que se destinarán los datos personales; es decir, del uso o usos que se dará a la información recopilada."
+    },
+    "retentionPeriod": {
+      "title": "Períodos de retención de los datos personales",
+      "paragraph1": "Los datos personales solo serán retenidos durante el tiempo mínimo necesario para los fines de su tratamiento y, en todo caso, únicamente durante el siguiente plazo: 24 meses, o hasta que el Usuario solicite su supresión.",
+      "paragraph2": "En el momento en que se obtengan los datos personales, se informará al Usuario acerca del plazo durante el cual se conservarán los datos personales o, cuando eso no sea posible, los criterios utilizados para determinar este plazo."
+    },
+    "dataRecipients": {
+      "title": "Destinatarios de los datos personales",
+      "intro": "Los datos personales del Usuario serán compartidos con los siguientes destinatarios o categorías de destinatarios:",
+      "list": {
+        "item1": "Google Ireland Limited, con domicilio social en Gordon House, Barrow Street, Dublín 4, Irlanda.",
+        "item2": "Microsoft Corporation, con domicilio social en One Microsoft Way, Redmond, WA 98052, Estados Unidos."
+      },
+      "outro": "En caso de que el Responsable del tratamiento tenga la intención de transferir datos personales a un tercer país u organización internacional, en el momento en que se obtengan los datos personales, se informará al Usuario acerca del tercer país u organización internacional al cual se tiene la intención de transferir los datos, así como de la existencia o ausencia de una decisión de adecuación de la Comisión."
+    },
+    "minorsData": {
+      "title": "Datos personales de menores de edad",
+      "content": "Respetando lo establecido en los artículos 8 del RGPD y 7 de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, solo los mayores de 14 años podrán otorgar su consentimiento para el tratamiento de sus datos personales de forma lícita por Team Up!. Si se trata de un menor de 14 años, será necesario el consentimiento de los padres o tutores para el tratamiento, y este solo se considerará lícito en la medida en la que los mismos lo hayan autorizado."
+    },
+    "secrecy": {
+      "title": "Secreto y seguridad de los datos personales",
+      "paragraph1": "Team Up! se compromete a adoptar las medidas técnicas y organizativas necesarias, según el nivel de seguridad adecuado al riesgo de los datos recogidos, de forma que se garantice la seguridad de los datos de carácter personal y se evite la destrucción, pérdida o alteración accidental o ilícita de datos personales transmitidos, conservados o tratados de otra forma, o la comunicación o acceso no autorizados a dichos datos.",
+      "paragraph2": "El Sitio Web cuenta con un certificado SSL (Secure Socket Layer), que asegura que los datos personales se transmiten de forma segura y confidencial, al ser la transmisión de los datos entre el servidor y el Usuario, y en retroalimentación, totalmente cifrada o encriptada.",
+      "paragraph3": "Sin embargo, debido a que Team Up! no puede garantizar la inexpugabilidad de internet ni la ausencia total de hackers u otros que accedan de modo fraudulento a los datos personales, el Responsable del tratamiento se compromete a comunicar al Usuario sin dilación indebida cuando ocurra una violación de la seguridad de los datos personales que sea probable que entrañe un alto riesgo para los derechos y libertades de las personas físicas. Siguiendo lo establecido en el artículo 4 del RGPD, se entiende por violación de la seguridad de los datos personales toda violación de la seguridad que ocasione la destrucción, pérdida o alteración accidental o ilícita de datos personales transmitidos, conservados o tratados de otra forma, o la comunicación o acceso no autorizados a dichos datos.",
+      "paragraph4": "Los datos personales serán tratados como confidenciales por el Responsable del tratamiento, quien se compromete a informar de y a garantizar por medio de una obligación legal o contractual que dicha confidencialidad sea respetada por sus empleados, asociados, y toda persona a la cual le haga accesible la información."
+    },
+    "rights": {
+      "title": "Derechos derivados del tratamiento de los datos personales",
+      "intro": "El Usuario tiene sobre Team Up! y podrá, por tanto, ejercer frente al Responsable del tratamiento los siguientes derechos reconocidos en el RGPD y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales:",
+      "list": {
+        "item1": "Derecho de acceso: Es el derecho del Usuario a obtener confirmación de si Team Up! está tratando o no sus datos personales y, en caso afirmativo, obtener información sobre sus datos concretos de carácter personal y del tratamiento que Team Up! haya realizado o realice, así como, entre otra, de la información disponible sobre el origen de dichos datos y los destinatarios de las comunicaciones realizadas o previstas de los mismos.",
+        "item2": "Derecho de rectificación: Es el derecho del Usuario a que se modifiquen sus datos personales que resulten ser inexactos o, teniendo en cuenta los fines del tratamiento, incompletos.",
+        "item3": "Derecho de supresión ('el derecho al olvido'): Es el derecho del Usuario, siempre que la legislación vigente no establezca lo contrario, a obtener la supresión de sus datos personales cuando estos ya no sean necesarios para los fines para los cuales fueron recogidos o tratados; el Usuario haya retirado su consentimiento al tratamiento y este no cuente con otra base legal; el Usuario se oponga al tratamiento y no exista otro motivo legítimo para continuar con el mismo; los datos personales hayan sido tratados ilícitamente; los datos personales deban suprimirse en cumplimiento de una obligación legal; o los datos personales hayan sido obtenidos producto de una oferta directa de servicios de la sociedad de la información a un menor de 14 años. Además de suprimir los datos, el Responsable del tratamiento, teniendo en cuenta la tecnología disponible y el coste de su aplicación, deberá adoptar medidas razonables para informar a los responsables que estén tratando los datos personales de la solicitud del interesado de supresión de cualquier enlace a esos datos personales.",
+        "item4": "Derecho a la limitación del tratamiento: Es el derecho del Usuario a limitar el tratamiento de sus datos personales. El Usuario tiene derecho a obtener la limitación del tratamiento cuando impugne la exactitud de sus datos personales; el tratamiento sea ilícito; el Responsable del tratamiento ya no necesite los datos personales, pero el Usuario lo necesite para hacer reclamaciones; y cuando el Usuario se haya opuesto al tratamiento.",
+        "item5": "Derecho a la portabilidad de los datos: En caso de que el tratamiento se efectúe por medios automatizados, el Usuario tendrá derecho a recibir del Responsable del tratamiento sus datos personales en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable del tratamiento. Siempre que sea técnicamente posible, el Responsable del tratamiento transmitirá directamente los datos a ese otro responsable.",
+        "item6": "Derecho de oposición: Es el derecho del Usuario a que no se lleve a cabo el tratamiento de sus datos de carácter personal o se cese el tratamiento de los mismos por parte de Team Up!.",
+        "item7": "Derecho a no ser objeto de una decisión basada únicamente en el tratamiento automatizado, incluida la elaboración de perfiles: Es el derecho del Usuario a no ser objeto de una decisión individualizada basada únicamente en el tratamiento automatizado de sus datos personales, incluida la elaboración de perfiles, existente salvo que la legislación vigente establezca lo contrario."
+      },
+      "exercising": "Así pues, el Usuario podrá ejercitar sus derechos mediante comunicación escrita dirigida al Responsable del tratamiento con la referencia 'RGPD-https://teamup.works', especificando:",
+      "exercisingList": {
+        "item1": "Nombre, apellidos del Usuario y copia del DNI. En los casos en que se admita la representación, será también necesaria la identificación por el mismo medio de la persona que representa al Usuario, así como el documento acreditativo de la representación. La fotocopia del DNI podrá ser sustituida, por cualquier otro medio válido en derecho que acredite la identidad.",
+        "item2": "Petición con los motivos específicos de la solicitud o información a la que se quiere acceder.",
+        "item3": "Domicilio a efecto de notificaciones.",
+        "item4": "Fecha y firma del solicitante.",
+        "item5": "Todo documento que acredite la petición que formula."
+      },
+      "contact": "Esta solicitud y todo otro documento adjunto podrá enviarse a la siguiente dirección y/o correo electrónico:",
+      "contactList": {
+        "item1": "Dirección postal: Alameda de Mazarredo 25, 1º, 48009 Bizkaia",
+        "item2": "Correo electrónico: datos@teamup.works"
+      }
+    },
+    "thirdPartyLinks": {
+      "title": "Enlaces a sitios web de terceros",
+      "content": "El Sitio Web puede incluir hipervínculos o enlaces que permitan acceder a páginas web de terceros distintos de Team Up!, y que por tanto no son operados por Team Up!. Los titulares de dichos sitios web dispondrán de sus propias políticas de protección de datos, siendo ellos mismos, en cada caso, responsables de sus propios ficheros y de sus propias prácticas de privacidad."
+    },
+    "complaints": {
+      "title": "Reclamaciones ante la autoridad de control",
+      "content": "En caso de que el Usuario considere que existe un problema o infracción de la normativa vigente en la forma en la que se están tratando sus datos personales, tendrá derecho a la tutela judicial efectiva y a presentar una reclamación ante una autoridad de control, en particular, en el Estado en el que tenga su residencia habitual, lugar de trabajo o lugar de la supuesta infracción. En el caso de España, la autoridad de control es la Agencia Española de Protección de Datos (https://www.aepd.es/)."
+    }
+  },
+  "section2": {
+    "title": "II. Aceptación y cambios en la política de privacidad",
+    "paragraph1": "Es necesario que el Usuario haya leído y esté conforme con las condiciones sobre la protección de datos de carácter personal contenidas en esta Política de Privacidad, así como que acepte el tratamiento de sus datos personales para que el Responsable del tratamiento pueda proceder al mismo en la forma, durante los plazos y para las finalidades indicadas. El uso del Sitio Web implicará la aceptación de la Política de Privacidad del mismo.",
+    "paragraph2": "Team Up! se reserva el derecho a modificar su Política de Privacidad, de acuerdo a su propio criterio, o motivado por un cambio legislativo, jurisprudencial o doctrinal de la Agencia Española de Protección de Datos. Los cambios o actualizaciones de esta Política de Privacidad no serán notificados de forma explícita al Usuario. Se recomienda al Usuario consultar esta página de forma periódica para estar al tanto de los últimos cambios o actualizaciones.",
+    "paragraph3": "Esta Política de Privacidad fue actualizada para adaptarse al Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos (RGPD) y a la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."
   }
 }
-
+  
+}
