@@ -1,0 +1,345 @@
+{
+  "Hero": {
+    "label": "The #1 solution for creating and maintaining company culture remotely",
+    "title": "Your remote team, more united than ever",
+    "description": "Take your remote team to the next level. Team Up! gives you the tools to create a culture of success at a distance. Boost your team's productivity and commitment starting today.",
+    "primaryButton": "Try it free now!",
+    "secondaryButton": "Schedule a demo"
+  },
+  "Benefits": {
+    "tag": "Benefits",
+    "heading": "Reduce remote work barriers and foster a dynamic collaboration environment with Team Up!",
+    "benefit1": {
+      "title": "Build a powerful company culture",
+      "text": "Attract and retain top talent with an innovative culture designed for the future of remote work."
+    },
+    "benefit2": {
+      "title": "Boost team satisfaction and loyalty",
+      "text": "Keep your team connected and motivated with remote activities that foster engagement and fun."
+    },
+    "benefit3": {
+      "title": "Enhance productivity and efficiency",
+      "text": "Transform your team's unity and commitment into tangible results, maximizing the use of Team Up! tools."
+    }
+  },
+  "What": {
+    "sectionHeader": {
+      "tag": "What is Team Up!",
+      "heading": "Discover a new way to work, interact, and socialize in a remote environment",
+      "subheading": "Team Up! revolutionizes your remote work experience, recreating the spontaneous moments and connections you miss from the office."
+    },
+    "trabaja": {
+      "title": "Work",
+      "text": "Enhance your meetings with an interactive environment that maximizes productivity and engagement."
+    },
+    "conecta": {
+      "title": "Connect",
+      "text": "Forge stronger bonds with spaces designed for authentic conversations and natural collaboration."
+    },
+    "disfruta": {
+      "title": "Enjoy",
+      "text": "Recharge and strengthen team bonds with games and activities that promote fun and camaraderie."
+    }
+  },
+  "Spaces": {
+    "sectionHeader": {
+      "tag": "Spaces",
+      "heading": "Spaces for every type of meeting, activity or event",
+      "subheading": "You won't miss any space within Team Up! All the possible scenarios you may need for your activity are (or will be) here."
+    },
+    "viewDemo": "View in demo",
+    "tags": {
+      "conecta": "Connect",
+      "trabaja": "Work",
+      "disfruta": "Enjoy"
+    },
+    "spaces": {
+      "fogata": {
+        "title": "Campfire",
+        "description": "Ignite unforgettable conversations in this informal space. The campfire offers random topics that keep the dialogue flowing and entertaining. Ideal for breaking the ice and strengthening team bonds, here conversations flow as naturally as around a bonfire. Get ready to create connections that will shine for a long time!"
+      },
+      "auditorio": {
+        "title": "Auditorium",
+        "description": "Make your ideas shine in our virtual auditorium. Designed for impactful presentations, it features a real-time voting system that ensures active participation. Perfect for webinars, training sessions, and events where you want to captivate your audience. Turn every presentation into a memorable event!"
+      },
+      "votaciones": {
+        "title": "Planning",
+        "description": "Make quick and effective decisions in this optimized space. Our planning room combines instant voting tools with an environment conducive to brainstorming. Ideal for strategic sessions where time is of the essence, here great ideas take shape at the speed of thought. Take your team's efficiency to the next level!"
+      },
+      "debate": {
+        "title": "Debate Room",
+        "description": "Organize productive and orderly discussions in this space designed for the exchange of ideas. With a system that manages speaking turns, the debate room ensures that all voices are heard. Ideal for resolving conflicts, making group decisions, or fostering collaborative innovation. Transform disagreements into growth opportunities!"
+      },
+      "lava": {
+        "title": "The Floor is Lava",
+        "description": "Disconnect and have fun in this virtual obstacle course. 'The Floor is Lava' offers a fun escape from the work routine, promoting teamwork in a playful way. Perfect for energizing breaks or for ending the day with laughter. Challenge your colleagues and strengthen bonds while dodging the digital 'lava'!"
+      },
+      "conecta4": {
+        "title": "Connect Four",
+        "description": "Test your strategy and aim in this unique version of the classic game. With four simultaneous boards, Connect Four elevates the fun and challenge. Ideal for fostering strategic thinking and healthy competition between teams. Demonstrate your cunning and precision in this game that combines mental skill and dexterity!"
+      },
+      "corral": {
+        "title": "The Corral",
+        "description": "Immerse yourself in the excitement of this strategy and collaboration game. Divide your team into three groups and compete to collect 'eggs' while avoiding rivals. The corral encourages team planning, quick communication, and tactical thinking. Perfect for energizing meetings and strengthening team spirit in a fun way!"
+      }
+    }
+  },
+  "Features": {
+    "tag": "Features",
+    "heading": "Discover the comprehensive solution for more efficient and fun collaboration",
+    "subheading": "All the features you need to make your work meetings more efficient, your social experiences more fun, and your events more entertaining.",
+    "3dSpace": "3D Space",
+    "voiceChat": "Voice Chat",
+    "textChat": "Text Chat",
+    "screenSharing": "Screen Sharing",
+    "reactions": "Reactions",
+    "calendar": "Calendar",
+    "speakingTurns": "Speaking Turns",
+    "userManagement": "User Management",
+    "timers": "Timers",
+    "meetingPoints": "Meeting Points",
+    "activities": "Activities",
+    "voting": "Voting",
+    "plugAndPlay": "Plug and Play",
+    "inBrowser": "In Browser",
+    "customAvatar": "Custom Avatar",
+    "googleIntegration": "Google Integration"
+  },
+  "Footer": {
+    "legalNotice": "Legal Notice and Terms of Use",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "copyright": "© 2024 TEAM UP TECH ESPAÑA S.L. All rights reserved"
+  },
+  "FooterCTA": {
+    "imageAlt": "CTA Image",
+    "heading": "Create a culture that brings out the best in your team now",
+    "primaryButton": "Start for free",
+    "secondaryButton": "Schedule a demo"
+  },
+  "CookiePolicy": {
+    "title": "Cookie Policy",
+    "intro": {
+      "p1": "Accessing this Website may involve the use of cookies. Cookies are small amounts of information that are stored in the browser used by each User - in the various devices they may use to navigate - so that the server remembers certain information that will later, and only the server that implemented it, will read. Cookies facilitate navigation, make it more user-friendly, and do not damage the navigation device.",
+      "p2": "Cookies are automatic procedures for collecting information regarding the preferences determined by the User during their visit to the Website in order to recognize them as a User, and personalize their experience and use of the Website, and they can also, for example, help to identify and resolve errors.",
+      "p3": "The information collected through cookies may include the date and time of visits to the Website, the pages viewed, the time spent on the Website and the sites visited just before and after it. However, no cookie allows this same cookie to contact the User's telephone number or any other means of personal contact. No cookie can extract information from the User's hard drive or steal personal information. The only way that the User's private information can become part of the Cookie file is for the user to personally give that information to the server.",
+      "p4": "Cookies that allow a person to be identified are considered personal data. Therefore, the Privacy Policy described above will apply to them. In this sense, for the use of the same, the consent of the User will be necessary. This consent will be communicated, based on an authentic choice, offered by an affirmative and positive decision, before the initial treatment, removable and documented."
+    },
+    "ownCookies": {
+      "title": "Own Cookies",
+      "description": "These are those cookies that are sent to the User's computer or device and managed exclusively by Team Up! for the best functioning of the Website. The information collected is used to improve the quality of the Website and its Content and your experience as a User. These cookies allow us to recognize the User as a recurring visitor to the Website and adapt the content to offer content that fits their preferences."
+    },
+    "thirdPartyCookies": {
+      "title": "Third-party Cookies",
+      "p1": "These are cookies used and managed by external entities that provide Team Up! with services requested by Team Up! itself to improve the Website and the user experience when browsing the Website. The main objectives for which third-party cookies are used are to obtain access statistics and analyze navigation information, that is, how the User interacts with the Website.",
+      "p2": "The information obtained refers, for example, to the number of pages visited, the language, the place to which the IP address from which the User accesses, the number of Users who access, the frequency and recurrence of visits, the time of visit, the browser they use, the operator or type of device from which the visit is made. This information is used to improve the Website, and detect new needs to offer Users optimal Content and/or service. In any case, the information is collected anonymously and trend reports of the Website are prepared without identifying individual users.",
+      "p3": "You can obtain more information about cookies, information about privacy, or consult the description of the type of cookies used, their main characteristics, expiration period, etc. at the following link(s):",
+      "list": {
+        "item1": "Google Analytics: https://developers.google.com/analytics",
+        "item2": "Microsoft Clarity: https://clarity.microsoft.com/"
+      },
+      "p4": "The entity(ies) in charge of supplying cookies may transfer this information to third parties, provided that it is required by law or it is a third party that processes this information for said entities."
+    },
+    "disableCookies": {
+      "title": "Disable, reject and delete cookies",
+      "description": "The User can disable, reject and delete cookies - totally or partially - installed on their device through the configuration of their browser (including, for example, Chrome, Firefox, Safari, Explorer). In this sense, the procedures for rejecting and deleting cookies may differ from one Internet browser to another. Consequently, the User must refer to the instructions provided by the Internet browser they are using. In the event that you reject the use of cookies - totally or partially - you may continue to use the Website, although the use of some of its features may be limited."
+    }
+  },
+  "LegalNotice": {
+    "title": "Legal Notice and General Terms of Use",
+    "generalInfo": {
+      "title": "I. General Information",
+      "paragraph1": "In compliance with the information duty set forth in Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE) of July 11, the following general information data of this website are provided below:",
+      "paragraph2": "The ownership of this website, https://teamup.works, (hereinafter, Website) belongs to: TEAM UP TECH ESPAÑA S.L., provided with NIF: B56746340 and registered in: Commercial Registry of Bizkaia with the following registration data: Volume 6244, folio 68, registration 1 with sheet BI-82082, whose representative is: Ignacio Ramos Howell, and whose contact details are:",
+      "address": "Address: Alameda de Mazarredo 25, 1º, 48009 Bizkaia",
+      "phone": "Contact phone: 624827931",
+      "email": "Contact email: contacto@teamup.works"
+    },
+    "termsAndConditions": {
+      "title": "II. General Terms and Conditions of Use",
+      "objectTitle": "The object of the conditions: the website",
+      "objectParagraph1": "The purpose of these General Conditions of Use (hereinafter, Conditions) is to regulate access to and use of the Website. For the purposes of these Conditions, Website shall be understood as: the external appearance of the screen interfaces, both in static and dynamic form, that is, the navigation tree; and all the elements integrated in both the screen interfaces and the navigation tree (hereinafter, Contents) and all those online services or resources that may be offered to Users (hereinafter, Services).",
+      "objectParagraph2": "Team Up! reserves the right to modify, at any time and without prior notice, the presentation and configuration of the Website and the Contents and Services that may be incorporated therein. The User acknowledges and accepts that at any time Team Up! may interrupt, deactivate and/or cancel any of these elements that are integrated in the Website or access to them.",
+      "objectParagraph3": "Access to the Website by the User is free and, as a general rule, is free of charge without the User having to provide a consideration to enjoy it, except for the cost of connection through the telecommunications network supplied by the access provider that the User has contracted.",
+      "objectParagraph4": "The use of some of the Contents or Services of the Website may be done by previously subscribing or registering as a User.",
+      "userTitle": "The user",
+      "userParagraph1": "Access, navigation and use of the Website, as well as through the spaces enabled to interact between Users, and the User and Team Up!, such as comments and/or blogging spaces, confers the status of User, for which all the Conditions established herein are accepted, as well as their subsequent modifications, without prejudice to the application of the corresponding legal regulations of mandatory compliance as the case may be. Given the relevance of the above, the User is recommended to read them every time they visit the Website.",
+      "userParagraph2": "Team Up!'s Website provides a wide diversity of information, services and data. The User assumes responsibility for making correct use of the Website. This responsibility shall extend to:",
+      "userListItem1": "A use of the information, Content and/or Services and data offered by Team Up! without it being contrary to the provisions of these Conditions, the Law, morality or public order, or that in any other way may involve injury to the rights of third parties or the same operation of the Website.",
+      "userListItem2": "The veracity and legality of the information provided by the User in the forms extended by Team Up! for access to certain Contents or Services offered by the Website. In any case, the User shall immediately notify Team Up! about any fact that allows the improper use of the information registered in said forms, such as, but not only, theft, loss, or unauthorized access to identifiers and/or passwords, in order to proceed to their immediate cancellation.",
+      "userParagraph3": "Team Up! reserves the right to withdraw all those comments and contributions that violate respect for the dignity of the person, that are discriminatory, xenophobic, racist, pornographic, spamming, that attempt against youth or childhood, order or public safety or that, in its opinion, are not appropriate for publication.",
+      "userParagraph4": "In any case, Team Up! will not be responsible for the opinions expressed by Users through comments or other blogging or participation tools that may exist.",
+      "userParagraph5": "The mere access to this Website does not imply establishing any type of commercial relationship between Team Up! and the User.",
+      "userParagraph6": "Always in compliance with current legislation, this Team Up! Website is addressed to all persons, regardless of age, who can access and/or browse the pages of the Website."
+    },
+    "accessAndNavigation": {
+      "title": "III. Access and navigation on the website: exclusion of warranties and liability",
+      "paragraph1": "Team Up! does not guarantee the continuity, availability and usefulness of the Website, nor of the Contents or Services. Team Up! will make every effort for the proper functioning of the Website, however, it is not responsible or guarantees that access to this Website will not be uninterrupted or error free.",
+      "paragraph2": "Nor is it responsible or guarantees that the content or software that can be accessed through this Website is free from error or causes damage to the computer system (software and hardware) of the User. In no case will Team Up! be responsible for losses, damages or harm of any kind arising from access, navigation and use of the Website, including, but not limited to, those caused to computer systems or those caused by the introduction of viruses.",
+      "paragraph3": "Team Up! is also not responsible for any damages that may be caused to users due to improper use of this Website. In particular, it is not responsible in any way for any telecommunications failures, interruptions, faults or defects that may occur."
+    },
+    "linkPolicy": {
+      "title": "IV. Link policy",
+      "paragraph1": "The User is informed that the Team Up! Website provides or may provide access to other websites owned by third parties through different links, banners or buttons.",
+      "paragraph2": "The installation of these links, directories and search engines on the Website aims to facilitate Users' search for and access to information available on the Internet, without it being considered a suggestion, recommendation or invitation to visit them.",
+      "paragraph3": "Team Up! does not offer or market by itself or through third parties the products and/or services available on such linked sites.",
+      "paragraph4": "Likewise, it will not guarantee the technical availability, accuracy, veracity, validity or legality of sites outside its property that may be accessed through the links.",
+      "paragraph5": "Team Up! under no circumstances will review or control the content of other websites, nor does it approve, examine or make its own the products and services, content, files and any other material existing on the referred linked sites.",
+      "paragraph6": "Team Up! does not assume any responsibility for damages that may arise from the access, use, quality or legality of the contents, communications, opinions, products and services of websites not managed by Team Up! and that are linked in this Website.",
+      "paragraph7": "The User or third party who makes a hyperlink from a web page of another, different, website to the Team Up! Website must know that:",
+      "listItem1": "The reproduction - totally or partially - of any of the Contents and/or Services of the Website is not allowed without express authorization from Team Up!.",
+      "listItem2": "No false, inaccurate or incorrect statement about the Team Up! Website, or about its Contents and/or Services, is allowed either.",
+      "listItem3": "With the exception of the hyperlink, the website on which said hyperlink is established will not contain any element of this Website protected as intellectual property by the Spanish legal system, unless expressly authorized by Team Up!.",
+      "listItem4": "The establishment of the hyperlink will not imply the existence of relations between Team Up! and the owner of the website from which it is made, nor the knowledge and acceptance of Team Up! of the contents, services and/or activities offered on said website, and vice versa."
+    },
+    "intellectualProperty": {
+      "title": "V. Intellectual and industrial property",
+      "paragraph1": "Team Up!, by itself or as an assignee, is the owner of all intellectual and industrial property rights of the Website, as well as the elements contained therein (including but not limited to, images, sound, audio, video, software or texts, trademarks or logos, color combinations, structure and design, selection of materials used, computer programs necessary for its operation, access and use, etc.). They will, therefore, be works protected as intellectual property by the Spanish legal system, with both Spanish and Community regulations in this field, as well as international treaties related to the matter and signed by Spain, being applicable to them.",
+      "paragraph2": "All rights reserved. By virtue of the provisions of the Intellectual Property Law, the reproduction, distribution and public communication, including its method of making available, of all or part of the contents of this web page, for commercial purposes, on any support and by any technical means, without the authorization of Team Up!, are expressly prohibited.",
+      "paragraph3": "The User agrees to respect the intellectual and industrial property rights of Team Up!. You may view the elements of the Website or even print, copy and store them on the hard drive of your computer or on any other physical medium provided that it is solely and exclusively for your personal use. The User, however, may not delete, alter, or manipulate any protection device or security system that was installed on the Website.",
+      "paragraph4": "In the event that the User or third party considers that any of the Contents of the Website supposes a violation of the rights of protection of intellectual property, they must immediately communicate it to Team Up! through the contact details in the GENERAL INFORMATION section of this Legal Notice and General Conditions of Use.",
+      "paragraph5": "The legal basis for the processing of personal data is consent. Team Up! undertakes to obtain the express and verifiable consent of the User for the processing of their personal data for one or several specific purposes.",
+      "paragraph6": "The User shall have the right to withdraw their consent at any time. It will be as easy to withdraw consent as it is to give it. As a general rule, the withdrawal of consent will not condition the use of the Website.",
+      "paragraph7": "On the occasions when the User must or can provide their data through forms to make inquiries, request information or for reasons related to the content of the Website, they will be informed in case the completion of any of them is mandatory because they are essential for the correct development of the operation carried out."
+    },
+    "legalActions": {
+      "title": "VI. Legal Actions, Applicable Legislation and Jurisdiction",
+      "paragraph1": "Team Up! reserves the right to file civil or criminal actions it deems necessary for improper use of the Website and Contents, or for non-compliance with these Conditions.",
+      "paragraph2": "The relationship between the User and Team Up! shall be governed by current regulations applicable in Spanish territory. Should any controversy arise in relation to the interpretation and/or application of these Conditions, the parties shall submit their conflicts to ordinary jurisdiction, submitting to the judges and courts that correspond according to law."
+    }
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "section1": {
+      "title": "I. Privacy Policy and Data Protection",
+      "intro": "Respecting the provisions of current legislation, Team Up! (hereinafter, also Website) is committed to adopting the necessary technical and organizational measures, according to the level of security appropriate to the risk of the collected data.",
+      "laws": {
+        "title": "Laws incorporated in this privacy policy",
+        "intro": "This privacy policy is adapted to Spanish and European regulations in force regarding the protection of personal data on the internet. Specifically, it respects the following standards:",
+        "list": {
+          "item1": "Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data (GDPR).",
+          "item2": "Organic Law 3/2018, of December 5, on the Protection of Personal Data and guarantee of digital rights (LOPD-GDD).",
+          "item3": "Royal Decree 1720/2007, of December 21, which approves the Regulation implementing Organic Law 15/1999, of December 13, on the Protection of Personal Data (RDLOPD).",
+          "item4": "Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSI-CE)."
+        }
+      },
+      "identity": {
+        "title": "Identity of the data controller",
+        "content": "The controller of the personal data collected in Team Up! is: TEAM UP TECH ESPAÑA S.L., provided with NIF/CIF: B56746340 and registered in: Commercial Registry of Bizkaia with the following registration data: Volume 6244, folio 68, registration 1 with sheet BI-82082, whose representative is: Ignacio Ramos Howell (hereinafter, Data Controller). Their contact details are as follows:",
+        "list": {
+          "item1": "Address: Alameda de Mazarredo 25, 1º, 48009 Bizkaia",
+          "item2": "Contact phone: 624827931",
+          "item3": "Contact email: datos@teamup.works"
+        }
+      },
+      "dataRegister": {
+        "title": "Registration of personal data",
+        "content": "In compliance with the provisions of the GDPR and LOPD-GDD, we inform you that the personal data collected by Team Up!, through the forms extended on its pages will be incorporated and processed in our file in order to facilitate, expedite and fulfill the commitments established between Team Up! and the User or the maintenance of the relationship established in the forms that he fills out, or to attend to a request or query from the same. Likewise, in accordance with the provisions of the GDPR and the LOPD-GDD, unless the exception provided for in article 30.5 of the GDPR applies, a record of processing activities is maintained that specifies, according to its purposes, the processing activities carried out and the other circumstances established in the GDPR."
+      },
+      "principles": {
+        "title": "Principles applicable to the processing of personal data",
+        "intro": "The processing of the User's personal data shall be subject to the following principles contained in Article 5 of the GDPR and in Article 4 et seq. of Organic Law 3/2018, of December 5, on the Protection of Personal Data and guarantee of digital rights:",
+        "list": {
+          "item1": "Principle of lawfulness, fairness and transparency: the User's consent will be required at all times following completely transparent information on the purposes for which personal data is collected.",
+          "item2": "Principle of purpose limitation: personal data will be collected for specified, explicit and legitimate purposes.",
+          "item3": "Principle of data minimization: the personal data collected will be only that strictly necessary in relation to the purposes for which they are processed.",
+          "item4": "Principle of accuracy: personal data must be accurate and always up to date.",
+          "item5": "Principle of storage limitation: personal data will only be maintained in a way that allows the identification of the User for the time necessary for the purposes of its processing.",
+          "item6": "Principle of integrity and confidentiality: personal data will be treated in a way that guarantees its security and confidentiality.",
+          "item7": "Principle of proactive responsibility: the Data Controller will be responsible for ensuring that the above principles are met."
+        }
+      },
+      "dataCategories": {
+        "title": "Categories of personal data",
+        "content": "The categories of data processed in Team Up! are only identifying data. Under no circumstances are special categories of personal data processed within the meaning of Article 9 of the GDPR."
+      },
+      "legalBasis": {
+        "title": "Legal basis for the processing of personal data",
+        "paragraph1": "The legal basis for the processing of personal data is consent. Team Up! undertakes to obtain the express and verifiable consent of the User for the processing of their personal data for one or several specific purposes.",
+        "paragraph2": "The User shall have the right to withdraw their consent at any time. It will be as easy to withdraw consent as it is to give it. As a general rule, the withdrawal of consent shall not condition the use of the Website. On occasions when the User must or can provide their data through forms to make inquiries, request information or for reasons related to the content of the Website, they will be informed in case the completion of any of them is mandatory because they are essential for the correct development of the operation carried out."
+      },
+      "purposes": {
+        "title": "Purposes of the processing to which the personal data are intended",
+        "paragraph1": "Personal data are collected and managed by Team Up! with the purpose of being able to facilitate, expedite and fulfill the commitments established between the Website and the User or the maintenance of the relationship established in the forms that the latter fills out or to attend to a request or query.",
+        "paragraph2": "Likewise, the data may be used for a commercial purpose of personalization, operational and statistical, and activities of the corporate purpose of Team Up!, as well as for the extraction, storage of data and marketing studies to adapt the Content offered to the User, as well as improve the quality, operation and navigation of the Website.",
+        "paragraph3": "At the time the personal data is obtained, the User will be informed about the specific purpose or purposes of the processing to which the personal data will be intended; that is, the use or uses that will be given to the information collected."
+      },
+      "retentionPeriod": {
+        "title": "Periods of retention of personal data",
+        "paragraph1": "Personal data will only be retained for the minimum time necessary for the purposes of its processing and, in any case, only during the following period: 24 months, or until the User requests its deletion.",
+        "paragraph2": "At the time the personal data is obtained, the User will be informed about the period during which the personal data will be kept or, when that is not possible, the criteria used to determine this period."
+      },
+      "dataRecipients": {
+        "title": "Recipients of personal data",
+        "intro": "The User's personal data will be shared with the following recipients or categories of recipients:",
+        "list": {
+          "item1": "Google Ireland Limited, with registered office at Gordon House, Barrow Street, Dublin 4, Ireland.",
+          "item2": "Microsoft Corporation, with registered office at One Microsoft Way, Redmond, WA 98052, United States."
+        },
+        "outro": "In the event that the Data Controller intends to transfer personal data to a third country or international organization, at the time the personal data is obtained, the User will be informed about the third country or international organization to which it is intended to transfer the data, as well as the existence or absence of an adequacy decision by the Commission."
+      },
+      "minorsData": {
+        "title": "Personal data of minors",
+        "content": "Respecting the provisions of Articles 8 of the GDPR and 7 of Organic Law 3/2018, of December 5, on the Protection of Personal Data and guarantee of digital rights, only those over 14 years of age may grant their consent for the processing of their personal data lawfully by Team Up!. If it is a minor under 14 years of age, the consent of the parents or guardians will be necessary for the treatment, and this will only be considered lawful to the extent that they have authorized it."
+      },
+      "secrecy": {
+        "title": "Secrecy and security of personal data",
+        "paragraph1": "Team Up! undertakes to adopt the necessary technical and organizational measures, according to the level of security appropriate to the risk of the data collected, in such a way as to guarantee the security of personal data and avoid the accidental or unlawful destruction, loss or alteration of personal data transmitted, stored or otherwise processed, or the unauthorized communication or access to such data.",
+        "paragraph2": "The Website has an SSL (Secure Socket Layer) certificate, which ensures that personal data is transmitted securely and confidentially, as the transmission of data between the server and the User, and in feedback, is entirely encrypted or encrypted.",
+        "paragraph3": "However, because Team Up! cannot guarantee the impregnability of the internet or the total absence of hackers or others who fraudulently access personal data, the Data Controller undertakes to notify the User without undue delay when a breach of security of personal data occurs that is likely to entail a high risk to the rights and freedoms of natural persons. Following the provisions of Article 4 of the GDPR, a breach of security of personal data means any breach of security leading to the accidental or unlawful destruction, loss or alteration of personal data transmitted, stored or otherwise processed, or the unauthorized communication of or access to such data.",
+        "paragraph4": "Personal data will be treated as confidential by the Data Controller, who undertakes to inform of and guarantee through a legal or contractual obligation that such confidentiality is respected by its employees, associates, and any person to whom it makes the information accessible."
+      },
+      "rights": {
+        "title": "Rights derived from the processing of personal data",
+        "intro": "The User has over Team Up! and may, therefore, exercise against the Data Controller the following rights recognized in the GDPR and Organic Law 3/2018, of December 5, on the Protection of Personal Data and guarantee of digital rights:",
+        "list": {
+          "item1": "Right of access: This is the User's right to obtain confirmation of whether or not Team Up! is processing their personal data and, if so, to obtain information about their specific personal data and the processing that Team Up! has carried out or is carrying out, as well as, among other things, of the information available on the origin of said data and the recipients of the communications made or planned for the same.",
+          "item2": "Right of rectification: This is the User's right to have their personal data modified that turns out to be inaccurate or, taking into account the purposes of the treatment, incomplete.",
+          "item3": "Right of erasure ('the right to be forgotten'): This is the User's right, provided that current legislation does not establish otherwise, to obtain the deletion of their personal data when these are no longer necessary for the purposes for which they were collected or processed; the User has withdrawn their consent to the processing and this does not have another legal basis; the User opposes the processing and there is no other legitimate reason to continue with it; the personal data have been processed unlawfully; personal data must be deleted in compliance with a legal obligation; or the personal data have been obtained as a result of a direct offer of information society services to a child under 14 years of age. In addition to deleting the data, the Data Controller, taking into account the available technology and the cost of its application, must take reasonable measures to inform those responsible who are processing the personal data of the interested party's request for deletion of any link to those personal data.",
+          "item4": "Right to restriction of processing: This is the User's right to limit the processing of their personal data. The User has the right to obtain the limitation of processing when they challenge the accuracy of their personal data; the processing is unlawful; the Data Controller no longer needs the personal data, but the User needs it to make claims; and when the User has opposed the processing.",
+          "item5": "Right to data portability: In the event that the processing is carried out by automated means, the User shall have the right to receive from the Data Controller their personal data in a structured, commonly used and machine-readable format, and to transmit them to another data controller. Whenever technically possible, the Data Controller will directly transmit the data to that other controller.",
+          "item6": "Right to object: This is the User's right not to have their personal data processed or to cease the processing of the same by Team Up!.",
+          "item7": "Right not to be subject to a decision based solely on automated processing, including profiling: This is the User's right not to be subject to an individualized decision based solely on the automated processing of their personal data, including profiling, existing unless current legislation establishes otherwise."
+        },
+        "exercising": "Thus, the User may exercise their rights by written communication addressed to the Data Controller with the reference 'RGPD-https://teamup.works', specifying:",
+        "exercisingList": {
+          "item1": "Name, surname of the User and copy of the DNI. In cases where representation is admitted, it will also be necessary to identify the person representing the User by the same means, as well as the document accrediting the representation. The photocopy of the DNI may be replaced by any other legally valid means that proves identity.",
+          "item2": "Request with the specific reasons for the request or information to which you want to access.",
+          "item3": "Address for notification purposes.",
+          "item4": "Date and signature of the applicant.",
+          "item5": "Any document that accredits the request you make."
+        },
+        "contact": "This request and any other attached document may be sent to the following address and/or email:",
+        "contactList": {
+          "item1": "Postal address: Alameda de Mazarredo 25, 1º, 48009 Bizkaia",
+          "item2": "Email: datos@teamup.works"
+        }
+      },
+      "thirdPartyLinks": {
+        "title": "Links to third party websites",
+        "content": "The Website may include hyperlinks or links that allow access to web pages of third parties other than Team Up!, and which are therefore not operated by Team Up!. The owners of these websites will have their own data protection policies, being themselves, in each case, responsible for their own files and their own privacy practices."
+      },
+      "complaints": {
+        "title": "Complaints before the supervisory authority",
+        "content": "In the event that the User considers that there is a problem or infringement of the current regulations in the way in which their personal data is being processed, they will have the right to effective judicial protection and to file a complaint with a supervisory authority, in particular, in the State in which they have their habitual residence, place of work or place of the alleged infringement. In the case of Spain, the supervisory authority is the Spanish Data Protection Agency (https://www.aepd.es/)."
+      }
+    },
+    "section2": {
+      "title": "II. Acceptance and changes to the privacy policy",
+      "paragraph1": "It is necessary that the User has read and agrees with the conditions on the protection of personal data contained in this Privacy Policy, as well as that they accept the processing of their personal data so that the Data Controller can proceed in the manner, during the periods and for the purposes indicated. The use of the Website will imply the acceptance of its Privacy Policy.",
+      "paragraph2": "Team Up! reserves the right to modify its Privacy Policy, according to its own criteria, or motivated by a legislative, jurisprudential or doctrinal change of the Spanish Data Protection Agency. Changes or updates to this Privacy Policy will not be explicitly notified to the User. The User is recommended to consult this page periodically to be aware of the latest changes or updates.",
+      "paragraph3": "This Privacy Policy was updated to adapt to Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data (GDPR) and to Organic Law 3/2018, of December 5, on the Protection of Personal Data and guarantee of digital rights."
+    }
+  },
+  "LegalPageTemplate": {
+    "backButton": "Back"
+  },
+  "Navbar": {
+    "benefits": "Benefits",
+    "whatIsTeamUp": "What is Team Up!?",
+    "spaces": "Spaces",
+    "features": "Features",
+    "login": "Log in",
+    "register": "Sign up"
+  }
+}

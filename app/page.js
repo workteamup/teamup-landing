@@ -1,11 +1,5 @@
-import Landing from "./components/landing";
-import Navbar from "./components/navbar";
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return (
-    <div className="bg-white">
-      <Navbar />
-      <Landing />
-    </div>
-  );
+  redirect('/en');
 }
