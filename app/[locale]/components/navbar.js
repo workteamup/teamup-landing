@@ -1,52 +1,84 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
+import Link from "next/link";
 import Button from "./button";
 import { HamburgerIcon, CloseIcon } from "./icons/navbar-icons";
 import TeamUpLogo from "./teamup-logo";
 
-const navLinks = [
-  {
-    id: "benefits",
-    title: "Beneficios",
-    href: "#benefits",
-  },
-  {
-    id: "what",
-    title: "¿Qué es Team Up!?",
-    href: "#what",
-  },
-  {
-    id: "spaces",
-    title: "Espacios",
-    href: "#spaces",
-  },
-  {
-    id: "features",
-    title: "Funcionalidades",
-    href: "#features",
-  },
-];
-
-const handleLogin = () => {
-  window.location.href = "https://app.teamup.works/login";
-};
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("Navbar");
+  const router = useRouter();
+  const pathname = usePathname();
 
   const handleIsMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const navLinks = [
+    {
+      id: "benefits",
+      title: t("benefits"),
+      href: "#benefits",
+    },
+    {
+      id: "what",
+      title: t("whatIsTeamUp"),
+      href: "#what",
+    },
+    {
+      id: "spaces",
+      title: t("spaces"),
+      href: "#spaces",
+    },
+    {
+      id: "features",
+      title: t("features"),
+      href: "#features",
+    },
+  ];
+
+  const LanguageSelector = () => {
+    const isEnglish = pathname.startsWith("/en");
+    const isSpanish = pathname.startsWith("/es");
+
+    return (
+      <div className="flex space-x-2 text-sm">
+        <Link
+          href="/en"
+          className={`${
+            isEnglish ? "font-semibold text-blue-500" : "text-slate-600"
+          } hover:text-blue-500`}
+        >
+          EN
+        </Link>
+        <span className="text-gray-400">|</span>
+        <Link
+          href="/es"
+          className={`${
+            isSpanish ? "font-semibold text-blue-500" : "text-slate-600"
+          } hover:text-blue-500`}
+        >
+          ES
+        </Link>
+      </div>
+    );
   };
 
   return (
     <div>
       <div className="z-50 hidden lg:block fixed w-full p-4 bg-slate-50/70 backdrop-blur-lg">
         <div className="flex justify-between items-center relative">
-          <div className="text-indigo-800 h-5">
-            <a href="#hero">
-              <TeamUpLogo />
-            </a>
+          <div className="flex items-center space-x-4">
+            <div className="text-indigo-800 h-5">
+              <a href="#hero">
+                <TeamUpLogo />
+              </a>
+            </div>
+            <LanguageSelector />
           </div>
           <div className="absolute left-1/2 -translate-x-2/4">
             {/* <ul className="flex flex-row justify-center space-x-1 height-10 p-1 bg-blue-950 text-white rounded-lg">
@@ -87,7 +119,7 @@ const Navbar = () => {
               variant="tertiary"
               size="md"
             >
-              Iniciar sesión
+              {t("login")}
             </Button>
             <Button
               type="button"
@@ -97,7 +129,7 @@ const Navbar = () => {
               variant="primary"
               size="md"
             >
-              Registrarse
+              {t("register")}
             </Button>
           </div>
         </div>
@@ -109,10 +141,13 @@ const Navbar = () => {
         } justify-between w-full lg:hidden bg-slate-50 fixed`}
       >
         <div className="flex justify-between items-center p-4 bg-slate-50 backdrop-blur-sm">
-          <div className="text-indigo-800 h-4">
-            <a href="#hero" onClick={() => setIsMenuOpen(false)}>
-              <TeamUpLogo />
-            </a>
+          <div className="flex items-center space-x-4">
+            <div className="text-indigo-800 h-4">
+              <a href="#hero" onClick={() => setIsMenuOpen(false)}>
+                <TeamUpLogo />
+              </a>
+            </div>
+            <LanguageSelector />
           </div>
           <div className="h-6 w-6 text-blue-950" onClick={handleIsMenuOpen}>
             {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -149,7 +184,7 @@ const Navbar = () => {
             variant="tertiary"
             size="md"
           >
-            Iniciar sesión
+            {t("login")}
           </Button>
           <Button
             type="button"
@@ -159,7 +194,7 @@ const Navbar = () => {
             variant="primary"
             size="md"
           >
-            Registrarse
+            {t("register")}
           </Button>
         </div>
       </div>
