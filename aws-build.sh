@@ -25,6 +25,30 @@ process_directory() {
 # Start processing from the current directory
 process_directory .
 
+# Create a simple index.html that redirects to /en or /es
+cat > index.html << EOF
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        var userLang = navigator.language || navigator.userLanguage;
+        if (userLang.toLowerCase().startsWith('es')) {
+            window.location.replace('/es');
+        } else {
+            window.location.replace('/en');
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to the appropriate language version...</p>
+</body>
+</html>
+EOF
+
+echo "Created root index.html with language redirect"
 echo "All html files have been renamed to remove the .html extension"
 
 cd ..
