@@ -3,6 +3,7 @@ import {notFound} from 'next/navigation';
 import { Sora, Syne } from "next/font/google";
 import "../globals.css";
 import Script from "next/script";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 const syne = Syne({ subsets: ["latin"] });
 const sora = Sora({ subsets: ["latin"] });
@@ -12,6 +13,8 @@ export function generateStaticParams() {
 }
 
 export default async function LocaleLayout({children, params: {locale}}) {
+  unstable_setRequestLocale(locale);
+  
   let messages;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
