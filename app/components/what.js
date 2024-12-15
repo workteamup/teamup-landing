@@ -12,16 +12,19 @@ const What = () => {
       title: t('What.trabaja.title'),
       text: t('What.trabaja.text'),
       src: "/images/trabaja.mp4",
+      videoOnRight: true,
     },
     {
       title: t('What.conecta.title'),
       text: t('What.conecta.text'),
       src: "/images/conecta.mp4",
+      videoOnRight: false,
     },
     {
       title: t('What.disfruta.title'),
       text: t('What.disfruta.text'),
       src: "/images/disfruta.mp4",
+      videoOnRight: true,
     },
   ];
 
@@ -35,14 +38,15 @@ const What = () => {
         className="mb-14"
       />
       <div className="max-w-[1440px] m-auto p-4">
-        <div className="flex flex-row flex-wrap justify-center -m-2">
+        <div className="flex flex-col gap-12">
           {cards.map((card, key) => (
-            <div
+            <WhatCard
               key={key}
-              className="p-2 basis-full sm:basis-1/2 xl:basis-1/3"
-            >
-              <WhatCard title={card.title} text={card.text} src={card.src} />
-            </div>
+              title={card.title}
+              text={card.text}
+              src={card.src}
+              videoOnRight={card.videoOnRight}
+            />
           ))}
         </div>
       </div>

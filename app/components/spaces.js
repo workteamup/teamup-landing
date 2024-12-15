@@ -1,5 +1,5 @@
 "use client";
-import { useTranslations } from '../contexts/TranslationContext';
+import { useTranslations } from "../contexts/TranslationContext";
 import { spaces } from "../consts";
 import UnknownIcon from "./icons/unknown-icon";
 import SectionHeader from "./section-header";
@@ -13,24 +13,41 @@ const SpaceCard = ({ img, tags, title, description, url, locale }) => {
   const t = useTranslations();
 
   return (
-    <div className="w-full rounded-lg hover:shadow-2xl overflow-hidden border border-slate-200 hover:cursor-pointer flex flex-col min-h-full group">
+    <div className="w-full rounded-3xl hover:shadow-2xl overflow-hidden border border-slate-200 hover:cursor-pointer flex flex-col min-h-full group">
       <div
-        className="h-[200px] bg-cover rounded-t-lg relative overflow-hidden bg-center"
+        className="h-[200px] bg-cover rounded-t-lg relative overflow-hidden bg-center group"
         style={{ backgroundImage: `url(${img})` }}
-        // className="relative h-[164px] "
       >
-        {/* <Image src={img} alt="wtf is this" fill /> */}
+        <div className="absolute inset-0 bg-blue-950 bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+          <div className="opacity-0 group-hover:opacity-100 transition-all duration-300">
+            <Button
+              variant="primary"
+              iconRight={<UnknownIcon width="20" height="20" path={iconPath} />}
+              type="button"
+              size="sm"
+              onClick={() => window.open(url, "_blank")}
+            >
+              {t("Spaces.viewDemo", { fallback: "Ver en demo" })}
+            </Button>
+          </div>
+        </div>
       </div>
       <div className="flex flex-col space-y-6 flex-grow p-6">
         <div className="inline-flex space-x-1">
           {tags &&
             tags.map((tag, key) => {
-              return <Tag key={key}>{t(`Spaces.tags.${tag}`, { fallback: tag })}</Tag>;
+              return (
+                <Tag key={key}>
+                  {t(`Spaces.tags.${tag}`, { fallback: tag })}
+                </Tag>
+              );
             })}
         </div>
-        <div className="flex flex-col space-y-2 flex-grow">
-          <h3 className="text-xl font-semibold group-hover:text-blue-00">
-            {t(`Spaces.spaces.${title}.title`, { fallback: spaces[title].title })}
+        <div className="flex flex-col space-y-2 flex-grow pb-3">
+          <h3 className="text-2xl font-semibold group-hover:text-blue-00">
+            {t(`Spaces.spaces.${title}.title`, {
+              fallback: spaces[title].title,
+            })}
           </h3>
           <p className="text-sm text-slate-400 grow">
             {t(`Spaces.spaces.${title}.description`, {
@@ -38,15 +55,6 @@ const SpaceCard = ({ img, tags, title, description, url, locale }) => {
             })}
           </p>
         </div>
-        <Button
-          variant="primary"
-          iconRight={<UnknownIcon width="20" height="20" path={iconPath} />}
-          type="button"
-          size="sm"
-          onClick={() => window.open(url, "_blank")}
-        >
-          {t("Spaces.viewDemo", { fallback: "Ver en demo" })}
-        </Button>
       </div>
     </div>
   );

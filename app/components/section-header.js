@@ -15,7 +15,7 @@ const SectionHeader = ({
 }) => {
   return (
     <div
-      className={`m-auto flex flex-col justify-center items-center space-y-4 max-w-[${width}px] pt-[96px] w-full px-4 ${className} `}
+      className={`m-auto flex flex-col items-start md:justify-center md:items-center space-y-4 max-w-[${width}px] pt-[96px] w-full px-4 ${className} `}
     >
       {tag && (
         <div className="inline-flex items-center">
@@ -23,12 +23,12 @@ const SectionHeader = ({
         </div>
       )}
       {heading && (
-        <h1 className="text-3xl md:text-5xl text-center font-semibold">
+        <h1 className="text-3xl md:text-5xl text-left md:text-center font-semibold">
           {heading}
         </h1>
       )}
       {subheading && (
-        <p className="text-lg md:text-xl text-slate-400 text-center">
+        <p className="text-lg md:text-xl text-slate-400 text-left md:text-center">
           {subheading}
         </p>
       )}

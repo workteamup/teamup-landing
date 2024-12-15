@@ -1,25 +1,41 @@
 "use client";
 
-const WhatCard = ({ title, text, src }) => {
+const WhatCard = ({ title, text, src, videoOnRight = true }) => {
   return (
-    <div className="flex flex-col flex-grow pt-16 w-full bg-blue-50 rounded-2xl items-center border border-blue-100 cursor-pointer hover:shadow-xl hover:border-200 group min-h-full">
-      <h2 className="text-2xl font-semibold text-center mb-2 group-hover:text-blue-700">
-        {title}
-      </h2>
+    <div className="flex flex-col space-y-8 md:space-y-0 md:flex-row w-full md:max-w-[1200px] items-start cursor-pointer group mx-auto">
+      <div
+        className={`flex flex-1 order-1 basis-1/2 ${
+          videoOnRight ? "md:order-1 md:text-right" : "md:order-2 md:text-left"
+        }`}
+      >
+        <div className="flex flex-col md:p-8 space-y-2 md:space-y-8">
+          <h2
+            className={`w-fit text-3xl md:text-5xl font-semibold mb-4 bg-blue-50 border border-1 border-blue-100 text-blue-600 lowercase py-2 px-4 md:py-4 md:px-8 rounded-full text-semibold ${
+              videoOnRight ? "md:ml-auto" : "md:mr-auto"
+            }`}
+          >
+            #{title}
+          </h2>
+          <p className="text-base md:text-2xl text-slate-400">{text}</p>
+        </div>
+      </div>
 
-      <p className="text-base text-slate-500 text-center mb-14 px-3 grow">
-        {text}
-      </p>
-      <div className="h-[280px] w-[75%] mx-12 rounded-t-2xl relative border-t-8 border-x-8 border-slate-50 bg-slate-50">
-        <video
-          alt={`${title} video loop`}
-          autoPlay
-          loop
-          muted
-          className="h-full w-full object-cover rounded-t-xl"
-        >
-          <source src={src} type="video/mp4" />
-        </video>
+      <div
+        className={`flex-1 md:p-8 order-2 w-full basis-1/2 ${
+          videoOnRight ? "md:order-2" : "md:order-1"
+        }`}
+      >
+        <div className="h-full md:h-[360px] w-full rounded-[48px] relative">
+          <video
+            alt={`${title} video loop`}
+            autoPlay
+            loop
+            muted
+            className="h-full w-full object-cover rounded-3xl "
+          >
+            <source src={src} type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
   );

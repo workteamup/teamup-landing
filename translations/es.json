@@ -341,6 +341,14 @@
     "spaces": "Espacios",
     "features": "Funcionalidades",
     "login": "Iniciar sesión",
-    "register": "Registrarse"
+    "register": "Registrarse",
+    "pricing": "Planes",
+    "blog": "Blog"
+  },
+  "Blog": {
+    "title": "Nuestro Blog",
+    "readMore": "Leer más",
+    "welcome": "¡Bienvenido al blog de Team Up!",
+    "description": "Descubre las últimas noticias, consejos sobre trabajo remoto y emocionantes actividades de Team Up! para mejorar tu experiencia colaborativa."
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from '../contexts/TranslationContext';
+import { useTranslations } from "../contexts/TranslationContext";
 import Button from "./button.js";
 import Label from "./label.js";
 import Image from "next/image";
@@ -21,12 +21,12 @@ const FooterCTA = ({
     >
       <Image
         src="/images/cta-img.png"
-        alt={t('imageAlt')}
+        alt={t("imageAlt")}
         width={219}
         height={274}
       />
-      <h1 className="text-2xl md:text-4xl text-center font-semibold px-4">
-        {t('FooterCTA.heading')}
+      <h1 className="text-3xl md:text-4xl text-center font-semibold px-4">
+        {t("FooterCTA.heading")}
       </h1>
       <div className="flex flex-col space-y-2 w-full sm:flex-row sm:space-x-4 sm:space-y-0 justify-center px-4">
         <Button
@@ -37,7 +37,7 @@ const FooterCTA = ({
           variant="primary"
           size="lg"
         >
-          {t('FooterCTA.primaryButton')}
+          {t("FooterCTA.primaryButton")}
         </Button>
         <Button
           type="button"
@@ -47,7 +47,7 @@ const FooterCTA = ({
           variant="secondary"
           size="lg"
         >
-          {t('FooterCTA.secondaryButton')}
+          {t("FooterCTA.secondaryButton")}
         </Button>
       </div>
     </div>

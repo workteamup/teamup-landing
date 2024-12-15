@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from '../contexts/TranslationContext';
+import { useTranslations } from "../contexts/TranslationContext";
 import SectionHeader from "./section-header";
 import Label from "./label";
 import Button from "./button";
@@ -34,13 +34,13 @@ const Hero = () => {
     <div id="hero" className="mb-24 md:mb-[200px] px-4">
       <div className="m-auto flex flex-col justify-center items-center max-w-[800px] mb-[80px]">
         <div className="inline-flex justify-center mt-[100px] md:mt-[200px]">
-          <Label>{t('Hero.label')}</Label>
+          <Label>{t("Hero.label")}</Label>
         </div>
-        <h1 className="text-4xl md:text-7xl mt-2 text-center mb-4 font-semibold">
-          {t('Hero.title')}
+        <h1 className="text-5xl md:text-7xl mt-2 text-center mb-4 font-semibold">
+          {t("Hero.title")}
         </h1>
-        <p className="text-xl sm:text-2xl text-slate-400 text-center font-light">
-          {t('Hero.description')}
+        <p className="text-xl sm:text-2xl text-slate-400 text-center">
+          {t("Hero.description")}
         </p>
         <div className="flex flex-col space-y-2 w-full sm:flex-row sm:space-x-4 sm:space-y-0 justify-center mt-10">
           <Button
@@ -51,7 +51,7 @@ const Hero = () => {
               window.open("https://app.teamup.works/signup", "_blank")
             }
           >
-            {t('Hero.primaryButton')}
+            {t("Hero.primaryButton")}
           </Button>
           <Button
             type="button"
@@ -61,11 +61,11 @@ const Hero = () => {
               window.open("https://teamup-ignacio.youcanbook.me/", "_blank")
             }
           >
-            {t('Hero.secondaryButton')}
+            {t("Hero.secondaryButton")}
           </Button>
         </div>
       </div>
-      <div className="xl:max-w-[1200px] lg:max-w-[960px] mx-auto overflow-hidden rounded-xl ">
+      <div className="xl:max-w-[1200px] lg:max-w-[960px] mx-auto overflow-hidden rounded-xl shadow-xl">
         <ResponsiveVideoComponent videoUrl={video} />
       </div>
     </div>

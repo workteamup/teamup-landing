@@ -1,10 +1,13 @@
 import { Sora, Syne } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import { TranslationProvider } from './contexts/TranslationContext';
+import { TranslationProvider } from "./contexts/TranslationContext";
 
 const syne = Syne({ subsets: ["latin"] });
-const sora = Sora({ subsets: ["latin"] });
+const sora = Sora({
+  subsets: ["latin"],
+  variable: '--font-sora'
+});
 
 export const metadata = {
   title: "Team Up | La mejor manera de conectar en remoto",
@@ -14,8 +17,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${sora.className} antialiased`}>
+    <html lang="en" className={`scroll-smooth ${sora.variable}`}>
+      <body className="antialiased font-sans">
         <Script
           src="https://cdn-cookieyes.com/client_data/61286c6a03a5761eb4e3563f/script.js"
           strategy="beforeInteractive"
@@ -27,9 +30,7 @@ export default function RootLayout({ children }) {
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           })(window, document, "clarity", "script", "nn9ccsv4wl");`}
         </Script>
-        <TranslationProvider>
-          {children}
-        </TranslationProvider>
+        <TranslationProvider>{children}</TranslationProvider>
       </body>
     </html>
   );

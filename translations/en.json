@@ -340,6 +340,14 @@
     "spaces": "Spaces",
     "features": "Features",
     "login": "Log in",
-    "register": "Sign up"
+    "register": "Sign up",
+    "pricing": "Pricing",
+    "blog": "Blog"
+  },
+  "Blog": {
+    "title": "Our Blog",
+    "readMore": "Read more",
+    "welcome": "Welcome to the Team Up! blog",
+    "description": "Discover the latest news, remote work insights, and exciting Team Up! activities to enhance your collaborative experience."
   }
 }
