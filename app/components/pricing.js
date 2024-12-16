@@ -98,7 +98,8 @@ const PricingCard = ({
   borderColor = "border-slate-900",
   featuresTitle = "Core Features",
   userCount,
-  ctaText = "Free 14-day trial",
+  ctaText = "Start now for free",
+  ctaDescription,
   isCustom = false,
 }) => {
   const monthlyDiscount = originalPrice
@@ -193,17 +194,22 @@ const PricingCard = ({
           </div>
 
           {/* CTA Section - Fixed Height */}
-          <div style={{ height: "52px" }} className="mb-8">
+          <div style={{ height: "80px" }} className="mb-8">
             <Button
               variant={label === "popular" ? "primary" : "secondary"}
               size="lg"
-              className="w-full"
+              className="w-full mb-2"
               onClick={() =>
                 window.open("https://app.teamup.works/signup", "_blank")
               }
             >
               {ctaText}
             </Button>
+            {ctaDescription && (
+              <div className="text-sm text-slate-500 text-center">
+                {ctaDescription}
+              </div>
+            )}
           </div>
 
           {/* Features Section */}
@@ -248,7 +254,7 @@ export default function Pricing() {
       yearlyPrice: 0,
       description:
         "For SMB business, SaaS companies wanting a more technical features.",
-      featuresTitle: "Includes",
+      featuresTitle: "Includes:",
       features: [
         "Rich member profiles",
         "Searchable member directory",
@@ -260,7 +266,8 @@ export default function Pricing() {
         "Gamification",
       ],
       label: false,
-      ctaText: "Start Free Trial",
+      ctaText: "Get started for free",
+      ctaDescription: "No credit card required",
     },
     {
       name: "Business",
@@ -268,9 +275,8 @@ export default function Pricing() {
       yearlyPrice: 7,
       yearlyOriginalPrice: 10,
       description: "Get key community building features, all in one place.",
-      featuresTitle: "Core Features",
+      featuresTitle: "Everything in Basic plus:",
       features: [
-        "Everything in Basic plus:",
         "Courses",
         "Live streams",
         "Live rooms",
@@ -282,15 +288,15 @@ export default function Pricing() {
         "Migration services for payments",
       ],
       label: "popular",
-      ctaText: "Start Free Trial",
+      ctaText: "Start your free trial",
+      ctaDescription: "14-day free trial",
     },
     {
       name: "Enterprise",
       description:
         "Run your business with full feature access and the highest limits.",
-      featuresTitle: "Enterprise Features",
+      featuresTitle: "Everything in Business plus:",
       features: [
-        "Everything in Professional plus:",
         "Unlimited workflows",
         "Custom single sign-on (SSO)",
         "Priority support",
@@ -301,11 +307,8 @@ export default function Pricing() {
         "Quarterly business reviews",
         "Dedicated customer success manager",
       ],
-      label: "custom",
-      labelText: "PERFECT FOR BRANDS",
-      labelColor: "bg-teal-500",
-      borderColor: "border-teal-500",
       ctaText: "Contact Sales",
+      ctaDescription: "Custom pricing for your needs",
       isCustom: true,
     },
   ];
