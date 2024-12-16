@@ -24,7 +24,7 @@ const Button = ({
     primary:
       "bg-blue-500 text-white hover:bg-blue-600 hover:shadow-md font-medium",
     secondary:
-      "bg-white text-blue-950 border border-2 border-blue-400 hover:border-blue-400  hover:bg-blue-50 hover:shadow-md",
+      "bg-white text-blue-950 border border border-blue-400 hover:border-blue-400  hover:bg-blue-50 hover:shadow-md",
     tertiary: "text-blue-950 hover:text-blue-600 hover:bg-blue-50",
   };
 
