@@ -42,6 +42,47 @@ const PricingToggle = ({ isYearly, setIsYearly }) => {
   );
 };
 
+const UserCountSelector = ({ userCount, setUserCount }) => {
+  return (
+    <div className="flex flex-col items-center mb-8">
+      <div className="text-center mb-4">
+        <div className="font-medium text-sm text-slate-600 mb-1">
+          Calculate your pricing
+        </div>
+        <div className="text-lg text-slate-400">
+          How many users will you have?
+        </div>
+      </div>
+      <div className="flex items-center gap-2">
+        <Button
+          variant="secondary"
+          size="sm"
+          onClick={() => setUserCount(Math.max(1, userCount - 1))}
+        >
+          -
+        </Button>
+        <input
+          type="text"
+          value={userCount}
+          onChange={(e) => {
+            const value = parseInt(e.target.value) || 1;
+            setUserCount(Math.max(1, value));
+          }}
+          className="w-16 text-center border border-slate-200 rounded-md h-9"
+          style={{ WebkitAppearance: "none", MozAppearance: "textfield" }}
+        />
+        <Button
+          variant="secondary"
+          size="sm"
+          onClick={() => setUserCount(userCount + 1)}
+        >
+          +
+        </Button>
+      </div>
+    </div>
+  );
+};
+
 const PricingCard = ({
   name,
   price,
@@ -56,16 +97,24 @@ const PricingCard = ({
   labelColor = "bg-slate-900",
   borderColor = "border-slate-900",
   featuresTitle = "Core Features",
+  userCount,
+  ctaText = "Free 14-day trial",
+  isCustom = false,
 }) => {
   const monthlyDiscount = originalPrice
-    ? `Save $${originalPrice - price}/month`
+    ? `Save $${(originalPrice - price) * userCount}/month`
     : null;
   const yearlyDiscount = yearlyOriginalPrice
-    ? `Save $${yearlyOriginalPrice - yearlyPrice}/month`
+    ? `Save $${(
+        (yearlyOriginalPrice - yearlyPrice) *
+        12 *
+        userCount
+      ).toLocaleString()}/year`
     : null;
   const currentPrice = isYearly ? yearlyPrice : price;
   const currentOriginalPrice = isYearly ? yearlyOriginalPrice : originalPrice;
   const currentDiscount = isYearly ? yearlyDiscount : monthlyDiscount;
+  const totalPrice = currentPrice * userCount;
 
   return (
     <div
@@ -110,16 +159,24 @@ const PricingCard = ({
           {/* Pricing Section - Fixed Height */}
           <div style={{ height: "96px" }} className="mb-6">
             <div className="flex items-start">
-              <span className="text-4xl font-bold">$</span>
-              <span className="text-4xl font-bold">{currentPrice}</span>
-              <div className="flex flex-col ml-2 mt-1">
-                {currentOriginalPrice && (
-                  <span className="text-slate-400 line-through text-sm">
-                    ${currentOriginalPrice}
-                  </span>
-                )}
-                <span className="text-slate-600 text-sm">/mo</span>
-              </div>
+              {isCustom ? (
+                <span className="text-4xl font-bold">Custom</span>
+              ) : (
+                <>
+                  <span className="text-4xl font-bold">$</span>
+                  <span className="text-4xl font-bold">{totalPrice}</span>
+                  <div className="flex flex-col ml-2 mt-1">
+                    {currentOriginalPrice && (
+                      <span className="text-slate-400 line-through text-sm">
+                        ${currentOriginalPrice * userCount}
+                      </span>
+                    )}
+                    <span className="text-slate-600 text-sm">
+                      {userCount === 1 ? "/month per user" : "/month"}
+                    </span>
+                  </div>
+                </>
+              )}
             </div>
             <div style={{ height: "24px" }}>
               {currentDiscount && (
@@ -145,7 +202,7 @@ const PricingCard = ({
                 window.open("https://app.teamup.works/signup", "_blank")
               }
             >
-              Free 14-day trial
+              {ctaText}
             </Button>
           </div>
 
@@ -181,16 +238,17 @@ const PricingCard = ({
 
 export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
+  const [userCount, setUserCount] = useState(1);
   const t = useTranslations();
 
   const plans = [
     {
-      name: "Basic",
-      price: 49,
-      yearlyPrice: 41,
+      name: "Free",
+      price: 0,
+      yearlyPrice: 0,
       description:
         "For SMB business, SaaS companies wanting a more technical features.",
-      featuresTitle: "Core Features",
+      featuresTitle: "Includes",
       features: [
         "Rich member profiles",
         "Searchable member directory",
@@ -202,13 +260,13 @@ export default function Pricing() {
         "Gamification",
       ],
       label: false,
+      ctaText: "Start Free Trial",
     },
     {
-      name: "Professional",
-      price: 89,
-      yearlyPrice: 75,
-      originalPrice: 99,
-      yearlyOriginalPrice: 85,
+      name: "Business",
+      price: 10,
+      yearlyPrice: 7,
+      yearlyOriginalPrice: 10,
       description: "Get key community building features, all in one place.",
       featuresTitle: "Core Features",
       features: [
@@ -224,13 +282,10 @@ export default function Pricing() {
         "Migration services for payments",
       ],
       label: "popular",
+      ctaText: "Start Free Trial",
     },
     {
       name: "Enterprise",
-      price: 360,
-      yearlyPrice: 300,
-      originalPrice: 399,
-      yearlyOriginalPrice: 339,
       description:
         "Run your business with full feature access and the highest limits.",
       featuresTitle: "Enterprise Features",
@@ -250,6 +305,8 @@ export default function Pricing() {
       labelText: "PERFECT FOR BRANDS",
       labelColor: "bg-teal-500",
       borderColor: "border-teal-500",
+      ctaText: "Contact Sales",
+      isCustom: true,
     },
   ];
 
@@ -265,10 +322,16 @@ export default function Pricing() {
         />
 
         <PricingToggle isYearly={isYearly} setIsYearly={setIsYearly} />
+        <UserCountSelector userCount={userCount} setUserCount={setUserCount} />
 
         <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <PricingCard key={index} {...plan} isYearly={isYearly} />
+            <PricingCard
+              key={index}
+              {...plan}
+              isYearly={isYearly}
+              userCount={userCount}
+            />
           ))}
         </div>
       </div>
