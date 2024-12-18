@@ -7,6 +7,7 @@ import Navbar from "../../components/navbar";
 import FooterCTA from "../../components/footer-cta";
 import Footer from "../../components/footer";
 import Image from "next/image";
+import CTA from "../../components/cta";
 
 const BlogPage = () => {
   const t = useTranslations();
@@ -85,7 +86,7 @@ const BlogPage = () => {
   return (
     <div className="bg-slate-50">
       <Navbar />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[73px] sm:pt-[81px] lg:pt-[128px] pb-24">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-[73px] sm:pt-[81px] lg:pt-[128px] pb-24 mb-24">
         {/* Add header section */}
         <div className="text-center mb-24 mt-24">
           <h1 className="text-5xl font-semibold text-blue-950 mb-4">
@@ -210,9 +211,10 @@ const BlogPage = () => {
             </div>
           </>
         ) : (
-          <p className="text-center text-gray-500">No articles found.</p>
+          <p className="text-center text-slate-400">No articles found.</p>
         )}
       </div>
+      <CTA variant="dark" />
       <FooterCTA />
       <Footer />
     </div>

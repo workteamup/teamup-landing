@@ -350,5 +350,74 @@
     "readMore": "Leer más",
     "welcome": "¡Bienvenido al blog de Team Up!",
     "description": "Descubre las últimas noticias, consejos sobre trabajo remoto y emocionantes actividades de Team Up! para mejorar tu experiencia colaborativa."
+  },
+  "Pricing": {
+    "tag": "Precios",
+    "heading": "Precios simples y transparentes",
+    "subheading": "Comienza con una prueba gratuita de 14 días. Sin tarjeta de crédito.",
+    "toggle": {
+      "monthly": "Mensual",
+      "yearly": "Anual (ahorra 30%)"
+    },
+    "calculator": {
+      "title": "Calcula tu precio",
+      "subtitle": "¿Cuántos usuarios tendrás?"
+    },
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "description": "Para equipos pequeños que no pueden convencer a su jefe de pagar por la mejor herramienta de engagement.",
+        "featuresTitle": "Incluye:",
+        "features": [
+          "7 usuarios",
+          "Todos los espacios básicos",
+          "1 punto de reunión",
+          "Pago por eventos",
+          "Personalización básica de avatar"
+        ],
+        "ctaText": "Empezar gratis",
+        "ctaDescription": "Sin tarjeta de crédito"
+      },
+      "business": {
+        "name": "Business",
+        "description": "Para PYMEs que realmente aprecian a sus empleados y quieren la mejor herramienta de engagement.",
+        "featuresTitle": "Todo lo de Basic más:",
+        "features": [
+          "Hasta 50 usuarios",
+          "Espacios premium",
+          "3 puntos de reunión",
+          "2 eventos gratis al mes",
+          "Añade tu marca",
+          "Invita usuarios externos a salas y eventos",
+          "Mayor paquete de personalización de avatar"
+        ],
+        "ctaText": "Comenzar prueba gratuita",
+        "ctaDescription": "Sin tarjeta de crédito",
+        "label": "MÁS POPULAR"
+      },
+      "custom": {
+        "name": "Personalizado",
+        "description": "Para empresas de cualquier tamaño que reeealmente se preocupan por sus empleados y quieren lo mejor de lo mejor para ellos.",
+        "featuresTitle": "Todo lo de Business más:",
+        "features": [
+          "Usuarios ilimitados",
+          "Todos los espacios",
+          "Puntos de reunión ilimitados",
+          "Eventos ilimitados",
+          "Soporte prioritario",
+          "Precios personalizados",
+          "Espacios personalizados",
+          "Paquete completo de personalización de avatar"
+        ],
+        "ctaText": "Contactar con ventas",
+        "ctaDescription": "Construye tu plan"
+      }
+    },
+    "perMonth": "/mes",
+    "perMonthPerUser": "/mes por usuario",
+    "customPricing": "Precio personalizado",
+    "mostPopular": "MÁS POPULAR",
+    "monthlyDiscount": "Ahorra $${amount}/mes",
+    "yearlyDiscount": "Ahorra $${amount}/año"
   }
 }

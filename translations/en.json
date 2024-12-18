@@ -349,5 +349,74 @@
     "readMore": "Read more",
     "welcome": "Welcome to the Team Up! blog",
     "description": "Discover the latest news, remote work insights, and exciting Team Up! activities to enhance your collaborative experience."
+  },
+  "Pricing": {
+    "tag": "Pricing",
+    "heading": "Simple, transparent pricing",
+    "subheading": "Start with a 14-day free trial. No credit card needed.",
+    "toggle": {
+      "monthly": "Monthly",
+      "yearly": "Yearly (save 30%)"
+    },
+    "calculator": {
+      "title": "Calculate your pricing",
+      "subtitle": "How many users will you have?"
+    },
+    "plans": {
+      "free": {
+        "name": "Free",
+        "description": "For small teams that can't convince their boss to pay for the best team engagement tool.",
+        "featuresTitle": "Includes:",
+        "features": [
+          "7 users",
+          "All basic spaces",
+          "1 meeting point",
+          "Pay for events",
+          "Basic avatar personalization"
+        ],
+        "ctaText": "Get started for free",
+        "ctaDescription": "No credit card required"
+      },
+      "business": {
+        "name": "Business",
+        "description": "For SMB business that really appreciate their employees and want the best team engagement tool.",
+        "featuresTitle": "Everything in Basic plus:",
+        "features": [
+          "Up to 50 users",
+          "Premium spaces",
+          "3 meeting points",
+          "2 free events per month",
+          "Add custom branding",
+          "Invite non Team Up! users to room and events",
+          "Premium avatar personalization"
+        ],
+        "ctaText": "Start your free trial",
+        "ctaDescription": "No credit card required",
+        "label": "MOST POPULAR"
+      },
+      "custom": {
+        "name": "Custom",
+        "description": "For companies of all sizes that reeeaaally care about their employees and want the best of the best for them.",
+        "featuresTitle": "Everything in Business plus:",
+        "features": [
+          "Unlimited users",
+          "Every space",
+          "Unlimited meeting points",
+          "Unlimited events",
+          "Priority support",
+          "Tailored pricing",
+          "Custom spaces",
+          "Custom avatar personalization"
+        ],
+        "ctaText": "Contact Sales",
+        "ctaDescription": "Build your own plan"
+      }
+    },
+    "perMonth": "/month",
+    "perMonthPerUser": "/month per user",
+    "customPricing": "Custom pricing",
+    "mostPopular": "MOST POPULAR",
+    "monthlyDiscount": "Save $${amount}/month",
+    "yearlyDiscount": "Save $${amount}/year"
   }
 }

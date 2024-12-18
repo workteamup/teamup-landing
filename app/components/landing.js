@@ -15,12 +15,23 @@ const Landing = () => {
       <Hero />
       <Benefits />
       <What />
-      <CTA variant="dark" />
+      <CTA 
+        variant="dark"
+        title="Ready to transform your team?"
+        subtitle="Start your journey towards better team collaboration today."
+        buttonText="Get started"
+        price="0€"
+      />
       <Spaces />
       <Features />
-      {/* Contact CTA */}
       <Pricing />
-      <CTA variant="dark" />
+      <CTA 
+        variant="dark"
+        title="Join thousands of happy teams"
+        subtitle="Don't miss out on the opportunity to enhance your team's performance."
+        buttonText="Try it now"
+        price="0€"
+      />
       <FooterCTA />
       <Footer />
     </div>

@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "../contexts/TranslationContext";
+import { useTranslations, useLocale } from "../contexts/TranslationContext";
 import Button from "./button";
 import SectionHeader from "./section-header";
+import KitDigital from "../components/kit-digital";
 
 const PricingToggle = ({ isYearly, setIsYearly }) => {
+  const t = useTranslations();
   return (
     <div className="flex justify-center mb-12">
       <div className="relative p-1 rounded-lg bg-white border border-slate-200">
@@ -26,7 +28,7 @@ const PricingToggle = ({ isYearly, setIsYearly }) => {
             }`}
             onClick={() => setIsYearly(false)}
           >
-            Monthly
+            {t("Pricing.toggle.monthly")}
           </button>
           <button
             className={`relative z-10 w-[180px] px-6 py-2 text-sm font-medium transition-colors duration-200 ease-in-out rounded-md whitespace-nowrap ${
@@ -34,7 +36,7 @@ const PricingToggle = ({ isYearly, setIsYearly }) => {
             }`}
             onClick={() => setIsYearly(true)}
           >
-            Yearly (save 30%)
+            {t("Pricing.toggle.yearly")}
           </button>
         </div>
       </div>
@@ -43,14 +45,15 @@ const PricingToggle = ({ isYearly, setIsYearly }) => {
 };
 
 const UserCountSelector = ({ userCount, setUserCount }) => {
+  const t = useTranslations();
   return (
     <div className="flex flex-col items-center mb-8">
       <div className="text-center mb-4">
         <div className="font-medium text-sm text-slate-600 mb-1">
-          Calculate your pricing
+          {t("Pricing.calculator.title")}
         </div>
         <div className="text-lg text-slate-400">
-          How many users will you have?
+          {t("Pricing.calculator.subtitle")}
         </div>
       </div>
       <div className="flex items-center gap-2">
@@ -102,15 +105,16 @@ const PricingCard = ({
   ctaDescription,
   isCustom = false,
 }) => {
+  const t = useTranslations();
   const monthlyDiscount = originalPrice
-    ? `Save $${(originalPrice - price) * userCount}/month`
+    ? t("Pricing.monthlyDiscount", {
+        amount: (originalPrice - price) * userCount,
+      })
     : null;
   const yearlyDiscount = yearlyOriginalPrice
-    ? `Save $${(
-        (yearlyOriginalPrice - yearlyPrice) *
-        12 *
-        userCount
-      ).toLocaleString()}/year`
+    ? t("Pricing.yearlyDiscount", {
+        amount: ((yearlyOriginalPrice - yearlyPrice) * 12 * userCount).toLocaleString(),
+      })
     : null;
   const currentPrice = isYearly ? yearlyPrice : price;
   const currentOriginalPrice = isYearly ? yearlyOriginalPrice : originalPrice;
@@ -128,7 +132,7 @@ const PricingCard = ({
       {label === "popular" && (
         <div className="absolute -top-10 left-0 right-0">
           <div className="text-xs uppercase text-center font-bold p-1 tracking-[1px] h-[40px] flex justify-center items-center text-white bg-blue-500 rounded-t-2xl">
-            <span className="self-center">MOST POPULAR</span>
+            <span className="self-center">{t("Pricing.mostPopular")}</span>
           </div>
         </div>
       )}
@@ -154,14 +158,14 @@ const PricingCard = ({
         <div className="p-8 flex flex-col flex-grow">
           {/* Header Section - Fixed Height */}
           <div style={{ height: "44px" }} className="mb-6">
-            <h3 className="text-2xl font-semibold">{name}</h3>
+            <h3 className="text-2xl font-semibold text-blue-400">{name}</h3>
           </div>
 
           {/* Pricing Section - Fixed Height */}
           <div style={{ height: "96px" }} className="mb-6">
             <div className="flex items-start">
               {isCustom ? (
-                <span className="text-4xl font-bold">Custom</span>
+                <span className="text-4xl font-bold">{t("Pricing.customPricing")}</span>
               ) : (
                 <>
                   <span className="text-4xl font-bold">$</span>
@@ -173,7 +177,7 @@ const PricingCard = ({
                       </span>
                     )}
                     <span className="text-slate-600 text-sm">
-                      {userCount === 1 ? "/month per user" : "/month"}
+                      {userCount === 1 ? t("Pricing.perMonthPerUser") : t("Pricing.perMonth")}
                     </span>
                   </div>
                 </>
@@ -246,69 +250,62 @@ export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
   const [userCount, setUserCount] = useState(1);
   const t = useTranslations();
+  const locale = useLocale();
 
   const plans = [
     {
-      name: "Free",
+      name: t("Pricing.plans.free.name"),
       price: 0,
       yearlyPrice: 0,
-      description:
-        "For SMB business, SaaS companies wanting a more technical features.",
-      featuresTitle: "Includes:",
+      description: t("Pricing.plans.free.description"),
+      featuresTitle: t("Pricing.plans.free.featuresTitle"),
       features: [
-        "Rich member profiles",
-        "Searchable member directory",
-        "Discussions",
-        "Events",
-        "Paid memberships",
-        "Custom domain",
-        "Weekly community digest",
-        "Gamification",
+        t("Pricing.plans.free.features.0"),
+        t("Pricing.plans.free.features.1"),
+        t("Pricing.plans.free.features.2"),
+        t("Pricing.plans.free.features.3"),
+        t("Pricing.plans.free.features.4"),
       ],
       label: false,
-      ctaText: "Get started for free",
-      ctaDescription: "No credit card required",
+      ctaText: t("Pricing.plans.free.ctaText"),
+      ctaDescription: t("Pricing.plans.free.ctaDescription"),
     },
     {
-      name: "Business",
+      name: t("Pricing.plans.business.name"),
       price: 10,
       yearlyPrice: 7,
       yearlyOriginalPrice: 10,
-      description: "Get key community building features, all in one place.",
-      featuresTitle: "Everything in Basic plus:",
+      description: t("Pricing.plans.business.description"),
+      featuresTitle: t("Pricing.plans.business.featuresTitle"),
       features: [
-        "Courses",
-        "Live streams",
-        "Live rooms",
-        "Unlimited members",
-        "Custom branding",
-        "Reporting & analytics",
-        "Custom code snippets",
-        "Conversion tracking",
-        "Migration services for payments",
+        t("Pricing.plans.business.features.0"),
+        t("Pricing.plans.business.features.1"),
+        t("Pricing.plans.business.features.2"),
+        t("Pricing.plans.business.features.3"),
+        t("Pricing.plans.business.features.4"),
+        t("Pricing.plans.business.features.5"),
+        t("Pricing.plans.business.features.6"),
       ],
       label: "popular",
-      ctaText: "Start your free trial",
-      ctaDescription: "14-day free trial",
+      ctaText: t("Pricing.plans.business.ctaText"),
+      ctaDescription: t("Pricing.plans.business.ctaDescription"),
     },
     {
-      name: "Enterprise",
-      description:
-        "Run your business with full feature access and the highest limits.",
-      featuresTitle: "Everything in Business plus:",
+      name: t("Pricing.plans.custom.name"),
+      description: t("Pricing.plans.custom.description"),
+      featuresTitle: t("Pricing.plans.custom.featuresTitle"),
       features: [
-        "Unlimited workflows",
-        "Custom single sign-on (SSO)",
-        "Priority support",
-        "Lower transaction fees",
-        "Sandbox community",
-        "Up to 10 admins & 100 moderators",
-        "Concierge onboarding",
-        "Quarterly business reviews",
-        "Dedicated customer success manager",
+        t("Pricing.plans.custom.features.0"),
+        t("Pricing.plans.custom.features.1"),
+        t("Pricing.plans.custom.features.2"),
+        t("Pricing.plans.custom.features.3"),
+        t("Pricing.plans.custom.features.4"),
+        t("Pricing.plans.custom.features.5"),
+        t("Pricing.plans.custom.features.6"),
+        t("Pricing.plans.custom.features.7"),
       ],
-      ctaText: "Contact Sales",
-      ctaDescription: "Custom pricing for your needs",
+      ctaText: t("Pricing.plans.custom.ctaText"),
+      ctaDescription: t("Pricing.plans.custom.ctaDescription"),
       isCustom: true,
     },
   ];
@@ -337,6 +334,8 @@ export default function Pricing() {
             />
           ))}
         </div>
+
+        {locale === "es" && <KitDigital className="mt-24" />}
       </div>
     </div>
   );
