@@ -214,7 +214,6 @@ const BlogPage = () => {
           <p className="text-center text-slate-400">No articles found.</p>
         )}
       </div>
-      <CTA variant="dark" />
       <FooterCTA />
       <Footer />
     </div>

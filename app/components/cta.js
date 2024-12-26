@@ -1,5 +1,5 @@
 import Button from "./button";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "../contexts/TranslationContext";
 
 export default function CTA({
   variant = "light",
@@ -8,7 +8,7 @@ export default function CTA({
   buttonText = "Get started",
   price = "0€",
 }) {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   const styles = {
     container: {
