@@ -18,7 +18,8 @@ const BlogPage = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await getAllArticles();
+        const locale = window.location.pathname.split('/')[1] || 'en';
+        const response = await getAllArticles(locale);
         if (response?.data) {
           setArticles(response.data);
         } else {

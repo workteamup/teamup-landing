@@ -27,24 +27,28 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPost({ params }) {
-  //console.log("BlogPost: Received params:", params);
+  console.log("🎯 BlogPost params:", params);
 
   try {
-    const locale = params.lang || 'en';
-    //console.log("DEBUG - Requested slug:", params.slug);
+    // Get locale from the file path structure
+    const locale = 'es';  // Since we're in app/es/blog/[slug]/page.js
+    console.log("🌍 Using locale:", locale);
+    
     const article = await getArticle(params.slug, locale);
-    //console.log("DEBUG - Found article:", article);
-    console.log("DEBUG - Article categories:", article?.Categories);
+    console.log("📑 Retrieved article:", article ? "Found" : "Not found");
 
     if (!article) {
-      //console.log("DEBUG - No article found for slug:", params.slug);
+      console.log("❌ No article found for:", {
+        slug: params.slug,
+        locale: locale
+      });
       return (
         <div className="min-h-screen flex items-center justify-center flex-col">
           <h1 className="text-2xl mb-4">Article Not Found</h1>
           <p className="text-gray-600 mb-4">
             This article may have been moved or deleted.
           </p>
-          <a href="/en/blog" className="text-blue-500 hover:underline">
+          <a href="/es/blog" className="text-blue-500 hover:underline">
             → Browse all articles
           </a>
         </div>
@@ -171,7 +175,7 @@ export default async function BlogPost({ params }) {
       </div>
     );
   } catch (error) {
-    console.error("Error in BlogPost:", error);
+    console.error("💥 Error in BlogPost:", error);
     throw error;
   }
 }

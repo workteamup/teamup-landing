@@ -16,10 +16,10 @@ export async function fetchAPI(endpoint) {
   }
 }
 
-export async function getAllArticles() {
+export async function getAllArticles(locale = 'en') {
   try {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/articles?populate[0]=Image&populate[1]=author&populate[2]=categories`,
+      `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/articles?locale=${locale}&populate[0]=Image&populate[1]=author&populate[2]=categories`,
       {
         headers: {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`,
@@ -77,9 +77,9 @@ export async function getAllArticles() {
   }
 }
 
-export async function getArticle(slug) {
+export async function getArticle(slug, locale = 'en') {
   try {
-    console.log("🚀 Fetching article with slug:", slug);
+    console.log("🚀 Fetching article with slug:", slug, "locale:", locale);
 
     if (!slug) {
       console.error("No slug provided to getArticle");
@@ -87,9 +87,7 @@ export async function getArticle(slug) {
     }
 
     const response = await fetch(
-      `${
-        process.env.NEXT_PUBLIC_STRAPI_API_URL
-      }/api/articles?filters[Slug][$eq]=${encodeURIComponent(
+      `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/articles?locale=${locale}&filters[Slug][$eq]=${encodeURIComponent(
         slug
       )}&populate[0]=author.avatar&populate[1]=categories`,
       {
