@@ -119,7 +119,7 @@ const Navbar = () => {
               <Button
                 type="button"
                 onClick={() =>
-                  window.open("https://app.teamup.works/login", "_blank")
+                  window.open("https://app.teamup.works/", "_blank")
                 }
                 variant="tertiary"
                 size="md"
@@ -188,7 +188,7 @@ const Navbar = () => {
           <Button
             type="button"
             onClick={() =>
-              window.open("https://app.teamup.works/login", "_blank")
+              window.open("https://app.teamup.works/", "_blank")
             }
             variant="tertiary"
             size="md"

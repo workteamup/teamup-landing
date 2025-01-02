@@ -2,8 +2,8 @@
 const API_URL =
   process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337";
 
-console.log("API URL:", process.env.NEXT_PUBLIC_STRAPI_API_URL);
-console.log("API Token:", process.env.NEXT_PUBLIC_STRAPI_API_TOKEN);
+// console.log("API URL:", process.env.NEXT_PUBLIC_STRAPI_API_URL);
+// console.log("API Token:", process.env.NEXT_PUBLIC_STRAPI_API_TOKEN);
 
 export async function fetchAPI(endpoint) {
   try {
@@ -33,11 +33,11 @@ export async function getAllArticles(locale = 'en') {
 
     const data = await response.json();
     //console.log(data);
-    console.log("DEBUG - All articles from API:", data); // Add this line
-    console.log(
-      "getAllArticles response:",
-      data.data.map((article) => article.Slug)
-    );
+    //console.log("DEBUG - All articles from API:", data); // Add this line
+    //console.log(
+    //  "getAllArticles response:",
+    //  data.data.map((article) => article.Slug)
+    //);
 
     return {
       data: data.data.map((article) => ({
@@ -79,7 +79,7 @@ export async function getAllArticles(locale = 'en') {
 
 export async function getArticle(slug, locale = 'en') {
   try {
-    console.log("🚀 Fetching article with slug:", slug, "locale:", locale);
+    //console.log("🚀 Fetching article with slug:", slug, "locale:", locale);
 
     if (!slug) {
       console.error("No slug provided to getArticle");
@@ -106,14 +106,14 @@ export async function getArticle(slug, locale = 'en') {
     //console.log("📊 Raw API Response:", data);
 
     if (!data.data || data.data.length === 0) {
-      console.log("❌ No article found for slug:", slug);
+      //console.log("❌ No article found for slug:", slug);
       return null;
     }
 
     const article = data.data[0];
-    console.log("✅ Found article with slug:", article.Slug);
-    console.log("📂 Raw Categories data:", article.categories);
-    console.log("Avatar:", article.author?.avatar);
+    //console.log("✅ Found article with slug:", article.Slug);
+    //console.log("📂 Raw Categories data:", article.categories);
+    //console.log("Avatar:", article.author?.avatar);
 
     return {
       id: article.id,
@@ -151,7 +151,7 @@ export async function getArticle(slug, locale = 'en') {
       },
     };
   } catch (error) {
-    console.error("💥 Error in getArticle:", error);
+    //console.error("💥 Error in getArticle:", error);
     return null;
   }
 }

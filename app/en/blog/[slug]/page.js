@@ -34,7 +34,7 @@ export default async function BlogPost({ params }) {
     //console.log("DEBUG - Requested slug:", params.slug);
     const article = await getArticle(params.slug, locale);
     //console.log("DEBUG - Found article:", article);
-    console.log("DEBUG - Article categories:", article?.Categories);
+    //console.log("DEBUG - Article categories:", article?.Categories);
 
     if (!article) {
       //console.log("DEBUG - No article found for slug:", params.slug);
@@ -76,7 +76,7 @@ export default async function BlogPost({ params }) {
           {/* Categories */}
           {article.Categories && article.Categories.length > 0 && (
             <div className="text-base sm:text-base text-left mb-8 flex flex-wrap gap-2">
-              {console.log("Rendering categories:", article.Categories)}
+              {/* {console.log("Rendering categories:", article.Categories)} */}
               {article.Categories.map((category, index) => (
                 <span
                   key={index}

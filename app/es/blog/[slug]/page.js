@@ -10,7 +10,7 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 // Add this function to generate all possible paths
 export async function generateStaticParams() {
   // Generate paths for all locales
-  const locales = ['en', 'es']; // Add all your supported locales
+  const locales = ["en", "es"]; // Add all your supported locales
   const paths = [];
 
   for (const locale of locales) {
@@ -18,7 +18,7 @@ export async function generateStaticParams() {
     const localePaths = response.data.map((article) => ({
       slug: article.Slug,
       lang: locale,
-      section: 'blog',
+      section: "blog",
     }));
     paths.push(...localePaths);
   }
@@ -27,21 +27,21 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPost({ params }) {
-  console.log("🎯 BlogPost params:", params);
+  // console.log("🎯 BlogPost params:", params);
 
   try {
     // Get locale from the file path structure
-    const locale = 'es';  // Since we're in app/es/blog/[slug]/page.js
-    console.log("🌍 Using locale:", locale);
-    
+    const locale = "es"; // Since we're in app/es/blog/[slug]/page.js
+    // console.log("🌍 Using locale:", locale);
+
     const article = await getArticle(params.slug, locale);
-    console.log("📑 Retrieved article:", article ? "Found" : "Not found");
+    // console.log("📑 Retrieved article:", article ? "Found" : "Not found");
 
     if (!article) {
-      console.log("❌ No article found for:", {
-        slug: params.slug,
-        locale: locale
-      });
+      // console.log("❌ No article found for:", {
+      //   slug: params.slug,
+      //   locale: locale
+      // });
       return (
         <div className="min-h-screen flex items-center justify-center flex-col">
           <h1 className="text-2xl mb-4">Article Not Found</h1>
@@ -80,7 +80,7 @@ export default async function BlogPost({ params }) {
           {/* Categories */}
           {article.Categories && article.Categories.length > 0 && (
             <div className="text-base sm:text-base text-left mb-8 flex flex-wrap gap-2">
-              {console.log("Rendering categories:", article.Categories)}
+              {/* console.log("Rendering categories:", article.Categories) */}
               {article.Categories.map((category, index) => (
                 <span
                   key={index}
@@ -175,7 +175,7 @@ export default async function BlogPost({ params }) {
       </div>
     );
   } catch (error) {
-    console.error("💥 Error in BlogPost:", error);
+    // console.error("💥 Error in BlogPost:", error);
     throw error;
   }
 }
