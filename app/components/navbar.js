@@ -7,7 +7,8 @@ import Link from "next/link";
 import Button from "./button";
 import { HamburgerIcon, CloseIcon } from "./icons/navbar-icons";
 import TeamUpLogo from "./teamup-logo";
-import NewLogo from "./new-logo";
+import NewLogo from "public/svg/teamup-logo.svg";
+import { cn } from "../lib/utils";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,7 +55,7 @@ const Navbar = () => {
     },
   ];
 
-  const LanguageSelector = () => {
+  const LanguageSelector = ({ className }) => {
     const isEnglish = pathname.startsWith("/en");
     const isSpanish = pathname.startsWith("/es");
 
@@ -64,21 +65,23 @@ const Navbar = () => {
     };
 
     return (
-      <div className="flex space-x-2 text-sm">
+      <div className={cn("flex space-x-2 text-sm", className)}>
         <button
           onClick={() => handleLanguageChange("en")}
-          className={`${
+          className={cn(
+            "hover:text-blue-500",
             isEnglish ? "font-semibold text-blue-500" : "text-slate-600"
-          } hover:text-blue-500`}
+          )}
         >
           EN
         </button>
         <span className="text-gray-400">|</span>
         <button
           onClick={() => handleLanguageChange("es")}
-          className={`${
+          className={cn(
+            "hover:text-blue-500",
             isSpanish ? "font-semibold text-blue-500" : "text-slate-600"
-          } hover:text-blue-500`}
+          )}
         >
           ES
         </button>
@@ -94,7 +97,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-4">
               <div className="text-indigo-800 flex items-center">
                 <Link href={isLandingPage ? "#hero" : `/${locale}`}>
-                  <NewLogo className="h-10" />
+                  <NewLogo className="h-10 w-auto pb-1.5 text-blue-600" />
                 </Link>
               </div>
               <LanguageSelector />
@@ -153,10 +156,10 @@ const Navbar = () => {
                 href={isLandingPage ? "#hero" : `/${locale}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                <NewLogo className="h-6" />
+                <NewLogo className="h-6 w-auto text-blue-600" />
               </Link>
             </div>
-            <LanguageSelector />
+            <LanguageSelector className="mt-1" />
           </div>
           <div className="h-6 w-6 text-blue-950" onClick={handleIsMenuOpen}>
             {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -187,9 +190,7 @@ const Navbar = () => {
         >
           <Button
             type="button"
-            onClick={() =>
-              window.open("https://app.teamup.works/", "_blank")
-            }
+            onClick={() => window.open("https://app.teamup.works/", "_blank")}
             variant="tertiary"
             size="md"
           >
