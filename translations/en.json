@@ -82,7 +82,9 @@
         "title": "The Corral",
         "description": "Immerse yourself in the excitement of this strategy and collaboration game. Divide your team into three groups and compete to collect 'eggs' while avoiding rivals. The corral encourages team planning, quick communication, and tactical thinking. Perfect for energizing meetings and strengthening team spirit in a fun way!"
       }
-    }
+    },
+    "viewSpacesDemo": "View spaces in demo",
+    "signUpFree": "Sign up for free"
   },
   "Features": {
     "tag": "Features",

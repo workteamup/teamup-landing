@@ -14,7 +14,7 @@ const WhatCard = ({ title, text, src, videoOnRight = true }) => {
               relative
               after:block after:absolute 
               after:left-0 after:bottom-0 after:w-full 
-              after:h-12 after:bg-teal-500/40
+              after:h-12 after:bg-teal-200
               after:transform after:-skew-y-[2deg]
               after:clip-path-[polygon(0_0,5%_20%,95%_10%,100%_0%,100%_100%,95%_90%,5%_100%,0%_90%)]
               after:-z-10

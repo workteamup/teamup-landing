@@ -9,23 +9,25 @@ import What from "./what";
 import FooterCTA from "./footer-cta";
 import CTA from "./cta";
 import Pricing from "./pricing";
+import NewSpaces from "./new-spaces";
+
 const Landing = () => {
   return (
     <div className="text-blue-950 bg-slate-50">
       <Hero />
       <Benefits />
       <What />
-      <CTA 
+      <CTA
         variant="dark"
         title="Ready to transform your team?"
         subtitle="Start your journey towards better team collaboration today."
         buttonText="Get started"
         price="0€"
       />
-      <Spaces />
+      <NewSpaces />
       <Features />
       <Pricing />
-      <CTA 
+      <CTA
         variant="dark"
         title="Join thousands of happy teams"
         subtitle="Don't miss out on the opportunity to enhance your team's performance."

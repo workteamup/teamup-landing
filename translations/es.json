@@ -82,7 +82,9 @@
         "title": "El corral",
         "description": "Sumérgete en la emoción de este juego de estrategia y colaboración. Divide tu equipo en tres grupos y compite por recolectar 'huevos' mientras evitas a los rivales. El corral fomenta la planificación en equipo, la comunicación rápida y el pensamiento táctico. ¡Perfecto para energizar reuniones y fortalecer el espíritu de equipo de forma divertida!"
       }
-    }
+    },
+    "viewSpacesDemo": "Ver espacios en demo",
+    "signUpFree": "Regístrate gratis"
   },
   "Features": {
     "tag": "Funcionalidades",
