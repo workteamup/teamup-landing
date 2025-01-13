@@ -49,9 +49,11 @@ const Navbar = () => {
       href: isLandingPage ? "#pricing" : `/${locale}#pricing`,
     },
     {
+      /*{
       id: "blog",
       title: t("Navbar.blog"),
       href: `/${locale}/blog`,
+    },*/
     },
   ];
 

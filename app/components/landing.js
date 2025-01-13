@@ -10,10 +10,17 @@ import FooterCTA from "./footer-cta";
 import CTA from "./cta";
 import Pricing from "./pricing";
 import NewSpaces from "./new-spaces";
+import Events from "./events";
+import Avatars from "./avatars";
+import Navbar from "./navbar";
+import { useState } from "react";
 
 const Landing = () => {
+  const [hasActiveAnnouncement, setHasActiveAnnouncement] = useState(true);
+
   return (
     <div className="text-blue-950 bg-slate-50">
+      <Navbar hasActiveAnnouncement={hasActiveAnnouncement} />
       <Hero />
       <Benefits />
       <What />
@@ -26,6 +33,8 @@ const Landing = () => {
       />
       <NewSpaces />
       <Features />
+      <Events />
+      <Avatars />
       <Pricing />
       <CTA
         variant="dark"

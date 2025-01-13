@@ -419,7 +419,53 @@
     "perMonthPerUser": "/mes por usuario",
     "customPricing": "Precio personalizado",
     "mostPopular": "MÁS POPULAR",
-    "monthlyDiscount": "Ahorra $${amount}/mes",
-    "yearlyDiscount": "Ahorra $${amount}/año"
+    "monthlyDiscount": "Ahorra ${amount}/mes",
+    "yearlyDiscount": "Ahorra ${amount}/año"
+  },
+  "Events": {
+    "tag": "Eventos",
+    "heading": "Organiza eventos potentes",
+    "subheading": "Crea eventos de equipo atractivos que unan a las personas",
+    "tabs": {
+      "customRooms": {
+        "name": "Salas personalizadas",
+        "title": "Para eventos estructurados",
+        "description": "Crea salas ilimitadas con diferentes temas o propósitos para que todos puedan conectarse a la sala que más les interese.",
+        "features": [
+          "Múltiples salas temáticas",
+          "Actividades asignadas",
+          "Movimientos guiados de equipo"
+        ]
+      },
+      "mixers": {
+        "name": "Mixers",
+        "title": "Para networking",
+        "description": "Rompe los silos con emparejamientos aleatorios y networking para que todos en tu equipo o empresa se conozcan entre sí.",
+        "features": [
+          "Asignaciones aleatorias de salas",
+          "Networking entre departamentos",
+          "Conexiones sorpresa"
+        ]
+      }
+    },
+    "ctaButton": "Crea tu evento ahora"
+  },
+  "Avatars": {
+    "sectionHeader": {
+      "tag": "Personaliza tu avatar",
+      "heading": "¡Exprésate!",
+      "subheading": "Crea tu presencia única en el espacio virtual de Team Up!"
+    },
+    "customizeTitle": "Personaliza tu apariencia",
+    "features": [
+      "Numerosos peinados, elige el que mejor se adapte a tu estilo.",
+      "Elige el color de piel, cabello, ojos y ropa que desees",
+      "¿Camisa formal? ¿Sin mangas? ¿Pantalón corto? ¿Pantalón largo? ¡Vístete!",
+      "Gafas hipster, visor futurista, monóculo...",
+      "Zapatillas modernas o pantuflas.",
+      "¡Y más opciones próximamente!"
+    ],
+    "imageAlt": "Ejemplo de personalización de avatar ${num}",
+    "createButton": "Crea tu avatar"
   }
 }

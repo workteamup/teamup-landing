@@ -418,7 +418,53 @@
     "perMonthPerUser": "/month per user",
     "customPricing": "Custom pricing",
     "mostPopular": "MOST POPULAR",
-    "monthlyDiscount": "Save $${amount}/month",
-    "yearlyDiscount": "Save $${amount}/year"
+    "monthlyDiscount": "Save ${amount}/month",
+    "yearlyDiscount": "Save ${amount}/year"
+  },
+  "Events": {
+    "tag": "Events",
+    "heading": "Run powerful events",
+    "subheading": "Create engaging team events that bring people together",
+    "tabs": {
+      "customRooms": {
+        "name": "Custom rooms",
+        "title": "For structured events",
+        "description": "Create unlimited rooms with different topics or purposes so that everyone can connect to the room they're most interested in.",
+        "features": [
+          "Multiple themed rooms",
+          "Assigned activities",
+          "Guided team movements"
+        ]
+      },
+      "mixers": {
+        "name": "Mixers",
+        "title": "For mixers",
+        "description": "Break down silos with random matching and networking so everyone in your team or company get to know each other.",
+        "features": [
+          "Random room assignments",
+          "Cross-department networking",
+          "Surprise connections"
+        ]
+      }
+    },
+    "ctaButton": "Create your event now"
+  },
+  "Avatars": {
+    "sectionHeader": {
+      "tag": "Customize your avatar",
+      "heading": "Express yourself!",
+      "subheading": "Create your unique presence in the virtual workspace of Team Up!"
+    },
+    "customizeTitle": "Customize your look",
+    "features": [
+      "Numerous hairstyles, pick the one that best matches your vibe.",
+      "Choose the skin, hair, eye and clothing color you want",
+      "Formal shirt? Sleeveless? Short pants? Long pants? Suit up!",
+      "Hipster glasses, futuristic visor, monocle...",
+      "Moderns sneakers or slippers.",
+      "And more options coming up!"
+    ],
+    "imageAlt": "Avatar customization example ${num}",
+    "createButton": "Create your avatar"
   }
 }

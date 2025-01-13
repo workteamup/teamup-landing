@@ -10,6 +10,7 @@
     "aws-build": "next build && sh aws-build.sh"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.462.0",

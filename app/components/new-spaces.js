@@ -12,21 +12,24 @@ const NewSpaces = ({ locale }) => {
 
   const handleSpaceClick = (key) => {
     setSelectedSpace(key);
-    // Add a small delay to ensure the content has rendered
-    setTimeout(() => {
-      const element = document.getElementById(`space-content-${key}`);
-      if (element) {
-        const navbarHeight = 115; // Adjust this value based on your navbar height
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition =
-          elementPosition + window.pageYOffset - navbarHeight;
+    // Only apply scroll behavior on mobile
+    if (window.innerWidth < 768) {
+      // 768px matches the 'md:' breakpoint in Tailwind
+      setTimeout(() => {
+        const element = document.getElementById(`space-content-${key}`);
+        if (element) {
+          const navbarHeight = 115;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - navbarHeight;
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
-    }, 100);
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }, 100);
+    }
   };
 
   return (

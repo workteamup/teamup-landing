@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from "../contexts/TranslationContext";
 import Button from "./button";
 import SectionHeader from "./section-header";
 import KitDigital from "../components/kit-digital";
+import SketchyCheckbox from "./sketchy-checkbox";
 
 const PricingToggle = ({ isYearly, setIsYearly }) => {
   const t = useTranslations();
@@ -106,16 +107,29 @@ const PricingCard = ({
   isCustom = false,
 }) => {
   const t = useTranslations();
+  const locale = useLocale();
+
+  const formatPrice = (amount) => {
+    if (locale === "es") {
+      return `${amount}€`;
+    }
+    return `$${amount}`;
+  };
+
   const monthlyDiscount = originalPrice
-    ? t("Pricing.monthlyDiscount", {
-        amount: (originalPrice - price) * userCount,
-      })
+    ? t("Pricing.monthlyDiscount").replace(
+        "${amount}",
+        formatPrice(originalPrice - price)
+      )
     : null;
+
   const yearlyDiscount = yearlyOriginalPrice
-    ? t("Pricing.yearlyDiscount", {
-        amount: ((yearlyOriginalPrice - yearlyPrice) * 12 * userCount).toLocaleString(),
-      })
+    ? t("Pricing.yearlyDiscount").replace(
+        "${amount}",
+        formatPrice((yearlyOriginalPrice - yearlyPrice) * 12 * userCount)
+      )
     : null;
+
   const currentPrice = isYearly ? yearlyPrice : price;
   const currentOriginalPrice = isYearly ? yearlyOriginalPrice : originalPrice;
   const currentDiscount = isYearly ? yearlyDiscount : monthlyDiscount;
@@ -165,19 +179,24 @@ const PricingCard = ({
           <div style={{ height: "96px" }} className="mb-6">
             <div className="flex items-start">
               {isCustom ? (
-                <span className="text-4xl font-bold">{t("Pricing.customPricing")}</span>
+                <span className="text-4xl font-bold">
+                  {t("Pricing.customPricing")}
+                </span>
               ) : (
                 <>
-                  <span className="text-4xl font-bold">$</span>
-                  <span className="text-4xl font-bold">{totalPrice}</span>
+                  <span className="text-4xl font-bold">
+                    {formatPrice(totalPrice)}
+                  </span>
                   <div className="flex flex-col ml-2 mt-1">
                     {currentOriginalPrice && (
                       <span className="text-slate-400 line-through text-sm">
-                        ${currentOriginalPrice * userCount}
+                        {formatPrice(currentOriginalPrice * userCount)}
                       </span>
                     )}
                     <span className="text-slate-600 text-sm">
-                      {userCount === 1 ? t("Pricing.perMonthPerUser") : t("Pricing.perMonth")}
+                      {userCount === 1
+                        ? t("Pricing.perMonthPerUser")
+                        : t("Pricing.perMonth")}
                     </span>
                   </div>
                 </>
@@ -222,19 +241,7 @@ const PricingCard = ({
             <div className="space-y-4">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start">
-                  <svg
-                    className="w-5 h-5 text-blue-500 mr-2 mt-1 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+                  <SketchyCheckbox className="w-5 h-5 mt-1 flex-shrink-0 mr-2" />
                   <span className="text-slate-600">{feature}</span>
                 </div>
               ))}
@@ -314,9 +321,9 @@ export default function Pricing() {
     <div id="pricing" className="mb-24 md:mb-[200px]">
       <div className="max-w-[1440px] mx-auto px-4">
         <SectionHeader
-          tag="Pricing"
-          heading="Simple, transparent pricing"
-          subheading="Start with a 14-day free trial. No credit card needed."
+          tag={t("Pricing.tag")}
+          heading={t("Pricing.heading")}
+          subheading={t("Pricing.subheading")}
           width={800}
           className="mb-12"
         />
