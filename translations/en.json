@@ -1,51 +1,51 @@
 {
   "Hero": {
-    "label": "The #1 solution for creating and maintaining company culture remotely",
-    "title": "Your remote team, more united than ever",
-    "description": "Take your remote team to the next level. Team Up! gives you the tools to create a culture of success at a distance. Boost your team's productivity and commitment starting today.",
-    "primaryButton": "Try it free now!",
+    "label": "Redefining remote company culture",
+    "title": "Where remote teams actually want to hang out",
+    "description": "Transform team building from a calendar obligation into daily moments of genuine connection.",
+    "primaryButton": "Start now for free!",
     "secondaryButton": "Schedule a demo"
   },
   "Benefits": {
     "tag": "Benefits",
-    "heading": "Reduce remote work barriers and foster a dynamic collaboration environment with Team Up!",
+    "heading": "Break down remote work barriers and build authentic connections with Team Up!",
     "benefit1": {
-      "title": "Build a powerful company culture",
-      "text": "Attract and retain top talent with an innovative culture designed for the future of remote work."
+      "title": "Culture that transcends distance",
+      "text": "Attract and retain exceptional talent with a modern culture designed for the future of remote work."
     },
     "benefit2": {
-      "title": "Boost team satisfaction and loyalty",
-      "text": "Keep your team connected and motivated with remote activities that foster engagement and fun."
+      "title": "Happier, more engaged teams",
+      "text": "Keep your team connected and motivated through shared experiences that create genuine engagement."
     },
     "benefit3": {
-      "title": "Enhance productivity and efficiency",
-      "text": "Transform your team's unity and commitment into tangible results, maximizing the use of Team Up! tools."
+      "title": "From connection to results",
+      "text": "Transform strong team bonds into enhanced performance and effective collaboration."
     }
   },
   "What": {
     "sectionHeader": {
       "tag": "What is Team Up!",
-      "heading": "Discover a new way to work, interact, and socialize in a remote environment",
-      "subheading": "Team Up! revolutionizes your remote work experience, recreating the spontaneous moments and connections you miss from the office."
+      "heading": "eam Up! reinvents how you work and connect remotely",
+      "subheading": "Bring back the magic of spontaneous interactions and recreate memorable office moments."
     },
     "trabaja": {
       "title": "Work",
-      "text": "Enhance your meetings with an interactive environment that maximizes productivity and engagement."
+      "text": "Transform your meetings into interactive experiences that drive productivity and engagement."
     },
     "conecta": {
       "title": "Connect",
-      "text": "Forge stronger bonds with spaces designed for authentic conversations and natural collaboration."
+      "text": "Build authentic bonds in spaces designed for natural conversations and collaboration to flow."
     },
     "disfruta": {
       "title": "Enjoy",
-      "text": "Recharge and strengthen team bonds with games and activities that promote fun and camaraderie."
+      "text": "Revitalize your team with activities and games that turn remote work into a memorable experience."
     }
   },
   "Spaces": {
     "sectionHeader": {
       "tag": "Spaces",
-      "heading": "Spaces for every type of meeting, activity or event",
-      "subheading": "You won't miss any space within Team Up! All the possible scenarios you may need for your activity are (or will be) here."
+      "heading": "The perfect space for every team moment",
+      "subheading": "From formal meetings to fun activities, find the ideal environment for every team interaction."
     },
     "viewDemo": "View in demo",
     "tags": {
@@ -88,8 +88,8 @@
   },
   "Features": {
     "tag": "Features",
-    "heading": "Discover the comprehensive solution for more efficient and fun collaboration",
-    "subheading": "All the features you need to make your work meetings more efficient, your social experiences more fun, and your events more entertaining.",
+    "heading": "All the tools you need in one platform",
+    "subheading": "From efficient meetings to fun moments, every feature is designed to make remote work feel natural.",
     "3dSpace": "3D Space",
     "voiceChat": "Voice Chat",
     "textChat": "Text Chat",
@@ -354,8 +354,8 @@
   },
   "Pricing": {
     "tag": "Pricing",
-    "heading": "Simple, transparent pricing",
-    "subheading": "Start with a 14-day free trial. No credit card needed.",
+    "heading": "Great team engagement shouldn't break the bank!",
+    "subheading": "Take Team Up! for a 30-day spin, no credit card needed",
     "toggle": {
       "monthly": "Monthly",
       "yearly": "Yearly (save 30%)"
@@ -382,7 +382,7 @@
       "business": {
         "name": "Business",
         "description": "For SMB business that really appreciate their employees and want the best team engagement tool.",
-        "featuresTitle": "Everything in Basic plus:",
+        "featuresTitle": "Everything in Free plus:",
         "features": [
           "Up to 50 users",
           "Premium spaces",
@@ -466,5 +466,27 @@
     ],
     "imageAlt": "Avatar customization example ${num}",
     "createButton": "Create your avatar"
+  },
+  "InfoBar": {
+    "dismiss": "Dismiss notification",
+    "message": "Give us your feedback and get an iPad Pro!",
+    "button": "Learn more"
+  },
+  "CTA": {
+    "secondary": {
+      "title": "Give your team the workspace they deserve",
+      "subtitle": "Join teams that are transforming how they work together",
+      "button": "Get started"
+    },
+    "primary": {
+      "title": "Ready to transform how your team works?",
+      "subtitle": "Make remote work an experience your team looks forward to",
+      "button": "Join now!"
+    },
+    "default": {
+      "title": "Make remote work feel less remote",
+      "subtitle": "Create moments that bring your team closer together",
+      "button": "Let's begin"
+    }
   }
 }

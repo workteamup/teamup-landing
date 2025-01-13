@@ -7,10 +7,10 @@ import Link from "next/link";
 import Button from "./button";
 import { HamburgerIcon, CloseIcon } from "./icons/navbar-icons";
 import TeamUpLogo from "./teamup-logo";
-import NewLogo from "public/svg/teamup-logo.svg";
+import NewLogo from "public/svg/teamup-logo-prueba3.svg";
 import { cn } from "../lib/utils";
 
-const Navbar = () => {
+const Navbar = ({ hasActiveAnnouncement }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations();
   const locale = useLocale();
@@ -92,14 +92,19 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <div className="z-50 hidden lg:block fixed w-full p-4">
+    <>
+      <div
+        className={cn(
+          "z-50 hidden lg:block fixed w-full p-4",
+          hasActiveAnnouncement ? "top-12" : "top-0"
+        )}
+      >
         <div className="w-full mx-auto bg-slate-50/70 backdrop-blur-lg rounded-2xl border border-slate-200 p-4">
           <div className="flex justify-between items-center relative">
             <div className="flex items-center space-x-4">
               <div className="text-indigo-800 flex items-center">
                 <Link href={isLandingPage ? "#hero" : `/${locale}`}>
-                  <NewLogo className="h-10 w-auto pb-1.5 text-blue-600" />
+                  <NewLogo className="h-10 w-auto  text-blue-600" />
                 </Link>
               </div>
               <LanguageSelector />
@@ -111,7 +116,7 @@ const Navbar = () => {
                     <li id={`#${link.id}`} key={key}>
                       <a
                         href={link.href}
-                        className="text-sm px-3 h-10 flex justify-center items-center font-medium hover:text-blue-600 rounded-md text-center"
+                        className="text-sm px-3 h-10 flex justify-center items-center font-medium hover:text-blue-600 rounded-md text-center whitespace-nowrap overflow-hidden text-ellipsis"
                       >
                         {link.title}
                       </a>
@@ -147,9 +152,15 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`z-50 flex flex-col ${
-          isMenuOpen ? "h-dvh" : ""
-        } justify-between w-full lg:hidden bg-slate-50 backdrop-blur-lg border-b border-slate-200 fixed`}
+        className={cn(
+          "z-50 flex flex-col justify-between w-full lg:hidden bg-slate-50 backdrop-blur-lg border-b border-slate-200 fixed",
+          hasActiveAnnouncement ? "top-16" : "top-0",
+          isMenuOpen
+            ? hasActiveAnnouncement
+              ? "h-[calc(100dvh-4rem)]"
+              : "h-dvh"
+            : ""
+        )}
       >
         <div className="flex justify-between items-center p-4 bg-slate-50">
           <div className="flex items-center space-x-4">
@@ -161,7 +172,7 @@ const Navbar = () => {
                 <NewLogo className="h-6 w-auto text-blue-600" />
               </Link>
             </div>
-            <LanguageSelector className="mt-1" />
+            <LanguageSelector className="mt-0.5" />
           </div>
           <div className="h-6 w-6 text-blue-950" onClick={handleIsMenuOpen}>
             {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -210,7 +221,7 @@ const Navbar = () => {
           </Button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

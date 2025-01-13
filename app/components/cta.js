@@ -3,9 +3,9 @@ import { useTranslations } from "../contexts/TranslationContext";
 
 export default function CTA({
   variant = "light",
-  title = "Get started for free.",
-  subtitle = "Start engaging your team now without worrying about the cost.",
-  buttonText = "Get started",
+  title = "CTA.defaultTitle",
+  subtitle = "CTA.defaultSubtitle",
+  buttonText = "CTA.defaultButton",
   price = "0€",
 }) {
   const t = useTranslations();
@@ -36,10 +36,10 @@ export default function CTA({
                   <h2
                     className={`text-3xl md:text-5xl font-semibold ${styles.title[variant]}`}
                   >
-                    {title}
+                    {t(title)}
                   </h2>
                   <h4 className={`text-2xl ${styles.subtitle[variant]}`}>
-                    {subtitle}
+                    {t(subtitle)}
                   </h4>
                 </div>
 
@@ -58,7 +58,7 @@ export default function CTA({
                     window.open("https://app.teamup.works/signup", "_blank")
                   }
                 >
-                  {buttonText}
+                  {t(buttonText)}
                 </Button>
               </div>
 

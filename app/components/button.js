@@ -42,22 +42,22 @@ const Button = ({
       className={cn(
         sizeClasses[size] || sizeClasses.sm,
         variantClasses[variant] || variantClasses.primary,
-        "font-medium flex justify-center items-center",
+        "font-medium flex justify-center items-center min-w-0",
         className
       )}
       {...props}
     >
       {iconLeft && (
         <div
-          className={`${iconSizeClasses[size]} flex justify-center items-center`}
+          className={`${iconSizeClasses[size]} flex-shrink-0 flex justify-center items-center`}
         >
           {iconLeft}
         </div>
       )}
-      <div>{children}</div>
+      <div className="truncate">{children}</div>
       {iconRight && (
         <div
-          className={`${iconSizeClasses[size]} flex justify-center items-center`}
+          className={`${iconSizeClasses[size]} flex-shrink-0 flex justify-center items-center`}
         >
           {iconRight}
         </div>

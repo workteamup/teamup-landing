@@ -1,51 +1,51 @@
 {
   "Hero": {
-    "label": "La solución #1 para crear y mantener cultura de empresa en remoto",
-    "title": "Tu equipo remoto, más unido que nunca",
-    "description": "Eleva tu equipo remoto al siguiente nivel. Team Up! te da las herramientas para crear una cultura de éxito a distancia. Potencia la productividad y el compromiso de tu equipo desde hoy mismo.",
-    "primaryButton": "¡Pruébalo gratis ahora!",
+    "label": "Redefiniendo la cultura empresarial remota",
+    "title": "Donde tu equipo remoto conecta",
+    "description": "Del team building forzado a las conexiones auténticas en el día a día en Team Up!",
+    "primaryButton": "¡Empieza ya gratis!",
     "secondaryButton": "Programa una demo"
   },
   "Benefits": {
     "tag": "Beneficios",
-    "heading": "Reduce las barreras del trabajo remoto y fomenta un ambiente de cercanía y colaboración dinámica con Team Up!",
+    "heading": "Elimina las barreras del trabajo remoto y crea conexiones auténticas con Team Up!",
     "benefit1": {
-      "title": "Construye una cultura de empresa potente",
-      "text": "Atrae y retén al mejor talento con una cultura innovadora diseñada para el futuro del trabajo remoto."
+      "title": "Cultura empresarial que trasciende la distancia",
+      "text": "Atrae y retén talento excepcional con una cultura moderna diseñada para el trabajo remoto del futuro."
     },
     "benefit2": {
-      "title": "Impulsa la satisfacción y fidelidad de tu equipo",
-      "text": "Mantén a tu equipo conectado y motivado con actividades remotas que fomenten el engagement y la diversión."
+      "title": "Equipos más felices y comprometidos",
+      "text": "Mantén a tu equipo conectado y motivado con experiencias compartidas que generan engagement genuino."
     },
     "benefit3": {
-      "title": "Potencia la productividad y eficiencia",
-      "text": "Transforma la unión y el compromiso de tu equipo en resultados tangibles, aprovechando al máximo las herramientas de Team Up!"
+      "title": "De la conexión a los resultados",
+      "text": "Convierte los vínculos fuertes del equipo en mejor rendimiento y colaboración efectiva."
     }
   },
   "What": {
     "sectionHeader": {
       "tag": "Qué es Team Up!",
-      "heading": "Descubre una nueva forma de trabajar, interactuar y socializar en un entorno remoto",
-      "subheading": "Team Up! revoluciona tu experiencia laboral remota, recreando los momentos espontáneos y las conexiones que echas de menos de la oficina."
+      "heading": "Team Up! reinventa la forma de trabajar y conectar en remoto",
+      "subheading": "Recupera la magia de las interacciones espontáneas de la oficina y crea momentos memorables en un entorno remoto."
     },
     "trabaja": {
       "title": "Trabaja",
-      "text": "Potencia tus reuniones con un entorno interactivo que maximiza la productividad y el engagement."
+      "text": "Transforma tus reuniones en experiencias interactivas que impulsan la productividad y el compromiso."
     },
     "conecta": {
       "title": "Conecta",
-      "text": "Forja vínculos más fuertes con espacios diseñados para conversaciones auténticas y colaboración natural."
+      "text": "Crea vínculos auténticos en espacios diseñados para que fluyan las conversaciones y la colaboración."
     },
     "disfruta": {
       "title": "Disfruta",
-      "text": "Recarga energías y fortalece lazos de equipo con juegos y actividades que fomentan la diversión y el compañerismo."
+      "text": "Revitaliza tu equipo con actividades y juegos que hacen del trabajo remoto una experiencia memorable."
     }
   },
   "Spaces": {
     "sectionHeader": {
       "tag": "Espacios",
-      "heading": "Espacios para cada tipo de reunión, actividad o evento",
-      "subheading": "¡No echarás de menos ningún espacio en Team Up! Todos los escenarios posibles que puedas necesitar para tu actividad están (o estarán) aquí."
+      "heading": "Un espacio para cada momento del trabajo en equipo",
+      "subheading": "Desde reuniones formales hasta momentos de diversión, encuentra el espacio perfecto para cada actividad de tu equipo."
     },
     "viewDemo": "Ver en demo",
     "tags": {
@@ -88,8 +88,8 @@
   },
   "Features": {
     "tag": "Funcionalidades",
-    "heading": "Descubre la solución integral para una colaboración más eficiente y divertida",
-    "subheading": "Todas las funcionalidades que necesitas para que tus reuniones de trabajo sean más eficientes, tus experiencias sociales más divertidas y tus eventos más entretenidos.",
+    "heading": "Todas las herramientas que necesitas en una única plataforma",
+    "subheading": "Desde reuniones eficientes hasta momentos divertidos, cada función está diseñada para hacer el trabajo remoto más natural.",
     "3dSpace": "Espacio 3D",
     "voiceChat": "Chat de voz",
     "textChat": "Chat de texto",
@@ -355,8 +355,8 @@
   },
   "Pricing": {
     "tag": "Precios",
-    "heading": "Precios simples y transparentes",
-    "subheading": "Comienza con una prueba gratuita de 14 días. Sin tarjeta de crédito.",
+    "heading": "¡Crear cultura de equipo nunca costó tan poco!",
+    "subheading": "Un mes para descubrir Team Up!, sin tarjeta ni compromisos",
     "toggle": {
       "monthly": "Mensual",
       "yearly": "Anual (ahorra 30%)"
@@ -383,7 +383,7 @@
       "business": {
         "name": "Business",
         "description": "Para PYMEs que realmente aprecian a sus empleados y quieren la mejor herramienta de engagement.",
-        "featuresTitle": "Todo lo de Basic más:",
+        "featuresTitle": "Todo lo de Gratis más:",
         "features": [
           "Hasta 50 usuarios",
           "Espacios premium",
@@ -467,5 +467,27 @@
     ],
     "imageAlt": "Ejemplo de personalización de avatar ${num}",
     "createButton": "Crea tu avatar"
+  },
+  "InfoBar": {
+    "dismiss": "Descartar notificación",
+    "message": "¡Danos tu feedback y consigue un iPad Pro!",
+    "button": "Saber más"
+  },
+  "CTA": {
+    "secondary": {
+      "title": "Dale a tu equipo el espacio que merece",
+      "subtitle": "Únete a los equipos que están transformando su forma de trabajar",
+      "button": "¡Empezar ya!"
+    },
+    "primary": {
+      "title": "¿Listo para transformar tu forma de trabajar?",
+      "subtitle": "Haz del trabajo remoto una experiencia que tu equipo disfrute",
+      "button": "¡Unete ahora!"
+    },
+    "default": {
+      "title": "Acerca a tu equipo sin importar la distancia",
+      "subtitle": "Crea momentos que tu equipo recordará",
+      "button": "¡Únete ahora!"
+    }
   }
 }
