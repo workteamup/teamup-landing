@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "aws-build": "next build && sh aws-build.sh"
+    "aws-build": "next build && sh aws-build.sh",
+    "surge-build": "next build && cd out && rm 404.html && cp index.html 404.html"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
