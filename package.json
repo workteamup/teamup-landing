@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "aws-build": "next build && sh aws-build.sh",
+    "aws-build": "next build && sh aws-build.sh && cd out && cp index.html 200.html",
     "surge-build": "next build && cd out && rm 404.html && cp index.html 404.html"
   },
   "dependencies": {

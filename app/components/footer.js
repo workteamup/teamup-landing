@@ -10,15 +10,15 @@ const Footer = () => {
   const links = [
     {
       title: t("Footer.legalNotice"),
-      href: "/legal-notice-and-conditions",
+      href: "legal-notice-and-conditions",
     },
     {
       title: t("Footer.privacyPolicy"),
-      href: "/privacy-policy",
+      href: "privacy-policy",
     },
     {
       title: t("Footer.cookiePolicy"),
-      href: "/cookie-policy",
+      href: "cookie-policy",
     },
   ];
 
