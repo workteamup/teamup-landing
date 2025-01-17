@@ -488,5 +488,9 @@
       "subtitle": "Create moments that bring your team closer together",
       "button": "Let's begin"
     }
+  },
+  "WelcomePopup": {
+    "neverShow": "Never show again",
+    "goToLink": "Go to link"
   }
 }

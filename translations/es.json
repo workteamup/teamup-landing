@@ -489,5 +489,9 @@
       "subtitle": "Crea momentos que tu equipo recordará",
       "button": "¡Únete ahora!"
     }
+  },
+  "WelcomePopup": {
+    "neverShow": "No mostrar más",
+    "goToLink": "Ir al enlace"
   }
 }

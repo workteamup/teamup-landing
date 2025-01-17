@@ -13,22 +13,60 @@ import NewSpaces from "./new-spaces";
 import Events from "./events";
 import Avatars from "./avatars";
 import Navbar from "./navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import InfoBar from "./info-bar";
 import { useTranslations } from "../contexts/TranslationContext";
+import WelcomePopup from "./welcome-popup";
 
 const Landing = () => {
-  const [hasActiveAnnouncement, setHasActiveAnnouncement] = useState(false);
+  const [hasActiveAnnouncement, setHasActiveAnnouncement] = useState(true);
+  const [showWelcomePopup, setShowWelcomePopup] = useState(false);
   const t = useTranslations();
+
+  useEffect(() => {
+    // Check if user has explicitly chosen to never show the popup
+    const neverShowPopup = localStorage.getItem("neverShowWelcomePopup");
+    if (!neverShowPopup) {
+      setShowWelcomePopup(true);
+    }
+  }, []);
+
+  const handleNeverShow = () => {
+    // This is the "Never show again" button
+    setShowWelcomePopup(false);
+    localStorage.setItem("neverShowWelcomePopup", "true");
+  };
+
+  const handleClose = () => {
+    // This is for the X button
+    setShowWelcomePopup(false);
+    // No localStorage set here
+  };
+
+  const handlePopupCTA = () => {
+    // This is the "Go to link" button
+    window.open("https://gleam.io/sdxiW/sorteo-ipad-pro-feedback", "_blank");
+    setShowWelcomePopup(false);
+    // No localStorage set here
+  };
 
   return (
     <div className="text-blue-950 bg-slate-50">
+      <WelcomePopup
+        isOpen={showWelcomePopup}
+        onDismiss={handleClose}
+        onNeverShow={handleNeverShow}
+        onCTAClick={handlePopupCTA}
+      />
       {hasActiveAnnouncement && (
         <InfoBar
           message={t("InfoBar.message")}
           buttonText={t("InfoBar.button")}
           buttonAction={() =>
-            window.open("https://example.com/webinar", "_blank")
+            window.open(
+              "https://gleam.io/sdxiW/sorteo-ipad-pro-feedback",
+              "_blank"
+            )
           }
           onDismiss={() => setHasActiveAnnouncement(false)}
         />
