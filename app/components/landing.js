@@ -19,7 +19,7 @@ import { useTranslations } from "../contexts/TranslationContext";
 import WelcomePopup from "./welcome-popup";
 
 const Landing = () => {
-  const [hasActiveAnnouncement, setHasActiveAnnouncement] = useState(true);
+  const [hasActiveAnnouncement, setHasActiveAnnouncement] = useState(false);
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
   const t = useTranslations();
 
@@ -52,12 +52,12 @@ const Landing = () => {
 
   return (
     <div className="text-blue-950 bg-slate-50">
-      <WelcomePopup
+      {/* <WelcomePopup
         isOpen={showWelcomePopup}
         onDismiss={handleClose}
         onNeverShow={handleNeverShow}
         onCTAClick={handlePopupCTA}
-      />
+      /> */}
       {hasActiveAnnouncement && (
         <InfoBar
           message={t("InfoBar.message")}
