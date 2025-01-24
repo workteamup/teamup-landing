@@ -33,7 +33,7 @@ const NewSpaces = ({ locale }) => {
   };
 
   return (
-    <section id="new-spaces" className="mb-24 md:mb-[200px]">
+    <section id="spaces" className="mb-24 md:mb-[200px]">
       <SectionHeader
         tag={t("Spaces.sectionHeader.tag", { fallback: "Espacios" })}
         heading={t("Spaces.sectionHeader.heading", {
