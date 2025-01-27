@@ -6,7 +6,7 @@ import { TranslationProvider } from "./contexts/TranslationContext";
 const syne = Syne({ subsets: ["latin"] });
 const sora = Sora({
   subsets: ["latin"],
-  variable: '--font-sora'
+  variable: "--font-sora",
 });
 
 export const metadata = {
