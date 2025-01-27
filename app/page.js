@@ -1,11 +1,15 @@
-import Landing from "./components/landing";
-import Navbar from "./components/navbar";
-
 export default function Home() {
   return (
-    <div className="bg-white">
-      <Navbar />
-      <Landing />
-    </div>
+    <>
+      <meta httpEquiv="refresh" content="0;url=/en" />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          const lang = navigator.language.slice(0, 2);
+          window.location.href = '/' + (lang === 'es' ? 'es' : 'en');
+        `,
+        }}
+      />
+    </>
   );
 }

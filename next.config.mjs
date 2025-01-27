@@ -1,11 +1,23 @@
-import createNextIntlPlugin from 'next-intl/plugin';
-
 /** @type {import('next').NextConfig} */
-const withNextIntl = createNextIntlPlugin('./i18n.js');
-
-const nextConfig = withNextIntl({
-  output: "npx serve@latest out",
+const nextConfig = {
   images: { unoptimized: true },
-});
+  trailingSlash: true,
+  output: "export",
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: [
+        {
+          loader: "@svgr/webpack",
+          options: {
+            // Optional SVGR config, e.g.:
+            // icon: true,
+          },
+        },
+      ],
+    });
+    return config;
+  },
+};
 
 export default nextConfig;
