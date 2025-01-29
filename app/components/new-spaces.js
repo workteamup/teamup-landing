@@ -118,7 +118,9 @@ const NewSpaces = ({ locale }) => {
             variant="secondary"
             type="button"
             size="lg"
-            onClick={() => window.open(spaces[selectedSpace].demoUrl, "_blank")}
+            onClick={() =>
+              window.open("https://app.teamup.works/demo", "_blank")
+            }
           >
             {t("Spaces.viewSpacesDemo", { fallback: "View spaces in demo" })}
           </Button>

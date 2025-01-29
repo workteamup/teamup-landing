@@ -48,7 +48,7 @@ const Hero = () => {
             variant="primary"
             size="lg"
             onClick={() =>
-              window.open("https://app.teamup.works/signup", "_blank")
+              window.open("https://app.teamup.works/demo", "_blank")
             }
           >
             {t("Hero.primaryButton")}

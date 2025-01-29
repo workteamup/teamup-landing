@@ -10,7 +10,7 @@ const WelcomePopup = ({ isOpen, onDismiss, onNeverShow, onCTAClick }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-950/50 flex items-center justify-center">
+    <div className="fixed inset-0 z-[100] bg-slate-950/50 flex items-center justify-center">
       <div className="relative bg-white rounded-lg w-full max-w-[425px] p-6 pt-12">
         <button
           onClick={onDismiss}
@@ -22,8 +22,8 @@ const WelcomePopup = ({ isOpen, onDismiss, onNeverShow, onCTAClick }) => {
 
         <div className="relative w-full rounded-lg overflow-hidden mb-6">
           <img
-            src="/images/sorteo.png"
-            alt="Sorteo iPad Pro"
+            src="/images/sorteoencuesta.png"
+            alt="Sorteo iPad Air + Apple Pencil Pro"
             className="w-full h-auto"
           />
         </div>

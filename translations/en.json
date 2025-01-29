@@ -3,7 +3,7 @@
     "label": "Redefining remote company culture",
     "title": "Where remote teams actually want to hang out",
     "description": "Transform team building from a calendar obligation into daily moments of genuine connection.",
-    "primaryButton": "Start now for free!",
+    "primaryButton": "Create your first room!",
     "secondaryButton": "Schedule a demo"
   },
   "Benefits": {
@@ -469,7 +469,7 @@
   },
   "InfoBar": {
     "dismiss": "Dismiss notification",
-    "message": "Give us your feedback and get an iPad Pro!",
+    "message": "Give us your feedback and get an iPad Air + Apple Pencil Pro!",
     "button": "Learn more"
   },
   "CTA": {

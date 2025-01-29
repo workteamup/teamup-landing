@@ -19,7 +19,7 @@ import { useTranslations } from "../contexts/TranslationContext";
 import WelcomePopup from "./welcome-popup";
 
 const Landing = () => {
-  const [hasActiveAnnouncement, setHasActiveAnnouncement] = useState(false);
+  const [hasActiveAnnouncement, setHasActiveAnnouncement] = useState(true);
   const [showWelcomePopup, setShowWelcomePopup] = useState(false);
   const t = useTranslations();
 
@@ -45,28 +45,25 @@ const Landing = () => {
 
   const handlePopupCTA = () => {
     // This is the "Go to link" button
-    window.open("https://gleam.io/sdxiW/sorteo-ipad-pro-feedback", "_blank");
+    window.open("https://forms.gle/zUqNf1wbz8KhUyCr8", "_blank");
     setShowWelcomePopup(false);
     // No localStorage set here
   };
 
   return (
     <div className="text-blue-950 bg-slate-50">
-      {/* <WelcomePopup
+      <WelcomePopup
         isOpen={showWelcomePopup}
         onDismiss={handleClose}
         onNeverShow={handleNeverShow}
         onCTAClick={handlePopupCTA}
-      /> */}
+      />
       {hasActiveAnnouncement && (
         <InfoBar
           message={t("InfoBar.message")}
           buttonText={t("InfoBar.button")}
           buttonAction={() =>
-            window.open(
-              "https://gleam.io/sdxiW/sorteo-ipad-pro-feedback",
-              "_blank"
-            )
+            window.open("https://forms.gle/zUqNf1wbz8KhUyCr8", "_blank")
           }
           onDismiss={() => setHasActiveAnnouncement(false)}
         />
