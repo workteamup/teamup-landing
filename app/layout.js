@@ -20,6 +20,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`scroll-smooth ${sora.variable}`}>
       <body className="antialiased font-sans">
         <Script
+          src="https://cdn.seline.so/seline.js"
+          data-token="38b478ebea90f19"
+          strategy="beforeInteractive"
+        />
+        <Script
           src="https://cdn-cookieyes.com/client_data/61286c6a03a5761eb4e3563f/script.js"
           strategy="beforeInteractive"
         />
