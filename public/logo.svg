@@ -1,0 +1,6 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="40" rx="4" fill="#EBF5FF"/>
+  <path d="M10 20h20M40 20h20M70 20h20M100 20h10" stroke="#2563EB" stroke-width="2"/>
+  <path d="M20 10v20M50 10v20M80 10v20M100 10v20" stroke="#2563EB" stroke-width="2"/>
+  <text x="22" y="25" font-family="Arial" font-size="16" font-weight="bold" fill="#2563EB">Team Up!</text>
+</svg> 

@@ -84,7 +84,9 @@
       }
     },
     "viewSpacesDemo": "View spaces in demo",
-    "signUpFree": "Sign up for free"
+    "signUpFree": "Sign up for free",
+    "featuresTitle": "Features",
+    "howToUseTitle": "How to Use"
   },
   "Features": {
     "tag": "Features",
@@ -111,6 +113,10 @@
     "legalNotice": "Legal Notice and Terms of Use",
     "privacyPolicy": "Privacy Policy",
     "cookiePolicy": "Cookie Policy",
+    "termsOfService": "Terms of Service",
+    "legal": "Legal",
+    "followUs": "Follow Us",
+    "builtWithLove": "Built with ❤️ by Team Up!",
     "copyright": "© 2024 TEAM UP TECH ESPAÑA S.L. All rights reserved"
   },
   "FooterCTA": {
@@ -118,6 +124,22 @@
     "heading": "Create a culture that brings out the best in your team now",
     "primaryButton": "Start for free",
     "secondaryButton": "Schedule a demo"
+  },
+  "Navbar": {
+    "createFirstMeeting": "Create your first meeting now!",
+    "login": "Sign in",
+    "spaces": "Spaces",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "aboutUs": "About us",
+    "tryFree": "Try free for 2 months",
+    "register": "Register"
+  },
+  "Solutions": {
+    "dayToDay": "Day-to-Day Activity",
+    "companyEvents": "Company Events",
+    "funCompetitions": "Fun Competitions",
+    "customOffice": "Custom Office Space"
   },
   "CookiePolicy": {
     "title": "Cookie Policy",
@@ -336,16 +358,6 @@
   "LegalPageTemplate": {
     "backButton": "Back"
   },
-  "Navbar": {
-    "benefits": "Benefits",
-    "whatIsTeamUp": "What is Team Up!?",
-    "spaces": "Spaces",
-    "features": "Features",
-    "login": "Log in",
-    "register": "Sign up",
-    "pricing": "Pricing",
-    "blog": "Blog"
-  },
   "Blog": {
     "title": "Our Blog",
     "readMore": "Read more",
@@ -492,5 +504,240 @@
   "WelcomePopup": {
     "neverShow": "Never show again",
     "goToLink": "Go to link"
+  },
+  "SolutionsPage": {
+    "pageTitle": "Solutions for Remote Teams",
+    "pageDescription": "Discover specialized virtual spaces designed to solve your remote team challenges.",
+    "pageHeading": "Virtual Spaces Tailored to Your Team's Needs",
+    "pageSubheading": "From daily standups to company-wide events, our platform provides the perfect environment for every team moment.",
+    "viewSolution": "View Solution",
+    "solutions": {
+      "dayToDay": {
+        "title": "Day-to-Day Activity",
+        "description": "Virtual spaces for daily team collaboration, standups, and regular meetings"
+      },
+      "companyEvents": {
+        "title": "Company Events",
+        "description": "Create memorable virtual company gatherings, celebrations, and team-building events"
+      },
+      "funCompetitions": {
+        "title": "Fun Competitions",
+        "description": "Boost morale with friendly competitions and games in customized virtual environments"
+      },
+      "customOffice": {
+        "title": "Custom Office Space",
+        "description": "Build a tailored virtual office that reflects your company culture and workflow"
+      }
+    }
+  },
+  "SolutionTemplates": {
+    "dailyActivity": {
+      "title": "Day-to-Day Activity Solutions",
+      "description": "Transform your team's daily workflow with virtual spaces designed for regular team interactions, from standups to collaborative work sessions.",
+      "cta": {
+        "heading": "Ready to transform your team's daily interactions?",
+        "description": "Experience the difference that purpose-built virtual spaces can make for your team's everyday collaboration and productivity.",
+        "primaryButton": "Try Free for 2 Months",
+        "secondaryButton": "Schedule a Demo"
+      },
+      "blocks": {
+        "standup": {
+          "title": "Virtual Daily Standups",
+          "description": "Transform your daily standups into engaging team gatherings. Our virtual standup spaces provide a visual context that makes routine updates more meaningful and connected.",
+          "bulletPoints": [
+            "Automated meeting timers to keep updates concise",
+            "Visual progress tracking for ongoing projects",
+            "Interactive elements for team members to engage with updates",
+            "Persistent virtual boards that maintain context between meetings"
+          ]
+        },
+        "workspace": {
+          "title": "Collaborative Workspaces",
+          "description": "Enable your team to work together seamlessly with virtual collaborative workspaces. Create a dedicated environment where your team can gather, share ideas, and work on projects together without the limitations of physical distance.",
+          "bulletPoints": [
+            "Customizable work areas for different departments or projects",
+            "Real-time document collaboration and whiteboarding",
+            "Integrated communication tools for quick discussions",
+            "Spatial audio for natural conversation flow between nearby team members"
+          ]
+        },
+        "meetings": {
+          "title": "Regular Team Meetings",
+          "description": "Make your regular team meetings more productive and engaging. Our meeting spaces are designed to facilitate discussions, presentations, and decision-making in a way that feels natural and keeps everyone involved.",
+          "bulletPoints": [
+            "Presenter spotlight features to focus attention",
+            "Interactive voting and polling for quick team decisions",
+            "Meeting templates for consistent meeting structure",
+            "Automatic meeting summaries and action item tracking"
+          ]
+        },
+        "focus": {
+          "title": "Focus & Deep Work Zones",
+          "description": "Provide your team with virtual spaces dedicated to focused work and concentration. These distraction-free environments help team members signal when they need uninterrupted time while still remaining accessible to the team.",
+          "bulletPoints": [
+            "Status indicators to show availability and focus level",
+            "Ambient background sounds for improved concentration",
+            "Pomodoro timer integration for productivity",
+            "Quick access to reference materials and resources"
+          ]
+        }
+      }
+    },
+    "companyEvents": {
+      "title": "Company Events Solutions",
+      "description": "Create memorable virtual company gatherings that bring your remote teams together for celebrations, announcements, and team-building.",
+      "cta": {
+        "heading": "Ready to host unforgettable company events?",
+        "description": "Transform your virtual company gatherings into engaging experiences that strengthen team bonds and company culture.",
+        "primaryButton": "Try Free for 2 Months",
+        "secondaryButton": "Schedule a Demo"
+      },
+      "blocks": {
+        "allHands": {
+          "title": "Virtual All-Hands Meetings",
+          "description": "Host company-wide gatherings that engage employees across multiple locations. Our virtual auditorium provides the perfect space for important announcements, company updates, and Q&A sessions.",
+          "bulletPoints": [
+            "Capacity for hundreds of participants with smooth performance",
+            "Presenter controls with spotlight features",
+            "Interactive Q&A and polling features",
+            "Recording capabilities with automatic transcription"
+          ]
+        },
+        "teamBuilding": {
+          "title": "Team Building Activities",
+          "description": "Strengthen team bonds with purpose-built spaces for virtual team building. From icebreakers to collaborative challenges, these environments make remote team building fun and effective.",
+          "bulletPoints": [
+            "Ready-to-use activity templates and games",
+            "Customizable challenges for different team dynamics",
+            "Spaces designed to encourage interaction and collaboration",
+            "Tracking for engagement and team progress"
+          ]
+        },
+        "celebrations": {
+          "title": "Virtual Celebrations & Socials",
+          "description": "Celebrate milestones, achievements, and special occasions together, no matter where team members are located. Create memorable experiences that maintain company traditions in a virtual setting.",
+          "bulletPoints": [
+            "Themed environments for different occasions",
+            "Interactive entertainment options and activities",
+            "Ability to share photos, videos, and presentations",
+            "Breakout areas for smaller group conversations"
+          ]
+        },
+        "onboarding": {
+          "title": "New Employee Onboarding",
+          "description": "Welcome new team members with an immersive onboarding experience. Create virtual spaces that introduce company culture, processes, and teams in an engaging and interactive way.",
+          "bulletPoints": [
+            "Virtual office tours and team introductions",
+            "Interactive training modules and resources",
+            "Scheduled meet-and-greet sessions with team members",
+            "Progress tracking for onboarding activities"
+          ]
+        }
+      }
+    },
+    "funCompetitions": {
+      "title": "Fun Competitions Solutions",
+      "description": "Boost team morale and engagement with friendly virtual competitions and interactive games designed for remote teams.",
+      "cta": {
+        "heading": "Ready to energize your team with fun competitions?",
+        "description": "Discover how friendly virtual competitions can boost morale, foster teamwork, and create memorable moments for your remote team.",
+        "primaryButton": "Try Free for 2 Months",
+        "secondaryButton": "Schedule a Demo"
+      },
+      "blocks": {
+        "teamGames": {
+          "title": "Team Challenge Games",
+          "description": "Engage your entire team with multiplayer games designed specifically for virtual environments. These collaborative challenges encourage teamwork and strategy while providing a fun break from work routines.",
+          "bulletPoints": [
+            "Multiple game options for different team preferences",
+            "Customizable difficulty levels for all skill sets",
+            "Team-based scoring and leaderboards",
+            "Real-time interaction and communication during gameplay"
+          ]
+        },
+        "tournaments": {
+          "title": "Friendly Tournaments",
+          "description": "Organize ongoing tournaments that create excitement and healthy competition over time. From trivia challenges to skill-based games, these structured competitions give teams something to look forward to.",
+          "bulletPoints": [
+            "Tournament bracket visualization and tracking",
+            "Scheduled matches that fit into work schedules",
+            "Spectator modes for team members to watch matches",
+            "Award ceremonies and recognition features"
+          ]
+        },
+        "icebreakers": {
+          "title": "Interactive Icebreakers",
+          "description": "Start meetings with quick, fun activities that energize participants and create a positive atmosphere. These short-form games help team members connect before diving into work topics.",
+          "bulletPoints": [
+            "Quick 5-minute activities to start any meeting",
+            "Getting-to-know-you games for new team members",
+            "Thought-provoking questions and discussion prompts",
+            "Customizable activities for different team cultures"
+          ]
+        },
+        "rewards": {
+          "title": "Achievement & Rewards System",
+          "description": "Recognize participation and performance with a built-in rewards system. Create meaningful incentives that motivate team members to engage in activities and competitions.",
+          "bulletPoints": [
+            "Customizable badges and achievements",
+            "Points system that can integrate with team recognition programs",
+            "Virtual trophies and awards to display in profiles",
+            "Progress tracking for individual and team accomplishments"
+          ]
+        }
+      }
+    },
+    "customOffice": {
+      "title": "Custom Office Space Solutions",
+      "description": "Create a virtual office environment tailored to your company's unique culture, workflow, and communication needs.",
+      "cta": {
+        "heading": "Ready to create your custom virtual office?",
+        "description": "Design a virtual workspace that reflects your company culture and optimizes your team's remote collaboration experience.",
+        "primaryButton": "Try Free for 2 Months",
+        "secondaryButton": "Schedule a Demo"
+      },
+      "blocks": {
+        "brandedSpaces": {
+          "title": "Branded Virtual Offices",
+          "description": "Create a virtual office that reflects your company's visual identity and culture. Customize colors, logos, layouts, and environments that make team members feel they're in a space that truly belongs to your organization.",
+          "bulletPoints": [
+            "Custom branding elements including logos and colors",
+            "Themed environments that match company culture",
+            "Personalized welcome areas for team members and visitors",
+            "Consistent visual identity across all virtual spaces"
+          ]
+        },
+        "departmentAreas": {
+          "title": "Department-Specific Areas",
+          "description": "Design specialized zones for different departments with tools and layouts optimized for their specific workflows. From engineering collaboration spaces to marketing brainstorming rooms, create environments that enhance productivity.",
+          "bulletPoints": [
+            "Customized tools and integrations for each department",
+            "Optimized layouts for different work processes",
+            "Secure areas for sensitive department functions",
+            "Cross-department collaboration zones"
+          ]
+        },
+        "workflow": {
+          "title": "Workflow-Optimized Layout",
+          "description": "Structure your virtual office to reflect your team's workflow and communication patterns. Create intuitive pathways between related work areas and ensure information flows naturally throughout your organization.",
+          "bulletPoints": [
+            "Process-based room arrangements",
+            "Visual workflow indicators and project tracking",
+            "Information hubs for company-wide resources",
+            "Adaptive spaces that can evolve with changing priorities"
+          ]
+        },
+        "integrations": {
+          "title": "Custom Tool Integrations",
+          "description": "Integrate your existing productivity tools and software directly into your virtual office environment. Create a seamless experience where all resources are available within the context of your team's work.",
+          "bulletPoints": [
+            "Integration with project management platforms",
+            "Document collaboration tools embedded in relevant spaces",
+            "Communication tools unified in one environment",
+            "Data visualization dashboards for team performance"
+          ]
+        }
+      }
+    }
   }
 }

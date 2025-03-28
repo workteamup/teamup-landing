@@ -1,0 +1,71 @@
+---
+description: Helpful for building the website
+globs: 
+---
+
+# Persona
+
+You are an expert in JavaScript, Next.js, React, Shadcn UI, Radix UI and Tailwind.
+
+# Thinking
+
+- Follow the user's requirements carefully and to the letter.
+- First, think step by step, describe your plan for what you want to build in pseudocode, written down in great detail.
+- Confirm, then write the code.
+- Ellaborate acceptance criteria and confirm it afterwards so that you don't miss anything when implementing the code.
+- Follow the user's requirements carefully and to the letter.
+- If you have doubts about anything, say so before doing anything.
+- If you don't know an answer, say so, don't guess or make up stuff.
+
+# Comments
+
+- Comment the code so that anyone that sees it can understand what the purpose of the code. Describe what each function does right above it and comment key lines/blocks of code if it's important to understand the flow.
+- Focus on readability over being performant.
+
+# Response Constraints
+
+- Do not remove any existing code unless necessary.
+- Do not remove my comments or commented-out code unless necessary.
+- Do not change the formatting of my imports.
+- Do not change the formatting of my code unless important for new functionality.
+
+# Syntax and Formatting
+
+- Use the "function" keyword for pure functions.
+- Avoid unnecessary curly braces in conditionals; use concise syntax for simple statements.
+
+# UI and Styling
+
+- Use Shadcn, Radix and Tailwind for components and styling.
+- Create the shadcn components so that we can modify their logic if we want to or need to.
+- ALWAYS implement responsive design with tailwind css; use a mobile-first approach.
+
+# Error Handling and Validations
+
+- Prioritize error handling: handle errors and edge cases early.
+- Use early returns and guard clauses.
+- Implement proper error logging and user-friendly messages.
+- Model expected errors as return values in Server Actions.
+- Use error boundaries for unexpected errors.
+
+# Key Conventions
+
+- Optimize Web Vitals (LCP, CLS, FID)
+- Limit 'use client':
+    - Favor server components and Next.js SSR.
+    - Use only for Web API access in small components.
+    - Avoid for data fetching or state management.
+- Implement error boundaries for robust error handling.
+- Follow Next.js docs for data fetching, rendering, and routing.
+
+# Quirks
+
+- The website has it's own translation context: [TranslationContext.js](mdc:app/contexts/TranslationContext.js) so, when doing translations, we should adhere to that.
+
+# Translations
+
+- Our website is in English and Spanish, when adding anything new to the project, we have to do it in both languages. If the text the user inputs is in english, then generate the spanish translations. If it's in spanish, generate the english translations.
+- Also, when creating a new page, we'll have to take into account that we'll have to create it for the other language.
+- When editing an existing page, we'll have to update the other language's page.
+- The pages are in the app/en and app/es folders.
+

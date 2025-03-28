@@ -1,3 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand Colors */
+  --color-brand-teal: #67DAFA;
+  --color-brand-blue: #3F89F6;
+  --color-brand-purple: #635DF5;
+  --color-brand-dark: #252E4B;
+  
+  /* Grey Colors */
+  --color-gray-cloud: #ECEFF6;
+  --color-gray-smoke: #D3D5E1;
+  --color-gray-steel: #BCC0CC;
+  --color-gray-space: #9CA2B2;
+  --color-gray-graphite: #6E7180;
+  --color-gray-arsenic: #40424E;
+  --color-gray-phantom: #1F1E24;
+}
+
 /* FONTS */
 /*@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");*/
 
@@ -336,22 +357,6 @@
   100% {
     transform: translateX(0);
   }
-}
-
-/* Make sure these are placed before the @tailwind directives */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-:root {
-  /* --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
 }
 
 @media (prefers-color-scheme: dark) {

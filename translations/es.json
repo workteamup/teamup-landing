@@ -84,7 +84,9 @@
       }
     },
     "viewSpacesDemo": "Ver espacios en demo",
-    "signUpFree": "Regístrate gratis"
+    "signUpFree": "Regístrate gratis",
+    "featuresTitle": "Funcionalidades",
+    "howToUseTitle": "Cómo usar"
   },
   "Features": {
     "tag": "Funcionalidades",
@@ -111,6 +113,10 @@
     "legalNotice": "Aviso legal y condiciones de uso",
     "privacyPolicy": "Política de privacidad",
     "cookiePolicy": "Política de cookies",
+    "termsOfService": "Términos de servicio",
+    "legal": "Legal",
+    "followUs": "Síguenos",
+    "builtWithLove": "Hecho con ❤️ por Team Up!",
     "copyright": "© 2024 TEAM UP TECH ESPAÑA S.L. Todos los derechos reservados"
   },
   "FooterCTA": {
@@ -338,14 +344,20 @@
     "backButton": "Volver"
   },
   "Navbar": {
-    "benefits": "Beneficios",
-    "whatIsTeamUp": "¿Qué es Team Up!?",
-    "spaces": "Espacios",
-    "features": "Funcionalidades",
+    "createFirstMeeting": "¡Crea tu primera reunión ahora!",
     "login": "Iniciar sesión",
-    "register": "Registrarse",
-    "pricing": "Planes",
-    "blog": "Blog"
+    "spaces": "Espacios",
+    "solutions": "Soluciones",
+    "pricing": "Precios",
+    "aboutUs": "Sobre nosotros",
+    "tryFree": "Prueba gratis por 2 meses",
+    "register": "Registrarse"
+  },
+  "Solutions": {
+    "dayToDay": "Actividad diaria",
+    "companyEvents": "Eventos de empresa",
+    "funCompetitions": "Competiciones divertidas",
+    "customOffice": "Oficina personalizada"
   },
   "Blog": {
     "title": "Nuestro Blog",
@@ -491,7 +503,242 @@
     }
   },
   "WelcomePopup": {
-    "neverShow": "No mostrar más",
+    "neverShow": "No mostrar de nuevo",
     "goToLink": "Ir al enlace"
+  },
+  "SolutionsPage": {
+    "pageTitle": "Soluciones para Equipos Remotos",
+    "pageDescription": "Descubre espacios virtuales especializados diseñados para resolver los desafíos de tu equipo remoto.",
+    "pageHeading": "Espacios Virtuales Adaptados a las Necesidades de tu Equipo",
+    "pageSubheading": "Desde reuniones diarias hasta eventos de toda la empresa, nuestra plataforma proporciona el entorno perfecto para cada momento del equipo.",
+    "viewSolution": "Ver Solución",
+    "solutions": {
+      "dayToDay": {
+        "title": "Actividad Diaria",
+        "description": "Espacios virtuales para la colaboración diaria del equipo, reuniones de seguimiento y reuniones regulares"
+      },
+      "companyEvents": {
+        "title": "Eventos de Empresa",
+        "description": "Crea reuniones virtuales memorables de empresa, celebraciones y eventos de formación de equipos"
+      },
+      "funCompetitions": {
+        "title": "Competiciones Divertidas",
+        "description": "Aumenta la moral con competiciones amistosas y juegos en entornos virtuales personalizados"
+      },
+      "customOffice": {
+        "title": "Espacio de Oficina Personalizado",
+        "description": "Construye una oficina virtual a medida que refleje la cultura y el flujo de trabajo de tu empresa"
+      }
+    }
+  },
+  "SolutionTemplates": {
+    "dailyActivity": {
+      "title": "Soluciones para Actividad Diaria",
+      "description": "Transforma el flujo de trabajo diario de tu equipo con espacios virtuales diseñados para interacciones regulares de equipo, desde reuniones de seguimiento hasta sesiones de trabajo colaborativo.",
+      "cta": {
+        "heading": "¿Listo para transformar las interacciones diarias de tu equipo?",
+        "description": "Experimenta la diferencia que los espacios virtuales diseñados específicamente pueden hacer para la colaboración y productividad diaria de tu equipo.",
+        "primaryButton": "Prueba Gratis por 2 Meses",
+        "secondaryButton": "Programa una Demo"
+      },
+      "blocks": {
+        "standup": {
+          "title": "Reuniones Diarias Virtuales",
+          "description": "Transforma tus reuniones diarias en encuentros de equipo atractivos. Nuestros espacios de reunión virtual proporcionan un contexto visual que hace que las actualizaciones rutinarias sean más significativas y conectadas.",
+          "bulletPoints": [
+            "Temporizadores automáticos para mantener las actualizaciones concisas",
+            "Seguimiento visual del progreso para proyectos en curso",
+            "Elementos interactivos para que los miembros del equipo participen con las actualizaciones",
+            "Tableros virtuales persistentes que mantienen el contexto entre reuniones"
+          ]
+        },
+        "workspace": {
+          "title": "Espacios de Trabajo Colaborativos",
+          "description": "Permite que tu equipo trabaje junto sin problemas con espacios de trabajo colaborativos virtuales. Crea un entorno dedicado donde tu equipo pueda reunirse, compartir ideas y trabajar en proyectos juntos sin las limitaciones de la distancia física.",
+          "bulletPoints": [
+            "Áreas de trabajo personalizables para diferentes departamentos o proyectos",
+            "Colaboración en documentos y pizarras en tiempo real",
+            "Herramientas de comunicación integradas para discusiones rápidas",
+            "Audio espacial para un flujo de conversación natural entre miembros del equipo cercanos"
+          ]
+        },
+        "meetings": {
+          "title": "Reuniones Regulares de Equipo",
+          "description": "Haz que tus reuniones regulares de equipo sean más productivas y atractivas. Nuestros espacios de reunión están diseñados para facilitar discusiones, presentaciones y toma de decisiones de una manera que se siente natural y mantiene a todos involucrados.",
+          "bulletPoints": [
+            "Funciones de spotlight para presentadores que centran la atención",
+            "Votación interactiva y encuestas para decisiones rápidas del equipo",
+            "Plantillas de reuniones para una estructura de reunión consistente",
+            "Resúmenes automáticos de reuniones y seguimiento de elementos de acción"
+          ]
+        },
+        "focus": {
+          "title": "Zonas de Concentración y Trabajo Profundo",
+          "description": "Proporciona a tu equipo espacios virtuales dedicados a la concentración y el trabajo profundo. Estos entornos libres de distracciones ayudan a los miembros del equipo a indicar cuando necesitan tiempo ininterrumpido mientras siguen siendo accesibles para el equipo.",
+          "bulletPoints": [
+            "Indicadores de estado para mostrar disponibilidad y nivel de concentración",
+            "Sonidos de fondo ambientales para mejorar la concentración",
+            "Integración con temporizador Pomodoro para productividad",
+            "Acceso rápido a materiales de referencia y recursos"
+          ]
+        }
+      }
+    },
+    "companyEvents": {
+      "title": "Soluciones para Eventos de Empresa",
+      "description": "Crea reuniones virtuales memorables de empresa que reúnan a tus equipos remotos para celebraciones, anuncios y formación de equipos.",
+      "cta": {
+        "heading": "¿Listo para organizar eventos de empresa inolvidables?",
+        "description": "Transforma tus reuniones virtuales de empresa en experiencias atractivas que fortalezcan los lazos del equipo y la cultura de la empresa.",
+        "primaryButton": "Prueba Gratis por 2 Meses",
+        "secondaryButton": "Programa una Demo"
+      },
+      "blocks": {
+        "allHands": {
+          "title": "Reuniones Virtuales Generales",
+          "description": "Organiza reuniones a nivel de toda la empresa que involucren a empleados en múltiples ubicaciones. Nuestro auditorio virtual proporciona el espacio perfecto para anuncios importantes, actualizaciones de la empresa y sesiones de preguntas y respuestas.",
+          "bulletPoints": [
+            "Capacidad para cientos de participantes con rendimiento fluido",
+            "Controles de presentador con funciones de spotlight",
+            "Funciones interactivas de preguntas y respuestas y encuestas",
+            "Capacidades de grabación con transcripción automática"
+          ]
+        },
+        "teamBuilding": {
+          "title": "Actividades de Team Building",
+          "description": "Fortalece los lazos del equipo con espacios diseñados específicamente para team building virtual. Desde rompehielos hasta desafíos colaborativos, estos entornos hacen que la formación de equipos remotos sea divertida y efectiva.",
+          "bulletPoints": [
+            "Plantillas de actividades y juegos listos para usar",
+            "Desafíos personalizables para diferentes dinámicas de equipo",
+            "Espacios diseñados para fomentar la interacción y colaboración",
+            "Seguimiento del compromiso y progreso del equipo"
+          ]
+        },
+        "celebrations": {
+          "title": "Celebraciones y Eventos Sociales Virtuales",
+          "description": "Celebra hitos, logros y ocasiones especiales juntos, sin importar dónde se encuentren los miembros del equipo. Crea experiencias memorables que mantengan las tradiciones de la empresa en un entorno virtual.",
+          "bulletPoints": [
+            "Entornos temáticos para diferentes ocasiones",
+            "Opciones de entretenimiento interactivo y actividades",
+            "Capacidad para compartir fotos, vídeos y presentaciones",
+            "Áreas de breakout para conversaciones en grupos más pequeños"
+          ]
+        },
+        "onboarding": {
+          "title": "Incorporación de Nuevos Empleados",
+          "description": "Da la bienvenida a nuevos miembros del equipo con una experiencia de incorporación inmersiva. Crea espacios virtuales que introduzcan la cultura de la empresa, procesos y equipos de manera atractiva e interactiva.",
+          "bulletPoints": [
+            "Tours virtuales de la oficina y presentaciones del equipo",
+            "Módulos de formación interactivos y recursos",
+            "Sesiones programadas de encuentro y saludo con miembros del equipo",
+            "Seguimiento del progreso para actividades de incorporación"
+          ]
+        }
+      }
+    },
+    "funCompetitions": {
+      "title": "Soluciones para Competiciones Divertidas",
+      "description": "Aumenta la moral del equipo y el compromiso con competiciones virtuales amistosas y juegos interactivos diseñados para equipos remotos.",
+      "cta": {
+        "heading": "¿Listo para energizar a tu equipo con competiciones divertidas?",
+        "description": "Descubre cómo las competiciones virtuales amistosas pueden aumentar la moral, fomentar el trabajo en equipo y crear momentos memorables para tu equipo remoto.",
+        "primaryButton": "Prueba Gratis por 2 Meses",
+        "secondaryButton": "Programa una Demo"
+      },
+      "blocks": {
+        "teamGames": {
+          "title": "Juegos de Desafío en Equipo",
+          "description": "Involucra a todo tu equipo con juegos multijugador diseñados específicamente para entornos virtuales. Estos desafíos colaborativos fomentan el trabajo en equipo y la estrategia mientras proporcionan un descanso divertido de las rutinas de trabajo.",
+          "bulletPoints": [
+            "Múltiples opciones de juego para diferentes preferencias de equipo",
+            "Niveles de dificultad personalizables para todos los conjuntos de habilidades",
+            "Puntuación basada en equipo y tablas de clasificación",
+            "Interacción y comunicación en tiempo real durante el juego"
+          ]
+        },
+        "tournaments": {
+          "title": "Torneos Amistosos",
+          "description": "Organiza torneos continuos que crean emoción y competencia saludable a lo largo del tiempo. Desde desafíos de trivia hasta juegos basados en habilidades, estas competiciones estructuradas dan a los equipos algo que esperar con interés.",
+          "bulletPoints": [
+            "Visualización y seguimiento de brackets de torneo",
+            "Partidas programadas que se ajustan a los horarios de trabajo",
+            "Modos de espectador para que los miembros del equipo vean los partidos",
+            "Ceremonias de premios y funciones de reconocimiento"
+          ]
+        },
+        "icebreakers": {
+          "title": "Rompehielos Interactivos",
+          "description": "Comienza las reuniones con actividades rápidas y divertidas que energizan a los participantes y crean una atmósfera positiva. Estos juegos de formato corto ayudan a los miembros del equipo a conectar antes de sumergirse en temas de trabajo.",
+          "bulletPoints": [
+            "Actividades rápidas de 5 minutos para comenzar cualquier reunión",
+            "Juegos para conocerse para nuevos miembros del equipo",
+            "Preguntas y temas de discusión que invitan a la reflexión",
+            "Actividades personalizables para diferentes culturas de equipo"
+          ]
+        },
+        "rewards": {
+          "title": "Sistema de Logros y Recompensas",
+          "description": "Reconoce la participación y el rendimiento con un sistema de recompensas integrado. Crea incentivos significativos que motiven a los miembros del equipo a participar en actividades y competiciones.",
+          "bulletPoints": [
+            "Insignias y logros personalizables",
+            "Sistema de puntos que puede integrarse con programas de reconocimiento de equipo",
+            "Trofeos y premios virtuales para mostrar en perfiles",
+            "Seguimiento del progreso para logros individuales y de equipo"
+          ]
+        }
+      }
+    },
+    "customOffice": {
+      "title": "Soluciones de Espacio de Oficina Personalizado",
+      "description": "Crea un entorno de oficina virtual adaptado a la cultura única, flujo de trabajo y necesidades de comunicación de tu empresa.",
+      "cta": {
+        "heading": "¿Listo para crear tu oficina virtual personalizada?",
+        "description": "Diseña un espacio de trabajo virtual que refleje la cultura de tu empresa y optimice la experiencia de colaboración remota de tu equipo.",
+        "primaryButton": "Prueba Gratis por 2 Meses",
+        "secondaryButton": "Programa una Demo"
+      },
+      "blocks": {
+        "brandedSpaces": {
+          "title": "Oficinas Virtuales con Marca",
+          "description": "Crea una oficina virtual que refleje la identidad visual y cultura de tu empresa. Personaliza colores, logotipos, diseños y entornos que hagan que los miembros del equipo sientan que están en un espacio que realmente pertenece a tu organización.",
+          "bulletPoints": [
+            "Elementos de marca personalizados que incluyen logotipos y colores",
+            "Entornos temáticos que coinciden con la cultura de la empresa",
+            "Áreas de bienvenida personalizadas para miembros del equipo y visitantes",
+            "Identidad visual consistente en todos los espacios virtuales"
+          ]
+        },
+        "departmentAreas": {
+          "title": "Áreas Específicas por Departamento",
+          "description": "Diseña zonas especializadas para diferentes departamentos con herramientas y diseños optimizados para sus flujos de trabajo específicos. Desde espacios de colaboración de ingeniería hasta salas de brainstorming de marketing, crea entornos que mejoren la productividad.",
+          "bulletPoints": [
+            "Herramientas personalizadas e integraciones para cada departamento",
+            "Diseños optimizados para diferentes procesos de trabajo",
+            "Áreas seguras para funciones departamentales sensibles",
+            "Zonas de colaboración entre departamentos"
+          ]
+        },
+        "workflow": {
+          "title": "Diseño Optimizado para Flujo de Trabajo",
+          "description": "Estructura tu oficina virtual para reflejar los patrones de flujo de trabajo y comunicación de tu equipo. Crea caminos intuitivos entre áreas de trabajo relacionadas y asegura que la información fluya naturalmente por toda tu organización.",
+          "bulletPoints": [
+            "Disposiciones de salas basadas en procesos",
+            "Indicadores visuales de flujo de trabajo y seguimiento de proyectos",
+            "Centros de información para recursos de toda la empresa",
+            "Espacios adaptativos que pueden evolucionar con prioridades cambiantes"
+          ]
+        },
+        "integrations": {
+          "title": "Integraciones de Herramientas Personalizadas",
+          "description": "Integra tus herramientas de productividad y software existentes directamente en tu entorno de oficina virtual. Crea una experiencia fluida donde todos los recursos estén disponibles dentro del contexto del trabajo de tu equipo.",
+          "bulletPoints": [
+            "Integración con plataformas de gestión de proyectos",
+            "Herramientas de colaboración de documentos integradas en espacios relevantes",
+            "Herramientas de comunicación unificadas en un solo entorno",
+            "Paneles de visualización de datos para el rendimiento del equipo"
+          ]
+        }
+      }
+    }
   }
 }
