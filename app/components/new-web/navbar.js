@@ -37,6 +37,8 @@ const Navbar = () => {
 
   const spacesMenuRef = useRef(null);
   const solutionsMenuRef = useRef(null);
+  const mobileSpacesButtonRef = useRef(null);
+  const mobileSolutionsButtonRef = useRef(null);
   const lastScrollY = useRef(0);
 
   const t = useTranslations();
@@ -91,7 +93,7 @@ const Navbar = () => {
     setIsSolutionsOpen(false);
   };
 
-  // Toggle functions for mobile to avoid event propagation issues
+  // Toggle functions for mobile dropdowns
   const toggleMobileSpacesMenu = () => {
     setIsSpacesOpen(!isSpacesOpen);
     setIsSolutionsOpen(false);
@@ -102,27 +104,49 @@ const Navbar = () => {
     setIsSpacesOpen(false);
   };
 
-  // Close dropdown when clicking outside
-  React.useEffect(() => {
-    const closeDropdowns = (e) => {
-      // Don't close if clicking inside the dropdown areas
+  // Handle clicks on the document to close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Close mobile spaces dropdown if clicking outside
       if (
-        (spacesMenuRef.current && spacesMenuRef.current.contains(e.target)) ||
-        (solutionsMenuRef.current &&
-          solutionsMenuRef.current.contains(e.target))
+        isSpacesOpen &&
+        mobileSpacesButtonRef.current &&
+        !mobileSpacesButtonRef.current.contains(event.target) &&
+        // Check if click is inside any part of the dropdown content
+        !event.target.closest(".mobile-spaces-dropdown")
       ) {
-        return;
+        setIsSpacesOpen(false);
       }
-      setIsSpacesOpen(false);
-      setIsSolutionsOpen(false);
+
+      // Close mobile solutions dropdown if clicking outside
+      if (
+        isSolutionsOpen &&
+        mobileSolutionsButtonRef.current &&
+        !mobileSolutionsButtonRef.current.contains(event.target) &&
+        // Check if click is inside any part of the dropdown content
+        !event.target.closest(".mobile-solutions-dropdown")
+      ) {
+        setIsSolutionsOpen(false);
+      }
+
+      // Close desktop dropdowns if clicking outside
+      if (
+        spacesMenuRef.current &&
+        !spacesMenuRef.current.contains(event.target) &&
+        solutionsMenuRef.current &&
+        !solutionsMenuRef.current.contains(event.target)
+      ) {
+        setIsSpacesOpen(false);
+        setIsSolutionsOpen(false);
+      }
     };
 
-    document.addEventListener("click", closeDropdowns);
+    document.addEventListener("click", handleClickOutside);
 
     return () => {
-      document.removeEventListener("click", closeDropdowns);
+      document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
+  }, [isSpacesOpen, isSolutionsOpen]);
 
   // Define dropdown items with image paths
   const spacesItems = [
@@ -412,7 +436,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 fixed inset-0 top-[60px] overflow-y-auto h-[calc(100vh-60px)] flex flex-col justify-between">
+        <div className="md:hidden bg-white border-t border-gray-200 fixed inset-0 top-[72px] overflow-y-auto h-[calc(100vh-72px)] z-50 flex flex-col justify-between">
           {/* Mobile secondary navigation */}
           <div className="flex flex-col flex-grow">
             <div className="px-4 py-2 bg-gray-50 border-b border-gray-200">
@@ -420,6 +444,7 @@ const Navbar = () => {
                 <Link
                   href={`/${locale}`}
                   className="block text-brand-blue font-semibold hover:text-brand-purple transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {t("Navbar.createFirstMeeting")}
                 </Link>
@@ -476,8 +501,13 @@ const Navbar = () => {
               <div className="py-2">
                 <button
                   type="button"
-                  onClick={toggleMobileSpacesMenu}
-                  className="w-full flex justify-between items-center"
+                  aria-expanded={isSpacesOpen}
+                  onClick={() => {
+                    setIsSpacesOpen(!isSpacesOpen);
+                    setIsSolutionsOpen(false);
+                  }}
+                  ref={mobileSpacesButtonRef}
+                  className="w-full flex justify-between items-center cursor-pointer"
                 >
                   <span className="text-gray-space font-semibold">
                     {t("Navbar.spaces")}
@@ -489,33 +519,19 @@ const Navbar = () => {
                   />
                 </button>
                 {isSpacesOpen && (
-                  <div className="mt-2 pl-4 border-l-2 border-gray-200">
-                    {/* Title for mobile */}
-                    <h4 className="font-semibold text-gray-graphite uppercase text-xs mb-3">
-                      {t("Spaces.categories.all", { fallback: "SPACES" })}
-                    </h4>
-
-                    {/* Preview image for mobile */}
-                    <div className="relative w-full h-40 mb-4 rounded-md overflow-hidden shadow-md">
-                      <Image
-                        src={currentSpaceImage}
-                        alt="Space Preview"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-
+                  <div className="mt-2 pl-4 border-l-2 border-gray-200 mobile-spaces-dropdown">
+                    {/* Simple list of spaces for mobile - similar to solutions */}
                     {spacesItems.map((item, index) => (
                       <Link
                         key={index}
                         href={item.href}
-                        className="block py-2"
-                        onMouseEnter={() => setHoveredSpace(item.title)}
-                        onClick={() => setIsMenuOpen(false)}
+                        className="block py-2 text-gray-space hover:text-brand-purple"
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setIsSpacesOpen(false);
+                        }}
                       >
-                        <span className="font-semibold text-gray-space hover:text-brand-purple transition-colors duration-200">
-                          {item.title}
-                        </span>
+                        {item.title}
                       </Link>
                     ))}
                   </div>
@@ -525,8 +541,13 @@ const Navbar = () => {
               <div className="py-2 border-t border-gray-100">
                 <button
                   type="button"
-                  onClick={toggleMobileSolutionsMenu}
-                  className="w-full flex justify-between items-center"
+                  aria-expanded={isSolutionsOpen}
+                  onClick={() => {
+                    setIsSolutionsOpen(!isSolutionsOpen);
+                    setIsSpacesOpen(false);
+                  }}
+                  ref={mobileSolutionsButtonRef}
+                  className="w-full flex justify-between items-center cursor-pointer"
                 >
                   <span className="text-gray-space font-semibold">
                     {t("Navbar.solutions")}
@@ -538,13 +559,16 @@ const Navbar = () => {
                   />
                 </button>
                 {isSolutionsOpen && (
-                  <div className="mt-2 pl-4 border-l-2 border-gray-200">
+                  <div className="mt-2 pl-4 border-l-2 border-gray-200 mobile-solutions-dropdown">
                     {solutionsItems.map((item, index) => (
                       <Link
                         key={index}
                         href={item.href}
                         className="block py-2 text-gray-space hover:text-brand-purple"
-                        onClick={() => setIsMenuOpen(false)}
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setIsSolutionsOpen(false);
+                        }}
                       >
                         {item.title}
                       </Link>

@@ -13,8 +13,8 @@ export default function WebLayout({ children }) {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      {/* Account for exact navbar heights: 72px on mobile, 120.615px on desktop */}
-      <main className="flex-grow pt-[72px] md:pt-[120.615px]">{children}</main>
+      {/* Use exact navbar height values to avoid unwanted gaps */}
+      <main className="flex-grow pt-[72px] md:pt-[120px]">{children}</main>
       <Footer />
     </div>
   );
