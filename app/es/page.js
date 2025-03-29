@@ -6,6 +6,7 @@ import Button from "../components/new-web/button";
 import LogoCarousel from "../components/new-web/logo-carousel";
 import TargetAudienceCards from "../components/new-web/target-audience-cards";
 import HeroImageStack from "../components/new-web/hero-image-stack";
+import ProductTour from "../components/new-web/product-tour";
 import { semanticColors } from "../lib/design-tokens";
 
 // Metadata needs to be handled differently with client components
@@ -89,6 +90,14 @@ export default function HomePage() {
 
       {/* Logo Carousel - Dark Variant */}
       <LogoCarousel variant="dark" logoCount={12} />
+
+      {/* Product Tour Section */}
+      <ProductTour
+        subtitle="DEMO DEL PRODUCTO"
+        title="Cómo funciona Team Up!"
+        bgImage="/images/debate.jpg"
+        videoSrc="/videos/placeholder.mp4"
+      />
 
       {/* Target Audience Cards */}
       <TargetAudienceCards
