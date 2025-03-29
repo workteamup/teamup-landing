@@ -4,66 +4,7 @@ import WebLayout from "../../components/new-web/layout";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "../../contexts/TranslationContext";
-
-// Spaces data
-const spaces = [
-  {
-    id: "planning",
-    title: "Planning",
-    description:
-      "Collaborative planning space for teams to organize tasks and projects",
-    image: "/spaces/planning.jpg",
-  },
-  {
-    id: "sailboat-retrospective",
-    title: "Sailboat Retrospective",
-    description:
-      "Reflect on your team's journey using the sailboat retrospective method",
-    image: "/spaces/sailboat.jpg",
-  },
-  {
-    id: "campfire",
-    title: "Campfire",
-    description:
-      "Casual space for team building and socializing around a virtual campfire",
-    image: "/spaces/campfire.jpg",
-  },
-  {
-    id: "auditorium",
-    title: "Auditorium",
-    description:
-      "Present to large groups with an engaging virtual auditorium setting",
-    image: "/spaces/auditorium.jpg",
-  },
-  {
-    id: "debate-room",
-    title: "Debate Room",
-    description:
-      "Structure discussions and debates in a dedicated virtual environment",
-    image: "/spaces/debate.jpg",
-  },
-  {
-    id: "floor-is-lava",
-    title: "The Floor is Lava",
-    description:
-      "Energize your team with this fun virtual game based on a classic",
-    image: "/spaces/floor-is-lava.jpg",
-  },
-  {
-    id: "connect-4",
-    title: "Connect 4",
-    description:
-      "Classic Connect 4 game for team bonding and friendly competition",
-    image: "/spaces/connect4.jpg",
-  },
-  {
-    id: "farmyard",
-    title: "The Farmyard",
-    description:
-      "Rural-themed virtual space perfect for casual team gatherings",
-    image: "/spaces/farmyard.jpg",
-  },
-];
+import { spaces } from "../../data/spaces";
 
 export default function SpacesPage() {
   const locale = useLocale();

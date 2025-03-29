@@ -57,7 +57,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo and copyright */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-start">
             <Link href={`/${locale}`}>
               <Image
                 src="/svg/new-logo-dark.svg"
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
 
           {/* Legal links */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-start">
             <h3 className="text-lg font-semibold mb-4 text-gray-phantom">
               {t("Footer.legal")}
             </h3>
@@ -92,7 +92,7 @@ const Footer = () => {
           </div>
 
           {/* Social links */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-start">
             <h3 className="text-lg font-semibold mb-4 text-gray-phantom">
               {t("Footer.followUs")}
             </h3>
@@ -118,7 +118,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-steel pt-6 text-center text-gray-graphite text-sm">
+        <div className="border-t border-gray-steel pt-6 text-left text-gray-graphite text-sm">
           <p>{t("Footer.builtWithLove")}</p>
         </div>
       </div>

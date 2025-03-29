@@ -4,6 +4,8 @@ import { useTranslations } from "../contexts/TranslationContext";
 import Image from "next/image";
 import Button from "../components/new-web/button";
 import LogoCarousel from "../components/new-web/logo-carousel";
+import TargetAudienceCards from "../components/new-web/target-audience-cards";
+import HeroImageStack from "../components/new-web/hero-image-stack";
 import { semanticColors } from "../lib/design-tokens";
 
 // Metadata needs to be handled differently with client components
@@ -23,7 +25,7 @@ export default function HomePage() {
                 The #1 solution for a flexible workspace
               </p>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-brand-dark leading-tight">
                 Happier teams <br />
                 perform better
               </h1>
@@ -58,11 +60,28 @@ export default function HomePage() {
 
             {/* Right video/image column */}
             <div className="w-full lg:w-2/5">
-              <div className="bg-gray-200 rounded-lg aspect-video flex items-center justify-center">
-                <span className="text-4xl text-gray-500 font-bold">
-                  THIS IS A VIDEO
-                </span>
-              </div>
+              <HeroImageStack
+                images={[
+                  {
+                    src: "/images/campfire.jpg",
+                    alt: "Virtual team building around a campfire",
+                    width: 650,
+                    height: 450,
+                  },
+                  {
+                    src: "/images/planning.jpg",
+                    alt: "Team planning collaborative space",
+                    width: 650,
+                    height: 450,
+                  },
+                  {
+                    src: "/images/debate.jpg",
+                    alt: "Team debate discussion room",
+                    width: 650,
+                    height: 450,
+                  },
+                ]}
+              />
             </div>
           </div>
         </div>
@@ -70,6 +89,13 @@ export default function HomePage() {
 
       {/* Logo Carousel - Dark Variant */}
       <LogoCarousel variant="dark" logoCount={12} />
+
+      {/* Target Audience Cards */}
+      <TargetAudienceCards
+        title="Team Up is the Perfect Solution For Your Team"
+        description="Discover how Team Up can help different roles in your organization improve team engagement and productivity."
+        language="en"
+      />
 
       {/* Features section */}
       <section className="py-16 bg-gray-cloud rounded-xl my-16 px-6">

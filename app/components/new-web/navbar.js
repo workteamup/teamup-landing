@@ -86,6 +86,20 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    // Reset submenu states when toggling the main menu
+    setIsSpacesOpen(false);
+    setIsSolutionsOpen(false);
+  };
+
+  // Toggle functions for mobile to avoid event propagation issues
+  const toggleMobileSpacesMenu = () => {
+    setIsSpacesOpen(!isSpacesOpen);
+    setIsSolutionsOpen(false);
+  };
+
+  const toggleMobileSolutionsMenu = () => {
+    setIsSolutionsOpen(!isSolutionsOpen);
+    setIsSpacesOpen(false);
   };
 
   // Close dropdown when clicking outside
@@ -119,37 +133,37 @@ const Navbar = () => {
     },
     {
       title: "Sailboat Retrospective",
-      href: `/${locale}/spaces`,
+      href: `/${locale}/spaces/sailboat-retrospective`,
       image: "/images/planning.jpg",
     },
     {
       title: "Campfire",
-      href: `/${locale}/spaces`,
+      href: `/${locale}/spaces/campfire`,
       image: "/images/campfire.jpg",
     },
     {
       title: "Auditorium",
-      href: `/${locale}/spaces`,
+      href: `/${locale}/spaces/auditorium`,
       image: "/images/auditorium.jpg",
     },
     {
       title: "Debate Room",
-      href: `/${locale}/spaces`,
+      href: `/${locale}/spaces/debate-room`,
       image: "/images/debate.jpg",
     },
     {
       title: "The Floor is Lava",
-      href: `/${locale}/spaces`,
+      href: `/${locale}/spaces/floor-is-lava`,
       image: "/images/lava.jpg",
     },
     {
       title: "Connect 4",
-      href: `/${locale}/spaces`,
+      href: `/${locale}/spaces/connect-4`,
       image: "/images/four.jpg",
     },
     {
       title: "The Farmyard",
-      href: `/${locale}/spaces`,
+      href: `/${locale}/spaces/farmyard`,
       image: "/images/farm.jpg",
     },
   ];
@@ -398,178 +412,177 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white pb-4 border-t border-gray-200">
+        <div className="md:hidden bg-white border-t border-gray-200 fixed inset-0 top-[60px] overflow-y-auto h-[calc(100vh-60px)] flex flex-col justify-between">
           {/* Mobile secondary navigation */}
-          <div className="px-4 py-2 bg-gray-50 border-b border-gray-200">
-            <div className="py-2">
-              <Link
-                href={`/${locale}`}
-                className="block text-brand-blue font-semibold hover:text-brand-purple transition-colors"
-              >
-                {t("Navbar.createFirstMeeting")}
-              </Link>
-            </div>
+          <div className="flex flex-col flex-grow">
+            <div className="px-4 py-2 bg-gray-50 border-b border-gray-200">
+              <div className="py-2">
+                <Link
+                  href={`/${locale}`}
+                  className="block text-brand-blue font-semibold hover:text-brand-purple transition-colors"
+                >
+                  {t("Navbar.createFirstMeeting")}
+                </Link>
+              </div>
 
-            <div className="mt-2 flex flex-col space-y-2">
-              {/* Language selector - mobile */}
-              <div className="flex justify-between items-center py-2 border-t border-gray-200">
-                <span className="text-gray-500 text-sm">Language</span>
-                <div className="flex items-center space-x-2">
-                  <button
-                    onClick={() => handleLanguageChange("en")}
-                    className={`${
-                      locale === "en" ? "opacity-100" : "opacity-60"
-                    }`}
-                  >
-                    <Image
-                      src="/flags/us.svg"
-                      alt="English"
-                      width={24}
-                      height={16}
-                      className="rounded"
-                    />
-                  </button>
-                  <button
-                    onClick={() => handleLanguageChange("es")}
-                    className={`${
-                      locale === "es" ? "opacity-100" : "opacity-60"
-                    }`}
-                  >
-                    <Image
-                      src="/flags/es.svg"
-                      alt="Spanish"
-                      width={24}
-                      height={16}
-                      className="rounded"
-                    />
-                  </button>
+              <div className="mt-2 flex flex-col space-y-2">
+                {/* Language selector - mobile */}
+                <div className="flex justify-between items-center py-2 border-t border-gray-200">
+                  <span className="text-gray-500 text-sm">Language</span>
+                  <div className="flex items-center space-x-2">
+                    <button
+                      onClick={() => handleLanguageChange("en")}
+                      className={`${
+                        locale === "en" ? "opacity-100" : "opacity-60"
+                      }`}
+                    >
+                      <Image
+                        src="/flags/us.svg"
+                        alt="English"
+                        width={24}
+                        height={16}
+                        className="rounded"
+                      />
+                    </button>
+                    <button
+                      onClick={() => handleLanguageChange("es")}
+                      className={`${
+                        locale === "es" ? "opacity-100" : "opacity-60"
+                      }`}
+                    >
+                      <Image
+                        src="/flags/es.svg"
+                        alt="Spanish"
+                        width={24}
+                        height={16}
+                        className="rounded"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                {/* Login - mobile using component */}
+                <div className="py-2 border-t border-gray-200">
+                  <LoginButton
+                    text={t("Navbar.login")}
+                    href="https://app.teamup.works/login"
+                  />
                 </div>
               </div>
+            </div>
 
-              {/* Login - mobile using component */}
-              <div className="py-2 border-t border-gray-200">
-                <LoginButton
-                  text={t("Navbar.login")}
-                  href="https://app.teamup.works/login"
-                />
+            {/* Mobile primary navigation */}
+            <div className="px-4 pt-3 pb-2 space-y-1 flex-grow">
+              <div className="py-2">
+                <button
+                  type="button"
+                  onClick={toggleMobileSpacesMenu}
+                  className="w-full flex justify-between items-center"
+                >
+                  <span className="text-gray-space font-semibold">
+                    {t("Navbar.spaces")}
+                  </span>
+                  <ChevronDown
+                    className={`h-4 w-4 ml-1 transition-transform ${
+                      isSpacesOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {isSpacesOpen && (
+                  <div className="mt-2 pl-4 border-l-2 border-gray-200">
+                    {/* Title for mobile */}
+                    <h4 className="font-semibold text-gray-graphite uppercase text-xs mb-3">
+                      {t("Spaces.categories.all", { fallback: "SPACES" })}
+                    </h4>
+
+                    {/* Preview image for mobile */}
+                    <div className="relative w-full h-40 mb-4 rounded-md overflow-hidden shadow-md">
+                      <Image
+                        src={currentSpaceImage}
+                        alt="Space Preview"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+
+                    {spacesItems.map((item, index) => (
+                      <Link
+                        key={index}
+                        href={item.href}
+                        className="block py-2"
+                        onMouseEnter={() => setHoveredSpace(item.title)}
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="font-semibold text-gray-space hover:text-brand-purple transition-colors duration-200">
+                          {item.title}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
+
+              <div className="py-2 border-t border-gray-100">
+                <button
+                  type="button"
+                  onClick={toggleMobileSolutionsMenu}
+                  className="w-full flex justify-between items-center"
+                >
+                  <span className="text-gray-space font-semibold">
+                    {t("Navbar.solutions")}
+                  </span>
+                  <ChevronDown
+                    className={`h-4 w-4 ml-1 transition-transform ${
+                      isSolutionsOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {isSolutionsOpen && (
+                  <div className="mt-2 pl-4 border-l-2 border-gray-200">
+                    {solutionsItems.map((item, index) => (
+                      <Link
+                        key={index}
+                        href={item.href}
+                        className="block py-2 text-gray-space hover:text-brand-purple"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <Link
+                href={`/${locale}/pricing`}
+                className="block py-2 text-gray-space hover:text-brand-purple font-semibold border-t border-gray-cloud"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t("Navbar.pricing")}
+              </Link>
+
+              <Link
+                href={`/${locale}/about-us`}
+                className="block py-2 text-gray-space hover:text-brand-purple font-semibold border-t border-gray-cloud"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t("Navbar.aboutUs")}
+              </Link>
             </div>
           </div>
 
-          {/* Mobile primary navigation */}
-          <div className="px-4 pt-3 pb-2 space-y-1">
-            <div className="py-2">
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setIsSpacesOpen(!isSpacesOpen);
-                }}
-                className="w-full flex justify-between items-center"
-              >
-                <span className="text-gray-space font-semibold">
-                  {t("Navbar.spaces")}
-                </span>
-                <ChevronDown
-                  className={`h-4 w-4 ml-1 transition-transform ${
-                    isSpacesOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-              {isSpacesOpen && (
-                <div className="mt-2 pl-4 border-l-2 border-gray-200">
-                  {/* Title for mobile */}
-                  <h4 className="font-semibold text-gray-graphite uppercase text-xs mb-3">
-                    {t("Spaces.categories.all", { fallback: "SPACES" })}
-                  </h4>
-
-                  {/* Preview image for mobile */}
-                  <div className="relative w-full h-40 mb-4 rounded-md overflow-hidden shadow-md">
-                    <Image
-                      src={currentSpaceImage}
-                      alt="Space Preview"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-
-                  {spacesItems.map((item, index) => (
-                    <Link
-                      key={index}
-                      href={item.href}
-                      className="block py-2"
-                      onMouseEnter={() => setHoveredSpace(item.title)}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      <span className="font-semibold text-gray-space hover:text-brand-purple transition-colors duration-200">
-                        {item.title}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <div className="py-2 border-t border-gray-100">
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setIsSolutionsOpen(!isSolutionsOpen);
-                }}
-                className="w-full flex justify-between items-center"
-              >
-                <span className="text-gray-space font-semibold">
-                  {t("Navbar.solutions")}
-                </span>
-                <ChevronDown
-                  className={`h-4 w-4 ml-1 transition-transform ${
-                    isSolutionsOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-              {isSolutionsOpen && (
-                <div className="mt-2 pl-4 border-l-2 border-gray-200">
-                  {solutionsItems.map((item, index) => (
-                    <Link
-                      key={index}
-                      href={item.href}
-                      className="block py-2 text-gray-space hover:text-brand-purple"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item.title}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <Link
-              href={`/${locale}/pricing`}
-              className="block py-2 text-gray-space hover:text-brand-purple font-semibold border-t border-gray-cloud"
+          {/* CTA at the bottom */}
+          <div className="px-4 py-4 mt-auto border-t border-gray-200 bg-white">
+            <Button
+              href="https://app.teamup.works/signup"
+              target="_blank"
+              rel="noopener noreferrer"
+              fullWidth
+              size="md"
               onClick={() => setIsMenuOpen(false)}
             >
-              {t("Navbar.pricing")}
-            </Link>
-
-            <Link
-              href={`/${locale}/about-us`}
-              className="block py-2 text-gray-space hover:text-brand-purple font-semibold border-t border-gray-cloud"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("Navbar.aboutUs")}
-            </Link>
-
-            <div className="mt-4 pt-2 border-t border-gray-200">
-              <Button
-                href="https://app.teamup.works/signup"
-                target="_blank"
-                rel="noopener noreferrer"
-                fullWidth
-                size="md"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("Navbar.tryFree")}
-              </Button>
-            </div>
+              {t("Navbar.tryFree")}
+            </Button>
           </div>
         </div>
       )}

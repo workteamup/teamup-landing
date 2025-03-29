@@ -4,66 +4,51 @@ import WebLayout from "../../components/new-web/layout";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "../../contexts/TranslationContext";
+import { spaces } from "../../data/spaces";
 
-// Spaces data
-const spaces = [
-  {
-    id: "planning",
+// Spanish translations for space descriptions
+const spaceTranslations = {
+  planning: {
     title: "Planificación",
     description:
       "Espacio de planificación colaborativa para que los equipos organicen tareas y proyectos",
-    image: "/spaces/planning.jpg",
   },
-  {
-    id: "sailboat-retrospective",
+  "sailboat-retrospective": {
     title: "Retrospectiva de Velero",
     description:
-      "Reflexiona sobre el viaje de tu equipo utilizando el método de retrospectiva del velero",
-    image: "/spaces/sailboat.jpg",
+      "Reflexiona sobre el viaje de tu equipo usando el método de retrospectiva del velero",
   },
-  {
-    id: "campfire",
+  campfire: {
     title: "Fogata",
     description:
-      "Espacio casual para formar equipos y socializar alrededor de una fogata virtual",
-    image: "/spaces/campfire.jpg",
+      "Espacio casual para team building y socialización alrededor de una fogata virtual",
   },
-  {
-    id: "auditorium",
+  auditorium: {
     title: "Auditorio",
     description:
-      "Presenta a grandes grupos con un entorno de auditorio virtual atractivo",
-    image: "/spaces/auditorium.jpg",
+      "Presenta a grupos grandes con un entorno virtual de auditorio atractivo",
   },
-  {
-    id: "debate-room",
+  "debate-room": {
     title: "Sala de Debate",
     description:
       "Estructura discusiones y debates en un entorno virtual dedicado",
-    image: "/spaces/debate.jpg",
   },
-  {
-    id: "floor-is-lava",
+  "floor-is-lava": {
     title: "El Suelo es Lava",
     description:
       "Energiza a tu equipo con este divertido juego virtual basado en un clásico",
-    image: "/spaces/floor-is-lava.jpg",
   },
-  {
-    id: "connect-4",
+  "connect-4": {
     title: "Conecta 4",
     description:
-      "Juego clásico Conecta 4 para crear vínculos de equipo y competencias amistosas",
-    image: "/spaces/connect4.jpg",
+      "Juego clásico Conecta 4 para fomentar vínculos de equipo y competencia amistosa",
   },
-  {
-    id: "farmyard",
+  farmyard: {
     title: "La Granja",
     description:
-      "Espacio virtual con temática rural perfecto para reuniones casuales de equipo",
-    image: "/spaces/farmyard.jpg",
+      "Espacio virtual con temática rural perfecto para reuniones informales de equipo",
   },
-];
+};
 
 export default function SpacesPage() {
   const locale = useLocale();
@@ -90,16 +75,19 @@ export default function SpacesPage() {
                 <div className="h-48 relative">
                   <Image
                     src={space.image}
-                    alt={space.title}
+                    alt={spaceTranslations[space.id]?.title || space.title}
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-6">
                   <h2 className="text-xl font-semibold mb-2 group-hover:text-brand-purple transition-colors text-gray-phantom">
-                    {space.title}
+                    {spaceTranslations[space.id]?.title || space.title}
                   </h2>
-                  <p className="text-gray-space">{space.description}</p>
+                  <p className="text-gray-space">
+                    {spaceTranslations[space.id]?.description ||
+                      space.description}
+                  </p>
                 </div>
               </div>
             </Link>
