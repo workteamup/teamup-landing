@@ -109,13 +109,14 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.name}
-                  className="bg-white p-2 rounded-full hover:bg-gray-cloud hover:text-brand-blue transition-colors"
+                  className="bg-white p-2 rounded-full transition-colors"
                 >
                   <Image
                     src={social.icon}
                     alt={social.name}
                     width={24}
                     height={24}
+                    className="transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:-translate-y-1"
                   />
                 </a>
               ))}
