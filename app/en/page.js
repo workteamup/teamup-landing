@@ -60,29 +60,31 @@ export default function HomePage() {
             </div>
 
             {/* Right video/image column */}
-            <div className="w-full lg:w-2/5">
-              <HeroImageStack
-                images={[
-                  {
-                    src: "/images/campfire.jpg",
-                    alt: "Virtual team building around a campfire",
-                    width: 650,
-                    height: 450,
-                  },
-                  {
-                    src: "/images/planning.jpg",
-                    alt: "Team planning collaborative space",
-                    width: 650,
-                    height: 450,
-                  },
-                  {
-                    src: "/images/debate.jpg",
-                    alt: "Team debate discussion room",
-                    width: 650,
-                    height: 450,
-                  },
-                ]}
-              />
+            <div className="w-full lg:w-2/5 relative pb-8 px-8 mt-4">
+              <div className="overflow-visible relative mx-auto">
+                <HeroImageStack
+                  images={[
+                    {
+                      src: "/images/campfire.jpg",
+                      alt: "Virtual team building around a campfire",
+                      width: 650,
+                      height: 450,
+                    },
+                    {
+                      src: "/images/planning.jpg",
+                      alt: "Team planning collaborative space",
+                      width: 650,
+                      height: 450,
+                    },
+                    {
+                      src: "/images/debate.jpg",
+                      alt: "Team debate discussion room",
+                      width: 650,
+                      height: 450,
+                    },
+                  ]}
+                />
+              </div>
             </div>
           </div>
         </div>

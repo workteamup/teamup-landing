@@ -46,6 +46,11 @@ const Footer = () => {
       icon: "/social/tiktok.svg",
     },
     {
+      name: "YouTube",
+      href: "https://youtube.com/@teamupworks",
+      icon: "/social/youtube.svg",
+    },
+    {
       name: "X",
       href: "https://x.com/teamupworks",
       icon: "/social/x.svg",

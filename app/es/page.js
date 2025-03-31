@@ -60,29 +60,31 @@ export default function HomePage() {
             </div>
 
             {/* Right video/image column */}
-            <div className="w-full lg:w-2/5">
-              <HeroImageStack
-                images={[
-                  {
-                    src: "/images/campfire.jpg",
-                    alt: "Team building virtual alrededor de una fogata",
-                    width: 650,
-                    height: 450,
-                  },
-                  {
-                    src: "/images/planning.jpg",
-                    alt: "Espacio colaborativo de planificación de equipo",
-                    width: 650,
-                    height: 450,
-                  },
-                  {
-                    src: "/images/debate.jpg",
-                    alt: "Sala de discusión para debates de equipo",
-                    width: 650,
-                    height: 450,
-                  },
-                ]}
-              />
+            <div className="w-full lg:w-2/5 relative pb-8 px-8 mt-4">
+              <div className="overflow-visible relative mx-auto">
+                <HeroImageStack
+                  images={[
+                    {
+                      src: "/images/campfire.jpg",
+                      alt: "Team building virtual alrededor de una fogata",
+                      width: 650,
+                      height: 450,
+                    },
+                    {
+                      src: "/images/planning.jpg",
+                      alt: "Espacio colaborativo de planificación de equipo",
+                      width: 650,
+                      height: 450,
+                    },
+                    {
+                      src: "/images/debate.jpg",
+                      alt: "Sala de discusión para debates de equipo",
+                      width: 650,
+                      height: 450,
+                    },
+                  ]}
+                />
+              </div>
             </div>
           </div>
         </div>

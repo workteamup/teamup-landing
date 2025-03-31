@@ -1,17 +1,44 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 /**
  * HeroImageStack Component
- * Displays 3 slightly overlapping and tilted images that change z-index on hover
+ * Displays 3 slightly overlapping and tilted images that fan out when mouse is nearby
  *
  * @param {Object} props Component properties
  * @param {Array} props.images - Array of image objects with src, alt, and width/height
  */
 export default function HeroImageStack({ images = [] }) {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [isNearby, setIsNearby] = useState(false);
+  const containerRef = useRef(null);
+
+  // Track mouse position and determine if it's near the component
+  useEffect(() => {
+    const trackMousePosition = (e) => {
+      if (containerRef.current) {
+        const { left, top, right, bottom, width, height } =
+          containerRef.current.getBoundingClientRect();
+
+        // Consider the mouse "nearby" if it's within 150px of the container's boundaries
+        const proximityThreshold = 150;
+        const isClose =
+          e.clientX >= left - proximityThreshold &&
+          e.clientX <= right + proximityThreshold &&
+          e.clientY >= top - proximityThreshold &&
+          e.clientY <= bottom + proximityThreshold;
+
+        setIsNearby(isClose);
+      }
+    };
+
+    window.addEventListener("mousemove", trackMousePosition);
+    return () => {
+      window.removeEventListener("mousemove", trackMousePosition);
+    };
+  }, []);
 
   // Default images if none provided - using images from spaces submenu
   const defaultImages = [
@@ -41,21 +68,27 @@ export default function HeroImageStack({ images = [] }) {
   // Tilts for each image to make them look more natural
   const tilts = ["rotate-[-3deg]", "rotate-[2deg]", "rotate-[-2deg]"];
 
-  // Generate styles for each image based on its index and active state
+  // Generate styles for each image based on its index, active state, and proximity
   const getImageStyles = (index) => {
     // Base styles that are always applied
-    let styles = `absolute transition-all duration-200 rounded-lg shadow-lg ${tilts[index]}`;
+    let styles = `absolute transition-all duration-300 rounded-lg shadow-lg ${tilts[index]} cursor-pointer`;
 
-    // Staggered positions - each image is offset in a different direction so all are visible
+    // Staggered positions - with fan-out effect when mouse is nearby
     if (index === 0) {
-      styles += " top-0 -left-4 w-[85%] h-[90%]"; // First image offset to left
+      styles += isNearby
+        ? " top-0 -left-14 w-[85%] h-[85%]" // More spread out when mouse is nearby
+        : " top-0 -left-2 w-[85%] h-[85%]"; // Default position
     } else if (index === 1) {
-      styles += " top-4 left-8 w-[85%] h-[90%]"; // Second image offset to bottom-right
+      styles += isNearby
+        ? " top-6 left-0 w-[85%] h-[85%]" // More centered when mouse is nearby
+        : " top-6 left-6 w-[85%] h-[85%]"; // Default position
     } else if (index === 2) {
-      styles += " -top-4 left-16 w-[85%] h-[90%]"; // Third image offset to top-right
+      styles += isNearby
+        ? " -top-2 left-20 w-[85%] h-[85%]" // More to the right when mouse is nearby
+        : " -top-2 left-12 w-[85%] h-[85%]"; // Default position
     }
 
-    // When hovered, bring this image to the front with a stronger shadow and slight scale
+    // When individually hovered, bring image to the front with stronger effects
     if (activeIndex === index) {
       styles += " z-30 scale-105 shadow-xl";
     }
@@ -68,8 +101,8 @@ export default function HeroImageStack({ images = [] }) {
   };
 
   return (
-    <div className="relative w-full aspect-video">
-      <div className="relative w-full h-full rounded-xl overflow-hidden">
+    <div className="relative w-full aspect-[16/10] my-4" ref={containerRef}>
+      <div className="relative w-full h-full rounded-xl overflow-visible">
         {/* Image stack container with more space for the staggered layout */}
         <div className="absolute inset-0 p-6">
           {displayImages.map((image, index) => (
