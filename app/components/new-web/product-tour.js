@@ -8,6 +8,7 @@ import VideoPlayerModal from "./video-player-modal";
  * ProductTour Component
  * Displays a section with a full-width, video-like appearance featuring a background
  * image, title, and a play button that opens a video modal when clicked.
+ * Uses a pre-blurred image for the background.
  * Fully responsive across all device sizes.
  */
 export default function ProductTour({
@@ -35,50 +36,48 @@ export default function ProductTour({
   };
 
   return (
-    <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8">
-      {/* Video-like container with rounded borders - full width minus padding */}
-      <div className="relative overflow-hidden rounded-lg sm:rounded-xl md:rounded-2xl aspect-[16/9] shadow-xl w-full">
-        {/* Background image - the image itself is expected to have natural blur/bokeh */}
-        <div className="absolute inset-0">
+    <section className="py-6 sm:py-6 md:py-8">
+      {/* Container with same max-width as hero */}
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 py-8">
+        {/* Main container */}
+        <div className="relative w-full aspect-[16/9] rounded-lg sm:rounded-xl md:rounded-2xl overflow-hidden">
+          {/* Using pre-blurred image as background */}
           <Image
-            src={bgImage}
+            src="/images/blurred-image.png"
             alt="Product Tour Background"
             fill
             sizes="100vw"
             style={{
               objectFit: "cover",
-              filter: "brightness(0.5)",
             }}
             priority
           />
-        </div>
 
-        {/* Semi-transparent overlay for better text contrast */}
-        <div className="absolute inset-0 bg-black/20"></div>
-
-        {/* Content overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10 px-4 sm:px-6 md:px-8">
-          {/* Subtitle */}
-          <p className="text-xs sm:text-sm md:text-base font-normal uppercase tracking-wider sm:tracking-widest mb-2 sm:mb-3 md:mb-4">
-            {subtitle}
-          </p>
-
-          {/* Main title */}
-          <h2 className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight">
-            <span className="font-light">How </span>
-            <span className="italic font-bold text-white">Team Up!</span>
-            <span className="font-light"> works</span>
-          </h2>
-
-          {/* Simple play button (gray circle with triangle) - responsive sizes */}
-          <button
+          {/* Make entire container clickable */}
+          <div
+            className="absolute inset-0 flex flex-col items-center justify-center text-white text-center z-10 px-4 sm:px-6 md:px-8 cursor-pointer"
             onClick={openVideo}
-            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-gray-400/50 flex items-center justify-center hover:bg-gray-300/60 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-            aria-label="Play product tour video"
+            role="button"
+            aria-label="Open product tour video"
           >
-            {/* Triangle play icon - scaled for responsive sizes */}
-            <div className="w-0 h-0 border-y-[8px] sm:border-y-[10px] md:border-y-[14px] border-y-transparent border-l-[12px] sm:border-l-[16px] md:border-l-[22px] border-l-white ml-1"></div>
-          </button>
+            {/* Subtitle */}
+            <p className="text-xs sm:text-sm md:text-base font-normal uppercase tracking-wider sm:tracking-widest mb-2 sm:mb-3 md:mb-4">
+              {subtitle}
+            </p>
+
+            {/* Main title */}
+            <h2 className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight">
+              <span className="font-light">How </span>
+              <span className="italic font-bold text-white">Team Up!</span>
+              <span className="font-light"> works</span>
+            </h2>
+
+            {/* Simple play button with glass effect */}
+            <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-white/20 border border-white/30 flex items-center justify-center hover:bg-white/30 transition-all">
+              {/* Triangle play icon - scaled for responsive sizes */}
+              <div className="w-0 h-0 border-y-[8px] sm:border-y-[10px] md:border-y-[14px] border-y-transparent border-l-[12px] sm:border-l-[16px] md:border-l-[22px] border-l-white ml-1"></div>
+            </div>
+          </div>
         </div>
       </div>
 

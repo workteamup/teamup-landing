@@ -120,7 +120,7 @@ export default function HeroImageStack({ images = [] }) {
                 alt={image.alt}
                 width={image.width || 700}
                 height={image.height || 525}
-                className="rounded-lg shadow-md border-4 border-white object-cover w-full h-full"
+                className="rounded-lg shadow-md border-8 border-white object-cover w-full h-full"
                 priority={index === 0} // Load first image with priority
                 sizes="(max-width: 768px) 85vw, (max-width: 1200px) 40vw, 700px"
               />

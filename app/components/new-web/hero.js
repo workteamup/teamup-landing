@@ -15,8 +15,46 @@ export default function Hero() {
   const t = useTranslations();
 
   return (
-    <section className="py-16 md:py-28 lg:py-36 xl:py-44 bg-brand-purple/10">
-      <div className="container mx-auto px-4">
+    <section
+      className="py-16 md:py-28 lg:py-36 xl:py-44 relative overflow-hidden"
+      style={{
+        background:
+          "linear-gradient(130deg, #f4f0ff 0%, #f0ebff 45%, #e8f2ff 75%, #f1f6ff 100%)",
+      }}
+    >
+      {/* Subtle blurred elements in brand colors */}
+      <div
+        className="absolute top-[-15%] right-[-5%] w-[60%] h-[75%] rounded-full opacity-[0.25] blur-[60px]"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(138, 75, 255, 0.8) 0%, rgba(138, 75, 255, 0.15) 70%)",
+        }}
+      ></div>
+      <div
+        className="absolute bottom-[-5%] left-[5%] w-[45%] h-[65%] rounded-full opacity-[0.22] blur-[75px]"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(94, 172, 247, 0.9) 0%, rgba(94, 172, 247, 0.2) 60%)",
+        }}
+      ></div>
+      <div
+        className="absolute top-[25%] left-[-10%] w-[40%] h-[55%] rounded-full opacity-[0.20] blur-[65px]"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(255, 158, 27, 0.8) 0%, rgba(255, 158, 27, 0.15) 70%)",
+        }}
+      ></div>
+
+      {/* Add a small extra accent blob */}
+      <div
+        className="absolute top-[65%] right-[15%] w-[20%] h-[30%] rounded-full opacity-[0.15] blur-[50px]"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(255, 102, 196, 0.7) 0%, rgba(255, 102, 196, 0.1) 70%)",
+        }}
+      ></div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Left content column */}
           <div className="w-full lg:w-3/5 space-y-6 lg:space-y-8">
@@ -40,7 +78,16 @@ export default function Hero() {
               })}
             </h1>
 
-            <p className="text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-graphite max-w-lg hyphens-auto">
+            <p
+              className="text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-graphite max-w-lg whitespace-normal break-words"
+              style={{
+                hyphens: "none",
+                WebkitHyphens: "none",
+                msHyphens: "none",
+                wordBreak: "normal",
+                overflowWrap: "normal",
+              }}
+            >
               {t("Hero.description", {
                 en: "We turn boring meetings into engaging experiences that build culture.",
                 es: "Convertimos reuniones aburridas en experiencias atractivas que construyen cultura.",
