@@ -773,5 +773,11 @@
         }
       }
     }
+  },
+  "ContactSalesCTA": {
+    "title": "¿Quieres personalizar tu propio espacio virtual?",
+    "description": "Contacta con nuestro equipo para crear una solución adaptada a tus necesidades específicas.",
+    "buttonText": "Contactar con Ventas",
+    "secondaryButtonText": "Ver Ejemplos"
   }
 }

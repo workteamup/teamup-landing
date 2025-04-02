@@ -20,6 +20,9 @@ import {
 // Import components from new-web folder
 import NewWebButton from "./new-web/button";
 import ButtonExamples from "./new-web/button-examples";
+import CTASection from "./new-web/cta-section";
+import CTASectionExamples from "./new-web/cta-section-examples";
+import ContactSalesCTA from "./new-web/contact-sales-cta";
 
 const ColorSwatch = ({ colorName, colorValue, onClick }) => {
   return (
@@ -437,6 +440,26 @@ const NewWebComponentsGuide = () => {
         </p>
         <div className="mt-6">
           <ButtonExamples />
+        </div>
+      </div>
+
+      <div className="p-6 border border-gray-smoke rounded-lg">
+        <h3 className="text-xl font-semibold mb-4 font-poppins">
+          CTA Section Components
+        </h3>
+        <p className="text-gray-space mb-4">
+          Versatile call-to-action components with multiple alignments, themes,
+          and customizable backgrounds. Located at:{" "}
+          <code className="bg-gray-cloud px-2 py-1 rounded text-xs">
+            app/components/new-web/cta-section.js
+          </code>{" "}
+          and{" "}
+          <code className="bg-gray-cloud px-2 py-1 rounded text-xs">
+            app/components/new-web/contact-sales-cta.js
+          </code>
+        </p>
+        <div className="mt-6">
+          <CTASectionExamples />
         </div>
       </div>
 

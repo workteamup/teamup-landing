@@ -771,5 +771,11 @@
         }
       }
     }
+  },
+  "ContactSalesCTA": {
+    "title": "Want to customize your own virtual space?",
+    "description": "Contact our team to create a tailored solution for your specific needs.",
+    "buttonText": "Contact Sales",
+    "secondaryButtonText": "View Examples"
   }
 }

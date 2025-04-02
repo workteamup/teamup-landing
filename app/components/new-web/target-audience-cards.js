@@ -6,12 +6,16 @@ import {
   brand1Tints,
   brand2Tints,
   brand3Tints,
+  greyColors,
+  semanticColors,
+  spacing,
+  borderRadius,
 } from "../../lib/design-tokens";
 import Image from "next/image";
 
 /**
  * Target Audience Cards Component
- * Displays a section with a title, description, and three cards targeting different user personas
+ * Displays a section with a title, description, and cards targeting different user personas
  * based on the Ringover hero_product_container design pattern
  *
  * @param {Object} props Component properties
@@ -105,22 +109,33 @@ export default function TargetAudienceCards({
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6">
-      <div className="container mx-auto px-4 relative">
+    <section className="py-16 md:py-20 lg:py-24 px-4 sm:px-6">
+      <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-5 text-gray-phantom">{title}</h2>
-          <p className="text-xl text-gray-graphite max-w-3xl mx-auto">
-            {description}
-          </p>
+        <div className="text-center mb-12 md:mb-16 lg:mb-20">
+          {language === "en" ? (
+            <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-gray-phantom font-poppins">
+              <span className="bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
+                Positive impact
+              </span>{" "}
+              at every level of your company
+            </h2>
+          ) : (
+            <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-gray-phantom font-poppins">
+              <span className="bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
+                Impacto positivo
+              </span>{" "}
+              en todos los niveles de tu empresa
+            </h2>
+          )}
         </div>
 
         {/* Cards Container */}
-        <div className="hero_product_container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="hero_product_container grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 w-full">
           {cardData.map((card) => (
             <div
               key={card.id}
-              className={`p-4 rounded-3xl transition-all duration-200 hover:scale-110 hover:z-10 hover:shadow-xl relative group ${
+              className={`p-4 rounded-3xl transition-all duration-200 hover:scale-105 hover:z-10 hover:shadow-xl relative group ${
                 card.id === 1
                   ? "bg-brand-teal-light" // Solid light teal
                   : card.id === 2
@@ -133,38 +148,29 @@ export default function TargetAudienceCards({
               <div
                 className={`hero_product ${card.colorClass} rounded-2xl overflow-hidden text-white h-full flex flex-col`}
               >
-                <div className="hero_product_content p-8 flex flex-col flex-grow min-h-[320px]">
-                  <div className="hero_content_left">
-                    <div className="hero_content_logo mb-6">
-                      <h3 className="text-3xl font-extrabold">
+                <div className="hero_product_content p-6 md:p-8 flex flex-col flex-grow min-h-[280px] md:min-h-[320px] relative">
+                  <div className="hero_content_left max-w-[55%]">
+                    <div className="hero_content_logo mb-4 md:mb-6">
+                      <h3 className="text-2xl md:text-3xl font-bold font-poppins">
                         {card.title[language]}
                       </h3>
                     </div>
 
-                    <p className="hero_content_desc text-lg font-bold mb-10">
+                    <p className="hero_content_desc text-base md:text-lg font-medium mb-6 md:mb-10">
                       {card.description[language]}
                     </p>
                   </div>
 
-                  <div className="hero_content_img mt-auto">
-                    {/* Placeholder for future image if needed */}
-                    {/* Uncomment to add an image
-                    <div className="w-full h-36 mt-4 relative">
-                      <Image
-                        src="/images/placeholder.jpg"
-                        alt="Feature illustration"
-                        fill
-                        style={{ objectFit: 'contain' }}
-                      />
-                    </div>
-                    */}
+                  <div className="hero_content_img absolute bottom-6 right-6 w-1/4">
+                    {/* Placeholder for future image */}
+                    {/* Will be added in the future */}
                   </div>
                 </div>
 
-                <div className="hero_product_footer bg-white w-full px-10 py-5 mt-auto">
+                <div className="hero_product_footer bg-white w-full px-6 md:px-10 py-4 md:py-5 mt-auto">
                   <Link
                     href={`/${language}/solutions`}
-                    className={`link_arrow_full ${card.textColorClass} flex items-center font-bold text-lg`}
+                    className={`link_arrow_full ${card.textColorClass} flex items-center font-semibold text-base md:text-lg`}
                   >
                     {card.footerText[language]}
                     <span className="trigger ml-4 group-hover:translate-x-1 transition-transform duration-150">

@@ -9,6 +9,9 @@ import UseCasesSection from "../components/new-web/use-cases-section";
 import Hero from "../components/new-web/hero";
 import ProductTour from "../components/new-web/product-tour";
 import BookingEmbed from "../components/new-web/booking-embed";
+import Features from "../components/new-web/features";
+import CTASection from "../components/new-web/cta-section";
+import ContactSalesCTA from "../components/new-web/contact-sales-cta";
 import { semanticColors } from "../lib/design-tokens";
 
 // Metadata needs to be handled differently with client components
@@ -65,6 +68,9 @@ export default function HomePage() {
         language="en"
       />
 
+      {/* Features Section */}
+      <Features />
+
       {/* Use Cases Section */}
       <UseCasesSection
         title={t("UseCases.sectionTitle")}
@@ -75,24 +81,23 @@ export default function HomePage() {
       />
 
       {/* Custom Space CTA Section */}
-      <section className="py-24 px-4 bg-gradient-to-tr from-brand-teal via-brand-blue to-brand-purple text-white">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            {t("CustomSpaceCTA.title")}
-          </h2>
-          <p className="text-xl mb-10 max-w-2xl mx-auto">
-            {t("CustomSpaceCTA.description")}
-          </p>
-          <Button
-            href="/contact"
-            variant="secondary"
-            size="xl"
-            className="font-bold text-brand-purple hover:bg-white"
-          >
-            {t("CustomSpaceCTA.buttonText")}
-          </Button>
-        </div>
-      </section>
+      <CTASection
+        title="Want to customize your own virtual space?"
+        buttonText="Contact Sales"
+        buttonUrl="/contact"
+        buttonVariant="secondary"
+        buttonSize="lg"
+        secondaryButtonText="View Examples"
+        secondaryButtonUrl="/examples"
+        secondaryButtonVariant="tertiary"
+        align="left"
+        theme="dark"
+        background="radial-gradient(circle at 30% 30%, #3F89F6, transparent 60%), 
+                   radial-gradient(circle at 70% 60%, #635DF5, transparent 70%), 
+                   radial-gradient(circle at 10% 75%, #252E4B, transparent 60%), 
+                   linear-gradient(45deg, #252E4B, #193762, #282562)"
+        titleSize="xl"
+      />
 
       {/* Add an ID and key to the BookingEmbed component */}
       <div id="booking-section">
@@ -187,20 +192,19 @@ export default function HomePage() {
       </section>
 
       {/* Call to action */}
-      <section className="py-16 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
-            Ready to transform your remote team experience?
-          </h2>
-          <p className="text-lg text-gray-graphite mb-8">
-            Join thousands of teams already using Team Up! to create more
-            connected, productive, and happy remote workplaces.
-          </p>
-          <Button href="https://app.teamup.works/signup" size="lg">
-            Start Your Free Trial
-          </Button>
-        </div>
-      </section>
+      <CTASection
+        title="Ready to transform your remote team experience?"
+        description="Join thousands of teams already using Team Up! to create more connected, productive, and happy remote workplaces."
+        buttonText="Start Your Free Trial"
+        buttonUrl="https://app.teamup.works/signup"
+        buttonSize="lg"
+        secondaryButtonText="Schedule a Demo"
+        secondaryButtonUrl="/demo"
+        secondaryButtonVariant="tertiary"
+        align="center"
+        theme="light"
+        background="linear-gradient(to right, #f0fbff, #f5f5ff)"
+      />
     </WebLayout>
   );
 }

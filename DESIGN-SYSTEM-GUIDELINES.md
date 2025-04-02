@@ -192,6 +192,128 @@ import Button from "./new-web/button";
 
 Reference implementation: `app/components/new-web/button-examples.js`
 
+### CTA Section Components
+
+The CTA (Call-to-Action) components provide flexible and customizable sections to prompt user action. There are two main CTA components:
+
+#### 1. CTASection
+
+A versatile call-to-action section with customizable alignment, theme, and background options:
+
+```jsx
+import CTASection from "../components/new-web/cta-section";
+
+// Basic usage
+<CTASection
+  title="Ready to get started?"
+  description="Join today and transform your team collaboration."
+  buttonText="Sign Up Free"
+  buttonUrl="/signup"
+/>
+
+// Full configuration example
+<CTASection
+  title="Want a custom solution?"
+  description="Talk to our sales team about enterprise options."
+  subtext="Enterprise plans include priority support and custom onboarding."
+  titleSize="lg"          // "sm", "md", "lg", "xl"
+  buttonText="Contact Sales"
+  buttonUrl="/contact"
+  buttonVariant="primary"  // "primary", "secondary", "outline", etc.
+  buttonSize="lg"          // "sm", "md", "lg", "xl", "extralarge"
+  secondaryButtonText="Read Documentation"
+  secondaryButtonUrl="/docs"
+  secondaryButtonVariant="tertiary"
+  secondaryButtonSize="md"
+  align="left"             // "left", "center", "right"
+  theme="dark"             // "light" or "dark"
+  background="linear-gradient(to right, #635DF5, #3F89F6)"
+  customClasses="my-custom-class"
+  icon={<YourIconComponent />}
+/>
+```
+
+**Props:**
+
+| Prop                     | Type      | Default    | Description                                              |
+| ------------------------ | --------- | ---------- | -------------------------------------------------------- |
+| `title`                  | string    | required   | The main heading of the CTA                              |
+| `description`            | string    | required   | Descriptive text below the heading                       |
+| `subtext`                | string    | —          | Optional smaller text below the description              |
+| `titleSize`              | string    | "lg"       | Size of the title: "sm", "md", "lg", "xl"                |
+| `buttonText`             | string    | required   | Text for the primary CTA button                          |
+| `buttonUrl`              | string    | required   | URL for the primary button                               |
+| `buttonVariant`          | string    | "primary"  | Button style variant ("primary", "secondary", "outline") |
+| `buttonSize`             | string    | "lg"       | Button size ("sm", "md", "lg", "xl", "extralarge")       |
+| `secondaryButtonText`    | string    | —          | Optional secondary button text                           |
+| `secondaryButtonUrl`     | string    | —          | Optional secondary button URL                            |
+| `secondaryButtonVariant` | string    | "tertiary" | Secondary button variant (inverse of theme by default)   |
+| `secondaryButtonSize`    | string    | —          | Secondary button size (defaults to primary button size)  |
+| `align`                  | string    | "center"   | Content alignment ("left", "center", "right")            |
+| `theme`                  | string    | "light"    | Color theme ("light" or "dark")                          |
+| `background`             | string    | —          | Custom background (CSS color, gradient, or className)    |
+| `customClasses`          | string    | —          | Additional CSS classes                                   |
+| `icon`                   | ReactNode | —          | Optional icon to display                                 |
+
+#### 2. ContactSalesCTA
+
+A pre-configured CTA section specifically for contacting the sales team. This component automatically pulls translations from the current language context:
+
+```jsx
+import ContactSalesCTA from "../components/new-web/contact-sales-cta";
+
+// Basic usage
+<ContactSalesCTA />
+
+// With custom theme and text size
+<ContactSalesCTA theme="dark" titleSize="xl" />
+
+// With custom button sizes
+<ContactSalesCTA buttonSize="xl" secondaryButtonSize="lg" />
+
+// With custom alignment and subtext
+<ContactSalesCTA
+  align="left"
+  subtext="Our team will respond within 24 hours."
+/>
+```
+
+**Props:**
+
+| Prop                  | Type   | Default  | Description                                   |
+| --------------------- | ------ | -------- | --------------------------------------------- |
+| `align`               | string | "center" | Content alignment ("left", "center", "right") |
+| `theme`               | string | "light"  | Color theme ("light" or "dark")               |
+| `background`          | string | —        | Custom background (overrides theme defaults)  |
+| `customClasses`       | string | —        | Additional CSS classes                        |
+| `titleSize`           | string | "lg"     | Size of the title: "sm", "md", "lg", "xl"     |
+| `buttonSize`          | string | "lg"     | Size of the primary button                    |
+| `secondaryButtonSize` | string | —        | Size of the secondary button                  |
+| `subtext`             | string | —        | Optional smaller text below the description   |
+
+#### Best Practices for CTA Components
+
+1. Use CTAs consistently throughout the site to maintain UX coherence
+2. Maintain a balance between light and dark themes for visual interest
+3. Keep text concise and action-oriented
+4. Use appropriate button variants based on importance
+5. Use tertiary buttons for secondary actions to maintain visual hierarchy
+6. Match button size with the visual weight needed for the action
+7. Use title sizes appropriate to the importance of the CTA
+8. Use subtext sparingly for additional context or clarification
+9. Consider the surrounding content when choosing alignment and background
+10. Use the pre-configured ContactSalesCTA component when possible for consistency
+11. For pages that need multiple CTAs, vary their appearance for visual hierarchy
+
+#### CTA Placement Patterns
+
+- **End of section**: Use CTAs at the end of major content sections to guide users to the next step
+- **After benefits**: Place CTAs after explaining key benefits to capitalize on user interest
+- **Before footer**: Include a final CTA before the page footer for users who've read the entire page
+- **Within use case sections**: Add contextual CTAs within specific use case sections with targeted messaging
+
+Reference implementation: `app/components/new-web/cta-section-examples.js`
+
 ### Creating New Components
 
 When creating new components:
