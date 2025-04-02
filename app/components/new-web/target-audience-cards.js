@@ -1,7 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { brandColors } from "../../lib/design-tokens";
+import {
+  brandColors,
+  brand1Tints,
+  brand2Tints,
+  brand3Tints,
+} from "../../lib/design-tokens";
 import Image from "next/image";
 
 /**
@@ -78,11 +83,30 @@ export default function TargetAudienceCards({
       textColorClass: "text-brand-purple",
       bgTintClass: "bg-brand-purple/10", // Purple with 10% opacity
     },
+    {
+      id: 4,
+      title: {
+        en: "For Employees",
+        es: "Para Empleados",
+      },
+      description: {
+        en: "Enjoy the benefits of remote work while staying connected to your colleagues.",
+        es: "Disfruta de los beneficios del trabajo remoto mientras te mantienes conectado con tus colegas.",
+      },
+      color: brandColors.dark, // Dark background
+      footerText: {
+        en: "See more",
+        es: "Ver más",
+      },
+      colorClass: "bg-brand-dark",
+      textColorClass: "text-brand-dark",
+      bgTintClass: "bg-gray-arsenic/10", // Dark with opacity
+    },
   ];
 
   return (
     <section className="py-16 px-4 sm:px-6">
-      <div className="container mx-auto max-w-7xl">
+      <div className="container mx-auto px-4 relative">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-5 text-gray-phantom">{title}</h2>
@@ -92,16 +116,24 @@ export default function TargetAudienceCards({
         </div>
 
         {/* Cards Container */}
-        <div className="hero_product_container grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="hero_product_container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {cardData.map((card) => (
             <div
               key={card.id}
-              className={`${card.bgTintClass} p-4 rounded-3xl transition-all duration-150 hover:scale-125 hover:z-10 relative group`}
+              className={`p-4 rounded-3xl transition-all duration-200 hover:scale-110 hover:z-10 hover:shadow-xl relative group ${
+                card.id === 1
+                  ? "bg-brand-teal-light" // Solid light teal
+                  : card.id === 2
+                  ? "bg-brand-blue-light" // Solid light blue
+                  : card.id === 3
+                  ? "bg-brand-purple-light" // Solid light purple
+                  : "bg-brand-dark-light" // Light variant of dark color
+              }`}
             >
               <div
-                className={`hero_product ${card.colorClass} rounded-2xl overflow-hidden shadow-lg text-white`}
+                className={`hero_product ${card.colorClass} rounded-2xl overflow-hidden text-white h-full flex flex-col`}
               >
-                <div className="hero_product_content p-8 flex flex-col min-h-[360px]">
+                <div className="hero_product_content p-8 flex flex-col flex-grow min-h-[320px]">
                   <div className="hero_content_left">
                     <div className="hero_content_logo mb-6">
                       <h3 className="text-3xl font-extrabold">
@@ -109,17 +141,27 @@ export default function TargetAudienceCards({
                       </h3>
                     </div>
 
-                    <p className="hero_content_desc text-lg font-bold mb-6">
+                    <p className="hero_content_desc text-lg font-bold mb-10">
                       {card.description[language]}
                     </p>
                   </div>
 
                   <div className="hero_content_img mt-auto">
                     {/* Placeholder for future image if needed */}
+                    {/* Uncomment to add an image
+                    <div className="w-full h-36 mt-4 relative">
+                      <Image
+                        src="/images/placeholder.jpg"
+                        alt="Feature illustration"
+                        fill
+                        style={{ objectFit: 'contain' }}
+                      />
+                    </div>
+                    */}
                   </div>
                 </div>
 
-                <div className="hero_product_footer bg-white w-full px-10 py-5">
+                <div className="hero_product_footer bg-white w-full px-10 py-5 mt-auto">
                   <Link
                     href={`/${language}/solutions`}
                     className={`link_arrow_full ${card.textColorClass} flex items-center font-bold text-lg`}

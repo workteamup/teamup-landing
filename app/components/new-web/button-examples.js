@@ -11,7 +11,7 @@ const ButtonExamples = () => {
   return (
     <div className="space-y-8 p-8">
       <div>
-        <h2 className="text-2xl font-bold mb-4 text-gray-phantom">
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
           Primary Buttons
         </h2>
         <div className="flex flex-wrap gap-4">
@@ -22,7 +22,7 @@ const ButtonExamples = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4 text-gray-phantom">
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
           Secondary Buttons
         </h2>
         <div className="flex flex-wrap gap-4">
@@ -39,7 +39,7 @@ const ButtonExamples = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4 text-gray-phantom">
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
           Outline Buttons
         </h2>
         <div className="flex flex-wrap gap-4">
@@ -56,7 +56,7 @@ const ButtonExamples = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4 text-gray-phantom">
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
           Text Buttons
         </h2>
         <div className="flex flex-wrap gap-4">
@@ -73,7 +73,7 @@ const ButtonExamples = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4 text-gray-phantom">
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
           Gradient Buttons
         </h2>
         <div className="flex flex-wrap gap-4">
@@ -90,7 +90,22 @@ const ButtonExamples = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4 text-gray-phantom">
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
+          Extra Large Buttons
+        </h2>
+        <div className="flex flex-wrap gap-4">
+          <Button size="extralarge">Primary</Button>
+          <Button variant="secondary" size="extralarge">
+            Secondary
+          </Button>
+          <Button variant="gradient" size="extralarge">
+            Gradient
+          </Button>
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
           Link Buttons
         </h2>
         <div className="flex flex-wrap gap-4">
@@ -104,7 +119,7 @@ const ButtonExamples = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4 text-gray-phantom">
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
           Full Width Buttons
         </h2>
         <div className="space-y-4 max-w-md">
@@ -116,7 +131,7 @@ const ButtonExamples = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4 text-gray-phantom">
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
           Buttons with Icons
         </h2>
         <div className="flex flex-wrap gap-4">
@@ -161,7 +176,7 @@ const ButtonExamples = () => {
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4 text-gray-phantom">
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
           Disabled Buttons
         </h2>
         <div className="flex flex-wrap gap-4">
@@ -169,6 +184,53 @@ const ButtonExamples = () => {
           <Button variant="secondary" disabled>
             Disabled Secondary
           </Button>
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-bold mb-4 text-brand-dark font-poppins">
+          Tertiary Buttons
+        </h2>
+        <div className="space-y-6">
+          {/* Light background tertiary buttons */}
+          <div className="flex flex-wrap gap-4 p-6 rounded-lg bg-white">
+            <div className="flex-1">
+              <h3 className="text-sm text-gray-graphite mb-3 font-poppins">
+                On Light Background
+              </h3>
+              <div className="flex flex-wrap gap-4">
+                <Button variant="tertiary" size="sm">
+                  Small
+                </Button>
+                <Button variant="tertiary" size="md">
+                  Medium
+                </Button>
+                <Button variant="tertiary" size="lg">
+                  Large
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Dark background tertiary buttons */}
+          <div className="flex flex-wrap gap-4 p-6 rounded-lg bg-brand-dark">
+            <div className="flex-1">
+              <h3 className="text-sm text-gray-cloud mb-3 font-poppins">
+                On Dark Background
+              </h3>
+              <div className="flex flex-wrap gap-4">
+                <Button variant="tertiary" size="sm" isDarkBackground>
+                  Small
+                </Button>
+                <Button variant="tertiary" size="md" isDarkBackground>
+                  Medium
+                </Button>
+                <Button variant="tertiary" size="lg" isDarkBackground>
+                  Large
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

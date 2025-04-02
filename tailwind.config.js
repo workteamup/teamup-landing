@@ -19,6 +19,12 @@ module.exports = {
         "brand-purple": "#635DF5",
         "brand-dark": "#252E4B",
 
+        // Brand Color Tints
+        "brand-teal-light": "#F0FBFF", // Light teal
+        "brand-blue-light": "#ECF3FE", // Light blue
+        "brand-purple-light": "#EFEFFE", // Light purple
+        "brand-dark-light": "#EFF0F5", // Light variant of dark color
+
         // Grey Colors
         "gray-cloud": "#ECEFF6",
         "gray-smoke": "#D3D5E1",
@@ -38,6 +44,15 @@ module.exports = {
       backgroundImage: {
         "brand-gradient":
           "linear-gradient(to right, #67DAFA, #3F89F6, #635DF5)",
+      },
+      keyframes: {
+        "light-sweep": {
+          "0%": { transform: "translateX(-150%) skewX(-20deg)" },
+          "100%": { transform: "translateX(150%) skewX(-20deg)" },
+        },
+      },
+      animation: {
+        "light-sweep": "light-sweep 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards",
       },
     },
   },
