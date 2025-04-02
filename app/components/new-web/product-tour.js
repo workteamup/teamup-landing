@@ -112,7 +112,7 @@ export default function ProductTour({
                 </h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-5 sm:mb-6">
                   Our product tour video is currently being produced. Check back
-                  soon to see how Team Up! can transform your team's
+                  soon to see how Team Up! can transform your team&apos;s
                   collaboration experience.
                 </p>
                 <button

@@ -33,6 +33,7 @@ module.exports = {
         yellix: ["Yellix", "sans-serif"],
         bogue: ["Bogue", "serif"],
         mont: ["Mont", "sans-serif"],
+        poppins: ["var(--font-poppins)", "sans-serif"],
       },
       backgroundImage: {
         "brand-gradient":

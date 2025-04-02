@@ -189,6 +189,7 @@
     },
     "linkPolicy": {
       "title": "IV. Política de enlaces",
+      "paragraph1": "Se informa que el Sitio Web de Team Up! pone o puede poner a disposición de los Usuarios medios de enlace (como, entre otros, links, banners, botones), directorios y motores de búsqueda que permitan a los Usuarios acceder a sitios web pertenecientes y/o gestionados por terceros.",
       "paragraph1": "Se informa que el Sitio Web de Team Up! pone o puede poner a disposición de los Usuarios medios de enlace (como, entre otros, links, banners, botones), directorios y motores de búsqueda que permiten a los Usuarios acceder a sitios web pertenecientes y/o gestionados por terceros.",
       "paragraph2": "La instalación de estos enlaces, directorios y motores de búsqueda en el Sitio Web tiene por objeto facilitar a los Usuarios la búsqueda de y acceso a la información disponible en Internet, sin que pueda considerarse una sugerencia, recomendación o invitación para la visita de los mismos.",
       "paragraph3": "Team Up! no ofrece ni comercializa por sí ni por medio de terceros los productos y/o servicios disponibles en dichos sitios enlazados.",
@@ -485,6 +486,38 @@
     "message": "¡Danos tu feedback y consigue un iPad Air + Apple Pencil Pro!",
     "button": "Saber más"
   },
+  "ContactSection": {
+    "title": "Habla con nosotros"
+  },
+  "CustomSpaceCTA": {
+    "title": "¿Listo para crear tu oficina virtual personalizada?",
+    "description": "Diseña un espacio de trabajo virtual que refleje la cultura de tu empresa y optimice la experiencia de colaboración remota de tu equipo.",
+    "buttonText": "Programa una Demo"
+  },
+  "UseCases": {
+    "sectionTitle": "Casos de Uso para Equipos Remotos",
+    "sectionDescription": "Descubre cómo Team Up! ayuda a los equipos a conectar, colaborar y prosperar en entornos remotos.",
+    "primaryCTA": "Prueba Gratis por 2 Meses",
+    "secondaryCTA": "Programa una Demo",
+    "cases": {
+      "teamBuilding": {
+        "title": "Team Building",
+        "description": "Fomenta las conexiones de equipo y construye relaciones en un entorno virtual atractivo."
+      },
+      "remoteMeetings": {
+        "title": "Reuniones Remotas",
+        "description": "Transforma tus reuniones de equipo en experiencias interactivas y productivas."
+      },
+      "onboarding": {
+        "title": "Incorporación de Nuevos Empleados",
+        "description": "Da la bienvenida a nuevos miembros del equipo con un proceso de incorporación virtual inmersivo y atractivo."
+      },
+      "companyEvents": {
+        "title": "Eventos de Empresa",
+        "description": "Organiza reuniones virtuales de empresa que mantengan a tu equipo conectado y comprometido."
+      }
+    }
+  },
   "CTA": {
     "secondary": {
       "title": "Dale a tu equipo el espacio que merece",
@@ -658,7 +691,7 @@
         },
         "tournaments": {
           "title": "Torneos Amistosos",
-          "description": "Organiza torneos continuos que crean emoción y competencia saludable a lo largo del tiempo. Desde desafíos de trivia hasta juegos basados en habilidades, estas competiciones estructuradas dan a los equipos algo que esperar con interés.",
+          "description": "Organiza torneos continuos que creen emoción y competencia saludable a lo largo del tiempo. Desde desafíos de trivia hasta juegos basados en habilidades, estas competiciones estructuradas dan a los equipos algo que esperar con interés.",
           "bulletPoints": [
             "Visualización y seguimiento de brackets de torneo",
             "Partidas programadas que se ajustan a los horarios de trabajo",

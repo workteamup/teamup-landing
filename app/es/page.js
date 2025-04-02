@@ -5,8 +5,10 @@ import Image from "next/image";
 import Button from "../components/new-web/button";
 import LogoCarousel from "../components/new-web/logo-carousel";
 import TargetAudienceCards from "../components/new-web/target-audience-cards";
-import HeroImageStack from "../components/new-web/hero-image-stack";
+import UseCasesSection from "../components/new-web/use-cases-section";
+import Hero from "../components/new-web/hero";
 import ProductTour from "../components/new-web/product-tour";
+import BookingEmbed from "../components/new-web/booking-embed";
 import { semanticColors } from "../lib/design-tokens";
 
 // Metadata needs to be handled differently with client components
@@ -14,81 +16,38 @@ import { semanticColors } from "../lib/design-tokens";
 export default function HomePage() {
   const t = useTranslations();
 
+  // Use cases data
+  const useCasesData = [
+    {
+      title: t("UseCases.cases.teamBuilding.title"),
+      description: t("UseCases.cases.teamBuilding.description"),
+      image: "/images/team-building-case.jpg",
+      bulletPoints: [],
+    },
+    {
+      title: t("UseCases.cases.remoteMeetings.title"),
+      description: t("UseCases.cases.remoteMeetings.description"),
+      image: "/images/remote-meetings-case.jpg",
+      bulletPoints: [],
+    },
+    {
+      title: t("UseCases.cases.onboarding.title"),
+      description: t("UseCases.cases.onboarding.description"),
+      image: "/images/onboarding-case.jpg",
+      bulletPoints: [],
+    },
+    {
+      title: t("UseCases.cases.companyEvents.title"),
+      description: t("UseCases.cases.companyEvents.description"),
+      image: "/images/company-events-case.jpg",
+      bulletPoints: [],
+    },
+  ];
+
   return (
     <WebLayout>
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-brand-purple/10">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
-            {/* Left content column */}
-            <div className="w-full lg:w-3/5 space-y-6">
-              <p className="text-gray-graphite font-semibold">
-                La solución #1 para un espacio de trabajo flexible
-              </p>
-
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-brand-dark leading-tight">
-                Equipos más felices <br />
-                rinden mejor
-              </h1>
-
-              <p className="text-lg text-gray-graphite max-w-lg">
-                Convertimos reuniones aburridas en experiencias atractivas que
-                construyen cultura.
-              </p>
-
-              <div className="flex flex-col sm:flex-row items-center gap-4 mt-8">
-                <Button
-                  href="https://app.teamup.works/signup"
-                  variant="primary"
-                  size="xl"
-                  className="text-center w-full sm:w-auto"
-                >
-                  Prueba gratis por 2 meses
-                </Button>
-                <Button
-                  href="#create-meeting"
-                  variant="text"
-                  size="xl"
-                  className="text-center w-full sm:w-auto"
-                >
-                  ¡Crea tu primera reunión ahora!
-                </Button>
-              </div>
-              <p className="text-sm text-gray-space mt-4">
-                No se requiere tarjeta de crédito
-              </p>
-            </div>
-
-            {/* Right video/image column */}
-            <div className="w-full lg:w-2/5 relative pb-8 px-8 mt-4">
-              <div className="overflow-visible relative mx-auto">
-                <HeroImageStack
-                  images={[
-                    {
-                      src: "/images/campfire.jpg",
-                      alt: "Team building virtual alrededor de una fogata",
-                      width: 650,
-                      height: 450,
-                    },
-                    {
-                      src: "/images/planning.jpg",
-                      alt: "Espacio colaborativo de planificación de equipo",
-                      width: 650,
-                      height: 450,
-                    },
-                    {
-                      src: "/images/debate.jpg",
-                      alt: "Sala de discusión para debates de equipo",
-                      width: 650,
-                      height: 450,
-                    },
-                  ]}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* Logo Carousel - Dark Variant */}
       <LogoCarousel variant="dark" logoCount={12} />
@@ -107,6 +66,40 @@ export default function HomePage() {
         description="Descubre cómo Team Up puede ayudar a diferentes roles en tu organización a mejorar el compromiso y la productividad del equipo."
         language="es"
       />
+
+      {/* Use Cases Section */}
+      <UseCasesSection
+        title={t("UseCases.sectionTitle")}
+        description={t("UseCases.sectionDescription")}
+        useCases={useCasesData}
+        primaryCTAText={t("UseCases.primaryCTA")}
+        secondaryCTAText={t("UseCases.secondaryCTA")}
+      />
+
+      {/* Custom Space CTA Section */}
+      <section className="py-24 px-4 bg-gradient-to-tr from-brand-teal via-brand-blue to-brand-purple text-white">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            {t("CustomSpaceCTA.title")}
+          </h2>
+          <p className="text-xl mb-10 max-w-2xl mx-auto">
+            {t("CustomSpaceCTA.description")}
+          </p>
+          <Button
+            href="/contact"
+            variant="secondary"
+            size="xl"
+            className="font-bold text-brand-purple hover:bg-white"
+          >
+            {t("CustomSpaceCTA.buttonText")}
+          </Button>
+        </div>
+      </section>
+
+      {/* Add an ID and key to the BookingEmbed component */}
+      <div id="booking-section">
+        <BookingEmbed key="booking-embed-es" />
+      </div>
 
       {/* Features section */}
       <section className="py-16 bg-gray-cloud rounded-xl my-16 px-6">

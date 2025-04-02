@@ -484,11 +484,43 @@
     "message": "Give us your feedback and get an iPad Air + Apple Pencil Pro!",
     "button": "Learn more"
   },
+  "ContactSection": {
+    "title": "Talk to us"
+  },
+  "CustomSpaceCTA": {
+    "title": "Ready to create your custom virtual office?",
+    "description": "Design a virtual workspace that reflects your company culture and optimizes your team's remote collaboration experience.",
+    "buttonText": "Schedule a Demo"
+  },
+  "UseCases": {
+    "sectionTitle": "Use Cases for Remote Teams",
+    "sectionDescription": "Discover how Team Up! helps teams connect, collaborate, and thrive in remote environments.",
+    "primaryCTA": "Try Free for 2 Months",
+    "secondaryCTA": "Schedule a Demo",
+    "cases": {
+      "teamBuilding": {
+        "title": "Team Building",
+        "description": "Foster team connections and build relationships in an engaging virtual environment."
+      },
+      "remoteMeetings": {
+        "title": "Remote Meetings",
+        "description": "Transform your team meetings into interactive and productive experiences."
+      },
+      "onboarding": {
+        "title": "New Employee Onboarding",
+        "description": "Welcome new team members with an immersive and engaging virtual onboarding process."
+      },
+      "companyEvents": {
+        "title": "Company Events",
+        "description": "Host virtual company gatherings that keep your team connected and engaged."
+      }
+    }
+  },
   "CTA": {
     "secondary": {
-      "title": "Give your team the workspace they deserve",
-      "subtitle": "Join teams that are transforming how they work together",
-      "button": "Get started"
+      "title": "Give your team the space it deserves",
+      "subtitle": "Join the teams that are transforming the way they work",
+      "button": "Get started now!"
     },
     "primary": {
       "title": "Ready to transform how your team works?",
