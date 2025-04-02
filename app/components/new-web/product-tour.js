@@ -3,6 +3,15 @@
 import { useState } from "react";
 import Image from "next/image";
 import VideoPlayerModal from "./video-player-modal";
+import {
+  brandColors,
+  greyColors,
+  semanticColors,
+  shadows,
+  spacing,
+  borderRadius,
+} from "../../lib/design-tokens";
+import Button from "./button";
 
 /**
  * ProductTour Component
@@ -61,18 +70,18 @@ export default function ProductTour({
             aria-label="Open product tour video"
           >
             {/* Subtitle */}
-            <p className="text-xs sm:text-sm md:text-base font-normal uppercase tracking-wider sm:tracking-widest mb-2 sm:mb-3 md:mb-4">
+            <p className="text-xs sm:text-sm md:text-base font-medium uppercase tracking-wider sm:tracking-widest mb-2 sm:mb-3 md:mb-4">
               {subtitle}
             </p>
 
             {/* Main title */}
-            <h2 className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight">
+            <h2 className="mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight font-poppins">
               <span className="font-light">How </span>
-              <span className="italic font-bold text-white">Team Up!</span>
+              <span className="font-bold text-white">Team Up!</span>
               <span className="font-light"> works</span>
             </h2>
 
-            {/* Simple play button with glass effect */}
+            {/* Play button with glass effect */}
             <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-white/20 border border-white/30 flex items-center justify-center hover:bg-white/30 transition-all">
               {/* Triangle play icon - scaled for responsive sizes */}
               <div className="w-0 h-0 border-y-[8px] sm:border-y-[10px] md:border-y-[14px] border-y-transparent border-l-[12px] sm:border-l-[16px] md:border-l-[22px] border-l-white ml-1"></div>
@@ -88,7 +97,7 @@ export default function ProductTour({
             <div className="relative w-full max-w-md sm:max-w-lg md:max-w-2xl mx-auto p-4 sm:p-6 md:p-8 bg-white rounded-lg shadow-2xl">
               <button
                 onClick={closeVideo}
-                className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 text-gray-500 hover:text-gray-800 focus:outline-none"
+                className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 text-gray-graphite hover:text-gray-phantom focus:outline-none"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -106,20 +115,17 @@ export default function ProductTour({
                 </svg>
               </button>
               <div className="text-center">
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-phantom mb-3 sm:mb-4 font-poppins">
                   Coming Soon!
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-5 sm:mb-6">
+                <p className="text-sm sm:text-base text-gray-space mb-5 sm:mb-6">
                   Our product tour video is currently being produced. Check back
                   soon to see how Team Up! can transform your team&apos;s
                   collaboration experience.
                 </p>
-                <button
-                  onClick={closeVideo}
-                  className="px-4 py-2 sm:px-5 sm:py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                >
+                <Button onClick={closeVideo} variant="primary" size="lg">
                   Close
-                </button>
+                </Button>
               </div>
             </div>
           </div>

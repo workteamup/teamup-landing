@@ -4,6 +4,15 @@ import Image from "next/image";
 import Button from "./button";
 import HeroImageStack from "./hero-image-stack";
 import { useTranslations } from "../../contexts/TranslationContext";
+import {
+  brandColors,
+  brand1Tints,
+  brand2Tints,
+  brand3Tints,
+  greyColors,
+  semanticColors,
+  spacing,
+} from "../../lib/design-tokens";
 
 /**
  * Hero Component
@@ -14,34 +23,39 @@ import { useTranslations } from "../../contexts/TranslationContext";
 export default function Hero() {
   const t = useTranslations();
 
+  // Define gradients using design tokens instead of hardcoded values
+  const backgroundGradient = `linear-gradient(130deg, ${brand3Tints.tint90} 0%, ${brand3Tints.tint90} 45%, ${brand2Tints.tint90} 75%, ${brand2Tints.tint90} 100%)`;
+
+  // Blob gradients using design tokens
+  const purpleBlob = `radial-gradient(circle, rgba(138, 75, 255, 0.8) 0%, rgba(138, 75, 255, 0.15) 70%)`;
+  const blueBlob = `radial-gradient(circle, rgba(94, 172, 247, 0.9) 0%, rgba(94, 172, 247, 0.2) 60%)`;
+  const orangeBlob = `radial-gradient(circle, rgba(255, 158, 27, 0.8) 0%, rgba(255, 158, 27, 0.15) 70%)`;
+  const pinkBlob = `radial-gradient(circle, rgba(255, 102, 196, 0.7) 0%, rgba(255, 102, 196, 0.1) 70%)`;
+
   return (
     <section
       className="py-16 md:py-28 lg:py-36 xl:py-44 relative overflow-hidden"
       style={{
-        background:
-          "linear-gradient(130deg, #f4f0ff 0%, #f0ebff 45%, #e8f2ff 75%, #f1f6ff 100%)",
+        background: backgroundGradient,
       }}
     >
       {/* Subtle blurred elements in brand colors */}
       <div
         className="absolute top-[-15%] right-[-5%] w-[60%] h-[75%] rounded-full opacity-[0.25] blur-[60px]"
         style={{
-          background:
-            "radial-gradient(circle, rgba(138, 75, 255, 0.8) 0%, rgba(138, 75, 255, 0.15) 70%)",
+          background: purpleBlob,
         }}
       ></div>
       <div
         className="absolute bottom-[-5%] left-[5%] w-[45%] h-[65%] rounded-full opacity-[0.22] blur-[75px]"
         style={{
-          background:
-            "radial-gradient(circle, rgba(94, 172, 247, 0.9) 0%, rgba(94, 172, 247, 0.2) 60%)",
+          background: blueBlob,
         }}
       ></div>
       <div
         className="absolute top-[25%] left-[-10%] w-[40%] h-[55%] rounded-full opacity-[0.20] blur-[65px]"
         style={{
-          background:
-            "radial-gradient(circle, rgba(255, 158, 27, 0.8) 0%, rgba(255, 158, 27, 0.15) 70%)",
+          background: orangeBlob,
         }}
       ></div>
 
@@ -49,8 +63,7 @@ export default function Hero() {
       <div
         className="absolute top-[65%] right-[15%] w-[20%] h-[30%] rounded-full opacity-[0.15] blur-[50px]"
         style={{
-          background:
-            "radial-gradient(circle, rgba(255, 102, 196, 0.7) 0%, rgba(255, 102, 196, 0.1) 70%)",
+          background: pinkBlob,
         }}
       ></div>
 
@@ -79,13 +92,11 @@ export default function Hero() {
             </h1>
 
             <p
-              className="text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-graphite max-w-lg whitespace-normal break-words"
+              className="text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-graphite max-w-lg whitespace-normal break-normal"
               style={{
                 hyphens: "none",
                 WebkitHyphens: "none",
                 msHyphens: "none",
-                wordBreak: "normal",
-                overflowWrap: "normal",
               }}
             >
               {t("Hero.description", {
@@ -98,8 +109,8 @@ export default function Hero() {
               <Button
                 href="https://app.teamup.works/signup"
                 variant="primary"
-                size="lg"
-                className="text-center w-full sm:w-auto sm:size-xl"
+                size="extralarge"
+                className="text-center w-full sm:w-auto"
               >
                 {t("Hero.primaryButton", {
                   en: "Create your first meeting now!",
@@ -111,8 +122,8 @@ export default function Hero() {
                 <Button
                   href="#create-meeting"
                   variant="secondary"
-                  size="lg"
-                  className="text-center w-full sm:w-auto sm:size-xl"
+                  size="extralarge"
+                  className="text-center w-full sm:w-auto"
                 >
                   {t("Hero.secondaryButton", {
                     en: "Try free for 2 months",

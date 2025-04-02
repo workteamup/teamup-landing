@@ -2,6 +2,13 @@
 
 import React, { useEffect, useRef } from "react";
 import { X } from "lucide-react";
+import {
+  brandColors,
+  greyColors,
+  semanticColors,
+  shadows,
+  borderRadius,
+} from "../../lib/design-tokens";
 
 /**
  * VideoPlayerModal Component

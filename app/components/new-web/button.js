@@ -62,7 +62,7 @@ const Button = forwardRef(
       lg: "py-3.5 px-7 text-lg rounded-xl h-12",
       xl: "py-5 px-10 text-lg rounded-xl h-14 min-w-[200px]",
       extralarge:
-        "py-6 px-12 text-xl font-extrabold rounded-2xl shadow-lg hover:shadow-xl",
+        "py-6 px-10 text-lg font-extrabold rounded-2xl shadow-lg hover:shadow-xl",
     };
 
     const buttonClasses = `
