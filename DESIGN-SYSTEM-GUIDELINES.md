@@ -314,6 +314,139 @@ import ContactSalesCTA from "../components/new-web/contact-sales-cta";
 
 Reference implementation: `app/components/new-web/cta-section-examples.js`
 
+### Page Title Component
+
+The `PageTitle` component provides a consistent way to create section and page headers across the application. It supports multiple sizes, themes, and background colors.
+
+```jsx
+import PageTitle from "../components/new-web/page-title";
+
+// Basic usage
+<PageTitle
+  title="Welcome to Team Up"
+  subtitle="Discover how we're revolutionizing remote work collaboration"
+/>
+
+// Full configuration example
+<PageTitle
+  title="Enterprise Solutions"
+  subtitle="Tailored solutions for large organizations"
+  size="large"           // "small", "default", "large"
+  theme="dark"           // "light" or "dark"
+  align="center"         // "left" or "center"
+  background="brand-purple" // Any brand color from design tokens
+  className="custom-class" // Additional CSS classes
+/>
+```
+
+**Props:**
+
+| Prop         | Type   | Default   | Description                               |
+| ------------ | ------ | --------- | ----------------------------------------- |
+| `title`      | string | required  | The main heading text                     |
+| `subtitle`   | string | —         | Optional subtitle/description text        |
+| `size`       | string | "default" | Size variant: "small", "default", "large" |
+| `theme`      | string | "light"   | Color theme: "light" or "dark"            |
+| `align`      | string | "left"    | Text alignment: "left" or "center"        |
+| `background` | string | —         | Background color using brand color tokens |
+| `className`  | string | —         | Additional CSS classes                    |
+
+**Size Variants:**
+
+The component offers three size options that affect both the title and padding:
+
+```jsx
+// Small size
+<PageTitle
+  size="small"
+  title="Latest Features"
+  subtitle="Check out what's new"
+/>  // text-2xl → text-3xl, py-16 → py-24
+
+// Default size
+<PageTitle
+  title="Welcome"
+  subtitle="Start your journey"
+/>  // text-3xl → text-5xl, py-20 → py-32
+
+// Large size
+<PageTitle
+  size="large"
+  title="Get Started"
+  subtitle="Begin your transformation"
+/>  // text-4xl → text-6xl, py-24 → py-40
+```
+
+**Theme & Background:**
+
+The component supports light and dark themes, as well as custom brand color backgrounds:
+
+```jsx
+// Light theme (default)
+<PageTitle
+  theme="light"
+  title="Light Theme"
+  subtitle="Default light background"
+/>
+
+// Dark theme
+<PageTitle
+  theme="dark"
+  title="Dark Theme"
+  subtitle="Dark background with light text"
+/>
+
+// Custom brand color background
+<PageTitle
+  theme="dark"
+  background="brand-purple"
+  title="Purple Background"
+  subtitle="Using brand purple as background"
+/>
+```
+
+**Alignment:**
+
+Control text alignment with the `align` prop:
+
+```jsx
+// Left alignment (default)
+<PageTitle
+  align="left"
+  title="Left Aligned"
+  subtitle="Content aligned to the left"
+/>
+
+// Center alignment
+<PageTitle
+  align="center"
+  title="Centered Content"
+  subtitle="Everything centered"
+/>
+```
+
+**Best Practices:**
+
+1. Use consistent sizes across similar sections of your application
+2. Match theme with the surrounding content's theme
+3. Use larger sizes for main page titles and smaller sizes for section headers
+4. Keep titles concise and descriptive
+5. Use subtitles to provide additional context when necessary
+6. Consider the visual hierarchy when choosing size and alignment
+7. Use background colors sparingly and ensure sufficient contrast
+8. Maintain consistent padding by using the built-in size variants
+
+**Common Use Cases:**
+
+- Page headers
+- Section introductions
+- Feature highlights
+- Landing page heroes (small variant)
+- Documentation headers
+- Product section titles
+
+Reference implementation: `app/components/new-web/page-title.js`
+
 ### Creating New Components
 
 When creating new components:

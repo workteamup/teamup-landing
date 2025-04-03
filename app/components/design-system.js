@@ -23,6 +23,7 @@ import ButtonExamples from "./new-web/button-examples";
 import CTASection from "./new-web/cta-section";
 import CTASectionExamples from "./new-web/cta-section-examples";
 import ContactSalesCTA from "./new-web/contact-sales-cta";
+import PageTitle from "./new-web/page-title";
 
 const ColorSwatch = ({ colorName, colorValue, onClick }) => {
   return (
@@ -424,9 +425,110 @@ const ShadowsDisplay = () => {
   );
 };
 
+const PageTitleExamples = () => {
+  return (
+    <div className="space-y-12 -mx-6">
+      {/* Default Example */}
+      <div className="text-sm text-gray-graphite mb-2 px-6">Default Style</div>
+      <PageTitle
+        title="Welcome to Team Up!"
+        subtitle="Discover how we're revolutionizing remote and hybrid work collaboration."
+      />
+
+      {/* Dark Theme Example */}
+      <div>
+        <div className="text-sm text-gray-graphite mb-2 px-6">Dark Theme</div>
+        <PageTitle
+          title="Enterprise Solutions"
+          subtitle="Tailored solutions designed for large organizations and teams."
+          theme="dark"
+        />
+      </div>
+
+      {/* Custom Background Colors */}
+      <div>
+        <div className="text-sm text-gray-graphite mb-2 px-6">
+          Brand Color Backgrounds
+        </div>
+        <div className="space-y-8">
+          <PageTitle
+            title="Purple Background"
+            subtitle="Using brand-purple as background"
+            theme="dark"
+            background="brand-purple"
+          />
+          <PageTitle
+            title="Teal Background"
+            subtitle="Using brand-teal as background"
+            theme="dark"
+            background="brand-teal"
+          />
+        </div>
+      </div>
+
+      {/* Centered Alignment */}
+      <div>
+        <div className="text-sm text-gray-graphite mb-2 px-6">
+          Centered Alignment
+        </div>
+        <PageTitle
+          title="Our Services"
+          subtitle="Everything you need to transform your remote work experience."
+          align="center"
+        />
+      </div>
+
+      {/* Different Sizes */}
+      <div className="space-y-8">
+        <div>
+          <div className="text-sm text-gray-graphite mb-2 px-6">Small Size</div>
+          <PageTitle
+            title="Latest Features"
+            subtitle="Check out what's new in Team Up!"
+            size="small"
+          />
+        </div>
+
+        <div>
+          <div className="text-sm text-gray-graphite mb-2 px-6">Large Size</div>
+          <PageTitle
+            title="Get Started"
+            subtitle="Begin your journey with Team Up today."
+            size="large"
+          />
+        </div>
+      </div>
+
+      {/* Title Only */}
+      <div>
+        <div className="text-sm text-gray-graphite mb-2 px-6">
+          Title Only (No Subtitle)
+        </div>
+        <PageTitle title="Frequently Asked Questions" />
+      </div>
+    </div>
+  );
+};
+
 const NewWebComponentsGuide = () => {
   return (
     <div className="space-y-8">
+      <div className="p-6 border border-gray-smoke rounded-lg">
+        <h3 className="text-xl font-semibold mb-4 font-poppins">
+          Page Title Component
+        </h3>
+        <p className="text-gray-space mb-4">
+          A versatile page title component with support for descriptions,
+          multiple themes, sizes, and alignments. Located at:{" "}
+          <code className="bg-gray-cloud px-2 py-1 rounded text-xs">
+            app/components/new-web/page-title.js
+          </code>
+        </p>
+        <div className="mt-6">
+          <PageTitleExamples />
+        </div>
+      </div>
+
       <div className="p-6 border border-gray-smoke rounded-lg">
         <h3 className="text-xl font-semibold mb-4 font-poppins">
           Button Component

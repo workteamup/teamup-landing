@@ -12,22 +12,27 @@ const Footer = () => {
 
   const legalLinks = [
     {
-      title: t("Footer.legalNotice"),
+      title: t("Footer.legalNotice").toLowerCase(),
       href: `/${locale}/legal-notice`,
     },
     {
-      title: t("Footer.privacyPolicy"),
+      title: t("Footer.privacyPolicy").toLowerCase(),
       href: `/${locale}/privacy-policy`,
     },
     {
-      title: t("Footer.cookiePolicy"),
+      title: t("Footer.cookiePolicy").toLowerCase(),
       href: `/${locale}/cookie-policy`,
     },
     {
-      title: t("Footer.termsOfService"),
+      title: t("Footer.termsOfService").toLowerCase(),
       href: `/${locale}/terms-of-service`,
     },
   ];
+
+  // Helper function to convert to sentence case
+  const toSentenceCase = (str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  };
 
   const socialLinks = [
     {
@@ -58,38 +63,38 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-cloud pt-12 pb-6">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-brand-dark py-12 md:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Logo and copyright */}
           <div className="flex flex-col items-start">
-            <Link href={`/${locale}`}>
+            <Link href={`/${locale}`} className="mb-6">
               <Image
-                src="/svg/new-logo-dark.svg"
+                src="/svg/new-logo-light.svg"
                 alt="Team Up!"
                 width={160}
                 height={50}
-                className="mb-4"
+                className="transition-transform duration-300 hover:scale-105"
               />
             </Link>
-            <p className="text-gray-graphite text-sm">
+            <p className="text-gray-steel text-sm">
               © {currentYear} Team Up! All rights reserved.
             </p>
           </div>
 
           {/* Legal links */}
           <div className="flex flex-col items-start">
-            <h3 className="text-lg font-semibold mb-4 text-gray-phantom">
+            <h3 className="text-lg font-semibold mb-6 text-white font-poppins">
               {t("Footer.legal")}
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-4">
               {legalLinks.map((link, index) => (
                 <li key={index}>
                   <Link
                     href={link.href}
-                    className="text-gray-space hover:text-brand-purple transition-colors"
+                    className="text-gray-steel hover:text-brand-purple-light transition-colors duration-300"
                   >
-                    {link.title}
+                    {toSentenceCase(link.title)}
                   </Link>
                 </li>
               ))}
@@ -98,7 +103,7 @@ const Footer = () => {
 
           {/* Social links */}
           <div className="flex flex-col items-start">
-            <h3 className="text-lg font-semibold mb-4 text-gray-phantom">
+            <h3 className="text-lg font-semibold mb-6 text-white font-poppins">
               {t("Footer.followUs")}
             </h3>
             <div className="flex space-x-4">
@@ -116,7 +121,7 @@ const Footer = () => {
                     alt={social.name}
                     width={24}
                     height={24}
-                    className="transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:-translate-y-1"
+                    className="transform transition-all duration-300 hover:scale-125 hover:rotate-6 hover:-translate-y-1 hover:drop-shadow-lg"
                   />
                 </a>
               ))}
@@ -124,8 +129,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-steel pt-6 text-left text-gray-graphite text-sm">
-          <p>{t("Footer.builtWithLove")}</p>
+        <div className="border-t border-gray-arsenic pt-6">
+          <p className="text-gray-steel text-sm text-center md:text-left">
+            {t("Footer.builtWithLove")}
+          </p>
         </div>
       </div>
     </footer>
