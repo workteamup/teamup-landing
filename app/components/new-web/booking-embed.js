@@ -3,22 +3,44 @@
 import { useTranslations } from "../../contexts/TranslationContext";
 import { useState, useRef, useEffect, useMemo } from "react";
 import Button from "./button";
+import {
+  greyColors,
+  brandColors,
+  semanticColors,
+  spacing,
+  shadows,
+} from "../../lib/design-tokens";
+import CTASection from "./cta-section";
 
 /**
  * BookingEmbed Component
- * Directly appends the YouCanBook.me script to the container
- * with improved handling to prevent duplication
+ * Renders a YouCanBook.me booking calendar with design system compliant styling
+ * @param {Object} props Component properties
+ * @param {string} props.domain - The YouCanBook.me domain (default: "teamup-ignacio")
+ * @param {string} props.type - Embed type: 'embed', 'modal', 'inline', 'text-link' (default: "embed")
+ * @param {string} props.displayMode - Display mode: 'auto', 'desktop', 'mobile' (default: "auto")
+ * @param {Object} props.customParams - Additional parameters to pass to the booking widget
+ * @param {string} props.theme - Color theme ('light' or 'dark') (default: "light")
+ * @param {string} props.customClasses - Additional CSS classes to add to the container
  */
 export default function BookingEmbed({
   domain = "teamup-ignacio",
   type = "embed", // Options: 'embed', 'modal', 'inline', 'text-link'
   displayMode = "auto", // Options: 'auto', 'desktop', 'mobile'
   customParams = {}, // Additional parameters
+  theme = "light", // 'light' or 'dark'
+  customClasses = "",
 }) {
   const t = useTranslations();
   const [isLoaded, setIsLoaded] = useState(false);
   const [scriptFailed, setScriptFailed] = useState(false);
   const containerRef = useRef(null);
+
+  // Determine background and text colors based on theme
+  const bgColor = theme === "light" ? "bg-white" : "bg-brand-dark";
+  const textColor = theme === "light" ? "text-gray-phantom" : "text-white";
+  const textSecondaryColor =
+    theme === "light" ? "text-gray-space" : "text-gray-cloud";
 
   // Memoize customParams to avoid unnecessary re-renders
   const memoizedCustomParams = useMemo(
@@ -42,7 +64,7 @@ export default function BookingEmbed({
     script.async = true;
     script.setAttribute("data-domain", domain);
     script.setAttribute("data-type", type);
-    script.setAttribute("data-displaymode", "desktop");
+    script.setAttribute("data-displaymode", displayMode);
     script.setAttribute("data-content", "all");
     script.setAttribute("data-scroll", "no"); // Disable scrolling
 
@@ -95,64 +117,74 @@ export default function BookingEmbed({
   const queryString = queryParams.toString();
   const fullUrl = `${baseUrl}?${queryString}`;
 
+  // If script failed, render contact CTA instead
+  if (scriptFailed) {
+    return (
+      <CTASection
+        title={t("ContactSection.title")}
+        description={
+          t("ContactSection.scriptFailedMessage") ||
+          "We're having trouble loading the booking calendar. Please contact us directly instead."
+        }
+        buttonText={t("ContactSection.contactButtonText") || "Contact Sales"}
+        buttonUrl="/contact"
+        buttonVariant="primary"
+        buttonSize="lg"
+        theme={theme}
+        align="center"
+        customClasses={customClasses}
+      />
+    );
+  }
+
   return (
-    <div className="container mx-auto max-w-7xl pt-16">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-phantom">
-        {t("ContactSection.title")}
-      </h2>
+    <section className={`py-12 md:py-16 lg:py-24 ${bgColor} ${customClasses}`}>
+      <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <h2
+          className={`text-3xl md:text-4xl font-bold text-center mb-6 ${textColor} font-poppins`}
+        >
+          {t("ContactSection.title")}
+        </h2>
 
-      <p className="text-center text-lg mb-8">
-        Book a call with our CEO if you want to know more about Team Up! and how
-        it can help your company get the best out of remote and hybrid work.
-      </p>
+        <p
+          className={`text-center text-lg mb-8 ${textSecondaryColor} max-w-3xl mx-auto`}
+        >
+          {t("ContactSection.description") ||
+            "Book a call with our CEO if you want to know more about Team Up! and how it can help your company get the best out of remote and hybrid work."}
+        </p>
 
-      {/* Container where we append the script directly */}
-      <div
-        id="ycbm-container"
-        ref={containerRef}
-        className="booking-embed-container w-full overflow-hidden"
-        data-ycbm
-      >
-        {!isLoaded && (
-          <div className="flex justify-center items-center h-[700px]">
-            <p className="text-gray-500">Loading booking calendar...</p>
-          </div>
-        )}
-      </div>
-
-      {/* Commenting out fallback iframe to prevent duplicate embeds
-      {scriptFailed && (
-        <div className="booking-embed-container min-h-[700px] w-full relative overflow-hidden">
-          <iframe
-            src={fullUrl}
-            width="100%"
-            height="700px"
-            frameBorder="0"
-            scrolling="no"
-            style={{
-              backgroundColor: "transparent", 
-              border: "none",
-              overflow: "hidden",
-            }}
-            allow="camera; microphone; fullscreen; accelerometer; autoplay; encrypted-media; geolocation; picture-in-picture"
-            onLoad={() => setIsLoaded(true)}
-          />
-
+        {/* Container where we append the script directly */}
+        <div
+          id="ycbm-container"
+          ref={containerRef}
+          className="booking-embed-container w-full overflow-hidden"
+          data-ycbm
+        >
           {!isLoaded && (
-            <div className="flex justify-center items-center h-[700px] absolute inset-0">
-              <p className="text-gray-500">Loading booking calendar...</p>
+            <div className="flex justify-center items-center h-[700px] bg-gray-cloud bg-opacity-10">
+              <div className={`${textColor} animate-pulse`}>
+                {t("ContactSection.loadingText") ||
+                  "Loading booking calendar..."}
+              </div>
             </div>
           )}
         </div>
-      )}
-      */}
 
-      <div className="mt-8 text-center">
-        <p className="text-xl font-medium mb-2">...or write us an email</p>
-        <Button href="/contact" variant="primary" size="md">
-          Contact sales
-        </Button>
+        {/* Using standard CTA pattern for the bottom section */}
+        <div className="mt-12 text-center">
+          <p className={`text-xl font-medium mb-4 ${textColor} font-poppins`}>
+            {t("ContactSection.alternativeText") || "...or write us an email"}
+          </p>
+          <Button
+            href="/contact"
+            variant={theme === "light" ? "primary" : "tertiary"}
+            size="lg"
+            isDarkBackground={theme === "dark"}
+          >
+            {t("ContactSection.contactButtonText") || "Contact sales"}
+          </Button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
