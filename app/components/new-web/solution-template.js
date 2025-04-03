@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "../../contexts/TranslationContext";
 import { semanticColors } from "../../lib/design-tokens";
+import PageTitle from "./page-title";
 
 /**
  * A reusable template for all solution pages
@@ -17,16 +18,14 @@ const SolutionTemplate = ({ title, description, blocks, children }) => {
   const t = useTranslations();
 
   return (
-    <div className="space-y-16 py-8">
-      {/* Hero Section */}
-      <section className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 bg-gradient-to-r from-brand-teal via-brand-blue to-brand-purple bg-clip-text text-transparent">
-          {title}
-        </h1>
-        <p className="text-xl text-center max-w-3xl mx-auto text-gray-graphite">
-          {description}
-        </p>
-      </section>
+    <div className="space-y-16">
+      <PageTitle
+        title={title}
+        align="center"
+        size="large"
+        background="brand-dark"
+        theme="dark"
+      />
 
       {/* Content Blocks - Alternating Layout */}
       <section className="container mx-auto px-4 space-y-24 py-8">

@@ -2,6 +2,7 @@
 
 import WebLayout from "../../components/new-web/layout";
 import { CheckIcon } from "@heroicons/react/24/solid";
+import PageTitle from "../../components/new-web/page-title";
 
 export default function PricingPage() {
   const freeTierFeatures = [
@@ -33,6 +34,14 @@ export default function PricingPage() {
 
   return (
     <WebLayout>
+      <PageTitle
+        title="Precios Simples y Transparentes"
+        align="center"
+        size="large"
+        background="brand-dark"
+        theme="dark"
+      />
+
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-16">
           Precios

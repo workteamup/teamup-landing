@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "../../contexts/TranslationContext";
 import { semanticColors } from "../../lib/design-tokens";
+import PageTitle from "./page-title";
 
 /**
  * A reusable template for all space pages
@@ -26,13 +27,17 @@ const SpaceTemplate = ({
   const t = useTranslations();
 
   return (
-    <div className="space-y-16 py-8">
-      {/* Hero Section */}
-      <section className="container mx-auto px-4">
-        <p className="text-2xl md:text-3xl font-light text-center text-gray-graphite mb-8">
-          {tagline}
-        </p>
+    <div className="space-y-16">
+      <PageTitle
+        title={title}
+        align="center"
+        size="large"
+        background="brand-dark"
+        theme="dark"
+      />
 
+      {/* Image Section */}
+      <section className="container mx-auto px-4">
         <div className="rounded-xl overflow-hidden shadow-xl max-w-5xl mx-auto mb-12">
           <Image
             src={imageUrl}
@@ -42,10 +47,6 @@ const SpaceTemplate = ({
             className="w-full object-cover"
           />
         </div>
-
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-brand-teal via-brand-blue to-brand-purple bg-clip-text text-transparent">
-          {title}
-        </h1>
       </section>
 
       {/* Features Section */}

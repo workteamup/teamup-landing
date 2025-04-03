@@ -1,0 +1,286 @@
+
+> teamup-landing@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.3
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1487ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.1s (525 modules)
+ GET / 200 in 3316ms
+ ✓ Compiled in 423ms (252 modules)
+ GET / 200 in 98ms
+ ○ Compiling /es ...
+ ✓ Compiled /es in 2.6s (611 modules)
+ GET /es/ 200 in 2776ms
+ ✓ Compiled /es/pricing in 302ms (638 modules)
+ ✓ Compiled /es/solutions/day-to-day-activity in 202ms (649 modules)
+ ✓ Compiled /es/solutions/company-events in 148ms (645 modules)
+ ✓ Compiled /en/solutions/company-events in 213ms (651 modules)
+ ✓ Compiled /en/spaces/planning in 203ms (659 modules)
+ ○ Compiling /design-system ...
+ ✓ Compiled /design-system in 709ms (659 modules)
+ GET /design-system/ 200 in 1327ms
+ ✓ Compiled in 979ms (682 modules)
+ ✓ Compiled in 350ms (682 modules)
+ ✓ Compiled in 379ms (673 modules)
+ ✓ Compiled in 564ms (673 modules)
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ○ Compiling /_not-found ...
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ GET /design-system/ 500 in 21ms
+ GET /en/pricing/ 500 in 49ms
+ GET /en/pricing/ 500 in 49ms
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ GET / 500 in 289ms
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/en/pricing/page.js:3:1
+Module not found: Can't resolve '../../components/new-web/web-layout'
+[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m[0m
+[0m [90m 2 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [33mWebLayout[39m [36mfrom[39m [32m"../../components/new-web/web-layout"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mCheckIcon[39m } [36mfrom[39m [32m"@heroicons/react/24/solid"[39m[33m;[39m[0m
+[0m [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m"../../components/new-web/button"[39m[33m;[39m[0m
+[0m [90m 6 |[39m [36mimport[39m [33mPageTitle[39m [36mfrom[39m [32m"../../components/new-web/page-title"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+ ✓ Compiled / in 354ms (538 modules)
+ ✓ Compiled in 355ms (892 modules)
+ GET /design-system/ 200 in 298ms
+ GET / 200 in 301ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 47ms
+ GET /_next/static/webpack/b47ff41e9785d673.webpack.hot-update.json 404 in 417ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /design-system/ 200 in 71ms
+ GET /_next/static/webpack/b47ff41e9785d673.webpack.hot-update.json 404 in 53ms
+ GET / 200 in 59ms
+ GET /design-system/ 200 in 50ms
+ ○ Compiling /es ...
+ ✓ Compiled /es in 1200ms (385 modules)
+ GET /es/ 200 in 1412ms
+ ✓ Compiled in 277ms (538 modules)
+ ✓ Compiled in 314ms (538 modules)
+ ✓ Compiled in 359ms (538 modules)
+ ✓ Compiled in 399ms (923 modules)
+ ✓ Compiled in 342ms (919 modules)
+ ✓ Compiled in 172ms (538 modules)
+ ✓ Compiled in 179ms (538 modules)
+ ✓ Compiled /es/spaces/sailboat-retrospective in 488ms (922 modules)
+ ✓ Compiled in 387ms (917 modules)
+ ✓ Compiled in 539ms (917 modules)
+ ✓ Compiled in 603ms (926 modules)
+ ✓ Compiled in 526ms (926 modules)
+ ⨯ ./app/components/new-web/backgrounds.module.css
+Error: ENOENT: no such file or directory, open '/Volumes/projects/teamup-landing/app/components/new-web/backgrounds.module.css'
+
+Import trace for requested module:
+./app/components/new-web/backgrounds.module.css
+./app/components/new-web/space-template.js
+./app/en/spaces/planning/page.js
+ ✓ Compiled in 906ms (909 modules)
+ GET /es/pricing/ 500 in 676ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /design-system/ 200 in 178ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 573ms (898 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /_next/static/webpack/b47ff41e9785d673.webpack.hot-update.json 404 in 903ms
+ GET /es/pricing/ 200 in 75ms
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|javascript/auto|/Volumes/projects/teamup-landing/node_modules/next/dist/build/webpack/loaders/next-flight-css-loader.js??ruleSet[1].rules[13].oneOf[7].use[0]!/Volumes/projects/teamup-landing/node_modules/next/dist/compiled/mini-css-extract-plugin/loader.js??ruleSet[1].rules[13].oneOf[7].use[1]!/Volumes/projects/teamup-landing/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!/Volumes/projects/teamup-landing/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!/Volumes/projects/teamup-landing/app/components/new-web/backgrounds.module.css|app-pages-browser': No serializer registered for ModuleNotFoundError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> ModuleNotFoundError
+ ✓ Compiled in 378ms (535 modules)
+ ✓ Compiled in 175ms (535 modules)
+ ✓ Compiled in 373ms (909 modules)
+ ✓ Compiled in 398ms (909 modules)
+ GET /es/pricing/ 200 in 155ms
+ ✓ Compiled in 327ms (535 modules)
+ ✓ Compiled in 424ms (535 modules)
+ ✓ Compiled in 211ms (535 modules)
+ ✓ Compiled in 158ms (535 modules)
+ ✓ Compiled in 203ms (535 modules)
+ ✓ Compiled in 180ms (535 modules)
+ ✓ Compiled in 180ms (535 modules)
+ ✓ Compiled in 459ms (909 modules)
+ ✓ Compiled in 421ms (909 modules)
+ ✓ Compiled in 212ms (535 modules)
+ ✓ Compiled in 142ms (535 modules)
+ ✓ Compiled /es/solutions/day-to-day-activity in 264ms (379 modules)
+ ✓ Compiled /es/spaces/planning in 354ms (920 modules)
+ ✓ Compiled in 977ms (899 modules)
+ ✓ Compiled in 228ms (537 modules)
+ ✓ Compiled in 484ms (899 modules)
+ ✓ Compiled in 432ms (537 modules)
+ ✓ Compiled in 493ms (899 modules)
+ ✓ Compiled in 679ms (899 modules)
+ ✓ Compiled in 221ms (899 modules)
+ ✓ Compiled in 522ms (537 modules)
+ ✓ Compiled in 118ms (537 modules)
+ ✓ Compiled in 210ms (537 modules)
+ ✓ Compiled in 187ms (537 modules)
+ ✓ Compiled in 156ms (537 modules)
+ ✓ Compiled in 273ms (537 modules)
+ ✓ Compiled in 263ms (537 modules)
+ ✓ Compiled in 110ms (537 modules)
+ ✓ Compiled in 210ms (537 modules)
+ ✓ Compiled in 195ms (537 modules)
+ ✓ Compiled in 149ms (537 modules)
+ ✓ Compiled in 176ms (537 modules)
+ ✓ Compiled in 146ms (537 modules)
+ GET /es/spaces/planning/ 200 in 839ms
+ GET /es/spaces/sailboat-retrospective/ 200 in 172ms
+ ○ Compiling /es/spaces/auditorium ...
+ ✓ Compiled /es/spaces/auditorium in 593ms (891 modules)
+ ✓ Compiled in 1237ms (899 modules)
+ ✓ Compiled in 311ms (539 modules)
+ ✓ Compiled in 524ms (899 modules)
+ ✓ Compiled in 361ms (539 modules)
+ ✓ Compiled in 198ms (539 modules)
+ ✓ Compiled in 154ms (539 modules)
+ ✓ Compiled in 165ms (539 modules)
+ ✓ Compiled in 116ms (539 modules)
+ ✓ Compiled in 185ms (539 modules)
+ ✓ Compiled in 227ms (539 modules)
+ ✓ Compiled in 650ms (899 modules)
+ ✓ Compiled in 643ms (899 modules)
+ ✓ Compiled in 520ms (899 modules)
+ ✓ Compiled /en/spaces/campfire in 290ms (891 modules)
+ GET /en/spaces/campfire/ 200 in 518ms
+ ✓ Compiled /es/spaces/campfire in 199ms (897 modules)
+ ✓ Compiled in 1524ms (903 modules)
+ ✓ Compiled /es/spaces/sailboat-retrospective in 255ms (364 modules)
+ ✓ Compiled /es/spaces/debate-room in 312ms (899 modules)
+ ✓ Compiled /es/spaces/floor-is-lava in 235ms (905 modules)
+ ✓ Compiled /es/spaces/connect-4 in 287ms (911 modules)
+ ✓ Compiled /es/spaces/farmyard in 232ms (917 modules)

@@ -4,6 +4,7 @@ import WebLayout from "../../components/new-web/layout";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "../../contexts/TranslationContext";
+import PageTitle from "../../components/new-web/page-title";
 
 // Note: With "use client" directive, static metadata export doesn't work
 // Metadata is handled by the page.js file itself in the app directory structure
@@ -41,14 +42,15 @@ export default function SolutionsPage() {
 
   return (
     <WebLayout>
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-brand-teal via-brand-blue to-brand-purple bg-clip-text text-transparent">
-          {t("SolutionsPage.pageHeading")}
-        </h1>
-        <p className="text-xl text-center max-w-3xl mx-auto text-gray-graphite mb-16">
-          {t("SolutionsPage.pageSubheading")}
-        </p>
+      <PageTitle
+        title={t("SolutionsPage.pageHeading")}
+        align="center"
+        size="large"
+        background="brand-dark"
+        theme="dark"
+      />
 
+      <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {solutions.map((solution) => (
             <Link

@@ -3,6 +3,7 @@
 import WebLayout from "../../components/new-web/layout";
 import Image from "next/image";
 import Button from "../../components/new-web/button";
+import PageTitle from "../../components/new-web/page-title";
 
 // Founder data
 const founders = [
@@ -35,6 +36,14 @@ const founders = [
 export default function AboutUsPage() {
   return (
     <WebLayout>
+      <PageTitle
+        title="About Team Up!"
+        align="center"
+        size="large"
+        background="brand-dark"
+        theme="dark"
+      />
+
       <div className="container mx-auto px-4 py-12 space-y-20">
         {/* Hero Section */}
         <div className="max-w-5xl mx-auto text-center">

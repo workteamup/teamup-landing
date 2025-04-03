@@ -3,6 +3,7 @@
 import WebLayout from "../../components/new-web/layout";
 import Image from "next/image";
 import Link from "next/link";
+import PageTitle from "../../components/new-web/page-title";
 
 export default function AboutUsPage() {
   const founders = [
@@ -26,11 +27,15 @@ export default function AboutUsPage() {
 
   return (
     <WebLayout>
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-8">
-          Sobre Nosotros
-        </h1>
+      <PageTitle
+        title="Sobre Nosotros"
+        align="center"
+        size="large"
+        background="brand-dark"
+        theme="dark"
+      />
 
+      <div className="container mx-auto px-4 py-12">
         {/* Company image */}
         <div className="relative h-96 max-w-5xl mx-auto mb-16 rounded-xl overflow-hidden shadow-lg">
           <Image
