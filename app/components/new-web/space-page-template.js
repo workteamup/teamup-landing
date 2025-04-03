@@ -34,6 +34,28 @@ export default function SpacePageTemplate({
   const imageTranslateZ = useTransform(scrollYProgress, [0, 1], [-200, 0]);
   const imageScale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
+  // Color pairing system for name and underline
+  const colorPairs = [
+    {
+      nameColor: "text-brand-blue", // #3F89F6
+      underlineFilter:
+        "[filter:invert(40%)_sepia(57%)_saturate(2771%)_hue-rotate(227deg)_brightness(97%)_contrast(98%)]", // for brand-purple #635DF5
+    },
+    {
+      nameColor: "text-brand-purple", // #635DF5
+      underlineFilter:
+        "[filter:invert(80%)_sepia(66%)_saturate(1217%)_hue-rotate(157deg)_brightness(97%)_contrast(98%)]", // for brand-teal #67DAFA
+    },
+    {
+      nameColor: "text-brand-teal", // #67DAFA
+      underlineFilter:
+        "[filter:invert(53%)_sepia(92%)_saturate(1850%)_hue-rotate(198deg)_brightness(98%)_contrast(98%)]", // for brand-blue #3F89F6
+    },
+  ];
+
+  // Randomly select a color pair
+  const randomPair = colorPairs[Math.floor(Math.random() * colorPairs.length)];
+
   // Find the space data
   const space = spaces.find((space) => space.id === spaceId);
 
@@ -247,6 +269,36 @@ export default function SpacePageTemplate({
             </motion.div>
           </div>
         </div>
+      </div>
+
+      {/* Welcome Section */}
+      <div className="container mx-auto px-4 py-24 text-center max-w-4xl">
+        <h2 className="text-5xl font-semibold text-brand-dark font-poppins mb-2">
+          Welcome to the{" "}
+          <span className={`${randomPair.nameColor} relative inline-block`}>
+            {space.title}
+            <img
+              src="/svg/underline.svg"
+              alt=""
+              className={`absolute -bottom-4 left-1/2 h-4 w-full ${randomPair.underlineFilter}`}
+              style={{
+                transform: `translateX(-50%) scaleX(${Math.min(
+                  Math.max(space.title.length / 5, 1),
+                  3
+                )})`,
+                transformOrigin: "center",
+                objectFit: "fill",
+              }}
+              aria-hidden="true"
+            />
+          </span>{" "}
+          space
+        </h2>
+        <p className="text-2xl text-gray-space">
+          {language === "es"
+            ? "Descubre un nuevo nivel de colaboración y productividad en equipo"
+            : "Discover a new level of team collaboration and productivity"}
+        </p>
       </div>
 
       {/* Main Content */}
