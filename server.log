@@ -2695,3 +2695,59 @@ digest: "3364264202"
  GET /en/pricing/ 200 in 35ms
  GET /_next/static/chunks/app/en/pricing/page.js 404 in 40ms
  ✓ Compiled in 585ms (1653 modules)
+ GET /en/about-us/ 200 in 320ms
+ GET /about/our-story.jpg 404 in 256ms
+ GET /about/founder-priya.jpg 404 in 161ms
+ GET /about/founder-alex.jpg 404 in 198ms
+ GET /about/founder-maria.jpg 404 in 218ms
+ ✓ Compiled /en/solutions/company-events in 315ms (726 modules)
+ GET /_next/static/chunks/app/en/solutions/company-events/page.js 404 in 42ms
+ GET /en/solutions/company-events/ 200 in 53ms
+ GET /_next/static/chunks/app/en/solutions/company-events/page.js 404 in 71ms
+ GET /en/about-us/ 200 in 94ms
+ GET /about/our-story.jpg 404 in 97ms
+ GET /about/founder-alex.jpg 404 in 78ms
+ GET /about/founder-maria.jpg 404 in 81ms
+ GET /about/founder-priya.jpg 404 in 75ms
+ ✓ Compiled /en/spaces/auditorium in 369ms (1650 modules)
+ GET /_next/static/chunks/app/en/solutions/company-events/page.js 404 in 91ms
+ GET /en/solutions/company-events/ 200 in 63ms
+ GET /_next/static/chunks/app/en/solutions/company-events/page.js 404 in 577ms
+ GET /en/pricing/ 200 in 151ms
+ GET /_next/static/chunks/app/en/pricing/page.js 404 in 101ms
+ GET /en/about-us/ 200 in 80ms
+ GET /about/founder-alex.jpg 404 in 73ms
+ GET /about/founder-maria.jpg 404 in 77ms
+ GET /about/our-story.jpg 404 in 96ms
+ GET /about/founder-priya.jpg 404 in 71ms
+ ○ Compiling /en/solutions/fun-competitions ...
+ ✓ Compiled /en/solutions/fun-competitions in 535ms (1652 modules)
+ GET /_next/static/chunks/app/en/pricing/page.js 404 in 66ms
+ GET /en/pricing/ 200 in 69ms
+ GET /_next/static/chunks/app/en/pricing/page.js 404 in 78ms
+ GET /en/about-us/ 200 in 102ms
+ GET /about/our-story.jpg 404 in 92ms
+ GET /about/founder-maria.jpg 404 in 90ms
+ GET /about/founder-alex.jpg 404 in 90ms
+ GET /about/founder-priya.jpg 404 in 58ms
+ ✓ Compiled /en/solutions/custom-office-space in 443ms (1654 modules)
+ GET /_next/static/chunks/app/en/pricing/page.js 404 in 42ms
+ GET /en/pricing/ 200 in 55ms
+ GET /_next/static/chunks/app/en/pricing/page.js 404 in 74ms
+ GET /en/about-us/ 200 in 97ms
+ GET /about/our-story.jpg 404 in 259ms
+ GET /about/founder-alex.jpg 404 in 285ms
+ GET /about/founder-maria.jpg 404 in 287ms
+ GET /about/founder-priya.jpg 404 in 303ms
+ ✓ Compiled /en/solutions/day-to-day-activity in 442ms (1656 modules)
+ ✓ Compiled in 976ms (1662 modules)
+ ✓ Compiled /en in 303ms (741 modules)
+ GET /images/team-building-case.jpg 404 in 151ms
+ GET /images/remote-meetings-case.jpg 404 in 48ms
+ GET /images/onboarding-case.jpg 404 in 42ms
+ GET /images/company-events-case.jpg 404 in 39ms
+ GET /about/our-story.jpg 404 in 248ms
+ GET /about/founder-maria.jpg 404 in 234ms
+ GET /about/founder-alex.jpg 404 in 233ms
+ GET /about/founder-priya.jpg 404 in 112ms
+ ✓ Compiled in 424ms (1307 modules)

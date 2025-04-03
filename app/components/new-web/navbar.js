@@ -324,7 +324,7 @@ const Navbar = () => {
                 />
               </button>
               {isSpacesOpen && (
-                <div className="absolute top-full left-0 mt-1 bg-white shadow-lg rounded-md overflow-hidden z-50 flex w-[700px]">
+                <div className="absolute top-full left-0 mt-1 bg-white shadow-lg rounded-md overflow-hidden z-[100] flex w-[700px]">
                   {/* Menu items column */}
                   <div className="menu-sub-block bg-gray-cloud w-1/3 py-6 flex-shrink-0">
                     <ul>
@@ -382,7 +382,7 @@ const Navbar = () => {
                 />
               </button>
               {isSolutionsOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-white shadow-lg rounded-md py-2 z-50">
+                <div className="absolute top-full left-0 mt-1 w-64 bg-white shadow-lg rounded-md py-2 z-[100]">
                   {solutionsItems.map((item, index) => (
                     <Link
                       key={index}
