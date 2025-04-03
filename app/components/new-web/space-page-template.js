@@ -5,6 +5,8 @@ import SpaceTemplate from "./space-template";
 import PageTitle from "./page-title";
 import Button from "./button";
 import { spaces } from "../../data/spaces";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 /**
  * SpacePageTemplate Component
@@ -13,7 +15,7 @@ import { spaces } from "../../data/spaces";
  * @param {Object} props
  * @param {string} props.spaceId - The ID of the space from data/spaces.js
  * @param {string} props.language - The language code ("en" or "es")
- * @param {Object} props.translations - Optional translations for static text
+ * @param {string} props.translations - Optional translations for static text
  * @param {Object} props.customContent - Optional custom content for the space
  */
 export default function SpacePageTemplate({
@@ -22,8 +24,27 @@ export default function SpacePageTemplate({
   translations = null,
   customContent = null,
 }) {
+  const heroRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end center"],
+  });
+
+  const imageRotate = useTransform(scrollYProgress, [0, 1], [45, 0]);
+  const imageTranslateZ = useTransform(scrollYProgress, [0, 1], [-200, 0]);
+  const imageScale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+
   // Find the space data
   const space = spaces.find((space) => space.id === spaceId);
+
+  // Get the hero image path based on spaceId
+  const getHeroImage = () => {
+    try {
+      return `/spaces/${spaceId}-hero.jpg`;
+    } catch {
+      return "/spaces/placeholder-hero.jpg"; // Fallback to placeholder
+    }
+  };
 
   // Default translations in English
   const defaultTranslations = {
@@ -181,13 +202,52 @@ export default function SpacePageTemplate({
 
   return (
     <WebLayout>
-      <PageTitle
-        title={content.title}
-        align="center"
-        size="large"
-        background="brand-dark"
-        theme="dark"
-      />
+      {/* Hero Section Container */}
+      <div className="relative min-h-[120vh]" ref={heroRef}>
+        {/* Title Section */}
+        <div className="relative">
+          <PageTitle
+            title={content.title}
+            align="center"
+            size="large"
+            background="brand-dark"
+            theme="dark"
+          />
+        </div>
+
+        {/* Hero Image Section */}
+        <div className="container mx-auto px-4">
+          <div className="relative -mt-24 max-w-5xl mx-auto z-10">
+            <motion.div
+              style={{
+                rotateX: imageRotate,
+                translateZ: imageTranslateZ,
+                scale: imageScale,
+                transformPerspective: 1500,
+                transformOrigin: "top",
+              }}
+              className="relative z-10"
+              transition={{
+                type: "spring",
+                stiffness: 2,
+                damping: 200,
+                restDelta: 0.000001,
+                mass: 15,
+                velocity: 0.02,
+              }}
+            >
+              <img
+                src={getHeroImage()}
+                alt={content.title}
+                className="w-full rounded-3xl shadow-xl"
+                onError={(e) => {
+                  e.target.src = "/spaces/placeholder-hero.jpg";
+                }}
+              />
+            </motion.div>
+          </div>
+        </div>
+      </div>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 space-y-24">
