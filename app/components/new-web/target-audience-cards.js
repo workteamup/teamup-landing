@@ -146,9 +146,9 @@ export default function TargetAudienceCards({
               }`}
             >
               <div
-                className={`hero_product ${card.colorClass} rounded-2xl overflow-hidden text-white h-full flex flex-col`}
+                className={`hero_product ${card.colorClass} rounded-2xl overflow-visible text-white h-full flex flex-col`}
               >
-                <div className="hero_product_content p-6 md:p-8 flex flex-col flex-grow min-h-[280px] md:min-h-[320px] relative">
+                <div className="hero_product_content p-6 md:p-8 flex flex-col flex-grow min-h-[280px] md:min-h-[320px] relative overflow-visible">
                   <div className="hero_content_left max-w-[55%]">
                     <div className="hero_content_logo mb-4 md:mb-6">
                       <h3 className="text-2xl md:text-3xl font-bold font-poppins">
@@ -161,9 +161,22 @@ export default function TargetAudienceCards({
                     </p>
                   </div>
 
-                  <div className="hero_content_img absolute bottom-6 right-6 w-1/4">
-                    {/* Placeholder for future image */}
-                    {/* Will be added in the future */}
+                  <div className="hero_content_img absolute -bottom-4 right-2 w-1/3">
+                    <Image
+                      src={`/images/avatar-${
+                        card.id === 1
+                          ? "ceo"
+                          : card.id === 2
+                          ? "hr"
+                          : card.id === 3
+                          ? "manager"
+                          : "developer"
+                      }.png`}
+                      alt={`${card.title[language]} avatar`}
+                      width={120}
+                      height={120}
+                      className="w-full h-auto transition-all duration-200 group-hover:scale-110 group-hover:-translate-y-2"
+                    />
                   </div>
                 </div>
 

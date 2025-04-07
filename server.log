@@ -4960,3 +4960,164 @@ digest: "3364264202"
  ✓ Compiled /en/spaces/floor-is-lava in 270ms (718 modules)
  ✓ Compiled /en/spaces/farmyard in 209ms (718 modules)
  ✓ Compiled in 1150ms (1654 modules)
+ ○ Compiling /en/spaces/auditorium ...
+ ✓ Compiled /en/spaces/auditorium in 675ms (718 modules)
+ ○ Compiling /en ...
+ ✓ Compiled /en in 974ms (733 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 747ms (1643 modules)
+ GET /images/team-building-case.jpg 404 in 978ms
+ GET /images/remote-meetings-case.jpg 404 in 78ms
+ GET /images/onboarding-case.jpg 404 in 36ms
+ GET /images/company-events-case.jpg 404 in 53ms
+ ✓ Compiled /en/spaces/planning in 254ms (719 modules)
+ ○ Compiling /en ...
+ ✓ Compiled /en in 1156ms (733 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1095ms (1662 modules)
+ GET /images/team-building-case.jpg 404 in 1725ms
+ GET /images/remote-meetings-case.jpg 404 in 59ms
+ GET /images/onboarding-case.jpg 404 in 34ms
+ GET /images/company-events-case.jpg 404 in 26ms
+ ○ Compiling /en/solutions/day-to-day-activity ...
+ ✓ Compiled /en/solutions/day-to-day-activity in 600ms (719 modules)
+ ✓ Compiled /_not-found in 312ms (1648 modules)
+ GET /spaces/sailboat-retrospective-hero.jpg 404 in 452ms
+ GET /spaces/placeholder-hero.jpg 404 in 32ms
+ GET /spaces/placeholder-hero.jpg 404 in 32ms
+ GET /spaces/placeholder-hero.jpg 404 in 88ms
+ GET /spaces/placeholder-hero.jpg 404 in 44ms
+ GET /spaces/placeholder-hero.jpg 404 in 31ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 35ms
+ GET /spaces/placeholder-hero.jpg 404 in 29ms
+ GET /spaces/placeholder-hero.jpg 404 in 54ms
+ GET /spaces/placeholder-hero.jpg 404 in 27ms
+ GET /spaces/placeholder-hero.jpg 404 in 32ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 27ms
+ GET /spaces/placeholder-hero.jpg 404 in 27ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 75ms
+ GET /spaces/placeholder-hero.jpg 404 in 69ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 39ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 29ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 27ms
+ GET /spaces/placeholder-hero.jpg 404 in 31ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 43ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 55ms
+ GET /spaces/placeholder-hero.jpg 404 in 56ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 22ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 22ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 79ms
+ GET /spaces/placeholder-hero.jpg 404 in 35ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 27ms
+ GET /spaces/placeholder-hero.jpg 404 in 23ms
+ GET /spaces/placeholder-hero.jpg 404 in 22ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 41ms
+ GET /spaces/placeholder-hero.jpg 404 in 50ms
+ GET /spaces/placeholder-hero.jpg 404 in 36ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 26ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 25ms
+ GET /spaces/placeholder-hero.jpg 404 in 29ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 27ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 24ms
+ GET /spaces/placeholder-hero.jpg 404 in 22ms
+ GET /spaces/placeholder-hero.jpg 404 in 30ms
+ GET /spaces/placeholder-hero.jpg 404 in 41ms
+ ○ Compiling /en/spaces/auditorium ...
+ ✓ Compiled /en/spaces/auditorium in 506ms (1652 modules)
+ GET /spaces/placeholder-hero.jpg 404 in 583ms
+ GET /spaces/placeholder-hero.jpg 404 in 117ms
+ ✓ Compiled in 5.6s (1654 modules)
+ ✓ Compiled /en/spaces/auditorium in 347ms (718 modules)
+ GET /en/spaces/auditorium/ 200 in 683ms
+ ✓ Compiled in 2.6s (1654 modules)
+ ○ Compiling /en ...
+ ✓ Compiled /en in 825ms (733 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 639ms (1643 modules)
+ GET /images/team-building-case.jpg 404 in 840ms
+ GET /images/remote-meetings-case.jpg 404 in 49ms
+ GET /images/onboarding-case.jpg 404 in 72ms
+ GET /images/company-events-case.jpg 404 in 33ms
+ ✓ Compiled in 1654ms (1654 modules)

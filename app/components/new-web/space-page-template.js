@@ -27,12 +27,12 @@ export default function SpacePageTemplate({
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
-    offset: ["start start", "end center"],
+    offset: ["-100px", "33vh"],
   });
 
-  const imageRotate = useTransform(scrollYProgress, [0, 1], [45, 0]);
-  const imageTranslateZ = useTransform(scrollYProgress, [0, 1], [-200, 0]);
-  const imageScale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const imageRotate = useTransform(scrollYProgress, [0, 0.5], [45, 0]);
+  const imageTranslateZ = useTransform(scrollYProgress, [0, 0.5], [-200, 0]);
+  const imageScale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
 
   // Color pairing system for name and underline
   const colorPairs = [
