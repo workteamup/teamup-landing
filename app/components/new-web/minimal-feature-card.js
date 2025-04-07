@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "../../lib/utils";
-import { greyColors } from "../../lib/design-tokens";
+import { brandColors, greyColors } from "../../lib/design-tokens";
 
 /**
  * MinimalFeatureCard Component
@@ -15,23 +15,18 @@ export default function MinimalFeatureCard({ text, className }) {
   return (
     <div
       className={cn(
-        "min-h-[160px] p-6",
-        "rounded-xl border border-gray-smoke",
-        "bg-white shadow-sm",
-        "flex items-center justify-center",
+        "flex items-center justify-center bg-white",
+        "px-6 py-8 rounded-xl min-h-[160px]",
+        "border border-gray-smoke shadow-sm",
         "transition-all duration-300 ease-out",
-        "hover:border-gray-steel hover:shadow-md",
+        "hover:scale-[1.05] hover:shadow-md hover:border-gray-steel",
+        "cursor-pointer",
         className
       )}
     >
-      <p
-        className={cn(
-          "text-lg font-medium text-gray-graphite text-center",
-          "max-w-[25ch]"
-        )}
-      >
+      <div className="text-sm md:text-base font-semibold text-center text-gray-graphite">
         {text}
-      </p>
+      </div>
     </div>
   );
 }

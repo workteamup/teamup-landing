@@ -10,6 +10,7 @@ import MinimalFeatureCard from "./minimal-feature-card";
 import { spaces } from "../../data/spaces";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { brand3Tints } from "../../lib/design-tokens";
 
 /**
  * SpacePageTemplate Component
@@ -307,30 +308,37 @@ export default function SpacePageTemplate({
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 space-y-24">
         {/* Features Section */}
-        <section>
-          <IconSectionTitle
-            icon={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-full h-full"
-              >
-                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-              </svg>
-            }
-            title={language === "es" ? "Características" : "Features"}
-            align="center"
-            theme="purple"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {content.features.map((feature, index) => (
-              <MinimalFeatureCard key={index} text={feature.title} />
-            ))}
+        <section
+          className="py-16 md:py-24 -mx-4 px-8 md:px-24 rounded-[2.5rem]"
+          style={{
+            background: `linear-gradient(to bottom, white 0%, ${brand3Tints.tint90} 100%)`,
+          }}
+        >
+          <div className="container mx-auto">
+            <IconSectionTitle
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-full h-full"
+                >
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                </svg>
+              }
+              title={language === "es" ? "Características" : "Features"}
+              align="center"
+              theme="purple"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {content.features.map((feature, index) => (
+                <MinimalFeatureCard key={index} text={feature.title} />
+              ))}
+            </div>
           </div>
         </section>
 
