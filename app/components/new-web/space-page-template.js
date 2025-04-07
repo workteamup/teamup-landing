@@ -4,6 +4,9 @@ import WebLayout from "./layout";
 import SpaceTemplate from "./space-template";
 import PageTitle from "./page-title";
 import Button from "./button";
+import BadgeSectionTitle from "./badge-section-title";
+import IconSectionTitle from "./icon-section-title";
+import MinimalFeatureCard from "./minimal-feature-card";
 import { spaces } from "../../data/spaces";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -305,20 +308,28 @@ export default function SpacePageTemplate({
       <div className="container mx-auto px-4 py-12 space-y-24">
         {/* Features Section */}
         <section>
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-phantom">
-            {language === "es" ? "Características" : "Features"}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {content.features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+          <IconSectionTitle
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-full h-full"
               >
-                <h3 className="text-xl font-semibold mb-3 text-gray-phantom">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-space">{feature.description}</p>
-              </div>
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+              </svg>
+            }
+            title={language === "es" ? "Características" : "Features"}
+            align="center"
+            theme="purple"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {content.features.map((feature, index) => (
+              <MinimalFeatureCard key={index} text={feature.title} />
             ))}
           </div>
         </section>
