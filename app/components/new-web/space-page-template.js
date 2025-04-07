@@ -8,6 +8,8 @@ import BadgeSectionTitle from "./badge-section-title";
 import IconSectionTitle from "./icon-section-title";
 import MinimalFeatureCard from "./minimal-feature-card";
 import StepItem from "./step-item";
+import Testimonial from "./testimonial";
+import CTASection from "./cta-section";
 import { spaces } from "../../data/spaces";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -307,6 +309,18 @@ export default function SpacePageTemplate({
         </p>
       </div>
 
+      {/* Testimonial Section */}
+      <div className="container mx-auto px-4 py-16">
+        <Testimonial
+          quote="With Dovetail, the work we've done in the past is always available so that the work we do in the future isn't redundant."
+          name="Roy Olende"
+          jobTitle="Head of UX Research"
+          companyLogo="/svg/new-logo-dark.svg"
+          companyName="Team Up"
+          align="center"
+        />
+      </div>
+
       {/* Main Content */}
       <div className="container mx-auto px-4 py-12 space-y-24">
         {/* Features Section */}
@@ -343,7 +357,24 @@ export default function SpacePageTemplate({
             </div>
           </div>
         </section>
+      </div>
 
+      {/* Mid-page CTA Section - Full Width */}
+      <CTASection
+        title="Ready to enhance your team collaboration?"
+        description="Start using this space today and transform how your team works together."
+        buttonText="Try Free for 2 Months"
+        buttonUrl="https://app.teamup.works/signup"
+        secondaryButtonText="Contact Sales"
+        secondaryButtonUrl="/contact"
+        theme="light"
+        align="center"
+        titleSize="lg"
+        background="linear-gradient(to right, #F0FBFF, #ECF3FE)"
+      />
+
+      {/* Continue with rest of content */}
+      <div className="container mx-auto px-4 py-12 space-y-24">
         {/* How to Use Section */}
         <section
           className="py-16 md:py-24 -mx-4 px-8 md:px-24 rounded-[2.5rem]"
