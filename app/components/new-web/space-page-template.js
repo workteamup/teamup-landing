@@ -12,6 +12,7 @@ import { spaces } from "../../data/spaces";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { brand3Tints, brand1Tints } from "../../lib/design-tokens";
+import StepsList from "./steps-list";
 
 /**
  * SpacePageTemplate Component
@@ -370,16 +371,14 @@ export default function SpacePageTemplate({
               align="center"
               theme="teal"
             />
-            <div className="max-w-4xl mx-auto space-y-8">
-              {content.howToUse.map((step, index) => (
-                <StepItem
-                  key={index}
-                  number={index + 1}
-                  title={step.title}
-                  description={step.description}
-                  theme="teal"
-                />
-              ))}
+            <div className="max-w-4xl mx-auto">
+              <StepsList
+                steps={content.howToUse.map((step) => ({
+                  ...step,
+                  image: getHeroImage(), // Using the space image as a placeholder
+                }))}
+                theme="teal"
+              />
             </div>
           </div>
         </section>
