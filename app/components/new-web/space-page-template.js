@@ -12,7 +12,7 @@ import Testimonial from "./testimonial";
 import CTASection from "./cta-section";
 import { spaces } from "../../data/spaces";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { brand3Tints, brand1Tints, brand2Tints } from "../../lib/design-tokens";
 import StepsList from "./steps-list";
 
@@ -33,10 +33,63 @@ export default function SpacePageTemplate({
   customContent = null,
 }) {
   const heroRef = useRef(null);
+  // Add refs for each section for smooth scrolling
+  const featuresRef = useRef(null);
+  const howToUseRef = useRef(null);
+  const useCasesRef = useRef(null);
+  // State to track active section
+  const [activeSection, setActiveSection] = useState(null);
+
+  // Function to check which section is in view
+  useEffect(() => {
+    const handleScroll = () => {
+      const featuresRect = featuresRef.current?.getBoundingClientRect();
+      const howToUseRect = howToUseRef.current?.getBoundingClientRect();
+      const useCasesRect = useCasesRef.current?.getBoundingClientRect();
+
+      const viewportHeight = window.innerHeight;
+
+      if (
+        featuresRect &&
+        featuresRect.top < viewportHeight / 2 &&
+        featuresRect.bottom > viewportHeight / 2
+      ) {
+        setActiveSection("features");
+      } else if (
+        howToUseRect &&
+        howToUseRect.top < viewportHeight / 2 &&
+        howToUseRect.bottom > viewportHeight / 2
+      ) {
+        setActiveSection("howToUse");
+      } else if (
+        useCasesRect &&
+        useCasesRect.top < viewportHeight / 2 &&
+        useCasesRect.bottom > viewportHeight / 2
+      ) {
+        setActiveSection("useCases");
+      } else {
+        setActiveSection(null);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: heroRef,
     offset: ["-100px", "33vh"],
   });
+
+  // Create a function to handle smooth scrolling
+  const scrollToSection = (ref, section) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+    setActiveSection(section);
+  };
 
   const imageRotate = useTransform(scrollYProgress, [0, 0.5], [45, 0]);
   const imageTranslateZ = useTransform(scrollYProgress, [0, 0.5], [-200, 0]);
@@ -309,6 +362,117 @@ export default function SpacePageTemplate({
         </p>
       </div>
 
+      {/* Navigation Menu */}
+      <div className="container mx-auto px-4 pb-12 flex justify-center">
+        <div className="inline-flex bg-gray-50/80 rounded-full p-1.5 shadow-sm">
+          <button
+            onClick={() => scrollToSection(featuresRef, "features")}
+            className={`flex items-center group px-5 py-2 rounded-full transition-all ${
+              activeSection === "features"
+                ? "bg-white shadow-sm"
+                : "hover:bg-white hover:shadow-sm"
+            }`}
+          >
+            <div className="w-7 h-7 rounded-md flex items-center justify-center text-white bg-brand-purple shadow-sm ring-[1.5px] ring-inset ring-white/40 mr-2">
+              <div className="w-4 h-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-full h-full"
+                >
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                </svg>
+              </div>
+            </div>
+            <span
+              className={`text-base font-medium ${
+                activeSection === "features"
+                  ? "text-brand-purple"
+                  : "text-gray-phantom"
+              } font-poppins`}
+            >
+              {language === "es" ? "Características" : "Features"}
+            </span>
+          </button>
+
+          <button
+            onClick={() => scrollToSection(howToUseRef, "howToUse")}
+            className={`flex items-center group px-5 py-2 rounded-full transition-all ${
+              activeSection === "howToUse"
+                ? "bg-white shadow-sm"
+                : "hover:bg-white hover:shadow-sm"
+            }`}
+          >
+            <div className="w-7 h-7 rounded-md flex items-center justify-center text-white bg-brand-teal shadow-sm ring-[1.5px] ring-inset ring-white/40 mr-2">
+              <div className="w-4 h-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-full h-full"
+                >
+                  <path d="M12 20V10M18 20V4M6 20v-4" />
+                </svg>
+              </div>
+            </div>
+            <span
+              className={`text-base font-medium ${
+                activeSection === "howToUse"
+                  ? "text-brand-teal"
+                  : "text-gray-phantom"
+              } font-poppins`}
+            >
+              {language === "es" ? "Cómo Usar" : "How to Use"}
+            </span>
+          </button>
+
+          <button
+            onClick={() => scrollToSection(useCasesRef, "useCases")}
+            className={`flex items-center group px-5 py-2 rounded-full transition-all ${
+              activeSection === "useCases"
+                ? "bg-white shadow-sm"
+                : "hover:bg-white hover:shadow-sm"
+            }`}
+          >
+            <div className="w-7 h-7 rounded-md flex items-center justify-center text-white bg-brand-blue shadow-sm ring-[1.5px] ring-inset ring-white/40 mr-2">
+              <div className="w-4 h-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-full h-full"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                  <path d="M16 3h-8v4h8V3z"></path>
+                </svg>
+              </div>
+            </div>
+            <span
+              className={`text-base font-medium ${
+                activeSection === "useCases"
+                  ? "text-brand-blue"
+                  : "text-gray-phantom"
+              } font-poppins`}
+            >
+              Use Cases
+            </span>
+          </button>
+        </div>
+      </div>
+
       {/* Testimonial Section */}
       <div className="container mx-auto px-4 py-16">
         <Testimonial
@@ -325,6 +489,7 @@ export default function SpacePageTemplate({
       <div className="container mx-auto px-4 py-12 space-y-24">
         {/* Features Section */}
         <section
+          ref={featuresRef}
           className="py-16 md:py-24 -mx-4 px-8 md:px-24 rounded-[2.5rem]"
           style={{
             background: `linear-gradient(to bottom, white 0%, ${brand3Tints.tint90} 100%)`,
@@ -377,6 +542,7 @@ export default function SpacePageTemplate({
       <div className="container mx-auto px-4 py-12 space-y-24">
         {/* How to Use Section */}
         <section
+          ref={howToUseRef}
           className="py-16 md:py-24 -mx-4 px-8 md:px-24 rounded-[2.5rem]"
           style={{
             background: `linear-gradient(to bottom, white 0%, ${brand1Tints.tint90} 100%)`,
@@ -416,6 +582,7 @@ export default function SpacePageTemplate({
 
         {/* Use Cases Section */}
         <section
+          ref={useCasesRef}
           className="py-16 md:py-24 -mx-4 px-8 md:px-24 rounded-[2.5rem]"
           style={{
             background: `linear-gradient(to bottom, white 0%, ${brand2Tints.tint90} 100%)`,
