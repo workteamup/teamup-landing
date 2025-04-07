@@ -70,8 +70,8 @@ export default function IconSectionTitle({
             "w-11 h-11 rounded-lg flex items-center justify-center text-white",
             selectedTheme.bg,
             "shadow-sm",
-            // Add subtle inner glow effect
-            "ring-[2px] ring-inset ring-white/10"
+            // Make the inner glow effect more distinct
+            "ring-[2px] ring-inset ring-white/40"
           )}
         >
           <div className="w-6 h-6">{icon}</div>

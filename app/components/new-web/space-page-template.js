@@ -7,10 +7,11 @@ import Button from "./button";
 import BadgeSectionTitle from "./badge-section-title";
 import IconSectionTitle from "./icon-section-title";
 import MinimalFeatureCard from "./minimal-feature-card";
+import StepItem from "./step-item";
 import { spaces } from "../../data/spaces";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { brand3Tints } from "../../lib/design-tokens";
+import { brand3Tints, brand1Tints } from "../../lib/design-tokens";
 
 /**
  * SpacePageTemplate Component
@@ -343,24 +344,43 @@ export default function SpacePageTemplate({
         </section>
 
         {/* How to Use Section */}
-        <section>
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-phantom">
-            {language === "es" ? "Cómo Usar" : "How to Use"}
-          </h2>
-          <div className="max-w-4xl mx-auto space-y-8">
-            {content.howToUse.map((step, index) => (
-              <div key={index} className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-purple text-white flex items-center justify-center text-xl font-bold">
-                  {index + 1}
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-phantom">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-space">{step.description}</p>
-                </div>
-              </div>
-            ))}
+        <section
+          className="py-16 md:py-24 -mx-4 px-8 md:px-24 rounded-[2.5rem]"
+          style={{
+            background: `linear-gradient(to bottom, white 0%, ${brand1Tints.tint90} 100%)`,
+          }}
+        >
+          <div className="container mx-auto">
+            <IconSectionTitle
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-full h-full"
+                >
+                  <path d="M12 20V10M18 20V4M6 20v-4" />
+                </svg>
+              }
+              title={language === "es" ? "Cómo Usar" : "How to Use"}
+              align="center"
+              theme="teal"
+            />
+            <div className="max-w-4xl mx-auto space-y-8">
+              {content.howToUse.map((step, index) => (
+                <StepItem
+                  key={index}
+                  number={index + 1}
+                  title={step.title}
+                  description={step.description}
+                  theme="teal"
+                />
+              ))}
+            </div>
           </div>
         </section>
 
