@@ -11,7 +11,7 @@ import StepItem from "./step-item";
 import { spaces } from "../../data/spaces";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { brand3Tints, brand1Tints } from "../../lib/design-tokens";
+import { brand3Tints, brand1Tints, brand2Tints } from "../../lib/design-tokens";
 import StepsList from "./steps-list";
 
 /**
@@ -379,6 +379,42 @@ export default function SpacePageTemplate({
                 }))}
                 theme="teal"
               />
+            </div>
+          </div>
+        </section>
+
+        {/* Use Cases Section */}
+        <section
+          className="py-16 md:py-24 -mx-4 px-8 md:px-24 rounded-[2.5rem]"
+          style={{
+            background: `linear-gradient(to bottom, white 0%, ${brand2Tints.tint90} 100%)`,
+          }}
+        >
+          <div className="container mx-auto">
+            <IconSectionTitle
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-full h-full"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                  <path d="M16 3h-8v4h8V3z"></path>
+                </svg>
+              }
+              title="Use Cases"
+              align="center"
+              theme="blue"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <MinimalFeatureCard text="Use Case 1" />
+              <MinimalFeatureCard text="Use Case 2" />
+              <MinimalFeatureCard text="Use Case 3" />
             </div>
           </div>
         </section>
