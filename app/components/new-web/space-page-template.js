@@ -611,21 +611,6 @@ export default function SpacePageTemplate({
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="bg-gray-cloud rounded-xl p-8 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4 text-center text-gray-phantom">
-          {content.cta.title}
-        </h2>
-        <p className="text-center mb-6 text-gray-graphite">
-          {content.cta.description}
-        </p>
-        <div className="flex justify-center">
-          <Button href="https://app.teamup.works/signup" size="lg">
-            {content.cta.buttonText}
-          </Button>
-        </div>
-      </section>
     </WebLayout>
   );
 }
