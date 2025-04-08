@@ -1,0 +1,10 @@
+---
+description: This is to not forget the style guidelines of the project
+globs: 
+---
+Whenever creating components inside the project, take a look at:
+- [design-system.js](mdc:app/components/design-system.js)
+- [design-tokens.js](mdc:app/lib/design-tokens.js)
+- [DESIGN-SYSTEM-GUIDELINES.md](mdc:DESIGN-SYSTEM-GUIDELINES.md)
+
+When creating new components, add them to the [design-system.js](mdc:app/components/design-system.js) and add documentation to [DESIGN-SYSTEM-GUIDELINES.md](mdc:DESIGN-SYSTEM-GUIDELINES.md)
