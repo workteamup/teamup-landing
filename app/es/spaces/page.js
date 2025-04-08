@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "../../contexts/TranslationContext";
 import { spaces } from "../../data/spaces";
+import PageTitle from "../../components/new-web/page-title";
 
 // Spanish translations for space descriptions
 const spaceTranslations = {
@@ -55,15 +56,16 @@ export default function SpacesPage() {
 
   return (
     <WebLayout>
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-brand-teal via-brand-blue to-brand-purple bg-clip-text text-transparent">
-          Espacios Virtuales
-        </h1>
-        <p className="text-xl text-center max-w-3xl mx-auto text-gray-graphite mb-16">
-          Explora nuestra colección de entornos virtuales personalizados
-          diseñados para mejorar tus reuniones de equipo, talleres y eventos.
-        </p>
+      <PageTitle
+        title="Espacios Virtuales"
+        subtitle="Explora nuestra colección de entornos virtuales personalizados diseñados para mejorar tus reuniones de equipo, talleres y eventos."
+        align="center"
+        size="large"
+        theme="dark"
+        gradient="linear-gradient(165deg, #635DF5 0%, #67DAFA 100%)"
+      />
 
+      <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {spaces.map((space) => (
             <Link

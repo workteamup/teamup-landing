@@ -14,6 +14,7 @@ import { brandColors, greyColors } from "../../lib/design-tokens";
  * @param {string} [props.align="left"] - Text alignment ('left' or 'center')
  * @param {string} [props.size="default"] - Title size ('small', 'default', 'large')
  * @param {string} [props.background] - Background color from brand colors (e.g., 'brand-purple', 'brand-teal')
+ * @param {string} [props.gradient] - Custom gradient background (CSS string)
  * @param {string} [props.className] - Additional CSS classes
  */
 export default function PageTitle({
@@ -23,6 +24,7 @@ export default function PageTitle({
   align = "left",
   size = "default",
   background,
+  gradient,
   className,
 }) {
   const t = useTranslations();
@@ -33,11 +35,18 @@ export default function PageTitle({
     theme === "light" ? "text-gray-space" : "text-gray-cloud";
 
   // Default background if none provided
-  const bgColor = background
-    ? `bg-${background}`
-    : theme === "light"
-    ? "bg-white"
-    : "bg-brand-dark";
+  let bgStyle = {};
+  let bgClass = "";
+
+  if (gradient) {
+    bgStyle = { background: gradient };
+  } else {
+    bgClass = background
+      ? `bg-${background}`
+      : theme === "light"
+      ? "bg-white"
+      : "bg-brand-dark";
+  }
 
   // Size-based classes
   const titleSizeClasses = {
@@ -54,13 +63,16 @@ export default function PageTitle({
 
   // Padding classes based on size - increased for more breathing room
   const paddingClasses = {
-    small: "py-16 md:py-20 lg:py-24",
-    default: "py-20 md:py-24 lg:py-32",
-    large: "py-24 md:py-32 lg:py-40",
+    small: "py-16 md:py-20 lg:py-32",
+    default: "py-20 md:py-24 lg:py-40",
+    large: "py-24 md:py-32 lg:py-48",
   };
 
   return (
-    <section className={cn("w-full", bgColor, paddingClasses[size], className)}>
+    <section
+      className={cn("w-full", bgClass, paddingClasses[size], className)}
+      style={bgStyle}
+    >
       <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className={cn(alignmentClasses[align])}>
           <h1
