@@ -293,8 +293,8 @@ export default function SpacePageTemplate({
             title={content.title}
             align="center"
             size="large"
-            background="brand-dark"
             theme="dark"
+            gradient="linear-gradient(165deg, #635DF5 0%, #67DAFA 100%)"
           />
         </div>
 
