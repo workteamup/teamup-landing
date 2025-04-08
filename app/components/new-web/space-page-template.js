@@ -294,7 +294,10 @@ export default function SpacePageTemplate({
             align="center"
             size="large"
             theme="dark"
-            gradient="linear-gradient(165deg, #635DF5 0%, #67DAFA 100%)"
+            gradient="radial-gradient(circle at 0% 0%, #635DF5 0%, transparent 50%),
+                     radial-gradient(circle at 100% 0%, #3F89F6 0%, transparent 50%),
+                     radial-gradient(circle at 50% 100%, #67DAFA 0%, transparent 50%),
+                     radial-gradient(circle at 50% 50%, #635DF5 0%, transparent 100%)"
           />
         </div>
 
