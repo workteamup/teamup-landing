@@ -192,24 +192,44 @@ const Navbar = () => {
     },
   ];
 
-  const solutionsItems = [
-    {
-      title: t("Solutions.dayToDay"),
-      href: `/${locale}/solutions/day-to-day-activity`,
-    },
-    {
-      title: t("Solutions.companyEvents"),
-      href: `/${locale}/solutions/company-events`,
-    },
-    {
-      title: t("Solutions.funCompetitions"),
-      href: `/${locale}/solutions/fun-competitions`,
-    },
-    {
-      title: t("Solutions.customOffice"),
-      href: `/${locale}/solutions/custom-office-space`,
-    },
-  ];
+  const solutionsItems = {
+    byType: [
+      {
+        title: t("Solutions.dayToDay"),
+        href: `/${locale}/solutions/day-to-day-activity`,
+      },
+      {
+        title: t("Solutions.companyEvents"),
+        href: `/${locale}/solutions/company-events`,
+      },
+      {
+        title: t("Solutions.funCompetitions"),
+        href: `/${locale}/solutions/fun-competitions`,
+      },
+      {
+        title: t("Solutions.customOffice"),
+        href: `/${locale}/solutions/custom-office-space`,
+      },
+    ],
+    byRole: [
+      {
+        title: t("Solutions.forCxos"),
+        href: `/${locale}/solutions/for-cxos`,
+      },
+      {
+        title: t("Solutions.forHr"),
+        href: `/${locale}/solutions/for-hr`,
+      },
+      {
+        title: t("Solutions.forManagers"),
+        href: `/${locale}/solutions/for-managers`,
+      },
+      {
+        title: t("Solutions.forEmployees"),
+        href: `/${locale}/solutions/for-employees`,
+      },
+    ],
+  };
 
   // Get the current hovered space image or use planning as default
   const currentSpaceImage = hoveredSpace
@@ -382,17 +402,43 @@ const Navbar = () => {
                 />
               </button>
               {isSolutionsOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-white shadow-lg rounded-md py-2 z-[100]">
-                  {solutionsItems.map((item, index) => (
-                    <Link
-                      key={index}
-                      href={item.href}
-                      className="block px-4 py-2 text-gray-space hover:bg-gray-cloud hover:text-brand-purple transition-colors"
-                      onClick={() => setIsSolutionsOpen(false)}
-                    >
-                      {item.title}
-                    </Link>
-                  ))}
+                <div className="absolute top-full left-0 mt-1 bg-white shadow-lg rounded-md py-2 z-[100] flex w-[500px]">
+                  {/* By Type Column */}
+                  <div className="w-1/2 border-r border-gray-cloud">
+                    <div className="px-4 py-2">
+                      <span className="text-xs font-semibold uppercase text-gray-graphite">
+                        {t("Solutions.byType")}
+                      </span>
+                    </div>
+                    {solutionsItems.byType.map((item, index) => (
+                      <Link
+                        key={index}
+                        href={item.href}
+                        className="block px-4 py-2 text-gray-space hover:bg-gray-cloud hover:text-brand-purple transition-colors"
+                        onClick={() => setIsSolutionsOpen(false)}
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                  </div>
+                  {/* By Role Column */}
+                  <div className="w-1/2">
+                    <div className="px-4 py-2">
+                      <span className="text-xs font-semibold uppercase text-gray-graphite">
+                        {t("Solutions.byRole")}
+                      </span>
+                    </div>
+                    {solutionsItems.byRole.map((item, index) => (
+                      <Link
+                        key={index}
+                        href={item.href}
+                        className="block px-4 py-2 text-gray-space hover:bg-gray-cloud hover:text-brand-purple transition-colors"
+                        onClick={() => setIsSolutionsOpen(false)}
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
@@ -560,19 +606,48 @@ const Navbar = () => {
                 </button>
                 {isSolutionsOpen && (
                   <div className="mt-2 pl-4 border-l-2 border-gray-200 mobile-solutions-dropdown">
-                    {solutionsItems.map((item, index) => (
-                      <Link
-                        key={index}
-                        href={item.href}
-                        className="block py-2 text-gray-space hover:text-brand-purple"
-                        onClick={() => {
-                          setIsMenuOpen(false);
-                          setIsSolutionsOpen(false);
-                        }}
-                      >
-                        {item.title}
-                      </Link>
-                    ))}
+                    {/* By Type Section */}
+                    <div className="mb-4">
+                      <div className="mb-2">
+                        <span className="text-xs font-semibold uppercase text-gray-graphite">
+                          {t("Solutions.byType")}
+                        </span>
+                      </div>
+                      {solutionsItems.byType.map((item, index) => (
+                        <Link
+                          key={index}
+                          href={item.href}
+                          className="block py-2 text-gray-space hover:text-brand-purple"
+                          onClick={() => {
+                            setIsMenuOpen(false);
+                            setIsSolutionsOpen(false);
+                          }}
+                        >
+                          {item.title}
+                        </Link>
+                      ))}
+                    </div>
+                    {/* By Role Section */}
+                    <div>
+                      <div className="mb-2">
+                        <span className="text-xs font-semibold uppercase text-gray-graphite">
+                          {t("Solutions.byRole")}
+                        </span>
+                      </div>
+                      {solutionsItems.byRole.map((item, index) => (
+                        <Link
+                          key={index}
+                          href={item.href}
+                          className="block py-2 text-gray-space hover:text-brand-purple"
+                          onClick={() => {
+                            setIsMenuOpen(false);
+                            setIsSolutionsOpen(false);
+                          }}
+                        >
+                          {item.title}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import WebLayout from "../../../components/new-web/layout";
-import SolutionTemplate from "../../../components/new-web/solution-template";
+import SolutionTemplate from "../../../components/new-web/solution-type-template";
 import Button from "../../../components/new-web/button";
 import { useTranslations } from "../../../contexts/TranslationContext";
 
@@ -68,17 +68,10 @@ export default function CustomOfficeSolutionPage() {
               {t("SolutionTemplates.customOffice.cta.description")}
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
-              <Button 
-                href="https://app.teamup.works/signup" 
-                size="lg"
-              >
+              <Button href="https://app.teamup.works/signup" size="lg">
                 {t("SolutionTemplates.customOffice.cta.primaryButton")}
               </Button>
-              <Button 
-                href="#" 
-                variant="secondary" 
-                size="lg"
-              >
+              <Button href="#" variant="secondary" size="lg">
                 {t("SolutionTemplates.customOffice.cta.secondaryButton")}
               </Button>
             </div>

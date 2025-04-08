@@ -139,7 +139,13 @@
     "dayToDay": "Day-to-Day Activity",
     "companyEvents": "Company Events",
     "funCompetitions": "Fun Competitions",
-    "customOffice": "Custom Office Space"
+    "customOffice": "Custom Office Space",
+    "byType": "By Type",
+    "byRole": "By Role",
+    "forCxos": "For CXOs",
+    "forHr": "For HR",
+    "forManagers": "For Managers",
+    "forEmployees": "For Employees"
   },
   "CookiePolicy": {
     "title": "Cookie Policy",
@@ -768,6 +774,67 @@
             "Communication tools unified in one environment",
             "Data visualization dashboards for team performance"
           ]
+        }
+      }
+    },
+    "roles": {
+      "challengesTitle": "Key Challenges",
+      "benefitsTitle": "Key Benefits",
+      "featuresTitle": "Key Features",
+      "cxo": {
+        "title": "Team Up for CXOs",
+        "description": "Transform your organization's remote work culture and drive innovation with our virtual collaboration platform.",
+        "challenges": {
+          "engagement": {
+            "title": "Employee Engagement",
+            "description": "Maintaining high levels of engagement and connection in remote teams"
+          },
+          "culture": {
+            "title": "Company Culture",
+            "description": "Building and preserving company culture in a virtual environment"
+          },
+          "productivity": {
+            "title": "Team Productivity",
+            "description": "Ensuring consistent productivity and collaboration across remote teams"
+          }
+        },
+        "benefits": {
+          "culture": {
+            "title": "Stronger Culture",
+            "description": "Build a vibrant company culture that transcends physical boundaries"
+          },
+          "retention": {
+            "title": "Higher Retention",
+            "description": "Improve employee satisfaction and reduce turnover with engaging virtual experiences"
+          },
+          "costs": {
+            "title": "Cost Efficiency",
+            "description": "Reduce overhead costs while maintaining team effectiveness"
+          },
+          "innovation": {
+            "title": "Drive Innovation",
+            "description": "Foster creativity and innovation through collaborative virtual spaces"
+          }
+        },
+        "features": {
+          "analytics": {
+            "title": "Advanced Analytics",
+            "description": "Track engagement, usage patterns, and team collaboration metrics"
+          },
+          "customization": {
+            "title": "Custom Branding",
+            "description": "Create virtual spaces that reflect your company's brand and values"
+          },
+          "security": {
+            "title": "Enterprise Security",
+            "description": "Ensure data protection with enterprise-grade security features"
+          }
+        },
+        "cta": {
+          "heading": "Ready to Transform Your Organization?",
+          "description": "Join leading companies using Team Up to create more engaged and productive remote teams.",
+          "primaryButton": "Start Free Trial",
+          "secondaryButton": "Contact Sales"
         }
       }
     }

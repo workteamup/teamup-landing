@@ -358,7 +358,13 @@
     "dayToDay": "Actividad diaria",
     "companyEvents": "Eventos de empresa",
     "funCompetitions": "Competiciones divertidas",
-    "customOffice": "Oficina personalizada"
+    "customOffice": "Oficina personalizada",
+    "byType": "Por Tipo",
+    "byRole": "Por Rol",
+    "forCxos": "Para Directivos",
+    "forHr": "Para RRHH",
+    "forManagers": "Para Gerentes",
+    "forEmployees": "Para Empleados"
   },
   "Blog": {
     "title": "Nuestro Blog",
@@ -375,93 +381,46 @@
       "yearly": "Anual (ahorra 30%)"
     },
     "calculator": {
-      "title": "Calcula tu precio",
-      "subtitle": "¿Cuántos usuarios tendrás?"
+      "title": "Calculadora de precios",
+      "description": "Calcula el precio según el número de usuarios",
+      "users": "usuarios",
+      "perMonth": "por mes",
+      "perUser": "por usuario"
     },
     "plans": {
       "free": {
         "name": "Gratis",
-        "description": "Para equipos pequeños que no pueden convencer a su jefe de pagar por la mejor herramienta de engagement.",
-        "featuresTitle": "Incluye:",
+        "description": "Para equipos pequeños que quieren probar Team Up!",
         "features": [
-          "7 usuarios",
-          "Todos los espacios básicos",
-          "1 punto de reunión",
-          "Pago por eventos",
-          "Personalización básica de avatar"
-        ],
-        "ctaText": "Empezar gratis",
-        "ctaDescription": "Sin tarjeta de crédito"
+          "Hasta 10 usuarios",
+          "Espacios básicos",
+          "Actividades predefinidas",
+          "Soporte por email"
+        ]
       },
-      "business": {
-        "name": "Business",
-        "description": "Para PYMEs que realmente aprecian a sus empleados y quieren la mejor herramienta de engagement.",
-        "featuresTitle": "Todo lo de Gratis más:",
-        "features": [
-          "Hasta 50 usuarios",
-          "Espacios premium",
-          "3 puntos de reunión",
-          "2 eventos gratis al mes",
-          "Añade tu marca",
-          "Invita usuarios externos a salas y eventos",
-          "Mayor paquete de personalización de avatar"
-        ],
-        "ctaText": "Comenzar prueba gratuita",
-        "ctaDescription": "Sin tarjeta de crédito",
-        "label": "MÁS POPULAR"
-      },
-      "custom": {
-        "name": "Personalizado",
-        "description": "Para empresas de cualquier tamaño que reeealmente se preocupan por sus empleados y quieren lo mejor de lo mejor para ellos.",
-        "featuresTitle": "Todo lo de Business más:",
+      "pro": {
+        "name": "Pro",
+        "description": "Para equipos que quieren sacar el máximo partido a Team Up!",
         "features": [
           "Usuarios ilimitados",
           "Todos los espacios",
-          "Puntos de reunión ilimitados",
-          "Eventos ilimitados",
+          "Actividades personalizadas",
           "Soporte prioritario",
-          "Precios personalizados",
-          "Espacios personalizados",
-          "Paquete completo de personalización de avatar"
-        ],
-        "ctaText": "Contactar con ventas",
-        "ctaDescription": "Construye tu plan"
+          "Analíticas avanzadas",
+          "Integración con herramientas"
+        ]
       }
     },
-    "perMonth": "/mes",
-    "perMonthPerUser": "/mes por usuario",
-    "customPricing": "Precio personalizado",
-    "mostPopular": "MÁS POPULAR",
-    "monthlyDiscount": "Ahorra ${amount}/mes",
-    "yearlyDiscount": "Ahorra ${amount}/año"
+    "cta": {
+      "free": "Empezar gratis",
+      "pro": "Contactar ventas"
+    }
   },
   "Events": {
     "tag": "Eventos",
     "heading": "Organiza eventos potentes",
-    "subheading": "Crea eventos de equipo atractivos que unan a las personas",
-    "tabs": {
-      "customRooms": {
-        "name": "Salas personalizadas",
-        "title": "Para eventos estructurados",
-        "description": "Crea salas ilimitadas con diferentes temas o propósitos para que todos puedan conectarse a la sala que más les interese.",
-        "features": [
-          "Múltiples salas temáticas",
-          "Actividades asignadas",
-          "Movimientos guiados de equipo"
-        ]
-      },
-      "mixers": {
-        "name": "Mixers",
-        "title": "Para networking",
-        "description": "Rompe los silos con emparejamientos aleatorios y networking para que todos en tu equipo o empresa se conozcan entre sí.",
-        "features": [
-          "Asignaciones aleatorias de salas",
-          "Networking entre departamentos",
-          "Conexiones sorpresa"
-        ]
-      }
-    },
-    "ctaButton": "Crea tu evento ahora"
+    "subheading": "Crea eventos memorables para tu equipo",
+    "description": "Desde reuniones virtuales hasta celebraciones de equipo, Team Up! te ayuda a organizar eventos que fortalecen la cultura de tu empresa"
   },
   "Avatars": {
     "sectionHeader": {
@@ -770,6 +729,232 @@
             "Herramientas de comunicación unificadas en un solo entorno",
             "Paneles de visualización de datos para el rendimiento del equipo"
           ]
+        }
+      }
+    },
+    "roles": {
+      "hr": {
+        "title": "Team Up para RRHH",
+        "description": "Transforma tu cultura de trabajo remoto y aumenta el compromiso de los empleados con nuestra plataforma de colaboración virtual.",
+        "challenges": {
+          "engagement": {
+            "title": "Compromiso de Empleados",
+            "description": "Mantener altos niveles de compromiso y fomentar conexiones significativas en equipos remotos"
+          },
+          "teamBuilding": {
+            "title": "Construcción de Equipo",
+            "description": "Crear actividades y experiencias efectivas de team building en un entorno virtual"
+          },
+          "culture": {
+            "title": "Cultura Empresarial",
+            "description": "Construir y mantener una cultura empresarial sólida en equipos distribuidos"
+          }
+        },
+        "benefits": {
+          "culture": {
+            "title": "Cultura más Fuerte",
+            "description": "Construye y mantén una cultura empresarial vibrante que trascienda las barreras físicas"
+          },
+          "retention": {
+            "title": "Mayor Retención",
+            "description": "Mejora la satisfacción de los empleados y reduce la rotación con experiencias virtuales atractivas"
+          },
+          "onboarding": {
+            "title": "Mejor Incorporación",
+            "description": "Crea experiencias inmersivas de incorporación que ayuden a los nuevos empleados a sentirse conectados desde el primer día"
+          },
+          "cohesion": {
+            "title": "Cohesión de Equipo",
+            "description": "Fomenta vínculos más fuertes y colaboración a través de actividades virtuales de team building"
+          }
+        },
+        "features": {
+          "eventPlanning": {
+            "title": "Planificación de Eventos",
+            "description": "Herramientas fáciles de usar para organizar y gestionar eventos y actividades virtuales de equipo"
+          },
+          "analytics": {
+            "title": "Análisis de Participación",
+            "description": "Rastrea métricas de participación y compromiso para medir el éxito de tus iniciativas"
+          },
+          "customization": {
+            "title": "Espacios Personalizados",
+            "description": "Crea espacios virtuales con tu marca que reflejen la cultura y valores de tu empresa"
+          }
+        },
+        "cta": {
+          "heading": "¿Listo para Transformar la Cultura de tu Equipo?",
+          "description": "Únete a las empresas líderes que usan Team Up para crear equipos remotos más comprometidos y conectados.",
+          "primaryButton": "Comenzar Prueba Gratuita",
+          "secondaryButton": "Contactar con Ventas"
+        }
+      },
+      "cxo": {
+        "title": "Team Up para Directivos",
+        "description": "Impulsa la productividad y el compromiso de tu equipo remoto con espacios virtuales diseñados para el éxito empresarial.",
+        "challenges": {
+          "engagement": {
+            "title": "Compromiso del Equipo",
+            "description": "Mantener equipos remotos comprometidos y alineados con los objetivos de la empresa"
+          },
+          "culture": {
+            "title": "Cultura Remota",
+            "description": "Construir una cultura empresarial fuerte en un entorno de trabajo distribuido"
+          },
+          "productivity": {
+            "title": "Productividad",
+            "description": "Asegurar altos niveles de productividad y colaboración efectiva en equipos remotos"
+          }
+        },
+        "benefits": {
+          "culture": {
+            "title": "Cultura más Fuerte",
+            "description": "Construye una cultura empresarial sólida que trascienda las barreras físicas"
+          },
+          "retention": {
+            "title": "Mayor Retención",
+            "description": "Mejora la satisfacción y retención de empleados con experiencias virtuales significativas"
+          },
+          "costs": {
+            "title": "Reducción de Costos",
+            "description": "Optimiza los costos operativos mientras mantienes un equipo remoto altamente efectivo"
+          },
+          "innovation": {
+            "title": "Innovación Mejorada",
+            "description": "Fomenta la innovación y creatividad a través de colaboración virtual efectiva"
+          }
+        },
+        "features": {
+          "analytics": {
+            "title": "Análisis Avanzado",
+            "description": "Obtén insights detallados sobre el compromiso y productividad del equipo"
+          },
+          "customization": {
+            "title": "Personalización Total",
+            "description": "Adapta los espacios virtuales para reflejar tu cultura empresarial y procesos"
+          },
+          "security": {
+            "title": "Seguridad Empresarial",
+            "description": "Protege tus datos y comunicaciones con características de seguridad de nivel empresarial"
+          }
+        },
+        "cta": {
+          "heading": "¿Listo para Transformar tu Equipo Remoto?",
+          "description": "Únete a las empresas líderes que están redefiniendo el trabajo remoto con Team Up.",
+          "primaryButton": "Comenzar Prueba Gratuita",
+          "secondaryButton": "Contactar con Ventas"
+        }
+      },
+      "managers": {
+        "title": "Team Up para Gerentes",
+        "description": "Lidera tu equipo remoto de manera efectiva con espacios virtuales diseñados para la colaboración y el éxito.",
+        "challenges": {
+          "communication": {
+            "title": "Comunicación Efectiva",
+            "description": "Mantener una comunicación clara y efectiva con equipos distribuidos"
+          },
+          "collaboration": {
+            "title": "Colaboración Remota",
+            "description": "Facilitar la colaboración fluida entre miembros del equipo en diferentes ubicaciones"
+          },
+          "engagement": {
+            "title": "Compromiso del Equipo",
+            "description": "Mantener a los miembros del equipo motivados y comprometidos en un entorno remoto"
+          }
+        },
+        "benefits": {
+          "productivity": {
+            "title": "Mayor Productividad",
+            "description": "Mejora la eficiencia y productividad del equipo con herramientas de colaboración optimizadas"
+          },
+          "communication": {
+            "title": "Mejor Comunicación",
+            "description": "Facilita una comunicación más clara y efectiva entre los miembros del equipo"
+          },
+          "visibility": {
+            "title": "Mayor Visibilidad",
+            "description": "Obtén una mejor visibilidad del progreso y desempeño del equipo"
+          },
+          "engagement": {
+            "title": "Mayor Compromiso",
+            "description": "Mantén a tu equipo comprometido y motivado con experiencias virtuales interactivas"
+          }
+        },
+        "features": {
+          "teamSpaces": {
+            "title": "Espacios de Equipo",
+            "description": "Crea espacios virtuales dedicados para diferentes proyectos y actividades del equipo"
+          },
+          "monitoring": {
+            "title": "Monitoreo de Progreso",
+            "description": "Realiza un seguimiento del progreso y la participación del equipo en tiempo real"
+          },
+          "collaboration": {
+            "title": "Herramientas de Colaboración",
+            "description": "Accede a herramientas integradas para una colaboración efectiva del equipo"
+          }
+        },
+        "cta": {
+          "heading": "¿Listo para Mejorar la Gestión de tu Equipo Remoto?",
+          "description": "Descubre cómo Team Up puede ayudarte a liderar tu equipo hacia el éxito.",
+          "primaryButton": "Comenzar Prueba Gratuita",
+          "secondaryButton": "Programar Demo"
+        }
+      },
+      "employees": {
+        "title": "Team Up para Empleados",
+        "description": "Conecta y colabora con tus compañeros de equipo en espacios virtuales diseñados para una experiencia remota óptima.",
+        "challenges": {
+          "connection": {
+            "title": "Conexión con el Equipo",
+            "description": "Mantener conexiones significativas con compañeros en un entorno remoto"
+          },
+          "collaboration": {
+            "title": "Colaboración Efectiva",
+            "description": "Trabajar eficientemente con compañeros a pesar de la distancia física"
+          },
+          "engagement": {
+            "title": "Compromiso Diario",
+            "description": "Mantener el compromiso y la motivación en el trabajo remoto"
+          }
+        },
+        "benefits": {
+          "flexibility": {
+            "title": "Mayor Flexibilidad",
+            "description": "Disfruta de un equilibrio trabajo-vida más flexible sin sacrificar la conexión con el equipo"
+          },
+          "collaboration": {
+            "title": "Mejor Colaboración",
+            "description": "Trabaja de manera más efectiva con tus compañeros en un espacio virtual intuitivo"
+          },
+          "connection": {
+            "title": "Conexiones más Fuertes",
+            "description": "Construye relaciones significativas con tus compañeros a través de interacciones virtuales"
+          },
+          "growth": {
+            "title": "Desarrollo Profesional",
+            "description": "Accede a oportunidades de aprendizaje y crecimiento en un entorno virtual"
+          }
+        },
+        "features": {
+          "spaces": {
+            "title": "Espacios Sociales",
+            "description": "Conecta con compañeros en espacios virtuales diseñados para la interacción social"
+          },
+          "tools": {
+            "title": "Herramientas Integradas",
+            "description": "Accede a todas las herramientas necesarias para tu trabajo diario en un solo lugar"
+          },
+          "activities": {
+            "title": "Actividades Interactivas",
+            "description": "Participa en actividades y eventos virtuales que fomentan el espíritu de equipo"
+          }
+        },
+        "cta": {
+          "heading": "¿Listo para una Mejor Experiencia de Trabajo Remoto?",
+          "description": "Únete a miles de profesionales que disfrutan de una experiencia de trabajo remoto más conectada con Team Up.",
+          "primaryButton": "Comenzar Prueba Gratuita",
+          "secondaryButton": "Saber Más"
         }
       }
     }

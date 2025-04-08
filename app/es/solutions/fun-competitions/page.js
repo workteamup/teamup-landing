@@ -1,7 +1,7 @@
 "use client";
 
 import WebLayout from "../../../components/new-web/layout";
-import SolutionTemplate from "../../../components/new-web/solution-template";
+import SolutionTemplate from "../../../components/new-web/solution-type-template";
 import Button from "../../../components/new-web/button";
 import { useTranslations } from "../../../contexts/TranslationContext";
 
