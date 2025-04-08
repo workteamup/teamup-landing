@@ -42,7 +42,11 @@ export default function PricingCard({
   return (
     <div
       className={`bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 
-      ${isPopular ? "border-2 border-brand-purple" : "border border-gray-cloud hover:border-gray-smoke"} 
+      ${
+        isPopular
+          ? "border-2 border-brand-purple"
+          : "border border-gray-cloud hover:border-gray-smoke"
+      } 
       flex flex-col relative transform hover:-translate-y-1 ${customClasses}`}
     >
       {/* Popular tag */}
@@ -55,21 +59,21 @@ export default function PricingCard({
       {/* Header section */}
       <div
         className={`${
-          isPopular 
-            ? "bg-gradient-to-br from-brand-purple/10 to-brand-blue/5" 
+          isPopular
+            ? "bg-gradient-to-br from-brand-purple/10 to-brand-blue/5"
             : "bg-gradient-to-br from-gray-cloud to-gray-cloud/50"
         } px-8 py-10 border-b ${
           isPopular ? "border-brand-purple/20" : "border-gray-smoke"
         }`}
       >
-        <h2 className="text-2xl font-bold mb-3 text-gray-phantom font-poppins">
+        <h2 className="text-2xl font-semibold mb-3 text-gray-phantom font-poppins">
           {title}
         </h2>
         <p className="text-gray-graphite mb-8">{description}</p>
 
         {/* Price */}
         <div className="flex items-baseline">
-          <p className="text-5xl font-bold text-gray-phantom font-poppins">
+          <p className="text-5xl font-semibold text-gray-phantom font-poppins">
             {price}
             <span className="text-gray-graphite text-xl font-normal ml-1">
               {pricePeriod}
@@ -102,12 +106,16 @@ export default function PricingCard({
 
       {/* Features list */}
       <div className="px-8 py-10 flex-grow bg-white">
-        <h3 className="text-lg font-semibold mb-6 text-gray-phantom font-poppins">Features include:</h3>
+        <h3 className="text-lg font-semibold mb-6 text-gray-phantom font-poppins">
+          Features include:
+        </h3>
         <ul className="space-y-5">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start group">
               <CheckIcon className="h-5 w-5 text-brand-teal mt-0.5 flex-shrink-0 group-hover:text-brand-blue transition-colors" />
-              <span className="ml-3 text-gray-space group-hover:text-gray-phantom transition-colors">{feature}</span>
+              <span className="ml-3 text-gray-space group-hover:text-gray-phantom transition-colors">
+                {feature}
+              </span>
             </li>
           ))}
         </ul>

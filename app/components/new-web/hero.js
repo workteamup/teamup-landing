@@ -82,7 +82,7 @@ export default function Hero() {
               })}
             </p>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-brand-dark leading-tight font-poppins">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-semibold text-brand-dark leading-tight font-poppins">
               {t("Hero.titleLine1", {
                 en: "Happier teams",
                 es: "Los equipos felices",

@@ -87,7 +87,7 @@ const Features = () => {
           <p className="text-xs sm:text-sm md:text-base font-medium uppercase tracking-wider sm:tracking-widest mb-2 sm:mb-3 md:mb-4 text-brand-purple">
             {t("Features.tag")}
           </p>
-          <h2 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl font-bold text-brand-dark font-poppins">
+          <h2 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl font-semibold text-brand-dark font-poppins">
             {t("Features.heading")}
           </h2>
           <p className="text-lg md:text-xl text-gray-space max-w-3xl mx-auto">

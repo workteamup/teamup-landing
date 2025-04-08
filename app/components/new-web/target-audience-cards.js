@@ -114,14 +114,14 @@ export default function TargetAudienceCards({
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16 lg:mb-20">
           {language === "en" ? (
-            <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-gray-phantom font-poppins">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold mb-6 text-gray-phantom font-poppins">
               <span className="bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
                 Positive impact
               </span>{" "}
               at every level of your company
             </h2>
           ) : (
-            <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 text-gray-phantom font-poppins">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold mb-6 text-gray-phantom font-poppins">
               <span className="bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
                 Impacto positivo
               </span>{" "}
@@ -151,7 +151,7 @@ export default function TargetAudienceCards({
                 <div className="hero_product_content p-6 md:p-8 flex flex-col flex-grow min-h-[280px] md:min-h-[320px] relative overflow-visible">
                   <div className="hero_content_left max-w-[55%]">
                     <div className="hero_content_logo mb-4 md:mb-6">
-                      <h3 className="text-2xl md:text-3xl font-bold font-poppins">
+                      <h3 className="text-2xl md:text-3xl font-semibold font-poppins">
                         {card.title[language]}
                       </h3>
                     </div>

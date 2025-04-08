@@ -111,7 +111,7 @@ export default function CTASection({
 
           {/* Title */}
           <h2
-            className={`${titleSizeClasses} font-bold font-poppins ${themeClasses.text}`}
+            className={`${titleSizeClasses} font-semibold font-poppins ${themeClasses.text}`}
           >
             {title}
           </h2>

@@ -36,10 +36,10 @@ export default function EventPricingCard({
     >
       {/* Header section (centered) */}
       <div className="bg-gradient-to-br from-brand-teal/10 to-brand-blue/5 px-8 py-10 border-b border-gray-smoke text-center">
-        <h3 className="text-2xl font-bold mb-3 text-gray-phantom font-poppins">
+        <h3 className="text-2xl font-semibold mb-3 text-gray-phantom font-poppins">
           {title}
         </h3>
-        <p className="text-5xl font-bold text-gray-phantom font-poppins">
+        <p className="text-5xl font-semibold text-gray-phantom font-poppins">
           {price}
           <span className="text-gray-graphite text-xl font-normal ml-1">
             {pricePeriod}
@@ -49,7 +49,9 @@ export default function EventPricingCard({
 
       {/* Features list */}
       <div className="px-8 py-10 bg-white">
-        <h3 className="text-lg font-semibold mb-6 text-gray-phantom font-poppins text-center">Features include:</h3>
+        <h3 className="text-lg font-semibold mb-6 text-gray-phantom font-poppins text-center">
+          Features include:
+        </h3>
         <ul className="space-y-5 max-w-lg mx-auto">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start group">
@@ -63,9 +65,9 @@ export default function EventPricingCard({
 
         {/* CTA Button */}
         <div className="mt-10 text-center">
-          <Button 
-            href={ctaUrl} 
-            size={ctaSize} 
+          <Button
+            href={ctaUrl}
+            size={ctaSize}
             variant="primary"
             className="px-10"
           >

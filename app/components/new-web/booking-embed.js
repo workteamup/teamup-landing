@@ -141,7 +141,7 @@ export default function BookingEmbed({
     <section className={`py-12 md:py-16 lg:py-24 ${bgColor} ${customClasses}`}>
       <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <h2
-          className={`text-3xl md:text-4xl font-bold text-center mb-6 ${textColor} font-poppins`}
+          className={`text-3xl md:text-4xl font-semibold text-center mb-6 ${textColor} font-poppins`}
         >
           {t("ContactSection.title")}
         </h2>

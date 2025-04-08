@@ -77,7 +77,7 @@ export default function PageTitle({
         <div className={cn(alignmentClasses[align])}>
           <h1
             className={cn(
-              "font-bold font-poppins mb-6",
+              "font-semibold font-poppins mb-6",
               titleSizeClasses[size],
               titleColor
             )}

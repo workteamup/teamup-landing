@@ -115,7 +115,7 @@ export default function ProductTour({
                 </svg>
               </button>
               <div className="text-center">
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-phantom mb-3 sm:mb-4 font-poppins">
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-phantom mb-3 sm:mb-4 font-poppins">
                   Coming Soon!
                 </h3>
                 <p className="text-sm sm:text-base text-gray-space mb-5 sm:mb-6">
