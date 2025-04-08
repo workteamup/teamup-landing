@@ -485,44 +485,41 @@ export default function SpacePageTemplate({
         />
       </div>
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 py-12 space-y-24">
-        {/* Features Section */}
-        <section
-          ref={featuresRef}
-          className="py-16 md:py-24 -mx-4 px-8 md:px-24 rounded-[2.5rem]"
-          style={{
-            background: `linear-gradient(to bottom, white 0%, ${brand3Tints.tint90} 100%)`,
-          }}
-        >
-          <div className="container mx-auto">
-            <IconSectionTitle
-              icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-full h-full"
-                >
-                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                </svg>
-              }
-              title={language === "es" ? "Características" : "Features"}
-              align="center"
-              theme="purple"
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {content.features.map((feature, index) => (
-                <MinimalFeatureCard key={index} text={feature.title} />
-              ))}
-            </div>
+      {/* Features Section */}
+      <section
+        ref={featuresRef}
+        className="py-16 md:py-24 w-full"
+        style={{
+          background: `linear-gradient(to bottom, white 0%, ${brand3Tints.tint90} 100%)`,
+        }}
+      >
+        <div className="container mx-auto px-4">
+          <IconSectionTitle
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-full h-full"
+              >
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+              </svg>
+            }
+            title={language === "es" ? "Características" : "Features"}
+            align="center"
+            theme="purple"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {content.features.map((feature, index) => (
+              <MinimalFeatureCard key={index} text={feature.title} />
+            ))}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       {/* Mid-page CTA Section - Full Width */}
       <CTASection
@@ -538,100 +535,97 @@ export default function SpacePageTemplate({
         background="linear-gradient(to right, #F0FBFF, #ECF3FE)"
       />
 
-      {/* Continue with rest of content */}
-      <div className="container mx-auto px-4 py-12 space-y-24">
-        {/* How to Use Section */}
-        <section
-          ref={howToUseRef}
-          className="py-16 md:py-24 -mx-4 px-8 md:px-24 rounded-[2.5rem]"
-          style={{
-            background: `linear-gradient(to bottom, white 0%, ${brand1Tints.tint90} 100%)`,
-          }}
-        >
-          <div className="container mx-auto">
-            <IconSectionTitle
-              icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-full h-full"
-                >
-                  <path d="M12 20V10M18 20V4M6 20v-4" />
-                </svg>
-              }
-              title={language === "es" ? "Cómo Usar" : "How to Use"}
-              align="center"
+      {/* How to Use Section */}
+      <section
+        ref={howToUseRef}
+        className="py-16 md:py-24 w-full"
+        style={{
+          background: `linear-gradient(to bottom, white 0%, ${brand1Tints.tint90} 100%)`,
+        }}
+      >
+        <div className="container mx-auto px-4">
+          <IconSectionTitle
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-full h-full"
+              >
+                <path d="M12 20V10M18 20V4M6 20v-4" />
+              </svg>
+            }
+            title={language === "es" ? "Cómo Usar" : "How to Use"}
+            align="center"
+            theme="teal"
+          />
+          <div className="max-w-4xl mx-auto">
+            <StepsList
+              steps={content.howToUse.map((step) => ({
+                ...step,
+                image: getHeroImage(), // Using the space image as a placeholder
+              }))}
               theme="teal"
             />
-            <div className="max-w-4xl mx-auto">
-              <StepsList
-                steps={content.howToUse.map((step) => ({
-                  ...step,
-                  image: getHeroImage(), // Using the space image as a placeholder
-                }))}
-                theme="teal"
-              />
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Use Cases Section */}
-        <section
-          ref={useCasesRef}
-          className="py-16 md:py-24 -mx-4 px-8 md:px-24 rounded-[2.5rem]"
-          style={{
-            background: `linear-gradient(to bottom, white 0%, ${brand2Tints.tint90} 100%)`,
-          }}
-        >
-          <div className="container mx-auto">
-            <IconSectionTitle
-              icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-full h-full"
-                >
-                  <rect x="2" y="7" width="20" height="14" rx="2"></rect>
-                  <path d="M16 3h-8v4h8V3z"></path>
-                </svg>
-              }
-              title="Use Cases"
-              align="center"
-              theme="blue"
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <MinimalFeatureCard text="Use Case 1" />
-              <MinimalFeatureCard text="Use Case 2" />
-              <MinimalFeatureCard text="Use Case 3" />
-            </div>
+      {/* Use Cases Section */}
+      <section
+        ref={useCasesRef}
+        className="py-16 md:py-24 w-full"
+        style={{
+          background: `linear-gradient(to bottom, white 0%, ${brand2Tints.tint90} 100%)`,
+        }}
+      >
+        <div className="container mx-auto px-4">
+          <IconSectionTitle
+            icon={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-full h-full"
+              >
+                <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                <path d="M16 3h-8v4h8V3z"></path>
+              </svg>
+            }
+            title="Use Cases"
+            align="center"
+            theme="blue"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <MinimalFeatureCard text="Use Case 1" />
+            <MinimalFeatureCard text="Use Case 2" />
+            <MinimalFeatureCard text="Use Case 3" />
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* CTA Section */}
-        <section className="bg-gray-cloud rounded-xl p-8 max-w-4xl mx-auto">
-          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-phantom">
-            {content.cta.title}
-          </h2>
-          <p className="text-center mb-6 text-gray-graphite">
-            {content.cta.description}
-          </p>
-          <div className="flex justify-center">
-            <Button href="https://app.teamup.works/signup" size="lg">
-              {content.cta.buttonText}
-            </Button>
-          </div>
-        </section>
-      </div>
+      {/* CTA Section */}
+      <section className="bg-gray-cloud rounded-xl p-8 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4 text-center text-gray-phantom">
+          {content.cta.title}
+        </h2>
+        <p className="text-center mb-6 text-gray-graphite">
+          {content.cta.description}
+        </p>
+        <div className="flex justify-center">
+          <Button href="https://app.teamup.works/signup" size="lg">
+            {content.cta.buttonText}
+          </Button>
+        </div>
+      </section>
     </WebLayout>
   );
 }

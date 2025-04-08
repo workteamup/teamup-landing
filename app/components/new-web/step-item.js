@@ -57,7 +57,7 @@ export default function StepItem({
 
         {/* Content Container */}
         <div className="flex-1 pt-1.5">
-          <h3 className="text-xl font-semibold mb-2 text-gray-phantom">
+          <h3 className="text-xl font-semibold mb-2 text-gray-phantom font-poppins">
             {title}
           </h3>
           <p className="text-gray-space">{description}</p>
