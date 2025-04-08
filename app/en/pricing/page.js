@@ -78,7 +78,12 @@ export default function PricingPage() {
         align="center"
         size="large"
         theme="dark"
-        gradient="linear-gradient(165deg, #635DF5 0%, #67DAFA 100%)"
+        gradient={`
+          radial-gradient(circle at 15% 15%, rgba(99, 93, 245, 0.6) 0%, transparent 45%),
+          radial-gradient(circle at 85% 15%, rgba(63, 137, 246, 0.6) 0%, transparent 45%),
+          radial-gradient(circle at 50% 70%, rgba(103, 218, 250, 0.5) 0%, transparent 55%),
+          linear-gradient(165deg, #252E4B 0%, #1F2438 100%)
+        `}
       />
 
       <div className="container mx-auto px-4 py-12">
