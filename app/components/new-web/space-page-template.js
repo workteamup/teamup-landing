@@ -529,10 +529,10 @@ export default function SpacePageTemplate({
         buttonUrl="https://app.teamup.works/signup"
         secondaryButtonText="Contact Sales"
         secondaryButtonUrl="/contact"
-        theme="light"
+        theme="dark"
         align="center"
         titleSize="lg"
-        background="linear-gradient(to right, #F0FBFF, #ECF3FE)"
+        background="linear-gradient(to right, #252E4B, #1F2438)"
       />
 
       {/* How to Use Section */}
