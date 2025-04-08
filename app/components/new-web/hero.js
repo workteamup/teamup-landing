@@ -24,13 +24,17 @@ export default function Hero() {
   const t = useTranslations();
 
   // Define gradients using design tokens instead of hardcoded values
-  const backgroundGradient = `linear-gradient(130deg, ${brand3Tints.tint90} 0%, ${brand3Tints.tint90} 45%, ${brand2Tints.tint90} 75%, ${brand2Tints.tint90} 100%)`;
+  const backgroundGradient = `radial-gradient(circle at 0% 0%, ${brand3Tints.tint70} 0%, transparent 50%),
+                             radial-gradient(circle at 100% 0%, ${brand2Tints.tint70} 0%, transparent 50%),
+                             radial-gradient(circle at 50% 100%, ${brand1Tints.tint70} 0%, transparent 50%),
+                             radial-gradient(circle at 50% 50%, ${brand3Tints.tint80} 0%, transparent 100%),
+                             linear-gradient(165deg, ${brand3Tints.tint90} 0%, ${brand2Tints.tint90} 100%)`;
 
-  // Blob gradients using design tokens
-  const purpleBlob = `radial-gradient(circle, rgba(138, 75, 255, 0.8) 0%, rgba(138, 75, 255, 0.15) 70%)`;
-  const blueBlob = `radial-gradient(circle, rgba(94, 172, 247, 0.9) 0%, rgba(94, 172, 247, 0.2) 60%)`;
-  const orangeBlob = `radial-gradient(circle, rgba(255, 158, 27, 0.8) 0%, rgba(255, 158, 27, 0.15) 70%)`;
-  const pinkBlob = `radial-gradient(circle, rgba(255, 102, 196, 0.7) 0%, rgba(255, 102, 196, 0.1) 70%)`;
+  // Remove old blob gradients since we're using the mesh gradient
+  const purpleBlob = `radial-gradient(circle, rgba(99, 93, 245, 0.15) 0%, rgba(99, 93, 245, 0.05) 70%)`;
+  const blueBlob = `radial-gradient(circle, rgba(63, 137, 246, 0.15) 0%, rgba(63, 137, 246, 0.05) 60%)`;
+  const orangeBlob = `radial-gradient(circle, rgba(103, 218, 250, 0.15) 0%, rgba(103, 218, 250, 0.05) 70%)`;
+  const pinkBlob = `radial-gradient(circle, rgba(99, 93, 245, 0.1) 0%, rgba(99, 93, 245, 0.02) 70%)`;
 
   return (
     <section
@@ -71,7 +75,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Left content column */}
           <div className="w-full lg:w-3/5 space-y-6 lg:space-y-8">
-            <p className="text-gray-graphite font-semibold text-base md:text-lg xl:text-xl">
+            <p className="text-gray-phantom font-semibold text-base md:text-lg xl:text-xl">
               {t("Hero.tagline", {
                 en: "The #1 solution for a flexible workspace",
                 es: "La solución #1 para un espacio de trabajo flexible",
@@ -85,14 +89,16 @@ export default function Hero() {
               })}{" "}
               <br className="hidden sm:block" />
               <span className="sm:hidden"> </span>
-              {t("Hero.titleLine2", {
-                en: "perform better",
-                es: "rinden mejor",
-              })}
+              <span className="text-brand-purple">
+                {t("Hero.titleLine2", {
+                  en: "perform better",
+                  es: "rinden mejor",
+                })}
+              </span>
             </h1>
 
             <p
-              className="text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-graphite max-w-lg whitespace-normal break-normal"
+              className="text-lg md:text-xl lg:text-xl xl:text-2xl text-brand-dark max-w-lg whitespace-normal break-normal font-medium"
               style={{
                 hyphens: "none",
                 WebkitHyphens: "none",
