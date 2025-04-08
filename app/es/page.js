@@ -8,6 +8,7 @@ import TargetAudienceCards from "../components/new-web/target-audience-cards";
 import UseCasesSection from "../components/new-web/use-cases-section";
 import Hero from "../components/new-web/hero";
 import ProductTour from "../components/new-web/product-tour";
+import Testimonial from "../components/new-web/testimonial";
 import BookingEmbed from "../components/new-web/booking-embed";
 import Features from "../components/new-web/features";
 import CTASection from "../components/new-web/cta-section";
@@ -62,6 +63,18 @@ export default function HomePage() {
         bgImage="/images/debate.jpg"
         videoSrc="/videos/placeholder.mp4"
       />
+
+      {/* Testimonials Section */}
+      <div className="container mx-auto px-4 py-16">
+        <Testimonial
+          quote="Con Dovetail, el trabajo que hemos realizado en el pasado siempre está disponible para que el trabajo que hacemos en el futuro no sea redundante."
+          name="Roy Olende"
+          jobTitle="Director de Investigación UX"
+          companyLogo="/svg/new-logo-dark.svg"
+          companyName="Team Up"
+          align="center"
+        />
+      </div>
 
       {/* Target Audience Cards */}
       <TargetAudienceCards

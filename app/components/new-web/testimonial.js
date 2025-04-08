@@ -22,7 +22,7 @@ export default function Testimonial({
   align = "center",
 }) {
   return (
-    <div className="max-w-4xl mx-auto px-4">
+    <div className="max-w-[95%] sm:max-w-[90%] md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto px-4">
       <div
         className={`flex flex-col ${
           align === "center"
@@ -48,7 +48,7 @@ export default function Testimonial({
         </div>
 
         {/* Quote text */}
-        <blockquote className="text-2xl md:text-3xl font-medium text-gray-phantom mb-8 max-w-3xl">
+        <blockquote className="text-3xl md:text-4xl lg:text-5xl font-medium text-gray-phantom mb-8 w-full max-w-[98%] sm:max-w-[95%] md:max-w-3xl lg:max-w-4xl xl:max-w-5xl">
           {quote}
         </blockquote>
 
