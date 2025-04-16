@@ -15,6 +15,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { brand3Tints, brand1Tints, brand2Tints } from "../../lib/design-tokens";
 import StepsList from "./steps-list";
+import Perks from "./perks";
 
 /**
  * SpacePageTemplate Component
@@ -91,9 +92,9 @@ export default function SpacePageTemplate({
     setActiveSection(section);
   };
 
-  const imageRotate = useTransform(scrollYProgress, [0, 0.5], [45, 0]);
-  const imageTranslateZ = useTransform(scrollYProgress, [0, 0.5], [-200, 0]);
-  const imageScale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+  const imageRotate = useTransform(scrollYProgress, [0, 0.8], [45, 0]);
+  const imageTranslateZ = useTransform(scrollYProgress, [0, 0.8], [-200, 0]);
+  const imageScale = useTransform(scrollYProgress, [0, 0.8], [0.8, 1]);
 
   // Color pairing system for name and underline
   const colorPairs = [
@@ -141,6 +142,26 @@ export default function SpacePageTemplate({
       description: "Experience the power of virtual spaces with your team.",
       buttonText: "Try Free for 2 Months",
     },
+    perks: [
+      {
+        title: "Real-time Collaboration",
+        description:
+          "Work together seamlessly with your team members, no matter where they are.",
+        icon: "/icons/collaboration.svg",
+      },
+      {
+        title: "Easy Integration",
+        description:
+          "Connect with your favorite tools and workflows effortlessly.",
+        icon: "/icons/integration.svg",
+      },
+      {
+        title: "Secure & Reliable",
+        description:
+          "Your team's data is protected with enterprise-grade security.",
+        icon: "/icons/security.svg",
+      },
+    ],
   };
 
   // Spanish translations
@@ -156,6 +177,26 @@ export default function SpacePageTemplate({
         "Experimenta el poder de los espacios virtuales con tu equipo.",
       buttonText: "Prueba Gratis por 2 Meses",
     },
+    perks: [
+      {
+        title: "Colaboración en Tiempo Real",
+        description:
+          "Trabaja sin problemas con los miembros de tu equipo, sin importar dónde estén.",
+        icon: "/icons/collaboration.svg",
+      },
+      {
+        title: "Integración Sencilla",
+        description:
+          "Conéctate con tus herramientas y flujos de trabajo favoritos sin esfuerzo.",
+        icon: "/icons/integration.svg",
+      },
+      {
+        title: "Seguro y Confiable",
+        description:
+          "Los datos de tu equipo están protegidos con seguridad de nivel empresarial.",
+        icon: "/icons/security.svg",
+      },
+    ],
   };
 
   // Select language translations or use custom ones if provided
@@ -577,6 +618,9 @@ export default function SpacePageTemplate({
           </div>
         </div>
       </section>
+
+      {/* Perks Section */}
+      <Perks perks={t.perks} language={language} />
 
       {/* Use Cases Section */}
       <section
