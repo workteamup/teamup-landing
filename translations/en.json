@@ -149,7 +149,8 @@
     "byPain": "BY PAIN",
     "employeeRotation": "Employee Rotation",
     "employeeEngagement": "Employee Engagement",
-    "remoteDisconnection": "Remote Disconnection"
+    "remoteDisconnection": "Remote Disconnection",
+    "forMarketing": "For Marketing"
   },
   "CookiePolicy": {
     "title": "Cookie Policy",
@@ -848,5 +849,29 @@
     "description": "Contact our team to create a tailored solution for your specific needs.",
     "buttonText": "Contact Sales",
     "secondaryButtonText": "View Examples"
+  },
+  "SolutionsByRole": {
+    "benefitsHeading": "How Team Up! Benefits",
+    "problemsHeading": "The Challenge in Numbers",
+    "featuresHeading": "Key Features for",
+    "spotlightHeading": "Features Spotlight",
+    "comparisonHeading": "Team Up! vs. Traditional Solutions",
+    "useCasesHeading": "Use Cases",
+    "howItWorksHeading": "How It Works"
+  },
+  "SolutionsByPain": {
+    "importanceHeading": "Why It's Important to Solve",
+    "problemsHeading": "The Problem in Numbers",
+    "benefitsHeading": "Benefits of Using Team Up!",
+    "comparisonHeading": "Team Up! vs. Traditional Solutions",
+    "useCasesHeading": "Use Cases",
+    "spotlightHeading": "Features Spotlight",
+    "howItWorksHeading": "How It Works",
+    "testimonialHeading": "What Our Customers Say",
+    "reasonTitle": "Reason",
+    "benefitTitle": "Benefit",
+    "source": "Source:",
+    "traditionalSolution": "Traditional Solution:",
+    "teamUpAdvantage": "Team Up! Advantage:"
   }
 }

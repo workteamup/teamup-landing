@@ -8,3 +8,5 @@ Whenever creating components inside the project, take a look at:
 - [DESIGN-SYSTEM-GUIDELINES.md](mdc:DESIGN-SYSTEM-GUIDELINES.md)
 
 When creating new components, add them to the [design-system.js](mdc:app/components/design-system.js) and add documentation to [DESIGN-SYSTEM-GUIDELINES.md](mdc:DESIGN-SYSTEM-GUIDELINES.md)
+
+When creating new pages components always look at the list of componentes in the new-web folder inside app/components. -> app/components/new-web

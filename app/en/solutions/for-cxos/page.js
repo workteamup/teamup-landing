@@ -1,133 +1,113 @@
 "use client";
 
 import WebLayout from "../../../components/new-web/layout";
-import SolutionRoleTemplate from "../../../components/new-web/solution-role-template";
-import Button from "../../../components/new-web/button";
-import { useTranslations } from "../../../contexts/TranslationContext";
+import SolutionByRolePage from "../../../components/new-web/solution-by-role-page";
 
 export default function CxoSolutionPage() {
-  const t = useTranslations();
-
-  const challenges = [
-    {
-      title: t("SolutionTemplates.roles.cxo.challenges.engagement.title"),
-      description: t(
-        "SolutionTemplates.roles.cxo.challenges.engagement.description"
-      ),
+  // Data extracted from solutions-by-role.md for CXOs
+  const cxoData = {
+    title: "CXOs",
+    hero: {
+      headline: "Drive Business Success with a Connected Workforce",
+      subheadline: "Team Up! boosts productivity, reduces costs, and strengthens retention—all with measurable ROI.",
+      cta: "Calculate Your ROI Potential"
     },
-    {
-      title: t("SolutionTemplates.roles.cxo.challenges.culture.title"),
-      description: t(
-        "SolutionTemplates.roles.cxo.challenges.culture.description"
-      ),
+    benefits: [
+      {
+        title: "Cost Savings",
+        description: "Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+      },
+      {
+        title: "Productivity Gains",
+        description: "Increase team output by 20% with 3D environments that enhance collaboration, communication, and cross-team innovation."
+      },
+      {
+        title: "Retention Boost",
+        description: "Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+      }
+    ],
+    stats: [
+      {
+        value: "47%",
+        description: "of executives report that misalignment across departments is their biggest challenge in distributed teams.",
+        source: "Harvard Business Review, 2023"
+      },
+      {
+        value: "$15,000",
+        description: "Companies lose an average of $15,000 per employee annually due to ineffective virtual meetings and collaboration."
+      },
+      {
+        value: "32%",
+        description: "Only 32% of leadership teams feel they have adequate visibility into employee engagement across remote and hybrid teams."
+      }
+    ],
+    features: [
+      {
+        title: "Analytics Dashboard",
+        description: "Track engagement metrics, participation rates, and correlation with productivity and retention to measure impact and optimize investment."
+      },
+      {
+        title: "Scalable Events",
+        description: "Host company-wide gatherings in immersive 3D spaces without logistical overhead or travel expenses."
+      },
+      {
+        title: "Custom Integration",
+        description: "Seamlessly connect with your existing tools for fast adoption and minimal disruption to workflows."
+      }
+    ],
+    spotlight: [
+      {
+        title: "Executive Dashboard",
+        description: "Real-time analytics on team engagement, collaboration patterns, and productivity metrics—all in one accessible view. Measure the ROI of your team-building investments through quantitative data."
+      },
+      {
+        title: "Strategy Visualization Tools",
+        description: "Transform abstract strategies into interactive visual models in our dedicated Planning room, where leadership teams can collaboratively refine and align on core business initiatives."
+      },
+      {
+        title: "Leadership Presence",
+        description: "Maintain authentic leadership presence in a distributed environment with immersive town halls and 3D office hours that feel personal and impactful, not just another video call."
+      }
+    ],
+    testimonial: {
+      quote: "Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months. The ROI has been exceptional—our engagement costs dropped while our results improved dramatically.",
+      author: "Wei Zhang",
+      position: "CEO, TechInnovate Co."
     },
-    {
-      title: t("SolutionTemplates.roles.cxo.challenges.productivity.title"),
-      description: t(
-        "SolutionTemplates.roles.cxo.challenges.productivity.description"
-      ),
-    },
-  ];
-
-  const benefits = [
-    {
-      title: t("SolutionTemplates.roles.cxo.benefits.culture.title"),
-      description: t(
-        "SolutionTemplates.roles.cxo.benefits.culture.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.cxo.benefits.retention.title"),
-      description: t(
-        "SolutionTemplates.roles.cxo.benefits.retention.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.cxo.benefits.costs.title"),
-      description: t("SolutionTemplates.roles.cxo.benefits.costs.description"),
-    },
-    {
-      title: t("SolutionTemplates.roles.cxo.benefits.innovation.title"),
-      description: t(
-        "SolutionTemplates.roles.cxo.benefits.innovation.description"
-      ),
-    },
-  ];
-
-  const features = [
-    {
-      title: t("SolutionTemplates.roles.cxo.features.analytics.title"),
-      description: t(
-        "SolutionTemplates.roles.cxo.features.analytics.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.cxo.features.customization.title"),
-      description: t(
-        "SolutionTemplates.roles.cxo.features.customization.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.cxo.features.security.title"),
-      description: t(
-        "SolutionTemplates.roles.cxo.features.security.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-        />
-      ),
-    },
-  ];
+    comparisons: [
+      {
+        traditional: "Annual Leadership Retreats",
+        advantage: "Host frequent, scalable virtual summits without the high costs or logistical challenges of travel. Connect leaders weekly instead of yearly for better alignment."
+      },
+      {
+        traditional: "Executive Coaching Programs",
+        advantage: "Deliver ongoing leadership development through interactive, real-time experiences in 3D environments at a fraction of traditional coaching costs."
+      },
+      {
+        traditional: "Enterprise Social Networks",
+        advantage: "Replace static communication with immersive, engaging environments that provide real-time analytics for better decision-making and visible engagement."
+      }
+    ],
+    useCases: [
+      "Host a virtual leadership summit in our Auditorium environment to align executives across regions with interactive voting and breakout discussions.",
+      "Conduct a company-wide town hall with interactive Q&A in a customized branded space to enhance transparency and connection.",
+      "Facilitate a strategic planning session with key stakeholders in a virtual boardroom with collaborative visualization tools."
+    ],
+    howItWorks: [
+      "Sign up for Executive access with priority support and custom implementation.",
+      "Our team configures your branded environments and analytics dashboard.",
+      "Launch with guided implementation and start seeing measurable results within 30 days."
+    ],
+    getStarted: {
+      heading: "Implement Team Up! in days and see results in weeks",
+      description: "No IT overhaul required—just transformative connection.",
+      cta: "Calculate Your Potential Savings Now"
+    }
+  };
 
   return (
     <WebLayout>
-      <SolutionRoleTemplate
-        title={t("SolutionTemplates.roles.cxo.title")}
-        description={t("SolutionTemplates.roles.cxo.description")}
-        challenges={challenges}
-        benefits={benefits}
-        features={features}
-      >
-        {/* Call to action section */}
-        <section className="bg-gray-cloud py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
-              {t("SolutionTemplates.roles.cxo.cta.heading")}
-            </h2>
-            <p className="text-lg text-gray-graphite max-w-3xl mx-auto mb-8">
-              {t("SolutionTemplates.roles.cxo.cta.description")}
-            </p>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <Button href="https://app.teamup.works/signup" size="lg">
-                {t("SolutionTemplates.roles.cxo.cta.primaryButton")}
-              </Button>
-              <Button href="/contact" variant="secondary" size="lg">
-                {t("SolutionTemplates.roles.cxo.cta.secondaryButton")}
-              </Button>
-            </div>
-          </div>
-        </section>
-      </SolutionRoleTemplate>
+      <SolutionByRolePage roleData={cxoData} />
     </WebLayout>
   );
 }

@@ -1,133 +1,117 @@
 "use client";
 
 import WebLayout from "../../../components/new-web/layout";
-import SolutionRoleTemplate from "../../../components/new-web/solution-role-template";
-import Button from "../../../components/new-web/button";
-import { useTranslations } from "../../../contexts/TranslationContext";
+import SolutionByRolePage from "../../../components/new-web/solution-by-role-page";
 
 export default function HRSolutionPage() {
-  const t = useTranslations();
-
-  const challenges = [
-    {
-      title: t("SolutionTemplates.roles.hr.challenges.engagement.title"),
-      description: t(
-        "SolutionTemplates.roles.hr.challenges.engagement.description"
-      ),
+  // Data extracted from solutions-by-role.md for HR
+  const hrData = {
+    title: "HR Professionals",
+    hero: {
+      headline: "Build a Thriving Remote Culture That Attracts and Retains Talent",
+      subheadline: "Team Up! helps HR teams create engaging employee experiences that strengthen culture and boost retention in distributed workforces.",
+      cta: "See HR Solutions in Action"
     },
-    {
-      title: t("SolutionTemplates.roles.hr.challenges.teamBuilding.title"),
-      description: t(
-        "SolutionTemplates.roles.hr.challenges.teamBuilding.description"
-      ),
+    benefits: [
+      {
+        title: "Stronger Culture",
+        description: "Build and maintain a vibrant company culture that transcends physical boundaries and connects remote employees."
+      },
+      {
+        title: "Higher Retention",
+        description: "Reduce turnover by creating meaningful connections and engagement opportunities that make employees feel valued."
+      },
+      {
+        title: "Better Onboarding",
+        description: "Welcome new hires with immersive experiences that accelerate integration and build relationships from day one."
+      },
+      {
+        title: "Team Cohesion",
+        description: "Foster stronger bonds between team members through regular interactive activities and shared virtual experiences."
+      }
+    ],
+    stats: [
+      {
+        value: "76%",
+        description: "of HR leaders say maintaining company culture is their biggest challenge in remote work environments.",
+        source: "HR Executive Survey, 2023"
+      },
+      {
+        value: "41%",
+        description: "higher retention rates in companies with strong virtual team-building programs for remote employees."
+      },
+      {
+        value: "68%",
+        description: "of employees say feeling connected to colleagues is a top factor in their decision to stay with a company."
+      }
+    ],
+    features: [
+      {
+        title: "Event Planning Tools",
+        description: "Easily organize and manage virtual team-building events, celebrations, and company gatherings with intuitive planning tools."
+      },
+      {
+        title: "Engagement Analytics",
+        description: "Track participation, interaction patterns, and feedback to measure the effectiveness of your culture initiatives."
+      },
+      {
+        title: "Customizable Spaces",
+        description: "Create branded virtual environments that reflect your company values and provide context for different types of interactions."
+      }
+    ],
+    spotlight: [
+      {
+        title: "Virtual Onboarding Hub",
+        description: "Welcome new employees with an immersive onboarding experience in a dedicated space. Include interactive company history, values exploration, and opportunities to meet team members in a structured environment."
+      },
+      {
+        title: "Culture Connection Center",
+        description: "Maintain company traditions and celebrations in a virtual space designed for social connection. Host regular events from casual coffee chats to milestone celebrations that strengthen relationships."
+      },
+      {
+        title: "Wellness & Development Zone",
+        description: "Support employee wellbeing and growth with dedicated spaces for mindfulness sessions, learning workshops, and skill development activities that show investment in your team."
+      }
+    ],
+    testimonial: {
+      quote: "As an HR Director managing a global team, Team Up! has been transformative for our culture. Our onboarding completion rates increased by 32%, and our quarterly engagement scores have shown consistent improvement since implementation.",
+      author: "Elena Rodriguez",
+      position: "HR Director, Global Tech Solutions"
     },
-    {
-      title: t("SolutionTemplates.roles.hr.challenges.culture.title"),
-      description: t(
-        "SolutionTemplates.roles.hr.challenges.culture.description"
-      ),
-    },
-  ];
-
-  const benefits = [
-    {
-      title: t("SolutionTemplates.roles.hr.benefits.culture.title"),
-      description: t("SolutionTemplates.roles.hr.benefits.culture.description"),
-    },
-    {
-      title: t("SolutionTemplates.roles.hr.benefits.retention.title"),
-      description: t(
-        "SolutionTemplates.roles.hr.benefits.retention.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.hr.benefits.onboarding.title"),
-      description: t(
-        "SolutionTemplates.roles.hr.benefits.onboarding.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.hr.benefits.cohesion.title"),
-      description: t(
-        "SolutionTemplates.roles.hr.benefits.cohesion.description"
-      ),
-    },
-  ];
-
-  const features = [
-    {
-      title: t("SolutionTemplates.roles.hr.features.eventPlanning.title"),
-      description: t(
-        "SolutionTemplates.roles.hr.features.eventPlanning.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.hr.features.analytics.title"),
-      description: t(
-        "SolutionTemplates.roles.hr.features.analytics.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.hr.features.customization.title"),
-      description: t(
-        "SolutionTemplates.roles.hr.features.customization.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-        />
-      ),
-    },
-  ];
+    comparisons: [
+      {
+        traditional: "Video Conference Onboarding",
+        advantage: "Create interactive, self-guided onboarding experiences in 3D spaces that new hires can explore at their own pace while still connecting with team members."
+      },
+      {
+        traditional: "Annual Team Building Retreats",
+        advantage: "Host regular, cost-effective virtual team building activities that maintain connection year-round rather than relying on infrequent in-person events."
+      },
+      {
+        traditional: "Static Employee Handbooks",
+        advantage: "Transform company policies and values into interactive experiences in virtual spaces that employees actually engage with and remember."
+      }
+    ],
+    useCases: [
+      "Design a comprehensive new hire onboarding journey with interactive stations for company history, team introductions, and role training.",
+      "Host a virtual company anniversary celebration with interactive timeline exhibits, recognition ceremonies, and social activities.",
+      "Create a recurring virtual wellness program with dedicated spaces for meditation, fitness challenges, and mental health resources."
+    ],
+    howItWorks: [
+      "Work with our team to design custom spaces aligned with your company culture and HR objectives.",
+      "Set up your event calendar and engagement activities with support from our customer success team.",
+      "Launch your HR initiatives and track engagement metrics to continuously improve your virtual employee experience."
+    ],
+    getStarted: {
+      heading: "Ready to transform your employee experience?",
+      description: "Join HR leaders who are building stronger remote cultures with Team Up!",
+      cta: "Book an HR-Focused Demo"
+    }
+  };
 
   return (
     <WebLayout>
-      <SolutionRoleTemplate
-        title={t("SolutionTemplates.roles.hr.title")}
-        description={t("SolutionTemplates.roles.hr.description")}
-        challenges={challenges}
-        benefits={benefits}
-        features={features}
-      >
-        {/* Call to action section */}
-        <section className="bg-gray-cloud py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
-              {t("SolutionTemplates.roles.hr.cta.heading")}
-            </h2>
-            <p className="text-lg text-gray-graphite max-w-3xl mx-auto mb-8">
-              {t("SolutionTemplates.roles.hr.cta.description")}
-            </p>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <Button href="https://app.teamup.works/signup" size="lg">
-                {t("SolutionTemplates.roles.hr.cta.primaryButton")}
-              </Button>
-              <Button href="/contact" variant="secondary" size="lg">
-                {t("SolutionTemplates.roles.hr.cta.secondaryButton")}
-              </Button>
-            </div>
-          </div>
-        </section>
-      </SolutionRoleTemplate>
+      <SolutionByRolePage roleData={hrData} />
     </WebLayout>
   );
 }

@@ -368,7 +368,8 @@
     "forCxos": "Para Directivos",
     "forHr": "Para RRHH",
     "forManagers": "Para Gerentes",
-    "forEmployees": "Para Empleados"
+    "forEmployees": "Para Empleados",
+    "forMarketing": "Para Marketing"
   },
   "Blog": {
     "title": "Nuestro Blog",
@@ -968,5 +969,29 @@
     "description": "Contacta con nuestro equipo para crear una solución adaptada a tus necesidades específicas.",
     "buttonText": "Contactar con Ventas",
     "secondaryButtonText": "Ver Ejemplos"
+  },
+  "SolutionsByRole": {
+    "benefitsHeading": "Cómo Team Up! Beneficia a",
+    "problemsHeading": "El Desafío en Números",
+    "featuresHeading": "Características Clave para",
+    "spotlightHeading": "Destacados de Funcionalidades",
+    "comparisonHeading": "Team Up! vs. Soluciones Tradicionales",
+    "useCasesHeading": "Casos de Uso",
+    "howItWorksHeading": "Cómo Funciona"
+  },
+  "SolutionsByPain": {
+    "importanceHeading": "Por Qué Es Importante Resolver",
+    "problemsHeading": "El Problema en Números",
+    "benefitsHeading": "Beneficios de Usar Team Up!",
+    "comparisonHeading": "Team Up! vs. Soluciones Tradicionales",
+    "useCasesHeading": "Casos de Uso",
+    "spotlightHeading": "Características Destacadas",
+    "howItWorksHeading": "Cómo Funciona",
+    "testimonialHeading": "Lo Que Dicen Nuestros Clientes",
+    "reasonTitle": "Razón",
+    "benefitTitle": "Beneficio",
+    "source": "Fuente:",
+    "traditionalSolution": "Solución Tradicional:",
+    "teamUpAdvantage": "Ventaja de Team Up!:"
   }
 }

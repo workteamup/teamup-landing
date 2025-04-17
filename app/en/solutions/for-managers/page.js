@@ -1,139 +1,117 @@
 "use client";
 
 import WebLayout from "../../../components/new-web/layout";
-import SolutionRoleTemplate from "../../../components/new-web/solution-role-template";
-import Button from "../../../components/new-web/button";
-import { useTranslations } from "../../../contexts/TranslationContext";
+import SolutionByRolePage from "../../../components/new-web/solution-by-role-page";
 
 export default function ManagersSolutionPage() {
-  const t = useTranslations();
-
-  const challenges = [
-    {
-      title: t(
-        "SolutionTemplates.roles.managers.challenges.communication.title"
-      ),
-      description: t(
-        "SolutionTemplates.roles.managers.challenges.communication.description"
-      ),
+  // Data extracted from solutions-by-role.md for Managers
+  const managersData = {
+    title: "Managers & Team Leads",
+    hero: {
+      headline: "Lead High-Performing Remote Teams with Confidence",
+      subheadline: "Team Up! gives managers the tools to build connection, drive collaboration, and maintain team momentum—no matter where your people work.",
+      cta: "Elevate Your Team Management"
     },
-    {
-      title: t(
-        "SolutionTemplates.roles.managers.challenges.collaboration.title"
-      ),
-      description: t(
-        "SolutionTemplates.roles.managers.challenges.collaboration.description"
-      ),
+    benefits: [
+      {
+        title: "Stronger Team Bonds",
+        description: "Build genuine connections between team members that translate to better collaboration and mutual support."
+      },
+      {
+        title: "Increased Engagement",
+        description: "Keep your team motivated and engaged with interactive experiences that break the monotony of remote work."
+      },
+      {
+        title: "Better Communication",
+        description: "Create an environment where information flows naturally and team members feel comfortable sharing ideas."
+      },
+      {
+        title: "Visible Leadership",
+        description: "Maintain presence and accessibility as a leader, even when you can't be physically present with your team."
+      }
+    ],
+    stats: [
+      {
+        value: "63%",
+        description: "of managers report that maintaining team cohesion is their biggest challenge in remote environments.",
+        source: "Leadership Development Survey, 2023"
+      },
+      {
+        value: "82%",
+        description: "of team members say they feel more connected to colleagues after participating in virtual team activities."
+      },
+      {
+        value: "3.4x",
+        description: "higher problem-solving effectiveness in teams with strong social connections versus those without."
+      }
+    ],
+    features: [
+      {
+        title: "Team Spaces",
+        description: "Create dedicated virtual environments for your team to collaborate, socialize, and build relationships."
+      },
+      {
+        title: "Meeting Tools",
+        description: "Run more effective meetings with interactive features that boost participation and keep everyone engaged."
+      },
+      {
+        title: "Team Insights",
+        description: "Gain visibility into team dynamics and engagement patterns to identify opportunities for improvement."
+      }
+    ],
+    spotlight: [
+      {
+        title: "Daily Standup Zone",
+        description: "Transform routine check-ins into engaging interactions in a space designed for quick updates and team alignment. Visual project boards and interactive elements keep everyone focused and involved."
+      },
+      {
+        title: "Collaboration Hub",
+        description: "Enable seamless teamwork in a dedicated space with integrated tools for brainstorming, problem-solving, and project planning. Multiple work areas support different types of collaboration."
+      },
+      {
+        title: "Team Connection Corner",
+        description: "Strengthen relationships with a space designed for social interaction and team building. Regular activities and informal gatherings help remote team members develop the personal connections that drive effective collaboration."
+      }
+    ],
+    testimonial: {
+      quote: "As a manager of a fully distributed team, Team Up! has been a game-changer. Our team feels more connected than when we were in an office, and our productivity metrics have improved by 28% since implementation.",
+      author: "Marcus Johnson",
+      position: "Engineering Manager, TechSolutions Inc."
     },
-    {
-      title: t("SolutionTemplates.roles.managers.challenges.engagement.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.challenges.engagement.description"
-      ),
-    },
-  ];
-
-  const benefits = [
-    {
-      title: t("SolutionTemplates.roles.managers.benefits.productivity.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.benefits.productivity.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.managers.benefits.communication.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.benefits.communication.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.managers.benefits.visibility.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.benefits.visibility.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.managers.benefits.engagement.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.benefits.engagement.description"
-      ),
-    },
-  ];
-
-  const features = [
-    {
-      title: t("SolutionTemplates.roles.managers.features.teamSpaces.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.features.teamSpaces.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.managers.features.monitoring.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.features.monitoring.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.managers.features.collaboration.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.features.collaboration.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
-        />
-      ),
-    },
-  ];
+    comparisons: [
+      {
+        traditional: "Video Conference Meetings",
+        advantage: "Create context-rich interactions in 3D environments where team members can move, collaborate, and engage naturally rather than staring at a grid of faces."
+      },
+      {
+        traditional: "Project Management Tools",
+        advantage: "Combine task management with immersive collaboration spaces where teams can discuss, visualize, and solve problems together in real-time."
+      },
+      {
+        traditional: "Team Chat Platforms",
+        advantage: "Replace text-only communication with rich virtual experiences that capture the nuance and spontaneity of in-person interactions."
+      }
+    ],
+    useCases: [
+      "Run engaging daily standups in a dedicated space with visual progress tracking and interactive team updates.",
+      "Host effective brainstorming sessions in a virtual room with collaborative whiteboards and voting tools.",
+      "Build team cohesion with regular social activities in custom spaces designed for connection and fun."
+    ],
+    howItWorks: [
+      "Set up your team's virtual workspace with customized areas for different types of collaboration.",
+      "Establish team routines and meeting templates that make the most of the interactive features.",
+      "Gradually introduce team building activities that strengthen relationships and improve collaboration."
+    ],
+    getStarted: {
+      heading: "Ready to take your team leadership to the next level?",
+      description: "Join managers who are building high-performing remote teams with Team Up!",
+      cta: "Start Your Team Transformation"
+    }
+  };
 
   return (
     <WebLayout>
-      <SolutionRoleTemplate
-        title={t("SolutionTemplates.roles.managers.title")}
-        description={t("SolutionTemplates.roles.managers.description")}
-        challenges={challenges}
-        benefits={benefits}
-        features={features}
-      >
-        {/* Call to action section */}
-        <section className="bg-gray-cloud py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
-              {t("SolutionTemplates.roles.managers.cta.heading")}
-            </h2>
-            <p className="text-lg text-gray-graphite max-w-3xl mx-auto mb-8">
-              {t("SolutionTemplates.roles.managers.cta.description")}
-            </p>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <Button href="https://app.teamup.works/signup" size="lg">
-                {t("SolutionTemplates.roles.managers.cta.primaryButton")}
-              </Button>
-              <Button href="/contact" variant="secondary" size="lg">
-                {t("SolutionTemplates.roles.managers.cta.secondaryButton")}
-              </Button>
-            </div>
-          </div>
-        </section>
-      </SolutionRoleTemplate>
+      <SolutionByRolePage roleData={managersData} />
     </WebLayout>
   );
 }

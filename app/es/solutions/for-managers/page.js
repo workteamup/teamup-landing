@@ -1,139 +1,117 @@
 "use client";
 
 import WebLayout from "../../../components/new-web/layout";
-import SolutionRoleTemplate from "../../../components/new-web/solution-role-template";
-import Button from "../../../components/new-web/button";
-import { useTranslations } from "../../../contexts/TranslationContext";
+import SolutionByRolePage from "../../../components/new-web/solution-by-role-page";
 
 export default function ManagersSolutionPage() {
-  const t = useTranslations();
-
-  const challenges = [
-    {
-      title: t(
-        "SolutionTemplates.roles.managers.challenges.communication.title"
-      ),
-      description: t(
-        "SolutionTemplates.roles.managers.challenges.communication.description"
-      ),
+  // Spanish version of Managers data
+  const managersData = {
+    title: "Gerentes y Líderes de Equipo",
+    hero: {
+      headline: "Lidera Equipos Remotos de Alto Rendimiento con Confianza",
+      subheadline: "Team Up! proporciona a los gerentes las herramientas para construir conexión, impulsar la colaboración y mantener el impulso del equipo, sin importar dónde trabajen tus personas.",
+      cta: "Eleva tu Gestión de Equipo"
     },
-    {
-      title: t(
-        "SolutionTemplates.roles.managers.challenges.collaboration.title"
-      ),
-      description: t(
-        "SolutionTemplates.roles.managers.challenges.collaboration.description"
-      ),
+    benefits: [
+      {
+        title: "Vínculos de Equipo más Fuertes",
+        description: "Construye conexiones genuinas entre los miembros del equipo que se traducen en mejor colaboración y apoyo mutuo."
+      },
+      {
+        title: "Mayor Compromiso",
+        description: "Mantén a tu equipo motivado y comprometido con experiencias interactivas que rompen la monotonía del trabajo remoto."
+      },
+      {
+        title: "Mejor Comunicación",
+        description: "Crea un entorno donde la información fluye naturalmente y los miembros del equipo se sienten cómodos compartiendo ideas."
+      },
+      {
+        title: "Liderazgo Visible",
+        description: "Mantén presencia y accesibilidad como líder, incluso cuando no puedes estar físicamente presente con tu equipo."
+      }
+    ],
+    stats: [
+      {
+        value: "63%",
+        description: "de los gerentes informan que mantener la cohesión del equipo es su mayor desafío en entornos remotos.",
+        source: "Encuesta de Desarrollo de Liderazgo, 2023"
+      },
+      {
+        value: "82%",
+        description: "de los miembros del equipo dicen que se sienten más conectados con los colegas después de participar en actividades virtuales de equipo."
+      },
+      {
+        value: "3.4x",
+        description: "mayor efectividad en la resolución de problemas en equipos con fuertes conexiones sociales versus aquellos sin ellas."
+      }
+    ],
+    features: [
+      {
+        title: "Espacios de Equipo",
+        description: "Crea entornos virtuales dedicados para que tu equipo colabore, socialice y construya relaciones."
+      },
+      {
+        title: "Herramientas de Reuniones",
+        description: "Realiza reuniones más efectivas con funciones interactivas que aumentan la participación y mantienen a todos comprometidos."
+      },
+      {
+        title: "Insights de Equipo",
+        description: "Obtén visibilidad sobre la dinámica del equipo y los patrones de participación para identificar oportunidades de mejora."
+      }
+    ],
+    spotlight: [
+      {
+        title: "Zona de Standup Diario",
+        description: "Transforma las verificaciones rutinarias en interacciones atractivas en un espacio diseñado para actualizaciones rápidas y alineación del equipo. Los tableros visuales de proyectos y elementos interactivos mantienen a todos enfocados e involucrados."
+      },
+      {
+        title: "Centro de Colaboración",
+        description: "Permite un trabajo en equipo fluido en un espacio dedicado con herramientas integradas para lluvia de ideas, resolución de problemas y planificación de proyectos. Múltiples áreas de trabajo apoyan diferentes tipos de colaboración."
+      },
+      {
+        title: "Rincón de Conexión de Equipo",
+        description: "Fortalece las relaciones con un espacio diseñado para la interacción social y la formación de equipos. Las actividades regulares y reuniones informales ayudan a los miembros del equipo remoto a desarrollar las conexiones personales que impulsan la colaboración efectiva."
+      }
+    ],
+    testimonial: {
+      quote: "Como gerente de un equipo completamente distribuido, Team Up! ha sido un cambio de juego. Nuestro equipo se siente más conectado que cuando estábamos en una oficina, y nuestras métricas de productividad han mejorado un 28% desde la implementación.",
+      author: "Marcus Johnson",
+      position: "Gerente de Ingeniería, TechSolutions Inc."
     },
-    {
-      title: t("SolutionTemplates.roles.managers.challenges.engagement.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.challenges.engagement.description"
-      ),
-    },
-  ];
-
-  const benefits = [
-    {
-      title: t("SolutionTemplates.roles.managers.benefits.productivity.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.benefits.productivity.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.managers.benefits.communication.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.benefits.communication.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.managers.benefits.visibility.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.benefits.visibility.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.managers.benefits.engagement.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.benefits.engagement.description"
-      ),
-    },
-  ];
-
-  const features = [
-    {
-      title: t("SolutionTemplates.roles.managers.features.teamSpaces.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.features.teamSpaces.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.managers.features.monitoring.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.features.monitoring.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.managers.features.collaboration.title"),
-      description: t(
-        "SolutionTemplates.roles.managers.features.collaboration.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
-        />
-      ),
-    },
-  ];
+    comparisons: [
+      {
+        traditional: "Reuniones por Videoconferencia",
+        advantage: "Crea interacciones ricas en contexto en entornos 3D donde los miembros del equipo pueden moverse, colaborar e interactuar naturalmente en lugar de mirar una cuadrícula de caras."
+      },
+      {
+        traditional: "Herramientas de Gestión de Proyectos",
+        advantage: "Combina la gestión de tareas con espacios de colaboración inmersivos donde los equipos pueden discutir, visualizar y resolver problemas juntos en tiempo real."
+      },
+      {
+        traditional: "Plataformas de Chat de Equipo",
+        advantage: "Reemplaza la comunicación solo de texto con experiencias virtuales ricas que capturan los matices y la espontaneidad de las interacciones en persona."
+      }
+    ],
+    useCases: [
+      "Realiza standups diarios atractivos en un espacio dedicado con seguimiento visual del progreso y actualizaciones interactivas del equipo.",
+      "Organiza sesiones efectivas de lluvia de ideas en una sala virtual con pizarras colaborativas y herramientas de votación.",
+      "Construye cohesión de equipo con actividades sociales regulares en espacios personalizados diseñados para la conexión y la diversión."
+    ],
+    howItWorks: [
+      "Configura el espacio de trabajo virtual de tu equipo con áreas personalizadas para diferentes tipos de colaboración.",
+      "Establece rutinas de equipo y plantillas de reuniones que aprovechen al máximo las funciones interactivas.",
+      "Introduce gradualmente actividades de formación de equipos que fortalezcan las relaciones y mejoren la colaboración."
+    ],
+    getStarted: {
+      heading: "¿Listo para llevar tu liderazgo de equipo al siguiente nivel?",
+      description: "Únete a los gerentes que están construyendo equipos remotos de alto rendimiento con Team Up!",
+      cta: "Comienza tu Transformación de Equipo"
+    }
+  };
 
   return (
     <WebLayout>
-      <SolutionRoleTemplate
-        title={t("SolutionTemplates.roles.managers.title")}
-        description={t("SolutionTemplates.roles.managers.description")}
-        challenges={challenges}
-        benefits={benefits}
-        features={features}
-      >
-        {/* Call to action section */}
-        <section className="bg-gray-cloud py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
-              {t("SolutionTemplates.roles.managers.cta.heading")}
-            </h2>
-            <p className="text-lg text-gray-graphite max-w-3xl mx-auto mb-8">
-              {t("SolutionTemplates.roles.managers.cta.description")}
-            </p>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <Button href="https://app.teamup.works/signup" size="lg">
-                {t("SolutionTemplates.roles.managers.cta.primaryButton")}
-              </Button>
-              <Button href="/contact" variant="secondary" size="lg">
-                {t("SolutionTemplates.roles.managers.cta.secondaryButton")}
-              </Button>
-            </div>
-          </div>
-        </section>
-      </SolutionRoleTemplate>
+      <SolutionByRolePage roleData={managersData} />
     </WebLayout>
   );
 }

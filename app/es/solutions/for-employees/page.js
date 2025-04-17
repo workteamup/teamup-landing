@@ -1,139 +1,117 @@
 "use client";
 
 import WebLayout from "../../../components/new-web/layout";
-import SolutionRoleTemplate from "../../../components/new-web/solution-role-template";
-import Button from "../../../components/new-web/button";
-import { useTranslations } from "../../../contexts/TranslationContext";
+import SolutionByRolePage from "../../../components/new-web/solution-by-role-page";
 
 export default function EmployeesSolutionPage() {
-  const t = useTranslations();
-
-  const challenges = [
-    {
-      title: t("SolutionTemplates.roles.employees.challenges.connection.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.challenges.connection.description"
-      ),
+  // Spanish version of Employees data
+  const employeesData = {
+    title: "Empleados",
+    hero: {
+      headline: "Haz que el Trabajo Remoto sea más Humano y Agradable",
+      subheadline: "Team Up! te ayuda a conectar con colegas, colaborar eficazmente y disfrutar de tu jornada laboral, sin importar dónde te encuentres.",
+      cta: "Descubre Cómo Funciona"
     },
-    {
-      title: t(
-        "SolutionTemplates.roles.employees.challenges.collaboration.title"
-      ),
-      description: t(
-        "SolutionTemplates.roles.employees.challenges.collaboration.description"
-      ),
+    benefits: [
+      {
+        title: "Conexiones Significativas",
+        description: "Construye relaciones reales con colegas a través de interacciones naturales que van más allá de las videollamadas y los mensajes de chat."
+      },
+      {
+        title: "Equilibrio Trabajo-Vida",
+        description: "Disfruta de la flexibilidad del trabajo remoto mientras mantienes las conexiones sociales que hacen que el trabajo sea satisfactorio."
+      },
+      {
+        title: "Colaboración Efectiva",
+        description: "Trabaja juntos de manera más natural en espacios virtuales diseñados para diferentes tipos de trabajo en equipo e interacción."
+      },
+      {
+        title: "Crecimiento Profesional",
+        description: "Desarrolla tus habilidades y visibilidad dentro de la organización a través de mejores conexiones con compañeros y líderes."
+      }
+    ],
+    stats: [
+      {
+        value: "67%",
+        description: "de los empleados remotos informan sentirse desconectados de sus colegas al menos parte del tiempo.",
+        source: "Informe de Trabajo Remoto, 2023"
+      },
+      {
+        value: "78%",
+        description: "de los trabajadores dicen que sentirse conectados con los colegas es esencial para la satisfacción laboral."
+      },
+      {
+        value: "42%",
+        description: "de los empleados remotos extrañan las interacciones espontáneas y la construcción de relaciones del trabajo presencial."
+      }
+    ],
+    features: [
+      {
+        title: "Espacios Sociales",
+        description: "Conéctate con colegas en entornos virtuales diseñados para conversaciones casuales y construcción de relaciones."
+      },
+      {
+        title: "Herramientas Colaborativas",
+        description: "Accede a herramientas intuitivas que hacen que trabajar con compañeros sea tan natural como estar en la misma habitación."
+      },
+      {
+        title: "Actividades Divertidas",
+        description: "Participa en juegos y eventos de equipo que aportan disfrute y conexión a tu jornada laboral remota."
+      }
+    ],
+    spotlight: [
+      {
+        title: "Sala de Descanso Virtual",
+        description: "Tómate un descanso y chatea con colegas en un espacio casual diseñado para las conversaciones espontáneas que construyen relaciones. Entra en cualquier momento para encontrar compañeros y disfrutar de un momento de conexión durante tu día."
+      },
+      {
+        title: "Espacio de Trabajo Colaborativo",
+        description: "Trabaja junto a compañeros en un entorno virtual compartido que hace que la colaboración se sienta natural. Muévete entre diferentes áreas para trabajo enfocado, discusiones de equipo o sesiones creativas."
+      },
+      {
+        title: "Centro de Actividades de Equipo",
+        description: "Participa en juegos divertidos y ejercicios de formación de equipos que fortalecen las relaciones mientras proporcionan un descanso bienvenido de las tareas rutinarias. Las actividades regulares te ayudan a sentirte parte del equipo."
+      }
+    ],
+    testimonial: {
+      quote: "Como alguien que ha trabajado remotamente durante años, Team Up! ha cambiado completamente lo conectado que me siento con mis colegas. He construido amistades que nunca habría hecho solo a través de videollamadas, y el trabajo se siente mucho más agradable.",
+      author: "Jamie Rivera",
+      position: "Diseñador de Producto, Remote First Inc."
     },
-    {
-      title: t("SolutionTemplates.roles.employees.challenges.engagement.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.challenges.engagement.description"
-      ),
-    },
-  ];
-
-  const benefits = [
-    {
-      title: t("SolutionTemplates.roles.employees.benefits.flexibility.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.benefits.flexibility.description"
-      ),
-    },
-    {
-      title: t(
-        "SolutionTemplates.roles.employees.benefits.collaboration.title"
-      ),
-      description: t(
-        "SolutionTemplates.roles.employees.benefits.collaboration.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.employees.benefits.connection.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.benefits.connection.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.employees.benefits.growth.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.benefits.growth.description"
-      ),
-    },
-  ];
-
-  const features = [
-    {
-      title: t("SolutionTemplates.roles.employees.features.spaces.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.features.spaces.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.employees.features.tools.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.features.tools.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.employees.features.activities.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.features.activities.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      ),
-    },
-  ];
+    comparisons: [
+      {
+        traditional: "Email y Chat",
+        advantage: "Reemplaza la comunicación solo de texto con interacciones ricas y contextuales en espacios virtuales donde puedes ver y escuchar a los colegas en un entorno natural."
+      },
+      {
+        traditional: "Reuniones por Video",
+        advantage: "Ve más allá de las rígidas videollamadas a entornos virtuales flexibles donde puedes dividirte en grupos pequeños, trabajar lado a lado o tener conversaciones privadas."
+      },
+      {
+        traditional: "Oficina Presencial",
+        advantage: "Disfruta de los mejores aspectos de la vida de oficina—conversaciones espontáneas, vínculos de equipo y energía colaborativa—mientras mantienes la flexibilidad del trabajo remoto."
+      }
+    ],
+    useCases: [
+      "Entra en la sala de descanso virtual durante tu pausa para el café para ponerte al día con colegas y construir relaciones.",
+      "Colabora con compañeros en un espacio compartido donde puedes discutir ideas, compartir pantallas y resolver problemas juntos.",
+      "Participa en juegos semanales de equipo que proporcionan una forma divertida de conectar con colegas más allá de las tareas laborales."
+    ],
+    howItWorks: [
+      "Crea tu avatar personalizado y configura tu perfil para representarte en el espacio de trabajo virtual.",
+      "Únete a los espacios existentes de tu equipo o ayuda a crear nuevos para diferentes tipos de trabajo e interacción.",
+      "Incorpora Team Up! en tu rutina diaria, entrando para sesiones de colaboración, reuniones de equipo o conversaciones casuales."
+    ],
+    getStarted: {
+      heading: "¿Listo para una experiencia de trabajo remoto más conectada?",
+      description: "Únete a miles de trabajadores remotos que están construyendo relaciones significativas con Team Up!",
+      cta: "Comienza tu Prueba Gratuita"
+    }
+  };
 
   return (
     <WebLayout>
-      <SolutionRoleTemplate
-        title={t("SolutionTemplates.roles.employees.title")}
-        description={t("SolutionTemplates.roles.employees.description")}
-        challenges={challenges}
-        benefits={benefits}
-        features={features}
-      >
-        {/* Call to action section */}
-        <section className="bg-gray-cloud py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
-              {t("SolutionTemplates.roles.employees.cta.heading")}
-            </h2>
-            <p className="text-lg text-gray-graphite max-w-3xl mx-auto mb-8">
-              {t("SolutionTemplates.roles.employees.cta.description")}
-            </p>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <Button href="https://app.teamup.works/signup" size="lg">
-                {t("SolutionTemplates.roles.employees.cta.primaryButton")}
-              </Button>
-              <Button href="/contact" variant="secondary" size="lg">
-                {t("SolutionTemplates.roles.employees.cta.secondaryButton")}
-              </Button>
-            </div>
-          </div>
-        </section>
-      </SolutionRoleTemplate>
+      <SolutionByRolePage roleData={employeesData} />
     </WebLayout>
   );
 }

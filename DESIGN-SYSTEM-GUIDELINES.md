@@ -572,3 +572,60 @@ If you're unsure how to implement something:
 2. Look at the component implementation in the `app/components/new-web` folder
 3. Reference the design tokens in `app/lib/design-tokens.js`
 4. Consult with the design team
+
+## Components
+
+### Solution Hero
+
+The `SolutionHero` component is used to create hero sections for solution pages. It provides a consistent, branded hero section with customizable content.
+
+```jsx
+import SolutionHero from "../components/new-web/solution-hero";
+
+<SolutionHero
+  headline="Your Headline Here"
+  subheadline="Your supporting subheadline text here"
+  ctaText="Call to Action"
+  ctaHref="/your-link"
+  backgroundStyle="optional custom background style"
+  theme="default" // or "blue" or "purple"
+/>;
+```
+
+#### Props
+
+- `headline` (string, required): The main headline text
+- `subheadline` (string, required): The supporting subheadline text
+- `ctaText` (string): Call to action button text
+- `ctaHref` (string, default: "#"): Call to action button link
+- `backgroundStyle` (string): Optional custom background style
+- `theme` (string, default: "default"): Color theme variant ("default", "blue", or "purple")
+
+#### Styling
+
+The component uses a gradient background created with the brand color tokens. It includes subtle blurred elements in brand colors to create depth and visual interest. The component is fully responsive and uses the design system's typography, spacing, and shadow tokens.
+
+### Solution By Role Page
+
+The `SolutionByRolePage` component is a template for creating role-based solution pages. It provides a consistent structure for presenting solutions tailored to specific roles.
+
+```jsx
+import SolutionByRolePage from "../components/new-web/solution-by-role-page";
+
+<SolutionByRolePage roleData={roleData} />;
+```
+
+#### Props
+
+- `roleData` (object, required): An object containing all the data for the role-based solution page
+
+#### Internal Components
+
+The component includes several internal components that follow the design system:
+
+- `FeatureCard`: Used for benefits and features sections
+- `StatCard`: Used for statistics in the problems section
+- `Testimonial`: Styled quote with author information
+- `Comparison`: Comparison between traditional solutions and Team Up advantages
+
+All internal components use the design system's color tokens, typography, spacing, shadows, and border radius values.

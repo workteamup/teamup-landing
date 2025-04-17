@@ -24,6 +24,8 @@ import CTASection from "./new-web/cta-section";
 import CTASectionExamples from "./new-web/cta-section-examples";
 import ContactSalesCTA from "./new-web/contact-sales-cta";
 import PageTitle from "./new-web/page-title";
+import SolutionHero from "./new-web/solution-hero";
+import SolutionByRolePage from "./new-web/solution-by-role-page";
 
 const ColorSwatch = ({ colorName, colorValue, onClick }) => {
   return (
@@ -512,60 +514,68 @@ const PageTitleExamples = () => {
 
 const NewWebComponentsGuide = () => {
   return (
-    <div className="space-y-8">
-      <div className="p-6 border border-gray-smoke rounded-lg">
-        <h3 className="text-xl font-semibold mb-4 font-poppins">
-          Page Title Component
-        </h3>
-        <p className="text-gray-space mb-4">
-          A versatile page title component with support for descriptions,
-          multiple themes, sizes, and alignments. Located at:{" "}
-          <code className="bg-gray-cloud px-2 py-1 rounded text-xs">
-            app/components/new-web/page-title.js
-          </code>
-        </p>
-        <div className="mt-6">
-          <PageTitleExamples />
-        </div>
+    <div className="space-y-12">
+      <div>
+        <h3 className="text-xl font-semibold mb-4 font-poppins">Button</h3>
+        <ButtonExamples />
       </div>
 
-      <div className="p-6 border border-gray-smoke rounded-lg">
-        <h3 className="text-xl font-semibold mb-4 font-poppins">
-          Button Component
-        </h3>
-        <p className="text-gray-space mb-4">
-          Modern button component with multiple variants, sizes, and support for
-          icons. Located at:{" "}
-          <code className="bg-gray-cloud px-2 py-1 rounded text-xs">
-            app/components/new-web/button.js
-          </code>
-        </p>
-        <div className="mt-6">
-          <ButtonExamples />
-        </div>
+      <div>
+        <h3 className="text-xl font-semibold mb-4 font-poppins">CTA Section</h3>
+        <CTASectionExamples />
       </div>
 
-      <div className="p-6 border border-gray-smoke rounded-lg">
+      <div>
         <h3 className="text-xl font-semibold mb-4 font-poppins">
-          CTA Section Components
+          Contact Sales CTA
         </h3>
-        <p className="text-gray-space mb-4">
-          Versatile call-to-action components with multiple alignments, themes,
-          and customizable backgrounds. Located at:{" "}
-          <code className="bg-gray-cloud px-2 py-1 rounded text-xs">
-            app/components/new-web/cta-section.js
-          </code>{" "}
-          and{" "}
-          <code className="bg-gray-cloud px-2 py-1 rounded text-xs">
-            app/components/new-web/contact-sales-cta.js
-          </code>
-        </p>
-        <div className="mt-6">
-          <CTASectionExamples />
-        </div>
+        <ContactSalesCTA />
       </div>
 
-      {/* Add more components from the new-web folder as they're created */}
+      <div>
+        <h3 className="text-xl font-semibold mb-4 font-poppins">Page Title</h3>
+        <PageTitle
+          title="Example Page Title"
+          description="This is an example of a page title component with a description."
+        />
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold mb-4 font-poppins">
+          Solution Hero
+        </h3>
+        <SolutionHero
+          headline="Example Solution Hero"
+          subheadline="This is an example of the Solution Hero component used on role-based solution pages."
+          ctaText="Learn More"
+          ctaHref="#"
+        />
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold mb-4 font-poppins">
+          Solution By Role Page
+        </h3>
+        <p className="mb-4">
+          The SolutionByRolePage component is a template for role-based solution
+          pages. It accepts a roleData object with the following structure:
+        </p>
+        <pre className="bg-gray-cloud p-4 rounded-lg overflow-auto text-sm">
+          {`{
+  title: "Role Title",
+  hero: {
+    headline: "Hero Headline",
+    subheadline: "Hero Subheadline",
+    cta: "CTA Text"
+  },
+  benefits: [
+    { title: "Benefit Title", description: "Benefit Description" },
+    // ...
+  ],
+  // ... other sections
+}`}
+        </pre>
+      </div>
     </div>
   );
 };

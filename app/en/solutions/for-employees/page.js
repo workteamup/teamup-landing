@@ -1,139 +1,117 @@
 "use client";
 
 import WebLayout from "../../../components/new-web/layout";
-import SolutionRoleTemplate from "../../../components/new-web/solution-role-template";
-import Button from "../../../components/new-web/button";
-import { useTranslations } from "../../../contexts/TranslationContext";
+import SolutionByRolePage from "../../../components/new-web/solution-by-role-page";
 
 export default function EmployeesSolutionPage() {
-  const t = useTranslations();
-
-  const challenges = [
-    {
-      title: t("SolutionTemplates.roles.employees.challenges.connection.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.challenges.connection.description"
-      ),
+  // Data extracted from solutions-by-role.md for Employees
+  const employeesData = {
+    title: "Employees",
+    hero: {
+      headline: "Make Remote Work More Human and Enjoyable",
+      subheadline: "Team Up! helps you connect with colleagues, collaborate effectively, and enjoy your workday—no matter where you're located.",
+      cta: "See How It Works"
     },
-    {
-      title: t(
-        "SolutionTemplates.roles.employees.challenges.collaboration.title"
-      ),
-      description: t(
-        "SolutionTemplates.roles.employees.challenges.collaboration.description"
-      ),
+    benefits: [
+      {
+        title: "Meaningful Connections",
+        description: "Build real relationships with colleagues through natural interactions that go beyond video calls and chat messages."
+      },
+      {
+        title: "Work-Life Balance",
+        description: "Enjoy the flexibility of remote work while maintaining the social connections that make work fulfilling."
+      },
+      {
+        title: "Effective Collaboration",
+        description: "Work together more naturally in virtual spaces designed for different types of teamwork and interaction."
+      },
+      {
+        title: "Professional Growth",
+        description: "Develop your skills and visibility within the organization through better connections with teammates and leaders."
+      }
+    ],
+    stats: [
+      {
+        value: "67%",
+        description: "of remote employees report feeling disconnected from their colleagues at least some of the time.",
+        source: "Remote Work Report, 2023"
+      },
+      {
+        value: "78%",
+        description: "of workers say that feeling connected to colleagues is essential for job satisfaction."
+      },
+      {
+        value: "42%",
+        description: "of remote employees miss the spontaneous interactions and relationship-building of in-person work."
+      }
+    ],
+    features: [
+      {
+        title: "Social Spaces",
+        description: "Connect with colleagues in virtual environments designed for casual conversation and relationship building."
+      },
+      {
+        title: "Collaborative Tools",
+        description: "Access intuitive tools that make working with teammates as natural as being in the same room."
+      },
+      {
+        title: "Fun Activities",
+        description: "Participate in team games and events that bring enjoyment and connection to your remote workday."
+      }
+    ],
+    spotlight: [
+      {
+        title: "Virtual Break Room",
+        description: "Take a break and chat with colleagues in a casual space designed for the spontaneous conversations that build relationships. Drop in anytime to find teammates and enjoy a moment of connection during your day."
+      },
+      {
+        title: "Collaborative Workspace",
+        description: "Work alongside teammates in a shared virtual environment that makes collaboration feel natural. Move between different areas for focused work, team discussions, or creative sessions."
+      },
+      {
+        title: "Team Activities Center",
+        description: "Participate in fun games and team-building exercises that strengthen relationships while providing a welcome break from routine tasks. Regular activities help you feel like part of the team."
+      }
+    ],
+    testimonial: {
+      quote: "As someone who's worked remotely for years, Team Up! has completely changed how connected I feel to my colleagues. I've built friendships I never would have made through video calls alone, and work feels so much more enjoyable.",
+      author: "Jamie Rivera",
+      position: "Product Designer, Remote First Inc."
     },
-    {
-      title: t("SolutionTemplates.roles.employees.challenges.engagement.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.challenges.engagement.description"
-      ),
-    },
-  ];
-
-  const benefits = [
-    {
-      title: t("SolutionTemplates.roles.employees.benefits.flexibility.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.benefits.flexibility.description"
-      ),
-    },
-    {
-      title: t(
-        "SolutionTemplates.roles.employees.benefits.collaboration.title"
-      ),
-      description: t(
-        "SolutionTemplates.roles.employees.benefits.collaboration.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.employees.benefits.connection.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.benefits.connection.description"
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.employees.benefits.growth.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.benefits.growth.description"
-      ),
-    },
-  ];
-
-  const features = [
-    {
-      title: t("SolutionTemplates.roles.employees.features.spaces.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.features.spaces.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.employees.features.tools.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.features.tools.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-        />
-      ),
-    },
-    {
-      title: t("SolutionTemplates.roles.employees.features.activities.title"),
-      description: t(
-        "SolutionTemplates.roles.employees.features.activities.description"
-      ),
-      icon: (
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      ),
-    },
-  ];
+    comparisons: [
+      {
+        traditional: "Email and Chat",
+        advantage: "Replace text-only communication with rich, contextual interactions in virtual spaces where you can see and hear colleagues in a natural environment."
+      },
+      {
+        traditional: "Video Meetings",
+        advantage: "Move beyond rigid video calls to flexible virtual environments where you can break into small groups, work side by side, or have private conversations."
+      },
+      {
+        traditional: "In-Person Office",
+        advantage: "Enjoy the best aspects of office life—spontaneous conversations, team bonding, and collaborative energy—while maintaining the flexibility of remote work."
+      }
+    ],
+    useCases: [
+      "Drop into the virtual break room during your coffee break to catch up with colleagues and build relationships.",
+      "Collaborate with teammates in a shared space where you can discuss ideas, share screens, and work through problems together.",
+      "Participate in weekly team games that provide a fun way to connect with colleagues beyond work tasks."
+    ],
+    howItWorks: [
+      "Create your personalized avatar and set up your profile to represent yourself in the virtual workspace.",
+      "Join your team's existing spaces or help create new ones for different types of work and interaction.",
+      "Incorporate Team Up! into your daily routine, dropping in for collaboration sessions, team meetings, or casual conversations."
+    ],
+    getStarted: {
+      heading: "Ready for a more connected remote work experience?",
+      description: "Join thousands of remote workers who are building meaningful relationships with Team Up!",
+      cta: "Start Your Free Trial"
+    }
+  };
 
   return (
     <WebLayout>
-      <SolutionRoleTemplate
-        title={t("SolutionTemplates.roles.employees.title")}
-        description={t("SolutionTemplates.roles.employees.description")}
-        challenges={challenges}
-        benefits={benefits}
-        features={features}
-      >
-        {/* Call to action section */}
-        <section className="bg-gray-cloud py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-brand-blue to-brand-purple bg-clip-text text-transparent">
-              {t("SolutionTemplates.roles.employees.cta.heading")}
-            </h2>
-            <p className="text-lg text-gray-graphite max-w-3xl mx-auto mb-8">
-              {t("SolutionTemplates.roles.employees.cta.description")}
-            </p>
-            <div className="flex justify-center gap-4 flex-wrap">
-              <Button href="https://app.teamup.works/signup" size="lg">
-                {t("SolutionTemplates.roles.employees.cta.primaryButton")}
-              </Button>
-              <Button href="/contact" variant="secondary" size="lg">
-                {t("SolutionTemplates.roles.employees.cta.secondaryButton")}
-              </Button>
-            </div>
-          </div>
-        </section>
-      </SolutionRoleTemplate>
+      <SolutionByRolePage roleData={employeesData} />
     </WebLayout>
   );
 }

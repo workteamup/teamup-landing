@@ -196,11 +196,11 @@ const Navbar = () => {
     byPain: [
       {
         title: t("Solutions.employeeRotation"),
-        href: `/${locale}/solutions/employee-rotation`,
+        href: `/${locale}/solutions/employee-turnover`,
       },
       {
         title: t("Solutions.employeeEngagement"),
-        href: `/${locale}/solutions/employee-engagement`,
+        href: `/${locale}/solutions/employee-disengagement`,
       },
       {
         title: t("Solutions.remoteDisconnection"),
@@ -241,6 +241,10 @@ const Navbar = () => {
       {
         title: t("Solutions.forEmployees"),
         href: `/${locale}/solutions/for-employees`,
+      },
+      {
+        title: t("Solutions.forMarketing"),
+        href: `/${locale}/solutions/for-marketing`,
       },
     ],
   };

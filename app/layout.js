@@ -3,6 +3,7 @@ import "./globals.css";
 import Script from "next/script";
 import { TranslationProvider } from "./contexts/TranslationContext";
 import { Manrope, Poppins } from "next/font/google";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 const syne = Syne({ subsets: ["latin"] });
 const sora = Sora({
