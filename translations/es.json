@@ -355,6 +355,10 @@
     "register": "Registrarse"
   },
   "Solutions": {
+    "byPain": "POR PROBLEMA",
+    "employeeRotation": "Rotación de empleados",
+    "employeeEngagement": "Compromiso de empleados",
+    "remoteDisconnection": "Desconexión remota",
     "dayToDay": "Actividad diaria",
     "companyEvents": "Eventos de empresa",
     "funCompetitions": "Competiciones divertidas",

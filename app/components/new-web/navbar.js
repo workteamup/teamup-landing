@@ -193,6 +193,20 @@ const Navbar = () => {
   ];
 
   const solutionsItems = {
+    byPain: [
+      {
+        title: t("Solutions.employeeRotation"),
+        href: `/${locale}/solutions/employee-rotation`,
+      },
+      {
+        title: t("Solutions.employeeEngagement"),
+        href: `/${locale}/solutions/employee-engagement`,
+      },
+      {
+        title: t("Solutions.remoteDisconnection"),
+        href: `/${locale}/solutions/remote-disconnection`,
+      },
+    ],
     byType: [
       {
         title: t("Solutions.dayToDay"),
@@ -402,9 +416,27 @@ const Navbar = () => {
                 />
               </button>
               {isSolutionsOpen && (
-                <div className="absolute top-full left-0 mt-1 bg-white shadow-lg rounded-md py-2 z-[100] flex w-[500px]">
+                <div className="absolute top-full left-0 mt-1 bg-white shadow-lg rounded-md py-2 z-[100] flex w-[700px]">
+                  {/* By Pain Column */}
+                  <div className="w-1/3 border-r border-gray-cloud">
+                    <div className="px-4 py-2">
+                      <span className="text-xs font-semibold uppercase text-gray-graphite">
+                        {t("Solutions.byPain")}
+                      </span>
+                    </div>
+                    {solutionsItems.byPain.map((item, index) => (
+                      <Link
+                        key={index}
+                        href={item.href}
+                        className="block px-4 py-2 text-gray-space hover:bg-gray-cloud hover:text-brand-purple transition-colors"
+                        onClick={() => setIsSolutionsOpen(false)}
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+                  </div>
                   {/* By Type Column */}
-                  <div className="w-1/2 border-r border-gray-cloud">
+                  <div className="w-1/3 border-r border-gray-cloud">
                     <div className="px-4 py-2">
                       <span className="text-xs font-semibold uppercase text-gray-graphite">
                         {t("Solutions.byType")}
@@ -422,7 +454,7 @@ const Navbar = () => {
                     ))}
                   </div>
                   {/* By Role Column */}
-                  <div className="w-1/2">
+                  <div className="w-1/3">
                     <div className="px-4 py-2">
                       <span className="text-xs font-semibold uppercase text-gray-graphite">
                         {t("Solutions.byRole")}
@@ -606,6 +638,27 @@ const Navbar = () => {
                 </button>
                 {isSolutionsOpen && (
                   <div className="mt-2 pl-4 border-l-2 border-gray-200 mobile-solutions-dropdown">
+                    {/* By Pain Section */}
+                    <div className="mb-4">
+                      <div className="mb-2">
+                        <span className="text-xs font-semibold uppercase text-gray-graphite">
+                          {t("Solutions.byPain")}
+                        </span>
+                      </div>
+                      {solutionsItems.byPain.map((item, index) => (
+                        <Link
+                          key={index}
+                          href={item.href}
+                          className="block py-2 text-gray-space hover:text-brand-purple"
+                          onClick={() => {
+                            setIsMenuOpen(false);
+                            setIsSolutionsOpen(false);
+                          }}
+                        >
+                          {item.title}
+                        </Link>
+                      ))}
+                    </div>
                     {/* By Type Section */}
                     <div className="mb-4">
                       <div className="mb-2">

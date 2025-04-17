@@ -145,7 +145,11 @@
     "forCxos": "For CXOs",
     "forHr": "For HR",
     "forManagers": "For Managers",
-    "forEmployees": "For Employees"
+    "forEmployees": "For Employees",
+    "byPain": "BY PAIN",
+    "employeeRotation": "Employee Rotation",
+    "employeeEngagement": "Employee Engagement",
+    "remoteDisconnection": "Remote Disconnection"
   },
   "CookiePolicy": {
     "title": "Cookie Policy",
