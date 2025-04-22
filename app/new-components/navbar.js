@@ -53,7 +53,9 @@ const Navbar = () => {
             {menuItems.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center text-brand-700 hover:text-purple-600 cursor-pointer transition-colors"
+                className={`flex items-center text-brand-700 hover:text-purple-600 cursor-pointer transition-colors ${
+                  item.label !== "Sign in" ? "hidden xl:flex" : ""
+                }`}
               >
                 <span>{item.label}</span>
                 {item.hasIcon && (
