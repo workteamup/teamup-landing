@@ -26,6 +26,7 @@ import ContactSalesCTA from "./new-web/contact-sales-cta";
 import PageTitle from "./new-web/page-title";
 import SolutionHero from "./new-web/solution-hero";
 import SolutionByRolePage from "./new-web/solution-by-role-page";
+import Comparison from "./new-web/comparison";
 
 const ColorSwatch = ({ colorName, colorValue, onClick }) => {
   return (
@@ -575,6 +576,33 @@ const NewWebComponentsGuide = () => {
   // ... other sections
 }`}
         </pre>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold mb-4 font-poppins">Comparison</h3>
+        <div className="space-y-8">
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Default Comparison</h4>
+            <Comparison
+              traditional="Video conferencing for daily meetings"
+              advantage="Immersive 3D spaces with spatial audio that reduce fatigue, boost participation, and create a sense of shared presence that video calls can't match."
+            />
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-4">Multiple Comparisons</h4>
+            <div className="space-y-4">
+              <Comparison
+                traditional="Annual team-building retreats"
+                advantage="Continuous engagement through daily virtual interactions, not just once a year. Our 3D environments create memorable shared experiences at a fraction of the cost."
+              />
+              <Comparison
+                traditional="Static communication tools"
+                advantage="Dynamic 3D spaces that encourage spontaneous interaction and genuine connection between team members across locations."
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

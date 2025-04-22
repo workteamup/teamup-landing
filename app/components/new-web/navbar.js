@@ -209,8 +209,8 @@ const Navbar = () => {
     ],
     byType: [
       {
-        title: t("Solutions.dayToDay"),
-        href: `/${locale}/solutions/day-to-day-activity`,
+        title: t("Solutions.dailyActivity"),
+        href: `/${locale}/solutions/daily-activity`,
       },
       {
         title: t("Solutions.companyEvents"),

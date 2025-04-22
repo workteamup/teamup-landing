@@ -359,7 +359,7 @@
     "employeeRotation": "Rotación de empleados",
     "employeeEngagement": "Compromiso de empleados",
     "remoteDisconnection": "Desconexión remota",
-    "dayToDay": "Actividad diaria",
+    "dayToDay": "Actividad Diaria",
     "companyEvents": "Eventos de empresa",
     "funCompetitions": "Competiciones divertidas",
     "customOffice": "Oficina personalizada",
@@ -993,5 +993,405 @@
     "source": "Fuente:",
     "traditionalSolution": "Solución Tradicional:",
     "teamUpAdvantage": "Ventaja de Team Up!:"
+  },
+  "SolutionsByType": {
+    "importanceHeading": "Por Qué Es Importante",
+    "problemsHeading": "El Problema en Números",
+    "benefitsHeading": "Beneficios de Team Up!",
+    "useCasesHeading": "Casos de Uso",
+    "spotlightHeading": "Características Destacadas",
+    "futureProofHeading": "Prepara tu Equipo para el Futuro",
+    "dailyActivity": {
+      "title": "Actividad Diaria",
+      "hero": {
+        "headline": "Haz que Cada Reunión Importe",
+        "subheadline": "Team Up! transforma las reuniones rutinarias en experiencias interactivas y productivas en entornos 3D inmersivos.",
+        "cta": "Mejora tus Reuniones Diarias"
+      },
+      "importance": [
+        {
+          "title": "Compromiso",
+          "description": "Las reuniones diarias marcan el tono de la cultura de tu equipo: mantén a tu equipo motivado y conectado con espacios 3D inmersivos que fomentan la participación."
+        },
+        {
+          "title": "Productividad",
+          "description": "Reduce la fatiga de las reuniones y aumenta el enfoque con herramientas 3D interactivas que hacen que las discusiones rutinarias sean más dinámicas y atractivas."
+        },
+        {
+          "title": "Consistencia",
+          "description": "Construye hábitos de colaboración con espacios 3D diseñados específicamente para hacer que la interacción diaria sea fluida y significativa."
+        }
+      ],
+      "stats": [
+        {
+          "value": "70%",
+          "description": "de los empleados reportan fatiga en las videollamadas tradicionales, reduciendo la productividad hasta en un 30%",
+          "source": "Microsoft Work Trend Index, 2023"
+        },
+        {
+          "value": "25%",
+          "description": "Los equipos con interacciones diarias atractivas son 25% más productivos y tienen 40% mejor retención de información."
+        },
+        {
+          "value": "$400B",
+          "description": "Las reuniones mal gestionadas cuestan a las empresas $400 mil millones anuales en tiempo perdido y disminución del compromiso."
+        }
+      ],
+      "benefits": [
+        {
+          "title": "Espacios Persistentes",
+          "description": "Salas 3D siempre disponibles para consultas rápidas—sin necesidad de programar, solo entra como lo harías en una oficina física."
+        },
+        {
+          "title": "Herramientas Interactivas",
+          "description": "Utiliza audio espacial, encuestas 3D, pizarras y avatares para mantener a todos comprometidos y presentes en la conversación."
+        },
+        {
+          "title": "Agendas Personalizadas",
+          "description": "Estructura las discusiones con plantillas integradas para stand-ups o retrospectivas con seguimiento visual de los puntos de discusión."
+        }
+      ],
+      "useCases": [
+        "Organiza un stand-up virtual en nuestro espacio de Planificación donde los miembros del equipo mueven avatares para actualizar el progreso visualmente mientras usan audio espacial para una conversación natural.",
+        "Realiza un control diario del estado de ánimo usando nuestro entorno Fogata con encuestas para medir la moral del equipo a través de la ubicación de avatares en diferentes plataformas.",
+        "Facilita una sesión de planificación de sprint en nuestra sala de Planificación dedicada con tableros interactivos y plataformas de votación que visualizan el consenso del equipo."
+      ],
+      "spotlight": [
+        {
+          "title": "Puntos de Reunión Persistentes",
+          "description": "Salas 3D siempre abiertas para consultas espontáneas que fomentan las conversaciones casuales que construyen la cohesión del equipo."
+        },
+        {
+          "title": "Encuestas Interactivas",
+          "description": "Recopila feedback en tiempo real durante las reuniones a través del movimiento físico del avatar en lugar de botones abstractos."
+        },
+        {
+          "title": "Plantillas de Agenda",
+          "description": "Agiliza los stand-ups y retrospectivas con formatos 3D predefinidos que visualizan el progreso y los puntos de discusión."
+        }
+      ],
+      "testimonial": {
+        "quote": "Team Up! hizo que nuestros stand-ups diarios se sintieran como si estuviéramos en la misma sala—nuestro equipo está más conectado que nunca. El espacio 3D da una sensación de presencia que Zoom nunca pudo, y nuestros puntajes de efectividad en reuniones han aumentado un 45%.",
+        "author": "Jordan Lee",
+        "position": "Líder de Equipo, TechForward Co."
+      },
+      "futureProof": [
+        {
+          "title": "Espacios Adaptables",
+          "description": "Los espacios de reunión diaria de Team Up! se ajustan perfectamente a configuraciones híbridas o totalmente remotas, asegurando la conectividad mientras los modelos de trabajo evolucionan más allá de 2025."
+        },
+        {
+          "title": "Actualizaciones Continuas",
+          "description": "Accede a nuevas herramientas como agendas impulsadas por IA y encuestas mejoradas, manteniendo tus interacciones diarias modernas y eficientes."
+        },
+        {
+          "title": "Colaboración Escalable",
+          "description": "Apoya equipos de cualquier tamaño, desde pequeños grupos hasta unidades globales, con espacios 3D que crecen con tu organización sin perder la conexión humana."
+        }
+      ],
+      "getStarted": {
+        "heading": "Transforma tus Reuniones Diarias",
+        "description": "Configura el espacio 3D de tu equipo en minutos y transforma las reuniones rutinarias en experiencias atractivas.",
+        "cta": "Comienza tu Prueba Gratuita de 30 Días"
+      }
+    },
+    "companyEvents": {
+      "title": "Eventos de Empresa",
+      "hero": {
+        "headline": "Organiza Eventos que Unen a Todos",
+        "subheadline": "Team Up! hace que las reuniones grandes sean atractivas, escalables y sin esfuerzo con entornos 3D inmersivos que se sienten como experiencias compartidas.",
+        "cta": "Revoluciona tus Eventos Virtuales"
+      },
+      "importance": [
+        {
+          "title": "Conexión",
+          "description": "Los grandes eventos unen a los equipos y refuerzan la cultura—hazlos memorables con espacios 3D inmersivos que crean experiencias compartidas."
+        },
+        {
+          "title": "Participación",
+          "description": "Mantén a los asistentes activos, no pasivos, con funciones 3D interactivas que fomentan la participación y previenen la desconexión digital."
+        },
+        {
+          "title": "Escalabilidad",
+          "description": "Organiza eventos para cientos de personas sin el costo o las complicaciones logísticas de los lugares físicos, manteniendo la sensación de una experiencia compartida significativa."
+        }
+      ],
+      "stats": [
+        {
+          "value": "$1,000+",
+          "description": "costo por asistente en eventos físicos, con 40% del presupuesto gastado en lugar y viajes",
+          "source": "Event Marketing Institute, 2023"
+        },
+        {
+          "value": "80%",
+          "description": "de los asistentes a webinars se desconectan en 10 minutos cuando la visualización pasiva es el único método de participación"
+        },
+        {
+          "value": "30%",
+          "description": "mayores tasas de retención y 25% mejor colaboración entre equipos en empresas con eventos regulares"
+        }
+      ],
+      "benefits": [
+        {
+          "title": "Entornos Diversos",
+          "description": "Elige entre nuestro Auditorio, Fogata o espacios personalizados para crear la atmósfera perfecta para tu evento específico."
+        },
+        {
+          "title": "Salas de Grupos",
+          "description": "Crea grupos pequeños para networking o discusiones en espacios 3D conectados que mantienen la sensación cohesiva del evento."
+        },
+        {
+          "title": "Plantillas de Eventos",
+          "description": "Lanza reuniones generales, conferencias o encuentros sociales con entornos 3D prediseñados que requieren una configuración mínima."
+        },
+        {
+          "title": "Análisis Completo",
+          "description": "Rastrea el compromiso, la participación y el feedback en tiempo real para medir el éxito del evento y mejorar futuras reuniones."
+        }
+      ],
+      "useCases": [
+        "Organiza una reunión general de empresa en nuestro Auditorio con sesiones de grupos en espacios 3D temáticos para preguntas y respuestas y discusiones en grupos pequeños.",
+        "Organiza una conferencia virtual con escenarios para presentaciones principales, áreas de exposición interactivas y salones de networking en un entorno de campus 3D personalizado.",
+        "Realiza una fiesta de empresa con espacios 3D temáticos que incluyen juegos como El Suelo es Lava y Conecta 4 para la creación de vínculos entre equipos y experiencias compartidas."
+      ],
+      "spotlight": [
+        {
+          "title": "Entorno de Auditorio",
+          "description": "Ambiente profesional con plataformas de votación interactivas para la participación y seguimiento del compromiso de la audiencia."
+        },
+        {
+          "title": "Herramienta de Mixer",
+          "description": "Asigna aleatoriamente a los asistentes a salas de grupos para fomentar nuevas conexiones y networking entre equipos."
+        },
+        {
+          "title": "Panel de Eventos",
+          "description": "Monitorea el compromiso en tiempo real y ajusta las actividades basándote en análisis de participación."
+        }
+      ],
+      "testimonial": {
+        "quote": "Team Up! transformó nuestra reunión general global de 500 personas en una experiencia atractiva que realmente unió a los equipos. Las funciones interactivas y los espacios de grupos crearon conexiones genuinas que nunca logramos con webinars tradicionales.",
+        "author": "Sarah Chen",
+        "position": "Directora de Experiencia del Empleado, Global Tech Co."
+      },
+      "futureProof": [
+        {
+          "title": "Crecimiento Escalable",
+          "description": "Las herramientas de eventos de Team Up! escalan sin problemas de 10 a 10,000 asistentes, asegurando que tu empresa pueda organizar reuniones impactantes mientras crece."
+        },
+        {
+          "title": "Preparado para Híbrido",
+          "description": "Combina asistentes presenciales y virtuales en un entorno 3D cohesivo, adaptándote a modelos de trabajo híbridos en evolución sin dejar a nadie fuera."
+        },
+        {
+          "title": "Innovación Continua",
+          "description": "Accede regularmente a nuevas funciones e integraciones de eventos, manteniendo tus interacciones a gran escala a la vanguardia y atractivas incluso para los participantes más expertos en tecnología."
+        }
+      ],
+      "getStarted": {
+        "heading": "¿Listo para transformar tus eventos de empresa?",
+        "description": "Comienza a crear reuniones virtuales memorables que fortalezcan los lazos del equipo y la cultura de la empresa.",
+        "cta": "Reserva una Demo de Eventos"
+      }
+    },
+    "funCompetitions": {
+      "title": "Competencias Divertidas",
+      "hero": {
+        "headline": "Convierte el Team-Building en Diversión",
+        "subheadline": "Team Up! ofrece juegos competitivos divertidos en entornos 3D inmersivos que fortalecen lazos y generan alegría mientras desarrollan habilidades esenciales del equipo.",
+        "cta": "¡Comienza la Diversión Ahora!"
+      },
+      "importance": [
+        {
+          "title": "Estado de Ánimo",
+          "description": "Las actividades divertidas reducen el agotamiento y aumentan la felicidad creando asociaciones positivas con compañeros y trabajo."
+        },
+        {
+          "title": "Trabajo en Equipo",
+          "description": "Los juegos fomentan la colaboración en un entorno 3D relajado, desarrollando habilidades blandas que se transfieren directamente a los proyectos de trabajo."
+        },
+        {
+          "title": "Compromiso",
+          "description": "La competencia amistosa en entornos inmersivos mantiene a los equipos motivados y conectados a través de ubicaciones y zonas horarias."
+        }
+      ],
+      "stats": [
+        {
+          "value": "60%",
+          "description": "de los empleados se sienten desconectados sin actividades regulares de team-building, con trabajadores remotos reportando aún mayor aislamiento.",
+          "source": "Harvard Business Review, 2023"
+        },
+        {
+          "value": "30%",
+          "description": "Los equipos que participan en actividades divertidas regulares muestran un 30% más de moral y un 25% mejor capacidad de resolución de problemas."
+        },
+        {
+          "value": "87%",
+          "description": "Los empleados comprometidos tienen un 87% menos de probabilidades de dejar sus empresas, citando las actividades de vinculación en equipo como un factor principal de compromiso."
+        }
+      ],
+      "benefits": [
+        {
+          "title": "Biblioteca de Juegos Inmersivos",
+          "description": "Elige entre entornos 3D como El Suelo es Lava, Conecta 4, El Corral y más que transforman el team-building pasivo en experiencias activas y memorables."
+        },
+        {
+          "title": "Configuración con Un Clic",
+          "description": "Inicia juegos competitivos con mínima preparación—nuestros entornos 3D vienen preconfigurados para diversión inmediata."
+        },
+        {
+          "title": "Formatos Flexibles",
+          "description": "Admite desafíos individuales y grupales en espacios 3D que se adaptan al tamaño de tu equipo y objetivos específicos."
+        }
+      ],
+      "comparisons": [
+        {
+          "traditional": "Eventos ocasionales de team-building presencial",
+          "advantage": "Juegos virtuales frecuentes y económicos en entornos 3D inmersivos que se adaptan a cualquier horario y crean conexión continua, no solo experiencias únicas."
+        }
+      ],
+      "useCases": [
+        "Organiza una noche de trivia virtual en nuestro Auditorio para poner a prueba el conocimiento del equipo y generar competencia amistosa y risas.",
+        "Realiza una carrera de relevos en nuestro entorno El Suelo es Lava donde los equipos compiten para completar desafíos mientras navegan obstáculos.",
+        "Organiza competencias de equipo en nuestro espacio Conecta 4 donde los jugadores deben anotar en aros de baloncesto para colocar sus piezas, combinando habilidad física con estrategia."
+      ],
+      "spotlight": [
+        {
+          "title": "El Suelo es Lava",
+          "description": "Un desafiante circuito de obstáculos donde los compañeros pueden animarse mutuamente y reír juntos mientras navegan las dificultades."
+        },
+        {
+          "title": "El Corral",
+          "description": "Competencia basada en equipos donde los grupos deben recolectar huevos mientras defienden sus recursos, desarrollando tanto estrategia como habilidades de comunicación."
+        },
+        {
+          "title": "Conecta 4 con un Giro",
+          "description": "Juego clásico reimaginado en 3D con desafíos físicos adicionales que nivelan el campo de juego y añaden imprevisibilidad."
+        }
+      ],
+      "testimonial": {
+        "quote": "¡Nuestro equipo adora absolutamente los juegos en Team Up!—las competencias de El Suelo es Lava se han convertido en lo más destacado de nuestra semana! Hemos visto una mejor comunicación durante los proyectos y un aumento del 38% en la colaboración entre departamentos desde que comenzamos estas sesiones regulares de juegos.",
+        "author": "Casey Williams",
+        "position": "Líder de Experiencia del Empleado, Creative Solutions Agency"
+      },
+      "futureProof": [
+        {
+          "title": "Biblioteca de Juegos en Evolución",
+          "description": "Team Up! continuamente añade nuevos juegos y desafíos basados en lo último en diseño de juegos y psicología de equipo, asegurando que tu equipo siempre tenga nuevas formas de conectar."
+        },
+        {
+          "title": "Formatos Flexibles",
+          "description": "Apoya equipos remotos, híbridos o presenciales con juegos que funcionan en cualquier configuración, adaptándose a las tendencias futuras de trabajo sin perder efectividad."
+        },
+        {
+          "title": "Resiliencia Cultural",
+          "description": "Fomenta una cultura divertida y colaborativa que retiene talento y aumenta la moral a través de transiciones laborales, cambios económicos y evolución del equipo."
+        }
+      ],
+      "getStarted": {
+        "heading": "Elige un juego y comienza a jugar en minutos—sin necesidad de equipo especial o conocimientos técnicos.",
+        "description": "Transforma el team building en momentos divertidos de conexión genuina.",
+        "cta": "Comienza a Jugar con una Prueba Gratuita"
+      }
+    },
+    "customOfficeSpace": {
+      "title": "Espacio de Oficina Personalizado",
+      "hero": {
+        "headline": "Diseña tu Oficina Soñada—Virtualmente",
+        "subheadline": "Team Up! te permite construir un espacio 3D personalizado que refleja tu cultura y marca mientras fomenta las conexiones que impulsan el éxito empresarial.",
+        "cta": "Crea tu Sede Virtual"
+      },
+      "importance": [
+        {
+          "title": "Cultura",
+          "description": "Un espacio virtual único refuerza tus valores e identidad, creando un sentido de pertenencia incluso en equipos distribuidos."
+        },
+        {
+          "title": "Marca",
+          "description": "Impresiona a clientes y candidatos con un entorno 3D personalizado que muestra la personalidad e innovación de tu empresa."
+        },
+        {
+          "title": "Compromiso",
+          "description": "Un espacio 3D familiar y personalizado impulsa la interacción diaria al proporcionar un 'lugar' consistente para que los equipos se reúnan y colaboren."
+        }
+      ],
+      "stats": [
+        {
+          "value": "70%",
+          "description": "de los trabajadores remotos desean un espacio de trabajo personalizado que se sienta conectado con la cultura de su empresa.",
+          "source": "Gartner Workplace Survey, 2023"
+        },
+        {
+          "value": "20%",
+          "description": "Las empresas con fuerte presencia visual de marca en sus espacios de trabajo ven un 20% más de alineación cultural por parte de los empleados."
+        },
+        {
+          "value": "33%",
+          "description": "Las organizaciones con culturas cohesivas y bien definidas ven un 33% más de retención y un 21% más de rentabilidad."
+        }
+      ],
+      "benefits": [
+        {
+          "title": "Personalización 3D Completa",
+          "description": "Diseña salas virtuales, decoración y distribuciones que coincidan con el estilo de tu empresa y creen un sentido de lugar para equipos distribuidos."
+        },
+        {
+          "title": "Elementos de Marca",
+          "description": "Añade logos, colores y elementos temáticos para reforzar tu identidad y crear una experiencia consistente para empleados y visitantes."
+        },
+        {
+          "title": "Características Interactivas",
+          "description": "Incluye juegos, pizarras y centros sociales para uso diario que hacen que tu espacio virtual sea tanto funcional como hermoso."
+        }
+      ],
+      "comparisons": [
+        {
+          "traditional": "Plataformas de oficina virtual genéricas con personalización limitada",
+          "advantage": "Espacios 3D completamente personalizables con elementos interactivos que se sienten únicos, atractivos y alineados con tu cultura empresarial específica."
+        }
+      ],
+      "useCases": [
+        "Crea un lobby virtual personalizado para reuniones con clientes y tours de nuevos empleados que muestre los valores de tu empresa a través de elementos interactivos.",
+        "Diseña una sala de descanso virtual con juegos y áreas sociales para charlas casuales que recrean las interacciones espontáneas de las oficinas físicas.",
+        "Construye una sala de capacitación personalizada con herramientas 3D interactivas para sesiones de incorporación que sumergen a los nuevos empleados en tu cultura desde el primer día."
+      ],
+      "spotlight": [
+        {
+          "title": "Decoración Personalizada",
+          "description": "Elige entre cientos de diseños 3D, opciones de mobiliario y temas ambientales para crear espacios que se sientan auténticos para tu marca."
+        },
+        {
+          "title": "Integración de Marca",
+          "description": "Añade sin problemas tu logo, paleta de colores y elementos de marca en todo el entorno virtual para una experiencia consistente."
+        },
+        {
+          "title": "Objetos Interactivos",
+          "description": "Incluye herramientas útiles como pizarras, mesas de juego y pantallas multimedia que hacen que el espacio sea funcional para el trabajo diario."
+        }
+      ],
+      "testimonial": {
+        "quote": "Nuestro espacio personalizado en Team Up! se ha convertido en la sede digital de nuestra empresa—se siente como un hogar para nuestro equipo distribuido globalmente. Los clientes están impresionados por la experiencia de marca, y nuestros empleados sienten una conexión más fuerte con nuestra cultura. Se ha convertido en una ventaja competitiva tanto en la retención de talento como en las presentaciones a clientes.",
+        "author": "Jamie Rodriguez",
+        "position": "Director de Marketing, Future Tech Co."
+      },
+      "futureProof": [
+        {
+          "title": "Personalización Dinámica",
+          "description": "Actualiza tu oficina virtual en cualquier momento para reflejar nueva imagen de marca, crecimiento del equipo o cambios culturales sin interrupciones ni costos significativos."
+        },
+        {
+          "title": "Diseño Escalable",
+          "description": "Expande tu espacio 3D a medida que tu equipo crece, desde pequeñas startups hasta empresas globales, con entornos que mantienen la intimidad a cualquier escala."
+        },
+        {
+          "title": "Características Preparadas para el Futuro",
+          "description": "Integra herramientas emergentes como asistentes de reuniones con IA o compatibilidad con realidad aumentada, manteniendo tu oficina virtual a la vanguardia."
+        }
+      ],
+      "getStarted": {
+        "heading": "Comienza a diseñar tu espacio de trabajo 3D personalizado con nuestras herramientas fáciles de usar—no se necesitan habilidades de diseño.",
+        "description": "Crea un espacio virtual que realmente represente a tu empresa.",
+        "cta": "Reserva una Consulta de Espacio Personalizado"
+      }
+    }
   }
 }

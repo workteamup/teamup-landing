@@ -1,11 +1,8 @@
-"use client";
+import React from "react";
+import SolutionByTypePage from "../../components/new-web/solution-by-type-page";
 
-import WebLayout from "../../../components/new-web/layout";
-import SolutionByTypePage from "../../../components/new-web/solution-by-type-page";
-
-export default function FunCompetitionsPage() {
+const FunCompetitionsPage = () => {
   const funCompetitionsData = {
-    title: "Fun Competitions",
     hero: {
       headline: "Turn Team-Building into Playtime",
       subheadline:
@@ -39,12 +36,12 @@ export default function FunCompetitionsPage() {
       {
         value: "30%",
         description:
-          "Teams that participate in regular fun activities together show 30% higher morale and 25% better problem-solving capabilities.",
+          "higher morale and 25% better problem-solving capabilities in teams that participate in regular fun activities together.",
       },
       {
         value: "87%",
         description:
-          "Engaged employees are 87% less likely to leave their companies, with team bonding activities cited as a top engagement factor.",
+          "less likely to leave their companies when employees feel engaged, with team bonding activities cited as a top engagement factor.",
       },
     ],
     benefits: [
@@ -117,15 +114,14 @@ export default function FunCompetitionsPage() {
       },
     ],
     getStarted: {
-      heading: "Pick a game and start playing in minutes—no special equipment or technical knowledge required.",
-      description: "Transform team building into fun moments of genuine connection.",
+      heading: "Ready to Add Some Fun to Your Team?",
+      description:
+        "Pick a game and start playing in minutes—no special equipment or technical knowledge required.",
       cta: "Get Playing with a Free Trial",
     },
   };
 
-  return (
-    <WebLayout>
-      <SolutionByTypePage typeData={funCompetitionsData} />
-    </WebLayout>
-  );
-}
+  return <SolutionByTypePage typeData={funCompetitionsData} />;
+};
+
+export default FunCompetitionsPage;

@@ -1,10 +1,8 @@
-"use client";
+import React from 'react';
+import SolutionByTypePage from '../../components/new-web/solution-by-type-page';
 
-import WebLayout from "../../../components/new-web/layout";
-import SolutionByTypePage from "../../../components/new-web/solution-by-type-page";
-
-export default function CompanyEventsPage() {
-  const companyEventsData = {
+const EventsPage = () => {
+  const eventsData = {
     hero: {
       headline: "Host Events That Bring Everyone Together",
       subheadline: "Team Up! makes large gatherings engaging, scalable, and effortless with immersive 3D environments that feel like shared experiences.",
@@ -54,7 +52,7 @@ export default function CompanyEventsPage() {
       },
       {
         title: "Comprehensive Analytics",
-        description: "Track engagement, participation, and feedback in real-time to measure event success and improve future gatherings."
+        description: "Track participation, engagement patterns, and feedback in real-time to optimize your event as it happens."
       }
     ],
     comparisons: [
@@ -83,9 +81,9 @@ export default function CompanyEventsPage() {
       }
     ],
     testimonial: {
-      quote: "Team Up! transformed our 500-person global all-hands into an engaging experience that actually brought teams together. The interactive features and breakout spaces created genuine connections we never achieved with traditional webinars.",
-      author: "Sarah Chen",
-      position: "Head of Employee Experience, Global Tech Co."
+      quote: "Team Up! made our 500-person global all-hands feel intimate and interactive. The 3D auditorium with breakout spaces created genuine connections across our international teams that we never achieved with traditional webinars. Participation increased by 85%.",
+      author: "Aisha Kazmi",
+      position: "HR Director, Global Innovations Inc."
     },
     futureProof: [
       {
@@ -102,15 +100,13 @@ export default function CompanyEventsPage() {
       }
     ],
     getStarted: {
-      heading: "Ready to transform your company events?",
-      description: "Start creating memorable virtual gatherings that strengthen team bonds and company culture.",
-      cta: "Book an Event Demo"
+      heading: "Ready to Transform Your Events?",
+      description: "Plan your first immersive event in minutes with our guided tools and templates.",
+      cta: "Book an Event Experience Demo"
     }
   };
 
-  return (
-    <WebLayout>
-      <SolutionByTypePage typeData={companyEventsData} />
-    </WebLayout>
-  );
-}
+  return <SolutionByTypePage typeData={eventsData} />;
+};
+
+export default EventsPage; 
