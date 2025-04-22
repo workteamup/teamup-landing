@@ -435,7 +435,7 @@ const Navbar = () => {
       </nav>
       {/* Mobile menu overlay */}
       <div
-        className={`fixed top-[88px] left-0 w-full h-[calc(100vh-88px)] bg-white z-40 ${
+        className={`fixed top-[88px] left-0 w-full h-[calc(100vh-88px)] bg-white z-40 overflow-y-auto scrollbar-hide ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
@@ -466,15 +466,293 @@ const Navbar = () => {
                 )}
               </div>
               {item.hasIcon && expandedItems[item.label] && (
-                <div className="px-6 py-4 bg-white">
-                  <span className="text-gray-500">TBD</span>
+                <div className="px-6 pb-8 bg-white">
+                  {item.label === "Spaces" ? (
+                    <div className="flex flex-col gap-8">
+                      {/* Daily Activity */}
+                      <div className="flex flex-col gap-4">
+                        <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
+                          Daily activity
+                        </span>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/auditorium.svg"
+                            width={20}
+                            height={20}
+                            alt="Auditorium"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Auditorium
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/planning.svg"
+                            width={20}
+                            height={20}
+                            alt="Planning"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Planning
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/sailboat-retrospective.svg"
+                            width={20}
+                            height={20}
+                            alt="Sailboat Retrospective"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Sailboat Retrospective
+                          </span>
+                        </div>
+                      </div>
+                      {/* Engagement */}
+                      <div className="flex flex-col gap-4">
+                        <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
+                          Engagement
+                        </span>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/campfire.svg"
+                            width={20}
+                            height={20}
+                            alt="Campfire"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Campfire
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/this-or-that.svg"
+                            width={20}
+                            height={20}
+                            alt="This or That"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            This or That
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/debate-room.svg"
+                            width={20}
+                            height={20}
+                            alt="Debate Room"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Debate Room
+                          </span>
+                        </div>
+                      </div>
+                      {/* Fun */}
+                      <div className="flex flex-col gap-4">
+                        <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
+                          Fun
+                        </span>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/the-floor-is-lava.svg"
+                            width={20}
+                            height={20}
+                            alt="The Floor is Lava"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            The Floor is Lava
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/connect-4.svg"
+                            width={20}
+                            height={20}
+                            alt="Connect 4"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Connect 4
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/the-farmyard.svg"
+                            width={20}
+                            height={20}
+                            alt="The Farmyard"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            The Farmyard
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/football-field.svg"
+                            width={20}
+                            height={20}
+                            alt="Football Field"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Football Field
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  ) : item.label === "Solutions" ? (
+                    <div className="flex flex-col gap-8">
+                      {/* By Pain */}
+                      <div className="flex flex-col gap-4">
+                        <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
+                          By pain
+                        </span>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/employee-turnover.svg"
+                            width={20}
+                            height={20}
+                            alt="Employee Turnover"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Employee Turnover
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/employee-disengagement.svg"
+                            width={20}
+                            height={20}
+                            alt="Employee Disengagement"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Employee Disengagement
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/remote-disconnection.svg"
+                            width={20}
+                            height={20}
+                            alt="Remote Disconnection"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Remote Disconnection
+                          </span>
+                        </div>
+                      </div>
+                      {/* By Role */}
+                      <div className="flex flex-col gap-4">
+                        <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
+                          By role
+                        </span>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/cxos.svg"
+                            width={20}
+                            height={20}
+                            alt="CXOs"
+                          />
+                          <span className="text-brand-700 text-sm">CXOs</span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/hr.svg"
+                            width={20}
+                            height={20}
+                            alt="HR"
+                          />
+                          <span className="text-brand-700 text-sm">HR</span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/managers.svg"
+                            width={20}
+                            height={20}
+                            alt="Managers"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Managers
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/employees.svg"
+                            width={20}
+                            height={20}
+                            alt="Employees"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Employees
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/marketing.svg"
+                            width={20}
+                            height={20}
+                            alt="Marketing"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Marketing
+                          </span>
+                        </div>
+                      </div>
+                      {/* By Type */}
+                      <div className="flex flex-col gap-4">
+                        <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
+                          By type
+                        </span>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/daily-activity.svg"
+                            width={20}
+                            height={20}
+                            alt="Daily Activity"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Daily Activity
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/events.svg"
+                            width={20}
+                            height={20}
+                            alt="Events"
+                          />
+                          <span className="text-brand-700 text-sm">Events</span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/fun-competitions.svg"
+                            width={20}
+                            height={20}
+                            alt="Fun Competitions"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Fun Competitions
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-4 cursor-pointer">
+                          <Image
+                            src="/svg/custom-icons/menu/custom-office-space.svg"
+                            width={20}
+                            height={20}
+                            alt="Custom Office Space"
+                          />
+                          <span className="text-brand-700 text-sm">
+                            Custom Office Space
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  ) : null}
                 </div>
               )}
             </div>
           </div>
         ))}
         {/* Buttons for mobile - moved below menu items */}
-        <div className="px-6 pt-8 pb-4 flex flex-col sm:flex-row gap-3">
+        <div className="px-6 pt-8 pb-8 flex flex-col sm:flex-row gap-3">
           <Button variant="primary" size="md" className="w-full sm:hidden">
             Request access
           </Button>
