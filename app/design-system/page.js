@@ -4,92 +4,7 @@ import React from "react";
 import Link from "next/link";
 
 export default function DesignSystem() {
-  function getTealColor(shade) {
-    const colors = {
-      50: "#ECFAFF",
-      100: "#D9F5FE",
-      200: "#C5F0FE",
-      300: "#B0EBFD",
-      400: "#9AE5FC",
-      500: "#82E0FB",
-      600: "#67DAFA",
-      700: "#52B1CC",
-      800: "#3F8A9F",
-      900: "#2C6575",
-    };
-    return colors[shade];
-  }
 
-  function getBlueColor(shade) {
-    const colors = {
-      50: "#E4EFFF",
-      100: "#C9DFFF",
-      200: "#AECEFF",
-      300: "#93BEFD",
-      400: "#78ADFB",
-      500: "#5C9BF9",
-      600: "#3F89F6",
-      700: "#326FC8",
-      800: "#25559D",
-      900: "#183D73",
-    };
-    return colors[shade];
-  }
-
-  function getPurpleColor(shade) {
-    const colors = {
-      50: "#E6E9FF",
-      100: "#CDD3FF",
-      200: "#B5BDFF",
-      300: "#9EA7FE",
-      400: "#8990FC",
-      500: "#7578F9",
-      600: "#635DF5",
-      700: "#4F4AC8",
-      800: "#3C389C",
-      900: "#2A2773",
-    };
-    return colors[shade];
-  }
-
-  function getBrandColor(shade) {
-    const colors = {
-      50: "#E0E2E7",
-      100: "#C3C6CF",
-      200: "#A6ABB8",
-      300: "#8A90A1",
-      400: "#6F768B",
-      500: "#555D75",
-      600: "#3C4560",
-      700: "#252E4B",
-      800: "#1D253D",
-      900: "#161C30",
-    };
-    return colors[shade];
-  }
-
-  function getDarkColor(color) {
-    const colors = {
-      black: "#ECEFF6",
-      phantom: "#D3D5E1",
-      arsenic: "#BCC0CC",
-      graphite: "#9CA2B2",
-      space: "#6E7180",
-      steel: "#40424E",
-      smoke: "#1F1E24",
-      cloud: "#000000",
-    };
-    return colors[color];
-  }
-
-  // Add a style for headings to ensure Poppins is applied
-  const headingStyle = {
-    fontFamily: "'Poppins', sans-serif",
-  };
-
-  const bodyStyle = {
-    fontFamily: "'Manrope', sans-serif",
-  };
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-6xl">
@@ -99,9 +14,7 @@ export default function DesignSystem() {
       </p>
 
       <header className="mb-12">
-        <h1 className="font-poppins text-4xl font-bold text-brand-700 mb-2">
-          Design System
-        </h1>
+        <h1 className="text-4xl text-brand-700 mb-2">Design System</h1>
         <p className="text-dark-space text-lg">
           A comprehensive guide to our brand styles and components
         </p>
@@ -122,46 +35,49 @@ export default function DesignSystem() {
         </h2>
 
         <div className="mb-8">
-          <h3 className="font-poppins text-xl font-medium text-brand-600 mb-4">
+          <h3 className="font-poppins text-xl text-brand-600 mb-4">
             Headings (Poppins)
           </h3>
           <div className="space-y-4">
-            <div>
-              <h1 className="font-poppins text-5xl font-bold">Heading 1</h1>
-              <p className="text-dark-space text-sm mt-1">
-                font-poppins text-5xl font-bold
-              </p>
-            </div>
-            <div>
-              <h2 className="font-poppins text-4xl font-bold">Heading 2</h2>
-              <p className="text-dark-space text-sm mt-1">
-                font-poppins text-4xl font-bold
-              </p>
-            </div>
-            <div>
-              <h3 className="font-poppins text-3xl font-semibold">Heading 3</h3>
-              <p className="text-dark-space text-sm mt-1">
-                font-poppins text-3xl font-semibold
-              </p>
-            </div>
-            <div>
-              <h4 className="font-poppins text-2xl font-semibold">Heading 4</h4>
-              <p className="text-dark-space text-sm mt-1">
-                font-poppins text-2xl font-semibold
-              </p>
-            </div>
-            <div>
-              <h5 className="font-poppins text-xl font-medium">Heading 5</h5>
-              <p className="text-dark-space text-sm mt-1">
-                font-poppins text-xl font-medium
-              </p>
-            </div>
-            <div>
-              <h6 className="font-poppins text-lg font-medium">Heading 6</h6>
-              <p className="text-dark-space text-sm mt-1">
-                font-poppins text-lg font-medium
-              </p>
-            </div>
+            <h1 className="font-medium">Heading 1</h1>
+            <h2 className="font-medium">Heading 2</h2>
+            <h3 className="font-medium">Heading 3</h3>
+            <h4 className="font-medium">Heading 4</h4>
+            <h5 className="font-medium">Heading 5</h5>
+            <h6 className="font-medium">Heading 6</h6>
+          </div>
+        </div>
+
+        <div className="mb-8">
+          <h3 className="text-xl text-brand-600 mb-4">Poppins Font Weights</h3>
+          <div className="font-poppins space-y-2">
+            <p className="font-thin text-lg">
+              Thin (100) - The quick brown fox jumps over the lazy dog
+            </p>
+            <p className="font-extralight text-lg">
+              Extra Light (200) - The quick brown fox jumps over the lazy dog
+            </p>
+            <p className="font-light text-lg">
+              Light (300) - The quick brown fox jumps over the lazy dog
+            </p>
+            <p className="font-normal text-lg">
+              Normal (400) - The quick brown fox jumps over the lazy dog
+            </p>
+            <p className="font-medium text-lg">
+              Medium (500) - The quick brown fox jumps over the lazy dog
+            </p>
+            <p className="font-semibold text-lg">
+              Semibold (600) - The quick brown fox jumps over the lazy dog
+            </p>
+            <p className="font-bold text-lg">
+              Bold (700) - The quick brown fox jumps over the lazy dog
+            </p>
+            <p className="font-extrabold text-lg">
+              Extra Bold (800) - The quick brown fox jumps over the lazy dog
+            </p>
+            <p className="font-black text-lg">
+              Black (900) - The quick brown fox jumps over the lazy dog
+            </p>
           </div>
         </div>
 
@@ -206,7 +122,7 @@ export default function DesignSystem() {
 
         {/* Teal Palette */}
         <div className="mb-10">
-          <h3 className="font-poppins text-xl font-medium text-brand-600 mb-4">
+          <h3 className="font-poppins text-xl font-light text-brand-600 mb-4">
             Teal Palette
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -364,7 +280,7 @@ export default function DesignSystem() {
 
         {/* Button Sizes */}
         <div>
-          <h3 className="font-poppins text-xl font-medium text-brand-600 mb-4">
+          <h3 className="font-poppins text-xl font-bold text-brand-600 mb-4">
             Button Sizes
           </h3>
           <div className="flex flex-wrap items-center gap-4">

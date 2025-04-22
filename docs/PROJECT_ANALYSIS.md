@@ -97,8 +97,8 @@ public/
 ├── fonts/ # Custom font files
 translations/ # JSON localization files
 
-
 ### Optimization Strategies
+
 - Critical CSS via Tailwind's `safelist`
 - Font subsetting through `next/font`
 - Script loading strategies (`beforeInteractive`, `afterInteractive`)
@@ -107,26 +107,26 @@ translations/ # JSON localization files
 
 Key implementation details can be found in:
 
-/** @type {import('next').NextConfig} */
+/\*_ @type {import('next').NextConfig} _/
 const nextConfig = {
-  images: { unoptimized: true },
-  trailingSlash: true,
-  output: "export",
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: [
-        {
-          loader: "@svgr/webpack",
-          options: {
-            // Optional SVGR config, e.g.:
-            // icon: true,
-          },
-        },
-      ],
-    });
-    return config;
-  },
+images: { unoptimized: true },
+trailingSlash: true,
+output: "export",
+webpack(config) {
+config.module.rules.push({
+test: /\.svg$/,
+use: [
+{
+loader: "@svgr/webpack",
+options: {
+// Optional SVGR config, e.g.:
+// icon: true,
+},
+},
+],
+});
+return config;
+},
 };
 
 import { Sora, Syne } from "next/font/google";
@@ -136,36 +136,36 @@ import { TranslationProvider } from "./contexts/TranslationContext";
 
 const syne = Syne({ subsets: ["latin"] });
 const sora = Sora({
-  subsets: ["latin"],
-  variable: '--font-sora'
+subsets: ["latin"],
+variable: '--font-sora'
 });
 
 export const metadata = {
-  title: "Team Up | La mejor manera de conectar en remoto",
-  description:
-    "Disfruta de un entorno en la web perfecto para crear y mantener cultura de empresa.",
+title: "Team Up | La mejor manera de conectar en remoto",
+description:
+"Disfruta de un entorno en la web perfecto para crear y mantener cultura de empresa.",
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en" className={`scroll-smooth ${sora.variable}`}>
-      <body className="antialiased font-sans">
-        <Script
+return (
+<html lang="en" className={`scroll-smooth ${sora.variable}`}>
+<body className="antialiased font-sans">
+<Script
           src="https://cdn.seline.so/seline.js"
           data-token="38b478ebea90f19"
           strategy="beforeInteractive"
         />
-        <Script
+<Script
           src="https://cdn-cookieyes.com/client_data/61286c6a03a5761eb4e3563f/script.js"
           strategy="beforeInteractive"
         />
-        <Script id="clarity-script" strategy="afterInteractive">
-          {`(function(c,l,a,r,i,t,y){
+<Script id="clarity-script" strategy="afterInteractive">
+{`(function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "pvs27seu8b");`}
-        </Script>
+</Script>
 
         {/* Google Ads Tag */}
         <Script
@@ -188,15 +188,17 @@ export default function RootLayout({ children }) {
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-25N577RN4Z');`}
-        </Script>
+
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-25N577RN4Z');`}
+</Script>
 
         <TranslationProvider>{children}</TranslationProvider>
       </body>
     </html>
-  );
+
+);
 }
 
 'use client';
@@ -209,45 +211,45 @@ import esTranslations from '../../translations/es.json';
 const TranslationContext = createContext();
 
 const translations = {
-  en: enTranslations,
-  es: esTranslations,
+en: enTranslations,
+es: esTranslations,
 };
 
 export function TranslationProvider({ children }) {
-  const pathname = usePathname();
-  const locale = pathname.startsWith('/es') ? 'es' : 'en';
+const pathname = usePathname();
+const locale = pathname.startsWith('/es') ? 'es' : 'en';
 
-  const t = (key) => {
-    const keys = key.split('.');
-    let value = translations[locale];
-    for (const k of keys) {
-      value = value[k];
-      if (value === undefined) return key;
-    }
-    return value;
-  };
+const t = (key) => {
+const keys = key.split('.');
+let value = translations[locale];
+for (const k of keys) {
+value = value[k];
+if (value === undefined) return key;
+}
+return value;
+};
 
-  return (
-    <TranslationContext.Provider value={{ t, locale }}>
-      {children}
-    </TranslationContext.Provider>
-  );
+return (
+<TranslationContext.Provider value={{ t, locale }}>
+{children}
+</TranslationContext.Provider>
+);
 }
 
 export function useTranslations() {
-  const context = useContext(TranslationContext);
-  if (context === undefined) {
-    throw new Error('useTranslations must be used within a TranslationProvider');
-  }
-  return context.t;
+const context = useContext(TranslationContext);
+if (context === undefined) {
+throw new Error('useTranslations must be used within a TranslationProvider');
+}
+return context.t;
 }
 
 export function useLocale() {
-  const context = useContext(TranslationContext);
-  if (context === undefined) {
-    throw new Error('useLocale must be used within a TranslationProvider');
-  }
-  return context.locale;
+const context = useContext(TranslationContext);
+if (context === undefined) {
+throw new Error('useLocale must be used within a TranslationProvider');
+}
+return context.locale;
 }
 
 ### Font Loading Fix Implementation
@@ -255,21 +257,24 @@ export function useLocale() {
 The font loading issue was resolved through the following changes:
 
 1. **Font Face Declaration**:
+
    - Replaced Google Fonts `@import` with direct `@font-face` declarations
    - Added explicit font weight ranges and `font-display: swap`
    - Used woff2 format for better performance
    - Example:
      ```css
      @font-face {
-       font-family: 'Poppins';
+       font-family: "Poppins";
        font-style: normal;
        font-weight: 300 700;
        font-display: swap;
-       src: url('https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2') format('woff2');
+       src: url("https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2")
+         format("woff2");
      }
      ```
 
 2. **Tailwind Configuration**:
+
    - Updated `tailwind.config.js` to use consistent font family names
    - Set `sans` as the default font family for Manrope
    - Added explicit `poppins` font family for headings
@@ -282,12 +287,19 @@ The font loading issue was resolved through the following changes:
      ```
 
 3. **Global CSS Updates**:
+
    - Updated base styles to use `font-sans` for body text
    - Ensured headings use `font-poppins`
    - Example:
      ```css
      @layer base {
-       h1, h2, h3, h4, h5, h6, button {
+       h1,
+       h2,
+       h3,
+       h4,
+       h5,
+       h6,
+       button {
          @apply font-poppins;
        }
        body {
@@ -297,6 +309,7 @@ The font loading issue was resolved through the following changes:
      ```
 
 4. **Component Implementation**:
+
    - Added explicit font test section in the design system
    - Used Tailwind classes consistently (`font-poppins`, `font-sans`)
    - Example:
@@ -311,19 +324,19 @@ The font loading issue was resolved through the following changes:
    - Included class name indicators for each test case
    - Example:
      ```jsx
-     <p className="text-xs text-dark-space mt-1">
-       Class: font-poppins text-lg
-     </p>
+     <p className="text-xs text-dark-space mt-1">Class: font-poppins text-lg</p>
      ```
 
 ### Key Learnings
 
 1. **Font Loading Strategy**:
+
    - Direct `@font-face` declarations provide more control than `@import`
    - `font-display: swap` prevents FOIT (Flash of Invisible Text)
    - woff2 format offers better compression and performance
 
 2. **Tailwind Integration**:
+
    - Consistent font family naming improves maintainability
    - Base layer styles ensure global consistency
    - Explicit class usage makes styling more predictable

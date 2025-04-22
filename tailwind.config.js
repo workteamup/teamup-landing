@@ -60,6 +60,7 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
         sans: ["Manrope", "sans-serif"],
         yellix: ["Yellix", "sans-serif"],
         bogue: ["Bogue", "serif"],
