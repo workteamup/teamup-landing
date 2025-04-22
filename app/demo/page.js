@@ -1,14 +1,39 @@
 import Navbar from '../new-components/navbar';
+import Hero from "../new-components/hero";
+import Image from "next/image";
 
 export default function DemoPage() {
   return (
-    <div className="min-h-screen">
+    <div>
       <Navbar />
-      <div className="pt-[88px] p-8">
-        <h1 className="text-2xl font-bold">Navbar Demo Page</h1>
-        <p className="mt-4">Scroll down to see the sticky navbar in action.</p>
-        <div className="h-[200vh]"></div>
-      </div>
+      <Hero
+        preTitle="Welcome to Team Up!"
+        title="Revolutionize Your Team Collaboration"
+        subtitle="Our platform brings your team together like never before. Experience seamless communication and productivity."
+        buttons={[
+          {
+            variant: "primary",
+            children: "Get Started",
+            size: "lg",
+          },
+          {
+            variant: "secondary",
+            children: "Learn More",
+            size: "lg",
+          },
+        ]}
+        extraContent={
+          <div className="relative w-full h-[500px] rounded-lg overflow-hidden">
+            <Image
+              src="/images/hero-demo.jpg"
+              alt="Team Collaboration"
+              fill
+              className="object-cover"
+            />
+          </div>
+        }
+      />
+      {/* Rest of your page content */}
     </div>
   );
 } 
