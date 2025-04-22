@@ -2,10 +2,9 @@
 
 import React from "react";
 import Link from "next/link";
+import Button from "../new-components/button";
 
 export default function DesignSystem() {
-
-
   return (
     <div className="container mx-auto px-4 py-12 max-w-6xl">
       <p className="font-poppins text-lg mb-8">
@@ -241,19 +240,19 @@ export default function DesignSystem() {
           <h3 className="font-poppins text-xl font-medium text-brand-600 mb-4">
             Primary Buttons
           </h3>
-          <div className="flex flex-wrap gap-4">
-            <button className="bg-teal-600 hover:bg-teal-700 text-white font-poppins font-medium py-2 px-4 rounded">
-              Teal Button
-            </button>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-poppins font-medium py-2 px-4 rounded">
-              Blue Button
-            </button>
-            <button className="bg-purple-600 hover:bg-purple-700 text-white font-poppins font-medium py-2 px-4 rounded">
-              Purple Button
-            </button>
-            <button className="bg-brand-700 hover:bg-brand-800 text-white font-poppins font-medium py-2 px-4 rounded">
-              Brand Button
-            </button>
+          <div className="flex flex-wrap gap-4 items-center">
+            <Button size="sm" variant="primary">
+              Small Primary
+            </Button>
+            <Button size="md" variant="primary">
+              Medium Primary
+            </Button>
+            <Button size="lg" variant="primary">
+              Large Primary
+            </Button>
+            <Button size="xl" variant="primary">
+              Extra Large Primary
+            </Button>
           </div>
         </div>
 
@@ -262,40 +261,93 @@ export default function DesignSystem() {
           <h3 className="font-poppins text-xl font-medium text-brand-600 mb-4">
             Secondary Buttons
           </h3>
-          <div className="flex flex-wrap gap-4">
-            <button className="bg-white border-2 border-teal-600 text-teal-600 hover:bg-teal-50 font-poppins font-medium py-2 px-4 rounded">
-              Teal Outline
-            </button>
-            <button className="bg-white border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-poppins font-medium py-2 px-4 rounded">
-              Blue Outline
-            </button>
-            <button className="bg-white border-2 border-purple-600 text-purple-600 hover:bg-purple-50 font-poppins font-medium py-2 px-4 rounded">
-              Purple Outline
-            </button>
-            <button className="bg-white border-2 border-brand-700 text-brand-700 hover:bg-brand-50 font-poppins font-medium py-2 px-4 rounded">
-              Brand Outline
-            </button>
+          <div className="flex flex-wrap gap-4 items-center">
+            <Button size="sm" variant="secondary">
+              Small Secondary
+            </Button>
+            <Button size="md" variant="secondary">
+              Medium Secondary
+            </Button>
+            <Button size="lg" variant="secondary">
+              Large Secondary
+            </Button>
+            <Button size="xl" variant="secondary">
+              Extra Large Secondary
+            </Button>
           </div>
         </div>
 
-        {/* Button Sizes */}
-        <div>
-          <h3 className="font-poppins text-xl font-bold text-brand-600 mb-4">
-            Button Sizes
+        {/* Tertiary Buttons */}
+        <div className="mb-8">
+          <h3 className="font-poppins text-xl font-medium text-brand-600 mb-4">
+            Tertiary Buttons
           </h3>
-          <div className="flex flex-wrap items-center gap-4">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-poppins font-medium py-1 px-2 text-xs rounded">
-              Extra Small
-            </button>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-poppins font-medium py-1.5 px-3 text-sm rounded">
-              Small
-            </button>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-poppins font-medium py-2 px-4 rounded">
-              Medium
-            </button>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-poppins font-medium py-3 px-6 text-lg rounded">
-              Large
-            </button>
+          <div className="flex flex-wrap gap-4 items-center">
+            <Button size="sm" variant="tertiary">
+              Small Tertiary
+            </Button>
+            <Button size="md" variant="tertiary">
+              Medium Tertiary
+            </Button>
+            <Button size="lg" variant="tertiary">
+              Large Tertiary
+            </Button>
+            <Button size="xl" variant="tertiary">
+              Extra Large Tertiary
+            </Button>
+          </div>
+        </div>
+
+        {/* Text Buttons */}
+        <div className="mb-8">
+          <h3 className="font-poppins text-xl font-medium text-brand-600 mb-4">
+            Text Buttons
+          </h3>
+          <div className="flex flex-wrap gap-4 items-center">
+            <Button variant="text">Default Text</Button>
+            <Button variant="text" underline>
+              Underlined Text
+            </Button>
+            <div className="bg-brand-700 p-4 rounded-lg">
+              <Button variant="text">Text on Dark</Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Buttons with Icons */}
+        <div className="mb-8">
+          <h3 className="font-poppins text-xl font-medium text-brand-600 mb-4">
+            Buttons with Icons
+          </h3>
+          <div className="flex flex-wrap gap-4 items-center">
+            <Button variant="primary" iconLeft={<span>←</span>}>
+              Icon Left
+            </Button>
+            <Button variant="secondary" iconRight={<span>→</span>}>
+              Icon Right
+            </Button>
+            <Button
+              variant="tertiary"
+              iconLeft={<span>★</span>}
+              iconRight={<span>★</span>}
+            >
+              Both Icons
+            </Button>
+          </div>
+        </div>
+
+        {/* Buttons with Shadow */}
+        <div>
+          <h3 className="font-poppins text-xl font-medium text-brand-600 mb-4">
+            Buttons with Shadow
+          </h3>
+          <div className="flex flex-wrap gap-4 items-center">
+            <Button variant="primary" withShadow>
+              With Shadow
+            </Button>
+            <Button variant="primary" withShadow={false}>
+              Without Shadow
+            </Button>
           </div>
         </div>
       </section>
