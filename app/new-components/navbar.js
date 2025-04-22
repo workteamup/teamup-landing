@@ -2,7 +2,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Button from "./button";
-import { ChevronDown, AlignJustify, X } from "lucide-react";
+import { ChevronDown, AlignJustify, X, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -111,10 +111,12 @@ const Navbar = () => {
                 : "border-dark-smoke"
             }`}
           >
-            <div className="px-6 h-20 flex items-center">
-              <span className="text-lg">{item.label}</span>
-              {item.hasIcon && (
-                <ChevronDown className="w-5 h-5 ml-2" strokeWidth={2} />
+            <div className="px-6 h-20 flex items-center justify-between">
+              <span className="text-xl">{item.label}</span>
+              {item.hasIcon ? (
+                <ChevronDown className="w-5 h-5" strokeWidth={2} />
+              ) : (
+                <ArrowRight className="w-5 h-5" strokeWidth={2} />
               )}
             </div>
           </div>
