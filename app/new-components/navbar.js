@@ -2,12 +2,26 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Button from "./button";
-import { ChevronDown, AlignJustify, X, ArrowRight } from "lucide-react";
+import {
+  ChevronDown,
+  ChevronUp,
+  AlignJustify,
+  X,
+  ArrowRight,
+} from "lucide-react";
 import Image from "next/image";
 
 const Navbar = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [expandedItems, setExpandedItems] = useState({});
+
+  const toggleExpand = (label) => {
+    setExpandedItems((prev) => ({
+      ...prev,
+      [label]: !prev[label],
+    }));
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -103,24 +117,47 @@ const Navbar = () => {
       >
         {/* Mobile menu items */}
         {menuItems.map((item, index) => (
-          <div
-            key={index}
-            className={`w-full border-b ${
-              index === menuItems.length - 1
-                ? "border-b-0"
-                : "border-dark-smoke"
-            }`}
-          >
-            <div className="px-6 h-20 flex items-center justify-between">
-              <span className="text-xl">{item.label}</span>
-              {item.hasIcon ? (
-                <ChevronDown className="w-5 h-5" strokeWidth={2} />
-              ) : (
-                <ArrowRight className="w-5 h-5" strokeWidth={2} />
+          <div key={index}>
+            <div
+              className={`w-full ${
+                index === menuItems.length - 1 || 
+                (item.label === "About us" && window.innerWidth >= 640)
+                  ? "border-b-0"
+                  : "border-b border-dark-smoke"
+              } ${item.label === "Sign in" ? "sm:hidden" : ""}`}
+            >
+              <div
+                className="px-6 h-20 flex items-center justify-between cursor-pointer"
+                onClick={() => item.hasIcon && toggleExpand(item.label)}
+              >
+                <span className="text-xl">{item.label}</span>
+                {item.hasIcon ? (
+                  expandedItems[item.label] ? (
+                    <ChevronUp className="w-5 h-5" strokeWidth={2} />
+                  ) : (
+                    <ChevronDown className="w-5 h-5" strokeWidth={2} />
+                  )
+                ) : (
+                  <ArrowRight className="w-5 h-5" strokeWidth={2} />
+                )}
+              </div>
+              {item.hasIcon && expandedItems[item.label] && (
+                <div className="px-6 py-4 bg-white">
+                  <span className="text-gray-500">TBD</span>
+                </div>
               )}
             </div>
           </div>
         ))}
+        {/* Buttons for mobile - moved below menu items */}
+        <div className="px-6 pt-8 pb-4 flex flex-col sm:flex-row gap-3">
+          <Button variant="primary" size="md" className="w-full sm:hidden">
+            Request access
+          </Button>
+          <Button variant="tertiary" size="md" className="w-full md:hidden">
+            Contact sales
+          </Button>
+        </div>
       </div>
     </>
   );
