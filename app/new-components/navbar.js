@@ -120,7 +120,7 @@ const Navbar = () => {
           <div key={index}>
             <div
               className={`w-full ${
-                index === menuItems.length - 1 || 
+                index === menuItems.length - 1 ||
                 (item.label === "About us" && window.innerWidth >= 640)
                   ? "border-b-0"
                   : "border-b border-dark-smoke"
