@@ -1,0 +1,26 @@
+/* Poppins */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2') format('woff2');
+}
+
+/* Manrope */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggexSg.woff2') format('woff2');
+}
+
+/* Add these fallback styles */
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-sans {
+  font-family: 'Manrope', sans-serif;
+} 

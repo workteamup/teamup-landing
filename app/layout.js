@@ -1,12 +1,20 @@
-import { Sora, Syne } from "next/font/google";
+import { Poppins, Manrope } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { TranslationProvider } from "./contexts/TranslationContext";
 
-const syne = Syne({ subsets: ["latin"] });
-const sora = Sora({
+// Load Poppins with all necessary weights
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: '--font-sora'
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
+
+// Load Manrope with all necessary weights
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-manrope",
 });
 
 export const metadata = {
@@ -17,8 +25,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`scroll-smooth ${sora.variable}`}>
-      <body className="antialiased font-sans">
+    <html lang="en" className={`${poppins.variable} ${manrope.variable}`}>
+      <body className="font-sans">
         <Script
           src="https://cdn.seline.so/seline.js"
           data-token="38b478ebea90f19"
