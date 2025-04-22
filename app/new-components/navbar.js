@@ -2,11 +2,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Button from "./button";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, AlignJustify, X } from "lucide-react";
 import Image from "next/image";
 
 const Navbar = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +55,7 @@ const Navbar = () => {
               <div
                 key={index}
                 className={`flex items-center text-brand-700 hover:text-purple-600 cursor-pointer transition-colors ${
-                  item.label !== "Sign in" ? "hidden xl:flex" : ""
+                  item.label !== "Sign in" ? "hidden xl:flex" : "hidden sm:flex"
                 }`}
               >
                 <span>{item.label}</span>
@@ -67,11 +68,25 @@ const Navbar = () => {
 
           {/* Buttons */}
           <div className="flex items-center gap-3">
-            <Button variant="tertiary" size="md">
+            <Button variant="primary" size="md" className="hidden sm:flex">
+              Request access
+            </Button>
+            <Button variant="tertiary" size="md" className="hidden md:flex">
               Contact sales
             </Button>
-            <Button variant="primary" size="md">
-              Request access
+            <Button
+              variant={isMenuOpen ? "primary" : "tertiary"}
+              size="md"
+              iconOnly
+              withShadow={false}
+              className="xl:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <AlignJustify className="w-6 h-6" />
+              )}
             </Button>
           </div>
         </div>

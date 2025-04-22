@@ -9,6 +9,7 @@ const Button = ({
   iconLeft,
   iconRight,
   underline = false,
+  iconOnly = false,
   className,
   children,
   ...props
@@ -17,10 +18,10 @@ const Button = ({
     "rounded-full font-poppins font-medium transition-all duration-200 flex items-center justify-center";
 
   const sizeClasses = {
-    sm: "h-10 px-[18px] py-3 text-xs",
-    md: "h-12 px-5 py-[14px] text-sm",
-    lg: "h-14 px-6 py-4 text-base",
-    xl: "h-[68px] px-8 py-5 text-lg",
+    sm: "h-10 text-xs",
+    md: "h-12 text-sm",
+    lg: "h-14 text-base",
+    xl: "h-[68px] text-lg",
     text: "h-auto px-0 py-0",
   };
 
@@ -52,6 +53,14 @@ const Button = ({
       className={cn(
         baseClasses,
         sizeClasses[size],
+        iconOnly
+          ? "aspect-square p-0"
+          : {
+              sm: "px-[18px] py-3",
+              md: "px-5 py-[14px]",
+              lg: "px-6 py-4",
+              xl: "px-8 py-5",
+            }[size],
         variantClasses[variant],
         shadowClasses,
         underlineClass,
@@ -59,16 +68,22 @@ const Button = ({
       )}
       {...props}
     >
-      {iconLeft && (
-        <span className={cn("mr-2", iconSizeClasses[size])}>
-          {React.cloneElement(iconLeft, { className: "w-full h-full" })}
-        </span>
-      )}
-      <span>{children}</span>
-      {iconRight && (
-        <span className={cn("ml-2", iconSizeClasses[size])}>
-          {React.cloneElement(iconRight, { className: "w-full h-full" })}
-        </span>
+      {iconOnly ? (
+        React.cloneElement(children, { className: iconSizeClasses[size] })
+      ) : (
+        <>
+          {iconLeft && (
+            <span className={cn("mr-2", iconSizeClasses[size])}>
+              {React.cloneElement(iconLeft, { className: "w-full h-full" })}
+            </span>
+          )}
+          <span>{children}</span>
+          {iconRight && (
+            <span className={cn("ml-2", iconSizeClasses[size])}>
+              {React.cloneElement(iconRight, { className: "w-full h-full" })}
+            </span>
+          )}
+        </>
       )}
     </button>
   );
