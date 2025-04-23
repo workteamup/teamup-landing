@@ -23,7 +23,7 @@ const Hero = ({
           {preTitle && (
             <p
               className={cn(
-                "text-[14px] font-medium text-white opacity-80 uppercase tracking-[0.08em] mb-4",
+                "text-[14px] font-semibold text-white opacity-80 uppercase tracking-[0.08em] mb-4",
                 preTitleClassName
               )}
             >
@@ -33,7 +33,7 @@ const Hero = ({
           {title && (
             <h1
               className={cn(
-                "text-7xl font-semibold text-white",
+                "text-7xl font-semibold text-white leading-tight",
                 titleClassName
               )}
             >
@@ -43,7 +43,7 @@ const Hero = ({
           {subtitle && (
             <p
               className={cn(
-                "text-2xl text-white opacity-80 mt-8 font-light max-w-[720px] leading-10 tracking-wide",
+                "text-2xl text-white opacity-80 mt-8 leading-10 tracking-wide",
                 subtitleClassName
               )}
             >
@@ -52,7 +52,7 @@ const Hero = ({
           )}
 
           {buttons.length > 0 && (
-            <div className={cn("flex gap-4 mt-8", buttonsContainerClassName)}>
+            <div className={cn("flex gap-4 mt-12", buttonsContainerClassName)}>
               {buttons.map((buttonProps, index) => (
                 <Button key={index} {...buttonProps} />
               ))}

@@ -131,6 +131,9 @@ module.exports = {
           cloud: "#ECEFF6",
         },
       },
+      letterSpacing: {
+        body: "0.02em",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],
