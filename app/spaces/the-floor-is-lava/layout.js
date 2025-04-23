@@ -1,5 +1,3 @@
-import CommonLayout from '../../../components/common-layout';
-
 export default function TheFloorIsLavaLayout({ children }) {
-  return <CommonLayout>{children}</CommonLayout>;
+  return <div className="min-h-screen">{children}</div>;
 }

@@ -1,5 +1,3 @@
-import CommonLayout from '../../../components/common-layout';
-
 export default function CampfireLayout({ children }) {
-  return <CommonLayout>{children}</CommonLayout>;
+  return <div className="min-h-screen">{children}</div>;
 }
