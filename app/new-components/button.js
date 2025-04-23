@@ -12,6 +12,7 @@ const Button = ({
   iconOnly = false,
   className,
   children,
+  onClick,
   ...props
 }) => {
   const baseClasses =
@@ -66,6 +67,7 @@ const Button = ({
         underlineClass,
         className
       )}
+      onClick={onClick}
       {...props}
     >
       {iconOnly ? (

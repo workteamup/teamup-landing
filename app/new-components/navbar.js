@@ -9,6 +9,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -86,12 +87,14 @@ const Navbar = () => {
         <div className="w-full max-w-[1600px] mx-auto h-full px-6 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Image
-              src="/svg/logos/teamup-logo-dark.svg"
-              alt="Team Up! Logo"
-              width={193}
-              height={40}
-            />
+            <Link href="/">
+              <Image
+                src="/svg/logos/teamup-logo-dark.svg"
+                alt="Team Up! Logo"
+                width={193}
+                height={40}
+              />
+            </Link>
           </div>
 
           {/* Menu and Buttons */}
@@ -109,7 +112,17 @@ const Navbar = () => {
                   onMouseEnter={() => handleMouseEnter(item.label)}
                   onMouseLeave={() => handleMouseLeave(item.label)}
                 >
-                  <span>{item.label}</span>
+                  {item.label === "Sign in" ? (
+                    <a
+                      href="https://app.teamup.works/login"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span>{item.label}</span>
+                    </a>
+                  ) : (
+                    <span>{item.label}</span>
+                  )}
                   {item.hasIcon && (
                     <>
                       <ChevronDown className="w-4 h-4 ml-1" strokeWidth={2} />
@@ -479,7 +492,14 @@ const Navbar = () => {
 
             {/* Buttons */}
             <div className="flex items-center gap-3">
-              <Button variant="primary" size="md" className="hidden sm:flex">
+              <Button
+                variant="primary"
+                size="md"
+                className="hidden sm:flex"
+                onClick={() =>
+                  window.open("https://app.teamup.works/signup", "_blank")
+                }
+              >
                 Request access
               </Button>
               <Button variant="tertiary" size="md" className="hidden md:flex">
@@ -526,7 +546,18 @@ const Navbar = () => {
                 className="px-6 h-20 flex items-center justify-between cursor-pointer"
                 onClick={() => item.hasIcon && toggleExpand(item.label)}
               >
-                <span className="text-xl">{item.label}</span>
+                {item.label === "Sign in" ? (
+                  <a
+                    href="https://app.teamup.works/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <span className="text-xl">{item.label}</span>
+                )}
                 {item.hasIcon ? (
                   expandedItems[item.label] ? (
                     <ChevronUp className="w-5 h-5" strokeWidth={2} />
@@ -895,7 +926,14 @@ const Navbar = () => {
         ))}
         {/* Buttons for mobile - moved below menu items */}
         <div className="px-6 pt-8 pb-8 flex flex-col sm:flex-row gap-3">
-          <Button variant="primary" size="md" className="w-full sm:hidden">
+          <Button
+            variant="primary"
+            size="md"
+            className="w-full sm:hidden"
+            onClick={() =>
+              window.open("https://app.teamup.works/signup", "_blank")
+            }
+          >
             Request access
           </Button>
           <Button variant="tertiary" size="md" className="w-full md:hidden">
