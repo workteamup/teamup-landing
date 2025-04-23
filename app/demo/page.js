@@ -1,5 +1,6 @@
 import Navbar from "../new-components/navbar";
 import Hero from "../new-components/hero";
+import Section from "../new-components/section";
 
 export default function DemoPage() {
   return (
@@ -30,6 +31,35 @@ export default function DemoPage() {
           </div>
         }
         bgClassName="bg-purple-50"
+      />
+      <Section
+        preTitle="Our Services"
+        title="What We Offer"
+        description="We provide comprehensive solutions tailored to your business needs."
+        buttons={[
+          { children: "Learn More", href: "/services" },
+          { children: "Contact Us", variant: "secondary" },
+        ]}
+        content={
+          <div className="grid grid-cols-3 gap-8 mt-16">
+            <div className="p-6 bg-white rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900">Service 1</h3>
+              <p className="mt-4 text-gray-600">Description of service 1</p>
+            </div>
+            <div className="p-6 bg-white rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900">Service 2</h3>
+              <p className="mt-4 text-gray-600">Description of service 2</p>
+            </div>
+            <div className="p-6 bg-white rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900">Service 3</h3>
+              <p className="mt-4 text-gray-600">Description of service 3</p>
+            </div>
+          </div>
+        }
+        buttonsPosition="bottom"
+        bgClassName="bg-gradient-to-r from-brand-50 to-brand-100"
+        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
+        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
       />
       {/* Rest of your page content */}
     </div>
