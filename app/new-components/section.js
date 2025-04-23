@@ -6,24 +6,24 @@ import { cn } from "../lib/utils";
 const Section = ({
   preTitle,
   title,
-  description,
+  subtitle,
   buttons = [],
   content,
   className = "",
   preTitleClassName,
   titleClassName,
-  descriptionClassName,
+  subtitleClassName,
   buttonsContainerClassName,
   buttonsPosition = "top", // 'top' or 'bottom'
   containerClassName = "w-full max-w-[1600px] mx-auto px-12 py-24",
   bgClassName = "bg-white",
 }) => {
-  console.log("Section props:", { preTitle, title, description });
+  console.log("Section props:", { preTitle, title, subtitle });
 
   return (
     <section className={cn("w-full", bgClassName, className)}>
       <div className={cn(containerClassName)}>
-        {(preTitle || title || description) && (
+        {(preTitle || title || subtitle) && (
           <div className="flex flex-col items-center text-center">
             {preTitle && (
               <p
@@ -45,14 +45,14 @@ const Section = ({
                 {title}
               </h2>
             )}
-            {description && (
+            {subtitle && (
               <p
                 className={cn(
                   "text-2xl text-brand-600 mt-8 leading-10 tracking-wide",
-                  descriptionClassName
+                  subtitleClassName
                 )}
               >
-                {description}
+                {subtitle}
               </p>
             )}
           </div>

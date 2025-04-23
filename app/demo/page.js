@@ -35,7 +35,7 @@ export default function DemoPage() {
       <Section
         preTitle="Our Services"
         title="What We Offer"
-        description="We provide comprehensive solutions tailored to your business needs."
+        subtitle="We provide comprehensive solutions tailored to your business needs."
         buttons={[
           { children: "Learn More", href: "/services" },
           { children: "Contact Us", variant: "secondary" },
