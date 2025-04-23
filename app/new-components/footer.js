@@ -70,7 +70,7 @@ const Footer = () => {
                           : key.startsWith("solutions")
                           ? `/solutions/${link
                               .toLowerCase()
-                              .replace(/^for /, '').replace(/ /g, "-")}`
+                              .replace(/ /g, "-")}`
                           : `/${key}/${link.toLowerCase().replace(/ /g, "-")}`
                       }
                       className="text-sm sm:text-[14px] text-brand-700 hover:text-purple-600 transition-colors"
