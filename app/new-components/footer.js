@@ -87,59 +87,57 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="w-full bg-white px-6 md:px-12 pt-8 md:pt-12 pb-16 md:pb-[120px]">
-        <div className="w-full max-w-[1600px] mx-auto flex justify-between items-start">
-          <div className="w-full flex flex-col gap-8">
-            {/* Top Section */}
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-16">
-              {/* Social Media Icons */}
-              <div className="flex gap-4">
-                {socialMediaLinks.map(({ icon, alt }) => (
-                  <Link
-                    key={alt}
-                    href="#"
-                    className="w-9 h-9 md:w-11 md:h-11 rounded-full bg-purple-50 flex items-center justify-center hover:bg-purple-100 transition-colors"
-                  >
-                    <Image src={icon} width={20} height={20} alt={alt} />
-                  </Link>
-                ))}
-              </div>
-
-              {/* Legal Links */}
-              <div className="flex flex-col md:flex-row gap-4 md:gap-8">
+        <div className="w-full max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+          {/* Left Section */}
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-6">
+            {/* Social Media Icons */}
+            <div className="flex gap-4">
+              {socialMediaLinks.map(({ icon, alt }) => (
                 <Link
-                  href="/terms-and-conditions"
-                  className="text-xs sm:text-[12px] text-brand-700 hover:text-purple-600"
+                  key={alt}
+                  href="#"
+                  className="w-9 h-9 md:w-11 md:h-11 rounded-full bg-purple-50 flex items-center justify-center hover:bg-purple-100 transition-colors"
                 >
-                  Terms and conditions
+                  <Image src={icon} width={20} height={20} alt={alt} />
                 </Link>
-                <Link
-                  href="/privacy-policy"
-                  className="text-xs sm:text-[12px] text-brand-700 hover:text-purple-600"
-                >
-                  Privacy policy
-                </Link>
-                <Link
-                  href="/cookie-policy"
-                  className="text-xs sm:text-[12px] text-brand-700 hover:text-purple-600"
-                >
-                  Cookie policy
-                </Link>
-              </div>
+              ))}
             </div>
 
-            {/* Right Section */}
-            <div className="flex flex-col items-start md:items-end">
-              <Image
-                src="/svg/logos/teamup-logo-dark.svg"
-                alt="Team Up! Logo"
-                width={145}
-                height={30}
-                className="w-[145px] md:w-[193px] mb-2"
-              />
-              <p className="text-xs sm:text-[12px] text-brand-700 mt-1">
-                © 2025, TEAM UP TECH ESPAÑA, SL. All rights reserved.
-              </p>
+            {/* Legal Links */}
+            <div className="flex flex-col md:flex-row gap-4 md:gap-8">
+              <Link
+                href="/terms-and-conditions"
+                className="text-xs sm:text-[12px] text-brand-700 hover:text-purple-600"
+              >
+                Terms and conditions
+              </Link>
+              <Link
+                href="/privacy-policy"
+                className="text-xs sm:text-[12px] text-brand-700 hover:text-purple-600"
+              >
+                Privacy policy
+              </Link>
+              <Link
+                href="/cookie-policy"
+                className="text-xs sm:text-[12px] text-brand-700 hover:text-purple-600"
+              >
+                Cookie policy
+              </Link>
             </div>
+          </div>
+
+          {/* Right Section */}
+          <div className="flex flex-col items-start md:items-end">
+            <Image
+              src="/svg/logos/teamup-logo-dark.svg"
+              alt="Team Up! Logo"
+              width={145}
+              height={30}
+              className="w-[145px] md:w-[193px] mb-2"
+            />
+            <p className="text-xs sm:text-[12px] text-brand-700 mt-1 md:text-right">
+              © 2025, TEAM UP TECH ESPAÑA, SL. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
