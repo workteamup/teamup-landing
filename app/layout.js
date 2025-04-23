@@ -2,7 +2,8 @@ import { Poppins, Manrope } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { TranslationProvider } from "./contexts/TranslationContext";
-import Navbar from './new-components/navbar';
+import Navbar from "./new-components/navbar";
+import Footer from "./new-components/footer";
 
 // Load Poppins with all necessary weights
 const poppins = Poppins({
@@ -72,7 +73,10 @@ export default function RootLayout({ children }) {
         </Script>
 
         <Navbar />
-        <TranslationProvider>{children}</TranslationProvider>
+        <TranslationProvider>
+          {children}
+          <Footer />
+        </TranslationProvider>
       </body>
     </html>
   );
