@@ -40,12 +40,12 @@ const Footer = () => {
   };
 
   const socialMediaLinks = [
-    { icon: "/svg/custom-icons/social-media/discord.svg", alt: "Discord" },
-    { icon: "/svg/custom-icons/social-media/instagram.svg", alt: "Instagram" },
     { icon: "/svg/custom-icons/social-media/linkedin.svg", alt: "LinkedIn" },
-    { icon: "/svg/custom-icons/social-media/tiktok.svg", alt: "TikTok" },
+    { icon: "/svg/custom-icons/social-media/instagram.svg", alt: "Instagram" },
     { icon: "/svg/custom-icons/social-media/x.svg", alt: "X" },
+    { icon: "/svg/custom-icons/social-media/tiktok.svg", alt: "TikTok" },
     { icon: "/svg/custom-icons/social-media/youtube.svg", alt: "YouTube" },
+    { icon: "/svg/custom-icons/social-media/discord.svg", alt: "Discord" },
   ];
 
   return (
