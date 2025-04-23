@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from '../../contexts/TranslationContext';
+import { useTranslations } from "../../contexts/TranslationContext";
 import LegalPageTemplate from "../../components/legal-page-template";
 
 const Heading2 = ({ children }) => {
@@ -31,28 +31,6 @@ const ListItem = ({ children }) => {
   return <li className="mb-1">{children}</li>;
 };
 
-export default function Page() {
-  const t = useTranslations("CookiePolicy");
-
-  return (
-    <LegalPageTemplate title={t("title")}>
-      <Paragraph>{t("intro.p1")}</Paragraph>
-      <Paragraph>{t("intro.p2")}</Paragraph>
-      <Paragraph>{t("intro.p3")}</Paragraph>
-      <Paragraph>{t("intro.p4")}</Paragraph>
-      <Heading3>{t("ownCookies.title")}</Heading3>
-      <Paragraph>{t("ownCookies.description")}</Paragraph>
-      <Heading3>{t("thirdPartyCookies.title")}</Heading3>
-      <Paragraph>{t("thirdPartyCookies.p1")}</Paragraph>
-      <Paragraph>{t("thirdPartyCookies.p2")}</Paragraph>
-      <Paragraph>{t("thirdPartyCookies.p3")}</Paragraph>
-      <UnorderedList>
-        <ListItem>{t("thirdPartyCookies.list.item1")}</ListItem>
-        <ListItem>{t("thirdPartyCookies.list.item2")}</ListItem>
-      </UnorderedList>
-      <Paragraph>{t("thirdPartyCookies.p4")}</Paragraph>
-      <Heading3>{t("disableCookies.title")}</Heading3>
-      <Paragraph>{t("disableCookies.description")}</Paragraph>
-    </LegalPageTemplate>
-  );
+export default function CookiePolicyPage() {
+  return <div>Cookie Policy Page Content</div>;
 }

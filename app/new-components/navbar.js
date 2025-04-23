@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "./button";
 import {
   ChevronDown,
@@ -16,6 +15,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [expandedItems, setExpandedItems] = useState({});
   const [hoverTimeout, setHoverTimeout] = useState(null);
+  const [isClient, setIsClient] = useState(false);
 
   const toggleExpand = (label) => {
     setExpandedItems((prev) => ({
@@ -62,6 +62,10 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setIsClient(true);
   }, []);
 
   const menuItems = [
@@ -133,9 +137,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Auditorium"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/spaces/auditorium"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Auditorium
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -144,9 +151,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Planning"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/spaces/planning"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Planning
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -155,9 +165,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Sailboat Retrospective"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/spaces/sailboat-retrospective"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Sailboat Retrospective
-                                  </span>
+                                  </a>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-6">
@@ -171,9 +184,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Campfire"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/spaces/campfire"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Campfire
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -182,9 +198,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="This or That"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/spaces/this-or-that"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     This or That
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -193,9 +212,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Debate Room"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/spaces/debate-room"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Debate Room
-                                  </span>
+                                  </a>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-6">
@@ -209,9 +231,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="The Floor is Lava"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/spaces/the-floor-is-lava"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     The Floor is Lava
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -220,9 +245,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Connect 4"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/spaces/connect-4"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Connect 4
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -231,9 +259,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="The Farmyard"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/spaces/the-farmyard"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     The Farmyard
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -242,9 +273,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Football Field"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/spaces/football-field"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Football Field
-                                  </span>
+                                  </a>
                                 </div>
                               </div>
                             </>
@@ -261,9 +295,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Employee Turnover"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-employee-turnover"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Employee Turnover
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -272,9 +309,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Employee Disengagement"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-employee-disengagement"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Employee Disengagement
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -283,9 +323,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Remote Disconnection"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-remote-disconnection"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Remote Disconnection
-                                  </span>
+                                  </a>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-6">
@@ -299,9 +342,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="CXOs"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-cxos"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     CXOs
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -310,9 +356,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="HR"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-hr"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     HR
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -321,9 +370,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Managers"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-managers"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Managers
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -332,9 +384,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Employees"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-employees"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Employees
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -343,9 +398,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Marketing"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-marketing"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Marketing
-                                  </span>
+                                  </a>
                                 </div>
                               </div>
                               <div className="flex flex-col gap-6">
@@ -359,9 +417,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Daily Activity"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-daily-activity"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Daily Activity
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -370,9 +431,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Events"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-company-events"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Events
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -381,9 +445,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Fun Competitions"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-fun-competitions"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Fun Competitions
-                                  </span>
+                                  </a>
                                 </div>
                                 <div className="flex items-center gap-4">
                                   <Image
@@ -392,9 +459,12 @@ const Navbar = () => {
                                     height={20}
                                     alt="Custom Office Space"
                                   />
-                                  <span className="text-brand-700 text-sm">
+                                  <a
+                                    href="/solutions/for-custom-office-space"
+                                    className="text-brand-700 text-sm"
+                                  >
                                     Custom Office Space
-                                  </span>
+                                  </a>
                                 </div>
                               </div>
                             </>
@@ -445,7 +515,9 @@ const Navbar = () => {
             <div
               className={`w-full ${
                 index === menuItems.length - 1 ||
-                (item.label === "About us" && window.innerWidth >= 640)
+                (item.label === "About us" &&
+                  isClient &&
+                  window.innerWidth >= 640)
                   ? "border-b-0"
                   : "border-b border-dark-smoke"
               } ${item.label === "Sign in" ? "sm:hidden" : ""}`}
@@ -474,7 +546,10 @@ const Navbar = () => {
                         <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
                           Daily activity
                         </span>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        <a
+                          href="/spaces/auditorium"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/auditorium.svg"
                             width={20}
@@ -484,8 +559,11 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             Auditorium
                           </span>
-                        </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        </a>
+                        <a
+                          href="/spaces/planning"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/planning.svg"
                             width={20}
@@ -495,8 +573,11 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             Planning
                           </span>
-                        </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        </a>
+                        <a
+                          href="/spaces/sailboat-retrospective"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/sailboat-retrospective.svg"
                             width={20}
@@ -506,14 +587,17 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             Sailboat Retrospective
                           </span>
-                        </div>
+                        </a>
                       </div>
                       {/* Engagement */}
                       <div className="flex flex-col gap-4">
                         <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
                           Engagement
                         </span>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        <a
+                          href="/spaces/campfire"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/campfire.svg"
                             width={20}
@@ -523,8 +607,11 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             Campfire
                           </span>
-                        </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        </a>
+                        <a
+                          href="/spaces/this-or-that"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/this-or-that.svg"
                             width={20}
@@ -534,8 +621,11 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             This or That
                           </span>
-                        </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        </a>
+                        <a
+                          href="/spaces/debate-room"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/debate-room.svg"
                             width={20}
@@ -545,14 +635,17 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             Debate Room
                           </span>
-                        </div>
+                        </a>
                       </div>
                       {/* Fun */}
                       <div className="flex flex-col gap-4">
                         <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
                           Fun
                         </span>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        <a
+                          href="/spaces/the-floor-is-lava"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/the-floor-is-lava.svg"
                             width={20}
@@ -562,8 +655,11 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             The Floor is Lava
                           </span>
-                        </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        </a>
+                        <a
+                          href="/spaces/connect-4"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/connect-4.svg"
                             width={20}
@@ -573,8 +669,11 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             Connect 4
                           </span>
-                        </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        </a>
+                        <a
+                          href="/spaces/the-farmyard"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/the-farmyard.svg"
                             width={20}
@@ -584,8 +683,11 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             The Farmyard
                           </span>
-                        </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        </a>
+                        <a
+                          href="/spaces/football-field"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/football-field.svg"
                             width={20}
@@ -595,7 +697,7 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             Football Field
                           </span>
-                        </div>
+                        </a>
                       </div>
                     </div>
                   ) : item.label === "Solutions" ? (
@@ -612,9 +714,12 @@ const Navbar = () => {
                             height={20}
                             alt="Employee Turnover"
                           />
-                          <span className="text-brand-700 text-sm">
+                          <a
+                            href="/solutions/for-employee-turnover"
+                            className="text-brand-700 text-sm"
+                          >
                             Employee Turnover
-                          </span>
+                          </a>
                         </div>
                         <div className="flex items-center gap-4 cursor-pointer">
                           <Image
@@ -623,9 +728,12 @@ const Navbar = () => {
                             height={20}
                             alt="Employee Disengagement"
                           />
-                          <span className="text-brand-700 text-sm">
+                          <a
+                            href="/solutions/for-employee-disengagement"
+                            className="text-brand-700 text-sm"
+                          >
                             Employee Disengagement
-                          </span>
+                          </a>
                         </div>
                         <div className="flex items-center gap-4 cursor-pointer">
                           <Image
@@ -634,9 +742,12 @@ const Navbar = () => {
                             height={20}
                             alt="Remote Disconnection"
                           />
-                          <span className="text-brand-700 text-sm">
+                          <a
+                            href="/solutions/for-remote-disconnection"
+                            className="text-brand-700 text-sm"
+                          >
                             Remote Disconnection
-                          </span>
+                          </a>
                         </div>
                       </div>
                       {/* By Role */}
@@ -651,7 +762,12 @@ const Navbar = () => {
                             height={20}
                             alt="CXOs"
                           />
-                          <span className="text-brand-700 text-sm">CXOs</span>
+                          <a
+                            href="/solutions/for-cxos"
+                            className="text-brand-700 text-sm"
+                          >
+                            CXOs
+                          </a>
                         </div>
                         <div className="flex items-center gap-4 cursor-pointer">
                           <Image
@@ -660,7 +776,12 @@ const Navbar = () => {
                             height={20}
                             alt="HR"
                           />
-                          <span className="text-brand-700 text-sm">HR</span>
+                          <a
+                            href="/solutions/for-hr"
+                            className="text-brand-700 text-sm"
+                          >
+                            HR
+                          </a>
                         </div>
                         <div className="flex items-center gap-4 cursor-pointer">
                           <Image
@@ -669,9 +790,12 @@ const Navbar = () => {
                             height={20}
                             alt="Managers"
                           />
-                          <span className="text-brand-700 text-sm">
+                          <a
+                            href="/solutions/for-managers"
+                            className="text-brand-700 text-sm"
+                          >
                             Managers
-                          </span>
+                          </a>
                         </div>
                         <div className="flex items-center gap-4 cursor-pointer">
                           <Image
@@ -680,9 +804,12 @@ const Navbar = () => {
                             height={20}
                             alt="Employees"
                           />
-                          <span className="text-brand-700 text-sm">
+                          <a
+                            href="/solutions/for-employees"
+                            className="text-brand-700 text-sm"
+                          >
                             Employees
-                          </span>
+                          </a>
                         </div>
                         <div className="flex items-center gap-4 cursor-pointer">
                           <Image
@@ -691,9 +818,12 @@ const Navbar = () => {
                             height={20}
                             alt="Marketing"
                           />
-                          <span className="text-brand-700 text-sm">
+                          <a
+                            href="/solutions/for-marketing"
+                            className="text-brand-700 text-sm"
+                          >
                             Marketing
-                          </span>
+                          </a>
                         </div>
                       </div>
                       {/* By Type */}
@@ -701,7 +831,10 @@ const Navbar = () => {
                         <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
                           By type
                         </span>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        <a
+                          href="/solutions/for-daily-activity"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/daily-activity.svg"
                             width={20}
@@ -711,8 +844,11 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             Daily Activity
                           </span>
-                        </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        </a>
+                        <a
+                          href="/solutions/for-company-events"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/events.svg"
                             width={20}
@@ -720,8 +856,11 @@ const Navbar = () => {
                             alt="Events"
                           />
                           <span className="text-brand-700 text-sm">Events</span>
-                        </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        </a>
+                        <a
+                          href="/solutions/for-fun-competitions"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/fun-competitions.svg"
                             width={20}
@@ -731,8 +870,11 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             Fun Competitions
                           </span>
-                        </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
+                        </a>
+                        <a
+                          href="/solutions/for-custom-office-space"
+                          className="flex items-center gap-4 cursor-pointer"
+                        >
                           <Image
                             src="/svg/custom-icons/menu/custom-office-space.svg"
                             width={20}
@@ -742,7 +884,7 @@ const Navbar = () => {
                           <span className="text-brand-700 text-sm">
                             Custom Office Space
                           </span>
-                        </div>
+                        </a>
                       </div>
                     </div>
                   ) : null}
