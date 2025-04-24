@@ -5,15 +5,15 @@ export default function ForMarketingPage() {
   return (
     <div>
       <Hero
-        preTitle="Solutions"
+        preTitle="Team Up! for marketing"
         preTitleClassName="text-purple-500"
-        title="For Marketing"
-        titleClassName="max-w-[120极px] text-purple-900"
-        subtitle="Enhance your marketing strategies with our solutions"
+        title="Showcase a culture that wins talent and trust"
+        titleClassName="max-w-[1200px] text-purple-900"
+        subtitle="Team Up! turns your team into authentic brand ambassadors with engaging 3D virtual experiences worth sharing"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Request access" },
-          { variant: "tertiary", size: "md", children: "Contact sales" },
+          { variant: "primary", size: "lg", children: "Request access" },
+          { variant: "tertiary", size: "lg", children: "Contact sales" },
         ]}
         bgClassName="bg-purple-50"
       />

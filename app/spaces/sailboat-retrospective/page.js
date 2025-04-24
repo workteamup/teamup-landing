@@ -5,17 +5,50 @@ export default function SailboatRetrospectivePage() {
   return (
     <div>
       <Hero
-        preTitle="Spaces"
+        preTitle="The sailboat retrospective"
         preTitleClassName="text-teal-500"
-        title="Sailboat Retrospective"
+        title="Retrospectives that move teams forward"
         titleClassName="max-w-[1200px] text-teal-900"
-        subtitle="Facilitate effective retrospectives with our sailboat framework"
+        subtitle="Turn retrospectives into active journeys through 3D collaboration."
         subtitleClassName="max-w-[720px] text-teal-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Get Started" },
-          { variant: "tertiary", size: "md", children: "Learn More" },
+          {
+            variant: "primary",
+            size: "lg",
+            children: "Create a meeting in the Sailboat retrospective space",
+          },
+          /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
         bgClassName="bg-teal-50"
+        extraContent={
+          <div className="max-w-[1200px] mx-auto">
+            <div
+              className=""
+              style={{
+                position: "relative",
+                paddingBottom: "54.13533834586466%",
+                height: 0,
+                marginTop: "40px",
+              }}
+            >
+              <iframe
+                src="https://www.loom.com/embed/98c19c69a60f46778b85332c5b25633f?sid=9b6a175e-fc80-4b7b-8213-fd05ef9c4b1c"
+                frameBorder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                className="rounded-[40px]"
+              ></iframe>
+            </div>
+          </div>
+        }
       />
       <Section
         preTitle="Our Features"

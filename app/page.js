@@ -1,31 +1,55 @@
-import Hero from './new-components/hero';
-import Section from './new-components/section';
+import Hero from "./new-components/hero";
+import Section from "./new-components/section";
 
 export default function Home() {
   return (
     <div>
       <Hero
-        preTitle="Welcome to Team Up!"
+        preTitle="The #1 solution for a connected workforce"
         preTitleClassName="text-purple-500"
-        title="Revolutionize your team collaboration"
+        title="Transform team connections into business success"
         titleClassName="max-w-[1200px] text-purple-900"
-        subtitle="Our platform brings your team together like never before. Experience seamless communication and productivity."
+        subtitle="Boost engagement, strengthen culture, and reduce turnover wherever your teams work."
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
           {
             variant: "primary",
-            children: "Get Started",
+            children: "Request access",
             size: "xl",
           },
           {
             variant: "secondary",
-            children: "Learn More",
+            children: "Create your first meeting",
             size: "xl",
           },
         ]}
         extraContent={
-          <div className="mt-32 w-[1280px] h-[720px] bg-gray-500 mx-auto rounded-3xl">
-            {/* Video placeholder */}
+          <div className="max-w-[1200px] mx-auto">
+            <div
+              className=""
+              style={{
+                position: "relative",
+                paddingBottom: "54.13533834586466%",
+                height: 0,
+                marginTop: "40px",
+              }}
+            >
+              <iframe
+                src="https://www.loom.com/embed/98c19c69a60f46778b85332c5b25633f?sid=9b6a175e-fc80-4b7b-8213-fd05ef9c4b1c"
+                frameBorder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                className="rounded-[40px]"
+              ></iframe>
+            </div>
           </div>
         }
         bgClassName="bg-purple-50"

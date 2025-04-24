@@ -5,15 +5,14 @@ export default function RemoteDisconnectionPage() {
   return (
     <div>
       <Hero
-        preTitle="Solutions"
+        preTitle="Team Up! for remote disconnection"
         preTitleClassName="text-purple-500"
-        title="For Remote Disconnection"
+        title="Bridge the distance, build real connection"
         titleClassName="max-w-[1200px] text-purple-900"
-        subtitle="Address remote work challenges with our solutions"
+        subtitle="Combat remote disconnection with Team Up!'s immersive 3D environments that make virtual feel personal"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Request access" },
-          { variant: "tertiary", size: "md", children: "Contact sales" },
+          { variant: "primary", size: "lg", children: "Connect your team today" },
         ]}
         bgClassName="bg-purple-50"
       />
@@ -56,7 +55,7 @@ export default function RemoteDisconnectionPage() {
         buttonsPosition="bottom"
         bgClassName="bg-gradient-to-r from-brand-50 to-brand-100"
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
+        className="mt-16 px-0 min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
       />
     </div>
   );

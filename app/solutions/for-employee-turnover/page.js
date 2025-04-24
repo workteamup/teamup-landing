@@ -5,15 +5,18 @@ export default function EmployeeTurnoverPage() {
   return (
     <div>
       <Hero
-        preTitle="Solutions"
+        preTitle="Team Up! for employee turnover"
         preTitleClassName="text-purple-500"
-        title="For Employee Rotation"
+        title="Stop employee turnover in its tracks"
         titleClassName="max-w-[1200px] text-purple-900"
-        subtitle="Optimize your workforce through effective rotation programs"
+        subtitle="Retain your top talent with engaging team-building experiences that foster genuine connection"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Request access" },
-          { variant: "tertiary", size: "md", children: "Contact sales" },
+          {
+            variant: "primary",
+            size: "lg",
+            children: "Start reducing turnover today",
+          },
         ]}
         bgClassName="bg-purple-50"
       />
@@ -56,7 +59,7 @@ export default function EmployeeTurnoverPage() {
         buttonsPosition="bottom"
         bgClassName="bg-gradient-to-r from-brand-50 to-brand-100"
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
+        className="mt-16 px-0 min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
       />
     </div>
   );

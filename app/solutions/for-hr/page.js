@@ -5,15 +5,15 @@ export default function ForHRPage() {
   return (
     <div>
       <Hero
-        preTitle="Solutions"
+        preTitle="Team Up! for HR"
         preTitleClassName="text-purple-500"
-        title="For HR"
+        title="Create a thriving, connected workplace"
         titleClassName="max-w-[1200px] text-purple-900"
-        subtitle="Empower your HR department with our comprehensive solutions"
+        subtitle="Team Up! empowers HR to boost engagement, retain talent, and shape a strong company culture, even across distributed teams"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Request access" },
-          { variant: "tertiary", size: "md", children: "Contact sales" },
+          { variant: "primary", size: "lg", children: "Request access" },
+          { variant: "tertiary", size: "lg", children: "Contact sales" },
         ]}
         bgClassName="bg-purple-50"
       />

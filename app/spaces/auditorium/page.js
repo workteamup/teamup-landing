@@ -5,16 +5,49 @@ export default function AuditoriumPage() {
   return (
     <div>
       <Hero
-        preTitle="Spaces"
+        preTitle="The auditorium"
         preTitleClassName="text-blue-500"
-        title="Auditorium"
+        title="Town halls where movement becomes voice"
         titleClassName="max-w-[1200px] text-blue-900"
-        subtitle="Create impactful presentations and events in our auditorium space"
+        subtitle="Turn passive viewers into active participants through movement"
         subtitleClassName="max-w-[720px] text-blue-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Book now" },
-          { variant: "tertiary", size: "md", children: "View pricing" },
+          {
+            variant: "primary",
+            size: "lg",
+            children: "Create a meeting in the Auditorium",
+          },
+          /* { variant: "tertiary", size: "md", children: "View pricing" },*/
         ]}
+        extraContent={
+          <div className="max-w-[1200px] mx-auto">
+            <div
+              className=""
+              style={{
+                position: "relative",
+                paddingBottom: "54.13533834586466%",
+                height: 0,
+                marginTop: "40px",
+              }}
+            >
+              <iframe
+                src="https://www.loom.com/embed/98c19c69a60f46778b85332c5b25633f?sid=9b6a175e-fc80-4b7b-8213-fd05ef9c4b1c"
+                frameBorder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                className="rounded-[40px]"
+              ></iframe>
+            </div>
+          </div>
+        }
         bgClassName="bg-blue-50"
       />
       <Section

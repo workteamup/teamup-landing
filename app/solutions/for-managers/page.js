@@ -5,15 +5,15 @@ export default function ForManagersPage() {
   return (
     <div>
       <Hero
-        preTitle="Solutions"
+        preTitle="Team Up! for Managers"
         preTitleClassName="text-purple-500"
-        title="For Managers"
+        title="Lead stronger teams, effortlessly"
         titleClassName="max-w-[1200px] text-purple-900"
-        subtitle="Empower your managers with our comprehensive solutions"
+        subtitle="Team Up! equips managers with immersive tools to enhance collaboration, foster connection and keep teams motivated regardless of location"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Request access" },
-          { variant: "tertiary", size: "md", children: "Contact sales" },
+          { variant: "primary", size: "lg", children: "Request access" },
+          { variant: "tertiary", size: "lg", children: "Contact sales" },
         ]}
         bgClassName="bg-purple-50"
       />

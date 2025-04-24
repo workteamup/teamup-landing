@@ -5,15 +5,18 @@ export default function EmployeeDisengagementPage() {
   return (
     <div>
       <Hero
-        preTitle="Solutions"
+        preTitle="Team Up! for employee disengagement"
         preTitleClassName="text-purple-500"
-        title="For Employee Disengagement"
+        title="Reignite your team's passion"
         titleClassName="max-w-[1200px] text-purple-900"
-        subtitle="Address and resolve employee disengagement effectively"
+        subtitle="Combat employee disengagement with Team Up! interactive 3D experiences that transform work into play"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Request access" },
-          { variant: "tertiary", size: "md", children: "Contact sales" },
+          {
+            variant: "primary",
+            size: "lg",
+            children: "Boost your team's engagement now",
+          },
         ]}
         bgClassName="bg-purple-50"
       />

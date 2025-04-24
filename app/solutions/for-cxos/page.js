@@ -5,15 +5,15 @@ export default function ForCXOsPage() {
   return (
     <div>
       <Hero
-        preTitle="Solutions"
+        preTitle="Team Up! for CXOs"
         preTitleClassName="text-purple-500"
-        title="For CXOs"
+        title="Drive business success with a connected workforce"
         titleClassName="max-w-[1200px] text-purple-900"
-        subtitle="Empower your leadership with our CXO-focused solutions"
+        subtitle="Team Up! boosts productivity, reduces costs, and strengthens retention, all with measurable ROI"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Request access" },
-          { variant: "tertiary", size: "md", children: "Contact sales" },
+          { variant: "primary", size: "lg", children: "Request access" },
+          { variant: "tertiary", size: "lg", children: "Contact sales" },
         ]}
         bgClassName="bg-purple-50"
       />

@@ -5,16 +5,49 @@ export default function Connect4Page() {
   return (
     <div>
       <Hero
-        preTitle="Spaces"
+        preTitle="Connect 4"
         preTitleClassName="text-green-500"
-        title="Connect 4"
+        title="Basketball meets connect 4"
         titleClassName="max-w-[1200px] text-green-900"
-        subtitle="Engage in strategic thinking and team building with our Connect 4 space"
+        subtitle="Shoot baskets to drop game pieces in this physical twist on a classic"
         subtitleClassName="max-w-[720px] text-green-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Book now" },
-          { variant: "tertiary", size: "md", children: "View pricing" },
+          {
+            variant: "primary",
+            size: "lg",
+            children: "Create a meeting in the the Connect 4 space",
+          },
+          /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
+        extraContent={
+          <div className="max-w-[1200px] mx-auto">
+            <div
+              className=""
+              style={{
+                position: "relative",
+                paddingBottom: "54.13533834586466%",
+                height: 0,
+                marginTop: "40px",
+              }}
+            >
+              <iframe
+                src="https://www.loom.com/embed/98c19c69a60f46778b85332c5b25633f?sid=9b6a175e-fc80-4b7b-8213-fd05ef9c4b1c"
+                frameBorder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                className="rounded-[40px]"
+              ></iframe>
+            </div>
+          </div>
+        }
         bgClassName="bg-green-50"
       />
       <Section

@@ -5,16 +5,49 @@ export default function PlanningPage() {
   return (
     <div>
       <Hero
-        preTitle="Spaces"
+        preTitle="The planning space"
         preTitleClassName="text-indigo-500"
-        title="Planning Space"
+        title="Vote secretly, reveal in unity"
         titleClassName="max-w-[1200px] text-indigo-900"
-        subtitle="Streamline your team's planning and organization"
+        subtitle="Vote independently until consensus appears in physical form."
         subtitleClassName="max-w-[720px] text-indigo-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Get Started" },
-          { variant: "tertiary", size: "md", children: "Learn More" },
+          {
+            variant: "primary",
+            size: "lg",
+            children: "Create a meeting in the Planning space",
+          },
+          /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
+        extraContent={
+          <div className="max-w-[1200px] mx-auto">
+            <div
+              className=""
+              style={{
+                position: "relative",
+                paddingBottom: "54.13533834586466%",
+                height: 0,
+                marginTop: "40px",
+              }}
+            >
+              <iframe
+                src="https://www.loom.com/embed/98c19c69a60f46778b85332c5b25633f?sid=9b6a175e-fc80-4b7b-8213-fd05ef9c4b1c"
+                frameBorder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                className="rounded-[40px]"
+              ></iframe>
+            </div>
+          </div>
+        }
         bgClassName="bg-indigo-50"
       />
       <Section

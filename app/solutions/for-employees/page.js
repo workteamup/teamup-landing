@@ -5,15 +5,15 @@ export default function ForEmployeesPage() {
   return (
     <div>
       <Hero
-        preTitle="Solutions"
+        preTitle="How Team Up! helps employees"
         preTitleClassName="text-purple-500"
-        title="For Employees"
+        title="Make work feel like play"
         titleClassName="max-w-[1200px] text-purple-900"
-        subtitle="Empower and support your workforce with our solutions"
+        subtitle="Team Up! brings fun, connection and growth to your workday with 3D virtual games and social spaces that transform remote work"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Request access" },
-          { variant: "tertiary", size: "md", children: "Contact sales" },
+          { variant: "primary", size: "lg", children: "Request access" },
+          { variant: "tertiary", size: "lg", children: "Contact sales" },
         ]}
         bgClassName="bg-purple-50"
       />
