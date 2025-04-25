@@ -1,6 +1,7 @@
 import Hero from "./new-components/hero";
 import Section from "./new-components/section";
 import SimpleStartSection from "./new-components/simple-start-section";
+import InfoPiece from "./new-components/info-piece";
 
 export default function Home() {
   return (
@@ -55,54 +56,65 @@ export default function Home() {
         }
         bgClassName="bg-purple-50"
       />
-      <SimpleStartSection
-        title="Your Main Title Here"
-        features={[
-          {
-            title: "Feature One",
-            description: "Description of the first feature"
-          },
-          {
-            title: "Feature Two",
-            description: "Description of the second feature"
-          },
-          {
-            title: "Feature Three",
-            description: "Description of the third feature"
-          }
-        ]}
-        cta={{ children: "Get Started" }}
-        bgClassName="bg-red-100"
-      />
       <Section
-        preTitle="Our Services"
-        title="What We Offer"
-        subtitle="We provide comprehensive solutions tailored to your business needs."
-        buttons={[
-          { children: "Learn More", href: "/services" },
-          { children: "Contact Us", variant: "secondary" },
-        ]}
-        content={
-          <div className="grid grid-cols-3 gap-8 mt-16">
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">Service 1</h3>
-              <p className="mt-4 text-gray-600">Description of service 1</p>
+        preTitle="How we solve your pains"
+        title="Turning workplace challenges into opportunities"
+        bgClassName=""
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+      >
+        <InfoPiece
+          tag="Employee turnover"
+          title="Keep your best talent"
+          /*titleClassName="text-white"*/
+          description="Team Up! creates meaningful bonds that make people want to stay, fostering belonging through shared experiences regardless of where they work."
+          /*descriptionClassName="text-dark-cloud"*/
+          cta={{ children: "Employee turnover solutions" }}
+          supportContent={
+            <div className="w-full h-[400px] bg-purple-50 rounded-lg flex items-center justify-center">
+              <img
+                src="/images/engagement.jpg"
+                alt="Employee Engagement"
+                className="w-full h-full object-cover rounded-lg"
+              />
             </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">Service 2</h3>
-              <p className="mt-4 text-gray-600">Description of service 2</p>
+          }
+          /*containerClassName="bg-purple-700 rounded-[48px]"*/
+        />
+
+        <InfoPiece
+          tag="Employee disengagement"
+          title="Reignite team passion"
+          description="Transform routine interactions into immersive experiences that capture attention, spark joy and, and build collaborative skills that drive results."
+          cta={{ children: "Employee disengagement solutions" }}
+          supportContent={
+            <div className="w-full h-[400px] bg-purple-50 rounded-lg flex items-center justify-center">
+              <img
+                src="/images/collaboration.jpg"
+                alt="Team Collaboration"
+                className="w-full h-full object-cover rounded-lg"
+              />
             </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">Service 3</h3>
-              <p className="mt-4 text-gray-600">Description of service 3</p>
+          }
+          reverse={true}
+        />
+
+        <InfoPiece
+          tag="Workplace disconnection"
+          title="Bridge the human connection gap"
+          description="Create a sense of shared presence and spontaneous interaction that transforms relation ships in any work environment."
+          cta={{ children: "Remote disconnection solutions" }}
+          supportContent={
+            <div className="w-full h-[400px] bg-purple-50 rounded-lg flex items-center justify-center">
+              <img
+                src="/images/retention.jpg"
+                alt="Employee Retention"
+                className="w-full h-full object-cover rounded-lg"
+              />
             </div>
-          </div>
-        }
-        buttonsPosition="bottom"
-        bgClassName="bg-gradient-to-r from-brand-50 to-brand-100"
-        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
-      />
+          }
+        />
+      </Section>
     </div>
   );
 }

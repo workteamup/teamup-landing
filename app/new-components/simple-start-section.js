@@ -34,7 +34,7 @@ const SimpleStartSection = ({
             {preTitle && (
               <p
                 className={cn(
-                  "text-[12px] font-semibold text-brand-600 uppercase tracking-[0.08em] mb-1",
+                  "text-xs font-semibold text-brand-600 uppercase tracking-[0.08em] mb-1",
                   preTitleClassName
                 )}
               >
@@ -44,7 +44,7 @@ const SimpleStartSection = ({
             {title && (
               <h2
                 className={cn(
-                  "text-[48px] font-semibold text-brand-700 leading-tight",
+                  "text-5xl font-semibold text-brand-700 leading-tight",
                   titleClassName
                 )}
               >
@@ -54,7 +54,7 @@ const SimpleStartSection = ({
             {subtitle && (
               <p
                 className={cn(
-                  "text-[20px] text-gray-500 mt-6 leading-7",
+                  "text-xl text-gray-500 mt-6 leading-7",
                   subtitleClassName
                 )}
               >
@@ -83,7 +83,7 @@ const SimpleStartSection = ({
                       {feature.title && (
                         <h3
                           className={cn(
-                            "text-[24px] font-semibold text-brand-700",
+                            "text-2xl font-semibold text-brand-700",
                             featureTitleClassName
                           )}
                         >
@@ -93,7 +93,7 @@ const SimpleStartSection = ({
                       {feature.description && (
                         <p
                           className={cn(
-                            "text-[16px] text-gray-500 leading-6 hyphens-none",
+                            "text-base text-gray-500 leading-6 hyphens-none",
                             featureDescriptionClassName
                           )}
                         >

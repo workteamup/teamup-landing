@@ -1,6 +1,7 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import SimpleStartSection from "../../new-components/simple-start-section";
+import NumberElement from "../../new-components/number-element";
 
 export default function ForCXOsPage() {
   return (
@@ -43,46 +44,30 @@ export default function ForCXOsPage() {
       />
 
       <Section
-        preTitle="Our Solutions"
-        title="For CXOs"
-        subtitle="We provide strategic solutions tailored to executive leadership needs."
-        buttons={[
-          { children: "Learn More", href: "/services" },
-          { children: "Contact Us", variant: "secondary" },
-        ]}
-        content={
-          <div className="grid grid-cols-3 gap-8 mt-16">
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Strategic Planning
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Comprehensive strategic planning solutions
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Leadership Development
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Executive leadership development programs
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Decision Support
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Data-driven decision support systems
-              </p>
-            </div>
-          </div>
-        }
-        buttonsPosition="bottom"
-        bgClassName="bg-gradient-to-r from-brand-50 to-brand-100"
-        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
-      />
+        preTitle="The problem in numbers"
+        title="Title under construction"
+        bgClassName="bg-white"
+        containerClassName="py-24 max-w-[1440px] mx-auto"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <NumberElement
+            number={47}
+            suffix="%"
+            description="47% of executives report that misalignment across departments is their biggest challenge in distributed teams."
+          />
+          <NumberElement
+            number={15}
+            prefix="$"
+            suffix="K"
+            description="Companies lose an average of $15.000 per employee annually due to ineffective virtual meetings and collaboration."
+          />
+          <NumberElement
+            number={32}
+            suffix="%"
+            description="Only 32% of leadership teams feel they have adequate visibility into employee engagement across remote and hybrid teams."
+          />
+        </div>
+      </Section>
     </div>
   );
 }

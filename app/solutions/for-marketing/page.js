@@ -79,7 +79,7 @@ export default function ForMarketingPage() {
         buttonsPosition="bottom"
         bgClassName="bg-gradient-to-r from-brand-50 to-brand-100"
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
+        className="mt-16 px-0 min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
       />
     </div>
   );

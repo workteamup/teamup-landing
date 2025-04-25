@@ -8,7 +8,7 @@ const Section = ({
   title,
   subtitle,
   buttons = [],
-  content,
+  children,
   className = "",
   preTitleClassName,
   titleClassName,
@@ -28,7 +28,7 @@ const Section = ({
             {preTitle && (
               <p
                 className={cn(
-                  "text-[14px] font-semibold text-brand-600 uppercase tracking-[0.08em] mb-4",
+                  "text-sm font-semibold text-brand-600 uppercase tracking-[0.08em] mb-4",
                   preTitleClassName
                 )}
               >
@@ -73,7 +73,7 @@ const Section = ({
           </div>
         )}
 
-        {content && <div className="mt-16">{content}</div>}
+        {children && <div className="mt-16">{children}</div>}
 
         {buttons.length > 0 && buttonsPosition === "bottom" && (
           <div className="flex flex-col items-center text-center mt-16">

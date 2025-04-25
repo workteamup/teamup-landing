@@ -55,7 +55,7 @@ const Footer = () => {
         <div className="w-full max-w-[1600px] mx-auto px-6 md:px-12 py-12 md:py-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 sm:gap-12 lg:gap-16 xl:gap-24">
           {Object.entries(footerLinks).map(([key, links]) => (
             <div key={key} className="flex flex-col gap-4">
-              <h3 className="text-[12px] font-bold font-manrope text-purple-700 uppercase tracking-[0.08em]">
+              <h3 className="text-xs font-bold font-manrope text-purple-700 uppercase tracking-[0.08em]">
                 {key
                   .replace(/([A-Z])/g, " $1")
                   .replace(/^./, (str) => str.toUpperCase())}
@@ -73,7 +73,7 @@ const Footer = () => {
                               .replace(/ /g, "-")}`
                           : `/${key}/${link.toLowerCase().replace(/ /g, "-")}`
                       }
-                      className="text-sm sm:text-[14px] text-brand-700 hover:text-purple-600 transition-colors"
+                      className="text-sm sm:text-sm text-brand-700 hover:text-purple-600 transition-colors"
                     >
                       {link}
                     </Link>
@@ -107,19 +107,19 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
               <Link
                 href="/terms-and-conditions"
-                className="text-xs sm:text-[12px] text-brand-700 hover:text-purple-600"
+                className="text-xs sm:text-xs text-brand-700 hover:text-purple-600"
               >
                 Terms and conditions
               </Link>
               <Link
                 href="/privacy-policy"
-                className="text-xs sm:text-[12px] text-brand-700 hover:text-purple-600"
+                className="text-xs sm:text-xs text-brand-700 hover:text-purple-600"
               >
                 Privacy policy
               </Link>
               <Link
                 href="/cookie-policy"
-                className="text-xs sm:text-[12px] text-brand-700 hover:text-purple-600"
+                className="text-xs sm:text-xs text-brand-700 hover:text-purple-600"
               >
                 Cookie policy
               </Link>
@@ -135,7 +135,7 @@ const Footer = () => {
               height={30}
               className="w-[145px] md:w-[193px] mb-2"
             />
-            <p className="text-xs sm:text-[12px] text-brand-700 mt-1 md:text-right">
+            <p className="text-xs sm:text-xs text-brand-700 mt-1 md:text-right">
               © 2025, TEAM UP TECH ESPAÑA, SL. All rights reserved.
             </p>
           </div>

@@ -23,7 +23,7 @@ const Hero = ({
           {preTitle && (
             <p
               className={cn(
-                "text-[14px] font-semibold text-white opacity-80 uppercase tracking-[0.08em] mb-4",
+                "text-sm font-semibold text-white opacity-80 uppercase tracking-[0.08em] mb-4",
                 preTitleClassName
               )}
             >
