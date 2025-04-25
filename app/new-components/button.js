@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { cn } from "../lib/utils";
 import { Icon } from "lucide-react";
 
@@ -13,6 +14,7 @@ const Button = ({
   className,
   children,
   onClick,
+  href,
   ...props
 }) => {
   const baseClasses =
@@ -48,6 +50,49 @@ const Button = ({
     lg: "h-6 w-6",
     xl: "h-7 w-7",
   };
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className={cn(
+          baseClasses,
+          sizeClasses[size],
+          iconOnly
+            ? "aspect-square p-0"
+            : {
+                sm: "px-[18px] py-3",
+                md: "px-5 py-[14px]",
+                lg: "px-6 py-4",
+                xl: "px-8 py-5",
+              }[size],
+          variantClasses[variant],
+          shadowClasses,
+          underlineClass,
+          className
+        )}
+        {...props}
+      >
+        {iconOnly ? (
+          React.cloneElement(children, { className: iconSizeClasses[size] })
+        ) : (
+          <>
+            {iconLeft && (
+              <span className={cn("mr-2", iconSizeClasses[size])}>
+                {React.cloneElement(iconLeft, { className: "w-full h-full" })}
+              </span>
+            )}
+            <span>{children}</span>
+            {iconRight && (
+              <span className={cn("ml-2", iconSizeClasses[size])}>
+                {React.cloneElement(iconRight, { className: "w-full h-full" })}
+              </span>
+            )}
+          </>
+        )}
+      </Link>
+    );
+  }
 
   return (
     <button

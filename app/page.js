@@ -69,7 +69,10 @@ export default function Home() {
           /*titleClassName="text-white"*/
           description="Team Up! creates meaningful bonds that make people want to stay, fostering belonging through shared experiences regardless of where they work."
           /*descriptionClassName="text-dark-cloud"*/
-          cta={{ children: "Employee turnover solutions" }}
+          cta={{
+            children: "Employee turnover solutions",
+            href: "/solutions/for-employee-turnover",
+          }}
           supportContent={
             <div className="w-full h-[400px] bg-purple-50 rounded-lg flex items-center justify-center">
               <img
@@ -86,7 +89,10 @@ export default function Home() {
           tag="Employee disengagement"
           title="Reignite team passion"
           description="Transform routine interactions into immersive experiences that capture attention, spark joy and, and build collaborative skills that drive results."
-          cta={{ children: "Employee disengagement solutions" }}
+          cta={{
+            children: "Employee disengagement solutions",
+            href: "/solutions/for-employee-disengagement",
+          }}
           supportContent={
             <div className="w-full h-[400px] bg-purple-50 rounded-lg flex items-center justify-center">
               <img
@@ -103,7 +109,10 @@ export default function Home() {
           tag="Workplace disconnection"
           title="Bridge the human connection gap"
           description="Create a sense of shared presence and spontaneous interaction that transforms relation ships in any work environment."
-          cta={{ children: "Remote disconnection solutions" }}
+          cta={{
+            children: "Remote disconnection solutions",
+            href: "/solutions/for-remote-disconnection",
+          }}
           supportContent={
             <div className="w-full h-[400px] bg-purple-50 rounded-lg flex items-center justify-center">
               <img
