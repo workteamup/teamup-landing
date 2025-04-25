@@ -1,5 +1,6 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
+import SimpleStartSection from "../../new-components/simple-start-section";
 
 export default function ForCXOsPage() {
   return (
@@ -17,6 +18,30 @@ export default function ForCXOsPage() {
         ]}
         bgClassName="bg-purple-50"
       />
+
+      <SimpleStartSection
+        title="How Team Up! helps CXOs"
+        titleClassName="max-w-[480px]"
+        features={[
+          {
+            title: "Save costs on team building",
+            description:
+              "Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection.",
+          },
+          {
+            title: "Increase productivity of your workforce",
+            description:
+              "Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation.",
+          },
+          {
+            title: "Boost retention at your company",
+            description:
+              "Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences.",
+          },
+        ]}
+        cta={{ children: "Get Started" }}
+      />
+
       <Section
         preTitle="Our Solutions"
         title="For CXOs"

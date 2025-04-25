@@ -1,6 +1,6 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
-
+import SimpleStartSection from "../../new-components/simple-start-section";
 export default function ForManagersPage() {
   return (
     <div>
@@ -16,6 +16,28 @@ export default function ForManagersPage() {
           { variant: "tertiary", size: "lg", children: "Contact sales" },
         ]}
         bgClassName="bg-purple-50"
+      />
+      <SimpleStartSection
+        title="How Team Up! helps Managers"
+        titleClassName="max-w-[480px]"
+        features={[
+          {
+            title: "Increase team cohesion",
+            description:
+              "Strengthen bonds with virtual stand-ups and interactive activities in 3D environments that make remote teamwork feel personal.",
+          },
+          {
+            title: "Increase your communication",
+            description:
+              "Facilitate spontaneous chats and structured discussions in one platform that mimics in-person conversation dynamics.",
+          },
+          {
+            title: "Boost your team's productivity",
+            description:
+              "Cut silos and boost output with real-time collaboration tools that make online meetings more engaging and effective.",
+          },
+        ]}
+        cta={{ children: "Get Started" }}
       />
       <Section
         preTitle="Our Solutions"

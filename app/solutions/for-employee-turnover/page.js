@@ -1,6 +1,6 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
-
+import SimpleStartSection from "../../new-components/simple-start-section";
 export default function EmployeeTurnoverPage() {
   return (
     <div>
@@ -19,6 +19,28 @@ export default function EmployeeTurnoverPage() {
           },
         ]}
         bgClassName="bg-purple-50"
+      />
+      <SimpleStartSection
+        title="Why you should care"
+        titleClassName="max-w-[480px]"
+        features={[
+          {
+            title: "Stop the hemorrhage before it happens",
+            description:
+              "High turnover costs companies 1.5-2x an employee's salary in recruitment, onboarding and lost productivity.",
+          },
+          {
+            title: "Maintain a high team morale",
+            description:
+              "Frequent departures hurt team morale, making it harder for remaining employees to stay motivated and committed.",
+          },
+          {
+            title: "Keep valuable knowledge inside your company",
+            description:
+              "Losing employees means losing valuable knowledge and institutional memory, delaying projects and innovation.",
+          },
+        ]}
+        cta={{ children: "Get Started" }}
       />
       <Section
         preTitle="Our Solutions"

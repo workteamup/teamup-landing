@@ -1,5 +1,6 @@
 import Hero from "./new-components/hero";
 import Section from "./new-components/section";
+import SimpleStartSection from "./new-components/simple-start-section";
 
 export default function Home() {
   return (
@@ -53,6 +54,25 @@ export default function Home() {
           </div>
         }
         bgClassName="bg-purple-50"
+      />
+      <SimpleStartSection
+        title="Your Main Title Here"
+        features={[
+          {
+            title: "Feature One",
+            description: "Description of the first feature"
+          },
+          {
+            title: "Feature Two",
+            description: "Description of the second feature"
+          },
+          {
+            title: "Feature Three",
+            description: "Description of the third feature"
+          }
+        ]}
+        cta={{ children: "Get Started" }}
+        bgClassName="bg-red-100"
       />
       <Section
         preTitle="Our Services"

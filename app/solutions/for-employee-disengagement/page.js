@@ -1,6 +1,6 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
-
+import SimpleStartSection from "../../new-components/simple-start-section";
 export default function EmployeeDisengagementPage() {
   return (
     <div>
@@ -19,6 +19,28 @@ export default function EmployeeDisengagementPage() {
           },
         ]}
         bgClassName="bg-purple-50"
+      />
+      <SimpleStartSection
+        title="How Team Up! helps CXOs"
+        titleClassName="max-w-[480px]"
+        features={[
+          {
+            title: "You can save money on productivity",
+            description:
+              "Disengaged employees cost companies $450-550 billion annually in lost productivity and innovation.",
+          },
+          {
+            title: "Your employees will never miss a day of work",
+            description:
+              "Lack of engagement leads to higher absenteeism, presenteeism and eventually turnover.",
+          },
+          {
+            title: "Your company will be more resilient",
+            description:
+              "Disengaged teams are less innovative, adaptable, and responsive to market changes and customer needs.",
+          },
+        ]}
+        cta={{ children: "Get Started" }}
       />
       <Section
         preTitle="Our Solutions"

@@ -1,5 +1,6 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
+import SimpleStartSection from "../../new-components/simple-start-section";
 
 export default function ForHRPage() {
   return (
@@ -16,6 +17,28 @@ export default function ForHRPage() {
           { variant: "tertiary", size: "lg", children: "Contact sales" },
         ]}
         bgClassName="bg-purple-50"
+      />
+      <SimpleStartSection
+        title="How Team Up! helps HR"
+        titleClassName="max-w-[480px]"
+        features={[
+          {
+            title: "Connect your teams",
+            description:
+              "Keep teams connected with persistent 3D virtual spaces for team-building and casual interaction, with measurable participation metrics.",
+          },
+          {
+            title: "Power up your employee onboardings",
+            description:
+              "Welcome new hires with interactive virtual hubs to meet peers and mentors, improving first-90-day satisfaction by 40% and reducing time-to-productivity.",
+          },
+          {
+            title: "Create a thriving company culture",
+            description:
+              "Foster a sense of belonging with scalable activities that reinforce your values and create shared experiences that transcend location.",
+          },
+        ]}
+        cta={{ children: "Get Started" }}
       />
       <Section
         preTitle="Our Solutions"

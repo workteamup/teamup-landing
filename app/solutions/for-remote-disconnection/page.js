@@ -1,6 +1,6 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
-
+import SimpleStartSection from "../../new-components/simple-start-section";
 export default function RemoteDisconnectionPage() {
   return (
     <div>
@@ -12,9 +12,35 @@ export default function RemoteDisconnectionPage() {
         subtitle="Combat remote disconnection with Team Up!'s immersive 3D environments that make virtual feel personal"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "lg", children: "Connect your team today" },
+          {
+            variant: "primary",
+            size: "lg",
+            children: "Connect your team today",
+          },
         ]}
         bgClassName="bg-purple-50"
+      />
+      <SimpleStartSection
+        title="Why you should care"
+        titleClassName="max-w-[480px]"
+        features={[
+          {
+            title: "Remove any feeling of isolation",
+            description:
+              "Remote workers report feeling 2.5 times more isolated than in-office colleagues, directly impacting their wellbeing and performance.",
+          },
+          {
+            title: "No more miscommunication",
+            description:
+              "Lack of connection leads to miscommunication, decreased collaboration, and siloed knowledge.",
+          },
+          {
+            title: "Trust that last for ages",
+            description:
+              "Disconnected teams struggle when building trust, sharing knowledge, and sustaining innovation over time.",
+          },
+        ]}
+        cta={{ children: "Get Started" }}
       />
       <Section
         preTitle="Our Solutions"
