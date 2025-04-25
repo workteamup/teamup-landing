@@ -87,7 +87,7 @@ const InfoPiece = ({
             (typeof description === "string" ? (
               <p
                 className={cn(
-                  "text-xl text-gray-500 mb-12",
+                  "text-xl text-dark-space mb-12",
                   descriptionClassName
                 )}
               >

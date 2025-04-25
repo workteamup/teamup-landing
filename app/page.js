@@ -216,6 +216,37 @@ export default function Home() {
             </div>
           }
           reverse={true}
+          description={
+            <div className="space-y-3">
+              <div>
+                <h3 className="text-base font-medium text-brand-700">
+                  Campfire
+                </h3>
+                <p className="text-base font-normal text-dark-space">
+                  A forest setting with conversation-starter cards perfect for
+                  team bonding and casual discussions.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-base font-medium text-brand-700">
+                  This or that
+                </h3>
+                <p className="text-base font-normal text-dark-space">
+                  Reveal team dynamics through quick-fire choice games that
+                  spark conversation and connection.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-base font-medium text-brand-700">
+                  Debate room
+                </h3>
+                <p className="text-base font-normal text-dark-space">
+                  Moderated discussion environment with timed speaking platforms
+                  for structured conversations.
+                </p>
+              </div>
+            </div>
+          }
         />
         <InfoPiece
           tag="Work"
@@ -233,6 +264,37 @@ export default function Home() {
               </div>
             </div>
           }
+          description={
+            <div className="space-y-3">
+              <div>
+                <h3 className="text-base font-medium text-brand-700">
+                  Planning
+                </h3>
+                <p className="text-base font-normal text-dark-space">
+                  Visualize progress and build consensus with interactive voting
+                  platforms.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-base font-medium text-brand-700">
+                  Sailboat retrospective
+                </h3>
+                <p className="text-base font-normal text-dark-space">
+                  Navigate team improvement with a visual framework that
+                  transforms abstract feedback into actionable insights.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-base font-medium text-brand-700">
+                  Auditorium
+                </h3>
+                <p className="text-base font-normal text-dark-space">
+                  Present with impact using interactive voting platforms that
+                  visualize real-time feedback.
+                </p>
+              </div>
+            </div>
+          }
         />
         <InfoPiece
           tag="Fun"
@@ -247,6 +309,46 @@ export default function Home() {
                   className="object-cover rounded-2xl"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
+              </div>
+            </div>
+          }
+          description={
+            <div className="space-y-3">
+              <div>
+                <h3 className="text-base font-medium text-brand-700">
+                  Floor is lava
+                </h3>
+                <p className="text-base font-normal text-dark-space">
+                  Bond through shared challenge as teammates cheer each other
+                  through an obstacle course of hilarious fails.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-base font-medium text-brand-700">
+                  Connect 4
+                </h3>
+                <p className="text-base font-normal text-dark-space">
+                  Blend strategy with skill in a basketball-powered twist on the
+                  classic game.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-base font-medium text-brand-700">
+                  The farmyard
+                </h3>
+                <p className="text-base font-normal text-dark-space">
+                  Steal, defend, and strategize in a team competition that
+                  teaches resource management through play.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-base font-medium text-brand-700">
+                  Football field
+                </h3>
+                <p className="text-base font-normal text-dark-space">
+                  Score team goals in a competitive environment that gamifies
+                  performance tracking.
+                </p>
               </div>
             </div>
           }

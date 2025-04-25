@@ -16,7 +16,7 @@ export default function InfoElement({
           className="object-cover rounded-xl"
         />
       </div>
-      <h3 className="mt-12 text-2xl text-brand-700">{title}</h3>
+      <h3 className="mt-12 text-2xl text-brand-700 font-medium">{title}</h3>
       <p className="mt-2 text-base text-dark-space max-w-[460px]">
         {description}
       </p>
