@@ -131,9 +131,9 @@ const Footer = () => {
             <Image
               src="/svg/logos/teamup-logo-dark.svg"
               alt="Team Up! Logo"
-              width={145}
-              height={30}
-              className="w-[145px] md:w-[193px] mb-2"
+              width={116}
+              height={24}
+              className="w-[116px] mb-2"
             />
             <p className="text-xs sm:text-xs text-brand-700 mt-1 md:text-right">
               © 2025, TEAM UP TECH ESPAÑA, SL. All rights reserved.
