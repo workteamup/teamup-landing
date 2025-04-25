@@ -1,6 +1,7 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import SimpleStartSection from "../../new-components/simple-start-section";
+import NumberElement from "../../new-components/number-element";
 
 export default function ForEmployeesPage() {
   return (
@@ -41,46 +42,32 @@ export default function ForEmployeesPage() {
         cta={{ children: "Get Started" }}
       />
       <Section
-        preTitle="Our Solutions"
-        title="For Employees"
-        subtitle="We provide comprehensive solutions to support and empower your workforce."
-        buttons={[
-          { children: "Learn More", href: "/services" },
-          { children: "Contact Us", variant: "secondary" },
-        ]}
-        content={
-          <div className="grid grid-cols-3 gap-8 mt-16">
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Career Development
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Comprehensive career development programs
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Work-Life Balance
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Solutions for better work-life balance
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Employee Wellbeing
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Programs to support employee wellbeing
-              </p>
-            </div>
-          </div>
-        }
-        buttonsPosition="bottom"
-        bgClassName="bg-gradient-to-r from-brand-50 to-brand-100"
-        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
-      />
+        preTitle="The problem in numbers"
+        title="Title under construction"
+        bgClassName="bg-white"
+        containerClassName="py-24 max-w-[1440px] mx-auto"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <NumberElement
+            number={76}
+            suffix="%"
+            description="76% of remote workers report feelings of isolation and disconnection from their colleagues."
+            numberColor="text-purple-600"
+          />
+          <NumberElement
+            number={45}
+            suffix="%"
+            description="Remote employees spend 45% less time on informal social interaction, resulting in weaker team relationships and lower job satisfaction."
+            numberColor="text-purple-600"
+          />
+          <NumberElement
+            number={67}
+            suffix="%"
+            description="67% of remote workers say they miss the spontaneous interactions and water cooler moments of in office work."
+            numberColor="text-purple-600"
+          />
+        </div>
+      </Section>
     </div>
   );
 }

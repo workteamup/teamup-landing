@@ -1,6 +1,8 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import SimpleStartSection from "../../new-components/simple-start-section";
+import NumberElement from "../../new-components/number-element";
+
 export default function ForManagersPage() {
   return (
     <div>
@@ -40,46 +42,29 @@ export default function ForManagersPage() {
         cta={{ children: "Get Started" }}
       />
       <Section
-        preTitle="Our Solutions"
-        title="For Managers"
-        subtitle="We provide comprehensive solutions to support and enhance your management team."
-        buttons={[
-          { children: "Learn More", href: "/services" },
-          { children: "Contact Us", variant: "secondary" },
-        ]}
-        content={
-          <div className="grid grid-cols-3 gap-8 mt-16">
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Leadership Development
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Comprehensive leadership development programs
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Team Management
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Effective team management strategies
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Performance Tracking
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Data-driven performance tracking and insights
-              </p>
-            </div>
-          </div>
-        }
-        buttonsPosition="bottom"
-        bgClassName="bg-gradient-to-r from-brand-50 to-brand-100"
-        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
-      />
+        preTitle="The problem in numbers"
+        title="Title under construction"
+        bgClassName="bg-white"
+        containerClassName="py-24 max-w-[1440px] mx-auto"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <NumberElement
+            number={68}
+            suffix="%"
+            description="68% of managers report strgguling to keep remote team members engages during virtual meetings."
+          />
+          <NumberElement
+            number={35}
+            suffix="%"
+            description="Teams with poor virtual collaboration tools experiences 35% longer projection times and 28% more miscommunication incidents."
+          />
+          <NumberElement
+            number={64}
+            suffix="%"
+            description="64% of team leaders say they lack effective tools to build team culture in distributed work environments."
+          />
+        </div>
+      </Section>
     </div>
   );
 }

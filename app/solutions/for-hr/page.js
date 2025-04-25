@@ -41,46 +41,29 @@ export default function ForHRPage() {
         cta={{ children: "Get Started" }}
       />
       <Section
-        preTitle="Our Solutions"
-        title="For HR"
-        subtitle="We provide comprehensive solutions to support and enhance your HR operations."
-        buttons={[
-          { children: "Learn More", href: "/services" },
-          { children: "Contact Us", variant: "secondary" },
-        ]}
-        content={
-          <div className="grid grid-cols-3 gap-8 mt-16">
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Talent Management
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Comprehensive talent acquisition and management
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Employee Relations
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Effective employee relations strategies
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                HR Analytics
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Data-driven HR analytics and insights
-              </p>
-            </div>
-          </div>
-        }
-        buttonsPosition="bottom"
-        bgClassName="bg-gradient-to-r from-brand-50 to-brand-100"
-        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
-      />
+        preTitle="The problem in numbers"
+        title="Title under construction"
+        bgClassName="bg-white"
+        containerClassName="py-24 max-w-[1440px] mx-auto"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <NumberElement
+            number={73}
+            suffix="%"
+            description="73% of HR professionals report difficulty maintaining company culture in remote and hybrid environments."
+          />
+          <NumberElement
+            number={200}
+            suffix="%"
+            description="New hire turnover costs exceed 200% of annual salary when employees leave within the first 90 days."
+          />
+          <NumberElement
+            number={29}
+            suffix="%"
+            description="Only 29% of HR teams have effective tools to measure employee engagement in distributed work models."
+          />
+        </div>
+      </Section>
     </div>
   );
 }

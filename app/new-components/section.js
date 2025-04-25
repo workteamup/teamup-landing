@@ -28,7 +28,7 @@ const Section = ({
             {preTitle && (
               <p
                 className={cn(
-                  "text-sm font-semibold text-brand-600 uppercase tracking-[0.08em] mb-4",
+                  "text-sm font-semibold text-dark-space uppercase tracking-[0.08em] mb-4",
                   preTitleClassName
                 )}
               >

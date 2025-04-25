@@ -8,6 +8,7 @@ const NumberElement = ({
   className,
   prefix = "",
   suffix = "",
+  numberColor = "text-brand-700", // Default color
 }) => {
   const [count, setCount] = useState(0);
   const numberRef = useRef(null);
@@ -57,7 +58,7 @@ const NumberElement = ({
         className
       )}
     >
-      <span className="text-[96px] font-bold text-brand-700">
+      <span className={cn("text-[96px] font-bold", numberColor)}>
         {prefix}
         {count.toLocaleString()}
         {suffix}
@@ -69,4 +70,4 @@ const NumberElement = ({
   );
 };
 
-export default NumberElement; 
+export default NumberElement;
