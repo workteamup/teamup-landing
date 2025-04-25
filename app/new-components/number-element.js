@@ -8,7 +8,7 @@ const NumberElement = ({
   className,
   prefix = "",
   suffix = "",
-  numberColor = "text-brand-700", // Default color
+  numberColor = "text-purple-400", // Default color
 }) => {
   const [count, setCount] = useState(0);
   const numberRef = useRef(null);

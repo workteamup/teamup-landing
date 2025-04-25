@@ -1,6 +1,7 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import SimpleStartSection from "../../new-components/simple-start-section";
+import NumberElement from "../../new-components/number-element";
 
 export default function ForHRPage() {
   return (

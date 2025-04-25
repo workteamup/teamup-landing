@@ -52,19 +52,16 @@ export default function ForEmployeesPage() {
             number={76}
             suffix="%"
             description="76% of remote workers report feelings of isolation and disconnection from their colleagues."
-            numberColor="text-purple-600"
           />
           <NumberElement
             number={45}
             suffix="%"
             description="Remote employees spend 45% less time on informal social interaction, resulting in weaker team relationships and lower job satisfaction."
-            numberColor="text-purple-600"
           />
           <NumberElement
             number={67}
             suffix="%"
             description="67% of remote workers say they miss the spontaneous interactions and water cooler moments of in office work."
-            numberColor="text-purple-600"
           />
         </div>
       </Section>

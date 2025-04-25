@@ -2,6 +2,8 @@ import Hero from "./new-components/hero";
 import Section from "./new-components/section";
 import SimpleStartSection from "./new-components/simple-start-section";
 import InfoPiece from "./new-components/info-piece";
+import Image from "next/image";
+import InfoElement from "./new-components/info-element";
 
 export default function Home() {
   return (
@@ -66,23 +68,24 @@ export default function Home() {
         <InfoPiece
           tag="Employee turnover"
           title="Keep your best talent"
-          /*titleClassName="text-white"*/
           description="Team Up! creates meaningful bonds that make people want to stay, fostering belonging through shared experiences regardless of where they work."
-          /*descriptionClassName="text-dark-cloud"*/
           cta={{
             children: "Employee turnover solutions",
             href: "/solutions/for-employee-turnover",
           }}
           supportContent={
-            <div className="w-full h-[400px] bg-purple-50 rounded-lg flex items-center justify-center">
-              <img
-                src="/images/engagement.jpg"
-                alt="Employee Engagement"
-                className="w-full h-full object-cover rounded-lg"
-              />
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/auditorium.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
             </div>
           }
-          /*containerClassName="bg-purple-700 rounded-[48px]"*/
         />
 
         <InfoPiece
@@ -94,12 +97,16 @@ export default function Home() {
             href: "/solutions/for-employee-disengagement",
           }}
           supportContent={
-            <div className="w-full h-[400px] bg-purple-50 rounded-lg flex items-center justify-center">
-              <img
-                src="/images/collaboration.jpg"
-                alt="Team Collaboration"
-                className="w-full h-full object-cover rounded-lg"
-              />
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/farm.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
             </div>
           }
           reverse={true}
@@ -114,14 +121,136 @@ export default function Home() {
             href: "/solutions/for-remote-disconnection",
           }}
           supportContent={
-            <div className="w-full h-[400px] bg-purple-50 rounded-lg flex items-center justify-center">
-              <img
-                src="/images/retention.jpg"
-                alt="Employee Retention"
-                className="w-full h-full object-cover rounded-lg"
-              />
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
             </div>
           }
+        />
+      </Section>
+      <Section
+        title="Gaming inspired features that transform work"
+        titleClassName="max-w-[960px]"
+        bgClassName=""
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <InfoElement
+            imageSrc="/images/campfire.jpg"
+            title="Immersive 3D environments"
+            description="Purpose-built interactive spaces with everything you need that create natural conversation impossible in traditional meetings."
+          />
+          <InfoElement
+            imageSrc="/images/farm.jpg"
+            title="Interactive team games"
+            description="Turn passive team building into active play that build real-world skills in communication, strategy, and collaboration."
+          />
+          <InfoElement
+            imageSrc="/images/auditorium.jpg"
+            title="Versatile room types"
+            description="Instant collaborations, scheduled meetings, permanent hangouts, or large eventos. The right space for every team need."
+          />
+          <InfoElement
+            imageSrc="/images/planning.jpg"
+            title="Custom branded spaces"
+            description="Digital environments that showcase your culture and brand, impressing clients and strengthening team identity."
+          />
+        </div>
+      </Section>
+      <Section
+        preTitle="Our spaces"
+        title="Purpose-built environments for every team need"
+        titleClassName="max-w-[1200px]"
+        bgClassName=""
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <InfoPiece
+          tag="Engagement"
+          title="Spark conversation and foster connection"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+          reverse={true}
+        />
+        <InfoPiece
+          tag="Work"
+          title="Transform routine collaboration into interactive experiences"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+        />
+        <InfoPiece
+          tag="Fun"
+          title="Build real teamwork skills through shared challenges and laughter"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+          reverse={true}
         />
       </Section>
     </div>

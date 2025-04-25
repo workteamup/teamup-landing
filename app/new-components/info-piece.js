@@ -52,7 +52,7 @@ const InfoPiece = ({
           {preTitle && (
             <p
               className={cn(
-                "text-xs font-semibold text-brand-600 uppercase tracking-[0.08em] mb-5",
+                "text-xs font-semibold text-dark-space uppercase tracking-[0.08em] mb-5",
                 preTitleClassName
               )}
             >
@@ -62,7 +62,7 @@ const InfoPiece = ({
           {tag && (
             <div
               className={cn(
-                "inline-flex items-center bg-purple-50 text-purple-500 text-sm font-semibold px-[18px] py-2 rounded-full mb-5",
+                "inline-flex items-center bg-purple-50 text-purple-400 text-base font-medium font-poppins px-5 py-3 rounded-full mb-5",
                 tagClassName
               )}
             >
