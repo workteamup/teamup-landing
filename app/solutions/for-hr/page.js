@@ -2,6 +2,9 @@ import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import SimpleStartSection from "../../new-components/simple-start-section";
 import NumberElement from "../../new-components/number-element";
+import InfoPiece from "../../new-components/info-piece";
+import { X, Check } from "lucide-react";
+import Image from "next/image";
 
 export default function ForHRPage() {
   return (
@@ -62,6 +65,375 @@ export default function ForHRPage() {
             number={29}
             suffix="%"
             description="Only 29% of HR teams have effective tools to measure employee engagement in distributed work models."
+          />
+        </div>
+      </Section>
+      <Section
+        preTitle="Team Up! vs. traditional solutions"
+        title="A new way to do things"
+        titleClassName="max-w-[1200px]"
+        bgClassName=""
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <div>
+          <InfoPiece
+            title="Annual in-person team events"
+            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Massive coordination burden falls on HR teams for minimal
+                    sustained impact.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Impossible to measure actual culture-building effectiveness.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Creates logistical nightmares for distributed workforce
+                    participation.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Generates resentment when some employees can't attend due to
+                    personal obligations.
+                  </span>
+                </li>
+              </ul>
+            }
+          />
+          <InfoPiece
+            title="...but with Team Up!"
+            titleClassName="font-medium max-w-[400px] text-4xl mb-10"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Shift from event coordination to strategic culture-building
+                    with ready-to-use templates.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Track precise metrics on participation, engagement, and
+                    cultural impact.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Ensure equal access for every employee regardless of
+                    location or availability.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Create ongoing culture touchpoints rather than once-a-year
+                    events.
+                  </span>
+                </li>
+              </ul>
+            }
+            reverse={true}
+          />
+        </div>
+        <div>
+          <InfoPiece
+            title="Employee engagement surveys"
+            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Low completion rates (typically under 60%) create incomplete
+                    data sets.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Results arrive too late to address emerging cultural issues
+                    before they escalate.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    No connection between identification of problems and
+                    implementation of solutions.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Survey fatigue leads to increasingly less honest or
+                    thoughtful responses.
+                  </span>
+                </li>
+              </ul>
+            }
+          />
+          <InfoPiece
+            title="...but with Team Up!"
+            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Collect behavioral data that doesn't require active survey
+                    completion.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Monitor engagement trends in real-time to catch issues as
+                    they emerge.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Directly implement solutions in the same environment where
+                    problems are identified.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Gather authentic feedback through observation of natural
+                    interactions.
+                  </span>
+                </li>
+              </ul>
+            }
+            reverse={true}
+          />
+        </div>
+        <div>
+          <InfoPiece
+            title="Onboarding processes"
+            titleClassName="font-medium max-w-[440px] mb-10 text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Expensive to deliver consistent onboarding experience across
+                    locations.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    New hires struggle to build authentic connections in
+                    remote/hybrid setups.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Cultural values stated in presentations don't translate to
+                    lived experiences.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Difficult to track new hire integration beyond basic
+                    checklist completion.
+                  </span>
+                </li>
+              </ul>
+            }
+          />
+          <InfoPiece
+            title="...but with Team Up!"
+            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Deliver consistent, high-quality onboarding experiences
+                    regardless of location.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Facilitate natural relationship building between new hires
+                    and team members.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Embed company values into interactive experiences rather
+                    than static presentations.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">comprobar. </span>
+                </li>
+              </ul>
+            }
+            reverse={true}
           />
         </div>
       </Section>
