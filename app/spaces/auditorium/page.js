@@ -1,5 +1,8 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
+import Testimonial from "../../new-components/testimonial";
+import CheckmarkItem from "../../new-components/checkmark-item";
+import Steps from "../../new-components/steps";
 
 export default function AuditoriumPage() {
   return (
@@ -50,47 +53,83 @@ export default function AuditoriumPage() {
         }
         bgClassName="bg-blue-50"
       />
-      <Section
-        preTitle="Our Features"
-        title="Auditorium Space"
-        subtitle="Experience our state-of-the-art auditorium with cutting-edge technology and comfortable seating."
-        buttons={[
-          { children: "View Layout", href: "/spaces" },
-          { children: "Contact Us", variant: "secondary" },
-        ]}
-        content={
-          <div className="grid grid-cols-3 gap-8 mt-16">
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Advanced AV System
-              </h3>
-              <p className="mt-4 text-gray-600">
-                High-quality sound and projection systems
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Flexible Seating
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Configurable seating for various event types
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Professional Lighting
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Customizable lighting for different moods
-              </p>
-            </div>
-          </div>
-        }
-        buttonsPosition="bottom"
-        bgClassName="bg-gradient-to-r from-blue-50 to-blue-100"
-        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
+      <Testimonial
+        logo="/svg/logos/teamup-logo-dark.svg"
+        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        person={{
+          image: "/images/campfire.jpg",
+          name: "Pablo Yusta",
+          jobTitle: "Chief Executive Officer, AiKit",
+        }}
+        /*containerClassName="bg-purple-50"
+        quoteClassName="text-purple-900"
+        personNameClassName="text-purple-900"
+        personJobTitleClassName="text-purple-700"*/
       />
+      <Section
+        preTitle="Features"
+        title="Everything you need to connect your teams"
+        titleClassName="max-w-[960px] mx-auto"
+        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
+        className="mt-16 px-0  overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
+          <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
+          <CheckmarkItem text="Flexible seating configurations for any event type" />
+          <CheckmarkItem text="Professional lighting with customizable presets" />
+          <CheckmarkItem text="Interactive voting and feedback systems" />
+          <CheckmarkItem text="Real-time analytics for audience engagement" />
+          <CheckmarkItem text="Seamless integration with presentation tools" />
+        </div>
+      </Section>
+      <Section
+        preTitle="How to use"
+        title="Get the best out of the Auditorium"
+        bgClassName="bg-white"
+        containerClassName="py-24 max-w-[1440px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <Steps
+          steps={[
+            {
+              title: "Set up your virtual workspace",
+              description:
+                "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Onboard your team members",
+              description:
+                "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Launch team activities",
+              description:
+                "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Scale and optimize",
+              description:
+                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+              image: "/images/campfire.jpg",
+            },
+          ]}
+        />
+      </Section>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import SimpleStartSection from "./new-components/simple-start-section";
 import InfoPiece from "./new-components/info-piece";
 import Image from "next/image";
 import InfoElement from "./new-components/info-element";
+import Steps from "@/app/new-components/steps";
 
 export default function Home() {
   return (
@@ -353,6 +354,30 @@ export default function Home() {
             </div>
           }
           reverse={true}
+        />
+      </Section>
+      <Section>
+        <Steps
+          steps={[
+            {
+              title: "Step 1: Initial Consultation",
+              description:
+                "We'll discuss your needs and goals to create a tailored plan.",
+              image: "/images/step1.jpg",
+            },
+            {
+              title: "Step 2: Strategy Development",
+              description:
+                "Our team will develop a comprehensive strategy for your business.",
+              video: "/videos/step2.mp4",
+            },
+            {
+              title: "Step 3: Implementation",
+              description:
+                "We'll put the plan into action with our expert team.",
+              image: "/images/step3.jpg",
+            },
+          ]}
         />
       </Section>
     </div>

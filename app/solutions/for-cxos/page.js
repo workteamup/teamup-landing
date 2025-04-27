@@ -5,6 +5,9 @@ import NumberElement from "../../new-components/number-element";
 import InfoPiece from "../../new-components/info-piece";
 import Image from "next/image";
 import { X, Check } from "lucide-react";
+import Testimonial from "../../new-components/testimonial";
+import Steps from "../../new-components/steps";
+import InfoElement from "../../new-components/info-element";
 
 export default function ForCXOsPage() {
   return (
@@ -45,7 +48,56 @@ export default function ForCXOsPage() {
         ]}
         cta={{ children: "Get Started" }}
       />
-
+      <Testimonial
+        logo="/svg/logos/teamup-logo-dark.svg"
+        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        person={{
+          image: "/images/campfire.jpg",
+          name: "Pablo Yusta",
+          jobTitle: "Chief Executive Officer, AiKit",
+        }}
+        /*containerClassName="bg-purple-50"
+        quoteClassName="text-purple-900"
+        personNameClassName="text-purple-900"
+        personJobTitleClassName="text-purple-700"*/
+      />
+      <Section
+        title="Team Up! has you covered"
+        titleClassName="max-w-[1200px]"
+        bgClassName="bg-white"
+        containerClassName="py-32 max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <InfoElement
+            imageSrc="/images/campfire.jpg"
+            title="Save costs on team building"
+            description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+          />
+          <InfoElement
+            imageSrc="/images/farm.jpg"
+            title="Increase productivity of your workforce"
+            description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
+          />
+          <InfoElement
+            imageSrc="/images/auditorium.jpg"
+            title="Boost retention at your company"
+            description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+          />
+        </div>
+      </Section>
       <Section
         preTitle="The problem in numbers"
         title="Title under construction"
@@ -440,6 +492,54 @@ export default function ForCXOsPage() {
             reverse={true}
           />
         </div>
+      </Section>
+      <Section
+        preTitle="How it works"
+        title="Start improving your team's performance"
+        bgClassName="bg-white"
+        containerClassName="py-24 max-w-[1440px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <Steps
+          steps={[
+            {
+              title: "Set up your virtual workspace",
+              description:
+                "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Onboard your team members",
+              description:
+                "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Launch team activities",
+              description:
+                "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Scale and optimize",
+              description:
+                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+              image: "/images/campfire.jpg",
+            },
+          ]}
+        />
       </Section>
     </div>
   );
