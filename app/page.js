@@ -6,6 +6,7 @@ import Image from "next/image";
 import InfoElement from "./new-components/info-element";
 import Steps from "@/app/new-components/steps";
 import ClosingCTA from "@/app/new-components/closing-cta";
+import ChecklistElement from "@/app/new-components/checklist-element";
 
 export default function Home() {
   return (
@@ -473,6 +474,60 @@ export default function Home() {
           }
           reverse={true}
         />
+      </Section>
+      <Section
+        preTitle="Benefits"
+        title="Why you have to start using Team Up!"
+        titleClassName="max-w-[820px]"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting room now",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+        containerClassName="py-32"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1400px] mx-auto gap-x-12 gap-y-12">
+          <ChecklistElement
+            iconSrc="/images/icon1.png"
+            title="Reduce costs, increase returns"
+            titleClassName="min-h-[64px] md:min-h-[64px]"
+            items={[
+              "Enhance event effectiveness while reducing travel and venue costs.",
+              "Cut turnover costs by 30% through improved team connection and engagement.",
+              "Reduce the $400 billion lost annually to unproductive meetings with engaging, purpose-built spaces.",
+            ]}
+          />
+          <ChecklistElement
+            iconSrc="/images/icon2.png"
+            title="Build a culture that attracts and retains talent"
+            titleClassName="min-h-[64px] md:min-h-[64px]"
+            items={[
+              "Create consistent team experiences that build lasting relationships.",
+              "Foster spontaneous interactions that drives innovation and problem-solving.",
+              "Develop shared memories and inside jokes that strengthen team identity.",
+              "Build soft skills through play that transfer directly to work projects.",
+            ]}
+          />
+          <ChecklistElement
+            iconSrc="/images/icon3.png"
+            title="Better ways of working together"
+            titleClassName="min-h-[64px] md:min-h-[64px]"
+            items={[
+              "Increase meeting participation by 45% through immersive environments.",
+              "Imrpove information retention by 40% compared to traditional meetings.",
+              "Enhance cross-team collaboration by 38% through shared experiences.",
+              "Maintain culture continuity across any workplace model (in-office, hybrid, remote)",
+            ]}
+          />
+        </div>
       </Section>
       <Section>
         <Steps
