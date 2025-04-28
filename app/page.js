@@ -7,6 +7,7 @@ import InfoElement from "./new-components/info-element";
 import Steps from "@/app/new-components/steps";
 import ClosingCTA from "@/app/new-components/closing-cta";
 import ChecklistElement from "@/app/new-components/checklist-element";
+import RoleCard from "@/app/new-components/role-card";
 
 export default function Home() {
   return (
@@ -526,6 +527,38 @@ export default function Home() {
               "Enhance cross-team collaboration by 38% through shared experiences.",
               "Maintain culture continuity across any workplace model (in-office, hybrid, remote)",
             ]}
+          />
+        </div>
+      </Section>
+      <Section
+        preTitle="Roles"
+        title="Every role gets something out of Team Up!"
+        containerClassName="py-24"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[1600px] mx-auto px-8 h-full">
+          <RoleCard
+            imageSrc="/images/avatar-cxo.png"
+            title="Team Up! for CXOs"
+            containerClassName="w-full h-full"
+            href="/solutions/for-cxos"
+          />
+          <RoleCard
+            imageSrc="/images/avatar-hr.png"
+            title="Team Up! for HR"
+            containerClassName="w-full h-full"
+            href="/solutions/for-hr"
+          />
+          <RoleCard
+            imageSrc="/images/avatar-manager.png"
+            title="Team Up! for Managers"
+            containerClassName="w-full h-full"
+            href="/solutions/for-managers"
+          />
+          <RoleCard
+            imageSrc="/images/avatar-employee.png"
+            title="Team Up! for Employees"
+            containerClassName="w-full h-full"
+            href="/solutions/for-employees"
           />
         </div>
       </Section>
