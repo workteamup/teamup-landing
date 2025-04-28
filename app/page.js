@@ -5,6 +5,7 @@ import InfoPiece from "./new-components/info-piece";
 import Image from "next/image";
 import InfoElement from "./new-components/info-element";
 import Steps from "@/app/new-components/steps";
+import ClosingCTA from "@/app/new-components/closing-cta";
 
 export default function Home() {
   return (
@@ -380,6 +381,11 @@ export default function Home() {
           ]}
         />
       </Section>
+      <ClosingCTA
+        imageSrc="/images/campfire.jpg"
+        text="Start creating a company culture that works"
+        buttonText="Request access"
+      />
     </div>
   );
 }
