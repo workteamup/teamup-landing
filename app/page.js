@@ -357,6 +357,123 @@ export default function Home() {
           reverse={true}
         />
       </Section>
+      <Section
+        preTitle="Use cases"
+        title="Team Up! works for companies like yours"
+        bgClassName="bg-white"
+        containerClassName="py-32 max-w-[1600px] mx-auto"
+      >
+        <InfoPiece
+          tag="Startups"
+          title="Build culture from day one"
+          description="Create a strong foundation for your growing team with spaces that foster collaboration and connection."
+          cta={{
+            variant: "primary",
+            children: "Learn more",
+            size: "lg",
+          }}
+          supportContent={
+            <div className="w-full h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Startups"
+                  fill
+                  className="object-cover rounded-3xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+                <p className="absolute bottom-12 right-12 text-white text-4xl font-medium text-right max-w-[500px] break-words hyphens-none">
+                  Increase meeting effectiveness by 45%
+                </p>
+              </div>
+            </div>
+          }
+        />
+        <InfoPiece
+          tag="Enterprise"
+          title="Scale connection across locations"
+          description="Break down silos and create consistent experiences for distributed teams at scale."
+          cta={{
+            variant: "primary",
+            children: "Learn more",
+            size: "lg",
+          }}
+          supportContent={
+            <div className="w-full h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Enterprise"
+                  fill
+                  className="object-cover rounded-3xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+                <p className="absolute bottom-12 left-12 text-white text-4xl font-medium text-left max-w-[500px] break-words hyphens-none">
+                  Increase meeting effectiveness by 45%
+                </p>
+              </div>
+            </div>
+          }
+          reverse={true}
+        />
+        <InfoPiece
+          tag="Remote-first"
+          title="Create meaningful connections"
+          description="Transform virtual interactions into engaging experiences that build trust and camaraderie."
+          cta={{
+            variant: "primary",
+            children: "Learn more",
+            size: "lg",
+          }}
+          supportContent={
+            <div className="w-full h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Remote-first"
+                  fill
+                  className="object-cover rounded-3xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+                <p className="absolute bottom-12 right-12 text-white text-4xl font-medium text-right max-w-[500px] break-words hyphens-none">
+                  Increase meeting effectiveness by 45%
+                </p>
+              </div>
+            </div>
+          }
+        />
+        <InfoPiece
+          tag="Hybrid"
+          title="Bridge the physical-digital divide"
+          description="Create equal experiences for in-office and remote team members with seamless integration."
+          cta={{
+            variant: "primary",
+            children: "Learn more",
+            size: "lg",
+          }}
+          supportContent={
+            <div className="w-full h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Hybrid"
+                  fill
+                  className="object-cover rounded-3xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+                <p className="absolute bottom-12 left-12 text-white text-4xl font-medium text-left max-w-[500px] break-words hyphens-none">
+                  Increase meeting effectiveness by 45%
+                </p>
+              </div>
+            </div>
+          }
+          reverse={true}
+        />
+      </Section>
       <Section>
         <Steps
           steps={[
