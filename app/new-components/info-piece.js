@@ -74,7 +74,7 @@ const InfoPiece = ({
           {title && (
             <h2
               className={cn(
-                "text-3xl font-semibold text-brand-700 mb-5",
+                "text-3xl font-medium text-brand-700 mb-5",
                 titleClassName
               )}
             >

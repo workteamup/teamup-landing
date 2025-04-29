@@ -21,7 +21,7 @@ const Section = ({
   console.log("Section props:", { preTitle, title, subtitle });
 
   return (
-    <section className={cn("w-full", bgClassName, className)}>
+    <section className={cn("w-full px-6", bgClassName, className)}>
       <div className={cn(containerClassName)}>
         {(preTitle || title || subtitle) && (
           <div className="flex flex-col items-center text-center">
