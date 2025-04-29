@@ -8,6 +8,7 @@ import { X, Check } from "lucide-react";
 import Testimonial from "../../new-components/testimonial";
 import Steps from "../../new-components/steps";
 import InfoElement from "../../new-components/info-element";
+import LogoSlider from "../../new-components/logo-slider";
 
 export default function ForCXOsPage() {
   return (
@@ -25,6 +26,8 @@ export default function ForCXOsPage() {
         ]}
         bgClassName="bg-purple-50"
       />
+
+      <LogoSlider />
 
       <SimpleStartSection
         title="How Team Up! helps CXOs"
