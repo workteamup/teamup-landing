@@ -14,8 +14,8 @@ const CheckmarkItem = ({
     <div
       className={cn("flex items-start gap-4", containerClassName, className)}
     >
-      <div className="flex-shrink-0">
-        <Check className={cn("w-7 h-7 text-green-500 mt-0.5", iconClassName)} />
+      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-purple-50 flex items-center justify-center">
+        <Check className={cn("w-5 h-5 text-purple-800", iconClassName)} />
       </div>
       <span className={cn("text-lg text-dark-space", textClassName)}>
         {text}
