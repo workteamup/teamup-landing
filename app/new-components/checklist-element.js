@@ -40,7 +40,7 @@ export default function ChecklistElement({
           <li key={index} className={`flex items-start ${itemClassName}`}>
             {/* Checkmark Container */}
             <div
-              className={`flex items-center justify-center w-6 h-6 rounded-full bg-green-100 mr-3 ${checkContainerClassName}`}
+              className={`flex items-center justify-center w-6 h-6 rounded-full bg-green-100 mr-3 flex-shrink-0 ${checkContainerClassName}`}
             >
               <Check
                 className={`w-4 h-4 text-green-700 ${checkIconClassName}`}
@@ -53,4 +53,4 @@ export default function ChecklistElement({
       </ul>
     </div>
   );
-} 
+}
