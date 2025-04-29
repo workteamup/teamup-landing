@@ -9,6 +9,7 @@ import ClosingCTA from "@/app/new-components/closing-cta";
 import ChecklistElement from "@/app/new-components/checklist-element";
 import RoleCard from "@/app/new-components/role-card";
 import CheckmarkItem from "@/app/new-components/checkmark-item";
+import LogoSlider from "@/app/new-components/logo-slider";
 
 export default function Home() {
   return (
@@ -64,11 +65,28 @@ export default function Home() {
         bgClassName="bg-purple-50"
       />
       <Section
+        title="Join the 100+ companies that are benefitting from Team Up!"
+        titleClassName="max-w-[960px] text-5xl font-medium"
+        bgClassName=""
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="mt-16 px-0 overflow-hidden w-full mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="top"
+      >
+        <LogoSlider />
+      </Section>
+      <Section
         preTitle="How we solve your pains"
         title="Turning workplace challenges into opportunities"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
       >
         <InfoPiece
           tag="Employee turnover"
@@ -142,10 +160,10 @@ export default function Home() {
       </Section>
       <Section
         title="Gaming inspired features that transform work"
-        titleClassName="max-w-[960px]"
+        titleClassName="max-w-[960px] text-6xl font-medium"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
