@@ -8,6 +8,7 @@ import Steps from "@/app/new-components/steps";
 import ClosingCTA from "@/app/new-components/closing-cta";
 import ChecklistElement from "@/app/new-components/checklist-element";
 import RoleCard from "@/app/new-components/role-card";
+import CheckmarkItem from "@/app/new-components/checkmark-item";
 
 export default function Home() {
   return (
@@ -180,6 +181,22 @@ export default function Home() {
             title="Custom branded spaces"
             description="Digital environments that showcase your culture and brand, impressing clients and strengthening team identity."
           />
+        </div>
+      </Section>
+      <Section
+        preTitle="Features"
+        title="Everything you need to connect your teams"
+        titleClassName="max-w-[960px] mx-auto"
+        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
+        className="overflow-hidden"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
+          <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
+          <CheckmarkItem text="Flexible seating configurations for any event type" />
+          <CheckmarkItem text="Professional lighting with customizable presets" />
+          <CheckmarkItem text="Interactive voting and feedback systems" />
+          <CheckmarkItem text="Real-time analytics for audience engagement" />
+          <CheckmarkItem text="Seamless integration with presentation tools" />
         </div>
       </Section>
       <Section

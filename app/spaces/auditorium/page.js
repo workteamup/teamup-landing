@@ -74,7 +74,7 @@ export default function AuditoriumPage() {
         title="Everything you need to connect your teams"
         titleClassName="max-w-[960px] mx-auto"
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0  overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
+        className="overflow-hidden"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
           <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
