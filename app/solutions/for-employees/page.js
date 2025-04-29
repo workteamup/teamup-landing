@@ -238,7 +238,7 @@ export default function ForEmployeesPage() {
                     <X className="w-4 h-4 text-red-500" />
                   </div>
                   <span className="text-dark-space text-xl">
-                    "Always-on camera" expectations create anxiety and
+                    &quot;Always-on camera&quot; expectations create anxiety and
                     presentation fatigue.
                   </span>
                 </li>

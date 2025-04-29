@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import SimpleStartSection from "../../new-components/simple-start-section";
@@ -179,7 +181,7 @@ export default function ForManagersPage() {
                     <Check className="w-4 h-4 text-green-500" />
                   </div>
                   <span className="text-dark-space text-xl">
-                    Customize activities to address your specific team's
+                    Customize activities to address your specific team&apos;s
                     challenges and dynamics.
                   </span>
                 </li>

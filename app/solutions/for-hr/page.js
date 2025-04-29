@@ -139,8 +139,8 @@ export default function ForHRPage() {
                     <X className="w-4 h-4 text-red-500" />
                   </div>
                   <span className="text-dark-space text-xl">
-                    Generates resentment when some employees can't attend due to
-                    personal obligations.
+                    Generates resentment when some employees can&apos;t attend
+                    due to personal obligations.
                   </span>
                 </li>
               </ul>
@@ -286,8 +286,8 @@ export default function ForHRPage() {
                     <Check className="w-4 h-4 text-green-500" />
                   </div>
                   <span className="text-dark-space text-xl">
-                    Collect behavioral data that doesn't require active survey
-                    completion.
+                    Collect behavioral data that doesn&apos;t require active
+                    survey completion.
                   </span>
                 </li>
                 <li className="flex items-center gap-4">
@@ -364,8 +364,8 @@ export default function ForHRPage() {
                     <X className="w-4 h-4 text-red-500" />
                   </div>
                   <span className="text-dark-space text-xl">
-                    Cultural values stated in presentations don't translate to
-                    lived experiences.
+                    Cultural values stated in presentations don&apos;t translate
+                    to lived experiences.
                   </span>
                 </li>
                 <li className="flex items-center gap-4">

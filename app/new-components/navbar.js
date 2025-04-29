@@ -120,6 +120,14 @@ const Navbar = () => {
                     >
                       <span>{item.label}</span>
                     </a>
+                  ) : item.label === "Pricing" ? (
+                    <Link href="/pricing">
+                      <span>{item.label}</span>
+                    </Link>
+                  ) : item.label === "About us" ? (
+                    <Link href="/about-us">
+                      <span>{item.label}</span>
+                    </Link>
                   ) : (
                     <span>{item.label}</span>
                   )}
@@ -502,7 +510,12 @@ const Navbar = () => {
               >
                 Request access
               </Button>
-              <Button variant="tertiary" size="md" className="hidden md:flex">
+              <Button
+                variant="tertiary"
+                size="md"
+                className="hidden md:flex"
+                onClick={() => (window.location.href = "/contact")}
+              >
                 Contact sales
               </Button>
               <Button
@@ -555,6 +568,14 @@ const Navbar = () => {
                   >
                     {item.label}
                   </a>
+                ) : item.label === "Pricing" ? (
+                  <Link href="/pricing" className="text-xl">
+                    {item.label}
+                  </Link>
+                ) : item.label === "About us" ? (
+                  <Link href="/about-us" className="text-xl">
+                    {item.label}
+                  </Link>
                 ) : (
                   <span className="text-xl">{item.label}</span>
                 )}
@@ -936,7 +957,12 @@ const Navbar = () => {
           >
             Request access
           </Button>
-          <Button variant="tertiary" size="md" className="w-full md:hidden">
+          <Button
+            variant="tertiary"
+            size="md"
+            className="w-full md:hidden"
+            onClick={() => (window.location.href = "/contact")}
+          >
             Contact sales
           </Button>
         </div>
