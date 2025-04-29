@@ -343,12 +343,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
 .animate-slide {
-  animation: slide 30s linear infinite;
+  animation: slide 60s linear infinite;
+  white-space: nowrap;
 }
 
 /* Make sure these are placed before the @tailwind directives */
@@ -400,5 +401,19 @@
   h6 {
     font-family: "Bogue", serif;
   }*/
+}
+
+@keyframes logo-slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-logo-slider {
+  animation: logo-slider 60s linear infinite;
+  min-width: 200%; /* Ensures enough width for two sets of logos */
 }
 
