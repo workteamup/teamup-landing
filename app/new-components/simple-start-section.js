@@ -83,7 +83,7 @@ const SimpleStartSection = ({
                       {feature.title && (
                         <h3
                           className={cn(
-                            "text-2xl font-semibold text-brand-700",
+                            "text-2xl font-medium text-brand-700",
                             featureTitleClassName
                           )}
                         >

@@ -6,7 +6,7 @@ import Steps from "../../new-components/steps";
 import InfoElement from "../../new-components/info-element";
 import InfoPiece from "../../new-components/info-piece";
 import Image from "next/image";
-
+import ClosingCTA from "../../new-components/closing-cta";
 export default function AuditoriumPage() {
   return (
     <div>
@@ -264,6 +264,18 @@ export default function AuditoriumPage() {
           }}
         />
       </Section>
+      <Section
+        title="Future proof your team"
+        titleClassName="max-w-[960px] font-medium"
+        subtitle="Team Up! evolves with your team, ensuring you're always prepared for the future of work with regular updates and new interactive spaces that respond to changing workplace needs."
+        subtitleClassName="text-dark-space max-w-[960px]"
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+      />
+      <ClosingCTA
+        text="Start creating a company culture that works"
+        buttonText="Request access"
+      />
     </div>
   );
 }

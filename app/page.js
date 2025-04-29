@@ -622,7 +622,6 @@ export default function Home() {
         />
       </Section>
       <ClosingCTA
-        imageSrc="/images/campfire.jpg"
         text="Start creating a company culture that works"
         buttonText="Request access"
       />

@@ -9,6 +9,7 @@ import Testimonial from "../../new-components/testimonial";
 import Steps from "../../new-components/steps";
 import InfoElement from "../../new-components/info-element";
 import LogoSlider from "../../new-components/logo-slider";
+import ClosingCTA from "../../new-components/closing-cta";
 
 export default function ForCXOsPage() {
   return (
@@ -27,7 +28,23 @@ export default function ForCXOsPage() {
         bgClassName="bg-purple-50"
       />
 
-      <LogoSlider />
+      <Section
+        title="Join the 100+ CXOs taking advantage of using Team Up!"
+        titleClassName="max-w-[960px] text-5xl font-medium"
+        bgClassName=""
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="mt-16 px-0 overflow-hidden w-full mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="top"
+      >
+        <LogoSlider />
+      </Section>
 
       <SimpleStartSection
         title="How Team Up! helps CXOs"
@@ -497,6 +514,99 @@ export default function ForCXOsPage() {
         </div>
       </Section>
       <Section
+        preTitle="Use cases"
+        title="Perfect for these occasions"
+        titleClassName="max-w-[1200px]"
+        bgClassName=""
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <InfoPiece
+          title="Spark conversation and foster connection"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+          reverse={true}
+          description="A forest setting with conversation-starter cards perfect for
+          team bonding and casual discussions."
+          cta={{
+            variant: "primary",
+            children: "Create a meeting in the Auditorium",
+            size: "lg",
+          }}
+        />
+        <InfoPiece
+          title="Transform routine collaboration into interactive experiences"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+          description="A forest setting with conversation-starter cards perfect for
+          team bonding and casual discussions."
+          cta={{
+            variant: "primary",
+            children: "Create a meeting in the Auditorium",
+            size: "lg",
+          }}
+        />
+        <InfoPiece
+          title="Build real teamwork skills through shared challenges and laughter"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+          description="A forest setting with conversation-starter cards perfect for
+          team bonding and casual discussions."
+          reverse={true}
+          cta={{
+            variant: "primary",
+            children: "Create a meeting in the Auditorium",
+            size: "lg",
+          }}
+        />
+      </Section>
+      <Section
         preTitle="How it works"
         title="Start improving your team's performance"
         bgClassName="bg-white"
@@ -544,6 +654,10 @@ export default function ForCXOsPage() {
           ]}
         />
       </Section>
+      <ClosingCTA
+        text="Start creating a company culture that works"
+        buttonText="Request access"
+      />
     </div>
   );
 }

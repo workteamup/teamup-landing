@@ -5,7 +5,7 @@ import Image from "next/image";
 import { cn } from "../lib/utils";
 
 const ClosingCTA = ({
-  imageSrc,
+  imageSrc = "/images/closing-cta.png",
   text = "Start creating a company culture that works",
   buttonText = "Request access",
   className = "",

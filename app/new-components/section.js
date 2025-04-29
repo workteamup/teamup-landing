@@ -44,7 +44,7 @@ const Section = ({
           {title && (
             <h2
               className={cn(
-                "text-7xl font-semibold text-brand-700 leading-tight",
+                "text-6xl font-semibold text-brand-700 leading-tight",
                 titleClassName
               )}
             >
