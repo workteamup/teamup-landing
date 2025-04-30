@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import Testimonial from "../../new-components/testimonial";
@@ -23,6 +25,8 @@ export default function CampfirePage() {
             variant: "primary",
             size: "lg",
             children: "Create a meeting in the Campfire",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -78,17 +82,15 @@ export default function CampfirePage() {
         className="overflow-hidden"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
-          <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
-          <CheckmarkItem text="Flexible seating configurations for any event type" />
-          <CheckmarkItem text="Professional lighting with customizable presets" />
-          <CheckmarkItem text="Interactive voting and feedback systems" />
-          <CheckmarkItem text="Real-time analytics for audience engagement" />
-          <CheckmarkItem text="Seamless integration with presentation tools" />
+          <CheckmarkItem text="Random topics to spark conversations" />
+          <CheckmarkItem text="Different themes to choose from" />
+          <CheckmarkItem text="Customizable topics if you want to have a little more control" />
+          <CheckmarkItem text="Gather around the fire to feel connected" />
         </div>
       </Section>
       <Section
         preTitle="How to use"
-        title="Get the best out of the Auditorium"
+        title="Get the best out of the Campfire"
         bgClassName="bg-white"
         containerClassName="py-24 max-w-[1440px] mx-auto"
         buttons={[
@@ -96,11 +98,15 @@ export default function CampfirePage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first Campfire meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -108,27 +114,33 @@ export default function CampfirePage() {
         <Steps
           steps={[
             {
-              title: "Set up your virtual workspace",
+              title: "Invite your team to the Campfire",
               description:
-                "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
+                "Set up a meeting in the Campfire and invite all the members of your team.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Onboard your team members",
+              title: "Gather around the fire",
               description:
-                "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
+                "Bring everyone together around the fire to make sure everyone is ready to spark conversations.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Launch team activities",
+              title: "Take turns to get topics from the stalls",
               description:
-                "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
+                "Take turns to get a topic from the different stalls and see how conversations unfold.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Scale and optimize",
+              title: "Bond over topics you never thought you'd talk about",
               description:
-                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+                "See how easy is to bond over topics no one had to pressure to bring up and you've never thought that would come out in a conversation with your colleagues.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Optional: set up a list of custom topics",
+              description:
+                "Control de flow of the campfire by setting fire a topics you want to talk about without forcing them into the conversation.",
               image: "/images/campfire.jpg",
             },
           ]}
@@ -136,7 +148,7 @@ export default function CampfirePage() {
       </Section>
       <Section
         preTitle="Benefits"
-        title="What the Auditorium gives you"
+        title="What the Campfire gives you"
         titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
         containerClassName="py-32 max-w-[1600px] mx-auto"
@@ -145,11 +157,15 @@ export default function CampfirePage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first Campfire meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -157,18 +173,18 @@ export default function CampfirePage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoElement
             imageSrc="/images/campfire.jpg"
-            title="Save costs on team building"
-            description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+            title="Comfortable and casual"
+            description="No one has the pressure to bring up topics and you can just relax and enjoy the conversation."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
-            title="Increase productivity of your workforce"
-            description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
+            title="Perfect for onboarding"
+            description="New hires will never have an easier way to get to know their new colleagues and feel part of the team."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
-            title="Boost retention at your company"
-            description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+            title="Easiest way to bond"
+            description="Learn things about your colleagues you never knew and make new connections that will last a lifetime."
           />
         </div>
       </Section>
@@ -184,17 +200,21 @@ export default function CampfirePage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Spark conversation and foster connection"
+          title="Onboarding new hires"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -209,16 +229,17 @@ export default function CampfirePage() {
             </div>
           }
           reverse={true}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Let new hires get to know the team in a comfortable and casual way by bringing the team together around the fire."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start onboarding new hires",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Transform routine collaboration into interactive experiences"
+          title="Team building sessions"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -232,16 +253,17 @@ export default function CampfirePage() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Run recurrent team building sessions to keep the company connected and engaged. Let people from different departments get to know each other."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start making cross-departmental connections",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Build real teamwork skills through shared challenges and laughter"
+          title="Solve problems by bringing up difficult topics"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -255,13 +277,14 @@ export default function CampfirePage() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Run anonymous polls to get feedback from your employees and use the Campfire to discuss the difficult topics without anyone being forced to bring them up."
           reverse={true}
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start solving problems",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
       </Section>
