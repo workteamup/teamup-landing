@@ -7,6 +7,7 @@ import InfoElement from "../../new-components/info-element";
 import InfoPiece from "../../new-components/info-piece";
 import Image from "next/image";
 import ClosingCTA from "../../new-components/closing-cta";
+
 export default function AuditoriumPage() {
   return (
     <div>
