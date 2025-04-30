@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import Testimonial from "../../new-components/testimonial";
@@ -21,8 +23,9 @@ export default function AuditoriumPage() {
         buttons={[
           {
             variant: "primary",
-            size: "lg",
+            size: "xl",
             children: "Create a meeting in the Auditorium",
+            
           },
           /* { variant: "tertiary", size: "md", children: "View pricing" },*/
         ]}
@@ -72,18 +75,16 @@ export default function AuditoriumPage() {
       />
       <Section
         preTitle="Features"
-        title="Everything you need to connect your teams"
+        title="Everything you need for a successful town hall"
         titleClassName="max-w-[960px] mx-auto"
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
         className="overflow-hidden"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
-          <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
-          <CheckmarkItem text="Flexible seating configurations for any event type" />
-          <CheckmarkItem text="Professional lighting with customizable presets" />
-          <CheckmarkItem text="Interactive voting and feedback systems" />
-          <CheckmarkItem text="Real-time analytics for audience engagement" />
-          <CheckmarkItem text="Seamless integration with presentation tools" />
+          <CheckmarkItem text="Only the presenter can talk" />
+          <CheckmarkItem text="Screen sharing in the big auditorium screen" />
+          <CheckmarkItem text="Set up conversation topics and polls" />
+          <CheckmarkItem text="Run quick position based voting" />
         </div>
       </Section>
       <Section
@@ -99,7 +100,7 @@ export default function AuditoriumPage() {
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first town hall",
             size: "xl",
           },
         ]}
@@ -108,27 +109,35 @@ export default function AuditoriumPage() {
         <Steps
           steps={[
             {
-              title: "Set up your virtual workspace",
+              title: "Invite your employees to the town hall",
               description:
-                "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
+                "Create a meeting in the Auditorium and invite all your employees",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Onboard your team members",
+              title: "Gather them around the stands",
               description:
-                "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
+                "Wait until everyone is in the stands ready to see your presentation.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Launch team activities",
+              title: "Step into the stage",
               description:
-                "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
+                "Once you set foot in the stage, the audience will go silent and focus on what you have to say.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Scale and optimize",
+              title:
+                "Share your screen, set up conversation topics or run polls",
               description:
-                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+                "Use the different features of the Auditorium to run your town hall.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title:
+                "Invite guests to the stage so they can join the conversation",
+              description:
+                "If someone wants to ask or talk about something, they can join you in the stage.",
               image: "/images/campfire.jpg",
             },
           ]}
@@ -157,18 +166,18 @@ export default function AuditoriumPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoElement
             imageSrc="/images/campfire.jpg"
-            title="Save costs on team building"
-            description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+            title="Feel like presenting in person"
+            description="Replace the cold feeling of presenting in a webcam grid with the feeling of being in front of a real audience."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
-            title="Increase productivity of your workforce"
-            description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
+            title="See an engaged audience"
+            description="See your audience engaged in the conversation with their reactions and the movement to vote the polls you set up."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
-            title="Boost retention at your company"
-            description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+            title="Control the flow of the conversation"
+            description="The audience's audio is muted, so no interruptions, no unwanted noise, just the presenter and the audience."
           />
         </div>
       </Section>
@@ -194,7 +203,7 @@ export default function AuditoriumPage() {
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Spark conversation and foster connection"
+          title="Company all hands"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -218,7 +227,7 @@ export default function AuditoriumPage() {
           }}
         />
         <InfoPiece
-          title="Transform routine collaboration into interactive experiences"
+          title="Company town hall"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -241,7 +250,7 @@ export default function AuditoriumPage() {
           }}
         />
         <InfoPiece
-          title="Build real teamwork skills through shared challenges and laughter"
+          title="AMA sessions"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">

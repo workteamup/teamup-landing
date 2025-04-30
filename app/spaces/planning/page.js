@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import Testimonial from "../../new-components/testimonial";
@@ -21,7 +23,7 @@ export default function PlanningPage() {
         buttons={[
           {
             variant: "primary",
-            size: "lg",
+            size: "xl",
             children: "Create a meeting in the Planning space",
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
@@ -72,23 +74,23 @@ export default function PlanningPage() {
       />
       <Section
         preTitle="Features"
-        title="Everything you need to connect your teams"
+        title="Everything you need to reach consensus"
         titleClassName="max-w-[960px] mx-auto"
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
         className="overflow-hidden"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
-          <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
-          <CheckmarkItem text="Flexible seating configurations for any event type" />
-          <CheckmarkItem text="Professional lighting with customizable presets" />
-          <CheckmarkItem text="Interactive voting and feedback systems" />
-          <CheckmarkItem text="Real-time analytics for audience engagement" />
-          <CheckmarkItem text="Seamless integration with presentation tools" />
+          <CheckmarkItem text="Use pre configured voting options" />
+          <CheckmarkItem text="Customize the voting options" />
+          <CheckmarkItem text="Vote unseen to preserve anonymity" />
+          <CheckmarkItem text="Run and step on the platform you want" />
+          <CheckmarkItem text="Set different timers for each topic" />
+          <CheckmarkItem text="Discuss results and see how results change live" />
         </div>
       </Section>
       <Section
         preTitle="How to use"
-        title="Get the best out of the Auditorium"
+        title="Get the best out of the Planning space"
         bgClassName="bg-white"
         containerClassName="py-24 max-w-[1440px] mx-auto"
         buttons={[
@@ -108,25 +110,32 @@ export default function PlanningPage() {
         <Steps
           steps={[
             {
-              title: "Set up your virtual workspace",
+              title: "Get your team ready in the Planning space",
               description:
                 "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Onboard your team members",
+              title: "Step into the moderator platform",
               description:
                 "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Launch team activities",
+              title:
+                "Configure the topic to vote, options and timers and run the voting",
               description:
                 "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Scale and optimize",
+              title: "Run and jump to reach the option you want",
+              description:
+                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "See the results, discuss them and see how they change",
               description:
                 "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
               image: "/images/campfire.jpg",
@@ -136,7 +145,7 @@ export default function PlanningPage() {
       </Section>
       <Section
         preTitle="Benefits"
-        title="What the Auditorium gives you"
+        title="What the Planning space gives you"
         titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
         containerClassName="py-32 max-w-[1600px] mx-auto"
@@ -157,18 +166,18 @@ export default function PlanningPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoElement
             imageSrc="/images/campfire.jpg"
-            title="Save costs on team building"
-            description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+            title="Fun voting sessions"
+            description="Voting sessions will never be a boring experience again that feels like a waste of time."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
-            title="Increase productivity of your workforce"
-            description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
+            title="More interactive and engaging"
+            description="Get the team more engaged by making them move around the space instead of just selecting options."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
-            title="Boost retention at your company"
-            description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+            title="Faster and more efficient"
+            description="Get the results faster and more efficiently by making the voting process more interactive."
           />
         </div>
       </Section>
@@ -184,17 +193,23 @@ export default function PlanningPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () => {
+              window.open("https://app.teamup.com/signup", "_blank");
+            },
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first planning session",
             size: "xl",
+            onClick: () => {
+              window.open("https://app.teamup.com/demo", "_blank");
+            },
           },
         ]}
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Spark conversation and foster connection"
+          title="Sprint planning"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -218,7 +233,7 @@ export default function PlanningPage() {
           }}
         />
         <InfoPiece
-          title="Transform routine collaboration into interactive experiences"
+          title="Strategic planning meetings"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -241,7 +256,7 @@ export default function PlanningPage() {
           }}
         />
         <InfoPiece
-          title="Build real teamwork skills through shared challenges and laughter"
+          title="Feedback gathering sessions"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
