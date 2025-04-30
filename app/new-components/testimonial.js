@@ -43,7 +43,7 @@ const Testimonial = ({
         {quote && (
           <p
             className={cn(
-              "mt-8 text-3xl font-bold text-brand-700 text-center max-w-[960px] mx-auto",
+              "mt-8 text-3xl font-medium text-brand-700 text-center max-w-[960px] mx-auto",
               quoteClassName
             )}
           >

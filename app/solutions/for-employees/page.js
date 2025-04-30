@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import SimpleStartSection from "../../new-components/simple-start-section";
@@ -10,6 +12,7 @@ import Steps from "../../new-components/steps";
 import InfoElement from "../../new-components/info-element";
 import LogoSlider from "../../new-components/logo-slider";
 import ClosingCTA from "../../new-components/closing-cta";
+import { ArrowRight } from "lucide-react";
 
 export default function ForEmployeesPage() {
   return (
@@ -22,13 +25,25 @@ export default function ForEmployeesPage() {
         subtitle="Team Up! brings fun, connection and growth to your workday with 3D virtual games and social spaces that transform remote work"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "lg", children: "Request access" },
-          { variant: "tertiary", size: "lg", children: "Contact sales" },
+          {
+            variant: "primary",
+            size: "xl",
+            children: "Request access",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            variant: "secondary",
+            size: "xl",
+            children: "Create your first meeting room",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
+          },
         ]}
         bgClassName="bg-purple-50"
       />
       <Section
-        title="Join the 100+ CXOs taking advantage of using Team Up!"
+        title="Join the 1000+ employees taking advantage of using Team Up!"
         titleClassName="max-w-[960px] text-5xl font-medium"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
@@ -37,7 +52,9 @@ export default function ForEmployeesPage() {
           {
             variant: "primary",
             children: "Request access",
-            size: "xl",
+            size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
         ]}
         buttonsPosition="top"
@@ -64,11 +81,14 @@ export default function ForEmployeesPage() {
               "Access mentorship and skill-building opportunities in relaxed 3D settings that make learning feel natural and engaging.",
           },
         ]}
-        cta={{ children: "Get Started" }}
+        cta={{
+          children: "Create your first meeting room",
+          onClick: () => window.open("https://app.teamup.works/demo", "_blank"),
+        }}
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="I've made real friendships with colleagues I've never met in person, and work feels fun again. It's the perfect balance of social connection without feeling forced."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",
@@ -89,11 +109,15 @@ export default function ForEmployeesPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -101,18 +125,18 @@ export default function ForEmployeesPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoElement
             imageSrc="/images/campfire.jpg"
-            title="Save costs on team building"
-            description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+            title="Virtual games"
+            description="Enjoy trivia, escape rooms, obstacle courses lik The Floor is -lava, and more with your team in fully interactive 3D environments."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
-            title="Increase productivity of your workforce"
-            description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
+            title="Personal avatars"
+            description="Customize your 3D avatar and virtual desk to express your personality and be recognized by teammates."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
-            title="Boost retention at your company"
-            description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+            title="Social hubs"
+            description="Drop into casual 3D rooms like our Campfire for coffee breaks or quick chats that feel  like real-world interactions."
           />
         </div>
       </Section>
@@ -152,11 +176,15 @@ export default function ForEmployeesPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -524,17 +552,21 @@ export default function ForEmployeesPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first meeting room",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Spark conversation and foster connection"
+          title="Virtual coffee breaks"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -549,16 +581,17 @@ export default function ForEmployeesPage() {
             </div>
           }
           reverse={true}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Join a virtual coffee chat in our Campfire environment with conversation cards to spark meaningful discussions with colleagues."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "See what the Campfire is like",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
+            onClick: () => (window.location.href = "/spaces/campfire"),
           }}
         />
         <InfoPiece
-          title="Transform routine collaboration into interactive experiences"
+          title="Virtual events"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -572,36 +605,13 @@ export default function ForEmployeesPage() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Attend a virtual workshop in our Auditorium to learn new skills in an engaging, relaxed 3D setting with interactive elements."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Check out the Auditorium",
             size: "lg",
-          }}
-        />
-        <InfoPiece
-          title="Build real teamwork skills through shared challenges and laughter"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
-          reverse={true}
-          cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
-            size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
+            onClick: () => (window.location.href = "/spaces/auditorium"),
           }}
         />
       </Section>
@@ -627,27 +637,27 @@ export default function ForEmployeesPage() {
         <Steps
           steps={[
             {
-              title: "Set up your virtual workspace",
+              title: "Request access to Team Up!",
               description:
-                "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
+                "Apply for access to Team Up! in https://app.teamup.works/signup",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Onboard your team members",
+              title: "Create your company's workspace",
               description:
-                "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
+                "Create a workspace that reflects your company culture and invite your colleagues to join.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Launch team activities",
+              title: "Create your first meeting room",
               description:
-                "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
+                "Create a meeting room, invite your team and start having engaging and productive meetings.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Scale and optimize",
+              title: "Reap the benefits",
               description:
-                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+                "Have a healthy work-life balance while staying connected with your colleagues and building relationships that will help you be happier and more productive.",
               image: "/images/campfire.jpg",
             },
           ]}

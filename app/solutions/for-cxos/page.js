@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import SimpleStartSection from "../../new-components/simple-start-section";
@@ -22,8 +24,19 @@ export default function ForCXOsPage() {
         subtitle="Team Up! boosts productivity, reduces costs, and strengthens retention, all with measurable ROI"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "lg", children: "Request access" },
-          { variant: "tertiary", size: "lg", children: "Contact sales" },
+          {
+            variant: "primary",
+            size: "xl",
+            children: "Request access",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            variant: "secondary",
+            size: "xl",
+            children: "Contact sales",
+            onClick: () => (window.location.href = "/contact"),
+          },
         ]}
         bgClassName="bg-purple-50"
       />
@@ -39,6 +52,8 @@ export default function ForCXOsPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
         ]}
         buttonsPosition="top"
@@ -66,7 +81,10 @@ export default function ForCXOsPage() {
               "Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences.",
           },
         ]}
-        cta={{ children: "Get Started" }}
+        cta={{
+          children: "Create your first meeting room",
+          onClick: () => window.open("https://app.teamup.works/demo", "_blank"),
+        }}
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
@@ -91,11 +109,15 @@ export default function ForCXOsPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first meeting room",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -155,11 +177,15 @@ export default function ForCXOsPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first meeting room",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -263,7 +289,7 @@ export default function ForCXOsPage() {
                   </div>
                   <span className="text-dark-space text-xl">
                     Maintain consistent engagement through regular, meaningful
-                    interactions.{" "}
+                    interactions.
                   </span>
                 </li>
                 <li className="flex items-center gap-4">
@@ -525,11 +551,15 @@ export default function ForCXOsPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first meeting room",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -554,8 +584,9 @@ export default function ForCXOsPage() {
           team bonding and casual discussions."
           cta={{
             variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            children: "Take a look at our Campfire",
             size: "lg",
+            onClick: () => (window.location.href = "/spaces/campfire"),
           }}
         />
         <InfoPiece
@@ -577,8 +608,9 @@ export default function ForCXOsPage() {
           team bonding and casual discussions."
           cta={{
             variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            children: "Check out our Planning space",
             size: "lg",
+            onClick: () => (window.location.href = "/spaces/planning"),
           }}
         />
         <InfoPiece
@@ -601,8 +633,9 @@ export default function ForCXOsPage() {
           reverse={true}
           cta={{
             variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            children: "See how The Farmyard works",
             size: "lg",
+            onClick: () => (window.location.href = "/spaces/the-farmyard"),
           }}
         />
       </Section>
@@ -616,11 +649,15 @@ export default function ForCXOsPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first meeting room",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -628,27 +665,27 @@ export default function ForCXOsPage() {
         <Steps
           steps={[
             {
-              title: "Set up your virtual workspace",
+              title: "Request access to Team Up!",
               description:
-                "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
+                "Apply for access to Team Up! in https://app.teamup.works/signup",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Onboard your team members",
+              title: "Create your company's workspace",
               description:
-                "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
+                "Create a workspace that reflects your company culture and invite your employees to join.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Launch team activities",
+              title: "Create your first meeting room or event",
               description:
-                "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
+                "Create a meeting room or event, invite your employees, and start improving your company culture.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Scale and optimize",
+              title: "Reap the benefits",
               description:
-                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+                "Happier teams perform better, and Team Up! will help you have a more connected workforce that will boost your bottom line.",
               image: "/images/campfire.jpg",
             },
           ]}

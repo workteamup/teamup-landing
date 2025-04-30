@@ -17,30 +17,30 @@ const Button = ({
   href,
   ...props
 }) => {
-  const baseClasses =
-    "rounded-full font-poppins font-medium transition-all duration-200 flex items-center justify-center";
+  const baseClasses = cn(
+    "font-poppins font-medium flex items-center justify-center",
+    variant !== "text" && "rounded-full transition-all duration-200"
+  );
 
   const sizeClasses = {
-    sm: "h-10 text-xs",
-    md: "h-12 text-sm",
-    lg: "h-14 text-base",
-    xl: "h-[68px] text-lg",
-    text: "h-auto px-0 py-0",
+    sm: "text-xs",
+    md: "text-sm",
+    lg: "text-base",
+    xl: "text-lg",
+    text: "text-base",
   };
 
   const variantClasses = {
     primary: "bg-purple-600 text-white border-transparent",
     secondary: "bg-white text-brand-700 border border-purple-600",
     tertiary: "bg-purple-50 text-purple-600 border-transparent",
-    text:
-      className?.includes("bg-") && !className?.includes("bg-dark")
-        ? "text-brand-700"
-        : "text-white",
+    text: "text-brand-700 bg-transparent border-transparent p-0 h-auto",
   };
 
-  const shadowClasses = withShadow
-    ? "hover:shadow-lg hover:-translate-y-0.5"
-    : "";
+  const shadowClasses =
+    withShadow && variant !== "text"
+      ? "hover:shadow-lg hover:-translate-y-0.5"
+      : "";
 
   const underlineClass = underline ? "underline" : "";
 
@@ -60,6 +60,8 @@ const Button = ({
           sizeClasses[size],
           iconOnly
             ? "aspect-square p-0"
+            : variant === "text"
+            ? "p-0"
             : {
                 sm: "px-[18px] py-3",
                 md: "px-5 py-[14px]",
@@ -101,6 +103,8 @@ const Button = ({
         sizeClasses[size],
         iconOnly
           ? "aspect-square p-0"
+          : variant === "text"
+          ? "p-0"
           : {
               sm: "px-[18px] py-3",
               md: "px-5 py-[14px]",
