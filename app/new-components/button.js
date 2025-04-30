@@ -59,7 +59,15 @@ const Button = ({
           baseClasses,
           sizeClasses[size],
           iconOnly
-            ? "aspect-square p-0"
+            ? cn(
+                "aspect-square",
+                {
+                  sm: "p-3",
+                  md: "p-[14px]",
+                  lg: "p-4",
+                  xl: "p-5",
+                }[size]
+              )
             : variant === "text"
             ? "p-0"
             : {
@@ -102,7 +110,15 @@ const Button = ({
         baseClasses,
         sizeClasses[size],
         iconOnly
-          ? "aspect-square p-0"
+          ? cn(
+              "aspect-square",
+              {
+                sm: "p-3",
+                md: "p-[14px]",
+                lg: "p-4",
+                xl: "p-5",
+              }[size]
+            )
           : variant === "text"
           ? "p-0"
           : {
