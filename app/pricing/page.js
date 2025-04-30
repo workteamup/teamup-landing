@@ -25,7 +25,7 @@ export default function PricingPage() {
               }}
               featuresTitle="Key features"
               features={[
-                "5 team members",
+                "5 users",
                 "Basic spaces",
                 "Discount in daily events with guests",
                 "1 meeting point",
@@ -43,7 +43,7 @@ export default function PricingPage() {
               }}
               featuresTitle="Everything in Starter, and"
               features={[
-                "Up to 50 team members",
+                "Up to 50 users",
                 "Premium spaces",
                 "2 company-wide events per month",
                 "3 meeting points",
@@ -62,10 +62,11 @@ export default function PricingPage() {
               featuresTitle="Everything in Business, and"
               features={[
                 "Unlimited users",
-                "Dedicated account manager",
-                "Custom integrations",
-                "White-label solution",
-                "24/7 priority support",
+                "All spaces",
+                "Unlimited meeting points",
+                "Custom spaces",
+                "Priority support",
+                "Custom avatar personalization",
               ]}
             />
           </div>
