@@ -81,7 +81,7 @@ export default function CampfirePage() {
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
         className="overflow-hidden"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 max-w-[960px] mx-auto">
           <CheckmarkItem text="Random topics to spark conversations" />
           <CheckmarkItem text="Different themes to choose from" />
           <CheckmarkItem text="Customizable topics if you want to have a little more control" />
@@ -194,7 +194,7 @@ export default function CampfirePage() {
         titleClassName="max-w-[1200px]"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -281,7 +281,7 @@ export default function CampfirePage() {
           reverse={true}
           cta={{
             variant: "text",
-            children: "Start solving problems",
+            children: "Start bringing up difficult topics",
             size: "lg",
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),

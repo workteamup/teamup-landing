@@ -46,7 +46,7 @@ export default function ForCXOsPage() {
         titleClassName="max-w-[960px] text-5xl font-medium"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden w-full mx-auto"
+        className="px-0 overflow-hidden w-full mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -171,7 +171,7 @@ export default function ForCXOsPage() {
         titleClassName="max-w-[1200px]"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -545,7 +545,7 @@ export default function ForCXOsPage() {
         titleClassName="max-w-[1200px]"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",

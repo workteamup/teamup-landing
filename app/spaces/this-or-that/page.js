@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import Testimonial from "../../new-components/testimonial";
@@ -21,8 +23,10 @@ export default function ThisOrThatPage() {
         buttons={[
           {
             variant: "primary",
-            size: "lg",
+            size: "xl",
             children: "Create a meeting in the This or that space",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -77,13 +81,12 @@ export default function ThisOrThatPage() {
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
         className="overflow-hidden"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
-          <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
-          <CheckmarkItem text="Flexible seating configurations for any event type" />
-          <CheckmarkItem text="Professional lighting with customizable presets" />
-          <CheckmarkItem text="Interactive voting and feedback systems" />
-          <CheckmarkItem text="Real-time analytics for audience engagement" />
-          <CheckmarkItem text="Seamless integration with presentation tools" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 max-w-[960px] mx-auto">
+          <CheckmarkItem text="Icebreakers to get the conversation started" />
+          <CheckmarkItem text="This or that, Agree or disagree and Would your rather" />
+          <CheckmarkItem text="Generate random options with the click of a button" />
+          <CheckmarkItem text="Set up your own options if you want to play around" />
+          <CheckmarkItem text="Move around the space to vote and discuss" />
         </div>
       </Section>
       <Section
@@ -96,11 +99,15 @@ export default function ThisOrThatPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -108,27 +115,34 @@ export default function ThisOrThatPage() {
         <Steps
           steps={[
             {
-              title: "Set up your virtual workspace",
+              title: "Invite your company or team to the This or that space",
               description:
-                "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
+                "Set up a meeting room in the This or that space and invite all the members of your team.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Onboard your team members",
+              title:
+                "Get everyone ready to have a good time in front of the stage",
               description:
-                "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
+                "Gather everyone in front of the stage and explain what the purpose of the space is.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Launch team activities",
+              title: "Select the dynamic you want to use",
               description:
-                "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
+                "Select between This or that, Agree or disagree and Would your rather.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Scale and optimize",
+              title: "Set up the options or load some random ones",
               description:
-                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+                "Use some options of your own or, if you don't have any in mind, load some random ones with a click of a button. Invite people to put their options to have some fun.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "See where people stand and get the conversation started",
+              description:
+                "Give some time to people to choose an option and move to the respective side. Once everyone is ready, let the vocal ones speak up and make their case and see what happens.",
               image: "/images/campfire.jpg",
             },
           ]}
@@ -145,11 +159,15 @@ export default function ThisOrThatPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -157,18 +175,18 @@ export default function ThisOrThatPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoElement
             imageSrc="/images/campfire.jpg"
-            title="Save costs on team building"
-            description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+            title="Run entertaining icebreakers"
+            description="Run company-wide fun and entertaining icebreakers with just a few clicks."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
-            title="Increase productivity of your workforce"
-            description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
+            title="Get to know everyone"
+            description="Learn things about your colleagues you never imagined that will help you connect with them."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
-            title="Boost retention at your company"
-            description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+            title="Bond over shared interests"
+            description="Team up with the colleagues on your side and fight for your the option you like the most."
           />
         </div>
       </Section>
@@ -178,23 +196,27 @@ export default function ThisOrThatPage() {
         titleClassName="max-w-[1200px]"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first icebreaking session",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Spark conversation and foster connection"
+          title="Loosen up before a long meeting"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -212,13 +234,15 @@ export default function ThisOrThatPage() {
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start beginning meetings on a fun note",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Transform routine collaboration into interactive experiences"
+          title="Get important insights in a fun way"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -232,16 +256,17 @@ export default function ThisOrThatPage() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Use a low pressure environment to get important insights of your employees in a more entertaining way."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start getting important insights",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Build real teamwork skills through shared challenges and laughter"
+          title="Connect employees over fun topics"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -255,13 +280,14 @@ export default function ThisOrThatPage() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Let employees that don't know each other well connect over different and fun topics in a fun way."
           reverse={true}
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start connecting over fun topics",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
       </Section>
