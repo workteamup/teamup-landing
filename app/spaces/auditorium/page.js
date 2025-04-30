@@ -25,7 +25,8 @@ export default function AuditoriumPage() {
             variant: "primary",
             size: "xl",
             children: "Create a meeting in the Auditorium",
-            
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           /* { variant: "tertiary", size: "md", children: "View pricing" },*/
         ]}
@@ -97,11 +98,15 @@ export default function AuditoriumPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first town hall",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -154,11 +159,15 @@ export default function AuditoriumPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first town hall",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -187,17 +196,21 @@ export default function AuditoriumPage() {
         titleClassName="max-w-[1200px]"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -221,9 +234,11 @@ export default function AuditoriumPage() {
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Create a company all hands meeting",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
@@ -244,9 +259,11 @@ export default function AuditoriumPage() {
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Create a company town hall",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
@@ -268,9 +285,11 @@ export default function AuditoriumPage() {
           team bonding and casual discussions."
           reverse={true}
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Create an AMA session",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
       </Section>

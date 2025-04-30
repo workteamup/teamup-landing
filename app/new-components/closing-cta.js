@@ -53,7 +53,13 @@ const ClosingCTA = ({
 
         {/* Button */}
         <div className={cn(buttonClassName)}>
-          <Button variant="primary" size="xl">
+          <Button
+            variant="primary"
+            size="xl"
+            onClick={() =>
+              (window.location.href = "https://app.teamup.works/signup")
+            }
+          >
             {buttonText}
           </Button>
         </div>

@@ -25,6 +25,8 @@ export default function PlanningPage() {
             variant: "primary",
             size: "xl",
             children: "Create a meeting in the Planning space",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -79,7 +81,7 @@ export default function PlanningPage() {
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
         className="overflow-hidden"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 max-w-[960px] mx-auto">
           <CheckmarkItem text="Use pre configured voting options" />
           <CheckmarkItem text="Customize the voting options" />
           <CheckmarkItem text="Vote unseen to preserve anonymity" />
@@ -98,11 +100,15 @@ export default function PlanningPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first planning session",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -154,11 +160,15 @@ export default function PlanningPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first planning session",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -187,14 +197,14 @@ export default function PlanningPage() {
         titleClassName="max-w-[1200px]"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
             children: "Request access",
             size: "xl",
             onClick: () => {
-              window.open("https://app.teamup.com/signup", "_blank");
+              window.open("https://app.teamup.works/signup", "_blank");
             },
           },
           {
@@ -202,7 +212,7 @@ export default function PlanningPage() {
             children: "Create your first planning session",
             size: "xl",
             onClick: () => {
-              window.open("https://app.teamup.com/demo", "_blank");
+              window.open("https://app.teamup.works/demo", "_blank");
             },
           },
         ]}
@@ -227,9 +237,11 @@ export default function PlanningPage() {
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Create a Sprint planning meeting",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
@@ -250,9 +262,11 @@ export default function PlanningPage() {
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Create a strategic planning meeting",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
@@ -274,9 +288,11 @@ export default function PlanningPage() {
           team bonding and casual discussions."
           reverse={true}
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Create a feedback gathering meeting",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
       </Section>
