@@ -134,7 +134,15 @@ module.exports = {
       letterSpacing: {
         body: "0.02em",
       },
+      hyphens: {
+        none: "none",
+        manual: "manual",
+        auto: "auto",
+      },
     },
+  },
+  corePlugins: {
+    hyphens: false,
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };

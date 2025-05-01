@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import Testimonial from "../../new-components/testimonial";
@@ -21,8 +23,10 @@ export default function FootballFieldPage() {
         buttons={[
           {
             variant: "primary",
-            size: "lg",
-            children: "Create a meeting in the Football field",
+            size: "xl",
+            children: "Create a meeting room in the Football field",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -78,17 +82,15 @@ export default function FootballFieldPage() {
         className="overflow-hidden"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
-          <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
-          <CheckmarkItem text="Flexible seating configurations for any event type" />
-          <CheckmarkItem text="Professional lighting with customizable presets" />
-          <CheckmarkItem text="Interactive voting and feedback systems" />
-          <CheckmarkItem text="Real-time analytics for audience engagement" />
-          <CheckmarkItem text="Seamless integration with presentation tools" />
+          <CheckmarkItem text="Free play like in the schoolyard" />
+          <CheckmarkItem text="5-minute matches for quick breaks or icebreakers" />
+          <CheckmarkItem text="Run with the ball or kick it around" />
+          <CheckmarkItem text="No player limit, let the chaos begin" />
         </div>
       </Section>
       <Section
         preTitle="How to use"
-        title="Get the best out of the Auditorium"
+        title="Get the best out of the Football field"
         bgClassName="bg-white"
         containerClassName="py-24 max-w-[1440px] mx-auto"
         buttons={[
@@ -96,11 +98,15 @@ export default function FootballFieldPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first Football game",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -108,27 +114,27 @@ export default function FootballFieldPage() {
         <Steps
           steps={[
             {
-              title: "Set up your virtual workspace",
+              title: "Move everyone to the football field",
               description:
-                "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
+                "Start a break during a meeting and move everyone to the football field.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Onboard your team members",
+              title: "Step into the field and organize the teams",
               description:
-                "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
+                "Get everyone to step into the field and get on one side to select their team.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Launch team activities",
+              title: "Start the game",
               description:
-                "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
+                "Interact with the ball so that the five minute timer begin. Score as many goals as possible before the timer runs out.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Scale and optimize",
+              title: "Go again?",
               description:
-                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+                "Once the game is over, you'll face a difficult decision: go back to work or your meeting or play one more game?",
               image: "/images/campfire.jpg",
             },
           ]}
@@ -136,7 +142,7 @@ export default function FootballFieldPage() {
       </Section>
       <Section
         preTitle="Benefits"
-        title="What the Auditorium gives you"
+        title="What the Football field gives you"
         titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
         containerClassName="py-32 max-w-[1600px] mx-auto"
@@ -145,11 +151,15 @@ export default function FootballFieldPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -157,18 +167,18 @@ export default function FootballFieldPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoElement
             imageSrc="/images/campfire.jpg"
-            title="Save costs on team building"
-            description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+            title="Mental refresh"
+            description="Engage different cognitive pathways through simulated gameplay, returning to work with improved focus and problem-solving capability."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
-            title="Increase productivity of your workforce"
-            description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
+            title="Natural team bonding"
+            description="Form connections through play that translate to improved workplace collaboration, with 72% of users reporting better team communication after regular sessions."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
-            title="Boost retention at your company"
-            description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+            title="Mood elevation"
+            description="Combat the afternoon energy slump with brief endorphin-generating activities that improve overall workplace satisfaction and reduce stress levels."
           />
         </div>
       </Section>
@@ -184,17 +194,21 @@ export default function FootballFieldPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Spark conversation and foster connection"
+          title="Meeting breaks"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -209,16 +223,17 @@ export default function FootballFieldPage() {
             </div>
           }
           reverse={true}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Schedule 5-minute football matches between segments of longer meetings to combat digital fatigue and reinvigorate the team with a shared activity that creates energy and laughter."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start having breaks in the Football field",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Transform routine collaboration into interactive experiences"
+          title="Daily rituals"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -232,16 +247,17 @@ export default function FootballFieldPage() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Establish a quick football match as part of your team's daily routine—perhaps before lunch or at day's end—creating a consistent touchpoint that team members look forward to and that strengthens team identity."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start having a daily ritual",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Build real teamwork skills through shared challenges and laughter"
+          title="Pre-brainstorming warmup"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -255,13 +271,64 @@ export default function FootballFieldPage() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Prime your team's creative thinking by activating different cognitive patterns through gameplay before transitioning into ideation sessions, resulting in more diverse and innovative ideas."
           reverse={true}
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start having a remote happy hour",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          }}
+        />
+        <InfoPiece
+          title="Cross-department tournaments"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+          description="Organize recurring mini-tournaments between different teams or departments, fostering connections across organizational boundaries through light-hearted competition that reveals personalities beyond work roles."
+          reverse={true}
+          cta={{
+            variant: "text",
+            children: "Start having a remote happy hour",
+            size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          }}
+        />
+        <InfoPiece
+          title="Remote happy hourse"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+          description="Transform passive virtual gatherings into interactive experiences by adding structured football matches that give team members something specific to do together rather than just talk."
+          reverse={true}
+          cta={{
+            variant: "text",
+            children: "Start having a remote happy hour",
+            size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
       </Section>
