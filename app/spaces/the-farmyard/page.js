@@ -22,7 +22,9 @@ export default function TheFarmyardPage() {
           {
             variant: "primary",
             size: "lg",
-            children: "Create a meeting in The Farmyard",
+            children: "Create a meeting room in The Farmyard",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -78,12 +80,11 @@ export default function TheFarmyardPage() {
         className="overflow-hidden"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
-          <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
-          <CheckmarkItem text="Flexible seating configurations for any event type" />
-          <CheckmarkItem text="Professional lighting with customizable presets" />
-          <CheckmarkItem text="Interactive voting and feedback systems" />
-          <CheckmarkItem text="Real-time analytics for audience engagement" />
-          <CheckmarkItem text="Seamless integration with presentation tools" />
+          <CheckmarkItem text="Run and collect as many eggs as possible" />
+          <CheckmarkItem text="Steal eggs from the other team's baskets" />
+          <CheckmarkItem text="Organize in three different teams" />
+          <CheckmarkItem text="Quick games of a minute and a half" />
+          <CheckmarkItem text="Tackle players to make them drop eggs" />
         </div>
       </Section>
       <Section
@@ -96,11 +97,15 @@ export default function TheFarmyardPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"

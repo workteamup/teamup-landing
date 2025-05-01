@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import Testimonial from "../../new-components/testimonial";
@@ -17,12 +19,14 @@ export default function Connect4Page() {
         title="Basketball meets connect 4"
         titleClassName="max-w-[1200px] text-green-900"
         subtitle="Shoot baskets to drop game pieces in this physical twist on a classic"
-        subtitleClassName="max-w-[720px] text-green-700"
+        subtitleClassName="max-w-[960px] text-green-700"
         buttons={[
           {
             variant: "primary",
-            size: "lg",
+            size: "xl",
             children: "Create a meeting in the the Connect 4 space",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -77,13 +81,11 @@ export default function Connect4Page() {
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
         className="overflow-hidden"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
-          <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
-          <CheckmarkItem text="Flexible seating configurations for any event type" />
-          <CheckmarkItem text="Professional lighting with customizable presets" />
-          <CheckmarkItem text="Interactive voting and feedback systems" />
-          <CheckmarkItem text="Real-time analytics for audience engagement" />
-          <CheckmarkItem text="Seamless integration with presentation tools" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 max-w-[960px] mx-auto">
+          <CheckmarkItem text="Four grids to have multiple games at once" />
+          <CheckmarkItem text="Chaos mode or organized play" />
+          <CheckmarkItem text="Individual play or couples play" />
+          <CheckmarkItem text="Not just strategy, but also ability" />
         </div>
       </Section>
       <Section
@@ -96,11 +98,15 @@ export default function Connect4Page() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first Connect 4 game",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -108,27 +114,39 @@ export default function Connect4Page() {
         <Steps
           steps={[
             {
-              title: "Set up your virtual workspace",
+              title: "Create a meeting in the Connect 4 space",
               description:
-                "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
+                "Create a meeting in the Connect 4 space, invite your team to join and let the fun begin.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Onboard your team members",
+              title: "Join and organize in pairs or groups of four",
               description:
-                "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
+                "Once everyone is in, organize yourself in pairs for individual play or in groups of four for couples play.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Launch team activities",
+              title: "Decide the rules of the game",
               description:
-                "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
+                "Decide if you want to play in chaos mode or organized play. Chaos means everyone can shoot at any time, while organized play means you have to shoot in your turn.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Scale and optimize",
+              title: "Start having fun",
               description:
-                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+                "Start going head to head with your opponents and see which team can get four in a row first.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Switch grids to play with different people",
+              description:
+                "Once you've finished a game, switch to another grid to play with different people.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Start organizing your own tournaments",
+              description:
+                "Step up your game and start organizing your own tournaments. You can use your own rules and create cross-department battles.",
               image: "/images/campfire.jpg",
             },
           ]}
@@ -136,7 +154,7 @@ export default function Connect4Page() {
       </Section>
       <Section
         preTitle="Benefits"
-        title="What the Auditorium gives you"
+        title="What the Connect 4 space gives you"
         titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
         containerClassName="py-32 max-w-[1600px] mx-auto"
@@ -145,11 +163,15 @@ export default function Connect4Page() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first Connect 4 game",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -157,18 +179,18 @@ export default function Connect4Page() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoElement
             imageSrc="/images/campfire.jpg"
-            title="Save costs on team building"
-            description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+            title="Balanced participation"
+            description="Strategic thinkers excel at game planning while others master basket shots, ensuring everyone contributes regardless of role or thinking style."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
-            title="Increase productivity of your workforce"
-            description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
+            title="Strategic thinking transfer"
+            description="Exercise the same prediction and tactical thinking muscles used in business decision-making through engaging gameplay."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
-            title="Boost retention at your company"
-            description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+            title="Natural relationship building"
+            description="Share universal experiences of wins, defeats, and collaborative victories that break down communication barriers across teams."
           />
         </div>
       </Section>
@@ -178,23 +200,27 @@ export default function Connect4Page() {
         titleClassName="max-w-[1200px]"
         bgClassName=""
         containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first Connect 4 game",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Spark conversation and foster connection"
+          title="Department battles"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -209,16 +235,17 @@ export default function Connect4Page() {
             </div>
           }
           reverse={true}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Monthly tournaments creating cross-functional connections"
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Create your first department battle",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Transform routine collaboration into interactive experiences"
+          title="New hire integration"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -232,16 +259,17 @@ export default function Connect4Page() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Weekly sessions where gameplay facilitates natural conversation"
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start new hire integration",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Build real teamwork skills through shared challenges and laughter"
+          title="Leadership approachability"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -255,13 +283,14 @@ export default function Connect4Page() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Break down hierarchical barriers through executive participation"
           reverse={true}
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start having fun with your leaders",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
       </Section>
