@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
 import Testimonial from "../../new-components/testimonial";
@@ -17,14 +19,14 @@ export default function TheFarmyardPage() {
         title="Steal, defend, laugh. Let the egg wars begin!"
         titleClassName="max-w-[1200px] text-yellow-900"
         subtitle="Create memorable team moments through competitive chaos."
-        subtitleClassName="max-w-[720px] text-yellow-700"
+        subtitleClassName="max-w-[960px] text-yellow-700"
         buttons={[
           {
             variant: "primary",
-            size: "lg",
+            size: "xl",
             children: "Create a meeting room in The Farmyard",
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -89,7 +91,7 @@ export default function TheFarmyardPage() {
       </Section>
       <Section
         preTitle="How to use"
-        title="Get the best out of the Auditorium"
+        title="Get the best out of The Farmyard"
         bgClassName="bg-white"
         containerClassName="py-24 max-w-[1440px] mx-auto"
         buttons={[
@@ -113,27 +115,27 @@ export default function TheFarmyardPage() {
         <Steps
           steps={[
             {
-              title: "Set up your virtual workspace",
+              title: "Create a meeting room in The Farmyard",
               description:
-                "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
+                "Create a meeting room in The Farmyard and invite everyone in your team to join.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Onboard your team members",
+              title: "Form the three different teams",
               description:
-                "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
+                "Divide the participants in three different teams and make sure everyone is ready to start the game.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Launch team activities",
+              title: "Start having fun",
               description:
-                "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
+                "Run towards the center of the map to collect as many eggs as possible. Organize your team to tackle enemies and steal eggs from them.",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Scale and optimize",
+              title: "Run cross department battles",
               description:
-                "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
+                "Use The Farmyard to run company-wide competitions between departments or force people from different departments to work together.",
               image: "/images/campfire.jpg",
             },
           ]}
@@ -141,7 +143,7 @@ export default function TheFarmyardPage() {
       </Section>
       <Section
         preTitle="Benefits"
-        title="What the Auditorium gives you"
+        title="What The Farmyard gives you"
         titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
         containerClassName="py-32 max-w-[1600px] mx-auto"
@@ -150,11 +152,15 @@ export default function TheFarmyardPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first Farmyard game",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -162,18 +168,18 @@ export default function TheFarmyardPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoElement
             imageSrc="/images/campfire.jpg"
-            title="Save costs on team building"
-            description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+            title="Strategic thinking development"
+            description="Strengthen decision-making as teams evaluate resource allocation, risk assessment, and opportunity costs under time pressure."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
-            title="Increase productivity of your workforce"
-            description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
+            title="Natural role discovery"
+            description="Identify team members' natural strengths in tactical execution, strategic thinking, coordination, and motivation."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
-            title="Boost retention at your company"
-            description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+            title="Communication pattern insights"
+            description="Gain valuable insights into information sharing, decision clarity, and feedback loops that transfer directly to work."
           />
         </div>
       </Section>
@@ -189,17 +195,21 @@ export default function TheFarmyardPage() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
-            children: "Create your first meeting",
+            children: "Create your first Farmyard game",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Spark conversation and foster connection"
+          title="Department competitions"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -214,16 +224,17 @@ export default function TheFarmyardPage() {
             </div>
           }
           reverse={true}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Quarterly competitions where teams develop and adapt strategies in real-time."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Create a company-wide competition",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Transform routine collaboration into interactive experiences"
+          title="Leadership assessment"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -237,16 +248,17 @@ export default function TheFarmyardPage() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Observe leadership behaviors and team dynamics in an engaging context."
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Create a leadership assessment",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Build real teamwork skills through shared challenges and laughter"
+          title="Onboarding acceleration"
           supportContent={
             <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
@@ -260,13 +272,14 @@ export default function TheFarmyardPage() {
               </div>
             </div>
           }
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Integrate new team members faster by revealing strengths and communication patterns."
           reverse={true}
           cta={{
-            variant: "primary",
-            children: "Create a meeting in the Auditorium",
+            variant: "text",
+            children: "Start onboarding in The Farmyard",
             size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
       </Section>
