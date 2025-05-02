@@ -24,7 +24,7 @@ export default function EmployeeTurnoverPage() {
         buttons={[
           {
             variant: "primary",
-            size: "lg",
+            size: "xl",
             children: "Start reducing turnover today",
           },
         ]}
@@ -32,10 +32,9 @@ export default function EmployeeTurnoverPage() {
       />
       <Section
         title="Join the 100+ CXOs taking advantage of using Team Up!"
-        titleClassName="max-w-[960px] text-5xl font-medium"
+        titleClassName="max-w-[960px] text-2xl lg:text-5xl font-medium"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="px-0 overflow-hidden w-full mx-auto"
+        className="overflow-hidden w-full mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -73,7 +72,7 @@ export default function EmployeeTurnoverPage() {
         preTitle="The problem in numbers"
         title="Title under construction"
         bgClassName="bg-white"
-        containerClassName="py-24 max-w-[1440px] mx-auto"
+        containerClassName="max-w-[1440px] mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <NumberElement
@@ -111,7 +110,7 @@ export default function EmployeeTurnoverPage() {
         title="Team Up! has you covered"
         titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
-        containerClassName="py-32 max-w-[1600px] mx-auto"
+        containerClassName="max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -149,8 +148,7 @@ export default function EmployeeTurnoverPage() {
         title="A new way to do things"
         titleClassName="max-w-[1200px]"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -168,9 +166,9 @@ export default function EmployeeTurnoverPage() {
         <div>
           <InfoPiece
             title="Annual in-person team events"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="max-w-[360px]"
             supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
                   <Image
                     src="/images/campfire.jpg"
@@ -224,9 +222,9 @@ export default function EmployeeTurnoverPage() {
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] text-4xl mb-10"
+            titleClassName="max-w-[400px]"
             supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
                   <Image
                     src="/images/campfire.jpg"
@@ -284,9 +282,9 @@ export default function EmployeeTurnoverPage() {
         <div>
           <InfoPiece
             title="Video conferencing for team collaboration"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="max-w-[360px]"
             supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
                   <Image
                     src="/images/campfire.jpg"
@@ -341,9 +339,9 @@ export default function EmployeeTurnoverPage() {
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="max-w-[400px]"
             supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
                   <Image
                     src="/images/campfire.jpg"
@@ -401,9 +399,9 @@ export default function EmployeeTurnoverPage() {
         <div>
           <InfoPiece
             title="Workplace communication platforms"
-            titleClassName="font-medium max-w-[440px] mb-10 text-4xl"
+            titleClassName="max-w-[440px]"
             supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
                   <Image
                     src="/images/campfire.jpg"
@@ -456,9 +454,9 @@ export default function EmployeeTurnoverPage() {
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="max-w-[400px]"
             supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
                   <Image
                     src="/images/campfire.jpg"
@@ -519,8 +517,7 @@ export default function EmployeeTurnoverPage() {
         title="Perfect for these occasions"
         titleClassName="max-w-[1200px]"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -611,7 +608,7 @@ export default function EmployeeTurnoverPage() {
         preTitle="How it works"
         title="Start improving your team's performance"
         bgClassName="bg-white"
-        containerClassName="py-24 max-w-[1440px] mx-auto"
+        containerClassName="max-w-[1440px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -660,8 +657,7 @@ export default function EmployeeTurnoverPage() {
         titleClassName="max-w-[960px] font-medium"
         subtitle="Team Up! evolves with your team, ensuring you're always prepared for the future of work with regular updates and new interactive spaces that respond to changing workplace needs."
         subtitleClassName="text-dark-space max-w-[960px]"
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
       />
       <ClosingCTA
         text="Start creating a company culture that works"

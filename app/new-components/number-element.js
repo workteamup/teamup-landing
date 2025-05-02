@@ -54,16 +54,16 @@ const NumberElement = ({
     <div
       ref={numberRef}
       className={cn(
-        "flex flex-col items-center gap-6 max-w-[320px] mx-auto",
+        "flex flex-col items-center gap-2 lg:gap-6 max-w-[320px] mx-auto",
         className
       )}
     >
-      <span className={cn("text-[96px] font-bold", numberColor)}>
+      <span className={cn("text-5xl lg:text-8xl font-bold", numberColor)}>
         {prefix}
         {count.toLocaleString()}
         {suffix}
       </span>
-      <p className="text-base font-medium text-gray-500 text-center">
+      <p className="text-sm lg:text-base font-medium text-dark-space text-center">
         {description}
       </p>
     </div>

@@ -43,10 +43,9 @@ export default function ForCXOsPage() {
 
       <Section
         title="Join the 100+ CXOs taking advantage of using Team Up!"
-        titleClassName="max-w-[960px] text-5xl font-medium"
+        titleClassName="max-w-[960px] text-2xl lg:text-5xl font-medium"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="px-0 overflow-hidden w-full mx-auto"
+        className="overflow-hidden w-full mx-auto"
         buttons={[
           {
             variant: "primary",

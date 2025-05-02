@@ -29,7 +29,7 @@ const InfoPiece = ({
     <section className={cn("w-full", className)}>
       <div
         className={cn(
-          "w-full max-w-[1440px] mx-auto py-6 lg:py-12 px-4 flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16",
+          "w-full max-w-[1440px] mx-auto py-6 lg:py-12 flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16",
           reverse ? "lg:flex-row-reverse" : "lg:flex-row",
           containerClassName
         )}
