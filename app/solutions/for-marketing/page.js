@@ -22,8 +22,8 @@ export default function ForMarketingPage() {
         subtitle="Team Up! turns your team into authentic brand ambassadors with engaging 3D virtual experiences worth sharing"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "lg", children: "Request access" },
-          { variant: "tertiary", size: "lg", children: "Contact sales" },
+          { variant: "primary", size: "xl", children: "Request access" },
+          { variant: "secondary", size: "xl", children: "Contact sales" },
         ]}
         bgClassName="bg-purple-50"
       />
@@ -82,7 +82,7 @@ export default function ForMarketingPage() {
         title="Team Up! has you covered"
         titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
-        containerClassName="py-32 max-w-[1600px] mx-auto"
+        containerClassName="max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -119,7 +119,7 @@ export default function ForMarketingPage() {
         preTitle="The problem in numbers"
         title="Title under construction"
         bgClassName="bg-white"
-        containerClassName="py-24 max-w-[1440px] mx-auto"
+        containerClassName="max-w-[1440px] mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <NumberElement
@@ -144,8 +144,7 @@ export default function ForMarketingPage() {
         title="A new way to do things"
         titleClassName="max-w-[1200px]"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -516,8 +515,7 @@ export default function ForMarketingPage() {
         title="Perfect for these occasions"
         titleClassName="max-w-[1200px]"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -608,7 +606,7 @@ export default function ForMarketingPage() {
         preTitle="How it works"
         title="Start improving your team's performance"
         bgClassName="bg-white"
-        containerClassName="py-24 max-w-[1440px] mx-auto"
+        containerClassName="max-w-[1440px] mx-auto"
         buttons={[
           {
             variant: "primary",

@@ -337,8 +337,7 @@ export default function FootballFieldPage() {
         titleClassName="max-w-[960px] font-medium"
         subtitle="Team Up! evolves with your team, ensuring you're always prepared for the future of work with regular updates and new interactive spaces that respond to changing workplace needs."
         subtitleClassName="text-dark-space max-w-[960px]"
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
       />
       <ClosingCTA
         text="Start creating a company culture that works"

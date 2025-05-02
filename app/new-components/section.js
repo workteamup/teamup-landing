@@ -85,7 +85,7 @@ const Section = ({
         <div className="flex flex-col items-center text-center mt-16 w-full">
           <div
             className={cn(
-              "flex flex-col md:flex-row gap-4 w-full max-w-[800px]",
+              "flex flex-col md:flex-row gap-4 w-full md:w-auto mx-auto",
               buttonsContainerClassName
             )}
           >

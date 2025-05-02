@@ -102,7 +102,7 @@ export default function ForEmployeesPage() {
         title="Team Up! has you covered"
         titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
-        containerClassName="py-32 max-w-[1600px] mx-auto"
+        containerClassName="max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -143,7 +143,7 @@ export default function ForEmployeesPage() {
         preTitle="The problem in numbers"
         title="Title under construction"
         bgClassName="bg-white"
-        containerClassName="py-24 max-w-[1440px] mx-auto"
+        containerClassName="max-w-[1440px] mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <NumberElement
@@ -168,8 +168,7 @@ export default function ForEmployeesPage() {
         title="A new way to do things"
         titleClassName="max-w-[1200px]"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -544,8 +543,7 @@ export default function ForEmployeesPage() {
         title="Perfect for these occasions"
         titleClassName="max-w-[1200px]"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -618,7 +616,7 @@ export default function ForEmployeesPage() {
         preTitle="How it works"
         title="Start improving your team's performance"
         bgClassName="bg-white"
-        containerClassName="py-24 max-w-[1440px] mx-auto"
+        containerClassName="max-w-[1440px] mx-auto"
         buttons={[
           {
             variant: "primary",

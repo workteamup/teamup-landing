@@ -54,7 +54,7 @@ const Hero = ({
           {buttons.length > 0 && (
             <div
               className={cn(
-                "w-full flex flex-col md:flex-row gap-4 mt-12",
+                "w-full md:w-auto flex flex-col md:flex-row gap-4 mt-12 mx-auto",
                 buttonsContainerClassName
               )}
             >

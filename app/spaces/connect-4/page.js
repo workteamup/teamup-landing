@@ -78,7 +78,6 @@ export default function Connect4Page() {
         preTitle="Features"
         title="Everything you need to connect your teams"
         titleClassName="max-w-[960px] mx-auto"
-        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
         className="overflow-hidden"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 max-w-[960px] mx-auto">
@@ -92,7 +91,7 @@ export default function Connect4Page() {
         preTitle="How to use"
         title="Get the best out of the Auditorium"
         bgClassName="bg-white"
-        containerClassName="py-24 max-w-[1440px] mx-auto"
+        containerClassName="max-w-[1440px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -157,7 +156,7 @@ export default function Connect4Page() {
         title="What the Connect 4 space gives you"
         titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
-        containerClassName="py-32 max-w-[1600px] mx-auto"
+        containerClassName="max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -199,8 +198,7 @@ export default function Connect4Page() {
         title="Perfect for these occasions"
         titleClassName="max-w-[1200px]"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -299,8 +297,7 @@ export default function Connect4Page() {
         titleClassName="max-w-[960px] font-medium"
         subtitle="Team Up! evolves with your team, ensuring you're always prepared for the future of work with regular updates and new interactive spaces that respond to changing workplace needs."
         subtitleClassName="text-dark-space max-w-[960px]"
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
       />
       <ClosingCTA
         text="Start creating a company culture that works"
