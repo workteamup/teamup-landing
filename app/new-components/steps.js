@@ -21,7 +21,7 @@ const Steps = ({
         {steps.length > 1 && (
           <div
             className={cn(
-              "absolute left-[24px] top-[24px] w-[2px] bg-purple-200",
+              "absolute left-5 lg:left-6 top-5 lg:top-6 w-0.5 bg-purple-200",
               lineClassName
             )}
             style={{
@@ -34,12 +34,12 @@ const Steps = ({
 
         {/* Steps */}
         {steps.map((step, index) => (
-          <div key={index} className="flex gap-12 pb-16 last:pb-0">
+          <div key={index} className="flex gap-4 lg:gap-12 pb-16 last:pb-0">
             {/* Step Number */}
             <div className="flex flex-col items-center">
               <div
                 className={cn(
-                  "w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center z-10",
+                  "w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-purple-600 flex items-center justify-center z-10",
                   stepNumberContainerClassName
                 )}
               >
@@ -60,7 +60,7 @@ const Steps = ({
               {step.title && (
                 <h3
                   className={cn(
-                    "text-xl font-medium text-brand-700 pt-[10px]",
+                    "text-lg lg:text-xl font-medium text-brand-700 pt-2 lg:pt-2.5",
                     titleClassName
                   )}
                 >
@@ -72,7 +72,7 @@ const Steps = ({
               {step.description && (
                 <p
                   className={cn(
-                    "mt-2 text-base text-dark-space",
+                    "mt-2 text-sm lg:text-base text-dark-space",
                     descriptionClassName
                   )}
                 >

@@ -18,7 +18,7 @@ const ClosingCTA = ({
     <section className={cn("w-full", className)}>
       <div
         className={cn(
-          "w-full max-w-[1440px] mx-auto px-12 py-24 flex flex-col items-center text-center gap-12",
+          "w-full max-w-[1440px] mx-auto px-4 lg:px-6 py-12 lg:py-24 flex flex-col items-center text-center gap-6 lg:gap-12",
           containerClassName
         )}
       >
@@ -44,7 +44,7 @@ const ClosingCTA = ({
         {/* Text */}
         <h2
           className={cn(
-            "text-5xl font-medium text-brand-700 max-w-[800px]",
+            "text-2xl lg:text-5xl font-medium text-brand-700 max-w-[800px]",
             textClassName
           )}
         >

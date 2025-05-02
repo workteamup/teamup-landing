@@ -29,7 +29,7 @@ const InfoPiece = ({
     <section className={cn("w-full", className)}>
       <div
         className={cn(
-          "w-full max-w-[1440px] mx-auto px-[80px] py-[80px] flex flex-col lg:flex-row justify-center items-center gap-16",
+          "w-full max-w-[1440px] mx-auto py-6 lg:py-12 px-4 flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16",
           reverse ? "lg:flex-row-reverse" : "lg:flex-row",
           containerClassName
         )}
@@ -52,7 +52,7 @@ const InfoPiece = ({
           {preTitle && (
             <p
               className={cn(
-                "text-xs font-semibold text-dark-space uppercase tracking-[0.08em] mb-5",
+                "text-xs text-center font-semibold text-dark-space uppercase tracking-[0.08em] mb-5",
                 preTitleClassName
               )}
             >
@@ -62,7 +62,7 @@ const InfoPiece = ({
           {tag && (
             <div
               className={cn(
-                "inline-flex items-center bg-purple-50 text-purple-400 text-base font-medium font-poppins px-5 py-3 rounded-full mb-5",
+                "inline-flex items-center bg-purple-50 text-purple-400 text-xs lg:text-base font-medium font-poppins px-4 lg:px-5 py-3 lg:py-3 rounded-full mb-4 lg:mb-5",
                 tagClassName
               )}
             >
@@ -74,7 +74,7 @@ const InfoPiece = ({
           {title && (
             <h2
               className={cn(
-                "text-3xl font-medium text-brand-700 mb-5",
+                "text-2xl lg:text-3xl font-medium text-brand-700 mb-3 lg:mb-5",
                 titleClassName
               )}
             >
@@ -87,14 +87,14 @@ const InfoPiece = ({
             (typeof description === "string" ? (
               <p
                 className={cn(
-                  "text-xl text-dark-space mb-12",
+                  "text-base lg:text-xl text-dark-space mb-5 lg:mb-12",
                   descriptionClassName
                 )}
               >
                 {description}
               </p>
             ) : (
-              <div className="mb-12">{description}</div>
+              <div className="mb-5 lg:mb-12">{description}</div>
             ))}
 
           {/* CTA */}

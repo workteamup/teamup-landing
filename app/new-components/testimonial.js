@@ -20,20 +20,20 @@ const Testimonial = ({
     <div className={cn("w-full", className)}>
       <div
         className={cn(
-          "w-full max-w-[1440px] mx-auto px-12 py-[120px]",
+          "w-full max-w-[1440px] mx-auto px-4 lg:px-12 py-20 lg:py-32",
           containerClassName
         )}
       >
         {/* Logo */}
         {logo && (
           <div className="flex justify-center">
-            <div className={cn("h-8", logoClassName)}>
+            <div className={cn("h-6 lg:h-8", logoClassName)}>
               <Image
                 src={logo}
                 alt="Company logo"
                 width={0}
                 height={32}
-                className="h-8 w-auto"
+                className="h-6 lg:h-8 w-auto"
               />
             </div>
           </div>
@@ -43,7 +43,7 @@ const Testimonial = ({
         {quote && (
           <p
             className={cn(
-              "mt-8 text-3xl font-medium text-brand-700 text-center max-w-[960px] mx-auto",
+              "mt-4 lg:mt-8 text-lg lg:text-3xl font-medium text-brand-700 text-center max-w-[960px] mx-auto",
               quoteClassName
             )}
           >
@@ -55,12 +55,17 @@ const Testimonial = ({
         {(person.image || person.name || person.jobTitle) && (
           <div
             className={cn(
-              "mt-8 flex items-center justify-center gap-4",
+              "mt-4 lg:mt-8 flex items-center justify-center gap-2 lg:gap-4",
               personContainerClassName
             )}
           >
             {person.image && (
-              <div className={cn("relative h-16 w-16", personImageClassName)}>
+              <div
+                className={cn(
+                  "relative h-10 lg:h-16 w-10 lg:w-16",
+                  personImageClassName
+                )}
+              >
                 <Image
                   src={person.image}
                   alt={person.name || "Testimonial author"}
@@ -73,7 +78,7 @@ const Testimonial = ({
               {person.name && (
                 <span
                   className={cn(
-                    "text-base font-medium text-brand-700",
+                    "text-sm lg:text-base font-medium text-brand-700",
                     personNameClassName
                   )}
                 >
@@ -83,7 +88,7 @@ const Testimonial = ({
               {person.jobTitle && (
                 <span
                   className={cn(
-                    "text-sm text-dark-space",
+                    "text-xs lg:text-sm text-dark-space",
                     personJobTitleClassName
                   )}
                 >

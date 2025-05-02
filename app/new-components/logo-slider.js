@@ -51,9 +51,9 @@ export default function LogoSlider() {
     <div className="relative w-full overflow-hidden py-12">
       <div className="absolute inset-0 bg-white" />
       {/* Left gradient overlay */}
-      <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
+      <div className="absolute inset-y-0 left-0 w-4 lg:w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
       {/* Right gradient overlay */}
-      <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
+      <div className="absolute inset-y-0 right-0 w-4 lg:w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
       <div
         className="flex"
         style={{

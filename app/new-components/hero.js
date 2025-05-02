@@ -18,12 +18,12 @@ const Hero = ({
 }) => {
   return (
     <section className={cn("w-full", bgClassName, className)}>
-      <div className="w-full max-w-[1600px] mx-auto px-12 pt-[calc(144px+88px)] pb-36">
+      <div className="w-full max-w-[1600px] mx-auto px-4 lg:px-12 pt-[calc(96px+88px)]  lg:pt-[calc(144px+88px)] pb-20 lg:pb-36">
         <div className="flex flex-col items-center text-center">
           {preTitle && (
             <p
               className={cn(
-                "text-sm font-semibold text-white opacity-80 uppercase tracking-[0.08em] mb-4",
+                "text-xs lg:text-sm font-semibold text-white opacity-80 uppercase tracking-[0.08em] mb-4",
                 preTitleClassName
               )}
             >
@@ -33,7 +33,7 @@ const Hero = ({
           {title && (
             <h1
               className={cn(
-                "text-7xl font-semibold text-white leading-tight",
+                "text-3xl lg:text-7xl font-semibold text-white leading-tight",
                 titleClassName
               )}
             >
@@ -43,7 +43,7 @@ const Hero = ({
           {subtitle && (
             <p
               className={cn(
-                "text-2xl text-white opacity-80 mt-8 leading-10 tracking-wide",
+                "text-base lg:text-2xl text-white opacity-80 mt-3 lg:mt-8 lg:leading-10 tracking-wide",
                 subtitleClassName
               )}
             >
@@ -52,7 +52,12 @@ const Hero = ({
           )}
 
           {buttons.length > 0 && (
-            <div className={cn("flex gap-4 mt-12", buttonsContainerClassName)}>
+            <div
+              className={cn(
+                "w-full flex flex-col md:flex-row gap-4 mt-12",
+                buttonsContainerClassName
+              )}
+            >
               {buttons.map((buttonProps, index) => (
                 <Button key={index} {...buttonProps} />
               ))}

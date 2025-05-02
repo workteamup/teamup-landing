@@ -1,62 +1,696 @@
+"use client";
+
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
+import SimpleStartSection from "../../new-components/simple-start-section";
+import Testimonial from "../../new-components/testimonial";
+import ClosingCTA from "../../new-components/closing-cta";
+import LogoSlider from "../../new-components/logo-slider";
+import NumberElement from "../../new-components/number-element";
+import InfoElement from "../../new-components/info-element";
+import InfoPiece from "../../new-components/info-piece";
+import Image from "next/image";
+import { Check, X } from "lucide-react";
+import Steps from "../../new-components/steps";
 
 export default function ForCompanyEventsPage() {
   return (
     <div>
       <Hero
-        preTitle="Solutions"
+        preTitle="Team Up! for company events"
         preTitleClassName="text-purple-500"
-        title="For Company Events"
+        title="Host events that bring everyone together"
         titleClassName="max-w-[1200px] text-purple-900"
-        subtitle="Enhance your company events with our solutions"
+        subtitle="Team Up! makes large gatherings engaging, scalable, and effortless with immersive 3D environments that feel like shared experiences."
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
-          { variant: "primary", size: "md", children: "Request access" },
-          { variant: "tertiary", size: "md", children: "Contact sales" },
+          {
+            variant: "primary",
+            size: "xl",
+            children: "Request access",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            variant: "secondary",
+            size: "xl",
+            children: "Contact sales",
+            onClick: () => (window.location.href = "/contact"),
+          },
         ]}
         bgClassName="bg-purple-50"
       />
       <Section
-        preTitle="Our Solutions"
-        title="For Company Events"
-        subtitle="We provide comprehensive solutions tailored to your company event needs."
+        title="Join the 100+ companies using Team Up! for online events"
+        titleClassName="max-w-[960px] text-5xl font-medium"
+        bgClassName=""
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="px-0 overflow-hidden w-full mx-auto"
         buttons={[
-          { children: "Learn More", href: "/services" },
-          { children: "Contact Us", variant: "secondary" },
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
         ]}
-        content={
-          <div className="grid grid-cols-3 gap-8 mt-16">
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Event Planning
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Comprehensive event planning solutions
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Team Building
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Engaging team building activities
-              </p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Networking
-              </h3>
-              <p className="mt-4 text-gray-600">
-                Effective networking solutions
-              </p>
-            </div>
-          </div>
-        }
+        buttonsPosition="top"
+      >
+        <LogoSlider />
+      </Section>
+      <SimpleStartSection
+        title="Why you should care"
+        titleClassName="max-w-[480px]"
+        features={[
+          {
+            title: "Connection",
+            description:
+              "Large events unite teams and reinforce culture—make them memorable with immersive 3D spaces that create shared experiences.",
+          },
+          {
+            title: "Engagement",
+            description:
+              "Keep attendees active, not passive, with interactive 3D features that encourage participation and prevent digital disengagement.",
+          },
+          {
+            title: "Scalability",
+            description:
+              "Host hundreds without the cost or logistical hassle of physical venues while maintaining the feeling of a significant shared experience.",
+          },
+        ]}
+        cta={{
+          children: "Have better online events",
+          onClick: () =>
+            window.open("https://app.teamup.works/signup", "_blank"),
+        }}
+      />
+      <Section
+        preTitle="The problem in numbers"
+        title="Title under construction"
+        bgClassName="bg-white"
+        containerClassName="py-24 max-w-[1440px] mx-auto"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <NumberElement
+            number={60}
+            suffix="%"
+            description="60% of employees feel disconnected without regular team-building, with remote workers reporting even higher isolation."
+          />
+          <NumberElement
+            number={30}
+            suffix="%"
+            description="Teams that participate in regular fun activities together show 30% higher morale and 25% better problem-solving capabilities."
+          />
+          <NumberElement
+            number={87}
+            suffix="%"
+            description="Engaged employees are 87% less likely to leave their companies, with team bonding activities cited as a top engagement factor."
+          />
+        </div>
+      </Section>
+      <Testimonial
+        logo="/svg/logos/teamup-logo-dark.svg"
+        quote="We've seen improved communication during projects and a 38% increase in cross-department collaboration since we started these regular game sessions."
+        person={{
+          image: "/images/campfire.jpg",
+          name: "Pablo Yusta",
+          jobTitle: "Chief Executive Officer, AiKit",
+        }}
+        /*containerClassName="bg-purple-50"
+        quoteClassName="text-purple-900"
+        personNameClassName="text-purple-900"
+        personJobTitleClassName="text-purple-700"*/
+      />
+      <Section
+        title="Team Up! has you covered"
+        titleClassName="max-w-[1200px]"
+        bgClassName="bg-white"
+        containerClassName="py-32 max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+        ]}
         buttonsPosition="bottom"
-        bgClassName="bg-gradient-to-r from-brand-50 to-brand-100"
-        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="mt-16 px-0 rounded-xl min-h-screen overflow-hidden max-w-[1600px] mx-auto rounded-[50px]"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <InfoElement
+            imageSrc="/images/campfire.jpg"
+            title="Growing game options"
+            description="Floor is lava, Connect 4, Football field, The Farmyard, and more coming."
+          />
+          <InfoElement
+            imageSrc="/images/farm.jpg"
+            title="One-click setup"
+            description="Launch competitive games with minimal preparation—our 3D environments come pre-configured for immediate fun."
+          />
+          <InfoElement
+            imageSrc="/images/auditorium.jpg"
+            title="Flexible formats"
+            description="Support both individual and group challenges in 3D spaces that adapt to your team size and specific objectives."
+          />
+        </div>
+      </Section>
+      <Section
+        preTitle="Team Up! vs. traditional solutions"
+        title="A new way to do things"
+        titleClassName="max-w-[1200px]"
+        bgClassName=""
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting room",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <div>
+          <InfoPiece
+            title="Team Trivia Night"
+            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Static screen sharing of questions.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Tedious manual scoring systems.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Limited interaction between participants
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Technical issues with multiple tools.
+                  </span>
+                </li>
+              </ul>
+            }
+          />
+          <InfoPiece
+            title="...but with Team Up!"
+            titleClassName="font-medium max-w-[400px] text-4xl mb-10"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Interactive auditorium with visual question displays.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Automated scoring through avatar movement.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Teams can huddle in spatial audio zones.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Single platform for all gaming elements.
+                  </span>
+                </li>
+              </ul>
+            }
+            reverse={true}
+          />
+        </div>
+        <div>
+          <InfoPiece
+            title="Team building games"
+            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Expensive facilitators for virtual activites.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Limited to text-based or video interactions.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Awkward execution with multiple tools.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Single-session events with no continuity.
+                  </span>
+                </li>
+              </ul>
+            }
+          />
+          <InfoPiece
+            title="...but with Team Up!"
+            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Self-guided activities in immersive 3D spaces.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Physical movement and spatial interaction.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Integrated platform with all necessary tools.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Persistent environments for ongoing engagement.
+                  </span>
+                </li>
+              </ul>
+            }
+            reverse={true}
+          />
+        </div>
+        <div>
+          <InfoPiece
+            title="Virtual happy hour"
+            titleClassName="font-medium max-w-[440px] mb-10 text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Awkward video call with forced conversation.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    No structure leads to dominant speakers.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Limited activites beyond talking.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-red-100">
+                    <X className="w-4 h-4 text-red-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    High dropout rate due to boredom.
+                  </span>
+                </li>
+              </ul>
+            }
+          />
+          <InfoPiece
+            title="...but with Team Up!"
+            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ul className="space-y-4 mt-6">
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Dynamic 3D environments with natural movement.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Game activities provide structure and focus.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Spatial audio enables naatural group formation.
+                  </span>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="p-1 rounded-full bg-green-100">
+                    <Check className="w-4 h-4 text-green-500" />
+                  </div>
+                  <span className="text-dark-space text-xl">
+                    Higher retention through genuine enjoyment.
+                  </span>
+                </li>
+              </ul>
+            }
+            reverse={true}
+          />
+        </div>
+      </Section>
+      <Section
+        preTitle="Use cases"
+        title="Perfect for these occasions"
+        titleClassName="max-w-[1200px]"
+        bgClassName=""
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <InfoPiece
+          title="Knowledge-building trivia"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+          reverse={true}
+          description="Host a virtual trivia night in our Auditorium where teams compete in knowledge challenges, with visual scorekeeping and spatial audio for team huddles that create authentic excitement."
+          cta={{
+            variant: "text",
+            children: "Start your first all-hands",
+            size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          }}
+        />
+        <InfoPiece
+          title="Team obstacle challenge"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+          description="Run a relay race in our Floor is Lava environment where teams compete to complete challenges while navigating obstacles, building morale through shared achievements and good-natured laughter."
+          cta={{
+            variant: "text",
+            children: "Start your first virtual conference",
+            size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          }}
+        />
+        <InfoPiece
+          title="Strategic skill competition"
+          supportContent={
+            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+              <div className="relative w-[85%] h-[80%]">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Employee Engagement"
+                  fill
+                  className="object-cover rounded-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            </div>
+          }
+          description="Organize team competitions in our Connect 4 space where players must score in basketball hoops to place their pieces, combining physical skill with strategy in a way that levels the playing field for different team members."
+          reverse={true}
+          cta={{
+            variant: "text",
+            children: "Start your first holiday party",
+            size: "lg",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          }}
+        />
+      </Section>
+      <Section
+        preTitle="How it works"
+        title="Start improving your team's performance"
+        bgClassName="bg-white"
+        containerClassName="py-24 max-w-[1440px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <Steps
+          steps={[
+            {
+              title: "Request access to Team Up!",
+              description:
+                "Apply for access to Team Up! in https://app.teamup.works/signup",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Create your company's workspace",
+              description:
+                "Create a workspace that reflects your company culture and invite your team members to join.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Create a company event",
+              description:
+                "Navigate to the event creation page, add your competition details, and send the invitations.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Use the event chat to for teams to join the competition",
+              description:
+                "Let whoever wants to join the competition to apply to join via the event chat or look for teammates to form a team.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Create rooms for all the matchups",
+              description:
+                "When all teams have joined, edit the event and create rooms for each different matchup so that everyone know which room to go to.",
+              image: "/images/campfire.jpg",
+            },
+            {
+              title: "Compete to win (and have fun)",
+              description:
+                "When the day comes, play, have fun and compete to win!",
+              image: "/images/campfire.jpg",
+            },
+          ]}
+        />
+      </Section>
+      <Section
+        title="Future proof your team"
+        titleClassName="max-w-[960px] font-medium"
+        subtitle="Team Up! continuously adds new games and challenges based on the latest in game design and team psychology, ensuring your team always has fresh ways to bond."
+        subtitleClassName="text-dark-space max-w-[960px]"
+        containerClassName="py-32 md:px-8 lg:px-12"
+        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+      />
+      <ClosingCTA
+        text="Start creating a company culture that works"
+        buttonText="Request access"
       />
     </div>
   );

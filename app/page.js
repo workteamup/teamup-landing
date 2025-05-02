@@ -66,10 +66,10 @@ export default function Home() {
       />
       <Section
         title="Join the 100+ companies that are benefitting from Team Up!"
-        titleClassName="max-w-[960px] text-5xl font-medium"
+        titleClassName="max-w-[960px] text-2xl lg:text-5xl font-medium"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden w-full mx-auto"
+        containerClassName=""
+        className="overflow-hidden w-full mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -85,8 +85,7 @@ export default function Home() {
         preTitle="How we solve your pains"
         title="Turning workplace challenges into opportunities"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
       >
         <InfoPiece
           tag="Employee turnover"
@@ -97,7 +96,7 @@ export default function Home() {
             href: "/solutions/for-employee-turnover",
           }}
           supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
                 <Image
                   src="/images/auditorium.jpg"
@@ -120,7 +119,7 @@ export default function Home() {
             href: "/solutions/for-employee-disengagement",
           }}
           supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
                 <Image
                   src="/images/farm.jpg"
@@ -144,7 +143,7 @@ export default function Home() {
             href: "/solutions/for-remote-disconnection",
           }}
           supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
                 <Image
                   src="/images/campfire.jpg"
@@ -160,10 +159,9 @@ export default function Home() {
       </Section>
       <Section
         title="Gaming inspired features that transform work"
-        titleClassName="max-w-[960px] text-6xl font-medium"
+        titleClassName="max-w-[960px] lg:text-6xl font-medium"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -208,7 +206,7 @@ export default function Home() {
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
         className="overflow-hidden"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-16 max-w-[960px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 lg:gap-y-8 max-w-[960px] mx-auto">
           <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
           <CheckmarkItem text="Flexible seating configurations for any event type" />
           <CheckmarkItem text="Professional lighting with customizable presets" />
@@ -222,8 +220,7 @@ export default function Home() {
         title="Purpose-built environments for every team need"
         titleClassName="max-w-[1200px]"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -242,7 +239,7 @@ export default function Home() {
           tag="Engagement"
           title="Spark conversation and foster connection"
           supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
                 <Image
                   src="/images/campfire.jpg"
@@ -258,28 +255,28 @@ export default function Home() {
           description={
             <div className="space-y-3">
               <div>
-                <h3 className="text-base font-medium text-brand-700">
+                <h3 className="text-sm lg:text-base font-medium text-purple-600">
                   Campfire
                 </h3>
-                <p className="text-base font-normal text-dark-space">
+                <p className="text-sm lg:text-base font-normal text-dark-space">
                   A forest setting with conversation-starter cards perfect for
                   team bonding and casual discussions.
                 </p>
               </div>
               <div>
-                <h3 className="text-base font-medium text-brand-700">
+                <h3 className="text-sm lg:text-base font-medium text-purple-600">
                   This or that
                 </h3>
-                <p className="text-base font-normal text-dark-space">
+                <p className="text-sm lg:text-base font-normal text-dark-space">
                   Reveal team dynamics through quick-fire choice games that
                   spark conversation and connection.
                 </p>
               </div>
               <div>
-                <h3 className="text-base font-medium text-brand-700">
+                <h3 className="text-sm lg:text-base font-medium text-purple-600">
                   Debate room
                 </h3>
-                <p className="text-base font-normal text-dark-space">
+                <p className="text-sm lg:text-base font-normal text-dark-space">
                   Moderated discussion environment with timed speaking platforms
                   for structured conversations.
                 </p>
@@ -291,7 +288,7 @@ export default function Home() {
           tag="Work"
           title="Transform routine collaboration into interactive experiences"
           supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
                 <Image
                   src="/images/campfire.jpg"
@@ -306,28 +303,28 @@ export default function Home() {
           description={
             <div className="space-y-3">
               <div>
-                <h3 className="text-base font-medium text-brand-700">
+                <h3 className="text-sm lg:text-base font-medium text-purple-600">
                   Planning
                 </h3>
-                <p className="text-base font-normal text-dark-space">
+                <p className="text-sm lg:text-base font-normal text-dark-space">
                   Visualize progress and build consensus with interactive voting
                   platforms.
                 </p>
               </div>
               <div>
-                <h3 className="text-base font-medium text-brand-700">
+                <h3 className="text-sm lg:text-base font-medium text-purple-600">
                   Sailboat retrospective
                 </h3>
-                <p className="text-base font-normal text-dark-space">
+                <p className="text-sm lg:text-base font-normal text-dark-space">
                   Navigate team improvement with a visual framework that
                   transforms abstract feedback into actionable insights.
                 </p>
               </div>
               <div>
-                <h3 className="text-base font-medium text-brand-700">
+                <h3 className="text-sm lg:text-base font-medium text-purple-600">
                   Auditorium
                 </h3>
-                <p className="text-base font-normal text-dark-space">
+                <p className="text-sm lg:text-base font-normal text-dark-space">
                   Present with impact using interactive voting platforms that
                   visualize real-time feedback.
                 </p>
@@ -339,7 +336,7 @@ export default function Home() {
           tag="Fun"
           title="Build real teamwork skills through shared challenges and laughter"
           supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
               <div className="relative w-[85%] h-[80%]">
                 <Image
                   src="/images/campfire.jpg"
@@ -354,37 +351,37 @@ export default function Home() {
           description={
             <div className="space-y-3">
               <div>
-                <h3 className="text-base font-medium text-brand-700">
+                <h3 className="text-sm lg:text-base font-medium text-purple-600">
                   Floor is lava
                 </h3>
-                <p className="text-base font-normal text-dark-space">
+                <p className="text-sm lg:text-base font-normal text-dark-space">
                   Bond through shared challenge as teammates cheer each other
                   through an obstacle course of hilarious fails.
                 </p>
               </div>
               <div>
-                <h3 className="text-base font-medium text-brand-700">
+                <h3 className="text-sm lg:text-base font-medium text-purple-600">
                   Connect 4
                 </h3>
-                <p className="text-base font-normal text-dark-space">
+                <p className="text-sm lg:text-base font-normal text-dark-space">
                   Blend strategy with skill in a basketball-powered twist on the
                   classic game.
                 </p>
               </div>
               <div>
-                <h3 className="text-base font-medium text-brand-700">
+                <h3 className="text-sm lg:text-base font-medium text-purple-600">
                   The farmyard
                 </h3>
-                <p className="text-base font-normal text-dark-space">
+                <p className="text-sm lg:text-base font-normal text-dark-space">
                   Steal, defend, and strategize in a team competition that
                   teaches resource management through play.
                 </p>
               </div>
               <div>
-                <h3 className="text-base font-medium text-brand-700">
+                <h3 className="text-sm lg:text-base font-medium text-purple-600">
                   Football field
                 </h3>
-                <p className="text-base font-normal text-dark-space">
+                <p className="text-sm lg:text-base font-normal text-dark-space">
                   Score team goals in a competitive environment that gamifies
                   performance tracking.
                 </p>
@@ -398,7 +395,7 @@ export default function Home() {
         preTitle="Use cases"
         title="Team Up! works for companies like yours"
         bgClassName="bg-white"
-        containerClassName="py-32 max-w-[1600px] mx-auto"
+        containerClassName="max-w-[1600px] mx-auto"
       >
         <InfoPiece
           tag="Startups"
@@ -410,7 +407,7 @@ export default function Home() {
             size: "lg",
           }}
           supportContent={
-            <div className="w-full h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
               <div className="relative w-full h-full">
                 <Image
                   src="/images/campfire.jpg"
@@ -420,7 +417,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-12 right-12 text-white text-4xl font-medium text-right max-w-[500px] break-words hyphens-none">
+                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
                   Increase meeting effectiveness by 45%
                 </p>
               </div>
@@ -437,7 +434,7 @@ export default function Home() {
             size: "lg",
           }}
           supportContent={
-            <div className="w-full h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
               <div className="relative w-full h-full">
                 <Image
                   src="/images/campfire.jpg"
@@ -447,7 +444,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-12 left-12 text-white text-4xl font-medium text-left max-w-[500px] break-words hyphens-none">
+                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
                   Increase meeting effectiveness by 45%
                 </p>
               </div>
@@ -465,7 +462,7 @@ export default function Home() {
             size: "lg",
           }}
           supportContent={
-            <div className="w-full h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
               <div className="relative w-full h-full">
                 <Image
                   src="/images/campfire.jpg"
@@ -475,7 +472,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-12 right-12 text-white text-4xl font-medium text-right max-w-[500px] break-words hyphens-none">
+                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
                   Increase meeting effectiveness by 45%
                 </p>
               </div>
@@ -492,7 +489,7 @@ export default function Home() {
             size: "lg",
           }}
           supportContent={
-            <div className="w-full h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
               <div className="relative w-full h-full">
                 <Image
                   src="/images/campfire.jpg"
@@ -502,7 +499,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-12 left-12 text-white text-4xl font-medium text-left max-w-[500px] break-words hyphens-none">
+                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
                   Increase meeting effectiveness by 45%
                 </p>
               </div>
@@ -528,7 +525,6 @@ export default function Home() {
           },
         ]}
         buttonsPosition="bottom"
-        containerClassName="py-32"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1400px] mx-auto gap-x-12 gap-y-12">
           <ChecklistElement

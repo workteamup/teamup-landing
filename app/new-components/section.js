@@ -23,7 +23,7 @@ const Section = ({
   return (
     <section
       className={cn(
-        "w-full max-w-[1600px] mx-auto px-6 py-24",
+        "w-full max-w-[1600px] mx-auto px-4 lg:px-6 py-20 lg:py-32",
         containerClassName,
         bgClassName,
         className
@@ -34,7 +34,7 @@ const Section = ({
           {preTitle && (
             <p
               className={cn(
-                "text-sm font-semibold text-dark-space uppercase tracking-[0.08em] mb-4",
+                "text-xs lg:text-sm font-semibold text-dark-space uppercase tracking-[0.08em] mb-4",
                 preTitleClassName
               )}
             >
@@ -44,7 +44,7 @@ const Section = ({
           {title && (
             <h2
               className={cn(
-                "text-6xl font-semibold text-brand-700 leading-tight",
+                "text-3xl lg:text-6xl font-semibold text-brand-700 leading-tight",
                 titleClassName
               )}
             >
@@ -67,7 +67,7 @@ const Section = ({
       {buttons.length > 0 && buttonsPosition === "top" && (
         <div
           className={cn(
-            "flex gap-4 mt-12 justify-center",
+            "flex flex-col md:flex-row gap-4 mt-12 justify-center",
             buttonsContainerClassName
           )}
         >
@@ -82,10 +82,15 @@ const Section = ({
       {children && <div className="mt-16">{children}</div>}
 
       {buttons.length > 0 && buttonsPosition === "bottom" && (
-        <div className="flex flex-col items-center text-center mt-16">
-          <div className={cn("flex gap-4", buttonsContainerClassName)}>
+        <div className="flex flex-col items-center text-center mt-16 w-full">
+          <div
+            className={cn(
+              "flex flex-col md:flex-row gap-4 w-full max-w-[800px]",
+              buttonsContainerClassName
+            )}
+          >
             {buttons.map(({ children, ...buttonProps }, index) => (
-              <Button key={index} {...buttonProps}>
+              <Button key={index} {...buttonProps} className="w-full md:w-auto">
                 {children}
               </Button>
             ))}

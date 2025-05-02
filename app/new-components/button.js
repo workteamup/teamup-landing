@@ -18,15 +18,15 @@ const Button = ({
   ...props
 }) => {
   const baseClasses = cn(
-    "font-poppins font-medium flex items-center justify-center",
+    "text-center font-poppins font-medium flex items-center justify-center",
     variant !== "text" && "rounded-full transition-all duration-200"
   );
 
   const sizeClasses = {
     sm: "text-xs",
     md: "text-sm",
-    lg: "text-base",
-    xl: "text-lg",
+    lg: "text-sm lg:text-base",
+    xl: "text-base lg:text-lg",
     text: "text-base",
   };
 
@@ -123,9 +123,9 @@ const Button = ({
           ? "p-0"
           : {
               sm: "px-[18px] py-3",
-              md: "px-5 py-[14px]",
-              lg: "px-6 py-4",
-              xl: "px-8 py-5",
+              md: "px-5 py-3.5",
+              lg: "px-5 py-3.5 lg:px-6 lg:py-4",
+              xl: "px-6 py-4 lg:px-8 lg:py-5",
             }[size],
         variantClasses[variant],
         shadowClasses,
