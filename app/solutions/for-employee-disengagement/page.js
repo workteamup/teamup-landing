@@ -72,7 +72,7 @@ export default function EmployeeDisengagementPage() {
         preTitle="The problem in numbers"
         title="Title under construction"
         bgClassName="bg-white"
-        containerClassName="py-24 max-w-[1440px] mx-auto"
+        containerClassName="max-w-[1440px] mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <NumberElement
@@ -110,7 +110,7 @@ export default function EmployeeDisengagementPage() {
         title="Team Up! has you covered"
         titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
-        containerClassName="py-32 max-w-[1600px] mx-auto"
+        containerClassName="max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -148,8 +148,7 @@ export default function EmployeeDisengagementPage() {
         title="A new way to do things"
         titleClassName="max-w-[1200px]"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -518,8 +517,7 @@ export default function EmployeeDisengagementPage() {
         title="Perfect for these occasions"
         titleClassName="max-w-[1200px]"
         bgClassName=""
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="mt-16 px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -610,7 +608,7 @@ export default function EmployeeDisengagementPage() {
         preTitle="How it works"
         title="Start improving your team's performance"
         bgClassName="bg-white"
-        containerClassName="py-24 max-w-[1440px] mx-auto"
+        containerClassName="max-w-[1440px] mx-auto"
         buttons={[
           {
             variant: "primary",
@@ -659,8 +657,7 @@ export default function EmployeeDisengagementPage() {
         titleClassName="max-w-[960px] font-medium"
         subtitle="Team Up! evolves with your team, ensuring you're always prepared for the future of work with regular updates and new interactive spaces that respond to changing workplace needs."
         subtitleClassName="text-dark-space max-w-[960px]"
-        containerClassName="py-32 md:px-8 lg:px-12"
-        className="px-0 overflow-hidden max-w-[1600px] mx-auto"
+        className="overflow-hidden max-w-[1600px] mx-auto"
       />
       <ClosingCTA
         text="Start creating a company culture that works"
