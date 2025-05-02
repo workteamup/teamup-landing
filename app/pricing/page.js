@@ -13,7 +13,7 @@ export default function PricingPage() {
         subtitleClassName="max-w-[720px] text-purple-50"
         bgClassName="bg-purple-900"
         extraContent={
-          <div className="w-full max-w-[1600px] mx-auto px-12 mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="w-full max-w-[1600px] mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <PricingCard
               title="Starter"
               subtitle="Get a taste of what Team Up! can do for your team."

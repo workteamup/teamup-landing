@@ -27,7 +27,7 @@ const PricingCard = ({
   return (
     <div
       className={cn(
-        "w-full max-w-[400px] bg-white border border-purple-300 rounded-[40px] px-12 py-16",
+        "w-full max-w-[400px] bg-white border border-purple-300 rounded-2xl lg:rounded-[40px] px-6 py-12 lg:px-12 lg:py-16",
         containerClassName,
         className
       )}
@@ -36,7 +36,7 @@ const PricingCard = ({
       {title && (
         <h2
           className={cn(
-            "text-5xl font-semibold text-brand-700",
+            "text-3xl lg:text-5xl font-semibold text-brand-700",
             titleClassName
           )}
         >
@@ -46,8 +46,13 @@ const PricingCard = ({
 
       {/* Subtitle */}
       {subtitle && (
-        <div className={cn("min-h-[96px] mt-8", subtitleClassName)}>
-          <p className="text-lg text-dark-space">{subtitle}</p>
+        <div
+          className={cn(
+            "min-h-[72px] lg:min-h-[96px] mt-4 lg:mt-8",
+            subtitleClassName
+          )}
+        >
+          <p className="text-base lg:text-lg text-dark-space">{subtitle}</p>
         </div>
       )}
 
@@ -57,7 +62,7 @@ const PricingCard = ({
           <div className="flex items-center gap-1">
             <h3
               className={cn(
-                "text-4xl font-medium text-brand-700",
+                "text-3xl lg:text-4xl font-medium text-brand-700",
                 priceNumberClassName
               )}
             >
@@ -85,7 +90,7 @@ const PricingCard = ({
         ) : (
           <h3
             className={cn(
-              "text-4xl font-medium text-brand-700",
+              "text-3xl lg:text-4xl font-medium text-brand-700",
               priceTextClassName
             )}
           >
@@ -96,7 +101,7 @@ const PricingCard = ({
 
       {/* Button */}
       {buttonProps && (
-        <div className="mt-8">
+        <div className="mt-6 lg:mt-8">
           <Button {...buttonProps} />
         </div>
       )}
@@ -107,16 +112,16 @@ const PricingCard = ({
           <h3 className="text-base font-medium text-brand-700 mb-4">
             {featuresTitle}
           </h3>
-          <ul className="space-y-3">
+          <ul className="space-y-2 lg:space-y-3">
             {features.map((feature, index) => (
               <li
                 key={index}
                 className={cn("flex items-start", featureItemClassName)}
               >
-                <Check className="w-5 h-5 text-purple-300 flex-shrink-0 mr-4 mt-0.5" />
+                <Check className="w-4 h-4 lg:w-5 lg:h-5 text-purple-300 flex-shrink-0 mr-3 lg:mr-4 mt-0.5" />
                 <span
                   className={cn(
-                    "text-base text-dark-graphite",
+                    "text-sm lg:text-base text-dark-graphite",
                     featureTextClassName
                   )}
                 >
