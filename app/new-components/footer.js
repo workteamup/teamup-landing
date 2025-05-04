@@ -40,12 +40,36 @@ const Footer = () => {
   };
 
   const socialMediaLinks = [
-    { icon: "/svg/custom-icons/social-media/linkedin.svg", alt: "LinkedIn" },
-    { icon: "/svg/custom-icons/social-media/instagram.svg", alt: "Instagram" },
-    { icon: "/svg/custom-icons/social-media/x.svg", alt: "X" },
-    { icon: "/svg/custom-icons/social-media/tiktok.svg", alt: "TikTok" },
-    { icon: "/svg/custom-icons/social-media/youtube.svg", alt: "YouTube" },
-    { icon: "/svg/custom-icons/social-media/discord.svg", alt: "Discord" },
+    {
+      icon: "/svg/custom-icons/social-media/linkedin.svg",
+      alt: "LinkedIn",
+      url: "https://www.linkedin.com/company/team-up-works",
+    },
+    {
+      icon: "/svg/custom-icons/social-media/instagram.svg",
+      alt: "Instagram",
+      url: "https://www.instagram.com/teamupworks/",
+    },
+    {
+      icon: "/svg/custom-icons/social-media/x.svg",
+      alt: "X",
+      url: "https://x.com/teamupworks",
+    },
+    /*{
+      icon: "/svg/custom-icons/social-media/tiktok.svg",
+      alt: "TikTok",
+      url: "https://www.tiktok.com/@teamupworks",
+    },
+    {
+      icon: "/svg/custom-icons/social-media/youtube.svg",
+      alt: "YouTube",
+      url: "https://www.youtube.com/@teamupworks",
+    },
+    {
+      icon: "/svg/custom-icons/social-media/discord.svg",
+      alt: "Discord",
+      url: "https://discord.gg/teamupworks",
+    },*/
   ];
 
   return (
@@ -92,11 +116,13 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-6">
             {/* Social Media Icons */}
             <div className="flex gap-4">
-              {socialMediaLinks.map(({ icon, alt }) => (
+              {socialMediaLinks.map(({ icon, alt, url }) => (
                 <Link
                   key={alt}
-                  href="#"
-                  className="w-9 h-9 md:w-11 md:h-11 rounded-full bg-purple-50 flex items-center justify-center hover:bg-purple-100 transition-colors"
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 md:w-11 md:h-11 rounded-full bg-purple-50 flex items-center justify-center hover:text-purple-600 transition-colors"
                 >
                   <Image src={icon} width={20} height={20} alt={alt} />
                 </Link>
