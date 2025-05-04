@@ -629,7 +629,8 @@ export default function EmployeeTurnoverPage() {
               title: "Set up your virtual workspace",
               description:
                 "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/request-access.webm",
             },
             {
               title: "Onboard your team members",

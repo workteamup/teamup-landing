@@ -98,8 +98,11 @@ const Steps = ({
                   )}
                   {step.video && (
                     <video
-                      controls
-                      className="w-full h-full object-cover rounded-lg"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-contain rounded-lg"
                     >
                       <source src={step.video} type="video/mp4" />
                       Your browser does not support the video tag.

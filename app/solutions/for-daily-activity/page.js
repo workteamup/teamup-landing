@@ -219,7 +219,7 @@ export default function ForDailyActivityPage() {
                     <X className="w-4 h-4 text-red-500" />
                   </div>
                   <span className="text-dark-space text-xl">
-                    Difficult to see who's speaking in larger teams.
+                    Difficult to see who&apos;s speaking in larger teams.
                   </span>
                 </li>
                 <li className="flex items-center gap-4">

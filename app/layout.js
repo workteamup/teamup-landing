@@ -20,9 +20,18 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: "Team Up | La mejor manera de conectar en remoto",
+  title: "Team Up! | The #1 solution for a connected workforce",
   description:
     "Disfruta de un entorno en la web perfecto para crear y mantener cultura de empresa.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+    other: {
+      rel: "icon",
+      url: "/favicon.ico",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

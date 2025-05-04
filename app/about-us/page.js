@@ -29,14 +29,15 @@ export default function AboutUsPage() {
         <div className="text-lg text-dark-space max-w-3xl mx-auto flex flex-col gap-4">
           <p>
             Team Up! was born from a simple observation: traditional virtual
-            offices weren't creating the meaningful connections that distributed
-            teams desperately needed.
+            offices weren&apos;t creating the meaningful connections that
+            distributed teams desperately needed.
           </p>
           <p>
             As gamers ourselves, we saw how video games have mastered the art of
             bringing people together in virtual spaces. While companies
-            struggled with flat 2D "virtual offices" that felt like awkward
-            video calls with extra steps, we knew there was a better way.
+            struggled with flat 2D &quot;virtual offices&quot; that felt like
+            awkward video calls with extra steps, we knew there was a better
+            way.
           </p>
           <p>
             We asked: What if team building could feel less like an obligation
@@ -44,9 +45,9 @@ export default function AboutUsPage() {
             joy rather than isolation?
           </p>
           <p>
-            That's why we created Team Up! — where immersive 3D environments
-            meet purposeful team building activities designed for genuine human
-            connection.
+            That&apos;s why we created Team Up! — where immersive 3D
+            environments meet purposeful team building activities designed for
+            genuine human connection.
           </p>
         </div>
       </Section>
@@ -102,7 +103,7 @@ export default function AboutUsPage() {
           </p>
           <p>
             Our gaming-first approach creates the emotional engagement that
-            makes teams truly cohesive. After all, you don't remember the
+            makes teams truly cohesive. After all, you don&apos;t remember the
             meeting room layout from your favorite job — you remember the
             moments of triumph, laughter, and collaboration with colleagues who
             became friends.
@@ -118,7 +119,7 @@ export default function AboutUsPage() {
           </p>
           <p>
             Our gaming-first approach creates the emotional engagement that
-            makes teams truly cohesive. After all, you don't remember the
+            makes teams truly cohesive. After all, you don&apos;t remember the
             meeting room layout from your favorite job — you remember the
             moments of triumph, laughter, and collaboration with colleagues who
             became friends.
@@ -149,12 +150,12 @@ export default function AboutUsPage() {
             physical boundaries.
           </p>
           <p>
-            Team Up! is more than just a platform — it's a new philosophy for
-            how remote teams can connect, collaborate, and cultivate culture in
-            the digital age.
+            Team Up! is more than just a platform — it&apos;s a new philosophy
+            for how remote teams can connect, collaborate, and cultivate culture
+            in the digital age.
           </p>
           <p>
-            Whether you're a fully remote startup, a global enterprise with
+            Whether you&apos;re a fully remote startup, a global enterprise with
             distributed teams, or a hybrid organization looking to maintain
             culture across physical and digital spaces, Team Up! is built to
             help your team thrive through the power of play.
