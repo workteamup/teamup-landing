@@ -84,7 +84,7 @@ const Steps = ({
               {(step.image || step.video) && (
                 <div
                   className={cn(
-                    "mt-6 w-full max-w-[800px] h-[400px] relative",
+                    "mt-6 w-full  relative rounded-lg",
                     mediaContainerClassName
                   )}
                 >
@@ -92,8 +92,10 @@ const Steps = ({
                     <Image
                       src={step.image}
                       alt={step.title || `Step ${index + 1}`}
-                      fill
-                      className="object-cover rounded-lg"
+                      width={800}
+                      height={0}
+                      className="w-full h-auto object-contain rounded-lg"
+                      style={{ aspectRatio: "auto" }}
                     />
                   )}
                   {step.video && (
@@ -102,7 +104,8 @@ const Steps = ({
                       loop
                       muted
                       playsInline
-                      className="w-full h-full object-contain rounded-lg"
+                      className="w-full h-auto rounded-lg"
+                      style={{ aspectRatio: "auto" }}
                     >
                       <source src={step.video} type="video/mp4" />
                       Your browser does not support the video tag.
