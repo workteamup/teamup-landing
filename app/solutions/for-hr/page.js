@@ -13,6 +13,7 @@ import InfoElement from "../../new-components/info-element";
 import LogoSlider from "../../new-components/logo-slider";
 import ClosingCTA from "../../new-components/closing-cta";
 import ProsConsList from "../../new-components/pros-cons-list";
+import { ArrowRight } from "lucide-react";
 
 export default function ForHRPage() {
   return (
@@ -412,7 +413,7 @@ export default function ForHRPage() {
           reverse={true}
           description="Organize a virtual onboarding program using the spaces in Team Up! to welcome new hires and connect them with mentors through interactive 3D spaces."
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Check out our This or that space",
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,

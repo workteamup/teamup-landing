@@ -13,6 +13,7 @@ import Image from "next/image";
 import { Check, X } from "lucide-react";
 import Steps from "../../new-components/steps";
 import ProsConsList from "../../new-components/pros-cons-list";
+import { ArrowRight } from "lucide-react";
 
 export default function ForFunCompetitionsPage() {
   return (

@@ -11,6 +11,7 @@ import InfoElement from "../../new-components/info-element";
 import LogoSlider from "../../new-components/logo-slider";
 import ClosingCTA from "../../new-components/closing-cta";
 import ProsConsList from "../../new-components/pros-cons-list";
+import { ArrowRight } from "lucide-react";
 
 export default function ForMarketingPage() {
   return (
@@ -383,7 +384,7 @@ export default function ForMarketingPage() {
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Create a meeting in the Auditorium",
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,

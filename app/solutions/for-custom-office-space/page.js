@@ -1,5 +1,6 @@
 import Hero from "../../new-components/hero";
 import Section from "../../new-components/section";
+import { ArrowRight } from "lucide-react";
 
 export default function ForCustomOfficeSpacePage() {
   return (

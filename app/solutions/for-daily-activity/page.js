@@ -13,6 +13,7 @@ import Image from "next/image";
 import { Check, X } from "lucide-react";
 import Steps from "../../new-components/steps";
 import ProsConsList from "../../new-components/pros-cons-list";
+import { ArrowRight } from "lucide-react";
 
 export default function ForDailyActivityPage() {
   return (
@@ -417,6 +418,7 @@ export default function ForDailyActivityPage() {
             variant: "text",
             children: "Start your first stand-up",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}

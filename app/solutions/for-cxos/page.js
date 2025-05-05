@@ -13,6 +13,7 @@ import InfoElement from "../../new-components/info-element";
 import LogoSlider from "../../new-components/logo-slider";
 import ClosingCTA from "../../new-components/closing-cta";
 import ProsConsList from "../../new-components/pros-cons-list";
+import { ArrowRight } from "lucide-react";
 
 export default function ForCXOsPage() {
   return (
