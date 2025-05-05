@@ -54,7 +54,7 @@ const Section = ({
           {subtitle && (
             <p
               className={cn(
-                "text-base lg:text-2xl text-brand-600 mt-5 lg:mt-8 lg:leading-10 tracking-wide",
+                "text-base lg:text-2xl text-dark-graphite mt-5 lg:mt-8 lg:leading-10 tracking-wide",
                 subtitleClassName
               )}
             >
