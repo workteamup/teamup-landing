@@ -13,6 +13,7 @@ import InfoElement from "../../new-components/info-element";
 import LogoSlider from "../../new-components/logo-slider";
 import ClosingCTA from "../../new-components/closing-cta";
 import { ArrowRight } from "lucide-react";
+import ProsConsList from "../../new-components/pros-cons-list";
 
 export default function ForManagersPage() {
   return (
@@ -180,7 +181,7 @@ export default function ForManagersPage() {
         <div>
           <InfoPiece
             title="Annual in-person team events"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -195,49 +196,21 @@ export default function ForManagersPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Team cohesion built during events dissipates rapidly once
-                    teams return to routine.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Managers have little control over event design to address
-                    specific team needs.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Budget limitations often mean choosing between broad
-                    participation or deep impact.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    The disconnect between fun activities and actual work
-                    challenges limits transfer.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Team cohesion built during events dissipates rapidly once teams return to routine.",
+                  "Managers have little control over event design to address specific team needs.",
+                  "Budget limitations often mean choosing between broad participation or deep impact.",
+                  "The disconnect between fun activities and actual work challenges limits transfer.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] text-4xl mb-10"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -252,44 +225,16 @@ export default function ForManagersPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Maintain team cohesion through regular engaging interactions
-                    throughout the year.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Customize activities to address your specific team&apos;s
-                    challenges and dynamics.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Run frequent high-impact sessions that fit withint existing
-                    team budgets.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Create direct connections between team-building and actual
-                    work challenges.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Maintain team cohesion through regular engaging interactions throughout the year.",
+                  "Customize activities to address your specific team's challenges and dynamics.",
+                  "Run frequent high-impact sessions that fit withint existing team budgets.",
+                  "Create direct connections between team-building and actual work challenges.",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -297,7 +242,7 @@ export default function ForManagersPage() {
         <div>
           <InfoPiece
             title="Video conferencing for team collaboration"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -312,49 +257,21 @@ export default function ForManagersPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Meeting fatigue severely impacts team engagement and
-                    contribution.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Cannot effectively read the room to gauge silent
-                    disagreement or confusion.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Limited tools to facilitate collaborative problem-solving
-                    during discussions.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Unnatural communication patterns where dominant voices
-                    overshadow others.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Meeting fatigue severely impacts team engagement and contribution.",
+                  "Cannot effectively read the room to gauge silent disagreement or confusion.",
+                  "Limited tools to facilitate collaborative problem-solving during discussions.",
+                  "Unnatural communication patterns where dominant voices overshadow others.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -369,44 +286,16 @@ export default function ForManagersPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Keep teams energized with dynamic meeting environments that
-                    reduce fatigue.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Observe spatial dynamics that reveal actual team sentiment
-                    and concerns.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Utilize purpose-built spaces for different meeting types
-                    (standups, planning, retrospectives).
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Create natural conversation flows with spatial audio and
-                    small group interactions.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Keep teams energized with dynamic meeting environments that reduce fatigue.",
+                  "Observe spatial dynamics that reveal actual team sentiment and concerns.",
+                  "Utilize purpose-built spaces for different meeting types (standups, planning, retrospectives).",
+                  "Create natural conversation flows with spatial audio and small group interactions.",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -414,7 +303,7 @@ export default function ForManagersPage() {
         <div>
           <InfoPiece
             title="Project management tools"
-            titleClassName="font-medium max-w-[440px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -429,49 +318,21 @@ export default function ForManagersPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Focus solely on task tracking without the human connection
-                    that drives performance.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Create additional work for managers to both track and
-                    communicate.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Difficult to use for facilitating meaningful team
-                    interactions around the work.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Separate systems for planning, execution, and team building
-                    create fragmentation.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Focus solely on task tracking without the human connection that drives performance.",
+                  "Create additional work for managers to both track and communicate.",
+                  "Difficult to use for facilitating meaningful team interactions around the work.",
+                  "Separate systems for planning, execution, and team building create fragmentation.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -486,44 +347,16 @@ export default function ForManagersPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Combine task visualization with team connection in a single
-                    environment.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Reduce admin work with automated tracking based on team
-                    interactions.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Facilitate engaging, productive discussions around visual
-                    project representations.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Unify planning, execution, and team building in cohesive
-                    virtual environments.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Combine task visualization with team connection in a single environment.",
+                  "Reduce admin work with automated tracking based on team interactions.",
+                  "Facilitate engaging, productive discussions around visual project representations.",
+                  "Unify planning, execution, and team building in cohesive virtual environments.",
+                ]}
+              />
             }
             reverse={true}
           />

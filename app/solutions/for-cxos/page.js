@@ -12,6 +12,7 @@ import Steps from "../../new-components/steps";
 import InfoElement from "../../new-components/info-element";
 import LogoSlider from "../../new-components/logo-slider";
 import ClosingCTA from "../../new-components/closing-cta";
+import ProsConsList from "../../new-components/pros-cons-list";
 
 export default function ForCXOsPage() {
   return (
@@ -191,7 +192,7 @@ export default function ForCXOsPage() {
         <div>
           <InfoPiece
             title="Annual in-person team events"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -206,48 +207,21 @@ export default function ForCXOsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    High per-attendee costs (averaging $1.000+) with
-                    questionable ROI measurement.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Significant executive time spent on logistics rather than
-                    strategic planning.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Short-lived engagement boost that fades within 2-3 weeks.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Excludes part of your workforce, creating unintentional
-                    hierarchies.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "High per-attendee costs (averaging $1.000+) with questionable ROI measurement.",
+                  "Significant executive time spent on logistics rather than strategic planning.",
+                  "Short-lived engagement boost that fades within 2-3 weeks.",
+                  "Excludes part of your workforce, creating unintentional hierarchies.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] text-4xl mb-10"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -262,44 +236,16 @@ export default function ForCXOsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Reduce team-building costs by 70% while increasing frequency
-                    of connection.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Free executive time from logistics to focus on participation
-                    and leadership.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Maintain consistent engagement through regular, meaningful
-                    interactions.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Create equal access for all team members regardless of
-                    location or role.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Reduce team-building costs by 70% while increasing frequency of connection.",
+                  "Free executive time from logistics to focus on participation and leadership.",
+                  "Maintain consistent engagement through regular, meaningful interactions.",
+                  "Create equal access for all team members regardless of location or role.",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -307,7 +253,7 @@ export default function ForCXOsPage() {
         <div>
           <InfoPiece
             title="Video conferencing for team collaboration"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -322,49 +268,21 @@ export default function ForCXOsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Limited analytics on actual engagement levels during
-                    critical meetings.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    No effective way to gauge team alignment on strategic
-                    initiatives.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Creates communication silos between departments and office
-                    locations.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Fails to build the cross-organizational relationships needed
-                    for innovation.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Limited analytics on actual engagement levels during critical meetings.",
+                  "No effective way to gauge team alignment on strategic initiatives.",
+                  "Creates communication silos between departments and office locations.",
+                  "Fails to build the cross-organizational relationships needed for innovation.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -379,44 +297,16 @@ export default function ForCXOsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Gain actionable insights into team participation and
-                    engagement metrics.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Visualize alignment through interactive voting and feedback
-                    mechanisms.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Break down silos with spaces designed for cross-departmental
-                    interaction.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Foster innovation through unexpected connections in shared
-                    virtual environments.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Gain actionable insights into team participation and engagement metrics.",
+                  "Visualize alignment through interactive voting and feedback mechanisms.",
+                  "Break down silos with spaces designed for cross-departmental interaction.",
+                  "Foster innovation through unexpected connections in shared virtual environments.",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -424,7 +314,7 @@ export default function ForCXOsPage() {
         <div>
           <InfoPiece
             title="Workplace communication platforms"
-            titleClassName="font-medium max-w-[440px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -439,47 +329,21 @@ export default function ForCXOsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Text-based messaging lacks the impact needed for meaningful
-                    leadership presence.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Difficult to measure if important communications are
-                    actually reaching teams.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Creates information overload without clear prioritization.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Executive messages get lost in the noise of day-to-day.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Text-based messaging lacks the impact needed for meaningful leadership presence.",
+                  "Difficult to measure if important communications are actually reaching teams.",
+                  "Creates information overload without clear prioritization.",
+                  "Executive messages get lost in the noise of day-to-day.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -494,44 +358,16 @@ export default function ForCXOsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Maintain authentic leadership presence through immersive
-                    environments.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Track engagement with leadership messages through
-                    interaction analytics.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Create tiered communication spaces that signal information
-                    importance.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Deliver high-impact communications that stand out from
-                    routine messaging.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Maintain authentic leadership presence through immersive environments.",
+                  "Track engagement with leadership messages through interaction analytics.",
+                  "Create tiered communication spaces that signal information importance.",
+                  "Deliver high-impact communications that stand out from routine messaging.",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -665,19 +501,22 @@ export default function ForCXOsPage() {
               title: "Request access to Team Up!",
               description:
                 "Apply for access to Team Up! in https://app.teamup.works/signup",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/request-access.webm",
             },
             {
               title: "Create your company's workspace",
               description:
                 "Create a workspace that reflects your company culture and invite your employees to join.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-workspace.webm",
             },
             {
               title: "Create your first meeting room or event",
               description:
                 "Create a meeting room or event, invite your employees, and start improving your company culture.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-first-meeting.webm",
             },
             {
               title: "Reap the benefits",

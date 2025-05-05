@@ -12,6 +12,7 @@ import InfoPiece from "../../new-components/info-piece";
 import Image from "next/image";
 import { Check, X } from "lucide-react";
 import Steps from "../../new-components/steps";
+import ProsConsList from "../../new-components/pros-cons-list";
 
 export default function ForFunCompetitionsPage() {
   return (
@@ -190,7 +191,7 @@ export default function ForFunCompetitionsPage() {
         <div>
           <InfoPiece
             title="Company All-hands"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -205,45 +206,21 @@ export default function ForFunCompetitionsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    One-way communication with limited audience participation.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Questions submitted via chat get overlooked or ignored.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Difficult to gauge audience reactions and engagement.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Breakout rooms feel disconnected from main event.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "One-way communication with limited audience participation.",
+                  "Questions submitted via chat get overlooked or ignored.",
+                  "Difficult to gauge audience reactions and engagement.",
+                  "Breakout rooms feel disconnected from main event.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] text-4xl mb-10"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -258,40 +235,16 @@ export default function ForFunCompetitionsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Interactive auditorium with spatial audio creates presence.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Physical voting platforms show real-time audience sentiment.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Visual feedback through avatar and reactions.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Connected 3D breakout spaces maintain event continuity.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Interactive auditorium with spatial audio creates presence.",
+                  "Physical voting platforms show real-time audience sentiment.",
+                  "Visual feedback through avatar and reactions.",
+                  "Connected 3D breakout spaces maintain event continuity.",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -299,7 +252,7 @@ export default function ForFunCompetitionsPage() {
         <div>
           <InfoPiece
             title="Video conferences"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -314,45 +267,21 @@ export default function ForFunCompetitionsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Boring grid of faces or slide presentations.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Networking limited to awkward chat rooms.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Speakear has no sense of audience engagement.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    High drop-off reates due to passive experience.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Boring grid of faces or slide presentations.",
+                  "Networking limited to awkward chat rooms.",
+                  "Speakear has no sense of audience engagement.",
+                  "High drop-off reates due to passive experience.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -367,40 +296,16 @@ export default function ForFunCompetitionsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Dynamic 3D venues with real-time audience engagement.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Natural networking in virtual lounges with spatial audio.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Speakers can see and interact with audience avatars.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Interactive elements keep attendes engaged
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Dynamic 3D venues with real-time audience engagement.",
+                  "Natural networking in virtual lounges with spatial audio.",
+                  "Speakers can see and interact with audience avatars.",
+                  "Interactive elements keep attendes engaged",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -408,7 +313,7 @@ export default function ForFunCompetitionsPage() {
         <div>
           <InfoPiece
             title="Team celebrations"
-            titleClassName="font-medium max-w-[440px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -423,45 +328,21 @@ export default function ForFunCompetitionsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Feels forced and artificial on video platforms.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    No sense of shared space or atmosphere.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Limited activites beyond conversation.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Early departures due to engagement challenges.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Feels forced and artificial on video platforms.",
+                  "No sense of shared space or atmosphere.",
+                  "Limited activites beyond conversation.",
+                  "Early departures due to engagement challenges.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -476,40 +357,16 @@ export default function ForFunCompetitionsPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Themed 3D environments create event atmosphere.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Interactive games and activities for natural bonding.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Spatial audio enables organic group formation.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Memorable shared experiences that strengthen culture.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Themed 3D environments create event atmosphere.",
+                  "Interactive games and activities for natural bonding.",
+                  "Spatial audio enables organic group formation.",
+                  "Memorable shared experiences that strengthen culture.",
+                ]}
+              />
             }
             reverse={true}
           />

@@ -10,6 +10,7 @@ import Steps from "../../new-components/steps";
 import InfoElement from "../../new-components/info-element";
 import LogoSlider from "../../new-components/logo-slider";
 import ClosingCTA from "../../new-components/closing-cta";
+import ProsConsList from "../../new-components/pros-cons-list";
 
 export default function ForMarketingPage() {
   return (
@@ -162,7 +163,7 @@ export default function ForMarketingPage() {
         <div>
           <InfoPiece
             title="Annual in-person team events"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -177,48 +178,21 @@ export default function ForMarketingPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Brief connections made during events rarely develop into
-                    ongoing relationships.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Introverts and new team members often feel excluded from
-                    established groups.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Required travel or after-hours scheduling creates work-life
-                    balance conflicts.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Structured activities often feel forced and inauthentic.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Brief connections made during events rarely develop into ongoing relationships.",
+                  "Introverts and new team members often feel excluded from established groups.",
+                  "Required travel or after-hours scheduling creates work-life balance conflicts.",
+                  "Structured activities often feel forced and inauthentic.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] text-4xl mb-10"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -233,44 +207,16 @@ export default function ForMarketingPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Build meaningful relationships through regular, organic
-                    interactions.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Create inclusive spaces where everyone can participate
-                    comfortably at their own pace.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Join team activities during regular work hours without
-                    travel requirements.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Engage in activities that feel natural and enjoyable rather
-                    than mandatory.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Build meaningful relationships through regular, organic interactions.",
+                  "Create inclusive spaces where everyone can participate comfortably at their own pace.",
+                  "Join team activities during regular work hours without travel requirements.",
+                  "Engage in activities that feel natural and enjoyable rather than mandatory.",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -278,7 +224,7 @@ export default function ForMarketingPage() {
         <div>
           <InfoPiece
             title="Video conferencing for daily interactions"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -293,49 +239,21 @@ export default function ForMarketingPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Creates isolation with limited opportunities for spontaneous
-                    conversations.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    &quot;Always-on camera&quot; expectations create anxiety and
-                    presentation fatigue.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    No equivalent to casual office interactions that build
-                    relationships.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Difficulty expressing personality or individuality in
-                    grid-based interfaces.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Creates isolation with limited opportunities for spontaneous conversations.",
+                  '"Always-on camera" expectations create anxiety and presentation fatigue.',
+                  "No equivalent to casual office interactions that build relationships.",
+                  "Difficulty expressing personality or individuality in grid-based interfaces.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -350,44 +268,16 @@ export default function ForMarketingPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Move around virtual spaces and naturally encounter
-                    colleagues for spontaneous chats.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Interact through customized avatars that reduce appearance
-                    anxiety while maintaining presence.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Join virtual break rooms and social areas that recreate and
-                    social areas that recreate the casual office experience.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Express your personality through customizable avatars and
-                    personal spaces.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Move around virtual spaces and naturally encounter colleagues for spontaneous chats.",
+                  "Interact through customized avatars that reduce appearance anxiety while maintaining presence.",
+                  "Join virtual break rooms and social areas that recreate and social areas that recreate the casual office experience.",
+                  "Express your personality through customizable avatars and personal spaces.",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -395,7 +285,7 @@ export default function ForMarketingPage() {
         <div>
           <InfoPiece
             title="Communication channels"
-            titleClassName="font-medium max-w-[440px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -410,49 +300,21 @@ export default function ForMarketingPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Public channels create performance pressure that discourages
-                    authentic sharing.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Private messages lack the community-building element of
-                    group interactions.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Text-based communication loses nuance and emotional
-                    connection.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Work-focused channels provide no space for the personal
-                    sharing that builds trust.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Public channels create performance pressure that discourages authentic sharing.",
+                  "Private messages lack the community-building element of group interactions.",
+                  "Text-based communication loses nuance and emotional connection.",
+                  "Work-focused channels provide no space for the personal sharing that builds trust.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -467,44 +329,16 @@ export default function ForMarketingPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Create zones of interaction with appropriate privacy levels
-                    for different conversations.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Join group activites that build community without putting
-                    individuals on the spot.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Communicate with voice, movement, and visual cues that
-                    preserve emotional nuance.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Access dedicated spaces for personal connection separate
-                    from work-focused channels.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Create zones of interaction with appropriate privacy levels for different conversations.",
+                  "Join group activites that build community without putting individuals on the spot.",
+                  "Communicate with voice, movement, and visual cues that preserve emotional nuance.",
+                  "Access dedicated spaces for personal connection separate from work-focused channels.",
+                ]}
+              />
             }
             reverse={true}
           />

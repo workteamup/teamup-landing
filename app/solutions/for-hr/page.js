@@ -12,6 +12,7 @@ import Steps from "../../new-components/steps";
 import InfoElement from "../../new-components/info-element";
 import LogoSlider from "../../new-components/logo-slider";
 import ClosingCTA from "../../new-components/closing-cta";
+import ProsConsList from "../../new-components/pros-cons-list";
 
 export default function ForHRPage() {
   return (
@@ -188,7 +189,7 @@ export default function ForHRPage() {
         <div>
           <InfoPiece
             title="Annual in-person team events"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -203,48 +204,21 @@ export default function ForHRPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Massive coordination burden falls on HR teams for minimal
-                    sustained impact.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Impossible to measure actual culture-building effectiveness.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Creates logistical nightmares for distributed workforce
-                    participation.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Generates resentment when some employees can&apos;t attend
-                    due to personal obligations.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Massive coordination burden falls on HR teams for minimal sustained impact.",
+                  "Impossible to measure actual culture-building effectiveness.",
+                  "Creates logistical nightmares for distributed workforce participation.",
+                  "Generates resentment when some employees can't attend due to personal obligations.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] text-4xl mb-10"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -259,44 +233,16 @@ export default function ForHRPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Shift from event coordination to strategic culture-building
-                    with ready-to-use templates.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Track precise metrics on participation, engagement, and
-                    cultural impact.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Ensure equal access for every employee regardless of
-                    location or availability.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Create ongoing culture touchpoints rather than once-a-year
-                    events.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Shift from event coordination to strategic culture-building with ready-to-use templates.",
+                  "Track precise metrics on participation, engagement, and cultural impact.",
+                  "Ensure equal access for every employee regardless of location or availability.",
+                  "Create ongoing culture touchpoints rather than once-a-year events.",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -304,7 +250,7 @@ export default function ForHRPage() {
         <div>
           <InfoPiece
             title="Employee engagement surveys"
-            titleClassName="font-medium max-w-[360px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -319,49 +265,21 @@ export default function ForHRPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Low completion rates (typically under 60%) create incomplete
-                    data sets.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Results arrive too late to address emerging cultural issues
-                    before they escalate.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    No connection between identification of problems and
-                    implementation of solutions.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Survey fatigue leads to increasingly less honest or
-                    thoughtful responses.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Low completion rates (typically under 60%) create incomplete data sets.",
+                  "Results arrive too late to address emerging cultural issues before they escalate.",
+                  "No connection between identification of problems and implementation of solutions.",
+                  "Survey fatigue leads to increasingly less honest or thoughtful responses.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -376,44 +294,16 @@ export default function ForHRPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Collect behavioral data that doesn&apos;t require active
-                    survey completion.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Monitor engagement trends in real-time to catch issues as
-                    they emerge.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Directly implement solutions in the same environment where
-                    problems are identified.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Gather authentic feedback through observation of natural
-                    interactions.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Collect behavioral data that doesn't require active survey completion.",
+                  "Monitor engagement trends in real-time to catch issues as they emerge.",
+                  "Directly implement solutions in the same environment where problems are identified.",
+                  "Gather authentic feedback through observation of natural interactions.",
+                ]}
+              />
             }
             reverse={true}
           />
@@ -421,7 +311,7 @@ export default function ForHRPage() {
         <div>
           <InfoPiece
             title="Onboarding processes"
-            titleClassName="font-medium max-w-[440px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -436,49 +326,21 @@ export default function ForHRPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Expensive to deliver consistent onboarding experience across
-                    locations.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    New hires struggle to build authentic connections in
-                    remote/hybrid setups.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Cultural values stated in presentations don&apos;t translate
-                    to lived experiences.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-red-100">
-                    <X className="w-4 h-4 text-red-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Difficult to track new hire integration beyond basic
-                    checklist completion.
-                  </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Expensive to deliver consistent onboarding experience across locations.",
+                  "New hires struggle to build authentic connections in remote/hybrid setups.",
+                  "Cultural values stated in presentations don't translate to lived experiences.",
+                  "Difficult to track new hire integration beyond basic checklist completion.",
+                ]}
+              />
             }
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] mb-10 text-4xl"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
                 <div className="relative w-[85%] h-[80%]">
@@ -493,41 +355,16 @@ export default function ForHRPage() {
               </div>
             }
             description={
-              <ul className="space-y-4 mt-6">
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Deliver consistent, high-quality onboarding experiences
-                    regardless of location.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Facilitate natural relationship building between new hires
-                    and team members.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">
-                    Embed company values into interactive experiences rather
-                    than static presentations.
-                  </span>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="p-1 rounded-full bg-green-100">
-                    <Check className="w-4 h-4 text-green-500" />
-                  </div>
-                  <span className="text-dark-space text-xl">comprobar. </span>
-                </li>
-              </ul>
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Deliver consistent, high-quality onboarding experiences regardless of location.",
+                  "Facilitate natural relationship building between new hires and team members.",
+                  "Embed company values into interactive experiences rather than static presentations.",
+                  "comprobar.",
+                ]}
+              />
             }
             reverse={true}
           />
