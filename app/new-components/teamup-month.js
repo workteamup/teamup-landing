@@ -87,19 +87,32 @@ const TeamUpMonth = ({ className = "", containerClassName = "" }) => {
   // Get space image
   const getSpaceImage = (space) => {
     const spaceImages = {
-      "Planning Space": "/images/planning-space.jpg",
-      Auditorium: "/images/auditorium.jpg",
-      Campfire: "/images/campfire.jpg",
-      "Debate Room": "/images/debate-room.jpg",
-      "Custom Branded Space": "/images/custom-branded.jpg",
-      "Connect 4": "/images/connect4.jpg",
-      "Floor is Lava": "/images/floor-is-lava.jpg",
-      "The Farmyard": "/images/farmyard.jpg",
-      "Sailboat Retrospective": "/images/sailboat.jpg",
-      "This or That": "/images/this-or-that.jpg",
+      "Planning Space":
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/planning_padded.png",
+      Auditorium:
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/auditorium_padded.png",
+      Campfire:
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/campfire_padded.png",
+      "Debate Room":
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/debate-room_padded.png",
+      "Custom Branded Space":
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/custom-branded_padded.png",
+      "Connect 4":
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/connect4_padded.png",
+      "Floor is Lava":
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/floor-is-lava_padded.png",
+      "The Farmyard":
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/farmyard_padded.png",
+      "Sailboat Retrospective":
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/sailboat-retrospective_padded.png",
+      "This or That":
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/this-or-that_padded.png",
     };
 
-    return spaceImages[space] || "/images/default-space.jpg";
+    return (
+      spaceImages[space] ||
+      "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/default-space.jpg"
+    );
   };
 
   return (
@@ -221,11 +234,11 @@ const TeamUpMonth = ({ className = "", containerClassName = "" }) => {
                 </button>
               </div>
 
-              <div className="h-40 w-full bg-dark-cloud rounded-md mb-3 overflow-hidden">
+              <div className="w-full bg-dark-cloud rounded-md mb-3 overflow-hidden">
                 <img
                   src={getSpaceImage(selectedMeeting.meeting.space)}
                   alt={`${selectedMeeting.meeting.space} preview`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto max-h-[200px] object-contain"
                 />
               </div>
 

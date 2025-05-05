@@ -14,6 +14,7 @@ import CheckmarkItem from "@/app/new-components/checkmark-item";
 import LogoSlider from "@/app/new-components/logo-slider";
 import CTA from "@/app/new-components/cta";
 import TeamUpMonth from "@/app/new-components/teamup-month";
+import ProsConsList from "./new-components/pros-cons-list";
 
 export default function Home() {
   return (
@@ -622,22 +623,8 @@ export default function Home() {
             size: "lg",
             onClick: () => (window.location.href = "/spaces/planning"),
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Startups"
-                  fill
-                  className="object-cover rounded-3xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
-                  Increase meeting effectiveness by 45%
-                </p>
-              </div>
-            </div>
+          image={
+            "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/planning_padded.png"
           }
         />
         <InfoPiece
@@ -650,22 +637,8 @@ export default function Home() {
             onClick: () =>
               (window.location.href = "/spaces/sailboat-retrospective"),
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Enterprise"
-                  fill
-                  className="object-cover rounded-3xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
-                  Increase meeting effectiveness by 45%
-                </p>
-              </div>
-            </div>
+          image={
+            "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/sailboat-retrospective_padded.png"
           }
           reverse={true}
         />
@@ -678,22 +651,8 @@ export default function Home() {
             size: "lg",
             onClick: () => (window.location.href = "/spaces/auditorium"),
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Remote-first"
-                  fill
-                  className="object-cover rounded-3xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
-                  Increase meeting effectiveness by 45%
-                </p>
-              </div>
-            </div>
+          image={
+            "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/auditorium_padded.png"
           }
         />
         <InfoPiece
@@ -705,22 +664,8 @@ export default function Home() {
             size: "lg",
             onClick: () => (window.location.href = "/spaces/campfire"),
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Hybrid"
-                  fill
-                  className="object-cover rounded-3xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
-                  Increase meeting effectiveness by 45%
-                </p>
-              </div>
-            </div>
+          image={
+            "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/campfire_padded.png"
           }
           reverse={true}
         />
@@ -733,24 +678,279 @@ export default function Home() {
             size: "lg",
             onClick: () => (window.location.href = "/spaces/campfire"),
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Hybrid"
-                  fill
-                  className="object-cover rounded-3xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
-                  Increase meeting effectiveness by 45%
-                </p>
-              </div>
-            </div>
+          image={
+            "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/farmyard_padded.png"
           }
         />
+      </Section>
+      <Section
+        preTitle="Team Up! vs. traditional solutions"
+        title="A new way to do things"
+        titleClassName="max-w-[1200px]"
+        bgClassName=""
+        className="overflow-hidden max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting room",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <div>
+          <InfoPiece
+            title="Annual team buildingevents"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "One-off events with little lasting impact.",
+                  "High per-attendee costs ($1.000+ for travel and venues)",
+                  "Excludes remote team members or creates logistical challenges",
+                  "Benefits fade within weeks of the event",
+                ]}
+              />
+            }
+          />
+          <InfoPiece
+            title="...but with Team Up!"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Regular, low-cost virtual team building integrated into workflow",
+                  "Accessible to all team members regardless of location",
+                  "Progressive relationship building through consistent interaction",
+                  "Measurable improvement in team metrics throughout the year",
+                ]}
+              />
+            }
+            reverse={true}
+          />
+        </div>
+        <div>
+          <InfoPiece
+            title="Daily stand-up meetings"
+            titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Video fatigue from grid layouts",
+                  "Passive participation with cameras off",
+                  "Difficult to visualize progress",
+                  "Oftern run overtime with tangents",
+                ]}
+              />
+            }
+          />
+          <InfoPiece
+            title="...but with Team Up!"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Engaging 3D environment with avatar movement",
+                  "Physical representation of project status",
+                  "Spatial audio for natural conversation flow",
+                  "Structured format that keeps meetings on track",
+                ]}
+              />
+            }
+            reverse={true}
+          />
+        </div>
+        <div>
+          <InfoPiece
+            title="Company All-hands meetings"
+            titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "One-way information delivery",
+                  "Limited audience participation",
+                  "Difficult to measure engagement",
+                  "Low retention of information presented",
+                ]}
+              />
+            }
+          />
+          <InfoPiece
+            title="...but with Team Up!"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Interactive presentation environment.",
+                  "Real-time feedback through voting platforms.",
+                  "Engaging breakout discussions in themed spaces.",
+                  "Data on participation and engagement.",
+                ]}
+              />
+            }
+            reverse={true}
+          />
+        </div>
+        <div>
+          <InfoPiece
+            title="Remote onboarding"
+            titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ProsConsList
+                type="cons"
+                className="mt-6"
+                items={[
+                  "Impersonal video calls and slide presentations.",
+                  "Overwhelming document dumps.",
+                  "Slow integration into team culture.",
+                  "Limited relationship building opportunities.",
+                ]}
+              />
+            }
+          />
+          <InfoPiece
+            title="...but with Team Up!"
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
+            supportContent={
+              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
+                <div className="relative w-[85%] h-[80%]">
+                  <Image
+                    src="/images/campfire.jpg"
+                    alt="Employee Engagement"
+                    fill
+                    className="object-cover rounded-2xl"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              </div>
+            }
+            description={
+              <ProsConsList
+                type="pros"
+                className="mt-6"
+                items={[
+                  "Immersive company culture experience.",
+                  "Interactive learning through spatial navigation.",
+                  "Natural social interactions in dedicated spaces.",
+                  "Accelerated team bonding through structured activities.",
+                ]}
+              />
+            }
+            reverse={true}
+          />
+        </div>
       </Section>
       <Section
         preTitle="Contact"
