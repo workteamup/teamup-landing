@@ -14,14 +14,14 @@ const CheckmarkItem = ({
     <div
       className={cn("flex items-start gap-4", containerClassName, className)}
     >
-      <div className="flex-shrink-0 w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-purple-50 flex items-center justify-center">
+      <div className="flex-shrink-0 w-5 h-5 lg:w-8 lg:h-8 rounded-full bg-purple-50 flex items-center justify-center">
         <Check
-          className={cn("w-4 h-4 lg:w-5 lg:h-5 text-purple-600", iconClassName)}
+          className={cn("w-3 h-3 lg:w-5 lg:h-5 text-purple-600", iconClassName)}
         />
       </div>
       <span
         className={cn(
-          "text-base lg:text-lg text-dark-space pt-0 lg:pt-0.5",
+          "text-sm lg:text-lg text-dark-space pt-0 lg:pt-0.5",
           textClassName
         )}
       >

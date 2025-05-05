@@ -1,3 +1,5 @@
+"use client";
+
 import Hero from "./new-components/hero";
 import Section from "./new-components/section";
 import SimpleStartSection from "./new-components/simple-start-section";
@@ -10,6 +12,8 @@ import ChecklistElement from "@/app/new-components/checklist-element";
 import RoleCard from "@/app/new-components/role-card";
 import CheckmarkItem from "@/app/new-components/checkmark-item";
 import LogoSlider from "@/app/new-components/logo-slider";
+import CTA from "@/app/new-components/cta";
+import TeamUpMonth from "@/app/new-components/teamup-month";
 
 export default function Home() {
   return (
@@ -206,15 +210,42 @@ export default function Home() {
         containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
         className="overflow-hidden"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 lg:gap-y-8 max-w-[960px] mx-auto">
-          <CheckmarkItem text="Advanced AV system with high-quality sound and projection" />
-          <CheckmarkItem text="Flexible seating configurations for any event type" />
-          <CheckmarkItem text="Professional lighting with customizable presets" />
-          <CheckmarkItem text="Interactive voting and feedback systems" />
-          <CheckmarkItem text="Real-time analytics for audience engagement" />
-          <CheckmarkItem text="Seamless integration with presentation tools" />
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-4 lg:gap-y-8 max-w-[960px] mx-auto">
+          <CheckmarkItem text="3D space" />
+          <CheckmarkItem text="Voice chat" />
+          <CheckmarkItem text="Text chat" />
+          <CheckmarkItem text="Screen sharing" />
+          <CheckmarkItem text="Reactions" />
+          <CheckmarkItem text="Activities" />
+          <CheckmarkItem text="Meeting points" />
+          <CheckmarkItem text="Timers" />
+          <CheckmarkItem text="Browser-based" />
+          <CheckmarkItem text="Plug and play" />
+          <CheckmarkItem text="Voting" />
+          <CheckmarkItem text="Avatar personalization" />
+          <CheckmarkItem text="Google integration" />
+          <CheckmarkItem text="Whiteboard" />
         </div>
       </Section>
+      <CTA
+        mainClaim="Ready to transform your team?"
+        description="Join thousands of companies improving their team culture with TeamUp"
+        buttons={[
+          {
+            children: "Get Started",
+            variant: "primary",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            children: "Learn More",
+            variant: "tertiary",
+            size: "xl",
+            onClick: () => (window.location.href = "/features"),
+          },
+        ]}
+      />
       <Section
         preTitle="Our spaces"
         title="Purpose-built environments for every team need"
@@ -392,7 +423,7 @@ export default function Home() {
         />
       </Section>
       <Section
-        preTitle="Use cases"
+        preTitle="Who's it for?"
         title="Team Up! works for companies like yours"
         bgClassName="bg-white"
         containerClassName="max-w-[1600px] mx-auto"
@@ -593,34 +624,189 @@ export default function Home() {
           />
         </div>
       </Section>
-      <Section>
-        <Steps
-          steps={[
-            {
-              title: "Step 1: Initial Consultation",
-              description:
-                "We'll discuss your needs and goals to create a tailored plan.",
-              image: "/images/step1.jpg",
-            },
-            {
-              title: "Step 2: Strategy Development",
-              description:
-                "Our team will develop a comprehensive strategy for your business.",
-              video: "/videos/step2.mp4",
-            },
-            {
-              title: "Step 3: Implementation",
-              description:
-                "We'll put the plan into action with our expert team.",
-              image: "/images/step3.jpg",
-            },
-          ]}
+      <CTA
+        mainClaim="Ready to transform your team?"
+        description="Join thousands of companies improving their team culture with TeamUp"
+        buttons={[
+          {
+            children: "Get Started",
+            variant: "primary",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            children: "Learn More",
+            variant: "tertiary",
+            size: "xl",
+            onClick: () => (window.location.href = "/features"),
+          },
+        ]}
+      />
+      <Section
+        preTitle="Use cases"
+        title="Team Up! enhances every online interaction"
+        bgClassName="bg-white"
+        containerClassName="max-w-[1600px] mx-auto"
+      >
+        <InfoPiece
+          title="Sprint planning"
+          description="Transform estimation into an engaging activity where team members physically move to voting platforms in our Planning space, eliminating groupthink while making consensus visible."
+          cta={{
+            variant: "text",
+            children: "See our Planning space",
+            size: "lg",
+            onClick: () => (window.location.href = "/spaces/planning"),
+          }}
+          supportContent={
+            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Startups"
+                  fill
+                  className="object-cover rounded-3xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
+                  Increase meeting effectiveness by 45%
+                </p>
+              </div>
+            </div>
+          }
+        />
+        <InfoPiece
+          title="Team retrospectives"
+          description="Navigate improvement discussions in our Sailboat space where teams place feedback on visual boards representing winds (what's helping), anchors (what's holding back), and more."
+          cta={{
+            variant: "text",
+            children: "Check our Sailboat Retrospective space",
+            size: "lg",
+            onClick: () =>
+              (window.location.href = "/spaces/sailboat-retrospective"),
+          }}
+          supportContent={
+            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Enterprise"
+                  fill
+                  className="object-cover rounded-3xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
+                  Increase meeting effectiveness by 45%
+                </p>
+              </div>
+            </div>
+          }
+          reverse={true}
+        />
+        <InfoPiece
+          title="Company All-hands"
+          description="Host engaging company meetings in our Auditorium where employees can vote with their avatars, ask questions, and break into themed discussion rooms."
+          cta={{
+            variant: "text",
+            children: "Check our Auditorium",
+            size: "lg",
+            onClick: () => (window.location.href = "/spaces/auditorium"),
+          }}
+          supportContent={
+            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Remote-first"
+                  fill
+                  className="object-cover rounded-3xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
+                  Increase meeting effectiveness by 45%
+                </p>
+              </div>
+            </div>
+          }
+        />
+        <InfoPiece
+          title="New hire onboarding"
+          description="Welcome new team members with interactive tours of your custom branded space, followed by icebreaker games that create natural connections with the team."
+          cta={{
+            variant: "text",
+            children: "Check our Campfire",
+            size: "lg",
+            onClick: () => (window.location.href = "/spaces/campfire"),
+          }}
+          supportContent={
+            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Hybrid"
+                  fill
+                  className="object-cover rounded-3xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
+                  Increase meeting effectiveness by 45%
+                </p>
+              </div>
+            </div>
+          }
+          reverse={true}
+        />
+        <InfoPiece
+          title="Remote team building"
+          description="Schedule regular competitive games in our Floor is Lava or Connect 4 spaces where colleagues build lasting relationships through shared experiences."
+          cta={{
+            variant: "text",
+            children: "Check our Farmyard space",
+            size: "lg",
+            onClick: () => (window.location.href = "/spaces/campfire"),
+          }}
+          supportContent={
+            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/images/campfire.jpg"
+                  alt="Hybrid"
+                  fill
+                  className="object-cover rounded-3xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
+                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
+                  Increase meeting effectiveness by 45%
+                </p>
+              </div>
+            </div>
+          }
+          reverse={true}
+        />
+      </Section>
+      <Section
+        preTitle="Contact"
+        title="Want to know more about Team Up!?"
+        subtitle="Let's discuss how Team Up! can solve your specific challenges."
+      >
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `
+              <script src="https://embed.ycb.me"	async="true"	data-domain="teamup-ignacio"	data-content="all"	data-displaymode="light"></script>
+            `,
+          }}
         />
       </Section>
       <ClosingCTA
         text="Start creating a company culture that works"
         buttonText="Request access"
       />
+      <TeamUpMonth />
     </div>
   );
 }
