@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Button from "./button";
+import Image from "next/image";
 import { cn } from "../lib/utils";
 
 const Hero = ({
@@ -8,12 +9,22 @@ const Hero = ({
   title,
   subtitle,
   buttons = [],
+  video,
+  image,
   extraContent,
   className = "",
   preTitleClassName,
   titleClassName,
   subtitleClassName,
   buttonsContainerClassName,
+  videoContainerClassName,
+  imageContainerClassName,
+  videoClassName,
+  imageClassName,
+  imageWidth = 1200,
+  imageHeight = 800,
+  videoAutoplay = false,
+  videoControls = true,
   bgClassName = "bg-purple-900",
 }) => {
   return (
@@ -65,7 +76,45 @@ const Hero = ({
           )}
         </div>
 
-        {extraContent && <div className="mt-16">{extraContent}</div>}
+        <div className="mt-16">
+          {video && (
+            <div
+              className={cn(
+                "w-full max-w-6xl mx-auto rounded-2xl lg:rounded-[40px] overflow-hidden shadow-xl",
+                videoContainerClassName
+              )}
+            >
+              <video
+                className={cn("w-full h-auto", videoClassName)}
+                src={video}
+                controls={videoControls}
+                autoPlay={videoAutoplay}
+                playsInline
+                muted={videoAutoplay}
+                loop={videoAutoplay}
+              />
+            </div>
+          )}
+
+          {image && !video && (
+            <div
+              className={cn(
+                "w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl",
+                imageContainerClassName
+              )}
+            >
+              <Image
+                src={image}
+                alt={title || "Hero image"}
+                width={imageWidth}
+                height={imageHeight}
+                className={cn("w-full h-auto object-cover", imageClassName)}
+              />
+            </div>
+          )}
+
+          {extraContent && !video && !image && extraContent}
+        </div>
       </div>
     </section>
   );

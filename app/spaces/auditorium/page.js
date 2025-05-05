@@ -30,35 +30,11 @@ export default function AuditoriumPage() {
           },
           /* { variant: "tertiary", size: "md", children: "View pricing" },*/
         ]}
-        extraContent={
-          <div className="max-w-[1200px] mx-auto">
-            <div
-              className=""
-              style={{
-                position: "relative",
-                paddingBottom: "54.13533834586466%",
-                height: 0,
-                marginTop: "40px",
-              }}
-            >
-              <iframe
-                src="https://www.loom.com/embed/98c19c69a60f46778b85332c5b25633f?sid=9b6a175e-fc80-4b7b-8213-fd05ef9c4b1c"
-                frameBorder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowFullScreen
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                className="rounded-[40px]"
-              ></iframe>
-            </div>
-          </div>
+        video={
+          "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-auditorium.webm"
         }
+        videoAutoplay={true}
+        videoControls={false}
         bgClassName="bg-blue-50"
       />
       <Testimonial
@@ -79,7 +55,6 @@ export default function AuditoriumPage() {
         title="Everything you need for a successful town hall"
         titleClassName="max-w-[960px] mx-auto"
         className="overflow-hidden"
-        
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 lg:gap-y-8 max-w-[960px] mx-auto">
           <CheckmarkItem text="Only the presenter can talk" />
