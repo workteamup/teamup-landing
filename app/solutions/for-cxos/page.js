@@ -89,7 +89,7 @@ export default function ForCXOsPage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months. The ROI has been exceptional: our engagement costs dropped while our results improved dramatically."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

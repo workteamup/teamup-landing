@@ -64,7 +64,7 @@ export default function Connect4Page() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="Connect 4 tournaments reveal who thinks ahead, performs under pressure, and supports teammates after missed shots."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

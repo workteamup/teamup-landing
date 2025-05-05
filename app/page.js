@@ -709,7 +709,7 @@ export default function Home() {
       >
         <div>
           <InfoPiece
-            title="Annual team buildingevents"
+            title="Annual team building events"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
             supportContent={
               <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
@@ -953,6 +953,28 @@ export default function Home() {
         </div>
       </Section>
       <Section
+        title="What a month with Team Up! looks like"
+        titleClassName="max-w-[1200px]"
+        subtitle="Click on the meetings to see the space used"
+        bgClassName=""
+        className="overflow-hidden max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <TeamUpMonth />
+      </Section>
+      <Section
         preTitle="Contact"
         title="Want to know more about Team Up!?"
         subtitle="Let's discuss how Team Up! can solve your specific challenges."
@@ -969,7 +991,6 @@ export default function Home() {
         text="Start creating a company culture that works"
         buttonText="Request access"
       />
-      <TeamUpMonth />
     </div>
   );
 }

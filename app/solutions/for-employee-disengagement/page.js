@@ -97,7 +97,7 @@ export default function EmployeeDisengagementPage() {
       </Section>
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="Team Up! has transformed our remote work culture. The 3D environments and game-based activities give our team something to look forward to each day. Our engagement scores have increased by 47% in just three months."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

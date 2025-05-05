@@ -113,7 +113,7 @@ export default function ForFunCompetitionsPage() {
       </Section>
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up! made our 500-person global all-hands feel intimate and interactive. The 3D auditorium with breakout spaces created genuine connections across our international teams that we never achieved with traditional webinars. "
+        quote="Our team absolutely loves the games in Team Up! The Farmyard competitions have become the highlight of our week! We've seen improved communication during projects and a 38% increase in cross-department collaboration since we started these regular game sessions."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

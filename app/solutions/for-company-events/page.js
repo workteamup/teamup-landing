@@ -112,7 +112,7 @@ export default function ForCompanyEventsPage() {
       </Section>
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="We've seen improved communication during projects and a 38% increase in cross-department collaboration since we started these regular game sessions."
+        quote="Team Up! made our 500-person global all-hands feel intimate and interactive. The 3D auditorium with breakout spaces created genuine connections across our international teams that we never achieved with traditional webinar platforms."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

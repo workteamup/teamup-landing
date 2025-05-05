@@ -64,7 +64,7 @@ export default function CampfirePage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="The random conversation cards are brilliant! Our team discovered connections we never knew existed. What used to be awkward remote social time has becme something everyone looks forward to."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

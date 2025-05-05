@@ -64,7 +64,7 @@ export default function PlanningPage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="Planning poker was always clunky in 2D tools. The Team Up! Planning space turned our sprint planning from a chore into an engaging ritual our engineers actually look forward to."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

@@ -87,7 +87,7 @@ export default function ForHRPage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="New hires feel truly welcomed and connected from day one, and our retention rate has improved by 34% since implementation."
+        quote="I've tried every collaboration tool on the market but nothing compares to Team Up! My distributed team now feels truly connected. Our planning sessions are more productive, decisions happen faster, and I can finally read the room even in remote meetings."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

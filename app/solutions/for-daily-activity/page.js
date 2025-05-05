@@ -113,7 +113,7 @@ export default function ForDailyActivityPage() {
       </Section>
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="Team Up! made our daily stand-ups feel like we're in the same room, our team is more connected than ever. The 3D space gives a sense of presence that Zoom never could, and our meeting effectiveness scores have increased by 45%."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

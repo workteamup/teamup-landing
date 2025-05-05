@@ -97,7 +97,7 @@ export default function EmployeeTurnoverPage() {
       </Section>
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="Team Up! has been a game-changer for our distributed team. The dynamic 3D spaces and interactive games have given our team something to bond over. Our turnover rate has never been lower - down 32% in six months."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

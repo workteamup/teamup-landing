@@ -40,7 +40,7 @@ export default function AuditoriumPage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="The Auditorium changed how we run our all-hands meetings. The voting feature makes getting instad feedback so intuitive - our team engagement is up 78% since we started using it!"
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

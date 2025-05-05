@@ -64,7 +64,7 @@ export default function TheFarmyardPage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="The Farmyard reveals how we work together. Quiet engineers emerge as strategic masterminds and communication patterns improve."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

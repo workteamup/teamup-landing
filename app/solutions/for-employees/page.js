@@ -88,7 +88,7 @@ export default function ForEmployeesPage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="I've made real friendships with colleagues I've never met in person, and work feels fun again. It's the perfect balance of social connection without feeling forced."
+        quote="Working remotely was isolating me from my team until we started using Team Up! Now I actually look forward to our Farmyard competitions and coffee break chats. I've made real friendships with colleagues I've never met in person, and work feels fun again. It's the perfect balance of social connection without feeling forced."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

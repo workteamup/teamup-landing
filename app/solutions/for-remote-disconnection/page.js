@@ -97,7 +97,7 @@ export default function RemoteDisconnectionPage() {
       </Section>
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="Team Up! has made our global team feel like we're all in the same room. The 3D environments create a sense of place that Zoom never could, and we've seen collaboration increase by 40% between our US and European teams."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

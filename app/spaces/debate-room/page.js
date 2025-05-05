@@ -64,7 +64,7 @@ export default function DebateRoomPage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="The physical component of being 'ejected' when your time is up adds a playful yet effective mechanism to keep our discussions balanced. It's transformed how we brainstorm."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

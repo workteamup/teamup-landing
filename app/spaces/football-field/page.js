@@ -64,7 +64,7 @@ export default function FootballFieldPage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="The 5-minute football breaks have become our team's energy reset button. After just one quick match, our afternoon meetings are noticeably more focused and creative."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

@@ -64,7 +64,7 @@ export default function SailboatRetrospectivePage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="The physical movement aspect of placing notes on different parts of the sailboat created a flow to our retro that was missing in 2D tools. Team members actually look forward to our retrospectives now."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

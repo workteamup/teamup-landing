@@ -64,7 +64,7 @@ export default function TheFloorIsLavaPage() {
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
-        quote="Team Up!'s 3D environments delivered a 15% productivity boost and a 25% drop in turnover in just six months."
+        quote="Watching our normally serious CTO slip and dramatically fall into the lava create a moment of shared laughter that broke down hierarchies. These small moments build a culture no amount of formal team building can match."
         person={{
           image: "/images/campfire.jpg",
           name: "Pablo Yusta",

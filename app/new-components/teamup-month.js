@@ -4,7 +4,11 @@ import { cn } from "../lib/utils";
 import Button from "./button";
 import { X } from "lucide-react";
 
-const TeamUpMonth = ({ className = "", containerClassName = "" }) => {
+const TeamUpMonth = ({
+  className = "",
+  containerClassName = "",
+  stats = false,
+}) => {
   const [currentDate] = useState(new Date(2025, 4, 1)); // May 2025
   const [selectedMeeting, setSelectedMeeting] = useState(null);
 
@@ -94,7 +98,7 @@ const TeamUpMonth = ({ className = "", containerClassName = "" }) => {
       Campfire:
         "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/campfire_padded.png",
       "Debate Room":
-        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/debate-room_padded.png",
+        "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/debate_padded.png",
       "Custom Branded Space":
         "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/custom-branded_padded.png",
       "Connect 4":
@@ -124,14 +128,6 @@ const TeamUpMonth = ({ className = "", containerClassName = "" }) => {
         )}
       >
         <div className="mb-6">
-          <h2 className="text-3xl lg:text-5xl font-medium text-center mb-2">
-            A Month with Team Up!
-          </h2>
-          <p className="text-lg lg:text-2xl text-dark-graphite text-center mb-12">
-            See how different teams leverage Team Up! spaces throughout their
-            month
-          </p>
-
           <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
             <div className="flex items-center">
               <div className="mr-2 h-5 w-5 text-brand-600">
@@ -268,69 +264,60 @@ const TeamUpMonth = ({ className = "", containerClassName = "" }) => {
             </div>
           )}
         </div>
+        {stats && (
+          <div className="mt-12 pt-6">
+            <h3 className="text-xl font-semibold mb-6">
+              Team Up! Spaces Utilized
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="border border-dark-smoke rounded-lg p-4 bg-dark-cloud/10">
+                <h4 className="font-semibold mb-2">Most Used Spaces</h4>
+                <ul className="mt-2 space-y-2">
+                  <li className="flex justify-between">
+                    <span>Planning Space</span>
+                    <span className="font-medium">47 meetings</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Auditorium</span>
+                    <span className="font-medium">14 meetings</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Campfire</span>
+                    <span className="font-medium">8 meetings</span>
+                  </li>
+                </ul>
+              </div>
 
-        <div className="mt-12 border-t border-dark-smoke pt-6">
-          <h3 className="text-xl font-semibold mb-6">
-            Team Up! Spaces Utilized
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="border border-dark-smoke rounded-lg p-4 bg-dark-cloud/10">
-              <h4 className="font-semibold mb-2">Most Used Spaces</h4>
-              <ul className="mt-2 space-y-2">
-                <li className="flex justify-between">
-                  <span>Planning Space</span>
-                  <span className="font-medium">47 meetings</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Auditorium</span>
-                  <span className="font-medium">14 meetings</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Campfire</span>
-                  <span className="font-medium">8 meetings</span>
-                </li>
-              </ul>
-            </div>
+              <div className="border border-dark-smoke rounded-lg p-4 bg-dark-cloud/10">
+                <h4 className="font-semibold mb-2">Top Team Building Spaces</h4>
+                <ul className="mt-2 space-y-2">
+                  <li className="flex justify-between">
+                    <span>Floor is Lava</span>
+                    <span className="font-medium">5 sessions</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Connect 4</span>
+                    <span className="font-medium">4 sessions</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>The Farmyard</span>
+                    <span className="font-medium">3 sessions</span>
+                  </li>
+                </ul>
+              </div>
 
-            <div className="border border-dark-smoke rounded-lg p-4 bg-dark-cloud/10">
-              <h4 className="font-semibold mb-2">Top Team Building Spaces</h4>
-              <ul className="mt-2 space-y-2">
-                <li className="flex justify-between">
-                  <span>Floor is Lava</span>
-                  <span className="font-medium">5 sessions</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Connect 4</span>
-                  <span className="font-medium">4 sessions</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>The Farmyard</span>
-                  <span className="font-medium">3 sessions</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="border border-dark-smoke rounded-lg p-4 bg-dark-cloud/10">
-              <h4 className="font-semibold mb-2">Special Events</h4>
-              <ul className="mt-2 space-y-2">
-                <li>Monthly All-Hands</li>
-                <li>End-of-Month Celebration</li>
-                <li>4 Weekly Lunch & Learns</li>
-                <li>Employee Appreciation Event</li>
-              </ul>
+              <div className="border border-dark-smoke rounded-lg p-4 bg-dark-cloud/10">
+                <h4 className="font-semibold mb-2">Special Events</h4>
+                <ul className="mt-2 space-y-2">
+                  <li>Monthly All-Hands</li>
+                  <li>End-of-Month Celebration</li>
+                  <li>4 Weekly Lunch & Learns</li>
+                  <li>Employee Appreciation Event</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-dark-graphite mb-6">
-            Transform how your team connects with purpose-built 3D spaces for
-            every meeting type
-          </p>
-          <Button variant="primary" size="lg">
-            Start Your Free 30-Day Trial
-          </Button>
-        </div>
+        )}
       </div>
     </section>
   );
