@@ -12,10 +12,13 @@ const InfoPiece = ({
   description,
   cta,
   supportContent,
+  image,
+  video,
   className = "",
   containerClassName = "",
   textContentClassName = "",
   supportContentClassName = "",
+  mediaContainerClassName = "",
   iconContainerClassName = "",
   iconClassName = "",
   preTitleClassName = "",
@@ -23,6 +26,12 @@ const InfoPiece = ({
   titleClassName = "",
   descriptionClassName = "",
   ctaClassName = "",
+  videoClassName = "",
+  imageClassName = "",
+  videoAutoplay = true,
+  videoControls = false,
+  imageWidth = 440,
+  imageHeight = 248,
   reverse = false,
 }) => {
   return (
@@ -111,17 +120,49 @@ const InfoPiece = ({
           )}
         </div>
 
-        {/* Support Content */}
-        {supportContent && (
-          <div
-            className={cn(
-              "w-full lg:w-1/2 flex justify-center",
-              supportContentClassName
-            )}
-          >
-            {supportContent}
-          </div>
-        )}
+        {/* Media content (supportContent, video, or image) */}
+        <div
+          className={cn(
+            "w-full lg:w-1/2 max-w-[440px] flex justify-center",
+            supportContentClassName
+          )}
+        >
+          {supportContent && supportContent}
+
+          {!supportContent && video && (
+            <div
+              className={cn(
+                "w-full relative rounded-lg overflow-hidden",
+                mediaContainerClassName
+              )}
+            >
+              <video
+                autoPlay={videoAutoplay}
+                loop={videoAutoplay}
+                muted={videoAutoplay}
+                controls={videoControls}
+                playsInline
+                className={cn("w-full h-auto rounded-lg", videoClassName)}
+                style={{ aspectRatio: "auto" }}
+              >
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
+
+          {!supportContent && !video && image && (
+            <div className={cn("relative w-full", mediaContainerClassName)}>
+              <Image
+                src={image}
+                alt={title || "Feature image"}
+                width={imageWidth}
+                height={imageHeight}
+                className={cn("object-contain rounded-lg", imageClassName)}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );

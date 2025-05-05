@@ -180,7 +180,7 @@ export default function Home() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[960px] mx-auto">
           <InfoElement
             imageSrc="/images/campfire.jpg"
             title="Immersive 3D environments"
@@ -269,19 +269,7 @@ export default function Home() {
         <InfoPiece
           tag="Engagement"
           title="Spark conversation and foster connection"
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description={
             <div className="space-y-3">
@@ -318,19 +306,7 @@ export default function Home() {
         <InfoPiece
           tag="Work"
           title="Transform routine collaboration into interactive experiences"
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description={
             <div className="space-y-3">
               <div>
@@ -366,19 +342,7 @@ export default function Home() {
         <InfoPiece
           tag="Fun"
           title="Build real teamwork skills through shared challenges and laughter"
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description={
             <div className="space-y-3">
               <div>
@@ -475,7 +439,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
+                <p className="absolute bottom-5 lg:bottom-12 right-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
                   Increase meeting effectiveness by 45%
                 </p>
               </div>
@@ -786,7 +750,6 @@ export default function Home() {
               </div>
             </div>
           }
-          reverse={true}
         />
       </Section>
       <Section
