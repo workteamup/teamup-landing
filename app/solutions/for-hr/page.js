@@ -415,6 +415,7 @@ export default function ForHRPage() {
             variant: "primary",
             children: "Check out our This or that space",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/campfire"),
           }}
         />
@@ -435,9 +436,10 @@ export default function ForHRPage() {
           }
           description="Take advantage of Team Up!'s games and challenges to organize company-wide events that boost engagement, foster a sense of belonging, and build a strong company culture."
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "See what you can do in Connect 4",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/connect-4"),
           }}
         />
@@ -459,9 +461,10 @@ export default function ForHRPage() {
           description="Let your employees ask questions to the CEO or other CXOs in a casual and engaging environment or let your leaders host AMA sessions to share their expertise and insights."
           reverse={true}
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Check the auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/auditorium"),
           }}
         />

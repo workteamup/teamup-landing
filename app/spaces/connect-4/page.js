@@ -9,6 +9,7 @@ import InfoElement from "../../new-components/info-element";
 import InfoPiece from "../../new-components/info-piece";
 import Image from "next/image";
 import ClosingCTA from "../../new-components/closing-cta";
+import { ArrowRight } from "lucide-react";
 
 export default function Connect4Page() {
   return (
@@ -238,6 +239,7 @@ export default function Connect4Page() {
             variant: "text",
             children: "Create your first department battle",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -262,6 +264,7 @@ export default function Connect4Page() {
             variant: "text",
             children: "Start new hire integration",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -287,6 +290,7 @@ export default function Connect4Page() {
             variant: "text",
             children: "Start having fun with your leaders",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}

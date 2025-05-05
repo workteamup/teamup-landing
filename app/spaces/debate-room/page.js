@@ -9,6 +9,7 @@ import InfoElement from "../../new-components/info-element";
 import InfoPiece from "../../new-components/info-piece";
 import Image from "next/image";
 import ClosingCTA from "../../new-components/closing-cta";
+import { ArrowRight } from "lucide-react";
 
 export default function DebateRoomPage() {
   return (
@@ -220,6 +221,7 @@ export default function DebateRoomPage() {
             variant: "text",
             children: "Start team building in the Debate room",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -244,6 +246,7 @@ export default function DebateRoomPage() {
             variant: "text",
             children: "Start making decisions in the Debate room",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}

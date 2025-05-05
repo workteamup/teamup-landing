@@ -9,6 +9,7 @@ import InfoElement from "../../new-components/info-element";
 import InfoPiece from "../../new-components/info-piece";
 import Image from "next/image";
 import ClosingCTA from "../../new-components/closing-cta";
+import { ArrowRight } from "lucide-react";
 
 export default function ThisOrThatPage() {
   return (
@@ -235,6 +236,7 @@ export default function ThisOrThatPage() {
             variant: "text",
             children: "Start beginning meetings on a fun note",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -259,6 +261,7 @@ export default function ThisOrThatPage() {
             variant: "text",
             children: "Start getting important insights",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -284,6 +287,7 @@ export default function ThisOrThatPage() {
             variant: "text",
             children: "Start connecting over fun topics",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}

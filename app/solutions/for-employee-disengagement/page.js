@@ -387,9 +387,10 @@ export default function EmployeeDisengagementPage() {
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Create a meeting in the Auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
         <InfoPiece
@@ -410,9 +411,10 @@ export default function EmployeeDisengagementPage() {
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Create a meeting in the Auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
         <InfoPiece
@@ -434,9 +436,10 @@ export default function EmployeeDisengagementPage() {
           team bonding and casual discussions."
           reverse={true}
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Create a meeting in the Auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
       </Section>

@@ -11,6 +11,7 @@ import Image from "next/image";
 import { Check, X } from "lucide-react";
 import Steps from "../../new-components/steps";
 import ProsConsList from "../../new-components/pros-cons-list";
+import 
 
 export default function RemoteDisconnectionPage() {
   return (
@@ -387,9 +388,10 @@ export default function RemoteDisconnectionPage() {
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Create a meeting in the Auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
         <InfoPiece
@@ -410,9 +412,10 @@ export default function RemoteDisconnectionPage() {
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Create a meeting in the Auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
         <InfoPiece
@@ -434,9 +437,10 @@ export default function RemoteDisconnectionPage() {
           team bonding and casual discussions."
           reverse={true}
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Create a meeting in the Auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
       </Section>

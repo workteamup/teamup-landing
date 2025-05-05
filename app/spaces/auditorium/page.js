@@ -9,6 +9,7 @@ import InfoElement from "../../new-components/info-element";
 import InfoPiece from "../../new-components/info-piece";
 import Image from "next/image";
 import ClosingCTA from "../../new-components/closing-cta";
+import { ArrowRight } from "lucide-react";
 
 export default function AuditoriumPage() {
   return (
@@ -211,6 +212,7 @@ export default function AuditoriumPage() {
             variant: "text",
             children: "Create a company all hands meeting",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -236,6 +238,7 @@ export default function AuditoriumPage() {
             variant: "text",
             children: "Create a company town hall",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -262,6 +265,7 @@ export default function AuditoriumPage() {
             variant: "text",
             children: "Create an AMA session",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}

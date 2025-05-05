@@ -441,6 +441,7 @@ export default function ForDailyActivityPage() {
             variant: "text",
             children: "Start your first mood check-in",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -466,6 +467,7 @@ export default function ForDailyActivityPage() {
             variant: "text",
             children: "Start your first sprint planning",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}

@@ -9,6 +9,7 @@ import InfoElement from "../../new-components/info-element";
 import InfoPiece from "../../new-components/info-piece";
 import Image from "next/image";
 import ClosingCTA from "../../new-components/closing-cta";
+import { ArrowRight } from "lucide-react";
 
 export default function FootballFieldPage() {
   return (
@@ -228,6 +229,7 @@ export default function FootballFieldPage() {
             variant: "text",
             children: "Start having breaks in the Football field",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -252,6 +254,7 @@ export default function FootballFieldPage() {
             variant: "text",
             children: "Start having a daily ritual",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -277,6 +280,7 @@ export default function FootballFieldPage() {
             variant: "text",
             children: "Start having a remote happy hour",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -302,6 +306,7 @@ export default function FootballFieldPage() {
             variant: "text",
             children: "Start having a remote happy hour",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -327,6 +332,7 @@ export default function FootballFieldPage() {
             variant: "text",
             children: "Start having a remote happy hour",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}

@@ -9,6 +9,7 @@ import InfoElement from "../../new-components/info-element";
 import InfoPiece from "../../new-components/info-piece";
 import Image from "next/image";
 import ClosingCTA from "../../new-components/closing-cta";
+import { ArrowRight } from "lucide-react";
 
 export default function TheFarmyardPage() {
   return (
@@ -227,6 +228,7 @@ export default function TheFarmyardPage() {
             variant: "text",
             children: "Create a company-wide competition",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -251,6 +253,7 @@ export default function TheFarmyardPage() {
             variant: "text",
             children: "Create a leadership assessment",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -276,6 +279,7 @@ export default function TheFarmyardPage() {
             variant: "text",
             children: "Start onboarding in The Farmyard",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}

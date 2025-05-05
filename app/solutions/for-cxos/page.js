@@ -419,6 +419,7 @@ export default function ForCXOsPage() {
             variant: "primary",
             children: "Take a look at our Campfire",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/campfire"),
           }}
         />
@@ -443,6 +444,7 @@ export default function ForCXOsPage() {
             variant: "primary",
             children: "Check out our Planning space",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/planning"),
           }}
         />
@@ -468,6 +470,7 @@ export default function ForCXOsPage() {
             variant: "primary",
             children: "See how The Farmyard works",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/the-farmyard"),
           }}
         />
