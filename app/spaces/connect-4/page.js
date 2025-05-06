@@ -117,7 +117,7 @@ export default function Connect4Page() {
               title: "Create a meeting in the Connect 4 space",
               description:
                 "Create a meeting in the Connect 4 space, invite your team to join and let the fun begin.",
-              image: "/images/campfire.jpg",
+              video: "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-connect4.webm",
             },
             {
               title: "Join and organize in pairs or groups of four",

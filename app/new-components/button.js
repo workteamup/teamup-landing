@@ -34,7 +34,7 @@ const Button = ({
     primary: "bg-purple-600 text-white border-transparent",
     secondary: "bg-white text-brand-700 border border-purple-600",
     tertiary: "bg-purple-50 text-purple-600 border-transparent",
-    text: "text-brand-700 bg-transparent border-transparent p-0 h-auto",
+    text: "text-brand-700 bg-transparent border-transparent p-0 h-auto max-w-full",
   };
 
   const shadowClasses =
@@ -50,6 +50,28 @@ const Button = ({
     lg: "h-6 w-6",
     xl: "h-7 w-7",
   };
+
+  const renderContent = () => (
+    <>
+      {iconOnly ? (
+        React.cloneElement(children, { className: iconSizeClasses[size] })
+      ) : (
+        <>
+          {iconLeft && (
+            <span className={cn("mr-2 flex-shrink-0", iconSizeClasses[size])}>
+              {React.cloneElement(iconLeft, { className: "w-full h-full" })}
+            </span>
+          )}
+          <span className="truncate">{children}</span>
+          {iconRight && (
+            <span className={cn("ml-2 flex-shrink-0", iconSizeClasses[size])}>
+              {React.cloneElement(iconRight, { className: "w-full h-full" })}
+            </span>
+          )}
+        </>
+      )}
+    </>
+  );
 
   if (href) {
     return (
@@ -69,7 +91,7 @@ const Button = ({
                 }[size]
               )
             : variant === "text"
-            ? "p-0"
+            ? "p-0 inline-flex max-w-full"
             : {
                 sm: "px-[18px] py-3",
                 md: "px-5 py-[14px]",
@@ -83,23 +105,7 @@ const Button = ({
         )}
         {...props}
       >
-        {iconOnly ? (
-          React.cloneElement(children, { className: iconSizeClasses[size] })
-        ) : (
-          <>
-            {iconLeft && (
-              <span className={cn("mr-2", iconSizeClasses[size])}>
-                {React.cloneElement(iconLeft, { className: "w-full h-full" })}
-              </span>
-            )}
-            <span>{children}</span>
-            {iconRight && (
-              <span className={cn("ml-2", iconSizeClasses[size])}>
-                {React.cloneElement(iconRight, { className: "w-full h-full" })}
-              </span>
-            )}
-          </>
-        )}
+        {renderContent()}
       </Link>
     );
   }
@@ -120,7 +126,7 @@ const Button = ({
               }[size]
             )
           : variant === "text"
-          ? "p-0"
+          ? "p-0 inline-flex max-w-full"
           : {
               sm: "px-[18px] py-3",
               md: "px-5 py-3.5",
@@ -135,23 +141,7 @@ const Button = ({
       onClick={onClick}
       {...props}
     >
-      {iconOnly ? (
-        React.cloneElement(children, { className: iconSizeClasses[size] })
-      ) : (
-        <>
-          {iconLeft && (
-            <span className={cn("mr-2", iconSizeClasses[size])}>
-              {React.cloneElement(iconLeft, { className: "w-full h-full" })}
-            </span>
-          )}
-          <span>{children}</span>
-          {iconRight && (
-            <span className={cn("ml-2", iconSizeClasses[size])}>
-              {React.cloneElement(iconRight, { className: "w-full h-full" })}
-            </span>
-          )}
-        </>
-      )}
+      {renderContent()}
     </button>
   );
 };

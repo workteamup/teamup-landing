@@ -118,7 +118,8 @@ export default function TheFarmyardPage() {
               title: "Create a meeting room in The Farmyard",
               description:
                 "Create a meeting room in The Farmyard and invite everyone in your team to join.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-farmyard.webm",
             },
             {
               title: "Form the three different teams",

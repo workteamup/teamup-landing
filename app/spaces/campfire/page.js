@@ -117,7 +117,8 @@ export default function CampfirePage() {
               title: "Invite your team to the Campfire",
               description:
                 "Set up a meeting in the Campfire and invite all the members of your team.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-campfire.webm",
             },
             {
               title: "Gather around the fire",

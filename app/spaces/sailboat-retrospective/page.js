@@ -217,19 +217,7 @@ export default function SailboatRetrospectivePage() {
       >
         <InfoPiece
           title="Sailboat retrospective"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description="Needless to say, the Sailboat retrospective space is perfect for the sailboat retrospective. *Wink wink*"
           cta={{
@@ -243,19 +231,7 @@ export default function SailboatRetrospectivePage() {
         />
         <InfoPiece
           title="Brainstorming sessions"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Take advantage of the built-in features in the Sailboat retrospective space to brainstorm ideas and solutions."
           cta={{
             variant: "text",

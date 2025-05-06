@@ -100,19 +100,7 @@ export default function Home() {
             children: "Employee turnover solutions",
             href: "/solutions/for-employee-turnover",
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/auditorium.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
         />
 
         <InfoPiece
@@ -123,19 +111,7 @@ export default function Home() {
             children: "Employee disengagement solutions",
             href: "/solutions/for-employee-disengagement",
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/farm.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
         />
 
@@ -147,19 +123,7 @@ export default function Home() {
             children: "Remote disconnection solutions",
             href: "/solutions/for-remote-disconnection",
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
         />
       </Section>
       <Section
@@ -402,23 +366,7 @@ export default function Home() {
             children: "Learn more",
             size: "lg",
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Startups"
-                  fill
-                  className="object-cover rounded-3xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
-                  Increase meeting effectiveness by 45%
-                </p>
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
         />
         <InfoPiece
           tag="Enterprise"
@@ -429,23 +377,7 @@ export default function Home() {
             children: "Learn more",
             size: "lg",
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Enterprise"
-                  fill
-                  className="object-cover rounded-3xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-5 lg:bottom-12 right-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
-                  Increase meeting effectiveness by 45%
-                </p>
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
         />
         <InfoPiece
@@ -457,23 +389,7 @@ export default function Home() {
             children: "Learn more",
             size: "lg",
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Remote-first"
-                  fill
-                  className="object-cover rounded-3xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
-                  Increase meeting effectiveness by 45%
-                </p>
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
         />
         <InfoPiece
           tag="Hybrid"
@@ -484,23 +400,7 @@ export default function Home() {
             children: "Learn more",
             size: "lg",
           }}
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[420px] rounded-3xl flex items-center justify-center relative overflow-hidden">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Hybrid"
-                  fill
-                  className="object-cover rounded-3xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-3xl"></div>
-                <p className="absolute bottom-5 lg:bottom-12 left-5 lg:right-12 text-white text-2xl lg:text-4xl font-medium text-left lg:text-right max-w-[500px] break-words hyphens-none">
-                  Increase meeting effectiveness by 45%
-                </p>
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
         />
       </Section>
@@ -711,19 +611,7 @@ export default function Home() {
           <InfoPiece
             title="Annual team building events"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -740,19 +628,7 @@ export default function Home() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -772,19 +648,7 @@ export default function Home() {
           <InfoPiece
             title="Daily stand-up meetings"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -801,19 +665,7 @@ export default function Home() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -833,19 +685,7 @@ export default function Home() {
           <InfoPiece
             title="Company All-hands meetings"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -862,19 +702,7 @@ export default function Home() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -894,19 +722,7 @@ export default function Home() {
           <InfoPiece
             title="Remote onboarding"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -923,19 +739,7 @@ export default function Home() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"

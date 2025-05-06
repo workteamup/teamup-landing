@@ -118,7 +118,8 @@ export default function FootballFieldPage() {
               title: "Move everyone to the football field",
               description:
                 "Start a break during a meeting and move everyone to the football field.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-footballfield.webm",
             },
             {
               title: "Step into the field and organize the teams",

@@ -117,7 +117,8 @@ export default function DebateRoomPage() {
               title: "Invite participants and audience to the Debate room",
               description:
                 "Set up a meeting in the Debate room and invite everyone to join.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-debate.webm",
             },
             {
               title: "Set up the different timer options",

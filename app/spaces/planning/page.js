@@ -119,7 +119,8 @@ export default function PlanningPage() {
               title: "Get your team ready in the Planning space",
               description:
                 "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-planning.webm",
             },
             {
               title: "Step into the moderator platform",
@@ -219,19 +220,7 @@ export default function PlanningPage() {
       >
         <InfoPiece
           title="Sprint planning"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
@@ -246,19 +235,7 @@ export default function PlanningPage() {
         />
         <InfoPiece
           title="Strategic planning meetings"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
@@ -272,19 +249,7 @@ export default function PlanningPage() {
         />
         <InfoPiece
           title="Feedback gathering sessions"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           reverse={true}

@@ -93,7 +93,8 @@ export default function AuditoriumPage() {
               title: "Invite your employees to the town hall",
               description:
                 "Create a meeting in the Auditorium and invite all your employees",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-auditorium.webm",
             },
             {
               title: "Gather them around the stands",
@@ -192,19 +193,7 @@ export default function AuditoriumPage() {
       >
         <InfoPiece
           title="Company all hands"
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
@@ -219,19 +208,7 @@ export default function AuditoriumPage() {
         />
         <InfoPiece
           title="Company town hall"
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
@@ -245,19 +222,7 @@ export default function AuditoriumPage() {
         />
         <InfoPiece
           title="AMA sessions"
-          supportContent={
-            <div className="w-full h-[300px] lg:h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           reverse={true}
