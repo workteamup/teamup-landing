@@ -15,6 +15,7 @@ import LogoSlider from "@/app/new-components/logo-slider";
 import CTA from "@/app/new-components/cta";
 import TeamUpMonth from "@/app/new-components/teamup-month";
 import ProsConsList from "./new-components/pros-cons-list";
+import { DollarSign, Users, BarChart, ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -22,9 +23,9 @@ export default function Home() {
       <Hero
         preTitle="The #1 solution for a connected workforce"
         preTitleClassName="text-purple-500"
-        title="Transform team connections into business success"
+        title="Boost engagement, strengthen culture and reduce turnover"
         titleClassName="max-w-[1200px] text-purple-900"
-        subtitle="Boost engagement, strengthen culture, and reduce turnover wherever your teams work."
+        subtitle="Transform routine interactions into opportunities for connection that drive business results"
         subtitleClassName="max-w-[720px] text-purple-700"
         buttons={[
           {
@@ -183,6 +184,7 @@ export default function Home() {
             </div>
           }
         />
+
         <InfoPiece
           tag="Work"
           title="Transform routine collaboration into interactive experiences"
@@ -267,6 +269,59 @@ export default function Home() {
         />
       </Section>
       <Section
+        preTitle="Benefits"
+        title="Why you have to start using Team Up!"
+        titleClassName="max-w-[820px]"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting room now",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1400px] mx-auto gap-x-12 gap-y-12">
+          <ChecklistElement
+            iconSrc={<DollarSign className="w-12 h-12 text-purple-600" />}
+            title="Reduce costs, increase returns"
+            titleClassName="min-h-[64px] md:min-h-[64px]"
+            items={[
+              "Enhance event effectiveness while reducing travel and venue costs.",
+              "Cut turnover costs by 30% through improved team connection and engagement.",
+              "Reduce the $400 billion lost annually to unproductive meetings with engaging, purpose-built spaces.",
+            ]}
+          />
+          <ChecklistElement
+            iconSrc={<Users className="w-12 h-12 text-purple-600" />}
+            title="Build a culture that attracts and retains talent"
+            titleClassName="min-h-[64px] md:min-h-[64px]"
+            items={[
+              "Create consistent team experiences that build lasting relationships.",
+              "Foster spontaneous interactions that drives innovation and problem-solving.",
+              "Develop shared memories and inside jokes that strengthen team identity.",
+              "Build soft skills through play that transfer directly to work projects.",
+            ]}
+          />
+          <ChecklistElement
+            iconSrc={<BarChart className="w-12 h-12 text-purple-600" />}
+            title="Better ways of working together"
+            titleClassName="min-h-[64px] md:min-h-[64px]"
+            items={[
+              "Increase meeting participation by 45% through immersive environments.",
+              "Imrpove information retention by 40% compared to traditional meetings.",
+              "Enhance cross-team collaboration by 38% through shared experiences.",
+              "Maintain culture continuity across any workplace model (in-office, hybrid, remote)",
+            ]}
+          />
+        </div>
+      </Section>
+      <Section
         preTitle="Who's it for?"
         title="Team Up! works for companies like yours"
         bgClassName="bg-white"
@@ -319,6 +374,25 @@ export default function Home() {
           reverse={true}
         />
       </Section>
+      <CTA
+        mainClaim="Ready to transform your team?"
+        description="Join thousands of companies improving their team culture with TeamUp"
+        buttons={[
+          {
+            children: "Get Started",
+            variant: "primary",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            children: "Learn More",
+            variant: "tertiary",
+            size: "xl",
+            onClick: () => (window.location.href = "/features"),
+          },
+        ]}
+      />
 
       <Section
         preTitle="Features"
@@ -344,25 +418,7 @@ export default function Home() {
           <CheckmarkItem text="Whiteboard" />
         </div>
       </Section>
-      <CTA
-        mainClaim="Ready to transform your team?"
-        description="Join thousands of companies improving their team culture with TeamUp"
-        buttons={[
-          {
-            children: "Get Started",
-            variant: "primary",
-            size: "xl",
-            onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
-          },
-          {
-            children: "Learn More",
-            variant: "tertiary",
-            size: "xl",
-            onClick: () => (window.location.href = "/features"),
-          },
-        ]}
-      />
+
       <Section
         title="Gaming inspired features that transform work"
         titleClassName="max-w-[960px] lg:text-6xl font-medium"
@@ -406,59 +462,6 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section
-        preTitle="Benefits"
-        title="Why you have to start using Team Up!"
-        titleClassName="max-w-[820px]"
-        buttons={[
-          {
-            variant: "primary",
-            children: "Request access",
-            size: "xl",
-          },
-          {
-            variant: "secondary",
-            children: "Create your first meeting room now",
-            size: "xl",
-          },
-        ]}
-        buttonsPosition="bottom"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-[1400px] mx-auto gap-x-12 gap-y-12">
-          <ChecklistElement
-            iconSrc="/images/icon1.png"
-            title="Reduce costs, increase returns"
-            titleClassName="min-h-[64px] md:min-h-[64px]"
-            items={[
-              "Enhance event effectiveness while reducing travel and venue costs.",
-              "Cut turnover costs by 30% through improved team connection and engagement.",
-              "Reduce the $400 billion lost annually to unproductive meetings with engaging, purpose-built spaces.",
-            ]}
-          />
-          <ChecklistElement
-            iconSrc="/images/icon2.png"
-            title="Build a culture that attracts and retains talent"
-            titleClassName="min-h-[64px] md:min-h-[64px]"
-            items={[
-              "Create consistent team experiences that build lasting relationships.",
-              "Foster spontaneous interactions that drives innovation and problem-solving.",
-              "Develop shared memories and inside jokes that strengthen team identity.",
-              "Build soft skills through play that transfer directly to work projects.",
-            ]}
-          />
-          <ChecklistElement
-            iconSrc="/images/icon3.png"
-            title="Better ways of working together"
-            titleClassName="min-h-[64px] md:min-h-[64px]"
-            items={[
-              "Increase meeting participation by 45% through immersive environments.",
-              "Imrpove information retention by 40% compared to traditional meetings.",
-              "Enhance cross-team collaboration by 38% through shared experiences.",
-              "Maintain culture continuity across any workplace model (in-office, hybrid, remote)",
-            ]}
-          />
-        </div>
-      </Section>
       <Section
         preTitle="Roles"
         title="Every role gets something out of Team Up!"
@@ -523,6 +526,7 @@ export default function Home() {
             variant: "text",
             children: "See our Planning space",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/planning"),
           }}
           image={
@@ -536,6 +540,7 @@ export default function Home() {
             variant: "text",
             children: "Check our Sailboat Retrospective space",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               (window.location.href = "/spaces/sailboat-retrospective"),
           }}
@@ -551,6 +556,7 @@ export default function Home() {
             variant: "text",
             children: "Check our Auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/auditorium"),
           }}
           image={
@@ -564,6 +570,7 @@ export default function Home() {
             variant: "text",
             children: "Check our Campfire",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/campfire"),
           }}
           image={
@@ -578,6 +585,7 @@ export default function Home() {
             variant: "text",
             children: "Check our Farmyard space",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/campfire"),
           }}
           image={

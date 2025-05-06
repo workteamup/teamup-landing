@@ -61,7 +61,7 @@ export default function AuditoriumPage() {
           <CheckmarkItem text="Only the presenter can talk" />
           <CheckmarkItem text="Screen sharing in the big auditorium screen" />
           <CheckmarkItem text="Set up conversation topics and polls" />
-          <CheckmarkItem text="Run quick position based voting" />
+          <CheckmarkItem text="Run quick position based polls" />
         </div>
       </Section>
       <Section

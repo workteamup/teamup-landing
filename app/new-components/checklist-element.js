@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
+import { isValidElement } from "react";
 
 export default function ChecklistElement({
   iconSrc,
@@ -17,14 +18,22 @@ export default function ChecklistElement({
   return (
     <div className={`flex flex-col ${className}`}>
       {/* Icon/Image Container */}
-      <div className={`w-24 h-24 rounded-full ${iconContainerClassName}`}>
-        <Image
-          src={iconSrc}
-          alt={iconAlt}
-          width={96}
-          height={96}
-          className="w-full h-full object-contain"
-        />
+      <div
+        className={`w-24 h-24 rounded-full bg-purple-50 flex items-center justify-center ${iconContainerClassName}`}
+      >
+        {isValidElement(iconSrc) ? (
+          // If iconSrc is a React element (component), render it directly
+          iconSrc
+        ) : (
+          // If iconSrc is a string (URL/path), use the Image component
+          <Image
+            src={iconSrc}
+            alt={iconAlt}
+            width={96}
+            height={96}
+            className="w-full h-full object-contain"
+          />
+        )}
       </div>
 
       {/* Title */}
