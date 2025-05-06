@@ -127,91 +127,6 @@ export default function Home() {
         />
       </Section>
       <Section
-        title="Gaming inspired features that transform work"
-        titleClassName="max-w-[960px] lg:text-6xl font-medium"
-        bgClassName=""
-        className="overflow-hidden max-w-[1600px] mx-auto"
-        buttons={[
-          {
-            variant: "primary",
-            children: "Request access",
-            size: "xl",
-          },
-          {
-            variant: "secondary",
-            children: "Create your first meeting",
-            size: "xl",
-          },
-        ]}
-        buttonsPosition="bottom"
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[960px] mx-auto">
-          <InfoElement
-            imageSrc="/images/campfire.jpg"
-            title="Immersive 3D environments"
-            description="Purpose-built interactive spaces with everything you need that create natural conversation impossible in traditional meetings."
-          />
-          <InfoElement
-            imageSrc="/images/farm.jpg"
-            title="Interactive team games"
-            description="Turn passive team building into active play that build real-world skills in communication, strategy, and collaboration."
-          />
-          <InfoElement
-            imageSrc="/images/auditorium.jpg"
-            title="Versatile room types"
-            description="Instant collaborations, scheduled meetings, permanent hangouts, or large eventos. The right space for every team need."
-          />
-          <InfoElement
-            imageSrc="/images/planning.jpg"
-            title="Custom branded spaces"
-            description="Digital environments that showcase your culture and brand, impressing clients and strengthening team identity."
-          />
-        </div>
-      </Section>
-      <Section
-        preTitle="Features"
-        title="Everything you need to connect your teams"
-        titleClassName="max-w-[960px] mx-auto"
-        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
-        className="overflow-hidden"
-      >
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-4 lg:gap-y-8 max-w-[960px] mx-auto">
-          <CheckmarkItem text="3D space" />
-          <CheckmarkItem text="Voice chat" />
-          <CheckmarkItem text="Text chat" />
-          <CheckmarkItem text="Screen sharing" />
-          <CheckmarkItem text="Reactions" />
-          <CheckmarkItem text="Activities" />
-          <CheckmarkItem text="Meeting points" />
-          <CheckmarkItem text="Timers" />
-          <CheckmarkItem text="Browser-based" />
-          <CheckmarkItem text="Plug and play" />
-          <CheckmarkItem text="Voting" />
-          <CheckmarkItem text="Avatar personalization" />
-          <CheckmarkItem text="Google integration" />
-          <CheckmarkItem text="Whiteboard" />
-        </div>
-      </Section>
-      <CTA
-        mainClaim="Ready to transform your team?"
-        description="Join thousands of companies improving their team culture with TeamUp"
-        buttons={[
-          {
-            children: "Get Started",
-            variant: "primary",
-            size: "xl",
-            onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
-          },
-          {
-            children: "Learn More",
-            variant: "tertiary",
-            size: "xl",
-            onClick: () => (window.location.href = "/features"),
-          },
-        ]}
-      />
-      <Section
         preTitle="Our spaces"
         title="Purpose-built environments for every team need"
         titleClassName="max-w-[1200px]"
@@ -404,6 +319,93 @@ export default function Home() {
           reverse={true}
         />
       </Section>
+
+      <Section
+        preTitle="Features"
+        title="Everything you need to connect your teams"
+        titleClassName="max-w-[960px] mx-auto"
+        containerClassName="py-32 md:px-8 lg:px-12 rounded-3xl"
+        className="overflow-hidden"
+      >
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-12 gap-y-4 lg:gap-y-8 max-w-[960px] mx-auto">
+          <CheckmarkItem text="3D space" />
+          <CheckmarkItem text="Voice chat" />
+          <CheckmarkItem text="Text chat" />
+          <CheckmarkItem text="Screen sharing" />
+          <CheckmarkItem text="Reactions" />
+          <CheckmarkItem text="Activities" />
+          <CheckmarkItem text="Meeting points" />
+          <CheckmarkItem text="Timers" />
+          <CheckmarkItem text="Browser-based" />
+          <CheckmarkItem text="Plug and play" />
+          <CheckmarkItem text="Voting" />
+          <CheckmarkItem text="Avatar personalization" />
+          <CheckmarkItem text="Google integration" />
+          <CheckmarkItem text="Whiteboard" />
+        </div>
+      </Section>
+      <CTA
+        mainClaim="Ready to transform your team?"
+        description="Join thousands of companies improving their team culture with TeamUp"
+        buttons={[
+          {
+            children: "Get Started",
+            variant: "primary",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            children: "Learn More",
+            variant: "tertiary",
+            size: "xl",
+            onClick: () => (window.location.href = "/features"),
+          },
+        ]}
+      />
+      <Section
+        title="Gaming inspired features that transform work"
+        titleClassName="max-w-[960px] lg:text-6xl font-medium"
+        bgClassName=""
+        className="overflow-hidden max-w-[1600px] mx-auto"
+        buttons={[
+          {
+            variant: "primary",
+            children: "Request access",
+            size: "xl",
+          },
+          {
+            variant: "secondary",
+            children: "Create your first meeting",
+            size: "xl",
+          },
+        ]}
+        buttonsPosition="bottom"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[960px] mx-auto">
+          <InfoElement
+            imageSrc="/images/campfire.jpg"
+            title="Immersive 3D environments"
+            description="Purpose-built interactive spaces with everything you need that create natural conversation impossible in traditional meetings."
+          />
+          <InfoElement
+            imageSrc="/images/farm.jpg"
+            title="Interactive team games"
+            description="Turn passive team building into active play that build real-world skills in communication, strategy, and collaboration."
+          />
+          <InfoElement
+            imageSrc="/images/auditorium.jpg"
+            title="Versatile room types"
+            description="Instant collaborations, scheduled meetings, permanent hangouts, or large eventos. The right space for every team need."
+          />
+          <InfoElement
+            imageSrc="/images/planning.jpg"
+            title="Custom branded spaces"
+            description="Digital environments that showcase your culture and brand, impressing clients and strengthening team identity."
+          />
+        </div>
+      </Section>
+
       <Section
         preTitle="Benefits"
         title="Why you have to start using Team Up!"
