@@ -182,19 +182,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="Annual in-person team events"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -211,19 +199,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -243,19 +219,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="Video conferencing for team collaboration"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -272,19 +236,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -304,19 +256,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="Project management tools"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -333,19 +273,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -388,19 +316,7 @@ export default function ForManagersPage() {
       >
         <InfoPiece
           title="Sprint planning sessions"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description="Plan your sprints in an interactive space where voting is more dynamic, anonymous and fun. The sprint planning meetings will flow effortlessly."
           cta={{
@@ -413,19 +329,7 @@ export default function ForManagersPage() {
         />
         <InfoPiece
           title="Weekly retrospectives"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Host weekly retrospective in our Sailboat retrospective space, where you can feel as if you were put in post-its in the whiteboard of your office."
           cta={{
             variant: "text",

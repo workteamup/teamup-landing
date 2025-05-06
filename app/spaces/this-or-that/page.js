@@ -91,7 +91,7 @@ export default function ThisOrThatPage() {
       </Section>
       <Section
         preTitle="How to use"
-        title="Get the best out of the Auditorium"
+        title="Get the best out of the This or that space"
         bgClassName="bg-white"
         containerClassName="max-w-[1440px] mx-auto"
         buttons={[
@@ -216,19 +216,7 @@ export default function ThisOrThatPage() {
       >
         <InfoPiece
           title="Loosen up before a long meeting"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
@@ -243,19 +231,7 @@ export default function ThisOrThatPage() {
         />
         <InfoPiece
           title="Get important insights in a fun way"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Use a low pressure environment to get important insights of your employees in a more entertaining way."
           cta={{
             variant: "text",
@@ -268,19 +244,7 @@ export default function ThisOrThatPage() {
         />
         <InfoPiece
           title="Connect employees over fun topics"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Let employees that don't know each other well connect over different and fun topics in a fun way."
           reverse={true}
           cta={{

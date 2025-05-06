@@ -215,19 +215,7 @@ export default function CampfirePage() {
       >
         <InfoPiece
           title="Onboarding new hires"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description="Let new hires get to know the team in a comfortable and casual way by bringing the team together around the fire."
           cta={{
@@ -241,19 +229,7 @@ export default function CampfirePage() {
         />
         <InfoPiece
           title="Team building sessions"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Run recurrent team building sessions to keep the company connected and engaged. Let people from different departments get to know each other."
           cta={{
             variant: "text",
@@ -266,19 +242,7 @@ export default function CampfirePage() {
         />
         <InfoPiece
           title="Solve problems by bringing up difficult topics"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Run anonymous polls to get feedback from your employees and use the Campfire to discuss the difficult topics without anyone being forced to bring them up."
           reverse={true}
           cta={{

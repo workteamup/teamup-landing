@@ -117,7 +117,8 @@ export default function Connect4Page() {
               title: "Create a meeting in the Connect 4 space",
               description:
                 "Create a meeting in the Connect 4 space, invite your team to join and let the fun begin.",
-              video: "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-connect4.webm",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-connect4.webm",
             },
             {
               title: "Join and organize in pairs or groups of four",
@@ -220,19 +221,7 @@ export default function Connect4Page() {
       >
         <InfoPiece
           title="Department battles"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description="Monthly tournaments creating cross-functional connections"
           cta={{
@@ -246,19 +235,7 @@ export default function Connect4Page() {
         />
         <InfoPiece
           title="New hire integration"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Weekly sessions where gameplay facilitates natural conversation"
           cta={{
             variant: "text",
@@ -271,19 +248,7 @@ export default function Connect4Page() {
         />
         <InfoPiece
           title="Leadership approachability"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Break down hierarchical barriers through executive participation"
           reverse={true}
           cta={{

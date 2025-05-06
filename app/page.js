@@ -120,7 +120,7 @@ export default function Home() {
           title="Bridge the human connection gap"
           description="Create a sense of shared presence and spontaneous interaction that transforms relation ships in any work environment."
           cta={{
-            children: "Remote disconnection solutions",
+            children: "Workplace disconnection solutions",
             href: "/solutions/for-remote-disconnection",
           }}
           image={"/images/campfire.jpg"}

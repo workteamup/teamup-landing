@@ -211,19 +211,7 @@ export default function FootballFieldPage() {
       >
         <InfoPiece
           title="Meeting breaks"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description="Schedule 5-minute football matches between segments of longer meetings to combat digital fatigue and reinvigorate the team with a shared activity that creates energy and laughter."
           cta={{
@@ -237,19 +225,7 @@ export default function FootballFieldPage() {
         />
         <InfoPiece
           title="Daily rituals"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Establish a quick football match as part of your team's daily routine—perhaps before lunch or at day's end—creating a consistent touchpoint that team members look forward to and that strengthens team identity."
           cta={{
             variant: "text",
@@ -262,19 +238,7 @@ export default function FootballFieldPage() {
         />
         <InfoPiece
           title="Pre-brainstorming warmup"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Prime your team's creative thinking by activating different cognitive patterns through gameplay before transitioning into ideation sessions, resulting in more diverse and innovative ideas."
           reverse={true}
           cta={{
@@ -288,19 +252,7 @@ export default function FootballFieldPage() {
         />
         <InfoPiece
           title="Cross-department tournaments"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Organize recurring mini-tournaments between different teams or departments, fostering connections across organizational boundaries through light-hearted competition that reveals personalities beyond work roles."
           reverse={true}
           cta={{
@@ -314,19 +266,7 @@ export default function FootballFieldPage() {
         />
         <InfoPiece
           title="Remote happy hourse"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Transform passive virtual gatherings into interactive experiences by adding structured football matches that give team members something specific to do together rather than just talk."
           reverse={true}
           cta={{

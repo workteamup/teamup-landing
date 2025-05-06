@@ -193,19 +193,7 @@ export default function ForFunCompetitionsPage() {
           <InfoPiece
             title="Company All-hands"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -222,19 +210,7 @@ export default function ForFunCompetitionsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -254,19 +230,7 @@ export default function ForFunCompetitionsPage() {
           <InfoPiece
             title="Video conferences"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -283,19 +247,7 @@ export default function ForFunCompetitionsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -315,19 +267,7 @@ export default function ForFunCompetitionsPage() {
           <InfoPiece
             title="Team celebrations"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -344,19 +284,7 @@ export default function ForFunCompetitionsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -399,19 +327,7 @@ export default function ForFunCompetitionsPage() {
       >
         <InfoPiece
           title="Immersive all-hands meetings"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description="Host a company all-hands in our Auditorium with breakout sessions in themed 3D spaces for Q&A and small group discussions that maintain consistent branding and connection."
           cta={{
@@ -424,19 +340,7 @@ export default function ForFunCompetitionsPage() {
         />
         <InfoPiece
           title="Interactive virtual conferences"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Organize a virtual conference with keynote stages, exhibition areas, and networking lounges in a custom 3D campus environment where attendees navigate naturally between spaces."
           cta={{
             variant: "text",
@@ -448,19 +352,7 @@ export default function ForFunCompetitionsPage() {
         />
         <InfoPiece
           title="Engaging holiday celebrations"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Run a holiday party with themed 3D spaces featuring games like Floor is Lava and Connect 4 for cross-team bonding that creates memorable shared experiences despite physical distance."
           reverse={true}
           cta={{

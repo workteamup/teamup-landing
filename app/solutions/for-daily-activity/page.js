@@ -193,19 +193,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="Morning stand-ups"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -222,19 +210,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -254,19 +230,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="Video conferencing for team collaboration"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -283,19 +247,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -315,19 +267,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="Sprint planning"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="cons"
@@ -344,19 +284,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            supportContent={
-              <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-                <div className="relative w-[85%] h-[80%]">
-                  <Image
-                    src="/images/campfire.jpg"
-                    alt="Employee Engagement"
-                    fill
-                    className="object-cover rounded-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-              </div>
-            }
+            image={"/images/campfire.jpg"}
             description={
               <ProsConsList
                 type="pros"
@@ -399,19 +327,7 @@ export default function ForDailyActivityPage() {
       >
         <InfoPiece
           title="Visual daily stand-ups"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           reverse={true}
           description="Host a virtual stand-up in our Planning space where team members move avatars to update progress visually while using spatial audio for natural conversation."
           cta={{
@@ -425,19 +341,7 @@ export default function ForDailyActivityPage() {
         />
         <InfoPiece
           title="Team mood check-ins"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Run a daily mood check-in using our Campfire environment with polls to gauge team morale through avatar placement on different platforms."
           cta={{
             variant: "text",
@@ -450,19 +354,7 @@ export default function ForDailyActivityPage() {
         />
         <InfoPiece
           title="Interactive sprint planning"
-          supportContent={
-            <div className="w-full h-[540px] bg-purple-100 rounded-3xl flex items-center justify-center">
-              <div className="relative w-[85%] h-[80%]">
-                <Image
-                  src="/images/campfire.jpg"
-                  alt="Employee Engagement"
-                  fill
-                  className="object-cover rounded-2xl"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            </div>
-          }
+          image={"/images/campfire.jpg"}
           description="Facilitate a sprint planning session in our dedicated Planning room with interactive boards and voting platforms that visualize team consensus."
           reverse={true}
           cta={{
