@@ -99,7 +99,7 @@ const Hero = ({
           {image && !video && (
             <div
               className={cn(
-                "w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl",
+                "w-full max-w-4xl mx-auto rounded-lg md:rounded-3xl overflow-hidden shadow-xl",
                 imageContainerClassName
               )}
             >

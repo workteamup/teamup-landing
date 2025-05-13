@@ -39,35 +39,9 @@ export default function Home() {
             size: "xl",
           },
         ]}
-        extraContent={
-          <div className="max-w-[1200px] mx-auto">
-            <div
-              className=""
-              style={{
-                position: "relative",
-                paddingBottom: "54.13533834586466%",
-                height: 0,
-                marginTop: "40px",
-              }}
-            >
-              <iframe
-                src="https://www.loom.com/embed/98c19c69a60f46778b85332c5b25633f?sid=9b6a175e-fc80-4b7b-8213-fd05ef9c4b1c"
-                frameBorder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowFullScreen
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                className="rounded-[40px]"
-              ></iframe>
-            </div>
-          </div>
-        }
+        video="https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/teamup-intro-old.webm"
+        videoAutoplay={true}
+        videoControls={false}
         bgClassName="bg-purple-50"
       />
       <Section
@@ -101,7 +75,7 @@ export default function Home() {
             children: "Employee turnover solutions",
             href: "/solutions/for-employee-turnover",
           }}
-          image={"/images/campfire.jpg"}
+          image={"/images/employee-turnover.webp"}
         />
 
         <InfoPiece
@@ -112,7 +86,7 @@ export default function Home() {
             children: "Employee disengagement solutions",
             href: "/solutions/for-employee-disengagement",
           }}
-          image={"/images/campfire.jpg"}
+          image={"/images/employee-engagement.webp"}
           reverse={true}
         />
 
@@ -124,7 +98,7 @@ export default function Home() {
             children: "Workplace disconnection solutions",
             href: "/solutions/for-remote-disconnection",
           }}
-          image={"/images/campfire.jpg"}
+          image={"/images/bridge-gap.webp"}
         />
       </Section>
       <Section
@@ -150,7 +124,7 @@ export default function Home() {
         <InfoPiece
           tag="Engagement"
           title="Spark conversation and foster connection"
-          image={"/images/campfire.jpg"}
+          image={"/images/campfire-thisorthat-debate.webp"}
           reverse={true}
           description={
             <div className="space-y-3">
@@ -188,7 +162,7 @@ export default function Home() {
         <InfoPiece
           tag="Work"
           title="Transform routine collaboration into interactive experiences"
-          image={"/images/campfire.jpg"}
+          image={"/images/auditorium-retrospective-planning.webp"}
           description={
             <div className="space-y-3">
               <div>
@@ -224,7 +198,7 @@ export default function Home() {
         <InfoPiece
           tag="Fun"
           title="Build real teamwork skills through shared challenges and laughter"
-          image={"/images/campfire.jpg"}
+          image={"/images/connect4-field-lava-farmyard.webp"}
           description={
             <div className="space-y-3">
               <div>
@@ -336,7 +310,7 @@ export default function Home() {
             children: "Learn more",
             size: "lg",
           }}
-          image={"/images/campfire.jpg"}
+          image={"/images/startups.webp"}
         />
         <InfoPiece
           tag="Enterprise"
@@ -347,7 +321,7 @@ export default function Home() {
             children: "Learn more",
             size: "lg",
           }}
-          image={"/images/campfire.jpg"}
+          image={"/images/enterprises.webp"}
           reverse={true}
         />
         <InfoPiece
@@ -359,7 +333,7 @@ export default function Home() {
             children: "Learn more",
             size: "lg",
           }}
-          image={"/images/campfire.jpg"}
+          image={"/images/remote-first.webp"}
         />
         <InfoPiece
           tag="Hybrid"
@@ -370,7 +344,7 @@ export default function Home() {
             children: "Learn more",
             size: "lg",
           }}
-          image={"/images/campfire.jpg"}
+          image={"/images/hybrid.webp"}
           reverse={true}
         />
       </Section>
@@ -440,22 +414,22 @@ export default function Home() {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[960px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
+            imageSrc="/images/immersive-3d-env.webp"
             title="Immersive 3D environments"
             description="Purpose-built interactive spaces with everything you need that create natural conversation impossible in traditional meetings."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
+            imageSrc="/images/interactive-team-games.webp"
             title="Interactive team games"
             description="Turn passive team building into active play that build real-world skills in communication, strategy, and collaboration."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
+            imageSrc="/images/versatile-room-types.webp"
             title="Versatile room types"
             description="Instant collaborations, scheduled meetings, permanent hangouts, or large eventos. The right space for every team need."
           />
           <InfoElement
-            imageSrc="/images/planning.jpg"
+            imageSrc="/images/custom-branded-spaces.webp"
             title="Custom branded spaces"
             description="Digital environments that showcase your culture and brand, impressing clients and strengthening team identity."
           />
@@ -529,9 +503,7 @@ export default function Home() {
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/planning"),
           }}
-          image={
-            "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/planning_padded.png"
-          }
+          image={"/images/teamup-sprint-planning.webp"}
         />
         <InfoPiece
           title="Team retrospectives"
@@ -544,9 +516,7 @@ export default function Home() {
             onClick: () =>
               (window.location.href = "/spaces/sailboat-retrospective"),
           }}
-          image={
-            "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/sailboat-retrospective_padded.png"
-          }
+          image={"/images/teamup-sailboat-retrospective.webp"}
           reverse={true}
         />
         <InfoPiece
@@ -559,9 +529,7 @@ export default function Home() {
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/auditorium"),
           }}
-          image={
-            "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/auditorium_padded.png"
-          }
+          image={"/images/teamup-company-all-hands.webp"}
         />
         <InfoPiece
           title="New hire onboarding"
@@ -573,9 +541,7 @@ export default function Home() {
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/campfire"),
           }}
-          image={
-            "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/campfire_padded.png"
-          }
+          image={"/images/teamup-new-hire.webp"}
           reverse={true}
         />
         <InfoPiece
@@ -588,9 +554,7 @@ export default function Home() {
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/campfire"),
           }}
-          image={
-            "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/images/farmyard_padded.png"
-          }
+          image={"/images/teamup-remote-team-building.webp"}
         />
       </Section>
       <Section
@@ -621,7 +585,7 @@ export default function Home() {
           <InfoPiece
             title="Annual team building events"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-team-building.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -638,7 +602,7 @@ export default function Home() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-team-building.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -658,7 +622,7 @@ export default function Home() {
           <InfoPiece
             title="Daily stand-up meetings"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-daily-standup.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -675,7 +639,7 @@ export default function Home() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-daily-standup.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -695,7 +659,7 @@ export default function Home() {
           <InfoPiece
             title="Company All-hands meetings"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-all-hands.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -712,7 +676,7 @@ export default function Home() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-all-hands.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -732,7 +696,7 @@ export default function Home() {
           <InfoPiece
             title="Remote onboarding"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-onboarding.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -749,7 +713,7 @@ export default function Home() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-onboarding.webp"}
             description={
               <ProsConsList
                 type="pros"

@@ -96,14 +96,14 @@ const InfoPiece = ({
             (typeof description === "string" ? (
               <p
                 className={cn(
-                  "text-base lg:text-xl text-dark-space mb-5 lg:mb-12",
+                  "text-base lg:text-xl text-dark-space mb-5 ",
                   descriptionClassName
                 )}
               >
                 {description}
               </p>
             ) : (
-              <div className="mb-5 lg:mb-12">{description}</div>
+              <div className="mb-5 ">{description}</div>
             ))}
 
           {/* CTA */}

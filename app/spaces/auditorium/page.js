@@ -31,9 +31,10 @@ export default function AuditoriumPage() {
           },
           /* { variant: "tertiary", size: "md", children: "View pricing" },*/
         ]}
-        video={
+        image="/images/auditorium-hero.webp"
+        /*video={
           "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-room-auditorium.webm"
-        }
+        }*/
         videoAutoplay={true}
         videoControls={false}
         bgClassName="bg-blue-50"

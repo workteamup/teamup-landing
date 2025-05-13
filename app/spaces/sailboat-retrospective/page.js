@@ -32,35 +32,7 @@ export default function SailboatRetrospectivePage() {
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
         bgClassName="bg-teal-50"
-        extraContent={
-          <div className="max-w-[1200px] mx-auto">
-            <div
-              className=""
-              style={{
-                position: "relative",
-                paddingBottom: "54.13533834586466%",
-                height: 0,
-                marginTop: "40px",
-              }}
-            >
-              <iframe
-                src="https://www.loom.com/embed/98c19c69a60f46778b85332c5b25633f?sid=9b6a175e-fc80-4b7b-8213-fd05ef9c4b1c"
-                frameBorder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowFullScreen
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                className="rounded-[40px]"
-              ></iframe>
-            </div>
-          </div>
-        }
+        image="/images/sailboat-retrospective-hero.webp"
       />
       <Testimonial
         logo="/svg/logos/teamup-logo-dark.svg"
