@@ -98,26 +98,25 @@ export default function PlanningPage() {
               title: "Step into the moderator platform",
               description:
                 "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
-              image: "/images/campfire.jpg",
+              image: "/images/planning-step-platform.webp",
             },
             {
               title:
                 "Configure the topic to vote, options and timers and run the voting",
               description:
                 "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
-              image: "/images/campfire.jpg",
+              image: "/images/planning-configure-vote.webp",
             },
             {
               title: "Run and jump to reach the option you want",
               description:
                 "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
-              image: "/images/campfire.jpg",
             },
             {
               title: "See the results, discuss them and see how they change",
               description:
                 "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
-              image: "/images/campfire.jpg",
+              image: "/images/planning-results.webp",
             },
           ]}
         />

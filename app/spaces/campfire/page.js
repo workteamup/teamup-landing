@@ -96,25 +96,23 @@ export default function CampfirePage() {
               title: "Gather around the fire",
               description:
                 "Bring everyone together around the fire to make sure everyone is ready to spark conversations.",
-              image: "/images/campfire.jpg",
+              image: "/images/campfire-gather.webp",
             },
             {
               title: "Take turns to get topics from the stalls",
               description:
                 "Take turns to get a topic from the different stalls and see how conversations unfold.",
-              image: "/images/campfire.jpg",
+              image: "/images/campfire-get-topic.webp",
             },
             {
               title: "Bond over topics you never thought you'd talk about",
               description:
                 "See how easy is to bond over topics no one had to pressure to bring up and you've never thought that would come out in a conversation with your colleagues.",
-              image: "/images/campfire.jpg",
             },
             {
               title: "Optional: set up a list of custom topics",
               description:
                 "Control de flow of the campfire by setting fire a topics you want to talk about without forcing them into the conversation.",
-              image: "/images/campfire.jpg",
             },
           ]}
         />

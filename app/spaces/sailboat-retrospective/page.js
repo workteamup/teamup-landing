@@ -98,25 +98,25 @@ export default function SailboatRetrospectivePage() {
               title: "Explain the purpose, the process and set the first timer",
               description:
                 "Get everyone to understand what the goal of the retrospective is and set the first timer to propose items. We suggest starting with the island/sun.",
-              image: "/images/campfire.jpg",
+              image: "/images/sailboat-retrospective-start-vote.webp",
             },
             {
               title: "Run a voting timer and select the hottest topics",
               description:
                 "Once everyone has proposed items, run a voting timer and select the most important items to discuss. Once you know what are the most important items, send them to the Selected whiteboard to discuss.",
-              image: "/images/campfire.jpg",
+              image: "/images/sailboat-retrospective-vote.webp",
             },
             {
               title: "Discuss and propose solutions",
               description:
                 "Discuss each different item and propose solutions, then run a voting timer to vote each solution on the impact/effort scale to see which ones will be the most useful.",
-              image: "/images/campfire.jpg",
+              image: "/images/sailboat-retrospective-discuss.webp",
             },
             {
               title: "Set assignees to each final solution",
               description:
                 "Once you have selected the most useful solutions, set assignees to each solution and export the results to start working on them.",
-              image: "/images/campfire.jpg",
+              image: "/images/sailboat-retrospective-set-assignees.webp",
             },
           ]}
         />

@@ -97,25 +97,23 @@ export default function ThisOrThatPage() {
                 "Get everyone ready to have a good time in front of the stage",
               description:
                 "Gather everyone in front of the stage and explain what the purpose of the space is.",
-              image: "/images/campfire.jpg",
             },
             {
               title: "Select the dynamic you want to use",
               description:
                 "Select between This or that, Agree or disagree and Would your rather.",
-              image: "/images/campfire.jpg",
+              image: "/images/thisorthat-select-dynamic.webp",
             },
             {
               title: "Set up the options or load some random ones",
               description:
                 "Use some options of your own or, if you don't have any in mind, load some random ones with a click of a button. Invite people to put their options to have some fun.",
-              image: "/images/campfire.jpg",
             },
             {
               title: "See where people stand and get the conversation started",
               description:
                 "Give some time to people to choose an option and move to the respective side. Once everyone is ready, let the vocal ones speak up and make their case and see what happens.",
-              image: "/images/campfire.jpg",
+              image: "/images/thisorthat-see-stand.webp",
             },
           ]}
         />

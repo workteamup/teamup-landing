@@ -101,27 +101,26 @@ export default function AuditoriumPage() {
               title: "Gather them around the stands",
               description:
                 "Wait until everyone is in the stands ready to see your presentation.",
-              image: "/images/campfire.jpg",
             },
             {
               title: "Step into the stage",
               description:
                 "Once you set foot in the stage, the audience will go silent and focus on what you have to say.",
-              image: "/images/campfire.jpg",
+              image: "/images/auditorium-step-stage.webp",
             },
             {
               title:
                 "Share your screen, set up conversation topics or run polls",
               description:
                 "Use the different features of the Auditorium to run your town hall.",
-              image: "/images/campfire.jpg",
+              image: "/images/auditorium-share-screen.webp",
             },
             {
               title:
                 "Invite guests to the stage so they can join the conversation",
               description:
                 "If someone wants to ask or talk about something, they can join you in the stage.",
-              image: "/images/campfire.jpg",
+              image: "/images/auditorium-invite-stage.webp",
             },
           ]}
         />
