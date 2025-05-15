@@ -88,7 +88,7 @@ export default function ForDailyActivityPage() {
       />
       <Section
         preTitle="The problem in numbers"
-        title="Title under construction"
+        title="See how poorly handled daily meetings affect your company"
         bgClassName="bg-white"
         containerClassName="max-w-[1440px] mx-auto"
       >
@@ -193,7 +193,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="Morning stand-ups"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-daily-standup.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -210,7 +210,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-daily-standup.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -230,7 +230,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="Video conferencing for team collaboration"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/meeting-fatigue-2.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -247,7 +247,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-daily-standup.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -267,7 +267,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="Sprint planning"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/planning-poker.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -284,7 +284,7 @@ export default function ForDailyActivityPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-sprint-planning.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -327,7 +327,7 @@ export default function ForDailyActivityPage() {
       >
         <InfoPiece
           title="Visual daily stand-ups"
-          image={"/images/campfire.jpg"}
+          image={"/images/visual-daily-standup.webp"}
           reverse={true}
           description="Host a virtual stand-up in our Planning space where team members move avatars to update progress visually while using spatial audio for natural conversation."
           cta={{
@@ -341,7 +341,7 @@ export default function ForDailyActivityPage() {
         />
         <InfoPiece
           title="Team mood check-ins"
-          image={"/images/campfire.jpg"}
+          image={"/images/immersive-3d-env.webp"}
           description="Run a daily mood check-in using our Campfire environment with polls to gauge team morale through avatar placement on different platforms."
           cta={{
             variant: "text",
@@ -354,7 +354,7 @@ export default function ForDailyActivityPage() {
         />
         <InfoPiece
           title="Interactive sprint planning"
-          image={"/images/campfire.jpg"}
+          image={"/images/visual-sprint-planning.webp"}
           description="Facilitate a sprint planning session in our dedicated Planning room with interactive boards and voting platforms that visualize team consensus."
           reverse={true}
           cta={{
@@ -396,25 +396,28 @@ export default function ForDailyActivityPage() {
               title: "Request access to Team Up!",
               description:
                 "Apply for access to Team Up! in https://app.teamup.works/signup",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/request-access.webm",
             },
             {
               title: "Create your company's workspace",
               description:
-                "Create a workspace that reflects your company culture and invite your team members to join.",
-              image: "/images/campfire.jpg",
+                "Create a workspace that reflects your company culture and invite your employees to join.",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-workspace.webm",
             },
             {
-              title: "Create your first meeting room",
+              title: "Create your first meeting room or event",
               description:
                 "Create a meeting room, invite your team members and start having engaging and productive meetings.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-first-meeting.webm",
             },
             {
               title: "Reap the benefits",
               description:
-                "Happier teams perform better, and Team Up! will help you have a more united team that will work better together.",
-              image: "/images/campfire.jpg",
+                "Happier teams perform better, and Team Up! will help you have a more connected workforce that will boost your bottom line.",
+              image: "/images/reap-the-benefits.webp",
             },
           ]}
         />

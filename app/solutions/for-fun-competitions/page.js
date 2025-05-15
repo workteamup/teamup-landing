@@ -86,28 +86,29 @@ export default function ForFunCompetitionsPage() {
             window.open("https://app.teamup.works/signup", "_blank"),
         }}
       />
+      
       <Section
         preTitle="The problem in numbers"
-        title="Title under construction"
+        title="What not engaging your employees can cost you"
+        titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
         containerClassName="max-w-[1440px] mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <NumberElement
-            number={1000}
-            prefix="$"
-            suffix="+"
-            description="Physical events cost companies $1,000+ per attendee, with 40% of budget spent on venue and travel. "
-          />
-          <NumberElement
-            number={80}
+            number={60}
             suffix="%"
-            description="80% of webinar attendees disengage within 10 minutes when passive viewing is the only participation method."
+            description="60% of employees feel disconnected without regular team-building, with remote workers reporting even higher isolation."
           />
           <NumberElement
             number={30}
             suffix="%"
-            description="Companies with regular team events see 30% higher retention rates and 25% better cross-team collaboration."
+            description="Teams that participate in regular fun activities together show 30% higher morale and 25% better problem-solving capabilities."
+          />
+          <NumberElement
+            number={87}
+            suffix="%"
+            description="Engaged employees are 87% less likely to leave their companies, with team bonding activities cited as a top engagement factor."
           />
         </div>
       </Section>
@@ -150,18 +151,18 @@ export default function ForFunCompetitionsPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoElement
             imageSrc="/images/campfire.jpg"
-            title="Diverse spaces"
-            description="Choose from our Auditorium, Campfire, or custom spaces to create the perfect atmosphere for your specific event."
+            title="Growing game options"
+            description="Floor is lava, Connect 4, Football field, The Farmyard, and more coming."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
-            title="Breakout rooms"
-            description="Create small groups for networking or discussions in connected 3D spaces that maintain the event's cohesive feel."
+            title="One-click setup"
+            description="Launch competitive games with minimal preparation—our 3D environments come pre-configured for immediate fun."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
-            title="Multi-topic events"
-            description="Have different rooms for different topics so attendees can move between them as they please."
+            title="Flexible formats"
+            description="Support both individual and group challenges in 3D spaces that adapt to your team size and specific objectives."
           />
         </div>
       </Section>
@@ -191,18 +192,18 @@ export default function ForFunCompetitionsPage() {
       >
         <div>
           <InfoPiece
-            title="Company All-hands"
+            title="Team Trivia Night"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/trivia-webcam.webp"}
             description={
               <ProsConsList
                 type="cons"
                 className="mt-6"
                 items={[
-                  "One-way communication with limited audience participation.",
-                  "Questions submitted via chat get overlooked or ignored.",
-                  "Difficult to gauge audience reactions and engagement.",
-                  "Breakout rooms feel disconnected from main event.",
+                  "Static screen sharing of questions.",
+                  "Tedious manual scoring systems.",
+                  "Limited interaction between participants",
+                  "Technical issues with multiple tools.",
                 ]}
               />
             }
@@ -210,16 +211,16 @@ export default function ForFunCompetitionsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/debate-hero.jpg"}
             description={
               <ProsConsList
                 type="pros"
                 className="mt-6"
                 items={[
-                  "Interactive auditorium with spatial audio creates presence.",
-                  "Physical voting platforms show real-time audience sentiment.",
-                  "Visual feedback through avatar and reactions.",
-                  "Connected 3D breakout spaces maintain event continuity.",
+                  "Interactive auditorium with visual question displays.",
+                  "Automated scoring through avatar movement.",
+                  "Teams can huddle in spatial audio zones.",
+                  "Single platform for all gaming elements.",
                 ]}
               />
             }
@@ -228,18 +229,18 @@ export default function ForFunCompetitionsPage() {
         </div>
         <div>
           <InfoPiece
-            title="Video conferences"
+            title="Team building games"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/virtual-team-games.webp"}
             description={
               <ProsConsList
                 type="cons"
                 className="mt-6"
                 items={[
-                  "Boring grid of faces or slide presentations.",
-                  "Networking limited to awkward chat rooms.",
-                  "Speakear has no sense of audience engagement.",
-                  "High drop-off reates due to passive experience.",
+                  "Expensive facilitators for virtual activites.",
+                  "Limited to text-based or video interactions.",
+                  "Awkward execution with multiple tools.",
+                  "Single-session events with no continuity.",
                 ]}
               />
             }
@@ -247,16 +248,16 @@ export default function ForFunCompetitionsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/farmyard-hero.webp"}
             description={
               <ProsConsList
                 type="pros"
                 className="mt-6"
                 items={[
-                  "Dynamic 3D venues with real-time audience engagement.",
-                  "Natural networking in virtual lounges with spatial audio.",
-                  "Speakers can see and interact with audience avatars.",
-                  "Interactive elements keep attendes engaged",
+                  "Self-guided activities in immersive 3D spaces.",
+                  "Physical movement and spatial interaction.",
+                  "Integrated platform with all necessary tools.",
+                  "Persistent environments for ongoing engagement.",
                 ]}
               />
             }
@@ -265,18 +266,18 @@ export default function ForFunCompetitionsPage() {
         </div>
         <div>
           <InfoPiece
-            title="Team celebrations"
+            title="Virtual happy hour"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/virtual-happy-hour.webp"}
             description={
               <ProsConsList
                 type="cons"
                 className="mt-6"
                 items={[
-                  "Feels forced and artificial on video platforms.",
-                  "No sense of shared space or atmosphere.",
-                  "Limited activites beyond conversation.",
-                  "Early departures due to engagement challenges.",
+                  "Awkward video call with forced conversation.",
+                  "No structure leads to dominant speakers.",
+                  "Limited activites beyond talking.",
+                  "High dropout rate due to boredom.",
                 ]}
               />
             }
@@ -284,16 +285,16 @@ export default function ForFunCompetitionsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/agree-or-disagree-full.webp"}
             description={
               <ProsConsList
                 type="pros"
                 className="mt-6"
                 items={[
-                  "Themed 3D environments create event atmosphere.",
-                  "Interactive games and activities for natural bonding.",
-                  "Spatial audio enables organic group formation.",
-                  "Memorable shared experiences that strengthen culture.",
+                  "Dynamic 3D environments with natural movement.",
+                  "Game activities provide structure and focus.",
+                  "Spatial audio enables naatural group formation.",
+                  "Higher retention through genuine enjoyment.",
                 ]}
               />
             }
@@ -326,39 +327,42 @@ export default function ForFunCompetitionsPage() {
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Immersive all-hands meetings"
-          image={"/images/campfire.jpg"}
+          title="Knowledge-building trivia"
+          image={"/images/auditorium-hero.webp"}
           reverse={true}
-          description="Host a company all-hands in our Auditorium with breakout sessions in themed 3D spaces for Q&A and small group discussions that maintain consistent branding and connection."
+          description="Host a virtual trivia night in our Auditorium where teams compete in knowledge challenges, with visual scorekeeping and spatial audio for team huddles that create authentic excitement."
           cta={{
             variant: "text",
             children: "Start your first all-hands",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Interactive virtual conferences"
-          image={"/images/campfire.jpg"}
-          description="Organize a virtual conference with keynote stages, exhibition areas, and networking lounges in a custom 3D campus environment where attendees navigate naturally between spaces."
+          title="Team obstacle challenge"
+          image={"/images/floor-is-lava-hero.webp"}
+          description="Run a relay race in our Floor is Lava environment where teams compete to complete challenges while navigating obstacles, building morale through shared achievements and good-natured laughter."
           cta={{
             variant: "text",
             children: "Start your first virtual conference",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
-          title="Engaging holiday celebrations"
-          image={"/images/campfire.jpg"}
-          description="Run a holiday party with themed 3D spaces featuring games like Floor is Lava and Connect 4 for cross-team bonding that creates memorable shared experiences despite physical distance."
+          title="Strategic skill competition"
+          image={"/images/connect4-hero.webp"}
+          description="Organize team competitions in our Connect 4 space where players must score in basketball hoops to place their pieces, combining physical skill with strategy in a way that levels the playing field for different team members."
           reverse={true}
           cta={{
             variant: "text",
             children: "Start your first holiday party",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -425,14 +429,14 @@ export default function ForFunCompetitionsPage() {
       <Section
         title="Future proof your team"
         titleClassName="max-w-[960px] font-medium"
-        subtitle="Blend in-person and virtual attendees in one cohesive 3D environment, adapting to evolving hybrid work models without leaving anyone out."
+        subtitle="Team Up! continuously adds new games and challenges based on the latest in game design and team psychology, ensuring your team always has fresh ways to bond."
         subtitleClassName="text-dark-space max-w-[960px]"
         className="overflow-hidden max-w-[1600px] mx-auto"
       />
       <ClosingCTA
         text="Start creating a company culture that works"
         buttonText="Request access"
-      />
+      />{" "}
     </div>
   );
 }

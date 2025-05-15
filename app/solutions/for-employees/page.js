@@ -142,7 +142,7 @@ export default function ForEmployeesPage() {
       </Section>
       <Section
         preTitle="The problem in numbers"
-        title="Title under construction"
+        title="See how disconnection affects your colleagues"
         bgClassName="bg-white"
         containerClassName="max-w-[1440px] mx-auto"
       >
@@ -192,7 +192,7 @@ export default function ForEmployeesPage() {
           <InfoPiece
             title="Annual in-person team events"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-team-building.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -209,7 +209,7 @@ export default function ForEmployeesPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-team-building.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -229,7 +229,7 @@ export default function ForEmployeesPage() {
           <InfoPiece
             title="Video conferencing for daily interactions"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/remote-first.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -246,7 +246,7 @@ export default function ForEmployeesPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-daily-standup.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -266,7 +266,7 @@ export default function ForEmployeesPage() {
           <InfoPiece
             title="Communication channels"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/slack-fatigue.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -283,7 +283,7 @@ export default function ForEmployeesPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-sailboat-retrospective.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -326,7 +326,7 @@ export default function ForEmployeesPage() {
       >
         <InfoPiece
           title="Virtual coffee breaks"
-          image={"/images/campfire.jpg"}
+          image={"/images/campfire-hero.webp"}
           reverse={true}
           description="Join a virtual coffee chat in our Campfire environment with conversation cards to spark meaningful discussions with colleagues."
           cta={{
@@ -339,7 +339,7 @@ export default function ForEmployeesPage() {
         />
         <InfoPiece
           title="Virtual events"
-          image={"/images/campfire.jpg"}
+          image={"/images/auditorium-hero.webp"}
           description="Attend a virtual workshop in our Auditorium to learn new skills in an engaging, relaxed 3D setting with interactive elements."
           cta={{
             variant: "text",
@@ -347,6 +347,31 @@ export default function ForEmployeesPage() {
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/auditorium"),
+          }}
+        />
+        <InfoPiece
+          title="Sprint planning sessions"
+          image={"/images/planning-hero.webp"}
+          reverse={true}
+          description="Plan your sprints in an interactive space where voting is more dynamic, anonymous and fun. The sprint planning meetings will flow effortlessly."
+          cta={{
+            variant: "text",
+            children: "Check out our Planning space",
+            size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
+            onClick: () => (window.location.href = "/spaces/planning"),
+          }}
+        />
+        <InfoPiece
+          title="Weekly retrospectives"
+          image={"/images/sailboat-retrospective-hero.webp"}
+          description="Host weekly retrospective in our Sailboat retrospective space, where you can feel as if you were put in post-its in the whiteboard of your office."
+          cta={{
+            variant: "text",
+            children: "Check our Sailboat retrospective",
+            size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
+            onClick: () => (window.location.href = "/spaces/planning"),
           }}
         />
       </Section>
