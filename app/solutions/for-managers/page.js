@@ -46,6 +46,7 @@ export default function ForManagersPage() {
           },
         ]}
         buttonsPosition="top"
+        show={false}
       >
         <LogoSlider />
       </Section>
@@ -83,6 +84,7 @@ export default function ForManagersPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -111,19 +113,16 @@ export default function ForManagersPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Interactive whiteboards"
             description="Brainstorm and plan visually with your team in dedicated 3D spaces designed for collaboration."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Planning spaces"
             description="Run quick, effective stand-ups or strategy sessions in environments like our Planning space with built-in anonymous voting."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Team events"
             description="Host morale-boosting activities like our Connect 4 and The Farmyard games without extra planning effort."
           />

@@ -58,6 +58,7 @@ export default function ForCXOsPage() {
           },
         ]}
         buttonsPosition="top"
+        show={false}
       >
         <LogoSlider />
       </Section>
@@ -95,6 +96,7 @@ export default function ForCXOsPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -123,19 +125,16 @@ export default function ForCXOsPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="A change that can be felt"
             description="Don't rely on metrics that don't really show the reality of your company. Jump into the spaces and see your employees in motion."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Scalable events"
             description="Host company-wide gatherings in immersive 3D spaces without logistical overhead or travel expenses. Just a few clicks and you're ready to go."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Ready to use spaces"
             description="Go from 0 to 100 with our ready to use spaces that (will) cover the full range of scenarios and needs of your company."
           />

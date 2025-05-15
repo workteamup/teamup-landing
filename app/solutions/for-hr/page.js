@@ -57,6 +57,7 @@ export default function ForHRPage() {
           },
         ]}
         buttonsPosition="top"
+        show={false}
       >
         <LogoSlider />
       </Section>
@@ -93,6 +94,7 @@ export default function ForHRPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -121,19 +123,16 @@ export default function ForHRPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Virtual culture building"
             description="Use 3D spaces that embody your company values and provide spaces for meaningful connection, from casual coffee chats to structure mentoring sessions."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Onboarding journey"
             description="Design interactive onboarding paths, mentor meet-ups, and team integration activities that make new hires feel welcome and connected from day one."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Engagement measurement"
             description="Track sentiment, participation, and team cohesion through unobtrusive data collection during virtual interactions. You can feel the engagement in real-time."
           />

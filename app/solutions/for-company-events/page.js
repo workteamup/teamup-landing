@@ -57,6 +57,7 @@ export default function ForCompanyEventsPage() {
           },
         ]}
         buttonsPosition="top"
+        show={false}
       >
         <LogoSlider />
       </Section>

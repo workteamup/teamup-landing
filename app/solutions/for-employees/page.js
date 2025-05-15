@@ -58,6 +58,7 @@ export default function ForEmployeesPage() {
           },
         ]}
         buttonsPosition="top"
+        show={false}
       >
         <LogoSlider />
       </Section>
@@ -94,6 +95,7 @@ export default function ForEmployeesPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -122,19 +124,16 @@ export default function ForEmployeesPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Virtual games"
             description="Enjoy trivia, escape rooms, obstacle courses lik The Floor is -lava, and more with your team in fully interactive 3D environments."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Personal avatars"
             description="Customize your 3D avatar and virtual desk to express your personality and be recognized by teammates."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Social hubs"
             description="Drop into casual 3D rooms like our Campfire for coffee breaks or quick chats that feel  like real-world interactions."
           />
