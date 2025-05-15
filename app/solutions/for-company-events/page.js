@@ -119,6 +119,7 @@ export default function ForCompanyEventsPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -148,19 +149,16 @@ export default function ForCompanyEventsPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Diverse spaces"
             description="Choose from our Auditorium, Campfire, or custom spaces to create the perfect atmosphere for your specific event."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Breakout rooms"
             description="Create small groups for networking or discussions in connected 3D spaces that maintain the event's cohesive feel."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Multi-topic events"
             description="Have different rooms for different topics so attendees can move between them as they please."
           />
@@ -194,7 +192,7 @@ export default function ForCompanyEventsPage() {
           <InfoPiece
             title="Company All-hands"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-all-hands.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -211,7 +209,7 @@ export default function ForCompanyEventsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-all-hands.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -231,7 +229,7 @@ export default function ForCompanyEventsPage() {
           <InfoPiece
             title="Video conferences"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-daily-standup.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -248,7 +246,7 @@ export default function ForCompanyEventsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-daily-standup.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -268,7 +266,7 @@ export default function ForCompanyEventsPage() {
           <InfoPiece
             title="Team celebrations"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/virtual-happy-hour.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -285,7 +283,7 @@ export default function ForCompanyEventsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-team-building.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -328,7 +326,7 @@ export default function ForCompanyEventsPage() {
       >
         <InfoPiece
           title="Immersive all-hands meetings"
-          image={"/images/campfire.jpg"}
+          image={"/images/auditorium-hero.webp"}
           reverse={true}
           description="Host a company all-hands in our Auditorium with breakout sessions in themed 3D spaces for Q&A and small group discussions that maintain consistent branding and connection."
           cta={{
@@ -341,7 +339,7 @@ export default function ForCompanyEventsPage() {
         />
         <InfoPiece
           title="Interactive virtual conferences"
-          image={"/images/campfire.jpg"}
+          image={"/images/virtual-conference.webp"}
           description="Organize a virtual conference with keynote stages, exhibition areas, and networking lounges in a custom 3D campus environment where attendees navigate naturally between spaces."
           cta={{
             variant: "text",
@@ -353,7 +351,7 @@ export default function ForCompanyEventsPage() {
         />
         <InfoPiece
           title="Engaging holiday celebrations"
-          image={"/images/campfire.jpg"}
+          image={"/images/connect4-hero.webp"}
           description="Run a holiday party with themed 3D spaces featuring games like Floor is Lava and Connect 4 for cross-team bonding that creates memorable shared experiences despite physical distance."
           reverse={true}
           cta={{

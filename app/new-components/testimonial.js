@@ -7,6 +7,7 @@ const Testimonial = ({
   logo,
   quote,
   person = {},
+  show = true,
   className = "",
   containerClassName = "",
   logoClassName = "",
@@ -16,6 +17,8 @@ const Testimonial = ({
   personNameClassName = "",
   personJobTitleClassName = "",
 }) => {
+  if (!show) return null;
+
   return (
     <div className={cn("w-full", className)}>
       <div

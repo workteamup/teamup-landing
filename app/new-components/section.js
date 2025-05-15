@@ -17,7 +17,10 @@ const Section = ({
   buttonsPosition = "top", // 'top' or 'bottom'
   containerClassName = "",
   bgClassName = "",
+  show = true,
 }) => {
+  if (!show) return null;
+
   console.log("Section props:", { preTitle, title, subtitle });
 
   return (

@@ -58,6 +58,7 @@ export default function Home() {
           },
         ]}
         buttonsPosition="top"
+        show={false}
       >
         <LogoSlider />
       </Section>
@@ -295,6 +296,25 @@ export default function Home() {
           />
         </div>
       </Section>
+      <CTA
+        mainClaim="Start creating a culture that attracts and retains talent"
+        description="Join hundreds of companies improving their team culture with Team Up!"
+        buttons={[
+          {
+            children: "Request access",
+            variant: "primary",
+            size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
+          },
+          {
+            children: "Contact sales",
+            variant: "tertiary",
+            size: "xl",
+            onClick: () => (window.location.href = "/contact"),
+          },
+        ]}
+      />
       <Section
         preTitle="Who's it for?"
         title="Team Up! works for companies like yours"
@@ -348,25 +368,6 @@ export default function Home() {
           reverse={true}
         />
       </Section>
-      <CTA
-        mainClaim="Ready to transform your team?"
-        description="Join thousands of companies improving their team culture with TeamUp"
-        buttons={[
-          {
-            children: "Get Started",
-            variant: "primary",
-            size: "xl",
-            onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
-          },
-          {
-            children: "Learn More",
-            variant: "tertiary",
-            size: "xl",
-            onClick: () => (window.location.href = "/features"),
-          },
-        ]}
-      />
 
       <Section
         preTitle="Features"
@@ -469,21 +470,21 @@ export default function Home() {
         </div>
       </Section>
       <CTA
-        mainClaim="Ready to transform your team?"
-        description="Join thousands of companies improving their team culture with TeamUp"
+        mainClaim="Ready to transform your company culture?"
+        description="Join hundred of companies improving their company culture with Team Up!"
         buttons={[
           {
-            children: "Get Started",
+            children: "Request access",
             variant: "primary",
             size: "xl",
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
-            children: "Learn More",
+            children: "Contact sales",
             variant: "tertiary",
             size: "xl",
-            onClick: () => (window.location.href = "/features"),
+            onClick: () => (window.location.href = "/contact"),
           },
         ]}
       />
@@ -730,7 +731,7 @@ export default function Home() {
           />
         </div>
       </Section>
-      <Section
+      {/*<Section
         title="What a month with Team Up! looks like"
         titleClassName="max-w-[1200px]"
         subtitle="Click on the meetings to see the space used"
@@ -751,7 +752,7 @@ export default function Home() {
         buttonsPosition="bottom"
       >
         <TeamUpMonth />
-      </Section>
+      </Section>*/}
       <Section
         preTitle="Contact"
         title="Want to know more about Team Up!?"
