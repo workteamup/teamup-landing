@@ -86,7 +86,6 @@ export default function ForFunCompetitionsPage() {
             window.open("https://app.teamup.works/signup", "_blank"),
         }}
       />
-      
       <Section
         preTitle="The problem in numbers"
         title="What not engaging your employees can cost you"

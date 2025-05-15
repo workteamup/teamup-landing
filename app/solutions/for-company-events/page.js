@@ -209,8 +209,8 @@ export default function ForCompanyEventsPage() {
           />
           <InfoPiece
             title="...but with Team Up!"
-            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/debate-hero.jpg"}
+            titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl" 
+            image={"/images/debate-hero.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -720,15 +720,20 @@ export default function ForCompanyEventsPage() {
               image: "/images/campfire.jpg",
             },
             {
-              title: "Configure your event",
+              title: "Create rooms for all the matchups",
               description:
-                "Select the type of matching you want (by themed rooms or mixer), spaces for each room,etc. and send the invitations.",
+                "When all teams have joined, edit the event and create rooms for each different matchup so that everyone know which room to go to.",
+            },
+            {
+              title: "Have fun and compete to win",
+              description:
+                "Enjoy a fun competition with people of your company you don´t see every day and try your best to win!",
               image: "/images/campfire.jpg",
             },
             {
-              title: "Enjoy a virtual event that doesn't suck",
+              title: "Optional: run mixed teams competitions",
               description:
-                "When the time comes, enjoy the first virtual event that is really interactive, with a real sense of presence and connection.",
+                "Create cross-department bonds by pairing people from different departments so that they can get to know each other better.",
               image: "/images/campfire.jpg",
             },
           ]}
