@@ -47,6 +47,7 @@ export default function AuditoriumPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -149,19 +150,16 @@ export default function AuditoriumPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Feel like presenting in person"
             description="Replace the cold feeling of presenting in a webcam grid with the feeling of being in front of a real audience."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="See an engaged audience"
             description="See your audience engaged in the conversation with their reactions and the movement to vote the polls you set up."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Control the flow of the conversation"
             description="The audience's audio is muted, so no interruptions, no unwanted noise, just the presenter and the audience."
           />
