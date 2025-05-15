@@ -42,6 +42,7 @@ export default function ThisOrThatPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -142,19 +143,16 @@ export default function ThisOrThatPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Run entertaining icebreakers"
             description="Run company-wide fun and entertaining icebreakers with just a few clicks."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Get to know everyone"
             description="Learn things about your colleagues you never imagined that will help you connect with them."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Bond over shared interests"
             description="Team up with the colleagues on your side and fight for your the option you like the most."
           />

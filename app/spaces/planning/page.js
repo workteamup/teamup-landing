@@ -42,6 +42,7 @@ export default function PlanningPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -145,19 +146,16 @@ export default function PlanningPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Fun voting sessions"
             description="Voting sessions will never be a boring experience again that feels like a waste of time."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="More interactive and engaging"
             description="Get the team more engaged by making them move around the space instead of just selecting options."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Faster and more efficient"
             description="Get the results faster and more efficiently by making the voting process more interactive."
           />

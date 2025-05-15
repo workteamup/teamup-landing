@@ -42,6 +42,7 @@ export default function DebateRoomPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -130,19 +131,16 @@ export default function DebateRoomPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Organize debates easily"
             description="Forget about the hassle of organizing structured conversations. The Debate room makes it easy to run debates with your team."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Run mock debates"
             description="Make everyone challenge their assumptions and think differently about a topic."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Give your team a voice"
             description="Use the debate room to give everyone a chance to speak and be heard and reach a consensus."
           />

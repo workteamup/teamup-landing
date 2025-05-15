@@ -45,6 +45,7 @@ export default function EmployeeTurnoverPage() {
           },
         ]}
         buttonsPosition="top"
+        show={false}
       >
         <LogoSlider />
       </Section>
@@ -103,6 +104,7 @@ export default function EmployeeTurnoverPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -127,19 +129,16 @@ export default function EmployeeTurnoverPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Save costs on team building"
             description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Increase productivity of your workforce"
             description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Boost retention at your company"
             description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
           />

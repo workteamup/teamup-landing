@@ -42,6 +42,7 @@ export default function TheFarmyardPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -137,19 +138,16 @@ export default function TheFarmyardPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Strategic thinking development"
             description="Strengthen decision-making as teams evaluate resource allocation, risk assessment, and opportunity costs under time pressure."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Natural role discovery"
             description="Identify team members' natural strengths in tactical execution, strategic thinking, coordination, and motivation."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Communication pattern insights"
             description="Gain valuable insights into information sharing, decision clarity, and feedback loops that transfer directly to work."
           />

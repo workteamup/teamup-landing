@@ -42,6 +42,7 @@ export default function Connect4Page() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -146,19 +147,16 @@ export default function Connect4Page() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Balanced participation"
             description="Strategic thinkers excel at game planning while others master basket shots, ensuring everyone contributes regardless of role or thinking style."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Strategic thinking transfer"
             description="Exercise the same prediction and tactical thinking muscles used in business decision-making through engaging gameplay."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Natural relationship building"
             description="Share universal experiences of wins, defeats, and collaborative victories that break down communication barriers across teams."
           />

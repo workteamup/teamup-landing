@@ -42,6 +42,7 @@ export default function TheFloorIsLavaPage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -136,19 +137,16 @@ export default function TheFloorIsLavaPage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Loads of laughs"
             description="There's nothing funnier than seeing your colleagues get hit and fall down over and over again."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Collaboration"
             description="Plenty of chances for teammates to work together and support each other to try and get better."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Leadership"
             description="See who takes proactive leadership role to teach everyone how to avoid the obstacles."
           />

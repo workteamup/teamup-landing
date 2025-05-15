@@ -42,6 +42,7 @@ export default function CampfirePage() {
           name: "Pablo Yusta",
           jobTitle: "Chief Executive Officer, AiKit",
         }}
+        show={false}
         /*containerClassName="bg-purple-50"
         quoteClassName="text-purple-900"
         personNameClassName="text-purple-900"
@@ -141,19 +142,16 @@ export default function CampfirePage() {
         ]}
         buttonsPosition="bottom"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           <InfoElement
-            imageSrc="/images/campfire.jpg"
             title="Comfortable and casual"
             description="No one has the pressure to bring up topics and you can just relax and enjoy the conversation."
           />
           <InfoElement
-            imageSrc="/images/farm.jpg"
             title="Perfect for onboarding"
             description="New hires will never have an easier way to get to know their new colleagues and feel part of the team."
           />
           <InfoElement
-            imageSrc="/images/auditorium.jpg"
             title="Easiest way to bond"
             description="Learn things about your colleagues you never knew and make new connections that will last a lifetime."
           />
