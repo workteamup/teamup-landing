@@ -193,7 +193,7 @@ export default function AuditoriumPage() {
       >
         <InfoPiece
           title="Company all hands"
-          image={"/images/campfire.jpg"}
+          image={"/images/all-hands.webp"}
           reverse={true}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
@@ -208,7 +208,7 @@ export default function AuditoriumPage() {
         />
         <InfoPiece
           title="Company town hall"
-          image={"/images/campfire.jpg"}
+          image={"/images/town-hall.webp"}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
@@ -222,7 +222,7 @@ export default function AuditoriumPage() {
         />
         <InfoPiece
           title="AMA sessions"
-          image={"/images/campfire.jpg"}
+          image={"/images/ask-me-anything.webp"}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           reverse={true}

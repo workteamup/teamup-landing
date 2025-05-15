@@ -95,19 +95,19 @@ export default function TheFloorIsLavaPage() {
               title: "Choose a path and get everyone ready",
               description:
                 "Choose which path you want to take and get everyone ready for the challenge.",
-              image: "/images/campfire.jpg",
+              image: "/images/floorislava-choose-path.webp",
             },
             {
               title: "Start trying, falling, laughing and trying again",
               description:
                 "Start the challenge and see who can avoid the obstacles and who falls the most.",
-              image: "/images/campfire.jpg",
+              image: "/images/floorislava-fail.webp",
             },
             {
               title: "Get the coin",
               description:
                 "There's a coin at the end of the path. The first to get there will be the champion of the session.",
-              image: "/images/campfire.jpg",
+              image: "/images/floorislava-coin.webp",
             },
           ]}
         />
@@ -180,7 +180,7 @@ export default function TheFloorIsLavaPage() {
       >
         <InfoPiece
           title="Fun coffee breaks"
-          image={"/images/campfire.jpg"}
+          image={"/images/coffee-break.webp"}
           reverse={true}
           description="Take a break from the daily routine and talk about life outside of work while having a good laugh."
           cta={{
@@ -194,7 +194,7 @@ export default function TheFloorIsLavaPage() {
         />
         <InfoPiece
           title="Team challenges"
-          image={"/images/campfire.jpg"}
+          image={"/images/team-building-challenge.webp"}
           description="Get the different teams of your company to complete the tracks in the fasters time."
           cta={{
             variant: "text",
@@ -207,7 +207,7 @@ export default function TheFloorIsLavaPage() {
         />
         <InfoPiece
           title="Fun competitions"
-          image={"/images/campfire.jpg"}
+          image={"/images/team-building-race.webp"}
           description="Run company-wide individual races to see who's the fastest. The winner gets a reward."
           reverse={true}
           cta={{

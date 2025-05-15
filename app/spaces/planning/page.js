@@ -191,7 +191,7 @@ export default function PlanningPage() {
       >
         <InfoPiece
           title="Sprint planning"
-          image={"/images/campfire.jpg"}
+          image={"/images/planning-poker-2.webp"}
           reverse={true}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
@@ -206,7 +206,7 @@ export default function PlanningPage() {
         />
         <InfoPiece
           title="Strategic planning meetings"
-          image={"/images/campfire.jpg"}
+          image={"/images/hybrid-meetings-2.webp"}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
@@ -220,7 +220,7 @@ export default function PlanningPage() {
         />
         <InfoPiece
           title="Feedback gathering sessions"
-          image={"/images/campfire.jpg"}
+          image={"/images/poll.webp"}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           reverse={true}

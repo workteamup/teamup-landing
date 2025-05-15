@@ -131,7 +131,7 @@ export default function ForManagersPage() {
       </Section>
       <Section
         preTitle="The problem in numbers"
-        title="Title under construction"
+        title="See how poor collaboration affects your company"
         bgClassName="bg-white"
         containerClassName="max-w-[1440px] mx-auto"
       >
@@ -139,7 +139,7 @@ export default function ForManagersPage() {
           <NumberElement
             number={68}
             suffix="%"
-            description="68% of managers report strgguling to keep remote team members engages during virtual meetings."
+            description="68% of managers report struggling to keep remote team members engages during virtual meetings."
           />
           <NumberElement
             number={35}
@@ -182,7 +182,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="Annual in-person team events"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-team-building.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -199,7 +199,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-team-building.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -219,7 +219,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="Video conferencing for team collaboration"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/remote-first.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -236,7 +236,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-daily-standup.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -256,7 +256,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="Project management tools"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-retrospective.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -273,7 +273,7 @@ export default function ForManagersPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-sailboat-retrospective.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -316,7 +316,7 @@ export default function ForManagersPage() {
       >
         <InfoPiece
           title="Sprint planning sessions"
-          image={"/images/campfire.jpg"}
+          image={"/images/planning-hero.webp"}
           reverse={true}
           description="Plan your sprints in an interactive space where voting is more dynamic, anonymous and fun. The sprint planning meetings will flow effortlessly."
           cta={{
@@ -329,7 +329,7 @@ export default function ForManagersPage() {
         />
         <InfoPiece
           title="Weekly retrospectives"
-          image={"/images/campfire.jpg"}
+          image={"/images/sailboat-retrospective-hero.webp"}
           description="Host weekly retrospective in our Sailboat retrospective space, where you can feel as if you were put in post-its in the whiteboard of your office."
           cta={{
             variant: "text",
@@ -369,25 +369,28 @@ export default function ForManagersPage() {
               title: "Request access to Team Up!",
               description:
                 "Apply for access to Team Up! in https://app.teamup.works/signup",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/request-access.webm",
             },
             {
               title: "Create your company's workspace",
               description:
-                "Create a workspace that reflects your company culture and invite your team members to join.",
-              image: "/images/campfire.jpg",
+                "Create a workspace that reflects your company culture and invite your employees to join.",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-workspace.webm",
             },
             {
-              title: "Create your first meeting room",
+              title: "Create your first meeting room or event",
               description:
                 "Create a meeting room, invite your team members and start having engaging and productive meetings.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-first-meeting.webm",
             },
             {
               title: "Reap the benefits",
               description:
-                "Happier teams perform better, and Team Up! will help you have a more united team that will work better together.",
-              image: "/images/campfire.jpg",
+                "Happier teams perform better, and Team Up! will help you have a more connected workforce that will boost your bottom line.",
+              image: "/images/reap-the-benefits.webp",
             },
           ]}
         />

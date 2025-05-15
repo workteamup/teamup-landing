@@ -412,20 +412,6 @@ const Navbar = () => {
                                     Employees
                                   </a>
                                 </div>
-                                <div className="flex items-center gap-4">
-                                  <Image
-                                    src="/svg/custom-icons/menu/marketing.svg"
-                                    width={20}
-                                    height={20}
-                                    alt="Marketing"
-                                  />
-                                  <a
-                                    href="/solutions/for-marketing"
-                                    className="text-brand-700 text-sm"
-                                  >
-                                    Marketing
-                                  </a>
-                                </div>
                               </div>
                               <div className="flex flex-col gap-6">
                                 <span className="text-purple-300 text-xs font-medium tracking-[0.08em] uppercase">
@@ -471,20 +457,6 @@ const Navbar = () => {
                                     className="text-brand-700 text-sm"
                                   >
                                     Fun Competitions
-                                  </a>
-                                </div>
-                                <div className="flex items-center gap-4">
-                                  <Image
-                                    src="/svg/custom-icons/menu/custom-office-space.svg"
-                                    width={20}
-                                    height={20}
-                                    alt="Custom Office Space"
-                                  />
-                                  <a
-                                    href="/solutions/for-custom-office-space"
-                                    className="text-brand-700 text-sm"
-                                  >
-                                    Custom Office Space
                                   </a>
                                 </div>
                               </div>
@@ -863,20 +835,6 @@ const Navbar = () => {
                             Employees
                           </a>
                         </div>
-                        <div className="flex items-center gap-4 cursor-pointer">
-                          <Image
-                            src="/svg/custom-icons/menu/marketing.svg"
-                            width={20}
-                            height={20}
-                            alt="Marketing"
-                          />
-                          <a
-                            href="/solutions/for-marketing"
-                            className="text-brand-700 text-sm"
-                          >
-                            Marketing
-                          </a>
-                        </div>
                       </div>
                       {/* By Type */}
                       <div className="flex flex-col gap-4">
@@ -921,20 +879,6 @@ const Navbar = () => {
                           />
                           <span className="text-brand-700 text-sm">
                             Fun Competitions
-                          </span>
-                        </a>
-                        <a
-                          href="/solutions/for-custom-office-space"
-                          className="flex items-center gap-4 cursor-pointer"
-                        >
-                          <Image
-                            src="/svg/custom-icons/menu/custom-office-space.svg"
-                            width={20}
-                            height={20}
-                            alt="Custom Office Space"
-                          />
-                          <span className="text-brand-700 text-sm">
-                            Custom Office Space
                           </span>
                         </a>
                       </div>

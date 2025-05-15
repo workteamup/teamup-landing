@@ -125,12 +125,12 @@ export default function ForHRPage() {
           <InfoElement
             imageSrc="/images/campfire.jpg"
             title="Virtual culture building"
-            description="Use 3D environment taht embody your company values and provide spaces for meaningful connection, from casual coffee chats to structure mentoring sessions."
+            description="Use 3D spaces that embody your company values and provide spaces for meaningful connection, from casual coffee chats to structure mentoring sessions."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
             title="Onboarding journey"
-            description="Design interactive onboarding paths, mentor meet-ups, and team integration activities that make new hires feel wecome from day one."
+            description="Design interactive onboarding paths, mentor meet-ups, and team integration activities that make new hires feel welcome and connected from day one."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
@@ -141,7 +141,7 @@ export default function ForHRPage() {
       </Section>
       <Section
         preTitle="The problem in numbers"
-        title="Title under construction"
+        title="See how poor culture affects your company"
         bgClassName="bg-white"
         containerClassName="max-w-[1440px] mx-auto"
       >
@@ -191,7 +191,7 @@ export default function ForHRPage() {
           <InfoPiece
             title="Annual in-person team events"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-team-building.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -208,7 +208,7 @@ export default function ForHRPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-team-building.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -228,7 +228,7 @@ export default function ForHRPage() {
           <InfoPiece
             title="Employee engagement surveys"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/satisfaction-survey.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -245,7 +245,7 @@ export default function ForHRPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/agree-or-disagree-full.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -265,7 +265,7 @@ export default function ForHRPage() {
           <InfoPiece
             title="Onboarding processes"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/onboarding-process.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -282,7 +282,7 @@ export default function ForHRPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-onboarding.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -325,7 +325,7 @@ export default function ForHRPage() {
       >
         <InfoPiece
           title="Employee onboarding"
-          image={"/images/campfire.jpg"}
+          image={"/images/teamup-onboarding.webp"}
           reverse={true}
           description="Organize a virtual onboarding program using the spaces in Team Up! to welcome new hires and connect them with mentors through interactive 3D spaces."
           cta={{
@@ -338,7 +338,7 @@ export default function ForHRPage() {
         />
         <InfoPiece
           title="Company-wide challenges"
-          image={"/images/campfire.jpg"}
+          image={"/images/connect4-hero.webp"}
           description="Take advantage of Team Up!'s games and challenges to organize company-wide events that boost engagement, foster a sense of belonging, and build a strong company culture."
           cta={{
             variant: "text",
@@ -350,7 +350,7 @@ export default function ForHRPage() {
         />
         <InfoPiece
           title="Company AMA sessions"
-          image={"/images/campfire.jpg"}
+          image={"/images/ama-hr.webp"}
           description="Let your employees ask questions to the CEO or other CXOs in a casual and engaging environment or let your leaders host AMA sessions to share their expertise and insights."
           reverse={true}
           cta={{
@@ -391,25 +391,28 @@ export default function ForHRPage() {
               title: "Request access to Team Up!",
               description:
                 "Apply for access to Team Up! in https://app.teamup.works/signup",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/request-access.webm",
             },
             {
               title: "Create your company's workspace",
               description:
                 "Create a workspace that reflects your company culture and invite your employees to join.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-workspace.webm",
             },
             {
               title: "Create your first meeting room or event",
               description:
                 "Create a meeting room or event, invite your employees, and start improving your company culture.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-first-meeting.webm",
             },
             {
               title: "Reap the benefits",
               description:
                 "Happier teams perform better, and Team Up! will help you have a more connected workforce that will boost your bottom line.",
-              image: "/images/campfire.jpg",
+              image: "/images/reap-the-benefits.webp",
             },
           ]}
         />

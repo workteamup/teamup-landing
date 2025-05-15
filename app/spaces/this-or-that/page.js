@@ -186,7 +186,7 @@ export default function ThisOrThatPage() {
       >
         <InfoPiece
           title="Loosen up before a long meeting"
-          image={"/images/campfire.jpg"}
+          image={"/images/this-or-that.webp"}
           reverse={true}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
@@ -201,7 +201,7 @@ export default function ThisOrThatPage() {
         />
         <InfoPiece
           title="Get important insights in a fun way"
-          image={"/images/campfire.jpg"}
+          image={"/images/would-you-rather.webp"}
           description="Use a low pressure environment to get important insights of your employees in a more entertaining way."
           cta={{
             variant: "text",
@@ -214,7 +214,7 @@ export default function ThisOrThatPage() {
         />
         <InfoPiece
           title="Connect employees over fun topics"
-          image={"/images/campfire.jpg"}
+          image={"/images/agree-or-disagree.webp"}
           description="Let employees that don't know each other well connect over different and fun topics in a fun way."
           reverse={true}
           cta={{

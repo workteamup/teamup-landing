@@ -126,24 +126,25 @@ export default function ForCXOsPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoElement
             imageSrc="/images/campfire.jpg"
-            title="Save costs on team building"
-            description="Replace expensive in-person events with scalable virtual team-building, saving up to 30% on engagement costs while increasing frequency of connection."
+            title="A change that can be felt"
+            description="Don't rely on metrics that don't really show the reality of your company. Jump into the spaces and see your employees in motion."
           />
           <InfoElement
             imageSrc="/images/farm.jpg"
-            title="Increase productivity of your workforce"
-            description="Increase team ouput by 20% with 3D environments that enhance collaboration, communication and cross-team innovation."
+            title="Scalable events"
+            description="Host company-wide gatherings in immersive 3D spaces without logistical overhead or travel expenses. Just a few clicks and you're ready to go."
           />
           <InfoElement
             imageSrc="/images/auditorium.jpg"
-            title="Boost retention at your company"
-            description="Reduce turnover and recruiting expenses by fostering a loyal, engaged workforce with regular interactive experiences."
+            title="Ready to use spaces"
+            description="Go from 0 to 100 with our ready to use spaces that (will) cover the full range of scenarios and needs of your company."
           />
         </div>
       </Section>
       <Section
         preTitle="The problem in numbers"
-        title="Title under construction"
+        title="The effect poor engagement has on your company"
+        titleClassName="max-w-[1200px]"
         bgClassName="bg-white"
         containerClassName="max-w-[1440px] mx-auto"
       >
@@ -194,7 +195,7 @@ export default function ForCXOsPage() {
           <InfoPiece
             title="Annual in-person team events"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-team-building.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -211,7 +212,7 @@ export default function ForCXOsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-team-building.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -231,7 +232,7 @@ export default function ForCXOsPage() {
           <InfoPiece
             title="Video conferencing for team collaboration"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/remote-first.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -248,7 +249,7 @@ export default function ForCXOsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-company-all-hands.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -268,7 +269,7 @@ export default function ForCXOsPage() {
           <InfoPiece
             title="Workplace communication platforms"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/slack-fatigue.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -285,7 +286,7 @@ export default function ForCXOsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-sailboat-retrospective.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -327,40 +328,37 @@ export default function ForCXOsPage() {
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Spark conversation and foster connection"
-          image={"/images/campfire.jpg"}
+          title="Town hall meetings where everyone feels seen"
+          image={"/images/auditorium-hero.webp"}
           reverse={true}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Host a company-wide town hall meeting in the auditorium and let your employees ask questions to the CEO or other CXOs in a casual and engaging environment."
           cta={{
-            variant: "primary",
-            children: "Take a look at our Campfire",
+            variant: "text",
+            children: "Take a look at our Auditorium",
+            size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
+            onClick: () => (window.location.href = "/spaces/auditorium"),
+          }}
+        />
+        <InfoPiece
+          title="Ice breakers that won't feel awkward"
+          image={"/images/campfire-hero.webp"}
+          description="Use the Campfire or This or that spaces to break the ice in a fun and not invasive way that will help your employees feel more connected."
+          cta={{
+            variant: "text",
+            children: "Check out our Campfire",
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () => (window.location.href = "/spaces/campfire"),
           }}
         />
         <InfoPiece
-          title="Transform routine collaboration into interactive experiences"
-          image={"/images/campfire.jpg"}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
-          cta={{
-            variant: "primary",
-            children: "Check out our Planning space",
-            size: "lg",
-            iconRight: <ArrowRight className="w-4 h-4" />,
-            onClick: () => (window.location.href = "/spaces/planning"),
-          }}
-        />
-        <InfoPiece
           title="Build real teamwork skills through shared challenges and laughter"
-          image={"/images/campfire.jpg"}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          image={"/images/farmyard-hero.webp"}
+          description="No more awkward and ineffective online team-building events. Use our built-in activities to organize quick team games that will help you build teamwork and collaboration."
           reverse={true}
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "See how The Farmyard works",
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
@@ -418,13 +416,13 @@ export default function ForCXOsPage() {
               title: "Reap the benefits",
               description:
                 "Happier teams perform better, and Team Up! will help you have a more connected workforce that will boost your bottom line.",
-              image: "/images/campfire.jpg",
+              image: "/images/reap-the-benefits.webp",
             },
           ]}
         />
       </Section>
       <ClosingCTA
-        text="Start creating a company culture that works"
+        text="Start increasing your ROI with fun and strong company culture"
         buttonText="Request access"
       />
     </div>

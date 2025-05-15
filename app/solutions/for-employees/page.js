@@ -375,25 +375,28 @@ export default function ForEmployeesPage() {
               title: "Request access to Team Up!",
               description:
                 "Apply for access to Team Up! in https://app.teamup.works/signup",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/request-access.webm",
             },
             {
               title: "Create your company's workspace",
               description:
-                "Create a workspace that reflects your company culture and invite your colleagues to join.",
-              image: "/images/campfire.jpg",
+                "Create a workspace that reflects your company culture and invite your employees to join.",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-workspace.webm",
             },
             {
-              title: "Create your first meeting room",
+              title: "Create your first meeting room or event",
               description:
                 "Create a meeting room, invite your team and start having engaging and productive meetings.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-first-meeting.webm",
             },
             {
               title: "Reap the benefits",
               description:
                 "Have a healthy work-life balance while staying connected with your colleagues and building relationships that will help you be happier and more productive.",
-              image: "/images/campfire.jpg",
+              image: "/images/reap-the-benefits.webp",
             },
           ]}
         />

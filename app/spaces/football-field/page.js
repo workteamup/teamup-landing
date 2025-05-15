@@ -97,19 +97,19 @@ export default function FootballFieldPage() {
               title: "Step into the field and organize the teams",
               description:
                 "Get everyone to step into the field and get on one side to select their team.",
-              image: "/images/campfire.jpg",
+              image: "/images/football-field-organize-teams.webp",
             },
             {
               title: "Start the game",
               description:
                 "Interact with the ball so that the five minute timer begin. Score as many goals as possible before the timer runs out.",
-              image: "/images/campfire.jpg",
+              image: "/images/football-field-start-game.webp",
             },
             {
               title: "Go again?",
               description:
                 "Once the game is over, you'll face a difficult decision: go back to work or your meeting or play one more game?",
-              image: "/images/campfire.jpg",
+              image: "/images/football-field-go-again.webp",
             },
           ]}
         />
@@ -183,7 +183,7 @@ export default function FootballFieldPage() {
       >
         <InfoPiece
           title="Meeting breaks"
-          image={"/images/campfire.jpg"}
+          image={"/images/meeting-break-2.webp"}
           reverse={true}
           description="Schedule 5-minute football matches between segments of longer meetings to combat digital fatigue and reinvigorate the team with a shared activity that creates energy and laughter."
           cta={{
@@ -197,7 +197,7 @@ export default function FootballFieldPage() {
         />
         <InfoPiece
           title="Daily rituals"
-          image={"/images/campfire.jpg"}
+          image={"/images/meeting-break.webp"}
           description="Establish a quick football match as part of your team's daily routine—perhaps before lunch or at day's end—creating a consistent touchpoint that team members look forward to and that strengthens team identity."
           cta={{
             variant: "text",
@@ -210,7 +210,7 @@ export default function FootballFieldPage() {
         />
         <InfoPiece
           title="Pre-brainstorming warmup"
-          image={"/images/campfire.jpg"}
+          image={"/images/pre-brainstorming-ritual.webp"}
           description="Prime your team's creative thinking by activating different cognitive patterns through gameplay before transitioning into ideation sessions, resulting in more diverse and innovative ideas."
           reverse={true}
           cta={{
@@ -224,9 +224,8 @@ export default function FootballFieldPage() {
         />
         <InfoPiece
           title="Cross-department tournaments"
-          image={"/images/campfire.jpg"}
+          image={"/images/department-battles.webp"}
           description="Organize recurring mini-tournaments between different teams or departments, fostering connections across organizational boundaries through light-hearted competition that reveals personalities beyond work roles."
-          reverse={true}
           cta={{
             variant: "text",
             children: "Start having a remote happy hour",
@@ -237,8 +236,8 @@ export default function FootballFieldPage() {
           }}
         />
         <InfoPiece
-          title="Remote happy hourse"
-          image={"/images/campfire.jpg"}
+          title="Remote happy hours"
+          image={"/images/happy-hours.webp"}
           description="Transform passive virtual gatherings into interactive experiences by adding structured football matches that give team members something specific to do together rather than just talk."
           reverse={true}
           cta={{

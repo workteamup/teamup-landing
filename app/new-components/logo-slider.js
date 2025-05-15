@@ -6,15 +6,19 @@ export default function LogoSlider() {
   // Array of logo configurations
   const logos = [
     {
-      src: "/svg/logos/teamup-logo-black.svg",
+      src: "/svg/logos/logo-aikit.svg",
       height: 30, // height in pixels
     },
     {
-      src: "/svg/logos/teamup-logo-black.svg",
+      src: "/svg/logos/logo-aucta.svg",
       height: 40,
     },
     {
-      src: "/svg/logos/teamup-logo-black.svg",
+      src: "/svg/logos/logo-billin.svg",
+      height: 45,
+    },
+    {
+      src: "/svg/logos/logo-directo.svg",
       height: 35,
     },
     // Add more logos with their individual configurations
@@ -83,6 +87,7 @@ function LogoItem({ logo }) {
         <SVGLoader
           src={logo.src}
           style={{ height: `${logo.height}px`, width: "auto" }}
+          className="text-current"
         />
       </div>
     </div>

@@ -96,13 +96,12 @@ export default function DebateRoomPage() {
               title: "Set up the different timer options",
               description:
                 "You can keep track of the time each participant has spoken through various intervals or set a time for a tiemd speech.",
-              image: "/images/campfire.jpg",
+              image: "/images/debate-configuration.webp",
             },
             {
               title: "Set up a topic and start the debate",
               description:
                 "Put on a topic and start the debate. Select who speaks first and control the speaking turns from then on.",
-              image: "/images/campfire.jpg",
             },
           ]}
         />
@@ -175,7 +174,7 @@ export default function DebateRoomPage() {
       >
         <InfoPiece
           title="Team building"
-          image={"/images/campfire.jpg"}
+          image={"/images/fun-debate.webp"}
           reverse={true}
           description="Use debates as a fun activity to get everyone to know each other better and make people break out of their comfort zones."
           cta={{
@@ -189,7 +188,7 @@ export default function DebateRoomPage() {
         />
         <InfoPiece
           title="Decision making"
-          image={"/images/campfire.jpg"}
+          image={"/images/debate-decision-making.webp"}
           description="Reach a consensus by making everyone speak and be heard on a certain topics, convince and persuade or be persuaded."
           cta={{
             variant: "text",

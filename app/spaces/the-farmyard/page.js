@@ -97,19 +97,18 @@ export default function TheFarmyardPage() {
               title: "Form the three different teams",
               description:
                 "Divide the participants in three different teams and make sure everyone is ready to start the game.",
-              image: "/images/campfire.jpg",
+              image: "/images/farmyard-form-teams.webp",
             },
             {
               title: "Start having fun",
               description:
                 "Run towards the center of the map to collect as many eggs as possible. Organize your team to tackle enemies and steal eggs from them.",
-              image: "/images/campfire.jpg",
+              image: "/images/farmyard-have-fun.webp",
             },
             {
               title: "Run cross department battles",
               description:
                 "Use The Farmyard to run company-wide competitions between departments or force people from different departments to work together.",
-              image: "/images/campfire.jpg",
             },
           ]}
         />
@@ -182,7 +181,7 @@ export default function TheFarmyardPage() {
       >
         <InfoPiece
           title="Department competitions"
-          image={"/images/campfire.jpg"}
+          image={"/images/department-battles.webp"}
           reverse={true}
           description="Quarterly competitions where teams develop and adapt strategies in real-time."
           cta={{
@@ -196,7 +195,7 @@ export default function TheFarmyardPage() {
         />
         <InfoPiece
           title="Leadership assessment"
-          image={"/images/campfire.jpg"}
+          image={"/images/leadership.webp"}
           description="Observe leadership behaviors and team dynamics in an engaging context."
           cta={{
             variant: "text",
@@ -209,7 +208,7 @@ export default function TheFarmyardPage() {
         />
         <InfoPiece
           title="Onboarding acceleration"
-          image={"/images/campfire.jpg"}
+          image={"/images/team-building-challenge.webp"}
           description="Integrate new team members faster by revealing strengths and communication patterns."
           reverse={true}
           cta={{

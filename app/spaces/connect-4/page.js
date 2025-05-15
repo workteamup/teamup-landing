@@ -96,31 +96,28 @@ export default function Connect4Page() {
               title: "Join and organize in pairs or groups of four",
               description:
                 "Once everyone is in, organize yourself in pairs for individual play or in groups of four for couples play.",
-              image: "/images/campfire.jpg",
+              image: "/images/connect4-organize-pairs.webp",
             },
             {
               title: "Decide the rules of the game",
               description:
                 "Decide if you want to play in chaos mode or organized play. Chaos means everyone can shoot at any time, while organized play means you have to shoot in your turn.",
-              image: "/images/campfire.jpg",
             },
             {
               title: "Start having fun",
               description:
                 "Start going head to head with your opponents and see which team can get four in a row first.",
-              image: "/images/campfire.jpg",
+              image: "/images/connect4-have-fun.webp",
             },
             {
               title: "Switch grids to play with different people",
               description:
                 "Once you've finished a game, switch to another grid to play with different people.",
-              image: "/images/campfire.jpg",
             },
             {
               title: "Start organizing your own tournaments",
               description:
                 "Step up your game and start organizing your own tournaments. You can use your own rules and create cross-department battles.",
-              image: "/images/campfire.jpg",
             },
           ]}
         />
@@ -193,7 +190,7 @@ export default function Connect4Page() {
       >
         <InfoPiece
           title="Department battles"
-          image={"/images/campfire.jpg"}
+          image={"/images/department-battles.webp"}
           reverse={true}
           description="Monthly tournaments creating cross-functional connections"
           cta={{
@@ -207,7 +204,7 @@ export default function Connect4Page() {
         />
         <InfoPiece
           title="New hire integration"
-          image={"/images/campfire.jpg"}
+          image={"/images/new-hire-onboarding-game.webp"}
           description="Weekly sessions where gameplay facilitates natural conversation"
           cta={{
             variant: "text",
@@ -220,7 +217,7 @@ export default function Connect4Page() {
         />
         <InfoPiece
           title="Leadership approachability"
-          image={"/images/campfire.jpg"}
+          image={"/images/leadership-approachability.webp"}
           description="Break down hierarchical barriers through executive participation"
           reverse={true}
           cta={{

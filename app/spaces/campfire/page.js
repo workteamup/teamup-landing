@@ -185,7 +185,7 @@ export default function CampfirePage() {
       >
         <InfoPiece
           title="Onboarding new hires"
-          image={"/images/campfire.jpg"}
+          image={"/images/onboarding-new-hires.webp"}
           reverse={true}
           description="Let new hires get to know the team in a comfortable and casual way by bringing the team together around the fire."
           cta={{
@@ -199,7 +199,7 @@ export default function CampfirePage() {
         />
         <InfoPiece
           title="Team building sessions"
-          image={"/images/campfire.jpg"}
+          image={"/images/campfire-team-building.webp"}
           description="Run recurrent team building sessions to keep the company connected and engaged. Let people from different departments get to know each other."
           cta={{
             variant: "text",
@@ -212,7 +212,7 @@ export default function CampfirePage() {
         />
         <InfoPiece
           title="Solve problems by bringing up difficult topics"
-          image={"/images/campfire.jpg"}
+          image={"/images/employee-feedback.webp"}
           description="Run anonymous polls to get feedback from your employees and use the Campfire to discuss the difficult topics without anyone being forced to bring them up."
           reverse={true}
           cta={{

@@ -169,7 +169,7 @@ export default function RemoteDisconnectionPage() {
           <InfoPiece
             title="Annual in-person team events"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/traditional-team-building.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -186,7 +186,7 @@ export default function RemoteDisconnectionPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-team-building.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -206,7 +206,7 @@ export default function RemoteDisconnectionPage() {
           <InfoPiece
             title="Video conferencing for team collaboration"
             titleClassName="font-medium max-w-[360px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/remote-first.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -223,7 +223,7 @@ export default function RemoteDisconnectionPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-company-all-hands.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -243,7 +243,7 @@ export default function RemoteDisconnectionPage() {
           <InfoPiece
             title="Workplace communication platforms"
             titleClassName="font-medium max-w-[440px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/slack-fatigue.webp"}
             description={
               <ProsConsList
                 type="cons"
@@ -260,7 +260,7 @@ export default function RemoteDisconnectionPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/campfire.jpg"}
+            image={"/images/teamup-sailboat-retrospective.webp"}
             description={
               <ProsConsList
                 type="pros"
@@ -299,40 +299,37 @@ export default function RemoteDisconnectionPage() {
       >
         <InfoPiece
           title="Spark conversation and foster connection"
-          image={"/images/campfire.jpg"}
+          image={"/images/campfire-thisorthat-debate.webp"}
           reverse={true}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "text",
+            variant: "primary",
             children: "Create a meeting in the Auditorium",
             size: "lg",
-            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
         <InfoPiece
           title="Transform routine collaboration into interactive experiences"
-          image={"/images/campfire.jpg"}
+          image={"/images/auditorium-retrospective-planning.webp"}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           cta={{
-            variant: "text",
+            variant: "primary",
             children: "Create a meeting in the Auditorium",
             size: "lg",
-            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
         <InfoPiece
           title="Build real teamwork skills through shared challenges and laughter"
-          image={"/images/campfire.jpg"}
+          image={"/images/connect4-field-lava-farmyard.webp"}
           description="A forest setting with conversation-starter cards perfect for
           team bonding and casual discussions."
           reverse={true}
           cta={{
-            variant: "text",
+            variant: "primary",
             children: "Create a meeting in the Auditorium",
             size: "lg",
-            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
       </Section>
@@ -361,25 +358,25 @@ export default function RemoteDisconnectionPage() {
               title: "Set up your virtual workspace",
               description:
                 "Create customized 3D environments that reflect your company culture and facilitate different types of interactions - from casual break rooms to focused meeting spaces.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/request-access.webm",
             },
             {
               title: "Onboard your team members",
               description:
                 "Invite employees to join and customize their avatars. Our guided onboarding ensures everyone feels comfortable navigating the virtual space.",
-              image: "/images/campfire.jpg",
             },
             {
               title: "Launch team activities",
               description:
                 "Start with pre-built templates for team building, all-hands meetings, or casual social events. Track engagement metrics to measure impact.",
-              image: "/images/campfire.jpg",
+              image: "/images/campfire-get-topic.webp",
             },
             {
               title: "Scale and optimize",
               description:
                 "Use analytics to identify what works best for your team. Expand usage across departments while maintaining consistent experiences.",
-              image: "/images/campfire.jpg",
+              image: "/images/agree-or-disagree.webp",
             },
           ]}
         />

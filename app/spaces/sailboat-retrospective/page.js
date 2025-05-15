@@ -189,7 +189,7 @@ export default function SailboatRetrospectivePage() {
       >
         <InfoPiece
           title="Sailboat retrospective"
-          image={"/images/campfire.jpg"}
+          image={"/images/sailboat-retrospective.webp"}
           reverse={true}
           description="Needless to say, the Sailboat retrospective space is perfect for the sailboat retrospective. *Wink wink*"
           cta={{
@@ -203,7 +203,7 @@ export default function SailboatRetrospectivePage() {
         />
         <InfoPiece
           title="Brainstorming sessions"
-          image={"/images/campfire.jpg"}
+          image={"/images/brainstorming.webp"}
           description="Take advantage of the built-in features in the Sailboat retrospective space to brainstorm ideas and solutions."
           cta={{
             variant: "text",

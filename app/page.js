@@ -443,25 +443,25 @@ export default function Home() {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[1600px] mx-auto px-8 h-full">
           <RoleCard
-            imageSrc="/images/avatar-cxo.png"
+            imageSrc="/images/avatar-cxo.webp"
             title="Team Up! for CXOs"
             containerClassName="w-full h-full"
             href="/solutions/for-cxos"
           />
           <RoleCard
-            imageSrc="/images/avatar-hr.png"
+            imageSrc="/images/avatar-hr.webp"
             title="Team Up! for HR"
             containerClassName="w-full h-full"
             href="/solutions/for-hr"
           />
           <RoleCard
-            imageSrc="/images/avatar-manager.png"
+            imageSrc="/images/avatar-manager.webp"
             title="Team Up! for Managers"
             containerClassName="w-full h-full"
             href="/solutions/for-managers"
           />
           <RoleCard
-            imageSrc="/images/avatar-employee.png"
+            imageSrc="/images/avatar-employee.webp"
             title="Team Up! for Employees"
             containerClassName="w-full h-full"
             href="/solutions/for-employees"
