@@ -396,31 +396,38 @@ export default function ForFunCompetitionsPage() {
               title: "Request access to Team Up!",
               description:
                 "Apply for access to Team Up! in https://app.teamup.works/signup",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/request-access.webm",
             },
             {
               title: "Create your company's workspace",
               description:
                 "Create a workspace that reflects your company culture and invite your team members to join.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-workspace.webm",
             },
             {
               title: "Start creating your first event",
               description:
                 "Navigate to the event creation page and start by adding your event details.",
-              image: "/images/campfire.jpg",
+              video:
+                "https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/create-event.webm",
             },
             {
-              title: "Configure your event",
+              title: "Create rooms for all the matchups",
               description:
-                "Select the type of matching you want (by themed rooms or mixer), spaces for each room,etc. and send the invitations.",
-              image: "/images/campfire.jpg",
+                "When all teams have joined, edit the event and create rooms for each different matchup so that everyone know which room to go to.",
             },
             {
-              title: "Enjoy a virtual event that doesn't suck",
+              title: "Have fun and compete to win",
               description:
-                "When the time comes, enjoy the first virtual event that is really interactive, with a real sense of presence and connection.",
-              image: "/images/campfire.jpg",
+                "Enjoy a fun competition with people of your company you don´t see every day and try your best to win!",
+              image: "/images/farmyard-have-fun.webp",
+            },
+            {
+              title: "Optional: run mixed teams competitions",
+              description:
+                "Create cross-department bonds by pairing people from different departments so that they can get to know each other better.",
             },
           ]}
         />
