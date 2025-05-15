@@ -210,7 +210,7 @@ export default function ForFunCompetitionsPage() {
           <InfoPiece
             title="...but with Team Up!"
             titleClassName="font-medium max-w-[400px] text-2xl lg:text-4xl"
-            image={"/images/debate-hero.jpg"}
+            image={"/images/debate-hero.webp"}
             description={
               <ProsConsList
                 type="pros"

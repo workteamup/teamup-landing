@@ -18,6 +18,7 @@ const Steps = ({
     <div className={cn("w-full max-w-[720px] mx-auto", className)}>
       <div className={cn("relative", containerClassName)}>
         {/* Vertical line */}
+        {/* Temporarily hiding the vertical line
         {steps.length > 1 && (
           <div
             className={cn(
@@ -31,6 +32,7 @@ const Steps = ({
             }}
           />
         )}
+        */}
 
         {/* Steps */}
         {steps.map((step, index) => (
