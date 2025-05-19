@@ -186,10 +186,10 @@ export default function SailboatRetrospectivePage() {
         buttonsPosition="bottom"
       >
         <InfoPiece
-          title="Sailboat retrospective"
+          title="Sailboat retrospective (Duh)"
           image={"/images/sailboat-retrospective.webp"}
           reverse={true}
-          description="Needless to say, the Sailboat retrospective space is perfect for the sailboat retrospective. *Wink wink*"
+          description="Visualize team progress using the sailboat metaphor in 3D, where members physically place their inputs as winds (helping forces), anchors (blockers), rocks (risks), and islands (goals)."
           cta={{
             variant: "text",
             children: "Create a meeting in the Sailboat retrospective space",
@@ -202,7 +202,7 @@ export default function SailboatRetrospectivePage() {
         <InfoPiece
           title="Brainstorming sessions"
           image={"/images/brainstorming.webp"}
-          description="Take advantage of the built-in features in the Sailboat retrospective space to brainstorm ideas and solutions."
+          description="Generate innovative ideas in an immersive environment that encourages creative thinking, with visual representations helping teams organize and build upon concepts collectively."
           cta={{
             variant: "text",
             children: "Create a brainstorming session",

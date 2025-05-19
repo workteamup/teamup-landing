@@ -180,7 +180,7 @@ export default function TheFloorIsLavaPage() {
           title="Fun coffee breaks"
           image={"/images/coffee-break.webp"}
           reverse={true}
-          description="Take a break from the daily routine and talk about life outside of work while having a good laugh."
+          description="Transform routine breaks into energizing moments of shared laughter as colleagues navigate obstacles and inevitably take dramatic falls into the virtual lava."
           cta={{
             variant: "text",
             children: "Create your first coffee break",
@@ -193,7 +193,7 @@ export default function TheFloorIsLavaPage() {
         <InfoPiece
           title="Team challenges"
           image={"/images/team-building-challenge.webp"}
-          description="Get the different teams of your company to complete the tracks in the fasters time."
+          description="Build resilience and camaraderie through friendly obstacle competitions where perseverance is celebrated and spectacular failures become memorable team moments."
           cta={{
             variant: "text",
             children: "Create your first team challenge",
@@ -206,7 +206,7 @@ export default function TheFloorIsLavaPage() {
         <InfoPiece
           title="Fun competitions"
           image={"/images/team-building-race.webp"}
-          description="Run company-wide individual races to see who's the fastest. The winner gets a reward."
+          description="Host light-hearted tournaments where agility and determination are showcased, creating memorable shared experiences that strengthen team bonds beyond work tasks."
           reverse={true}
           cta={{
             variant: "text",

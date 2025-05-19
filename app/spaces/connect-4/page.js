@@ -190,7 +190,7 @@ export default function Connect4Page() {
           title="Department battles"
           image={"/images/department-battles.webp"}
           reverse={true}
-          description="Monthly tournaments creating cross-functional connections"
+          description="Foster friendly competition between departments where teams bond while shooting baskets and plotting strategic moves to win the Connect 4 challenge."
           cta={{
             variant: "text",
             children: "Create your first department battle",
@@ -203,7 +203,7 @@ export default function Connect4Page() {
         <InfoPiece
           title="New hire integration"
           image={"/images/new-hire-onboarding-game.webp"}
-          description="Weekly sessions where gameplay facilitates natural conversation"
+          description="Help newcomers connect naturally with the team through an intuitive game that creates shared experiences and laughter regardless of tenure."
           cta={{
             variant: "text",
             children: "Start new hire integration",
@@ -216,7 +216,7 @@ export default function Connect4Page() {
         <InfoPiece
           title="Leadership approachability"
           image={"/images/leadership-approachability.webp"}
-          description="Break down hierarchical barriers through executive participation"
+          description="Break down hierarchical barriers as executives and team members play together, creating casual interactions outside formal business contexts."
           reverse={true}
           cta={{
             variant: "text",

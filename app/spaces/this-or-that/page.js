@@ -186,8 +186,7 @@ export default function ThisOrThatPage() {
           title="Loosen up before a long meeting"
           image={"/images/this-or-that.webp"}
           reverse={true}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Energize your team with quick-fire preference choices that spark laughter and conversation, creating a relaxed mindset before tackling serious agenda items."
           cta={{
             variant: "text",
             children: "Start beginning meetings on a fun note",
@@ -200,7 +199,7 @@ export default function ThisOrThatPage() {
         <InfoPiece
           title="Get important insights in a fun way"
           image={"/images/would-you-rather.webp"}
-          description="Use a low pressure environment to get important insights of your employees in a more entertaining way."
+          description="Uncover team preferences and decision-making patterns through engaging binary choices that reveal valuable perspectives without formal surveys."
           cta={{
             variant: "text",
             children: "Start getting important insights",
@@ -213,7 +212,7 @@ export default function ThisOrThatPage() {
         <InfoPiece
           title="Connect employees over fun topics"
           image={"/images/agree-or-disagree.webp"}
-          description="Let employees that don't know each other well connect over different and fun topics in a fun way."
+          description="Discover shared interests and playful differences as team members take sides on lighthearted debates, creating natural conversation starters beyond work topics."
           reverse={true}
           cta={{
             variant: "text",

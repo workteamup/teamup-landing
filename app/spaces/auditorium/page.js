@@ -193,8 +193,7 @@ export default function AuditoriumPage() {
           title="Company all hands"
           image={"/images/all-hands.webp"}
           reverse={true}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Gather your entire organization in one virtual space where leadership can present updates while employees interact in real-time. The voting stands feature enables instant feedback and participation from the whole team."
           cta={{
             variant: "text",
             children: "Create a company all hands meeting",
@@ -207,8 +206,7 @@ export default function AuditoriumPage() {
         <InfoPiece
           title="Company town hall"
           image={"/images/town-hall.webp"}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Create an open forum where executives can address the company and employees can participate through position-based voting, fostering transparency and two-way communication regardless of physical location."
           cta={{
             variant: "text",
             children: "Create a company town hall",
@@ -221,8 +219,7 @@ export default function AuditoriumPage() {
         <InfoPiece
           title="AMA sessions"
           image={"/images/ask-me-anything.webp"}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Host engaging Ask Me Anything sessions where featured team members can present from the stage while colleagues use the interactive stands to indicate interest in asking questions or show agreement/disagreement with responses."
           reverse={true}
           cta={{
             variant: "text",

@@ -181,7 +181,7 @@ export default function TheFarmyardPage() {
           title="Department competitions"
           image={"/images/department-battles.webp"}
           reverse={true}
-          description="Quarterly competitions where teams develop and adapt strategies in real-time."
+          description="Spark friendly rivalry as departments compete to collect eggs while strategically sabotaging competitors, building team cohesion through collaborative strategy and shared victories."
           cta={{
             variant: "text",
             children: "Create a company-wide competition",
@@ -194,7 +194,7 @@ export default function TheFarmyardPage() {
         <InfoPiece
           title="Leadership assessment"
           image={"/images/leadership.webp"}
-          description="Observe leadership behaviors and team dynamics in an engaging context."
+          description="Observe natural leadership dynamics emerge as team members coordinate egg collection strategies, revealing who excels at resource management and tactical thinking."
           cta={{
             variant: "text",
             children: "Create a leadership assessment",
@@ -207,7 +207,7 @@ export default function TheFarmyardPage() {
         <InfoPiece
           title="Onboarding acceleration"
           image={"/images/team-building-challenge.webp"}
-          description="Integrate new team members faster by revealing strengths and communication patterns."
+          description="Fast-track relationship building as new hires immediately contribute to team success in this intuitive egg-gathering challenge that requires minimal explanation."
           reverse={true}
           cta={{
             variant: "text",

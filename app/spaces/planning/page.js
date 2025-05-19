@@ -191,8 +191,7 @@ export default function PlanningPage() {
           title="Sprint planning"
           image={"/images/planning-poker-2.webp"}
           reverse={true}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Conduct bias-free estimation with the anonymous voting platforms, allowing team members to make independent judgments before revealing collective results on the central display."
           cta={{
             variant: "text",
             children: "Create a Sprint planning meeting",
@@ -205,8 +204,7 @@ export default function PlanningPage() {
         <InfoPiece
           title="Strategic planning meetings"
           image={"/images/hybrid-meetings-2.webp"}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Visualize priorities and reach consensus through the private voting system, ensuring decisions reflect honest opinions rather than hierarchical influence."
           cta={{
             variant: "text",
             children: "Create a strategic planning meeting",
@@ -219,8 +217,7 @@ export default function PlanningPage() {
         <InfoPiece
           title="Feedback gathering sessions"
           image={"/images/poll.webp"}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Collect candid team input on initiatives or ideas using the anonymous platform voting system, encouraging authentic responses free from peer pressure."
           reverse={true}
           cta={{
             variant: "text",

@@ -174,7 +174,7 @@ export default function DebateRoomPage() {
           title="Team building"
           image={"/images/fun-debate.webp"}
           reverse={true}
-          description="Use debates as a fun activity to get everyone to know each other better and make people break out of their comfort zones."
+          description="Build listening skills and mutual respect as team members articulate perspectives under time pressure, with the playful consequence of being launched skyward when time expires."
           cta={{
             variant: "text",
             children: "Start team building in the Debate room",
@@ -187,7 +187,7 @@ export default function DebateRoomPage() {
         <InfoPiece
           title="Decision making"
           image={"/images/debate-decision-making.webp"}
-          description="Reach a consensus by making everyone speak and be heard on a certain topics, convince and persuade or be persuaded."
+          description="Streamline complex decisions by giving each viewpoint equal airtime in a structured format, ensuring all voices are heard before moving forward with a solution."
           cta={{
             variant: "text",
             children: "Start making decisions in the Debate room",

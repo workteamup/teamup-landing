@@ -96,7 +96,7 @@ const InfoPiece = ({
             (typeof description === "string" ? (
               <p
                 className={cn(
-                  "text-base lg:text-xl text-dark-space mb-5 ",
+                  "text-base lg:text-lg text-dark-space mb-5 ",
                   descriptionClassName
                 )}
               >
