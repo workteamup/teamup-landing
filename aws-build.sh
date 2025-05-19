@@ -1,7 +1,9 @@
-cd out/pages
+cd out
 for f in *.html
 do 
-    mv -- "$f" "${f%.*}"
+    if [ "$f" != "index.html" ]; then
+        mv -- "$f" "${f%.*}"
+    fi
 done
-echo "All html files in out/pages have been renamed to remove the .html extension"
-cd ../..
+echo "All html files in out directory have been renamed to remove the .html extension (except index.html)"
+cd ..
