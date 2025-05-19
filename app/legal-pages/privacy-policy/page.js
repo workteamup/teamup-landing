@@ -95,17 +95,17 @@ export default function PrivacyPolicy() {
             Principles applicable to the processing of personal data
           </h3>
           <p className="mt-4 mb-3 text-justify">
-            The processing of the User's personal data shall be subject to the
-            following principles contained in Article 5 of the GDPR and in
+            The processing of the User&apos;s personal data shall be subject to
+            the following principles contained in Article 5 of the GDPR and in
             Article 4 et seq. of Organic Law 3/2018, of December 5, on the
             Protection of Personal Data and guarantee of digital rights:
           </p>
           <ul className="list-disc pl-6 mb-3 mt-3 text-justify">
             <li className="mb-1">
-              Principle of lawfulness, fairness and transparency: the User's
-              consent will be required at all times following completely
-              transparent information on the purposes for which personal data is
-              collected.
+              Principle of lawfulness, fairness and transparency: the
+              User&apos;s consent will be required at all times following
+              completely transparent information on the purposes for which
+              personal data is collected.
             </li>
             <li className="mb-1">
               Principle of purpose limitation: personal data will be collected
@@ -204,7 +204,7 @@ export default function PrivacyPolicy() {
             Recipients of personal data
           </h3>
           <p className="mt-4 mb-3 text-justify">
-            The User's personal data will be shared with the following
+            The User&apos;s personal data will be shared with the following
             recipients or categories of recipients:
           </p>
           <ul className="list-disc pl-6 mb-3 mt-3 text-justify">
@@ -287,18 +287,18 @@ export default function PrivacyPolicy() {
           </p>
           <ul className="list-disc pl-6 mb-3 mt-3 text-justify">
             <li className="mb-1">
-              Right of access: This is the User's right to obtain confirmation
-              of whether or not Team Up! is processing their personal data and,
-              if so, to obtain information about their specific personal data
-              and the processing that Team Up! has carried out or is carrying
-              out, as well as, among other things, of the information available
-              on the origin of said data and the recipients of the
-              communications made or planned for the same.
+              Right of access: This is the User&apos;s right to obtain
+              confirmation of whether or not Team Up! is processing their
+              personal data and, if so, to obtain information about their
+              specific personal data and the processing that Team Up! has
+              carried out or is carrying out, as well as, among other things, of
+              the information available on the origin of said data and the
+              recipients of the communications made or planned for the same.
             </li>
             <li className="mb-1">
-              Right of rectification: This is the User's right to have their
-              personal data modified that turns out to be inaccurate or, taking
-              into account the purposes of the treatment, incomplete.
+              Right of rectification: This is the User&apos;s right to have
+              their personal data modified that turns out to be inaccurate or,
+              taking into account the purposes of the treatment, incomplete.
             </li>
             <li className="mb-1">
               Right of erasure (&apos;the right to be forgotten&apos;): This is
