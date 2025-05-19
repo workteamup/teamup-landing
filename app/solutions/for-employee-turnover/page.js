@@ -300,35 +300,35 @@ export default function EmployeeTurnoverPage() {
           title="Spark conversation and foster connection"
           image={"/images/campfire-thisorthat-debate.webp"}
           reverse={true}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Replace superficial work interactions with meaningful exchanges through purposefully designed spaces that encourage authentic dialogue and relationship building."
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Create a meeting in the Auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
         <InfoPiece
           title="Transform routine collaboration into interactive experiences"
           image={"/images/auditorium-retrospective-planning.webp"}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Elevate standard meetings from passive participation to active engagement with 3D environments that make collaboration memorable and energizing."
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Create a meeting in the Auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
         <InfoPiece
           title="Build real teamwork skills through shared challenges and laughter"
           image={"/images/connect4-field-lava-farmyard.webp"}
-          description="A forest setting with conversation-starter cards perfect for
-          team bonding and casual discussions."
+          description="Create lasting bonds as colleagues tackle fun obstacles together, developing trust and camaraderie that transfers directly to workplace collaboration."
           reverse={true}
           cta={{
-            variant: "primary",
+            variant: "text",
             children: "Create a meeting in the Auditorium",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
           }}
         />
       </Section>
