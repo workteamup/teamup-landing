@@ -1,7 +1,7 @@
 import { Poppins, Manrope } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import { TranslationProvider } from "./contexts/TranslationContext";
+// import { TranslationProvider } from "./contexts/TranslationContext";
 import Navbar from "./new-components/navbar";
 import Footer from "./new-components/footer";
 
@@ -22,7 +22,7 @@ const manrope = Manrope({
 export const metadata = {
   title: "Team Up! | The #1 solution for a connected workforce",
   description:
-    "Disfruta de un entorno en la web perfecto para crear y mantener cultura de empresa.",
+    "Enjoy a perfect web environment to create and maintain company culture.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
