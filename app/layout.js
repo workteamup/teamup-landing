@@ -82,10 +82,10 @@ export default function RootLayout({ children }) {
         </Script>
 
         <Navbar />
-        <TranslationProvider>
+        {/* <TranslationProvider> */}
           {children}
           <Footer />
-        </TranslationProvider>
+        {/* </TranslationProvider> */}
       </body>
     </html>
   );
