@@ -317,7 +317,7 @@ export default function ForManagersPage() {
           title="Sprint planning sessions"
           image={"/images/planning-hero.webp"}
           reverse={true}
-          description="Plan your sprints in an interactive space where voting is more dynamic, anonymous and fun. The sprint planning meetings will flow effortlessly."
+          description="Conduct more effective estimation with anonymous voting platforms that eliminate influence bias, visualizing team consensus immediately and turning a typically tedious process into an engaging activity."
           cta={{
             variant: "text",
             children: "Check out our Planning space",
@@ -329,13 +329,14 @@ export default function ForManagersPage() {
         <InfoPiece
           title="Weekly retrospectives"
           image={"/images/sailboat-retrospective-hero.webp"}
-          description="Host weekly retrospective in our Sailboat retrospective space, where you can feel as if you were put in post-its in the whiteboard of your office."
+          description="Transform standard feedback sessions into dynamic discussions where team members physically interact with improvement ideas in 3D space, increasing participation and actionable outcomes."
           cta={{
             variant: "text",
             children: "Check our Sailboat retrospective",
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
-            onClick: () => (window.location.href = "/spaces/planning"),
+            onClick: () =>
+              (window.location.href = "/spaces/sailboat-retrospective"),
           }}
         />
       </Section>

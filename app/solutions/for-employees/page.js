@@ -327,7 +327,7 @@ export default function ForEmployeesPage() {
           title="Virtual coffee breaks"
           image={"/images/campfire-hero.webp"}
           reverse={true}
-          description="Join a virtual coffee chat in our Campfire environment with conversation cards to spark meaningful discussions with colleagues."
+          description="Transform routine breaks into engaging social experiences where you can connect with colleagues through games and themed environments rather than awkward video calls."
           cta={{
             variant: "text",
             children: "See what the Campfire is like",
@@ -339,7 +339,7 @@ export default function ForEmployeesPage() {
         <InfoPiece
           title="Virtual events"
           image={"/images/auditorium-hero.webp"}
-          description="Attend a virtual workshop in our Auditorium to learn new skills in an engaging, relaxed 3D setting with interactive elements."
+          description="Experience company gatherings that go beyond passive webinars, where your participation matters and meaningful connections happen through shared activities and challenges."
           cta={{
             variant: "text",
             children: "Check out the Auditorium",
@@ -352,7 +352,7 @@ export default function ForEmployeesPage() {
           title="Sprint planning sessions"
           image={"/images/planning-hero.webp"}
           reverse={true}
-          description="Plan your sprints in an interactive space where voting is more dynamic, anonymous and fun. The sprint planning meetings will flow effortlessly."
+          description="Contribute honest estimates without peer pressure through anonymous voting platforms, ensuring your voice influences team planning regardless of seniority or speaking confidence."
           cta={{
             variant: "text",
             children: "Check out our Planning space",
@@ -364,7 +364,7 @@ export default function ForEmployeesPage() {
         <InfoPiece
           title="Weekly retrospectives"
           image={"/images/sailboat-retrospective-hero.webp"}
-          description="Host weekly retrospective in our Sailboat retrospective space, where you can feel as if you were put in post-its in the whiteboard of your office."
+          description="Share feedback in dynamic 3D environments that make retrospectives engaging rather than obligatory, with interactive features that energize team improvement discussions."
           cta={{
             variant: "text",
             children: "Check our Sailboat retrospective",

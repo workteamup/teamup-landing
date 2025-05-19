@@ -73,26 +73,25 @@ export default function EmployeeTurnoverPage() {
       />
       <Section
         preTitle="The problem in numbers"
-        title="Title under construction"
+        title="The cost of employee turnover"
         bgClassName="bg-white"
         containerClassName="max-w-[1440px] mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <NumberElement
-            number={47}
+            number={25}
             suffix="%"
-            description="47% of executives report that misalignment across departments is their biggest challenge in distributed teams."
+            description="Companies with high turnover rates see a 25% decrease in productivity and innovation."
           />
           <NumberElement
-            number={15}
-            prefix="$"
-            suffix="K"
-            description="Companies lose an average of $15.000 per employee annually due to ineffective virtual meetings and collaboration."
+            number={4.2}
+            suffix="y"
+            description="The average employee tenure is now just 4.2 years, and only 2.8 years for Millenials and Gen Z."
           />
           <NumberElement
-            number={32}
+            number={70}
             suffix="%"
-            description="Only 32% of leadership teams feel they have adequate visibility into employee engagement across remote and hybrid teams."
+            description="70% of employees say they'd stay longer if they felt more connected to their team and company culture"
           />
         </div>
       </Section>

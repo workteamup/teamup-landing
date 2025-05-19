@@ -73,26 +73,25 @@ export default function EmployeeDisengagementPage() {
       />
       <Section
         preTitle="The problem in numbers"
-        title="Title under construction"
+        title="The cost of employee disengagement"
         bgClassName="bg-white"
         containerClassName="max-w-[1440px] mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <NumberElement
-            number={47}
+            number={36}
             suffix="%"
-            description="47% of executives report that misalignment across departments is their biggest challenge in distributed teams."
+            description="Only 36% of employees report being actively engaged at work, with remote workers reporting even lower engagement."
           />
           <NumberElement
-            number={15}
-            prefix="$"
-            suffix="K"
-            description="Companies lose an average of $15.000 per employee annually due to ineffective virtual meetings and collaboration."
+            number={2.5}
+            suffix="x"
+            description="Disengaged employees are 2.5 times more likely to leave their jobs withing a year."
           />
           <NumberElement
-            number={32}
+            number={21}
             suffix="%"
-            description="Only 32% of leadership teams feel they have adequate visibility into employee engagement across remote and hybrid teams."
+            description="Companies with highly engaged employees see 21% higher profitability and 41% lower absenteeism."
           />
         </div>
       </Section>

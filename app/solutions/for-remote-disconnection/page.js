@@ -73,26 +73,25 @@ export default function RemoteDisconnectionPage() {
       />
       <Section
         preTitle="The problem in numbers"
-        title="Title under construction"
+        title="The cost of workplace disconnection"
         bgClassName="bg-white"
         containerClassName="max-w-[1440px] mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <NumberElement
-            number={47}
+            number={70}
             suffix="%"
-            description="47% of executives report that misalignment across departments is their biggest challenge in distributed teams."
+            description="70% of remote workers feel disconnected from their team, with 33% reporting it as their biggest challenge."
           />
           <NumberElement
-            number={15}
-            prefix="$"
-            suffix="K"
-            description="Companies lose an average of $15.000 per employee annually due to ineffective virtual meetings and collaboration."
+            number={50}
+            suffix="%"
+            description="Remote teams experience a 50% higher rate of miscommunication and project delays due to lack of spontaneous interaction."
           />
           <NumberElement
-            number={32}
+            number={30}
             suffix="%"
-            description="Only 32% of leadership teams feel they have adequate visibility into employee engagement across remote and hybrid teams."
+            description="Companies with connected remote teams see 30% higher innovation rates and 25% faster problem-solving."
           />
         </div>
       </Section>

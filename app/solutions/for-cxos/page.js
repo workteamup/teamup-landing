@@ -330,7 +330,7 @@ export default function ForCXOsPage() {
           title="Town hall meetings where everyone feels seen"
           image={"/images/auditorium-hero.webp"}
           reverse={true}
-          description="Host a company-wide town hall meeting in the auditorium and let your employees ask questions to the CEO or other CXOs in a casual and engaging environment."
+          description="Transform company-wide gatherings from passive webinars to interactive experiences where every employee's participation matters through visual representation and position-based feedback."
           cta={{
             variant: "text",
             children: "Take a look at our Auditorium",
@@ -342,7 +342,7 @@ export default function ForCXOsPage() {
         <InfoPiece
           title="Ice breakers that won't feel awkward"
           image={"/images/campfire-hero.webp"}
-          description="Use the Campfire or This or that spaces to break the ice in a fun and not invasive way that will help your employees feel more connected."
+          description="Replace contrived introductions with naturally flowing interactions in purpose-built environments that spark authentic conversations without forced socialization."
           cta={{
             variant: "text",
             children: "Check out our Campfire",
@@ -354,7 +354,7 @@ export default function ForCXOsPage() {
         <InfoPiece
           title="Build real teamwork skills through shared challenges and laughter"
           image={"/images/farmyard-hero.webp"}
-          description="No more awkward and ineffective online team-building events. Use our built-in activities to organize quick team games that will help you build teamwork and collaboration."
+          description="Develop transferable collaboration competencies as teams navigate engaging challenges, creating lasting connections that enhance workplace performance and retention."
           reverse={true}
           cta={{
             variant: "text",

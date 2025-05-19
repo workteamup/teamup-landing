@@ -326,7 +326,7 @@ export default function ForHRPage() {
           title="Employee onboarding"
           image={"/images/teamup-onboarding.webp"}
           reverse={true}
-          description="Organize a virtual onboarding program using the spaces in Team Up! to welcome new hires and connect them with mentors through interactive 3D spaces."
+          description="Accelerate new hire integration through immersive experiences that build relationships naturally, replacing overwhelming document reviews with meaningful team connections from day one."
           cta={{
             variant: "text",
             children: "Check out our This or that space",
@@ -338,7 +338,7 @@ export default function ForHRPage() {
         <InfoPiece
           title="Company-wide challenges"
           image={"/images/connect4-hero.webp"}
-          description="Take advantage of Team Up!'s games and challenges to organize company-wide events that boost engagement, foster a sense of belonging, and build a strong company culture."
+          description="Unite distributed teams through engaging cross-departmental activities that break silos and foster company culture, providing measurable engagement data for HR initiatives."
           cta={{
             variant: "text",
             children: "See what you can do in Connect 4",
@@ -350,7 +350,7 @@ export default function ForHRPage() {
         <InfoPiece
           title="Company AMA sessions"
           image={"/images/ama-hr.webp"}
-          description="Let your employees ask questions to the CEO or other CXOs in a casual and engaging environment or let your leaders host AMA sessions to share their expertise and insights."
+          description="Create transparent communication channels where leadership connects authentically with employees, building trust through interactive Q&A formats that encourage participation from all levels."
           reverse={true}
           cta={{
             variant: "text",
