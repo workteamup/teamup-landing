@@ -302,9 +302,11 @@ export default function RemoteDisconnectionPage() {
           description="Replace superficial work interactions with meaningful exchanges through purposefully designed spaces that encourage authentic dialogue and relationship building."
           cta={{
             variant: "text",
-            children: "Create a meeting in the Auditorium",
+            children: "Spark great conversations now",
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
@@ -313,9 +315,11 @@ export default function RemoteDisconnectionPage() {
           description="Elevate standard meetings from passive participation to active engagement with 3D environments that make collaboration memorable and energizing."
           cta={{
             variant: "text",
-            children: "Create a meeting in the Auditorium",
+            children: "Transform routine collaboration now",
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
         <InfoPiece
@@ -325,9 +329,11 @@ export default function RemoteDisconnectionPage() {
           reverse={true}
           cta={{
             variant: "text",
-            children: "Create a meeting in the Auditorium",
+            children: "Build real teamwork skills now",
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           }}
         />
       </Section>

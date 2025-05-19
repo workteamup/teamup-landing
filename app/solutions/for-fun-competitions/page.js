@@ -331,7 +331,7 @@ export default function ForFunCompetitionsPage() {
           title="Knowledge-building trivia"
           image={"/images/auditorium-hero.webp"}
           reverse={true}
-          description="Host a virtual trivia night in our Auditorium where teams compete in knowledge challenges, with visual scorekeeping and spatial audio for team huddles that create authentic excitement."
+          description="Transform company knowledge sharing into exciting competitions where teams battle in game-show style formats, making information retention engaging rather than mandatory through interactive, entertaining challenges."
           cta={{
             variant: "text",
             children: "Start your first all-hands",
@@ -344,7 +344,7 @@ export default function ForFunCompetitionsPage() {
         <InfoPiece
           title="Team obstacle challenge"
           image={"/images/floor-is-lava-hero.webp"}
-          description="Run a relay race in our Floor is Lava environment where teams compete to complete challenges while navigating obstacles, building morale through shared achievements and good-natured laughter."
+          description="Rally teams around exciting challenges where colleagues cheer each other through virtual obstacle courses, creating memorable shared experiences and natural camaraderie beyond work discussions."
           cta={{
             variant: "text",
             children: "Start your first virtual conference",
@@ -357,7 +357,7 @@ export default function ForFunCompetitionsPage() {
         <InfoPiece
           title="Strategic skill competition"
           image={"/images/connect4-hero.webp"}
-          description="Organize team competitions in our Connect 4 space where players must score in basketball hoops to place their pieces, combining physical skill with strategy in a way that levels the playing field for different team members."
+          description="Showcase team problem-solving abilities through competitive games requiring tactical thinking and coordination, revealing leadership qualities and collaborative strengths in an entertaining context."
           reverse={true}
           cta={{
             variant: "text",

@@ -329,11 +329,12 @@ export default function ForCompanyEventsPage() {
           title="Immersive all-hands meetings"
           image={"/images/auditorium-hero.webp"}
           reverse={true}
-          description="Host a company all-hands in our Auditorium with breakout sessions in themed 3D spaces for Q&A and small group discussions that maintain consistent branding and connection."
+          description="Transform company announcements from passive webinars to dynamic gatherings where employees engage through position-based voting and spatial interaction, making every participant feel present and valued."
           cta={{
             variant: "text",
             children: "Start your first all-hands",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -341,11 +342,12 @@ export default function ForCompanyEventsPage() {
         <InfoPiece
           title="Interactive virtual conferences"
           image={"/images/virtual-conference.webp"}
-          description="Organize a virtual conference with keynote stages, exhibition areas, and networking lounges in a custom 3D campus environment where attendees navigate naturally between spaces."
+          description="Replace static video presentations with multi-room environments where attendees navigate between sessions organically, network in designated spaces, and participate in discussions through embodied presence."
           cta={{
             variant: "text",
             children: "Start your first virtual conference",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}
@@ -353,12 +355,13 @@ export default function ForCompanyEventsPage() {
         <InfoPiece
           title="Engaging holiday celebrations"
           image={"/images/connect4-hero.webp"}
-          description="Run a holiday party with themed 3D spaces featuring games like Floor is Lava and Connect 4 for cross-team bonding that creates memorable shared experiences despite physical distance."
+          description="Create memorable company celebrations where teams genuinely connect through themed activities and games, preserving cultural traditions and building relationships despite physical distance."
           reverse={true}
           cta={{
             variant: "text",
             children: "Start your first holiday party",
             size: "lg",
+            iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
               window.open("https://app.teamup.works/signup", "_blank"),
           }}

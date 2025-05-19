@@ -132,19 +132,19 @@ const Footer = () => {
             {/* Legal Links */}
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
               <Link
-                href="/terms-and-conditions"
+                href="/legal-pages/terms-and-conditions"
                 className="text-xs sm:text-xs text-brand-700 hover:text-purple-600"
               >
                 Terms and conditions
               </Link>
               <Link
-                href="/privacy-policy"
+                href="/legal-pages/privacy-policy"
                 className="text-xs sm:text-xs text-brand-700 hover:text-purple-600"
               >
                 Privacy policy
               </Link>
               <Link
-                href="/cookie-policy"
+                href="/legal-pages/cookie-policy"
                 className="text-xs sm:text-xs text-brand-700 hover:text-purple-600"
               >
                 Cookie policy

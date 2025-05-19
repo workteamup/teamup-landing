@@ -329,9 +329,9 @@ export default function ForDailyActivityPage() {
       >
         <InfoPiece
           title="Visual daily stand-ups"
-          image={"/images/visual-daily-standup.webp"}
+          image={"/images/debate-hero.webp"}
           reverse={true}
-          description="Host a virtual stand-up in our Planning space where team members move avatars to update progress visually while using spatial audio for natural conversation."
+          description="Energize routine status updates by physically gathering in themed 3D spaces where progress visualization and team presence create accountability and connection beyond checklist monotony."
           cta={{
             variant: "text",
             children: "Start your first stand-up",
@@ -344,7 +344,7 @@ export default function ForDailyActivityPage() {
         <InfoPiece
           title="Team mood check-ins"
           image={"/images/immersive-3d-env.webp"}
-          description="Run a daily mood check-in using our Campfire environment with polls to gauge team morale through avatar placement on different platforms."
+          description="Gauge team wellbeing through intuitive spatial tools that allow members to express current states naturally, providing leaders visibility into team morale without awkward direct questioning."
           cta={{
             variant: "text",
             children: "Start your first mood check-in",
@@ -357,7 +357,7 @@ export default function ForDailyActivityPage() {
         <InfoPiece
           title="Interactive sprint planning"
           image={"/images/visual-sprint-planning.webp"}
-          description="Facilitate a sprint planning session in our dedicated Planning room with interactive boards and voting platforms that visualize team consensus."
+          description="Transform estimation sessions from passive discussions to active participation using anonymous voting platforms that ensure unbiased input and immediate visual consensus."
           reverse={true}
           cta={{
             variant: "text",
