@@ -301,12 +301,12 @@ export default function PrivacyPolicy() {
               into account the purposes of the treatment, incomplete.
             </li>
             <li className="mb-1">
-              Right of erasure ('the right to be forgotten'): This is the User's
-              right, provided that current legislation does not establish
-              otherwise, to obtain the deletion of their personal data when
-              these are no longer necessary for the purposes for which they were
-              collected or processed; the User has withdrawn their consent to
-              the processing and this does not have another legal basis; the
+              Right of erasure (&apos;the right to be forgotten&apos;): This is
+              the User&apos;s right, provided that current legislation does not
+              establish otherwise, to obtain the deletion of their personal data
+              when these are no longer necessary for the purposes for which they
+              were collected or processed; the User has withdrawn their consent
+              to the processing and this does not have another legal basis; the
               User opposes the processing and there is no other legitimate
               reason to continue with it; the personal data have been processed
               unlawfully; personal data must be deleted in compliance with a
@@ -316,12 +316,12 @@ export default function PrivacyPolicy() {
               Data Controller, taking into account the available technology and
               the cost of its application, must take reasonable measures to
               inform those responsible who are processing the personal data of
-              the interested party's request for deletion of any link to those
-              personal data.
+              the interested party&apos;s request for deletion of any link to
+              those personal data.
             </li>
             <li className="mb-1">
-              Right to restriction of processing: This is the User's right to
-              limit the processing of their personal data. The User has the
+              Right to restriction of processing: This is the User&apos;s right
+              to limit the processing of their personal data. The User has the
               right to obtain the limitation of processing when they challenge
               the accuracy of their personal data; the processing is unlawful;
               the Data Controller no longer needs the personal data, but the
@@ -338,14 +338,14 @@ export default function PrivacyPolicy() {
               that other controller.
             </li>
             <li className="mb-1">
-              Right to object: This is the User's right not to have their
+              Right to object: This is the User&apos;s right not to have their
               personal data processed or to cease the processing of the same by
               Team Up!.
             </li>
             <li className="mb-1">
               Right not to be subject to a decision based solely on automated
-              processing, including profiling: This is the User's right not to
-              be subject to an individualized decision based solely on the
+              processing, including profiling: This is the User&apos;s right not
+              to be subject to an individualized decision based solely on the
               automated processing of their personal data, including profiling,
               existing unless current legislation establishes otherwise.
             </li>
@@ -353,7 +353,7 @@ export default function PrivacyPolicy() {
           <p className="mt-4 mb-3 text-justify">
             Thus, the User may exercise their rights by written communication
             addressed to the Data Controller with the reference
-            'RGPD-https://teamup.works', specifying:
+            &apos;RGPD-https://teamup.works&apos;, specifying:
           </p>
           <ul className="list-disc pl-6 mb-3 mt-3 text-justify">
             <li className="mb-1">

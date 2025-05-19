@@ -38,12 +38,12 @@ export default function CookiePolicy() {
             The information collected through cookies may include the date and
             time of visits to the Website, the pages viewed, the time spent on
             the Website and the sites visited just before and after it. However,
-            no cookie allows this same cookie to contact the User's telephone
-            number or any other means of personal contact. No cookie can extract
-            information from the User's hard drive or steal personal
-            information. The only way that the User's private information can
-            become part of the Cookie file is for the user to personally give
-            that information to the server.
+            no cookie allows this same cookie to contact the User&apos;s
+            telephone number or any other means of personal contact. No cookie
+            can extract information from the User&apos;s hard drive or steal
+            personal information. The only way that the User&apos;s private
+            information can become part of the Cookie file is for the user to
+            personally give that information to the server.
           </p>
           <p className="mt-4 mb-3 text-justify">
             Cookies that allow a person to be identified are considered personal
@@ -58,7 +58,7 @@ export default function CookiePolicy() {
             Own Cookies
           </h3>
           <p className="mt-4 mb-3 text-justify">
-            These are those cookies that are sent to the User's computer or
+            These are those cookies that are sent to the User&apos;s computer or
             device and managed exclusively by Team Up! for the best functioning
             of the Website. The information collected is used to improve the
             quality of the Website and its Content and your experience as a

@@ -93,7 +93,7 @@ export default function TermsAndConditions() {
             User is recommended to read them every time they visit the Website.
           </p>
           <p className="mt-4 mb-3 text-justify">
-            Team Up!'s Website provides a wide diversity of information,
+            Team Up!&apos;s Website provides a wide diversity of information,
             services and data. The User assumes responsibility for making
             correct use of the Website. This responsibility shall extend to:
           </p>
@@ -175,7 +175,7 @@ export default function TermsAndConditions() {
           </p>
           <p className="mt-4 mb-3 text-justify">
             The installation of these links, directories and search engines on
-            the Website aims to facilitate Users' search for and access to
+            the Website aims to facilitate Users&apos; search for and access to
             information available on the Internet, without it being considered a
             suggestion, recommendation or invitation to visit them.
           </p>
