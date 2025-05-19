@@ -2,18 +2,18 @@
 
 import Hero from "./new-components/hero";
 import Section from "./new-components/section";
-import SimpleStartSection from "./new-components/simple-start-section";
+// import SimpleStartSection from "./new-components/simple-start-section";
 import InfoPiece from "./new-components/info-piece";
-import Image from "next/image";
+// import Image from "next/image";
 import InfoElement from "./new-components/info-element";
-import Steps from "@/app/new-components/steps";
+// import Steps from "@/app/new-components/steps";
 import ClosingCTA from "@/app/new-components/closing-cta";
 import ChecklistElement from "@/app/new-components/checklist-element";
 import RoleCard from "@/app/new-components/role-card";
 import CheckmarkItem from "@/app/new-components/checkmark-item";
 import LogoSlider from "@/app/new-components/logo-slider";
 import CTA from "@/app/new-components/cta";
-import TeamUpMonth from "@/app/new-components/teamup-month";
+// import TeamUpMonth from "@/app/new-components/teamup-month";
 import ProsConsList from "./new-components/pros-cons-list";
 import { DollarSign, Users, BarChart, ArrowRight } from "lucide-react";
 
