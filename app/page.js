@@ -32,11 +32,15 @@ export default function Home() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/demo", "_blank"),
           },
         ]}
         video="https://teamup-data.s3.eu-west-3.amazonaws.com/landing-content/videos/teamup-intro-old.webm"
@@ -55,6 +59,8 @@ export default function Home() {
             variant: "primary",
             children: "Request access",
             size: "xl",
+            onClick: () =>
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
         ]}
         buttonsPosition="top"
