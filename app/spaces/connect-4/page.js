@@ -27,7 +27,7 @@ export default function Connect4Page() {
             size: "xl",
             children: "Create a meeting in the the Connect 4 space",
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open("https://app.teamup.works/demo/fourInARow", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -79,7 +79,7 @@ export default function Connect4Page() {
             children: "Create your first Connect 4 game",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/fourInARow", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -142,7 +142,7 @@ export default function Connect4Page() {
             children: "Create your first Connect 4 game",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/fourInARow", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -181,7 +181,7 @@ export default function Connect4Page() {
             children: "Create your first Connect 4 game",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/fourInARow", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -224,7 +224,7 @@ export default function Connect4Page() {
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open("https://app.teamup.works/demo/fourInARow", "_blank"),
           }}
         />
       </Section>

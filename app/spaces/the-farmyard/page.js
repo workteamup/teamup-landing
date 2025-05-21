@@ -27,7 +27,7 @@ export default function TheFarmyardPage() {
             size: "xl",
             children: "Create a meeting room in The Farmyard",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/eggHunt", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -80,7 +80,7 @@ export default function TheFarmyardPage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/eggHunt", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -133,7 +133,7 @@ export default function TheFarmyardPage() {
             children: "Create your first Farmyard game",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/eggHunt", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -172,7 +172,7 @@ export default function TheFarmyardPage() {
             children: "Create your first Farmyard game",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/eggHunt", "_blank"),
           },
         ]}
         buttonsPosition="bottom"

@@ -27,7 +27,7 @@ export default function FootballFieldPage() {
             size: "xl",
             children: "Create a meeting room in the Football field",
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open("https://app.teamup.works/demo/field", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -80,7 +80,7 @@ export default function FootballFieldPage() {
             children: "Create your first Football game",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/field", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -134,7 +134,7 @@ export default function FootballFieldPage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/field", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -174,7 +174,7 @@ export default function FootballFieldPage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/field", "_blank"),
           },
         ]}
         buttonsPosition="bottom"

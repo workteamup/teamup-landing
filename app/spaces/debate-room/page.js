@@ -27,7 +27,10 @@ export default function DebateRoomPage() {
             size: "xl",
             children: "Create a meeting in the Debate room",
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/timedSpeech",
+                "_blank"
+              ),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -165,7 +168,10 @@ export default function DebateRoomPage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/timedSpeech",
+                "_blank"
+              ),
           },
         ]}
         buttonsPosition="bottom"
@@ -181,7 +187,10 @@ export default function DebateRoomPage() {
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/timedSpeech",
+                "_blank"
+              ),
           }}
         />
         <InfoPiece
@@ -194,7 +203,10 @@ export default function DebateRoomPage() {
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/timedSpeech",
+                "_blank"
+              ),
           }}
         />
       </Section>

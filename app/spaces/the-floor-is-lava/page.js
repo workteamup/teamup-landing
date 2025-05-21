@@ -27,7 +27,10 @@ export default function TheFloorIsLavaPage() {
             size: "xl",
             children: "Create a meeting in The floor is lava",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/floorIsLava",
+                "_blank"
+              ),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -72,14 +75,17 @@ export default function TheFloorIsLavaPage() {
             children: "Request access",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/signup", "_blank"),
           },
           {
             variant: "secondary",
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/floorIsLava",
+                "_blank"
+              ),
           },
         ]}
         buttonsPosition="bottom"
@@ -132,7 +138,10 @@ export default function TheFloorIsLavaPage() {
             children: "Create your first Floor is lava session",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/floorIsLava",
+                "_blank"
+              ),
           },
         ]}
         buttonsPosition="bottom"
@@ -171,7 +180,10 @@ export default function TheFloorIsLavaPage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/floorIsLava",
+                "_blank"
+              ),
           },
         ]}
         buttonsPosition="bottom"
@@ -187,7 +199,10 @@ export default function TheFloorIsLavaPage() {
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/floorIsLava",
+                "_blank"
+              ),
           }}
         />
         <InfoPiece
@@ -200,7 +215,10 @@ export default function TheFloorIsLavaPage() {
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/floorIsLava",
+                "_blank"
+              ),
           }}
         />
         <InfoPiece
@@ -214,7 +232,10 @@ export default function TheFloorIsLavaPage() {
             size: "lg",
             iconRight: <ArrowRight className="w-4 h-4" />,
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open(
+                "https://app.teamup.works/demo/floorIsLava",
+                "_blank"
+              ),
           }}
         />
       </Section>

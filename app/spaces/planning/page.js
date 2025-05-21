@@ -27,7 +27,7 @@ export default function PlanningPage() {
             size: "xl",
             children: "Create a meeting in the Planning space",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/planning", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -81,7 +81,7 @@ export default function PlanningPage() {
             children: "Create your first planning session",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/planning", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -141,7 +141,7 @@ export default function PlanningPage() {
             children: "Create your first planning session",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/planning", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -181,7 +181,7 @@ export default function PlanningPage() {
             children: "Create your first planning session",
             size: "xl",
             onClick: () => {
-              window.open("https://app.teamup.works/demo", "_blank");
+              window.open("https://app.teamup.works/demo/planning", "_blank");
             },
           },
         ]}

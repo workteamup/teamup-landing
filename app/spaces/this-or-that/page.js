@@ -27,7 +27,7 @@ export default function ThisOrThatPage() {
             size: "xl",
             children: "Create a meeting in the This or that space",
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open("https://app.teamup.works/demo/thisOrThat", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -80,7 +80,7 @@ export default function ThisOrThatPage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/thisOrThat", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -138,7 +138,7 @@ export default function ThisOrThatPage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/thisOrThat", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -177,7 +177,7 @@ export default function ThisOrThatPage() {
             children: "Create your first icebreaking session",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/thisOrThat", "_blank"),
           },
         ]}
         buttonsPosition="bottom"

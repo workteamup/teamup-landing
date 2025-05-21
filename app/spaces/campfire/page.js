@@ -27,7 +27,7 @@ export default function CampfirePage() {
             size: "lg",
             children: "Create a meeting in the Campfire",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/campfire", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -79,7 +79,7 @@ export default function CampfirePage() {
             children: "Create your first Campfire meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/campfire", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -137,7 +137,7 @@ export default function CampfirePage() {
             children: "Create your first Campfire meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/campfire", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -176,7 +176,7 @@ export default function CampfirePage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/campfire", "_blank"),
           },
         ]}
         buttonsPosition="bottom"

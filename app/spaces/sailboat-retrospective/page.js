@@ -27,7 +27,7 @@ export default function SailboatRetrospectivePage() {
             size: "xl",
             children: "Create a meeting in the Sailboat retrospective space",
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open("https://app.teamup.works/demo/retro", "_blank"),
           },
           /*{ variant: "tertiary", size: "md", children: "Learn More" },*/
         ]}
@@ -82,7 +82,7 @@ export default function SailboatRetrospectivePage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/retro", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -141,7 +141,7 @@ export default function SailboatRetrospectivePage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/retro", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -180,7 +180,7 @@ export default function SailboatRetrospectivePage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/retro", "_blank"),
           },
         ]}
         buttonsPosition="bottom"

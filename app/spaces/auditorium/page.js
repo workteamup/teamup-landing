@@ -27,7 +27,7 @@ export default function AuditoriumPage() {
             size: "xl",
             children: "Create a meeting in the Auditorium",
             onClick: () =>
-              window.open("https://app.teamup.works/signup", "_blank"),
+              window.open("https://app.teamup.works/demo/auditorium", "_blank"),
           },
           /* { variant: "tertiary", size: "md", children: "View pricing" },*/
         ]}
@@ -84,7 +84,7 @@ export default function AuditoriumPage() {
             children: "Create your first town hall",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/auditorium", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -145,7 +145,7 @@ export default function AuditoriumPage() {
             children: "Create your first town hall",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/auditorium", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
@@ -184,7 +184,7 @@ export default function AuditoriumPage() {
             children: "Create your first meeting",
             size: "xl",
             onClick: () =>
-              window.open("https://app.teamup.works/demo", "_blank"),
+              window.open("https://app.teamup.works/demo/auditorium", "_blank"),
           },
         ]}
         buttonsPosition="bottom"
